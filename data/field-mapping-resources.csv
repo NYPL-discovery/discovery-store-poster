@@ -1,0 +1,80 @@
+CLASSES,,,,,,,,,,
+Entity,RDF class,Refines,Definition,,,,,Source,Notes,Questions/ToDo
+Structural (PCDM),,,,,,,,,,
+Collection,nypl:Collection,pcdm:Collection,"An aggregation of NYPL bibliographic resources, including any combination of Items, Components, or other Collections.",,,,,,,
+Component,nypl:Component,pcdm:Object,"A grouping of one or more intellectual entities within a collection, such as an archival fonds, a record series.",,,,,,,
+Item,nypl:Item,pcdm:Object,An intellectual entity owned or managed by NYPL,,,,,,,
+,,,,,,,,,,
+Intellectual,,,,,,,,,,
+[list of nypl-defined work types],,,,,,,,,,
+,,,,,,,,,,
+Physical,,,,,,,,,,
+Physical Item,bf:Item,,Represents at least the physical dimensions of an nypl:Item. May coexist with other classes representing intellectual diensions.,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+PROPERTIES,,,,,,,,,,
+Registry property,RDF property,JSON-LD context,Definition,Domain,Range,Controlled vocabularies,Obligation/Expectations,Source,Notes,Questions/ToDo
+Type,rdfs:type,@type,,,"[nypl:Collection, nypl:Component, nypl:Item]
+[nypl:[worktypes]]
+[bf:Item]",,1-n,,,
+Alternative title,dcterms:alternative,titleAlt,Any additional or alternative titles for the item.,,xsd:literal,,0-n,,,
+Author notes,bt:authorNotes,,Content cafe info about the author,,xsd:literal,,0-n,Baker & Taylor,,
+Availability,,,,,,,,,,
+Barcode,,,,,,,,,,
+Call number,nypl:shelfMark,shelfMark,A shelf locator or call number of a resource.,bf:Item,xsd:literal,,0-1,,,
+Carrier type,bf:carrier,,Categorization reflecting the format of the storage medium and housing of a carrier.,,skos:concept,LC Carrier Types Scheme: http://id.loc.gov/vocabulary/carriers,0-n,,,
+Content owner,nypl:owner,owner,"The NYPL center, division, or unit responsible for custody of and access to the resource.",,org:Organization (nypl:Organization),,1,,,
+Contributor,dcterms:contributor,contributor,A person or organization who contributed to the creation of the item. (Includes meeting/conference names from LC authority file.),,edm:Agent (nypl:Agent),,0-n,,"Most authorized and local names are dereferenced (if necessary) and given an NYPL URI under the http://data.nypl.org/agents/ namespace.
+
+For ease of mapping all core systems, no distinction is made between Creator and Contributor. All creators are included in Contributor property. Agents are also associated to Resoures through more granular role properties (MARC relators) if available in source system to better express this relationship.",
+Contributor by role,based on mapping rules,roles,A person or organization who contributed to the creation of the item. (Includes meeting/conference names from LC authority file.),,edm:Agent (nypl:Agent),,0-n,,Most authorized and local names are dereferenced (if necessary) and given an NYPL URI under the http://data.nypl.org/agents/ namespace.,
+Contributor literal,dc:contributor,,Temporary alpha-version field for storing literal values from MARC 7xx until agent enrichment work meets quality control standards,,xsd:literal,,0-n,,,
+Contributor literal by role,based on mapping rules,rolesLiteral,Temporary alpha-version field for storing literal values from MARC 1xx and 7xx until agent enrichment work meets quality control standards,,xsd:literal,,0-n,,,
+Cover image,dbo:thumbnail,"btCover
+olCover","The cover image of the resource (Baker & Taylor Content Cafe, Open Library)",,,,0-1,Baker & Taylor,,
+Creator literal,dc:creator,,Temporary alpha-version field for storing literal values from MARC 1xx until agent enrichment work meets quality control standards,,xsd:literal,,0-n,,,
+Date,dc:date,,The date or period the item was originally created or published.,,edm:TimeSpan,,0-n,,,
+Date created,dcterms:created,,The date the item was originally created or published.,,xsd:date,,0-n,,,"Tentative date properties, need to consider object as range (see DPLA use of edm:TimeSpan)
+
+Look at encoding in EDTF"
+Date end,dbo:dateEnd,endYear,The latest date recorded for the item. This could be the latest of multiple single dates or the end date of a date range.,,xsd:date,,0-1,,,(see above)
+Date start,dbo:dateStart,startYear,The earliest date recorded for the item. This could be the earliest of multiple single dates or the start date of a date range.,,xsd:date,,0-1,,,(see above)
+Description,dcterms:description,description,A summary or description of the contents of the resource.,,xsd:literal,,0-n,,,
+Dimensions,bf:dimensions,,Measurements of the carrier or carriers and/or the container of a resource.,,xsd:literal,,0-n,,,
+Extent,nypl:extent,,Number and type of units and/or subunits making up a resource.,,xsd:literal,,0-n,,,
+Flap,bt:flap,,Content cafe text from the inner flap of the book,,xsd:literal,,0-n,Baker & Taylor,,
+Genre,,,,,,,,,,
+Geographic coverage,,,,,,,,,,
+Identifier,dcterms:identifier,identifier,An identifier associated with the resource.,,bf:Identifier or subclass (see Identifier tab),,0-n,,See Identifier types tab for all identifiers used with Resource.,
+Instance of work,dcterms:identifier,idOwi,A high-level work that the resource manifests.,,skos:Concept,OCLC Work ID (currently),0-n,,Currently using OCLC work identifiers (drawn from Classify on enrichment) to cluster related resources. ,Need a new property (bf:instanceOf?)
+Issuance,bf:issuance,issuance,"Categorization reflecting whether a resource is issued in one or more parts, the way it is updated, and its intended termination.",,bf:Issuance,"TBD (waiting for bf controlled list, or mint our own terms based on current bib-level values)",,,,
+Language,dcterms:language,language,The language(s) of the content of the resource,,skos:concept,MARC languages,0-n,,,
+Location,nypl:physicalLocation,,The physical location of a physical item.,,nypl:Location,,0-1,,,
+Media type,bf:media,media,"Categorization reflecting the general type of intermediation device required to view, play, run, etc., the content of a resource.",,skos:concept,LC Media Types Scheme: http://id.loc.gov/vocabulary/mediaTypes,1-n,,,
+Note,skos:note,note,A free text note associated with the resource.,,xsd:literal,,0-n,,Notes prepended by normlalized label (see property mappings),TOC from Catalog are currently mapped to notes. We could potentially concatenate MARC 505s and map to dcterms:tableOfContents
+Place of publication,,,,,,,,,,
+Publisher,,,,,nypl:Agent,,0-n,,"Enrich through Agents pipeline (may need more attention for quality, since reconciling from uncontrolled string instead of authority).",
+Publisher literal,nypl:role-publisher,,The publihser of the resource,,xsd:literal,,0-n,,,
+Resource type,dcterms:type,type,A broad resource type categorizing the content of the resource.,,skos:concept,LC Resource Types Scheme: http://id.loc.gov/vocabulary/resourceTypes.html,0-n,,,
+Review,bt:review,,Content cafe aggergated reviews of the resource,,xsd:literal,,0-n,Baker & Taylor,,
+Subject,dcterms:subject,subject,"A topical, name, geographic, temporal, title, or genre subject of the resource.",,skos:concept (nypl:Term),,0-n,,Most authorized terms and local terms are dereferenced (if necessary) and given an NYPL URI under the http://data.nypl.org/terms/ namespace.,"Genre terms currently folded into Subject. Need to consider how to represent locally-controlled list of categories vs. broad, uncontrolled range of current genre terms vs. application profiles based on genre type"
+Subject literal,dc:subject,subjectLiteral,LCSH string literal (temporary),,xsd:literal,,0-n,,,
+Summary,dcterms:abstract,summary,Summary of the resource from content cafe,,xsd:literal,,0-n,Baker & Taylor,,
+Suppressed,nypl:suppressed,suppressed,Temporary property to tell if the resource has a suppressed catalog record.,,xsd:boolean,,0-1(?),,,
+Temporal coverage,dcterms:temporal,,Temporal characteristics of the resource.,,"edm:TimeSpan
+other skos-based temporal objects",,0-n,,,
+Title,dcterms:title,title,The primary title of the resource,,xsd:literal,,1,,,
+,ol:id,,urn:x-nypl:openlibrary,,,,,,,
+,hathi:id,,urn:x-nypl:hathi,,,,,,,
+,hathi:vols,,? (This is an array of volume id and volume name pairs),,,,,,,
+,hathi:access,,? (this is a boolean if at least one vol is accessable to the public),,,,,,,
+,,,,,,,,,,
+RELATIONSHIPS,,,,,,,,,,
+Registry relationship,RDF property,JSON-LD context,Definition,,Range,Controlled vocabularies,Obligation/Expectations,,Notes,Questions/ToDo
+Equivalent to,bf:hasEquivalent,,"Identifies other copies of the same expression in the Registry (ex., items with the same catalog bnumber or photographic prints of the same photo).",,"pcdm:Object (nypl:Item, nypl:Component, nypl:Capture)",,0-n,,,
+Has item,bf:hasItem,hasItem,A physical item holding the content of the resource.,,nypl:Item,,0-n,,,
+Has member,pcdm:hasMember,,Membership relationship with a child resource.,,"pcdm:Object (nypl:Item, nypl:Component, nypl:Capture), pcdm:Collection (nypl:Collection), pcdm:File",,0-n,,,
+Has reproduction,bf:reproduction,,"Physical reproduction of another core resource, ex. a microfilm reproduction of an archival collection. Does not apply to digital surrogates.",,"pcdm:Object (nypl:Item, nypl:Component, nypl:Capture)",,0-n,,,
+Item of,bf:itemOf,itemOf,Resource that is contains the intellectual description of the the described physical item.,,nypl:Item,,1-n,,,
+Member of,pcdm:memberOf,memberOf,Membership relationship with a parent resource. ,,"pcdm:Object (nypl:Item, nypl:Component, nypl:Capture), pcdm:Collection (nypl:Collection)",,0-n,,,
+Reproduction of,bf:originalVersion,,"Has a physical reproduction, ex. a microfilm reproduction of an archival collection. Does not apply to digital surrogates.",,"pcdm:Object (nypl:Item, nypl:Component, nypl:Capture)",,0-n,,,

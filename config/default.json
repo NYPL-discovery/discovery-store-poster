@@ -1,0 +1,17 @@
+{
+  "mongo": {
+    "url": ""
+  },
+  "nyplDataApi": {
+    "base_url": ""
+  },
+  "nyplOauth": {
+    "url": "",
+    "key": "",
+    "secret": ""
+  },
+
+  "shadowcat": {
+    "url": ""
+  },
+}

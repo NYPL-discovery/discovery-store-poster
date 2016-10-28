@@ -1,0 +1,9 @@
+Entity,RDF class,Refines,Definition,,,,Source,Notes,Questions/ToDo
+Location,nypl:Location,skos:Concept,The physical location of a resource,,,,,,
+,,,,,,,,,
+Registry property,RDF property,JSON-LD context,Definition,Range,Controlled vocabularies,Obligation/Expectations,Source,Notes,Questions/ToDo
+Type,rdfs:type,@type,,nypl:Location,,1,,,
+Actual location,nypl:actualLocation,actualLocation,"The actual physical location of the resource, relative to the branch or collection (?)",xsd:literal,,0-1?,,,Should this value always be present? Should this be a concatenation of prefLabel and actual location?
+Code,skos:notation,code,The short code of the branch or collection label.,xsd:literal,,1,,,
+Location type,nypl:locationType,locationType,The location type of a branch or collection,array of xsd:literals,"[Research, Branch]",1-2,,,"A location can be more than one type. Should the value be a list of applicable types or should we use the value ""both"" when both types apply?"
+Preferred label,skos:prefLabel,prefLabel,The full name of the branch or collection label,xsd:literal,,1,,,
