@@ -9,7 +9,9 @@
     {
       "@id": "nyplLocation:myy0v",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myy0v",
       "skos:prefLabel": "Performing Arts Circulating YA Non-Print Media"
@@ -17,7 +19,9 @@
     {
       "@id": "nyplLocation:myt42",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt42",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -25,7 +29,9 @@
     {
       "@id": "nyplLocation:mass2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mass2",
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
@@ -33,7 +39,9 @@
     {
       "@id": "nyplLocation:myt48",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt48",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -41,23 +49,29 @@
     {
       "@id": "nyplLocation:mab82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab82",
       "skos:prefLabel": "SASB M1 - Art & Architecture Rm 300"
     },
     {
-      "@id": "nyplLocation:mai92",
+      "@id": "nyplLocation:maqq2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "mai92",
-      "skos:prefLabel": "SASB M2 - General Research - Room 217"
+      "skos:notation": "maqq2",
+      "skos:prefLabel": "SASB - Pforzheimer Collection Rm 319"
     },
     {
       "@id": "nyplLocation:mag92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mag92",
       "skos:prefLabel": "SASB M2 - Milstein Division - Room 121"
@@ -65,7 +79,9 @@
     {
       "@id": "nyplLocation:may",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "may",
       "skos:prefLabel": "SASB - DO NOT USE"
@@ -73,7 +89,9 @@
     {
       "@id": "nyplLocation:slrb1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slrb1",
       "skos:prefLabel": "SIBL - Reference"
@@ -81,7 +99,9 @@
     {
       "@id": "nyplLocation:mau",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mau",
       "skos:prefLabel": "SASB - Print Collection Rm 308"
@@ -89,7 +109,9 @@
     {
       "@id": "nyplLocation:mauu2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mauu2",
       "skos:prefLabel": "SASB - Print Collection Rm 308"
@@ -97,7 +119,9 @@
     {
       "@id": "nyplLocation:mas",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mas",
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
@@ -105,7 +129,9 @@
     {
       "@id": "nyplLocation:map",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "map",
       "skos:prefLabel": "SASB - Map Division - Rm 117"
@@ -113,7 +139,9 @@
     {
       "@id": "nyplLocation:mauu1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mauu1",
       "skos:prefLabel": "SASB - Print Collection Reference Rm 308"
@@ -121,7 +149,9 @@
     {
       "@id": "nyplLocation:mao",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mao",
       "skos:prefLabel": "SASB - Manuscripts & Archives Rm 328"
@@ -129,7 +159,9 @@
     {
       "@id": "nyplLocation:mal",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mal",
       "skos:prefLabel": "SASB - Service Desk Rm 217"
@@ -137,7 +169,9 @@
     {
       "@id": "nyplLocation:mya23",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya23",
       "skos:prefLabel": "Performing Arts Recorded Media Reference"
@@ -145,7 +179,9 @@
     {
       "@id": "nyplLocation:mak",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mak",
       "skos:prefLabel": "SASB - Dewitt Wallace Room 108"
@@ -153,7 +189,9 @@
     {
       "@id": "nyplLocation:mya21",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya21",
       "skos:prefLabel": "Performing Arts Recorded Media Reference"
@@ -161,7 +199,9 @@
     {
       "@id": "nyplLocation:maii1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maii1",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -169,7 +209,9 @@
     {
       "@id": "nyplLocation:maf",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf",
       "skos:prefLabel": "SASB - Dorot Jewish Division Rm 111"
@@ -177,7 +219,9 @@
     {
       "@id": "nyplLocation:mag",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mag",
       "skos:prefLabel": "SASB - Milstein Division Rm 121"
@@ -185,7 +229,9 @@
     {
       "@id": "nyplLocation:mal82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mal82",
       "skos:prefLabel": "SASB M1 - General Research - Room 217"
@@ -193,7 +239,9 @@
     {
       "@id": "nyplLocation:mae",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mae",
       "skos:prefLabel": "SASB - Berg Collection Rm 320"
@@ -201,23 +249,29 @@
     {
       "@id": "nyplLocation:mab",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab",
       "skos:prefLabel": "SASB - Art & Architecture Rm 300"
     },
     {
-      "@id": "nyplLocation:mall1",
+      "@id": "nyplLocation:mac",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "mall1",
-      "skos:prefLabel": "SASB - General Research - Room 217"
+      "skos:notation": "mac",
+      "skos:prefLabel": "SASB - Arents Collection Rm 328"
     },
     {
       "@id": "nyplLocation:slee1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slee1",
       "skos:prefLabel": "SIBL - Electronic Information Center"
@@ -225,7 +279,9 @@
     {
       "@id": "nyplLocation:mag98",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mag98",
       "skos:prefLabel": "SASB M2 - Milstein Division - Room 121"
@@ -233,23 +289,19 @@
     {
       "@id": "nyplLocation:malm2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "malm2",
       "skos:prefLabel": "SASB - General Research - Room 217"
     },
     {
-      "@id": "nyplLocation:maj0y",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
-      "nypl:locationType": "Research",
-      "skos:notation": "maj0y",
-      "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Young Reader Rm 84"
-    },
-    {
       "@id": "nyplLocation:myjrv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myjrv",
       "skos:prefLabel": "Reserve Film and Video Children's Fiction"
@@ -257,7 +309,9 @@
     {
       "@id": "nyplLocation:maee2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maee2",
       "skos:prefLabel": "SASB - Berg Collection Rm 320"
@@ -265,7 +319,9 @@
     {
       "@id": "nyplLocation:mas82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mas82",
       "skos:prefLabel": "SASB M1 - Art & Architecture Rm 300"
@@ -273,7 +329,9 @@
     {
       "@id": "nyplLocation:mab92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab92",
       "skos:prefLabel": "SASB M2 - Art and Architecture - Room 300"
@@ -281,7 +339,9 @@
     {
       "@id": "nyplLocation:myh42",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Rose building",
       "nypl:locationType": "Research",
       "skos:notation": "myh42",
@@ -290,7 +350,9 @@
     {
       "@id": "nyplLocation:mab99",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab99",
       "skos:prefLabel": "SASB M2 - Art and Architecture (Restricted) - Room 300"
@@ -298,7 +360,9 @@
     {
       "@id": "nyplLocation:mab98",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab98",
       "skos:prefLabel": "SASB M2 - Art and Architecture - Room 300"
@@ -306,7 +370,9 @@
     {
       "@id": "nyplLocation:myv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myv",
       "skos:prefLabel": "Performing Arts - Reserve Film and Video"
@@ -314,7 +380,9 @@
     {
       "@id": "nyplLocation:myt",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt",
       "skos:prefLabel": "Performing Arts Research Collections - Theatre"
@@ -322,7 +390,9 @@
     {
       "@id": "nyplLocation:slzzz",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slzzz",
       "skos:prefLabel": "SIBL - (error code)"
@@ -330,23 +400,29 @@
     {
       "@id": "nyplLocation:myr",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myr",
       "skos:prefLabel": "Performing Arts Research Collections"
     },
     {
-      "@id": "nyplLocation:slajv",
+      "@id": "nyplLocation:myav3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
-      "nypl:locationType": "Research",
-      "skos:notation": "slajv",
-      "skos:prefLabel": "SIBL - Job Search Central Non-Print Media"
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:locationType": "Branch",
+      "skos:notation": "myav3",
+      "skos:prefLabel": "Performing Arts Closed Shelf Reference Recorded Media"
     },
     {
       "@id": "nyplLocation:mag82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mag82",
       "skos:prefLabel": "SASB M1 - Milstein Division Rm 121"
@@ -354,7 +430,9 @@
     {
       "@id": "nyplLocation:makk3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "makk3",
       "skos:prefLabel": "SASB - Dewitt Wallace Reference Desk Rm 108"
@@ -362,7 +440,9 @@
     {
       "@id": "nyplLocation:mao92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mao92",
       "skos:prefLabel": "SASB M2 - Manuscripts Division - Room 328"
@@ -370,7 +450,9 @@
     {
       "@id": "nyplLocation:slra3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slra3",
       "skos:prefLabel": "SIBL - B. Altman Reference Desk"
@@ -378,23 +460,29 @@
     {
       "@id": "nyplLocation:slajn",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slajn",
       "skos:prefLabel": "SIBL - Job Search Central Non-Fiction"
     },
     {
-      "@id": "nyplLocation:myav3",
+      "@id": "nyplLocation:slajv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
-      "nypl:locationType": "Branch",
-      "skos:notation": "myav3",
-      "skos:prefLabel": "Performing Arts Closed Shelf Reference Recorded Media"
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "slajv",
+      "skos:prefLabel": "SIBL - Job Search Central Non-Print Media"
     },
     {
       "@id": "nyplLocation:myd",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd",
       "skos:prefLabel": "Performing Arts Research Collections - Dance"
@@ -402,7 +490,9 @@
     {
       "@id": "nyplLocation:mya",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya",
       "skos:prefLabel": "Performing Arts - Adult"
@@ -410,7 +500,9 @@
     {
       "@id": "nyplLocation:sla",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sla",
       "skos:prefLabel": "SIBL - Adult"
@@ -418,7 +510,9 @@
     {
       "@id": "nyplLocation:mym",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "General",
       "nypl:locationType": "Research",
       "skos:notation": "mym",
@@ -427,7 +521,9 @@
     {
       "@id": "nyplLocation:myj",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myj",
       "skos:prefLabel": "Performing Arts Children"
@@ -435,7 +531,9 @@
     {
       "@id": "nyplLocation:mal92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mal92",
       "skos:prefLabel": "SASB M2 - General Research Room 217"
@@ -443,7 +541,9 @@
     {
       "@id": "nyplLocation:myh",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "General",
       "nypl:locationType": "Research",
       "skos:notation": "myh",
@@ -452,7 +552,9 @@
     {
       "@id": "nyplLocation:malw",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "malw",
       "skos:prefLabel": "SASB - Wertheim Scholar Room"
@@ -460,7 +562,9 @@
     {
       "@id": "nyplLocation:myj2v",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myj2v",
       "skos:prefLabel": "Performing Arts Circulating Children's Recorded Media"
@@ -468,7 +572,9 @@
     {
       "@id": "nyplLocation:myy2v",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myy2v",
       "skos:prefLabel": "Performing Arts Circulating Young Adult Recorded Media"
@@ -476,7 +582,9 @@
     {
       "@id": "nyplLocation:mae82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mae82",
       "skos:prefLabel": "SASB - Berg Collection Rm 320"
@@ -484,7 +592,9 @@
     {
       "@id": "nyplLocation:myt22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt22",
       "skos:prefLabel": "Performing Arts Research Collections - Theatre"
@@ -493,8 +603,8 @@
       "@id": "nyplLocation:my",
       "@type": "nypl:Location",
       "nypl:locationType": [
-        "Research",
-        " Branch"
+        " Branch",
+        "Research"
       ],
       "skos:notation": "my",
       "skos:prefLabel": "Performing Arts Library at Lincoln Center"
@@ -502,7 +612,9 @@
     {
       "@id": "nyplLocation:maor2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maor2",
       "skos:prefLabel": "SASB - Manuscripts & Archives Rm 328"
@@ -510,23 +622,25 @@
     {
       "@id": "nyplLocation:malc",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "malc",
       "skos:prefLabel": "SASB - Cullman Center"
     },
     {
-      "@id": "nyplLocation:sczzz",
+      "@id": "nyplLocation:ma",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
-      "nypl:locationType": "Research",
-      "skos:notation": "sczzz",
-      "skos:prefLabel": "Schomburg Center - (error code)"
+      "skos:notation": "ma",
+      "skos:prefLabel": "Stephen A. Schwarzman Building"
     },
     {
       "@id": "nyplLocation:mala",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mala",
       "skos:prefLabel": "SASB - Allen Scholar Room"
@@ -534,7 +648,9 @@
     {
       "@id": "nyplLocation:maln",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maln",
       "skos:prefLabel": "SASB - Noma Scholar Room"
@@ -542,23 +658,19 @@
     {
       "@id": "nyplLocation:myy",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myy",
       "skos:prefLabel": "Performing Arts Young Adult"
     },
     {
-      "@id": "nyplLocation:myf22",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
-      "nypl:locationType": "Research",
-      "skos:notation": "myf22",
-      "skos:prefLabel": "Performing Arts Research Collections - TOFT"
-    },
-    {
       "@id": "nyplLocation:myf",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myf",
       "skos:prefLabel": "Performing Arts Research Collections - TOFT"
@@ -566,7 +678,9 @@
     {
       "@id": "nyplLocation:map82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "map82",
       "skos:prefLabel": "SASB M1 - Map Division - Rm 117"
@@ -574,7 +688,9 @@
     {
       "@id": "nyplLocation:mao82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mao82",
       "skos:prefLabel": "SASB - Manuscripts & Archives Rm 328"
@@ -582,25 +698,27 @@
     {
       "@id": "nyplLocation:mym11",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Open shelf reference",
       "nypl:locationType": "Research",
       "skos:notation": "mym11",
       "skos:prefLabel": "Performing Arts Research Collections - Music - Reference"
     },
     {
-      "@id": "nyplLocation:myh23",
+      "@id": "nyplLocation:sc",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
-      "nypl:actualLocation": "2nd floor reference",
       "nypl:locationType": "Research",
-      "skos:notation": "myh23",
-      "skos:prefLabel": "Performing Arts Research Collections - Recorded Sound - 2nd Floor Reference"
+      "skos:notation": "sc",
+      "skos:prefLabel": "Schomburg Center"
     },
     {
       "@id": "nyplLocation:slr22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slr22",
       "skos:prefLabel": "SIBL - B. Altman Desk"
@@ -608,7 +726,9 @@
     {
       "@id": "nyplLocation:myt38",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt38",
       "skos:prefLabel": "Performing Arts Research Collections  Theatre"
@@ -623,23 +743,31 @@
     {
       "@id": "nyplLocation:myh22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Stacks (other than 3rd floor)",
       "nypl:locationType": "Research",
       "skos:notation": "myh22",
       "skos:prefLabel": "Performing Arts Research Collections - Recorded Sound"
     },
     {
-      "@id": "nyplLocation:sc",
+      "@id": "nyplLocation:myh23",
       "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:actualLocation": "2nd floor reference",
       "nypl:locationType": "Research",
-      "skos:notation": "sc",
-      "skos:prefLabel": "Schomburg Center"
+      "skos:notation": "myh23",
+      "skos:prefLabel": "Performing Arts Research Collections - Recorded Sound - 2nd Floor Reference"
     },
     {
       "@id": "nyplLocation:myt32",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt32",
       "skos:prefLabel": "Performing Arts Research Collections  Theatre"
@@ -647,7 +775,9 @@
     {
       "@id": "nyplLocation:slaj1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slaj1",
       "skos:prefLabel": "SIBL - Job Search Central Reference"
@@ -655,7 +785,9 @@
     {
       "@id": "nyplLocation:matel",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "matel",
       "skos:prefLabel": "SASB - Telephone Reference"
@@ -663,7 +795,9 @@
     {
       "@id": "nyplLocation:maf82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf82",
       "skos:prefLabel": "SASB M1 - Dorot Jewish Division Rm 111"
@@ -671,7 +805,9 @@
     {
       "@id": "nyplLocation:mar62",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mar62",
       "skos:prefLabel": "SASB - Rare Book Collection Rm 328"
@@ -679,7 +815,9 @@
     {
       "@id": "nyplLocation:map92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "map92",
       "skos:prefLabel": "SASB M2 - Map Division - Room 117"
@@ -687,7 +825,9 @@
     {
       "@id": "nyplLocation:maf88",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf88",
       "skos:prefLabel": "SASB - Dorot Jewish Division Rm 111"
@@ -695,7 +835,9 @@
     {
       "@id": "nyplLocation:sle",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sle",
       "skos:prefLabel": "SIBL - Electronic Information Center"
@@ -703,7 +845,9 @@
     {
       "@id": "nyplLocation:marr2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "marr2",
       "skos:prefLabel": "SASB - Rare Book Collection Rm 328"
@@ -711,7 +855,9 @@
     {
       "@id": "nyplLocation:scbb2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scbb2",
       "skos:prefLabel": "Schomburg Center - Moving Image & Recorded Sound"
@@ -719,7 +865,9 @@
     {
       "@id": "nyplLocation:myarn",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myarn",
       "skos:prefLabel": "Reserve Film and Video Adult Non-Fiction"
@@ -727,39 +875,49 @@
     {
       "@id": "nyplLocation:slr",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slr",
       "skos:prefLabel": "SIBL - Science Industry and Business"
     },
     {
-      "@id": "nyplLocation:mapp3",
+      "@id": "nyplLocation:maj0y",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "mapp3",
-      "skos:prefLabel": "SASB - Map Division - Desk - Rm 117"
+      "skos:notation": "maj0y",
+      "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Young Reader Rm 84"
     },
     {
       "@id": "nyplLocation:slr12",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slr12",
       "skos:prefLabel": "SIBL - B. Altman Desk"
     },
     {
-      "@id": "nyplLocation:maqq2",
+      "@id": "nyplLocation:mai92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "maqq2",
-      "skos:prefLabel": "SASB - Pforzheimer Collection Rm 319"
+      "skos:notation": "mai92",
+      "skos:prefLabel": "SASB M2 - General Research - Room 217"
     },
     {
       "@id": "nyplLocation:mar",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mar",
       "skos:prefLabel": "SASB - Rare Book Collection Rm 328"
@@ -767,7 +925,9 @@
     {
       "@id": "nyplLocation:myh32",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "3rd floor stacks & back room",
       "nypl:locationType": "Research",
       "skos:notation": "myh32",
@@ -776,7 +936,9 @@
     {
       "@id": "nyplLocation:slar",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slar",
       "skos:prefLabel": "SIBL - Adult Reference"
@@ -784,7 +946,9 @@
     {
       "@id": "nyplLocation:majr",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "majr",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Reference Rm 84"
@@ -792,7 +956,9 @@
     {
       "@id": "nyplLocation:mabb1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mabb1",
       "skos:prefLabel": "SASB - Art Reference Rm 300"
@@ -800,7 +966,9 @@
     {
       "@id": "nyplLocation:mabb2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mabb2",
       "skos:prefLabel": "SASB - Art & Architecture Rm 300"
@@ -808,7 +976,9 @@
     {
       "@id": "nyplLocation:mabb3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mabb3",
       "skos:prefLabel": "SASB - Art - Desk Rm 300"
@@ -816,7 +986,9 @@
     {
       "@id": "nyplLocation:myd42",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd42",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -824,7 +996,9 @@
     {
       "@id": "nyplLocation:magh1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "magh1",
       "skos:prefLabel": "SASB - Milstein Division Microforms Rm 119"
@@ -832,7 +1006,9 @@
     {
       "@id": "nyplLocation:myaos",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myaos",
       "skos:prefLabel": "Performing Arts - Orchestra Collection"
@@ -840,7 +1016,9 @@
     {
       "@id": "nyplLocation:myd48",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd48",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -848,7 +1026,9 @@
     {
       "@id": "nyplLocation:maj92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj92",
       "skos:prefLabel": "SASB M2 - General Research - Room 217"
@@ -856,7 +1036,9 @@
     {
       "@id": "nyplLocation:maf92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf92",
       "skos:prefLabel": "SASB M2 - Dorot Jewish Division - Room 111"
@@ -864,7 +1046,9 @@
     {
       "@id": "nyplLocation:myt28",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt28",
       "skos:prefLabel": "Performing Arts Research Collections  Theatre"
@@ -872,7 +1056,9 @@
     {
       "@id": "nyplLocation:masu2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "masu2",
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
@@ -880,7 +1066,9 @@
     {
       "@id": "nyplLocation:myas1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myas1",
       "skos:prefLabel": "Performing Arts Song Index Reference Score"
@@ -888,7 +1076,9 @@
     {
       "@id": "nyplLocation:maf99",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf99",
       "skos:prefLabel": "SASB M2 - Dorot Jewish Division (Restricted) - Room 111"
@@ -896,7 +1086,9 @@
     {
       "@id": "nyplLocation:maf98",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maf98",
       "skos:prefLabel": "SASB M2 - Dorot Jewish Division - Room 111"
@@ -904,7 +1096,9 @@
     {
       "@id": "nyplLocation:myarv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myarv",
       "skos:prefLabel": "Reserve Film and Video Adult Fiction"
@@ -912,7 +1106,9 @@
     {
       "@id": "nyplLocation:maj03",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj03",
       "skos:prefLabel": "SASB (Children's Non-Circulating) - Main Reading Room 315"
@@ -920,7 +1116,9 @@
     {
       "@id": "nyplLocation:mym32",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Stacks",
       "nypl:locationType": "Research",
       "skos:notation": "mym32",
@@ -929,7 +1127,9 @@
     {
       "@id": "nyplLocation:maj01",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj01",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Reference Rm 84"
@@ -937,7 +1137,9 @@
     {
       "@id": "nyplLocation:maii2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maii2",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -945,7 +1147,9 @@
     {
       "@id": "nyplLocation:masb2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "masb2",
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
@@ -953,7 +1157,9 @@
     {
       "@id": "nyplLocation:mym38",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Special Collections",
       "nypl:locationType": "Research",
       "skos:notation": "mym38",
@@ -962,7 +1168,9 @@
     {
       "@id": "nyplLocation:maii3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maii3",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -970,7 +1178,9 @@
     {
       "@id": "nyplLocation:mai87",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mai87",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -978,7 +1188,9 @@
     {
       "@id": "nyplLocation:mai83",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mai83",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -986,7 +1198,9 @@
     {
       "@id": "nyplLocation:mai82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mai82",
       "skos:prefLabel": "SASB M1 - Periodicals and Microforms Rm 100"
@@ -994,7 +1208,9 @@
     {
       "@id": "nyplLocation:myrfv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myrfv",
       "skos:prefLabel": "Performing Arts - Reserve Film and Video"
@@ -1002,7 +1218,9 @@
     {
       "@id": "nyplLocation:mai",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mai",
       "skos:prefLabel": "SASB - Periodicals and Microforms Rm 100"
@@ -1010,7 +1228,9 @@
     {
       "@id": "nyplLocation:mard2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mard2",
       "skos:prefLabel": "SASB - Rare Book Collection Rm 328"
@@ -1018,7 +1238,9 @@
     {
       "@id": "nyplLocation:myt11",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myt11",
       "skos:prefLabel": "Performing Arts Research Collections - Theatre - Reference"
@@ -1026,7 +1248,9 @@
     {
       "@id": "nyplLocation:mazzz",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mazzz",
       "skos:prefLabel": "SASB - (error code)"
@@ -1034,7 +1258,9 @@
     {
       "@id": "nyplLocation:maj",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj",
       "skos:prefLabel": "SASB - Children's Center Rm 84"
@@ -1042,7 +1268,9 @@
     {
       "@id": "nyplLocation:maj0f",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0f",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Fiction Rm 84"
@@ -1050,7 +1278,9 @@
     {
       "@id": "nyplLocation:slafn",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slafn",
       "skos:prefLabel": "SIBL - Financial Literacy Central Non-Fiction"
@@ -1058,7 +1288,9 @@
     {
       "@id": "nyplLocation:maj0a",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0a",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Easy Book Rm 84"
@@ -1066,7 +1298,9 @@
     {
       "@id": "nyplLocation:maj0n",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0n",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Non-Fiction Rm 84"
@@ -1074,7 +1308,9 @@
     {
       "@id": "nyplLocation:maj0l",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0l",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - World Languages Rm 84"
@@ -1082,23 +1318,29 @@
     {
       "@id": "nyplLocation:maj0h",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0h",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Holiday Book Rm 84"
     },
     {
-      "@id": "nyplLocation:mac",
+      "@id": "nyplLocation:mall1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "mac",
-      "skos:prefLabel": "SASB - Arents Collection Rm 328"
+      "skos:notation": "mall1",
+      "skos:prefLabel": "SASB - General Research - Room 217"
     },
     {
       "@id": "nyplLocation:maj0v",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0v",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Non-Print Media Rm 84"
@@ -1106,7 +1348,9 @@
     {
       "@id": "nyplLocation:maj0t",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0t",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Fairy Tale Rm 84"
@@ -1114,7 +1358,9 @@
     {
       "@id": "nyplLocation:mym28",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "(not used)",
       "nypl:locationType": "Research",
       "skos:notation": "mym28",
@@ -1123,7 +1369,9 @@
     {
       "@id": "nyplLocation:mala1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mala1",
       "skos:prefLabel": "SASB - Allen Room - Reference"
@@ -1131,7 +1379,9 @@
     {
       "@id": "nyplLocation:mym22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Stacks (not used)",
       "nypl:locationType": "Research",
       "skos:notation": "mym22",
@@ -1140,7 +1390,9 @@
     {
       "@id": "nyplLocation:mapp1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mapp1",
       "skos:prefLabel": "SASB - Map Division Reference - Rm 117"
@@ -1148,46 +1400,69 @@
     {
       "@id": "nyplLocation:mapp2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mapp2",
       "skos:prefLabel": "SASB - Map Division - Rm 117"
     },
     {
-      "@id": "nyplLocation:ma",
+      "@id": "nyplLocation:mapp3",
       "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "ma",
-      "skos:prefLabel": "Stephen A. Schwarzman Building"
+      "skos:notation": "mapp3",
+      "skos:prefLabel": "SASB - Map Division - Desk - Rm 117"
     },
     {
       "@id": "nyplLocation:mar82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mar82",
       "skos:prefLabel": "SASB - Rare Book Collection Rm 328"
     },
     {
-      "@id": "nyplLocation:myar",
+      "@id": "nyplLocation:myf22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
-      "nypl:locationType": "Branch",
-      "skos:notation": "myar",
-      "skos:prefLabel": "Performing Arts - Reserve Film and Video"
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "myf22",
+      "skos:prefLabel": "Performing Arts Research Collections - TOFT"
     },
     {
       "@id": "nyplLocation:maj0i",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maj0i",
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Picture Book Rm 84"
     },
     {
+      "@id": "nyplLocation:myar",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:locationType": "Branch",
+      "skos:notation": "myar",
+      "skos:prefLabel": "Performing Arts - Reserve Film and Video"
+    },
+    {
       "@id": "nyplLocation:malv2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "malv2",
       "skos:prefLabel": "SASB - General Research - Room 217"
@@ -1195,7 +1470,9 @@
     {
       "@id": "nyplLocation:myh11",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:actualLocation": "Open shelf reference-3rd floor",
       "nypl:locationType": "Research",
       "skos:notation": "myh11",
@@ -1204,7 +1481,9 @@
     {
       "@id": "nyplLocation:mya0s",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya0s",
       "skos:prefLabel": "Performing Arts Circulating Score"
@@ -1212,7 +1491,9 @@
     {
       "@id": "nyplLocation:myd28",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd28",
       "skos:prefLabel": "Performing Arts Research Collections  Dance"
@@ -1220,7 +1501,9 @@
     {
       "@id": "nyplLocation:max82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "max82",
       "skos:prefLabel": "SASB - Printing Masters"
@@ -1228,7 +1511,9 @@
     {
       "@id": "nyplLocation:myd22",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd22",
       "skos:prefLabel": "Performing Arts Research Collections - Dance"
@@ -1236,7 +1521,9 @@
     {
       "@id": "nyplLocation:mac82",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mac82",
       "skos:prefLabel": "SASB - Arents Collection Rm 328"
@@ -1244,7 +1531,9 @@
     {
       "@id": "nyplLocation:scb",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scb",
       "skos:prefLabel": "Schomburg Center - Moving Image & Recorded Sound"
@@ -1252,7 +1541,9 @@
     {
       "@id": "nyplLocation:scc",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scc",
       "skos:prefLabel": "Schomburg Center - Art & Artifacts"
@@ -1260,7 +1551,9 @@
     {
       "@id": "nyplLocation:mas62",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mas62",
       "skos:prefLabel": "SASB S6 - Art & Architecture Rm 300"
@@ -1268,7 +1561,9 @@
     {
       "@id": "nyplLocation:scf",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scf",
       "skos:prefLabel": "Schomburg Center - Research & Reference"
@@ -1276,7 +1571,9 @@
     {
       "@id": "nyplLocation:scd",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scd",
       "skos:prefLabel": "Schomburg Center - Manuscripts & Archives"
@@ -1284,7 +1581,9 @@
     {
       "@id": "nyplLocation:sce",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sce",
       "skos:prefLabel": "Schomburg Center - Photographs & Prints"
@@ -1292,7 +1591,9 @@
     {
       "@id": "nyplLocation:mya01",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya01",
       "skos:prefLabel": "Performing Arts Reference"
@@ -1300,7 +1601,9 @@
     {
       "@id": "nyplLocation:mya03",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya03",
       "skos:prefLabel": "Performing Arts Closed Shelf Reference"
@@ -1308,7 +1611,9 @@
     {
       "@id": "nyplLocation:sccc2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sccc2",
       "skos:prefLabel": "Schomburg Center - Art & Artifacts"
@@ -1316,7 +1621,9 @@
     {
       "@id": "nyplLocation:sccc3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sccc3",
       "skos:prefLabel": "Schomburg Center - Art & Artifacts - Desk"
@@ -1324,7 +1631,9 @@
     {
       "@id": "nyplLocation:magg2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "magg2",
       "skos:prefLabel": "SASB - Milstein Division - Mezzanine"
@@ -1332,7 +1641,9 @@
     {
       "@id": "nyplLocation:magg3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "magg3",
       "skos:prefLabel": "SASB - Milstein Division - Desk Rm 121"
@@ -1340,7 +1651,9 @@
     {
       "@id": "nyplLocation:mab62",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mab62",
       "skos:prefLabel": "SASB S6 - Art & Architecture Rm 300"
@@ -1348,7 +1661,9 @@
     {
       "@id": "nyplLocation:magg1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "magg1",
       "skos:prefLabel": "SASB - Milstein Division Reference Rm 121"
@@ -1356,7 +1671,9 @@
     {
       "@id": "nyplLocation:maq",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maq",
       "skos:prefLabel": "SASB - Pforzheimer Collection Rm 319"
@@ -1364,7 +1681,9 @@
     {
       "@id": "nyplLocation:sla01",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sla01",
       "skos:prefLabel": "SIBL - Reference"
@@ -1372,15 +1691,29 @@
     {
       "@id": "nyplLocation:maln1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "maln1",
       "skos:prefLabel": "SASB - Shoichi Noma Global Studies Rm 219 - Reference"
     },
     {
+      "@id": "nyplLocation:sczzz",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "sczzz",
+      "skos:prefLabel": "Schomburg Center - (error code)"
+    },
+    {
       "@id": "nyplLocation:scee2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scee2",
       "skos:prefLabel": "Schomburg Center - Photographs & Prints"
@@ -1388,7 +1721,9 @@
     {
       "@id": "nyplLocation:myzzz",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": [
         "Research",
         " Branch"
@@ -1399,7 +1734,9 @@
     {
       "@id": "nyplLocation:mar92",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mar92",
       "skos:prefLabel": "SASB - Rare Books Division - Room 324"
@@ -1407,7 +1744,9 @@
     {
       "@id": "nyplLocation:myyrv",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "myyrv",
       "skos:prefLabel": "Reserve Film and Video Young Adult"
@@ -1415,7 +1754,9 @@
     {
       "@id": "nyplLocation:macc2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "macc2",
       "skos:prefLabel": "SASB - Arents Collection Rm 328"
@@ -1423,7 +1764,9 @@
     {
       "@id": "nyplLocation:scff1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scff1",
       "skos:prefLabel": "Schomburg Center - Research & Reference - Open Shelf"
@@ -1431,7 +1774,9 @@
     {
       "@id": "nyplLocation:scff2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scff2",
       "skos:prefLabel": "Schomburg Center - Research & Reference"
@@ -1439,7 +1784,9 @@
     {
       "@id": "nyplLocation:scff3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scff3",
       "skos:prefLabel": "Schomburg Center - Research & Reference - Desk"
@@ -1447,7 +1794,9 @@
     {
       "@id": "nyplLocation:malw1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "malw1",
       "skos:prefLabel": "SASB - Wertheim Study Rm 228W - Reference"
@@ -1455,23 +1804,29 @@
     {
       "@id": "nyplLocation:myd38",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd38",
       "skos:prefLabel": "Performing Arts Research Collections  Dance"
     },
     {
-      "@id": "nyplLocation:maff1",
+      "@id": "nyplLocation:mab72",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
-      "skos:notation": "maff1",
-      "skos:prefLabel": "SASB - Dorot Jewish Division Reference Rm 111"
+      "skos:notation": "mab72",
+      "skos:prefLabel": "DO NOT USE--delete this code"
     },
     {
       "@id": "nyplLocation:mabm2",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/ma",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "mabm2",
       "skos:prefLabel": "SASB - Art & Architecture Rm 300"
@@ -1479,7 +1834,9 @@
     {
       "@id": "nyplLocation:myd32",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd32",
       "skos:prefLabel": "Performing Arts Research Collections - Dance"
@@ -1487,7 +1844,9 @@
     {
       "@id": "nyplLocation:myd11",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "myd11",
       "skos:prefLabel": "Performing Arts Research Collections - Dance - Reference"
@@ -1495,7 +1854,9 @@
     {
       "@id": "nyplLocation:sla0n",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sla0n",
       "skos:prefLabel": "SIBL - Non-Fiction"
@@ -1503,7 +1864,9 @@
     {
       "@id": "nyplLocation:slrc3",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "slrc3",
       "skos:prefLabel": "SIBL - B. Altman Desk"
@@ -1511,7 +1874,9 @@
     {
       "@id": "nyplLocation:mya0v",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/my",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
       "nypl:locationType": "Branch",
       "skos:notation": "mya0v",
       "skos:prefLabel": "Performing Arts Circulating Recorded Media"
@@ -1519,7 +1884,9 @@
     {
       "@id": "nyplLocation:sla0f",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sl",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "sla0f",
       "skos:prefLabel": "SIBL - Fiction"
@@ -1527,7 +1894,84 @@
     {
       "@id": "nyplLocation:scdd1",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": "http://data.nypl.org/locations/sc",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
       "nypl:locationType": "Research",
       "skos:notation": "scdd1",
-      "skos:prefL
+      "skos:prefLabel": "Schomburg Center - Manuscripts & Archives Reference"
+    },
+    {
+      "@id": "nyplLocation:scdd2",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "scdd2",
+      "skos:prefLabel": "Schomburg Center - Manuscripts & Archives"
+    },
+    {
+      "@id": "nyplLocation:mya0n",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:locationType": "Branch",
+      "skos:notation": "mya0n",
+      "skos:prefLabel": "Performing Arts Circulating Non-Fiction"
+    },
+    {
+      "@id": "nyplLocation:mym48",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:actualLocation": "Rose restricted (not used)",
+      "nypl:locationType": "Research",
+      "skos:notation": "mym48",
+      "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
+    },
+    {
+      "@id": "nyplLocation:maff1",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "maff1",
+      "skos:prefLabel": "SASB - Dorot Jewish Division Reference Rm 111"
+    },
+    {
+      "@id": "nyplLocation:maff3",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "maff3",
+      "skos:prefLabel": "SASB - Dorot Jewish Division - Desk Rm 111"
+    },
+    {
+      "@id": "nyplLocation:sla0v",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sl"
+      },
+      "nypl:locationType": "Research",
+      "skos:notation": "sla0v",
+      "skos:prefLabel": "SIBL - Non-Print Media"
+    },
+    {
+      "@id": "nyplLocation:mym42",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:actualLocation": "Rose",
+      "nypl:locationType": "Research",
+      "skos:notation": "mym42",
+      "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
+    }
+  ]
+}
