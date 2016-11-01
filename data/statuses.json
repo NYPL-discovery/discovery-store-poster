@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "nypl": "http://data.nypl.org/nypl-core/",
+    "status": "http://data.nypl.org/status/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "status:available",
+      "@type": "nypl:Status",
+      "skos:notation": "available",
+      "skos:prefLabel": "Available"
+    },
+    {
+      "@id": "status:unavailable",
+      "@type": "nypl:Status",
+      "skos:notation": "unavailable",
+      "skos:prefLabel": "Unavailable"
+    }
+  ]
+}
