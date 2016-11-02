@@ -1,18 +1,11 @@
 {
   "@context": {
-<<<<<<< HEAD
     "nypl": "http://data.nypl.org/nypl-core/",
     "nyplStatus": "http://data.nypl.org/statuses/",
-=======
-    "dcterms": "http://purl.org/dc/terms/",
-    "nypl": "http://data.nypl.org/nypl-core/",
-    "status": "http://data.nypl.org/status/",
->>>>>>> dff7391973be9878ec447e61b6612fe2ff7b8731
     "skos": "http://www.w3.org/2004/02/skos/core#"
   },
   "@graph": [
     {
-<<<<<<< HEAD
       "@id": "nyplStatus:c",
       "@type": "nypl:Status",
       "skos:notation": "c",
@@ -188,18 +181,3 @@
     }
   ]
 }
-=======
-      "@id": "status:available",
-      "@type": "nypl:Status",
-      "skos:notation": "available",
-      "skos:prefLabel": "Available"
-    },
-    {
-      "@id": "status:unavailable",
-      "@type": "nypl:Status",
-      "skos:notation": "unavailable",
-      "skos:prefLabel": "Unavailable"
-    }
-  ]
-}
->>>>>>> dff7391973be9878ec447e61b6612fe2ff7b8731
