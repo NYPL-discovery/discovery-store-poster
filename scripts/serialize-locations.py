@@ -14,6 +14,7 @@ nypl = Namespace('http://data.nypl.org/nypl-core/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 dcterms = Namespace('http://purl.org/dc/terms/')
 nyplLocation = rdflib.URIRef('http://data.nypl.org/locations/')
+nyplOrg = rdflib.URIRef('http://data.nypl.org/orgs/')
 
 g = Graph()
 
@@ -33,6 +34,9 @@ for r in reader:
     if r['dcterms:isPartOf'] != '':
         sublocationOf = nyplLocation + r['dcterms:isPartOf']
         g.add( (location, dcterms.isPartOf, sublocationOf))
+    if r['nypl:owner'] != '':
+        owner = nyplOrg + str(r['nypl:owner'])
+        g.add( (location, nypl.owner, owner))
     if actualLocation != '':
         actualLocation = rdflib.Literal(actualLocation)
         g.add ( (location, nypl.actualLocation, actualLocation) )
@@ -50,4 +54,4 @@ context = {"dcterms": "http://purl.org/dc/terms/",
 z.write(g.serialize(format="json-ld", context=context))
 
 z.close()
-f.close()
+
