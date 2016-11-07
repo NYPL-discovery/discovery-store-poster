@@ -1,0 +1,257 @@
+ITYPE,LABEL,Comments,Branch vs. Research
+0,default,Do Not Use,Research
+1,non-circ,General Materials,Research
+2,book non-circ,General Bound Book,Research
+3,serial,Periodicals etc.,Research
+4,"serial, loose",Periodicals etc.,Research
+5,"serial, loose, 1 hour",Periodicals etc.,Research
+6,microfilm service copy,,Research
+7,"printed music, non-circ",,Research
+8,manuscript music,,Research
+9,map,,Research
+10,"map, manuscript",,Research
+11,"videorecording, non-circ",Service Copy,Research
+12,musical sound recording,Service Copy,Research
+13,spoken sound recording,Service Copy,Research
+14,moving image,Service Copy,Research
+15,flat graphic,,Research
+16,computer file,,Research
+17,kit,,Research
+18,mixed medium collection,,Research
+19,3-D object,,Research
+20,manuscript,,Research
+21,archival material,Print,Research
+22,clipping files,,Research
+23,archival sound recording,Preservation Copy,Research
+24,archival video recording,Preservation Copy,Research
+25,atlas,,Research
+26,microfiche,,Research
+27,preservation master negative,A.O. (archival original),Research
+28,printing master negative,P.M.,Research
+29,bundled materials (vols.),,Research
+30,loose newspaper,,Research
+31,"google project, non-circ",Public Domain,Research
+32,"google project, book",Public Domain,Research
+33,"google project, serial",Public Domain,Research
+34,micro-opaque,,Research
+35,"cd-rom, dvd-rom",,Research
+36,www based,,Research
+37,master recording,A.O. ???,Research
+38,art and artifacts,,Research
+39,Not In Use,,Research
+40,Not In Use,,Research
+41,"internet archive, non-circ",Public Domain,Research
+42,"internet archive, book",Public Domain,Research
+43,"internet archive, serial",Public Domain,Research
+44,Not In Use,,Research
+45,Not In Use,,Research
+46,Not In Use,,Research
+47,Not In Use,,Research
+48,Not In Use,,Research
+49,Not In Use,,Research
+50,Not In Use,,Research
+51,i-archive/google non-circ,Public Domain,Research
+52,i-archive/google monograph,Public Domain,Research
+53,i-archive/google serial,Public Domain,Research
+54,Not In Use,,Research
+55,"book, limited circ, MaRLI",Leaves SASB,Research
+56,Not In Use,,Research
+57,printed music limited circ MaRLI,Leaves SASB,Research
+58,Not In Use,,Research
+59,Not In Use,,Research
+60,"pamphlets, singles, 1-50 pages",,Research
+61,"pamphlet volumes, bound with",,Research
+62,Not In Use,,Research
+63,Not In Use,,Research
+64,Not In Use,,Research
+65,"book, good condition, non-MaRLI",Conservation Candidate,Research
+66,"book, poor condition, non-MaRLI",Conservation Candidate,Research
+67,"printed music, good, non-MaRLI",Conservation Candidate,Research
+68,"printed music, poor, non-MaRLI",Conservation Candidate,Research
+69,Not In Use,,Research
+70,Not In Use,,Research
+71,Not In Use,,Research
+72,Not In Use,,Research
+73,Not In Use,,Research
+74,Not In Use,,Research
+75,Not In Use,,Research
+76,Not In Use,,Research
+77,Not In Use,,Research
+78,Not In Use,,Research
+79,Interlibrary Loan - Research,,Research
+80,Not In Use,,Research
+81,Not In Use,,Research
+82,Not In Use,,Research
+83,Not In Use,,Research
+84,Not In Use,,Research
+85,Not In Use,,Research
+86,Not In Use,,Research
+87,Not In Use,,Research
+88,Not In Use,,Research
+89,Not In Use,,Research
+90,Not In Use,,Research
+91,Not In Use,,Research
+92,Not In Use,,Research
+93,Not In Use,,Research
+94,Not In Use,,Research
+95,Not In Use,,Research
+96,Not In Use,,Research
+97,Not In Use,,Research
+98,Not In Use,,Research
+99,Not In Use,,Research
+100,Not In Use,,Research
+101,"Book, circ",Adult,Branch
+102,"Book, paperback",Adult,Branch
+103,"Book, express",Adult,Branch
+104,"Reference non-circ Book,PER,etc.",Adult,Branch
+105,Pamphlet,Adult,Branch
+106,Center for reading/writing,Adult,Branch
+107,"Periodical, circ, serial",Adult,Branch
+108,Lpa score,Adult,Branch
+109,Lpa song index score,Adult,Branch
+110,VHS,Adult,Branch
+111,DVD,Adult,Branch
+112,DVD express,Adult,Branch
+113,VCD,Adult,Branch
+114,Compact disc,Adult,Branch
+115,Cd express,Adult,Branch
+116,Audiocassette,Adult,Branch
+117,"Book, circ, 2-Week, New",Adult,Branch
+118,Recorded book,Adult,Branch
+119,Software,Adult,Branch
+120,Picture,Adult,Branch
+121,Mixed media set,Adult,Branch
+122,Cd-rom,Adult,Branch
+123,Game express,Adult,Branch
+124,E-nypl book,,Branch
+125,E-nypl audio book,,Branch
+126,E-nypl music,,Branch
+127,E-nypl video,,Branch
+128,Wireless laptop,,Branch
+129,Borrowed ILL,,Branch
+130,Equipment,,Branch
+131,Adult fast add item,On-The-Fly,Branch
+132,RFVC - FILM,LPA Only,Branch
+133,RFVC - FILM PRESERVATION,LPA Only,Branch
+134,RFVC - VHS,LPA Only,Branch
+135,RFVC - DVD,LPA Only,Branch
+136,"Leased book 2-Week, New",Adult,Branch
+137,"Leased book, express",Adult,Branch
+138,"Leased book, 3-week",Adult,Branch
+139,Chrome book,,Branch
+140,Blu-ray,,Branch
+141,Blu-ray express,,Branch
+142,RFVC - LPA Blu-ray,,Branch
+143,"ELL book, iZone at AG,IN,MH,SE",,Branch
+144,Lpa orchestra collection,LPA Only,Branch
+145,Not In Use,,Branch
+146,Not In Use,,Branch
+147,Not In Use,,Branch
+148,Not In Use,,Branch
+149,Not In Use,,Branch
+150,Clear WiFi Access Point,,Branch
+151,Not In Use,,Branch
+152,Not In Use,,Branch
+153,Not In Use,,Branch
+154,Not In Use,,Branch
+155,Not In Use,,Branch
+156,Not In Use,,Branch
+157,Not In Use,,Branch
+158,Not In Use,,Branch
+159,Not In Use,,Branch
+160,Not In Use,,Branch
+161,Not In Use,,Branch
+162,Not In Use,,Branch
+163,Not In Use,,Branch
+164,Not In Use,,Branch
+165,Not In Use,,Branch
+166,Not In Use,,Branch
+167,Not In Use,,Branch
+168,Not In Use,,Branch
+169,Not In Use,,Branch
+170,Not In Use,,Branch
+171,Not In Use,,Branch
+172,Not In Use,,Branch
+173,Not In Use,,Branch
+174,Not In Use,,Branch
+175,Not In Use,,Branch
+176,Not In Use,,Branch
+177,Not In Use,,Branch
+178,Not In Use,,Branch
+179,Not In Use,,Branch
+180,Not In Use,,Branch
+181,Not In Use,,Branch
+182,Not In Use,,Branch
+183,Not In Use,,Branch
+184,Not In Use,,Branch
+185,Not In Use,,Branch
+186,Not In Use,,Branch
+187,Not In Use,,Branch
+188,Not In Use,,Branch
+189,Not In Use,,Branch
+190,Not In Use,,Branch
+191,Not In Use,,Branch
+192,Not In Use,,Branch
+193,Not In Use,,Branch
+194,Not In Use,,Branch
+195,Not In Use,,Branch
+196,Not In Use,,Branch
+197,Not In Use,,Branch
+198,Not In Use,,Branch
+199,Not In Use,,Branch
+200,Not In Use,,Branch
+201,J book,Juvenile,Branch
+202,J recorded book,Juvenile,Branch
+203,J compact disc,Juvenile,Branch
+204,J cd-rom,Juvenile,Branch
+205,J audiocassette,Juvenile,Branch
+206,J DVD,Juvenile,Branch
+207,J fast add item,"Juvenile, ON-THE-FLY",Branch
+208,J game express,Juvenile,Branch
+209,J mixed media set,Juvenile,Branch
+210,J long playing record,Juvenile,Branch
+211,J paperback,Juvenile,Branch
+212,J periodical,Juvenile,Branch
+213,J reference,Juvenile,Branch
+214,J software,Juvenile,Branch
+215,J videocassette,Juvenile,Branch
+216,J DVD express,Juvenile,Branch
+217,J Blu-ray,Juvenile,Branch
+218,J Blu-ray express,Juvenile,Branch
+219,J ELL book at AG IN MH SE,Juvenile,Branch
+220,J pre-k book,,Branch
+221,Not In Use,,Branch
+222,Not In Use,,Branch
+223,Not In Use,,Branch
+224,Not In Use,,Branch
+225,Not In Use,,Branch
+226,Not In Use,,Branch
+227,Not In Use,,Branch
+228,Not In Use,,Branch
+229,Not In Use,,Branch
+230,YA DVD express,Young Adult,Branch
+231,YA book,Young Adult,Branch
+232,YA recorded book,Young Adult,Branch
+233,YA CD,Young Adult,Branch
+234,YA CD express,Young Adult,Branch
+235,YA DVD,Young Adult,Branch
+236,YA game express,Young Adult,Branch
+237,YA pamphlet,Young Adult,Branch
+238,YA paperback,Young Adult,Branch
+239,YA periodical,Young Adult,Branch
+240,YA Blu-ray,Young Adult,Branch
+241,YA Blu-ray express,Young Adult,Branch
+242,YA ELL book at AG IN MH SE,Young Adult,Branch
+243,Not In Use,,Branch
+244,Not In Use,,Branch
+245,Not In Use,,Branch
+246,Not In Use,,Branch
+247,Not In Use,,Branch
+248,Not In Use,,Branch
+249,Not In Use,,Branch
+250,Not In Use,,Branch
+251,Not In Use,,Branch
+252,Teacher Set (DOE EDUCATOR ONLY),DOE Only,Branch
+253,Teacher Set Playaway,DOE Only,Branch
+254,Not In Use,,Branch
+255,Not In Use,,Branch

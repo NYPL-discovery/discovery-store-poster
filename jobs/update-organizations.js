@@ -1,6 +1,6 @@
 'use strict'
 
-const LocationsUpdater = require('../lib/locations-updater')
+const OrganizationsUpdater = require('../lib/organizations-updater')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
@@ -8,4 +8,4 @@ var argv = require('optimist')
   .describe('limit', 'Limit to this number of records')
   .argv
 
-; (new LocationsUpdater()).update(argv.offset, argv.limit)
+; (new OrganizationsUpdater()).update(argv.offset, argv.limit)

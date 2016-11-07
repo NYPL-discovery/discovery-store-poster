@@ -1,0 +1,15 @@
+Entity,RDF class,Refines,Definition,,,,Source,Notes,Questions/ToDo
+Organization,org:Organization  ,,,,,,,,
+Organizational unit,org:OrganizationalUnit,,,,,,,,
+Agent,edm:Agent,,Organizations can also be Agents.,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Registry property,RDF property,JSON-LD context,Definition,Range,Controlled vocabularies,Obligation/Expectations,Source,Notes,Questions/ToDo
+Type,rdfs:type,@type,"Organizations will be of type org:Organization or org:OrganizationalUnit, but may also be an edm:Agent.","org:Organization
+org:OrganizationalUnit
+edm:Agent",,1-2,,,
+Code,skos:notation,,The short code of the organization or unit.,xsd:literal,,1,,,
+Full name,skos:prefLabel,,The full name of the organization or unit.,xsd:literal,,1,,,
+Member of ,org:unitOf,,The parent organization or unit.,"org:Organization
+org:OrganizationalUnit",,0-n,,,
+Short name,skos:altLabel,,The short name of the organization or unit.,xsd:literal,,0-n,,,
