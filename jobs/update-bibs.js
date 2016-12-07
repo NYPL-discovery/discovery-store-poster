@@ -8,11 +8,14 @@ var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
   .describe('offset', 'Start at index')
   .describe('limit', 'Limit to this number of records')
+  .describe('until', 'Stop after processing this offset')
   .describe('debug', 'Enable debug mode')
   .describe('uri', 'Process specific bib (from api)')
   .describe('apiall', 'Process all bibs from api')
   .describe('backfill', 'Back-fill bibs based on existing items (from api)')
   .describe('loglevel', 'Specify log level (default error)')
+  .describe('threads', 'Specify number of threads to run it under')
+  .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
   .argv
 
 var opts = {
@@ -21,12 +24,17 @@ var opts = {
 
 log.setLevel(argv.loglevel || 'error')
 
+// If --until given, dynamically set limit:
+if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
+
 if (argv.uri) {
   ; (new BibsUpdater()).bib(argv.uri)
 } else if (argv.apiall) {
   ; (new BibsUpdater()).bibs()
 } else if (argv.backfill) {
   ; (new BibsUpdater()).backfill()
+} else if (argv.threads) {
+  BibsUpdater.threaded(argv)
 } else {
   ; (new BibsUpdater()).update(argv.offset, argv.limit, opts)
 }

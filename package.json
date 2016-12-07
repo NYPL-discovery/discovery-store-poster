@@ -4,6 +4,9 @@
     "avro-js": "^1.8.0",
     "avro-parser": "^1.0.1",
     "avsc": "^4.1.9",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.5.5",
+    "bluebird": "^3.4.6",
     "config": "^1.21.0",
     "csv-parse": "^1.1.7",
     "fast-csv": "^2.3.0",
@@ -14,6 +17,7 @@
     "mkdirp": "^0.5.1",
     "mongodb": "^2.2.10",
     "optimist": "^0.6.1",
+    "redis": "^2.6.3",
     "request": "^2.75.0",
     "request-promise": "^4.1.1",
     "stream": "0.0.2"
