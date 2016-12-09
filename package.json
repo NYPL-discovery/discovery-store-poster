@@ -7,6 +7,8 @@
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.5.5",
     "bluebird": "^3.4.6",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "config": "^1.21.0",
     "csv-parse": "^1.1.7",
     "fast-csv": "^2.3.0",
@@ -17,6 +19,10 @@
     "mkdirp": "^0.5.1",
     "mongodb": "^2.2.10",
     "optimist": "^0.6.1",
+    "orm": "^3.1.0",
+    "pg": "^6.1.0",
+    "pg-promise": "^5.4.7",
+    "q-orm": "0.0.3",
     "redis": "^2.6.3",
     "request": "^2.75.0",
     "request-promise": "^4.1.1",
@@ -26,7 +32,13 @@
     "mocha": "^3.1.2"
   },
   "scripts": {
-    "test": "standard && mocha test"
+    "test": "standard && mocha"
+  },
+  "standard": {
+    "ignore": [
+      "cache/**",
+      "data/**"
+    ]
   },
   "description": "",
   "license": "MIT",
