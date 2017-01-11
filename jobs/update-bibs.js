@@ -7,6 +7,8 @@ const BibsUpdater = require('../lib/bibs-updater')
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
   .describe('offset', 'Start at index')
+  .describe('skip', 'Skip this many (useful if starting offset unknown)')
+  .describe('seek', 'skip everything except this id')
   .describe('limit', 'Limit to this number of records')
   .describe('until', 'Stop after processing this offset')
   .describe('debug', 'Enable debug mode')
@@ -19,10 +21,14 @@ var argv = require('optimist')
   .argv
 
 var opts = {
-  debug: argv.debug
+  debug: argv.debug,
+  skip: parseInt(argv.skip) || 0,
+  offset: parseInt(argv.offset) || 0,
+  limit: parseInt(argv.limit) || 0,
+  seek: argv.seek || null
 }
 
-log.setLevel(argv.loglevel || 'error')
+log.setLevel(argv.loglevel || 'info')
 
 // If --until given, dynamically set limit:
 if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
@@ -36,5 +42,5 @@ if (argv.uri) {
 } else if (argv.threads) {
   BibsUpdater.threaded(argv)
 } else {
-  ; (new BibsUpdater()).update(argv.offset, argv.limit, opts)
+  ; (new BibsUpdater()).update(opts)
 }

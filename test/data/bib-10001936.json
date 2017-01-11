@@ -1,0 +1,459 @@
+{
+  "id": "10001936",
+  "updatedDate": "2012-03-08T20:58:41Z",
+  "createdDate": "2008-12-13T15:51:43Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": {
+    "code": "arm",
+    "name": "Armenian"
+  },
+  "title": "Niwtʻer azgayin patmutʻian hamar Ereveli hay kazunkʻ ; Parskastan",
+  "author": "Shermazanian, Galust.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1891,
+  "catalogDate": "2000-12-15",
+  "country": {
+    "code": "ru ",
+    "name": "Russia (Federation)"
+  },
+  "orders": [],
+  "normTitle": "niwtʻer azgayin patmutʻian hamar ereveli hay kazunkʻ parskastan",
+  "normAuthor": "shermazanian galust",
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "arm",
+      "display": "Armenian"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0"
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "2"
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-12-15"
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10001936"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-13T15:51:43Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-08T20:58:41Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "10"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "89": {
+      "label": "Country",
+      "value": "ru ",
+      "display": "Russia (Federation)"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2011-10-18T00:32:15Z"
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " "
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Shermazanian, Galust."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Armenians"
+        },
+        {
+          "tag": "z",
+          "content": "Iran"
+        },
+        {
+          "tag": "x",
+          "content": "History."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NNSZ00201976"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0201934"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Publication date from cover."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "530",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Also available on microform;"
+        },
+        {
+          "tag": "d",
+          "content": "service copy classmark: *ZO-867 no. 1."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In Armenian."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Microfilmed;"
+        },
+        {
+          "tag": "c",
+          "content": "2007"
+        },
+        {
+          "tag": "5",
+          "content": "NN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG002001377-B"
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ṛostov (Doni Vra) :"
+        },
+        {
+          "tag": "b",
+          "content": "Tparan Hovhannu Tēr-Abrahamian,"
+        },
+        {
+          "tag": "c",
+          "content": "1890 [i.e. 1891]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*ONR 84-743"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "400 p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "21 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Niwtʻer azgayin patmutʻian hamar"
+        },
+        {
+          "tag": "b",
+          "content": "Ereveli hay kazunkʻ ; Parskastan /"
+        },
+        {
+          "tag": "c",
+          "content": "Ashkhatasirutʻiamb Galust Shermazaniani."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b10019479"
+        },
+        {
+          "tag": "b",
+          "content": "12-23-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-29-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "Microfilm"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)261137689"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://hdl.handle.net/2027/nyp.33433001892276"
+        },
+        {
+          "tag": "z",
+          "content": "Full text available via HathiTrust"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20001116192438.3"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "850225s1891    ru       b    000 0carm dcam i "
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "a-ir---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ho"
+        },
+        {
+          "tag": "b",
+          "content": "12-15-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "arm"
+        },
+        {
+          "tag": "g",
+          "content": "ru "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "content": "00000cam  2200277 i 4500"
+    }
+  ],
+  "nyplSource": "sierra-nypl"
+}

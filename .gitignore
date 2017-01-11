@@ -5,6 +5,7 @@ npm-debug.log*
 
 .DS_STORE
 ./config/local.json
+./config/local-production.json
 
 local.json
 

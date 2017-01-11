@@ -1,0 +1,322 @@
+{
+  "id": "10781594",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "item",
+  "updatedDate": "2016-10-29T00:53:24+00:00",
+  "createdDate": "2009-02-03T17:05:15+00:00",
+  "deletedDate": null,
+  "deleted": false,
+  "bibIds": [
+    "13689507"
+  ],
+  "location": {
+    "code": "rc2sl",
+    "name": "OFFSITE - Request in Advance"
+  },
+  "status": {
+    "code": "-",
+    "display": "AVAILABLE",
+    "dueDate": null
+  },
+  "barcode": "33433007725926",
+  "callNumber": "|hTPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)",
+  "itemType": null,
+  "fixedFields": [
+    {
+      "label": "Price",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Inhouse Use",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Total Checkouts",
+      "value": 1,
+      "display": null
+    },
+    {
+      "label": "Item Type",
+      "value": "66",
+      "display": null
+    },
+    {
+      "label": "Item Use 3",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Holdings Item Tag",
+      "value": "6",
+      "display": null
+    },
+    {
+      "label": "Inherit Location",
+      "value": false,
+      "display": null
+    },
+    {
+      "label": "Last Year Circ",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Item Agency",
+      "value": "218",
+      "display": "ReCAP (NL) - SASB Restricted"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    {
+      "label": "Copy No.",
+      "value": 1,
+      "display": null
+    },
+    {
+      "label": "IR Dist Learn Same Site",
+      "value": "0",
+      "display": null
+    },
+    {
+      "label": "Record Number",
+      "value": "10781594",
+      "display": null
+    },
+    {
+      "label": "PDATE",
+      "value": "2016-10-27T01:22:22Z",
+      "display": null
+    },
+    {
+      "label": "Copy Use",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Inventory Date",
+      "value": "2014-06-01T08:00:00Z",
+      "display": null
+    },
+    {
+      "label": "Item Code 2",
+      "value": "-",
+      "display": null
+    },
+    {
+      "label": "Created Date",
+      "value": "2009-02-03T17:05:15Z",
+      "display": null
+    },
+    {
+      "label": "Year-to-Date Circ",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "60",
+      "display": null
+    },
+    {
+      "label": "OPAC Message",
+      "value": "u",
+      "display": null
+    },
+    {
+      "label": "Total Renewals",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Updated Date",
+      "value": "2016-10-29T00:53:24Z",
+      "display": null
+    },
+    {
+      "label": "Location",
+      "value": "rc2sl",
+      "display": "OFFSITE - Request in Advance"
+    },
+    {
+      "label": "Item Message",
+      "value": "-",
+      "display": null
+    },
+    {
+      "label": "Checkin Location",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Status",
+      "value": "-",
+      "display": "AVAILABLE"
+    },
+    {
+      "label": "Record Type",
+      "value": "i",
+      "display": null
+    },
+    {
+      "label": "BIB HOLD",
+      "value": false,
+      "display": null
+    },
+    {
+      "label": "Checkout Location",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Item Code 1",
+      "value": "0",
+      "display": null
+    },
+    {
+      "label": "VI Central",
+      "value": 0,
+      "display": null
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)"
+        },
+        {
+          "tag": "c",
+          "content": "33433007725926"
+        },
+        {
+          "tag": "e",
+          "content": "v. 2"
+        },
+        {
+          "tag": "h",
+          "content": "1"
+        },
+        {
+          "tag": "i",
+          "content": "0"
+        },
+        {
+          "tag": "j",
+          "content": "-"
+        },
+        {
+          "tag": "k",
+          "content": "2"
+        },
+        {
+          "tag": "l",
+          "content": "$0.00"
+        },
+        {
+          "tag": "m",
+          "content": "0"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "o",
+          "content": "0"
+        },
+        {
+          "tag": "p",
+          "content": "rcab "
+        },
+        {
+          "tag": "q",
+          "content": "-"
+        },
+        {
+          "tag": "r",
+          "content": "0"
+        },
+        {
+          "tag": "s",
+          "content": "0"
+        },
+        {
+          "tag": "t",
+          "content": "-"
+        },
+        {
+          "tag": "u",
+          "content": "-"
+        },
+        {
+          "tag": "v",
+          "content": "1"
+        },
+        {
+          "tag": "w",
+          "content": "0"
+        },
+        {
+          "tag": "x",
+          "content": ".i15760145"
+        },
+        {
+          "tag": "y",
+          "content": "06-27-01"
+        },
+        {
+          "tag": "z",
+          "content": "01-22-09"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "33433007725926",
+      "subFields": null
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "v. 2",
+      "subFields": null
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "Poor Condition. Evaluated for Google Books Project, 2015.",
+      "subFields": null
+    }
+  ]
+}

@@ -18,7 +18,7 @@ function error (what) {
 }
 
 var vocab = argv._[0]
-if (['locations', 'statuses'].indexOf(vocab) < 0) {
+if (['locations', 'statuses', 'organizations', 'datasources'].indexOf(vocab) < 0) {
   error('Must specify vocab to update')
 }
 

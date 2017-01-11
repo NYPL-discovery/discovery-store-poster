@@ -16,7 +16,11 @@ var argv = require('optimist')
   .argv
 
 var opts = {
-  debug: argv.debug
+  debug: argv.debug,
+  skip: parseInt(argv.skip) || 0,
+  offset: parseInt(argv.offset) || 0,
+  limit: parseInt(argv.limit) || 0,
+  seek: argv.seek || null
 }
 
 log.setLevel(argv.loglevel || 'error')
@@ -24,7 +28,8 @@ log.setLevel(argv.loglevel || 'error')
 if (argv.uri) {
   ; (new ItemsUpdater()).item(argv.uri)
 } else if (argv.threads) {
+  console.log('threaded')
   ItemsUpdater.threaded(argv)
 } else {
-  ; (new ItemsUpdater()).update(argv.offset, argv.limit, opts)
+  ; (new ItemsUpdater()).update(opts)
 }

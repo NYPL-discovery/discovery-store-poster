@@ -21,7 +21,7 @@
       "@id": "nyplStatus:a",
       "@type": "nypl:Status",
       "skos:notation": "-",
-      "skos:prefLabel": "Available "
+      "skos:prefLabel": "Available"
     },
     {
       "@id": "nyplStatus:g",
