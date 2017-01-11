@@ -1,0 +1,692 @@
+{
+  "id": "19995767",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2013-12-05T17:43:37Z",
+  "createdDate": "2013-12-05T17:43:36Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "The Fed at 100 : can monetary policy close the growth gap and promote a sound dollar? : hearing before the Joint Economic Committee, Congress of the United States, One Hundred Thirteenth Congress, first session, April 18, 2013.",
+  "author": "United States. Congress. Joint Economic Committee, author.",
+  "materialType": {
+    "code": "h",
+    "value": "MICROFORM"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2013,
+  "catalogDate": "2013-12-05",
+  "country": {
+    "code": "0",
+    "name": "District of Columbia"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "4",
+      "display": "4"
+    },
+    {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2013-12-05",
+      "display": "2013-12-05"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "h",
+      "display": "MICROFORM"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "a",
+      "display": "a"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "19995767",
+      "display": "19995767"
+    },
+    {
+      "label": "Created Date",
+      "value": "2013-12-05T17:43:36Z",
+      "display": "2013-12-05T17:43:36Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2013-12-05T17:43:37Z",
+      "display": "2013-12-05T17:43:37Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "dcu",
+      "display": "District of Columbia"
+    },
+    {
+      "label": "PDATE",
+      "value": "2013-12-05T17:43:36Z",
+      "display": "2013-12-05T17:43:36Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "110",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States."
+        },
+        {
+          "tag": "b",
+          "content": "Congress."
+        },
+        {
+          "tag": "b",
+          "content": "Joint Economic Committee,"
+        },
+        {
+          "tag": "e",
+          "content": "author."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "GPO Microfiche Y 4.EC 7:S.HRG.113-30"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Board of Governors of the Federal Reserve System (U.S.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Dollar, American."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Monetary policy"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "Economic policy."
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "074",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1000-C (MF)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "086",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Y 4.EC 7:S.HRG.113-30"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(GPO)16041907"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Paper version available for sale by the Superintendent of Documents, United States Government Printing Office."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Shipping list no.: 2013-0376-M."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "marcive861335981",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "[Washington, D.C.] :"
+        },
+        {
+          "tag": "b",
+          "content": "U.S. Government Printing Office,"
+        },
+        {
+          "tag": "c",
+          "content": "[2013]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1 microfiche (iii, 46 pages) :"
+        },
+        {
+          "tag": "b",
+          "content": "negative, illustrations ;"
+        },
+        {
+          "tag": "c",
+          "content": "11 x 15 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "microform"
+        },
+        {
+          "tag": "b",
+          "content": "h"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "microfiche"
+        },
+        {
+          "tag": "b",
+          "content": "he"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "S. hrg. ;"
+        },
+        {
+          "tag": "v",
+          "content": "113-30"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "810",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States."
+        },
+        {
+          "tag": "b",
+          "content": "Congress."
+        },
+        {
+          "tag": "b",
+          "content": "Senate."
+        },
+        {
+          "tag": "t",
+          "content": "S. hrg. ;"
+        },
+        {
+          "tag": "v",
+          "content": "113-30."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "The Fed at 100 :"
+        },
+        {
+          "tag": "b",
+          "content": "can monetary policy close the growth gap and promote a sound dollar? : hearing before the Joint Economic Committee, Congress of the United States, One Hundred Thirteenth Congress, first session, April 18, 2013."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Fed at one hundred"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": "8",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "i",
+          "content": "Online version:"
+        },
+        {
+          "tag": "a",
+          "content": "United States. Congress. Joint Economic Committee."
+        },
+        {
+          "tag": "t",
+          "content": "Fed at 100"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)851385049"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": "8",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "i",
+          "content": "Print version:"
+        },
+        {
+          "tag": "a",
+          "content": "United States. Congress. Joint Economic Committee."
+        },
+        {
+          "tag": "t",
+          "content": "Fed at 100"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)853454436"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20131024091300.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "he bmb024bbca",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "131024s2013    dcua    bb   f000 0 eng cnam i ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "GPO"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "GPO"
+        },
+        {
+          "tag": "d",
+          "content": "MvI"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "pcc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "n-us---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "KF25"
+        },
+        {
+          "tag": "b",
+          "content": ".E2 2013b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "KF25"
+        },
+        {
+          "tag": "b",
+          "content": ".E2 2013b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MARCIVE131205"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  2200445 i 4500",
+      "subFields": null
+    }
+  ]
+}

@@ -3,6 +3,11 @@
     "url": ""
   },
 
+  "pg": {
+    "url": "postgresql://localhost:5432/discovery",
+    "idleTimeoutMillis": 30000
+  },
+
   "nyplDataApi": {
     "base_url": ""
   },
@@ -19,7 +24,7 @@
 
   "kafka": {
     "bibs": {
-      "topic": "Bib"
+      "topic": "ShadowBib"
     },
     "items": {
       "topic": "Item"

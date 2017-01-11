@@ -1,0 +1,483 @@
+{
+  "id": "10011374",
+  "updatedDate": "2016-06-26T01:00:05Z",
+  "createdDate": "2008-12-13T16:02:34Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "The table book,",
+  "author": "Hone, William, 1780-1842.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1827,
+  "catalogDate": "2000-12-15",
+  "country": {
+    "code": "enk",
+    "name": "England"
+  },
+  "orders": [],
+  "normTitle": "table book",
+  "normAuthor": "hone william 1780 1842",
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "4"
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "4"
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-12-15"
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10011374"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-13T16:02:34Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2016-06-26T01:00:05Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "11"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "89": {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2014-10-29T01:00:08Z"
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " "
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hone, William,"
+        },
+        {
+          "tag": "d",
+          "content": "1780-1842."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "35038534"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NNSZ01213343"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0211346"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vol. 1 has added t.p.: The Table book ... Every Saturday."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Originally published weekly, from Jan. 1827 to Jan. 1828 (55 nos.-including indexes)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Library's copy lacks added t.p."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG012000337-B"
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "London,"
+        },
+        {
+          "tag": "b",
+          "content": "Published for W. Hone, by Hunt and Clarke,"
+        },
+        {
+          "tag": "c",
+          "content": "1827-1828."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JFE 86-498"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*AY (Hone, W. Table book)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2 v."
+        },
+        {
+          "tag": "b",
+          "content": "illus."
+        },
+        {
+          "tag": "c",
+          "content": "24 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "4",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The table book,"
+        },
+        {
+          "tag": "c",
+          "content": "by William Hone."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b10114464"
+        },
+        {
+          "tag": "b",
+          "content": "07-18-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-29-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://hdl.handle.net/2027/nyp.33433057532081"
+        },
+        {
+          "tag": "z",
+          "content": "Full text available via HathiTrust--v. 1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://hdl.handle.net/2027/nyp.33433057532339"
+        },
+        {
+          "tag": "z",
+          "content": "Full text available via HathiTrust--v. 2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://hdl.handle.net/2027/nyp.33433067332548"
+        },
+        {
+          "tag": "z",
+          "content": "Full text available via HathiTrust--v. 1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://hdl.handle.net/2027/nyp.33433067332555"
+        },
+        {
+          "tag": "z",
+          "content": "Full text available via HathiTrust--v. 2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20001116192555.6"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860923m18271828enka          001 0 eng  cam   "
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "AC4"
+        },
+        {
+          "tag": "b",
+          "content": ".H65"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "AC4"
+        },
+        {
+          "tag": "b",
+          "content": ".H65"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "12-15-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "enk"
+        },
+        {
+          "tag": "h",
+          "content": "4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "content": "00000cam  2200253   4500"
+    }
+  ],
+  "nyplSource": "sierra-nypl"
+}
