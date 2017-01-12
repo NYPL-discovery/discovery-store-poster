@@ -1,6 +1,6 @@
 'use strict'
 
-const VocabUpdater = require('../lib/controlled-vocab-updaters')
+const ControlledVocabUpdater = require('../lib/controlled-vocab-updater')
 const log = require('loglevel')
 
 var argv = require('optimist')
@@ -18,8 +18,8 @@ function error (what) {
 }
 
 var vocab = argv._[0]
-if (['locations', 'statuses', 'organizations', 'datasources'].indexOf(vocab) < 0) {
+if (['locations', 'statuses', 'organizations', 'datasources', 'accessmessages', 'catalogitemtypes'].indexOf(vocab) < 0) {
   error('Must specify vocab to update')
 }
 
-; (new VocabUpdater(vocab)).update(argv.offset, argv.limit)
+; (new ControlledVocabUpdater(vocab)).update(argv.offset, argv.limit)

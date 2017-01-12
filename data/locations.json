@@ -16594,6 +16594,13 @@
         "@id": "http://data.nypl.org/orgs/1000"
       },
       "skos:notation": "rcma2",
+      "nypl:deliverableTo": [
+        { "@id": "nyplLocation:mab" },
+        { "@id": "nyplLocation:mag" },
+        { "@id": "nyplLocation:map" },
+        { "@id": "nyplLocation:maf" }
+      ],
+      "nypl:requestable": true,
       "skos:prefLabel": "OFFSITE - Request in Advance for use at Schwarzman Bldg"
     },
     {

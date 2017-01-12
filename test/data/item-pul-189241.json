@@ -1,0 +1,106 @@
+{
+  "id": "189241",
+  "nyplSource": "recap-PUL",
+  "nyplType": "item",
+  "updatedDate": "2016-11-22T21:34:31Z",
+  "createdDate": "",
+  "deletedDate": null,
+  "deleted": false,
+  "bibIds": [
+    "176961"
+  ],
+  "location": {
+    "code": "rcppa",
+    "name": "Princeton University Library"
+  },
+  "status": {
+    "code": "-",
+    "display": "Available",
+    "dueDate": null
+  },
+  "barcode": "32101062243553",
+  "callNumber": "PJ7601",
+  "itemType": null,
+  "fixedFields": [],
+  "varFields": [
+    {
+      "fieldTag": null,
+      "marcTag": "876",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "p",
+          "content": "32101062243553"
+        },
+        {
+          "tag": "h",
+          "content": ""
+        },
+        {
+          "tag": "a",
+          "content": "189241"
+        },
+        {
+          "tag": "j",
+          "content": "Available"
+        },
+        {
+          "tag": "t",
+          "content": "1"
+        },
+        {
+          "tag": "3",
+          "content": "bd. 2 "
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Shared"
+        },
+        {
+          "tag": "b",
+          "content": "PA"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "852",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "b",
+          "content": "rcppa"
+        },
+        {
+          "tag": "t",
+          "content": "1"
+        },
+        {
+          "tag": "h",
+          "content": "PJ7601"
+        },
+        {
+          "tag": "i",
+          "content": ".H35"
+        },
+        {
+          "tag": "x",
+          "content": "tr fr arab"
+        }
+      ]
+    }
+  ]
+}

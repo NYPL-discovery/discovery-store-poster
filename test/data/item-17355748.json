@@ -1,0 +1,243 @@
+{
+  "_id": 23971415,
+  "id": 23971415,
+  "nyplSource": "sierra-nypl",
+  "updatedDate": "2014-07-17T02:58:22Z",
+  "createdDate": "2009-06-22T05:30:19Z",
+  "deleted": false,
+  "bibIds": [
+    17355748
+  ],
+  "location": {
+    "code": "moa0f",
+    "name": "Mosholu Fiction"
+  },
+  "status": {
+    "code": "-",
+    "display": "AVAILABLE"
+  },
+  "barcode": 33333234434625,
+  "fixedFields": {
+    "57": {
+      "label": "BIB HOLD",
+      "value": false
+    },
+    "58": {
+      "label": "Copy No.",
+      "value": 1
+    },
+    "59": {
+      "label": "Item Code 1",
+      "value": "0"
+    },
+    "60": {
+      "label": "Item Code 2",
+      "value": "-"
+    },
+    "61": {
+      "label": "Item Type",
+      "value": "101"
+    },
+    "62": {
+      "label": "Price",
+      "value": 0
+    },
+    "64": {
+      "label": "Checkout Location",
+      "value": 19
+    },
+    "68": {
+      "label": "Last Checkin",
+      "value": "2014-07-10T19:15:53Z"
+    },
+    "70": {
+      "label": "Checkin Location",
+      "value": 19
+    },
+    "74": {
+      "label": "Item Use 3",
+      "value": 0
+    },
+    "76": {
+      "label": "Total Checkouts",
+      "value": 2
+    },
+    "77": {
+      "label": "Total Renewals",
+      "value": 1
+    },
+    "78": {
+      "label": "Last Checkout Date",
+      "value": "2014-06-26T16:14:33Z"
+    },
+    "79": {
+      "label": "Location",
+      "value": "moa0f",
+      "display": "Mosholu Fiction"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "i"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "23971415"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-22T05:30:19Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2014-07-17T02:58:22Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "16"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "88": {
+      "label": "Status",
+      "value": "-",
+      "display": "AVAILABLE"
+    },
+    "93": {
+      "label": "Internal Use",
+      "value": 0
+    },
+    "94": {
+      "label": "Copy Use",
+      "value": 0
+    },
+    "97": {
+      "label": "Item Message",
+      "value": "-"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2014-07-10T19:18:03Z"
+    },
+    "108": {
+      "label": "OPAC Message",
+      "value": "-"
+    },
+    "109": {
+      "label": "Year-to-Date Circ",
+      "value": 0
+    },
+    "110": {
+      "label": "Last Year Circ",
+      "value": 1
+    },
+    "127": {
+      "label": "Item Agency",
+      "value": "11",
+      "display": "Bronx Library Center "
+    },
+    "161": {
+      "label": "VI Central",
+      "value": 0
+    },
+    "162": {
+      "label": "IR Dist Learn Same Site",
+      "value": "0"
+    },
+    "264": {
+      "label": "Holdings Item Tag",
+      "value": "6"
+    },
+    "265": {
+      "label": "Inherit Location",
+      "value": false
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2008-07-16"
+        },
+        {
+          "tag": "b",
+          "content": "12/04/2008"
+        },
+        {
+          "tag": "e",
+          "content": "BK"
+        },
+        {
+          "tag": "f",
+          "content": "0"
+        },
+        {
+          "tag": "g",
+          "content": "Rus FIC V pautine o"
+        },
+        {
+          "tag": "h",
+          "content": "NYPL"
+        },
+        {
+          "tag": "i",
+          "content": "MO"
+        },
+        {
+          "tag": "j",
+          "content": "TF"
+        },
+        {
+          "tag": "l",
+          "content": "2008-08-04"
+        },
+        {
+          "tag": "m",
+          "content": "982"
+        },
+        {
+          "tag": "n",
+          "content": "DFBKRF"
+        },
+        {
+          "tag": "o",
+          "content": "DFBKRF"
+        },
+        {
+          "tag": "r",
+          "content": "0.00"
+        },
+        {
+          "tag": "u",
+          "content": "33333234434625"
+        },
+        {
+          "tag": "v",
+          "content": "moa  "
+        },
+        {
+          "tag": "w",
+          "content": "mozzz"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "content": "33333234434625"
+    },
+    {
+      "fieldTag": "d",
+      "content": "2008-07-16"
+    },
+    {
+      "fieldTag": "e",
+      "content": "2008-08-04"
+    }
+  ]
+}

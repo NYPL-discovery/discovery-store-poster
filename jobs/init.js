@@ -31,14 +31,15 @@ var stats = () => {
     .catch((e) => console.error('oh no: ' + e.message, e.stack))
 }
 
-if (argv.create || argv.recreate) {
+if (argv.create) create(false)
+else if (argv.recreate) {
   prompt.start()
 
-  console.log('Create/recreate db? confirm with y/n')
+  console.log('Really recreate db? confirm with y/n')
   prompt.get(['confirm'], (err, res) => {
     if (err) throw err
 
-    if (res.confirm.toLowerCase() === 'y') create(argv.recreate)
+    if (res.confirm.toLowerCase() === 'y') create(true)
     else process.exit()
   })
 } else if (argv.stats) {
