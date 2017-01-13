@@ -25,8 +25,9 @@ for r in reader:
     notation = rdflib.Literal(r['skos:notation'])
     locationType = r['nypl:locationType'].split(';')
     actualLocation = r['nypl:actualLocation']
-#     sublocationOf = r['dcterms:isPartOf']
     location = nyplLocation + str(id)
+    deliverableTo = r['nypl:deliverableTo'].split(';')
+    requestable = r['nypl:requestable']
     
     g.add( (location, RDF.type, nypl.Location))
     g.add( (location, SKOS.prefLabel, preflabel))
@@ -44,8 +45,16 @@ for r in reader:
         if l != '':
             l = rdflib.Literal(l)
             g.add( (location, nypl.locationType, l))
+    if requestable != '':
+        requestable = rdflib.Literal(requestable, datatype="XSD:boolean")
+        g.add ( (location, nypl.requestable, requestable) )
+    if r['nypl:deliverableTo'] != '':
+        for d in deliverableTo:
+            if d != '':
+                d = nyplLocation + d.strip()
+                g.add( (location, nypl.deliverableTo, d))
 
-z = open('sierra-codes-locations.json', 'wb')
+z = open('locations.json', 'wb')
 
 context = {"dcterms": "http://purl.org/dc/terms/",
            "nypl": "http://data.nypl.org/nypl-core/",
@@ -54,4 +63,4 @@ context = {"dcterms": "http://purl.org/dc/terms/",
 z.write(g.serialize(format="json-ld", context=context))
 
 z.close()
-
+f.close()
