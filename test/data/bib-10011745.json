@@ -1,0 +1,320 @@
+{
+  "author": "",
+  "bibLevel": {"code": "s", "value": "SERIAL"},
+  "catalogDate": "2001-01-03",
+  "country": {"code": "ne ", "name": "Netherlands"},
+  "createdDate": "2008-12-13T16:02:59Z",
+  "deleted": false,
+  "fixedFields": {
+    "107": {"label": "MARC Type", "value": " "},
+    "24": {"display": "English", "label": "Language", "value": "eng"},
+    "25": {"label": "Skip", "value": "0"},
+    "26": {"label": "Location", "value": "multi"},
+    "27": {"label": "COPIES", "value": "43"},
+    "28": {"label": "Cat. Date", "value": "2001-01-03"},
+    "29": {"display": "SERIAL", "label": "Bib Level", "value": "s"},
+    "30": {"display": "BOOK/TEXT", "label": "Material Type", "value": "a"},
+    "31": {"label": "Bib Code 3", "value": "-"},
+    "80": {"label": "Record Type", "value": "b"},
+    "81": {"label": "Record Number", "value": "10011745"},
+    "83": {"label": "Created Date", "value": "2008-12-13T16:02:59Z"},
+    "84": {"label": "Updated Date", "value": "2013-12-31T02:01:06Z"},
+    "85": {"label": "No. of Revisions", "value": "23"},
+    "86": {"label": "Agency", "value": "1"},
+    "89": {"display": "Netherlands", "label": "Country", "value": "ne "},
+    "98": {"label": "PDATE", "value": "2013-10-01T16:26:27Z"}
+  },
+  "id": "10011745",
+  "lang": {"code": "eng", "name": "English"},
+  "locations": [
+    {"code": "mak", "name": "SASB - Dewitt Wallace Room 108"},
+    {"code": "mal", "name": "SASB - Service Desk Rm 315"}
+  ],
+  "materialType": {"code": "a", "value": "BOOK/TEXT"},
+  "normAuthor": "",
+  "normTitle": "international journal of behavioral development",
+  "nyplSource": "sierra-nypl",
+  "orders": [],
+  "publishYear": 1978,
+  "suppressed": false,
+  "title": "International journal of behavioral development.",
+  "updatedDate": "2012-12-31T02:01:06Z",
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "ind1": "2",
+      "ind2": " ",
+      "marcTag": "710",
+      "subfields": [
+        {
+          "content": "International Society for the Study of Behavioral Development.",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "ind1": " ",
+      "ind2": "0",
+      "marcTag": "650",
+      "subfields": [
+        {"content": "Etiquette", "tag": "a"},
+        {"content": "Periodicals.", "tag": "v"}
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "ind1": " ",
+      "ind2": "0",
+      "marcTag": "650",
+      "subfields": [
+        {"content": "Developmental psychology", "tag": "a"},
+        {"content": "Periodicals.", "tag": "v"}
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "ind1": " ",
+      "ind2": "0",
+      "marcTag": "650",
+      "subfields": [
+        {"content": "Behaviorism (psychology)", "tag": "a"},
+        {"content": "Periodicals.", "tag": "v"}
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "ind1": "0",
+      "ind2": " ",
+      "marcTag": "022",
+      "subfields": [{"content": "0165-0254", "tag": "a"}]
+    },
+    {
+      "fieldTag": "l",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "010",
+      "subfields": [
+        {"content": "sc 79005623 ", "tag": "a"},
+        {"content": "79009626 /sn", "tag": "z"}
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "035",
+      "subfields": [{"content": "(WaOLN)nyp0011759", "tag": "a"}]
+    },
+    {
+      "fieldTag": "l",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "035",
+      "subfields": [{"content": "(WaOLN)nyp0000040", "tag": "a"}]
+    },
+    {
+      "fieldTag": "n",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "550",
+      "subfields": [
+        {
+          "content": "Official journal of the International Society for the Study of Behavioral Development.",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "content": "NYPG0122-S",
+      "fieldTag": "o",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "001"
+    },
+    {
+      "fieldTag": "p",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "260",
+      "subfields": [
+        {"content": "Amsterdam,", "tag": "a"},
+        {"content": "North-Holland.", "tag": "b"}
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "ind1": "8",
+      "ind2": " ",
+      "marcTag": "852",
+      "subfields": [{"content": "JFL 81-124", "tag": "h"}]
+    },
+    {
+      "fieldTag": "r",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "300",
+      "subfields": [
+        {"content": "v.", "tag": "a"},
+        {"content": "ill.", "tag": "b"},
+        {"content": "24 cm.", "tag": "c"}
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "310",
+      "subfields": [{"content": "Quarterly", "tag": "a"}]
+    },
+    {
+      "fieldTag": "r",
+      "ind1": "0",
+      "ind2": " ",
+      "marcTag": "362",
+      "subfields": [{"content": "v. 1-   Jan. 1978-", "tag": "a"}]
+    },
+    {
+      "fieldTag": "t",
+      "ind1": "0",
+      "ind2": "0",
+      "marcTag": "245",
+      "subfields": [
+        {
+          "content": "International journal of behavioral development.",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "ind1": "0",
+      "ind2": " ",
+      "marcTag": "210",
+      "subfields": [{"content": "Int. j. behav. dev.", "tag": "a"}]
+    },
+    {
+      "fieldTag": "u",
+      "ind1": "3",
+      "ind2": "3",
+      "marcTag": "246",
+      "subfields": [{"content": "IJBD", "tag": "a"}]
+    },
+    {
+      "fieldTag": "u",
+      "ind1": "0",
+      "ind2": "0",
+      "marcTag": "299",
+      "subfields": [
+        {
+          "content": "International journal of behavioral development.",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "ind1": "1",
+      "ind2": "0",
+      "marcTag": "299",
+      "subfields": [{"content": "IJBD", "tag": "a"}]
+    },
+    {
+      "fieldTag": "u",
+      "ind1": "0",
+      "ind2": " ",
+      "marcTag": "799",
+      "subfields": [
+        {
+          "content": "Gift of the DeWitt Wallace Endowment Fund, named in honor of the founder of Reader's Digest",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "959",
+      "subfields": [
+        {"content": ".b10118214", "tag": "a"},
+        {"content": "07-18-08", "tag": "b"},
+        {"content": "07-29-91", "tag": "c"}
+      ]
+    },
+    {
+      "content": "20000925124422.1",
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "005"
+    },
+    {
+      "content": "810601c19789999ne qr p       0    0eng dcas   ",
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "008"
+    },
+    {
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "040",
+      "subfields": [
+        {"content": "CLU", "tag": "a"},
+        {"content": "CLU", "tag": "c"},
+        {"content": "CU-CU", "tag": "d"},
+        {"content": "DNLM", "tag": "d"},
+        {"content": "OCL", "tag": "d"},
+        {"content": "NSDP", "tag": "d"},
+        {"content": "DLC", "tag": "d"},
+        {"content": "NN", "tag": "d"},
+        {"content": "WaOLN", "tag": "d"}
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "042",
+      "subfields": [{"content": "lc", "tag": "a"}]
+    },
+    {
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "997",
+      "subfields": [
+        {"content": "hp", "tag": "a"},
+        {"content": "01-03-01", "tag": "b"},
+        {"content": "s", "tag": "c"},
+        {"content": "a", "tag": "d"},
+        {"content": "-", "tag": "e"},
+        {"content": "eng", "tag": "f"},
+        {"content": "ne ", "tag": "g"},
+        {"content": "0", "tag": "h"}
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": "0",
+      "marcTag": "222",
+      "subfields": [
+        {
+          "content": "International journal of behavioral development",
+          "tag": "a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "ind1": " ",
+      "ind2": " ",
+      "marcTag": "991",
+      "subfields": [{"content": "4131153", "tag": "y"}]
+    },
+    {"content": "00000cas  2200361   4500", "fieldTag": "_"}
+  ]
+}

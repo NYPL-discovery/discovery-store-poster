@@ -1,0 +1,523 @@
+{
+  "id": "10392955",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-01-16T22:50:12Z",
+  "createdDate": "2008-12-13T22:38:48Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Cyrano de Bergerac : a heroic comedy in five acts / by Edmond Rostand ; translated by Christopher Fry.",
+  "author": "Rostand, Edmond, 1868-1918.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1975,
+  "catalogDate": "2000-12-18",
+  "country": {
+    "code": "0",
+    "name": "England"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "Schwarzman Building - Service Desk Rm 217"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2000-12-18",
+      "display": "2000-12-18"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "10392955",
+      "display": "10392955"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-13T22:38:48Z",
+      "display": "2008-12-13T22:38:48Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-01-16T22:50:12Z",
+      "display": "2015-01-16T22:50:12Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": "7"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    {
+      "label": "PDATE",
+      "value": "2012-02-04T00:40:00Z",
+      "display": "2012-02-04T00:40:00Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Rostand, Edmond,"
+        },
+        {
+          "tag": "d",
+          "content": "1868-1918."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Fry, Christopher,"
+        },
+        {
+          "tag": "d",
+          "content": "1907-2005,"
+        },
+        {
+          "tag": "e",
+          "content": "translator."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "JFC 77-539"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cyrano de Bergerac,"
+        },
+        {
+          "tag": "d",
+          "content": "1619-1655"
+        },
+        {
+          "tag": "x",
+          "content": "In literature."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "French drama"
+        },
+        {
+          "tag": "v",
+          "content": "Translations into English."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "0192113860 :"
+        },
+        {
+          "tag": "c",
+          "content": "$7.95 (U. S.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "76352314"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN774189611"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0256922"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Translation of Cyrano de Bergerac."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG774189611-B",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "London :"
+        },
+        {
+          "tag": "b",
+          "content": "New York : Oxford University Press,"
+        },
+        {
+          "tag": "c",
+          "content": "1975."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "JFC 77-539"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "146 p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "20 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cyrano de Bergerac :"
+        },
+        {
+          "tag": "b",
+          "content": "a heroic comedy in five acts / by Edmond Rostand ; translated by Christopher Fry."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b14017015"
+        },
+        {
+          "tag": "b",
+          "content": "03-05-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-05-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20001116193232.5",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "770315s1975    enk           00| 0beng| cam   ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "engund"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "PQ2635.O7"
+        },
+        {
+          "tag": "b",
+          "content": "C92 1975"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "PQ2635.O7"
+        },
+        {
+          "tag": "b",
+          "content": "C92 1975"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "12-18-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "enk"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "y",
+          "content": "2503124"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200277   4500",
+      "subFields": null
+    }
+  ]
+}

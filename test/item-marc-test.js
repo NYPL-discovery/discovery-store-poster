@@ -2,7 +2,7 @@
 
 const assert = require('assert')
 const itemSerializer = require('./../lib/serializers/item')
-const SierraRecord = require('./../lib/models').SierraRecord
+const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 
 describe('Item Marc Mapping', function () {
@@ -10,7 +10,7 @@ describe('Item Marc Mapping', function () {
 
   describe('Parse', function () {
     it('should extract certain basic item props', function () {
-      var item = SierraRecord.from(require('./data/item-10781594.json'))
+      var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
 
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
@@ -28,7 +28,7 @@ describe('Item Marc Mapping', function () {
   })
 
   describe('Parse opac message', function () {
-    var item = SierraRecord.from(require('./data/item-10008083.json'))
+    var item = ItemSierraRecord.from(require('./data/item-10008083.json'))
 
     it('should extract opac message', function () {
       return itemSerializer.fromMarcJson(item)
@@ -59,7 +59,7 @@ describe('Item Marc Mapping', function () {
 
   describe('Parse catalogItemType', function () {
     it('should identify branch item', function () {
-      var item = SierraRecord.from(require('./data/item-17355748.json'))
+      var item = ItemSierraRecord.from(require('./data/item-23971415.json'))
 
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
@@ -76,9 +76,40 @@ describe('Item Marc Mapping', function () {
     })
   })
 
+  describe('Determine requestable/availability', function () {
+    it('Ensure requestable', function () {
+      var item = ItemSierraRecord.from(require('./data/item-10008083.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rcma2')
+          assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:2')
+
+          assert.equal(item.literal('nypl:requestable'), true)
+        })
+    })
+
+    it('Ensure NOT requestable', function () {
+      // test/data/item-10008083.json test/data/item-10781594.json  test/data/item-23971415.json  test/data/item-pul-189241.json
+      var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
+          assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:u')
+
+          assert.equal(item.literal('nypl:requestable'), false)
+        })
+    })
+  })
+
   describe('Parse princeton item', function () {
     it('should assign correct PUL fields', function () {
-      var item = SierraRecord.from(require('./data/item-pul-189241.json'))
+      var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
 
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))

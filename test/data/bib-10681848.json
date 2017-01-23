@@ -1,0 +1,935 @@
+{
+  "id": "10681848",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-10-22T01:03:10Z",
+  "createdDate": "2008-12-14T03:57:25Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "eng"
+  },
+  "title": "Victor Pasmore : a catalogue raisonné of the paintings, constructions, and graphics, 1926-1979",
+  "author": null,
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1980,
+  "catalogDate": "2016-10-21",
+  "country": {
+    "code": "0",
+    "name": "New York (State)"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "mab  ",
+      "display": "SASB - Art & Architecture Rm 300"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2016-10-21",
+      "display": "2016-10-21"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "h",
+      "display": "h"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "10681848",
+      "display": "10681848"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-14T03:57:25Z",
+      "display": "2008-12-14T03:57:25Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2016-10-22T01:03:10Z",
+      "display": "2016-10-22T01:03:10Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "12",
+      "display": "12"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "nyu",
+      "display": "New York (State)"
+    },
+    {
+      "label": "PDATE",
+      "value": "2016-10-21T20:58:04Z",
+      "display": "2016-10-21T20:58:04Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pasmore, Victor,"
+        },
+        {
+          "tag": "d",
+          "content": "1908-1998."
+        },
+        {
+          "tag": "t",
+          "content": "Works."
+        },
+        {
+          "tag": "k",
+          "content": "Selections."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pasmore, Victor,"
+        },
+        {
+          "tag": "d",
+          "content": "1908-1998."
+        },
+        {
+          "tag": "t",
+          "content": "Essays."
+        },
+        {
+          "tag": "k",
+          "content": "Selections."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Bowness, Alan,"
+        },
+        {
+          "tag": "e",
+          "content": "writer of introduction."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Lambertini, Luigi,"
+        },
+        {
+          "tag": "e",
+          "content": "writer of introduction."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "(C.R.) 3-MCV+ P28 80-2804"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pasmore, Victor,"
+        },
+        {
+          "tag": "d",
+          "content": "1908-1998"
+        },
+        {
+          "tag": "v",
+          "content": "Catalogues raisonnés."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pasmore, Victor,"
+        },
+        {
+          "tag": "d",
+          "content": "1908-1998"
+        },
+        {
+          "tag": "x",
+          "content": "Criticism and interpretation."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Art, Modern"
+        },
+        {
+          "tag": "y",
+          "content": "20th century."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Art and architecture."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "City planning"
+        },
+        {
+          "tag": "z",
+          "content": "England"
+        },
+        {
+          "tag": "z",
+          "content": "Peterlee."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "New towns"
+        },
+        {
+          "tag": "z",
+          "content": "England"
+        },
+        {
+          "tag": "z",
+          "content": "Peterlee."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pasmore, Victor,"
+        },
+        {
+          "tag": "d",
+          "content": "1908-1998."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00055960"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Catalogs."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01423692"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "0847802779"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "9780847802777"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "0847802922"
+        },
+        {
+          "tag": "q",
+          "content": "(limited ed.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "9780847802920"
+        },
+        {
+          "tag": "q",
+          "content": "(limited ed.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "   79906697"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)6481046"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "\"249 plates, 51 in colour, and 606 catalogue illustrations.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Preface / Stephen Pasmore -- Introduction / Alan Bowness -- Introduction: beyond metaphor / Luigi Lambertini -- The transformation of naturalist art and the independence of painting / Victor Pasmore -- A developing process in art teaching / Victor Pasmore -- The Pavilion, Peterlee: introduction -- Connections between painting, sculpture and architecture / Victor Pasmore -- Simple questions to an artist / Leif Sjöberg -- Peterlee: introduction -- Peterlee: a symposium / Sir J.M. Richards, A.V. Williams, A.T.W. Marsden, Victor Pasmore -- Notes on the artist's printmaking / Margaret Failoni and Giovanna Zamboni -- Biographical chronology -- Notes -- Index of contemporary names -- Selected bibliography (pages 283-285) -- Catalogue raisonné: paintings and constructions (pages 287-328)-- Words and images / Victor Pasmore -- Catalogue raisonné: graphics (pages 333-342)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references (pages 283-285) and index."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "6481046",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "New York :"
+        },
+        {
+          "tag": "b",
+          "content": "Rizzoli,"
+        },
+        {
+          "tag": "c",
+          "content": "1980."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "(C.R.) 3-MCV+ P28 80-2804"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "333 pages, 9 unnumbered pages :"
+        },
+        {
+          "tag": "b",
+          "content": "illustrations (some color) ;"
+        },
+        {
+          "tag": "c",
+          "content": "33 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "still image"
+        },
+        {
+          "tag": "b",
+          "content": "sti"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Victor Pasmore :"
+        },
+        {
+          "tag": "b",
+          "content": "a catalogue raisonné of the paintings, constructions, and graphics, 1926-1979 /"
+        },
+        {
+          "tag": "c",
+          "content": "introductions by Alan Bowness and Luigi Lambertini."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b16961754"
+        },
+        {
+          "tag": "b",
+          "content": "06-13-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-12-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": "8",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "i",
+          "content": "Online version:"
+        },
+        {
+          "tag": "t",
+          "content": "Victor Pasmore."
+        },
+        {
+          "tag": "d",
+          "content": "New York : Rizzoli, 1980"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)735140163"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20161021044814.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "800627s1980    nyua     bc   001 0 eng  cam i ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "DLC"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "BAKER"
+        },
+        {
+          "tag": "d",
+          "content": "BTCTA"
+        },
+        {
+          "tag": "d",
+          "content": "YDXCP"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCG"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "e-uk-en"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "N6797.P3"
+        },
+        {
+          "tag": "b",
+          "content": "A4 1980"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "709/.2/4"
+        },
+        {
+          "tag": "2",
+          "content": "19"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "KLC"
+        },
+        {
+          "tag": "b",
+          "content": "SFP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "N6797.P3"
+        },
+        {
+          "tag": "b",
+          "content": "A4 1980"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b10681848x"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam a2200601 i 4500",
+      "subFields": null
+    }
+  ]
+}

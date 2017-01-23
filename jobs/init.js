@@ -14,10 +14,12 @@ log.setLevel(argv.loglevel || 'info')
 const db = require('../lib/db')
 
 var create = (recreate) => {
-  db.createDb(recreate).then(() => {
-    log.info('Created db')
-    process.exit()
-  })
+  db.createDb(recreate)
+    .then(db.initializeData)
+    .then(() => {
+      log.info('Created db')
+      process.exit()
+    })
 }
 
 var stats = () => {
