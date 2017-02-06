@@ -15,7 +15,7 @@ var argv = require('optimist')
   .describe('uri', 'Process specific bib (from api)')
   .describe('apiall', 'Process all bibs from api')
   .describe('backfill', 'Back-fill bibs based on existing items (from api)')
-  .describe('loglevel', 'Specify log level (default error)')
+  .describe('loglevel', 'Specify log level (default info)')
   .describe('threads', 'Specify number of threads to run it under')
   .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
   .argv
