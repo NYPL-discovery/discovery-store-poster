@@ -32,8 +32,6 @@ if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 
 if (argv.uri_cache) {
   ; (new BibsUpdater()).uriFromCache(argv.uri_cache)
-} else if (argv.apiall) {
-  ; (new BibsUpdater()).bibs()
 } else if (argv.threads) {
   BibsUpdater.threaded(argv)
 } else {
