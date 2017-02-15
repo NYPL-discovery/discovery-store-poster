@@ -1,0 +1,400 @@
+{
+  "_id": 10737605,
+  "id": 10737605,
+  "updatedDate": "2009-03-26T16:06:09Z",
+  "createdDate": "2008-12-14T04:59:59Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": "English",
+  "title": "Records [microform] / ",
+  "author": "Simmons Bible College (Louisville, Ky.)",
+  "materialType": {
+    "code": "h",
+    "value": "MICROFORM"
+  },
+  "bibLevel": {
+    "code": "c",
+    "value": "COLLECTION"
+  },
+  "publishYear": 1981,
+  "catalogDate": "2000-10-17",
+  "country": "Kentucky",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0"
+    },
+    "26": {
+      "label": "Location",
+      "value": "scf  ",
+      "display": "Schomburg Center - Research & Reference"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "3"
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-10-17"
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "c",
+      "display": "COLLECTION"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "h",
+      "display": "MICROFORM"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10737605"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T04:59:59Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2009-03-26T16:06:09Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "4"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "89": {
+      "label": "Country",
+      "value": "kyu",
+      "display": "Kentucky"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2009-03-13T18:41:19Z"
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " "
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "110",
+      "ind1": "2",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Simmons Bible College (Louisville, Ky.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "General Association of Kentucky Baptists."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "Sc Micro R-3950"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bible colleges"
+        },
+        {
+          "tag": "z",
+          "content": "Kentucky"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "African American Baptists"
+        },
+        {
+          "tag": "z",
+          "content": "Kentucky"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0744383"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Catalogues, 1881-1980.--Yearbooks and other school publications, 1873-1945.--Minutes of the General Association of Kentucky Baptists, 1869-1971.--Miscellaneous printed materials, 1884-1960.--Photographs, 1880-1967.--Scrapbooks, 1886-1941."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG82-B20317"
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Louisville, Ky. :"
+        },
+        {
+          "tag": "b",
+          "content": "University of Louisville,"
+        },
+        {
+          "tag": "c",
+          "content": "1981."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "Sc Micro R-3950"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3 microfilm reels ;"
+        },
+        {
+          "tag": "c",
+          "content": "35 mm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Records"
+        },
+        {
+          "tag": "h",
+          "content": "[microform] / "
+        },
+        {
+          "tag": "c",
+          "content": "Simmons Bible College."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b17534355"
+        },
+        {
+          "tag": "b",
+          "content": "03-08-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-13-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629174424.0"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "hd afa---buca"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "820702s1981    kyu     a     00010 eng dcac a "
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "n-us-ky"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "sg"
+        },
+        {
+          "tag": "b",
+          "content": "10-17-00"
+        },
+        {
+          "tag": "c",
+          "content": "c"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "kyu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "content": "00000cac  2200241 a 4500"
+    }
+  ],
+  "nyplSource": "sierra-nypl"
+}

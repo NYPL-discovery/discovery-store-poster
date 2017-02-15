@@ -23,10 +23,10 @@ var opts = {
   seek: argv.uri_seek || null
 }
 
-log.setLevel(argv.loglevel || 'error')
+log.setLevel(argv.loglevel || 'info')
 
 if (argv.uri_cache) {
-  ; (new ItemsUpdater()).item(argv.uri_cache)
+  ; (new ItemsUpdater()).uriFromCache(argv.uri_cache)
 } else if (argv.threads) {
   console.log('threaded')
   ItemsUpdater.threaded(argv)

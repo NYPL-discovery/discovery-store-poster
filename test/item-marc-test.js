@@ -15,7 +15,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
           assert.equal(item.objectId('bf:status'), 'status:a')
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
@@ -34,7 +34,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
           assert.equal(item.objectId('bf:status'), 'status:a')
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rcma2')
@@ -64,7 +64,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17355748')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:101')
           // Make sure no other statements are being saved for this item because it's branch
@@ -115,7 +115,7 @@ describe('Item Marc Mapping', function () {
         .then((statements) => new Item(statements))
         .then((item) => {
           // TODO need to check a whole bunch more fields...
-          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:pb176961')
           // No item types currently assigned to PUL/CUL
           assert.equal(item.objectId('nypl:catalogItemType'), null)

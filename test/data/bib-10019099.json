@@ -1,0 +1,561 @@
+{
+  "_id": 10019099,
+  "id": 10019099,
+  "updatedDate": "2012-03-08T21:09:43Z",
+  "createdDate": "2008-12-13T16:11:30Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": "English",
+  "title": "Adherent.",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 1974,
+  "catalogDate": "2001-01-03",
+  "country": "Washington (State)",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0"
+    },
+    "26": {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "5"
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2001-01-03"
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10019099"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-13T16:11:30Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-08T21:09:43Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "12"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "89": {
+      "label": "Country",
+      "value": "wau",
+      "display": "Washington (State)"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-02-14T02:06:42Z"
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " "
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Seattle Opportunities Industrialization Center."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Opportunities Industrialization Centers of America."
+        },
+        {
+          "tag": "b",
+          "content": "Executive Directors Association."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Manpower policy"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Occupational training"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Manpower policy"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0360-9588"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "76640363"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0219024"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"A publication of the OIC Executive Directors Association\"."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG0662-S"
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[Seattle,"
+        },
+        {
+          "tag": "b",
+          "content": "Seattle Opportunities Industrialization Center]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JLL 81-163"
+        },
+        {
+          "tag": "z",
+          "content": "Library has: v. 1-10; Oct. 1974-winter 1983."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "10 v."
+        },
+        {
+          "tag": "c",
+          "content": "23 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3 no. a year,"
+        },
+        {
+          "tag": "b",
+          "content": "1976-83"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "321",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Semimonthly,"
+        },
+        {
+          "tag": "b",
+          "content": "1974-75"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "0",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "v. 1-10; Oct. 1974-winter 1983."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Adherent."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Adherent."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b10193261"
+        },
+        {
+          "tag": "b",
+          "content": "07-18-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-29-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925124548.7"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "810806d19741983wautr p       0   a0eng  cas   "
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "037",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "Circulation Dept., 315 22nd Ave., So., Seattle, WA 98144"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "d",
+          "content": "OCL"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "lc"
+        },
+        {
+          "tag": "a",
+          "content": "nsdp"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "n-us---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "HD5701"
+        },
+        {
+          "tag": "b",
+          "content": ".A33"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "HD5701"
+        },
+        {
+          "tag": "b",
+          "content": ".A33"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "331.1/1/05"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "b"
+        },
+        {
+          "tag": "b",
+          "content": "01-03-01"
+        },
+        {
+          "tag": "c",
+          "content": "s"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "wau"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "222",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Adherent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "2245758"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "content": "00000cas  2200373   4500"
+    }
+  ],
+  "nyplSource": "sierra-nypl"
+}
