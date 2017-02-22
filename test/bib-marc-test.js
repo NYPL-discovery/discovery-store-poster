@@ -91,6 +91,17 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should extract many core properties (2)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // console.log('bib: ', bib)
+          assert.equal(bib.literals('nypl:shelfMark')[0], 'JFE 86-498')
+        })
+    })
+
     it('should extract alt title', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
 

@@ -20,7 +20,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('bf:status'), 'status:a')
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
           // Yeah i guess that's the actual call number?
-          assert.equal(item.literal('nypl:shelfMark'), 'TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)')
+          assert.equal(item.literal('nypl:shelfMark'), 'TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings) v. 2')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:66')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b13689507')
         })
