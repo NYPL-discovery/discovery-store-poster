@@ -72,7 +72,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // console.log('bib: ', bib)
 
-          assert.equal(bib.objectId('rdf:type'), 'nypl:Bib')
+          assert.equal(bib.objectId('rdf:type'), 'nypl:Item')
           assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:txt')
 
           assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:m')
@@ -88,6 +88,17 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literals('dc:subject')[0], 'Board of Governors of the Federal Reserve System (U.S.)')
           assert.equal(bib.literals('dc:subject')[1], 'Dollar, American.')
           assert.equal(bib.literals('dc:subject')[2], 'Monetary policy -- United States.')
+        })
+    })
+
+    it('should extract many core properties (2)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // console.log('bib: ', bib)
+          assert.equal(bib.literals('nypl:shelfMark')[0], 'JFE 86-498')
         })
     })
 
@@ -134,6 +145,34 @@ describe('Bib Marc Mapping', function () {
           // console.log('contribs: ', JSON.stringify(bib.statements(), null, 2))
           assert.equal(bib.literal('role:win'), 'Bowness, Alan,')
           assert.equal(bib.literals('role:win')[1], 'Lambertini, Luigi,')
+        })
+    })
+
+    it('should identify serial', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10019099.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Confirm issuance marks it as a serial:
+          assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:s')
+
+          // Serials are rdf:type Collection:
+          assert.equal(bib.objectId('rdf:type'), 'nypl:Collection')
+        })
+    })
+
+    it('should identify collection', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10737605.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Confirm issuance marks it as a collection:
+          assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:c')
+
+          // Serials are rdf:type Collection:
+          assert.equal(bib.objectId('rdf:type'), 'nypl:Collection')
         })
     })
   })

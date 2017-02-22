@@ -1,0 +1,456 @@
+{
+  "_id": 15287586,
+  "id": 15287586,
+  "updatedDate": "2012-03-13T19:00:48Z",
+  "createdDate": "2008-12-19T17:57:16Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": "English",
+  "title": "Crisis in Indian science and possible ways out",
+  "author": "Srinivas, M. D.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1987,
+  "catalogDate": "2001-11-29",
+  "country": "India",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0"
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "Schwarzman Building - Service Desk Rm 217"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1"
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2001-11-29"
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b"
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "15287586"
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-19T17:57:16Z"
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-13T19:00:48Z"
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "6"
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1"
+    },
+    "89": {
+      "label": "Country",
+      "value": "ii ",
+      "display": "India"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-02-14T03:18:20Z"
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " "
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Srinivas, M. D."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "L-10 2660 no. 75"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Science"
+        },
+        {
+          "tag": "z",
+          "content": "India."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Technology"
+        },
+        {
+          "tag": "z",
+          "content": "India."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Research"
+        },
+        {
+          "tag": "z",
+          "content": "India."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "MLC 200111"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)M260000278"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cover title."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bound with: Manimekalai's renunciation and Rig Veda and its importance."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "29951080"
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bangalore :"
+        },
+        {
+          "tag": "b",
+          "content": "Indian Institute of World Culture,"
+        },
+        {
+          "tag": "c",
+          "content": "c1987."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "L-10 2660 no. 75"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "8 p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "26 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Transaction ;"
+        },
+        {
+          "tag": "v",
+          "content": "no. 75"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Transaction (Indian Institute of World Culture) ;"
+        },
+        {
+          "tag": "v",
+          "content": "no. 75."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Crisis in Indian science and possible ways out /"
+        },
+        {
+          "tag": "c",
+          "content": "by M.D. Srinivas."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b69584011"
+        },
+        {
+          "tag": "b",
+          "content": "08-28-07"
+        },
+        {
+          "tag": "c",
+          "content": "11-29-01"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20011127092026.1"
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "940311s1987    ii            000 0 eng dnamKa "
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "GZM"
+        },
+        {
+          "tag": "c",
+          "content": "GZM"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPG"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "11-29-01"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "ii "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "content": "00000nam  2200301Ka 4500"
+    }
+  ],
+  "nyplSource": "sierra-nypl"
+}

@@ -11,9 +11,7 @@ var argv = require('optimist')
   .describe('seek', 'skip everything except this id')
   .describe('limit', 'Limit to this number of records')
   .describe('until', 'Stop after processing this offset')
-  .describe('uri', 'Process specific bib (from cache)')
-  // .describe('apiall', 'Process all bibs from api')
-  // .describe('backfill', 'Back-fill bibs based on existing items (from api)')
+  .describe('uri_cache', 'Process specific bib (from cache)')
   .describe('loglevel', 'Specify log level (default info)')
   .describe('threads', 'Specify number of threads to run it under')
   .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
@@ -32,12 +30,8 @@ log.setLevel(argv.loglevel || 'info')
 // If --until given, dynamically set limit:
 if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 
-if (argv.uri) {
-  ; (new BibsUpdater()).bib(argv.uri)
-} else if (argv.apiall) {
-  ; (new BibsUpdater()).bibs()
-} else if (argv.backfill) {
-  ; (new BibsUpdater()).backfill()
+if (argv.uri_cache) {
+  ; (new BibsUpdater()).uriFromCache(argv.uri_cache)
 } else if (argv.threads) {
   BibsUpdater.threaded(argv)
 } else {
