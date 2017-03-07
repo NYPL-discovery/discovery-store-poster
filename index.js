@@ -6,7 +6,7 @@ const AWS = require('aws-sdk');
 
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
 const BibsUpdater = require('./lib/bibs-updater');
-// const db = require('./lib/db');
+const db = require('./lib/db');
 
 let decrypted;
 
@@ -40,7 +40,7 @@ function processEvent(event, context, callback, dbUri) {
 
 exports.handler = (event, context, callback) => {
   if (decrypted) {
-    // db.setConn(decrypted);
+    db.setConn(decrypted);
     processEvent(event, context, callback);
   } else {
     // Decrypt code should run once and variables stored outside of the function
@@ -52,7 +52,7 @@ exports.handler = (event, context, callback) => {
         return callback(err);
       }
       decrypted = data.Plaintext.toString('ascii');
-      // db.setConn(decrypted);
+      db.setConn(decrypted);
       processEvent(event, context, callback, decrypted);
     });
   }
