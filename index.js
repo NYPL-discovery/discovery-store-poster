@@ -7,8 +7,11 @@ const AWS = require('aws-sdk');
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
 const BibsUpdater = require('./lib/bibs-updater');
 const db = require('./lib/db');
+const avro = require('avsc');
+const schema = require('./avro-schema');
 
 let decrypted;
+const avroType = avro.parse(schema);
 
 // Will need to figure out how to set these values through the lambda.
 var opts = {
@@ -25,15 +28,17 @@ function processEvent(event, context, callback, dbUri) {
     const payload = new Buffer(record.kinesis.data, 'base64').toString('utf-8');
     // console.log('Decoded payload:', payload);
 
+    // const data = avroType.fromBuffer(payload);
+
     (new BibsUpdater())
       .update(opts, payload)
       .then(() => {
         console.log('DONE');
-        return callback(null, `Successfully processed ${event.Records.length} records.`);
+        return callback(null, `Successfully processed 1 record.`);
       })
       .catch(e => {
         console.log(e);
-        return callback(null, `failed`);
+        return callback(null, `Failed to process record.`);
       });
   });
 }
