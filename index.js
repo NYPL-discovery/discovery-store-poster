@@ -1,13 +1,15 @@
 'use strict';
 
+// console.log(process.env);
 console.log('Loading Lambda function');
-const BibsUpdater = require('./lib/bibs-updater');
-
 const AWS = require('aws-sdk');
 
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
+const BibsUpdater = require('./lib/bibs-updater');
+// const db = require('./lib/db');
+
 let decrypted;
-console.log(encrypted)
+
 // Will need to figure out how to set these values through the lambda.
 var opts = {
   skip: 0,
@@ -16,20 +18,29 @@ var opts = {
   seek: null,
 };
 
-function processEvent(event, context, callback) {
+function processEvent(event, context, callback, dbUri) {
   // console.log('Received event:', JSON.stringify(event, null, 2));
   event.Records.forEach((record) => {
     // Kinesis data is base64 encoded so decode here:
     const payload = new Buffer(record.kinesis.data, 'base64').toString('utf-8');
     // console.log('Decoded payload:', payload);
 
-    (new BibsUpdater()).update(opts, payload);
+    (new BibsUpdater())
+      .update(opts, payload)
+      .then(() => {
+        console.log('DONE');
+        return callback(null, `Successfully processed ${event.Records.length} records.`);
+      })
+      .catch(e => {
+        console.log(e);
+        return callback(null, `failed`);
+      });
   });
-  // callback(null, `Successfully processed ${event.Records.length} records.`);
 }
 
 exports.handler = (event, context, callback) => {
   if (decrypted) {
+    // db.setConn(decrypted);
     processEvent(event, context, callback);
   } else {
     // Decrypt code should run once and variables stored outside of the function
@@ -41,8 +52,8 @@ exports.handler = (event, context, callback) => {
         return callback(err);
       }
       decrypted = data.Plaintext.toString('ascii');
-      console.log(decrypted);
-      processEvent(event, context, callback);
+      // db.setConn(decrypted);
+      processEvent(event, context, callback, decrypted);
     });
   }
 };
