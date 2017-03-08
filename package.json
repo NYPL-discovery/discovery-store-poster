@@ -51,7 +51,7 @@
   },
   "description": "",
   "license": "MIT",
-  "name": "pcdm-store-updater2",
+  "name": "pcdm-store-updater",
   "preferGlobal": false,
   "private": false,
   "version": "0.0.1"
