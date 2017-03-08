@@ -59,3 +59,17 @@ node jobs/update-vocab [name] [opts]
 * `offset`: Start at index
 * `limit`: Limit to this number of records
 * `loglevel`: Specify log level (default info)
+
+## AWS Lambda
+
+### node-lambda
+The node-lambda npm package is used to invoke the lambda locally and to deploy it to AWS. In order to run the Lambda locally, the following files are needed:
+* event.json - can be updated to include a sample Kinesis record to read from when testing locally - optional but useful.
+* .env - should be updated to include the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY credentials and the correct AWS_ROLE_ARN for the Lambda. Add this file to .gitignore.
+* deploy.env - should be updated to include the AWS KMS environment variable with the encrypted string, `DISCOVERY_STORE_CONNECTION_URI`, to connect to the AWS RDS discovery_store instance. Add this file to .gitignore.
+* Index.js - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
+* post_install.sh - a bash script file executed by node-lambda after it performs `npm install` but before the repo is packaged and pushed to AWS. It is need to copy the static libpq library to the node_modules folder.
+
+To test locally run `node-lambda run -f deploy.env`. The `-f deploy.env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+
+To push to AWS run `node-lambda deploy -f deploy.env`.

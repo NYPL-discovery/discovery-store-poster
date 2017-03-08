@@ -12,7 +12,7 @@
       },
       "invokeIdentityArn": "arn:aws:iam::EXAMPLE",
       "eventName": "aws:kinesis:record",
-      "eventSourceARN": "arn:aws:kinesis:EXAMPLE",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1::stream/Bib",
       "eventSource": "aws:kinesis",
       "awsRegion": "us-east-1"
     }

@@ -3,15 +3,15 @@
 // console.log(process.env);
 console.log('Loading Lambda function');
 const AWS = require('aws-sdk');
-
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
 const BibsUpdater = require('./lib/bibs-updater');
 const db = require('./lib/db');
 const avro = require('avsc');
 const schema = require('./avro-schema');
+const config = require('config')
 
-let decrypted;
 const avroType = avro.parse(schema);
+let decrypted;
 
 // Will need to figure out how to set these values through the lambda.
 var opts = {
@@ -21,25 +21,28 @@ var opts = {
   seek: null,
 };
 
-function processEvent(event, context, callback, dbUri) {
+function processEvent(event, context, callback) {
   // console.log('Received event:', JSON.stringify(event, null, 2));
   event.Records.forEach((record) => {
     // Kinesis data is base64 encoded so decode here:
     const payload = new Buffer(record.kinesis.data, 'base64').toString('utf-8');
-    // console.log('Decoded payload:', payload);
-
+    // Decoded from Avro schema
     // const data = avroType.fromBuffer(payload);
 
-    (new BibsUpdater())
-      .update(opts, payload)
-      .then(() => {
-        console.log('DONE');
-        return callback(null, `Successfully processed 1 record.`);
-      })
-      .catch(e => {
-        console.log(e);
-        return callback(null, `Failed to process record.`);
-      });
+    if (record.eventSourceARN === config.kinesisReadStreams.bib) {
+      (new BibsUpdater())
+        // .update(opts, data)
+        .update(opts, payload)
+        .then(() => {
+          return callback(null, `Successfully processed 1 bib record.`);
+        })
+        .catch(e => {
+          console.log(e);
+          return callback(null, `Failed to process bib record.`);
+        });
+    } else if (record.eventSourceARN === config.kinesisReadStreams.item) {
+      // Process an item
+    }
   });
 }
 
@@ -58,7 +61,7 @@ exports.handler = (event, context, callback) => {
       }
       decrypted = data.Plaintext.toString('ascii');
       db.setConn(decrypted);
-      processEvent(event, context, callback, decrypted);
+      processEvent(event, context, callback);
     });
   }
 };
