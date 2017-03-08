@@ -5,6 +5,7 @@ console.log('Loading Lambda function');
 const AWS = require('aws-sdk');
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
 const BibsUpdater = require('./lib/bibs-updater');
+const ItemsUpdater = require('./lib/items-updater');
 const db = require('./lib/db');
 const avro = require('avsc');
 const schema = require('./avro-schema');
@@ -42,6 +43,16 @@ function processEvent(event, context, callback) {
         });
     } else if (record.eventSourceARN === config.kinesisReadStreams.item) {
       // Process an item
+      (new ItemsUpdater())
+        // .update(opts, data)
+        .update(opts, payload)
+        .then(() => {
+          return callback(null, `Successfully processed 1 item record.`);
+        })
+        .catch(e => {
+          console.log(e);
+          return callback(null, `Failed to process item record.`);
+        });
     }
   });
 }
