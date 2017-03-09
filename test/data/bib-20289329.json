@@ -1,0 +1,726 @@
+{
+  "id": "20289329",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2014-09-06T01:35:45Z",
+  "createdDate": "2014-09-05T15:18:25Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "French"
+  },
+  "title": "La musique et les musiciens d'église en Normandie au XIIIe siècle : d'après le \"Journal des visites pastorales\" d'Odon Rigaud",
+  "author": "Aubry, Pierre, 1874-1910, author.",
+  "materialType": {
+    "code": "b",
+    "value": "BLU-RAY"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1906,
+  "catalogDate": "2014-09-05",
+  "country": {
+    "code": "0",
+    "name": "France"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "fre",
+      "display": "French"
+    },
+    {
+      "label": "Skip",
+      "value": "3",
+      "display": "3"
+    },
+    {
+      "label": "Location",
+      "value": "mym  ",
+      "display": "Performing Arts Research Collections - Music"
+    },
+    {
+      "label": "COPIES",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2014-09-05",
+      "display": "2014-09-05"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "b",
+      "display": "BLU-RAY"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "20289329",
+      "display": "20289329"
+    },
+    {
+      "label": "Created Date",
+      "value": "2014-09-05T15:18:25Z",
+      "display": "2014-09-05T15:18:25Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2014-09-06T01:35:45Z",
+      "display": "2014-09-06T01:35:45Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "2",
+      "display": "2"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "fr ",
+      "display": "France"
+    },
+    {
+      "label": "PDATE",
+      "value": "2014-09-05T15:18:25Z",
+      "display": "2014-09-05T15:18:25Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Aubry, Pierre,"
+        },
+        {
+          "tag": "d",
+          "content": "1874-1910,"
+        },
+        {
+          "tag": "e",
+          "content": "author."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Odo Rigaldus,"
+        },
+        {
+          "tag": "c",
+          "content": "Archbishop of Rouen,"
+        },
+        {
+          "tag": "d",
+          "content": "-1275."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Church music"
+        },
+        {
+          "tag": "x",
+          "content": "Catholic Church."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Church music"
+        },
+        {
+          "tag": "z",
+          "content": "France"
+        },
+        {
+          "tag": "z",
+          "content": "Normandy."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Church music."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00860809"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Church music"
+        },
+        {
+          "tag": "x",
+          "content": "Catholic Church."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00860816"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "France"
+        },
+        {
+          "tag": "z",
+          "content": "Normandy."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01210709"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "   08008849"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)4456124"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Poor condition."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "4456124 ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Paris :"
+        },
+        {
+          "tag": "b",
+          "content": "Honoré Champion,"
+        },
+        {
+          "tag": "c",
+          "content": "1906."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*MFG (Aubry. Musique et les musiciens d'église en Normandie)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "57 pages, 1 leaf :"
+        },
+        {
+          "tag": "b",
+          "content": "illustrations ;"
+        },
+        {
+          "tag": "c",
+          "content": "29 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "3",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "La musique et les musiciens d'église en Normandie au XIIIe siècle :"
+        },
+        {
+          "tag": "b",
+          "content": "d'après le \"Journal des visites pastorales\" d'Odon Rigaud /"
+        },
+        {
+          "tag": "c",
+          "content": "par Pierre Aubry, archiviste paléographe."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20140904143644.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "781215s1906    fr a          000 0 fre  camIi ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "DLC"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "CLE"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCG"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "premarc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "e-fr---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ML178"
+        },
+        {
+          "tag": "b",
+          "content": ".A9"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ML178"
+        },
+        {
+          "tag": "b",
+          "content": ".A9"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "773"
+        },
+        {
+          "tag": "b",
+          "content": "Au18m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "RJK"
+        },
+        {
+          "tag": "b",
+          "content": "MUS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "z",
+          "content": "8528"
+        },
+        {
+          "tag": "a",
+          "content": "*MFG (Aubry. Musique et les musiciens d'église en Normandie)"
+        },
+        {
+          "tag": "i",
+          "content": "33433099183166"
+        },
+        {
+          "tag": "l",
+          "content": "mym32"
+        },
+        {
+          "tag": "s",
+          "content": "-"
+        },
+        {
+          "tag": "t",
+          "content": "002"
+        },
+        {
+          "tag": "h",
+          "content": "032"
+        },
+        {
+          "tag": "o",
+          "content": "u"
+        },
+        {
+          "tag": "v",
+          "content": "RJK/MUS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200445Ii 4500",
+      "subFields": null
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "id": "11253008",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-02-02T18:44:19Z",
+  "createdDate": "2008-12-14T20:23:00Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Black conversations. [An Interview with Geoffrey Holder] [videorecording] / ",
+  "author": null,
+  "materialType": {
+    "code": "g",
+    "value": "FILM,SLIDE,ETC"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1978,
+  "catalogDate": "2000-10-21",
+  "country": {
+    "code": "0",
+    "name": "United States"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "scb  ",
+      "display": "Schomburg Center - Moving Image & Recorded Sound"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2000-10-21",
+      "display": "2000-10-21"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "g",
+      "display": "FILM,SLIDE,ETC"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "11253008",
+      "display": "11253008"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-14T20:23:00Z",
+      "display": "2008-12-14T20:23:00Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-02-02T18:44:19Z",
+      "display": "2015-02-02T18:44:19Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "10",
+      "display": "10"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "xxu",
+      "display": "United States"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-01-30T05:08:00Z",
+      "display": "2015-01-30T05:08:00Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Holder, Geoffrey,"
+        },
+        {
+          "tag": "d",
+          "content": "1930-2014,"
+        },
+        {
+          "tag": "e",
+          "content": "interviewee."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Coombs, Orde."
+        },
+        {
+          "tag": "4",
+          "content": "ivr"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Hunter, Jim"
+        },
+        {
+          "tag": "q",
+          "content": "(Jim D.)"
+        },
+        {
+          "tag": "4",
+          "content": "drt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pontillo, Peter."
+        },
+        {
+          "tag": "4",
+          "content": "drt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "WPIX (Television station : New York, N.Y.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "World Institute of Black Communications."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "CEBA Collection."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "Sc Visual VRB-87"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Holder, Geoffrey,"
+        },
+        {
+          "tag": "d",
+          "content": "1930-2014"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "630",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Timbuktu."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "African American theater."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Costume design"
+        },
+        {
+          "tag": "z",
+          "content": "New York (State)"
+        },
+        {
+          "tag": "z",
+          "content": "New York."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Theater"
+        },
+        {
+          "tag": "z",
+          "content": "New York (State)"
+        },
+        {
+          "tag": "z",
+          "content": "New York."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Costume designers"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "African American fashion designers"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Black films and programs."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Talk shows."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp1260684"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "This program forms part of the Communications Excellence to Black Audiences (CEBA) Award Collection, a competition sponsored by the World Institute of Black Communications, Inc."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "508",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Host, Orde Coombs."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Geoffrey Holder discusses his work in the Broadway production of Timbuktu where he is the director, choreographer, and costume designer.  He also discusses the influence his family and his birthplace, Trinidad, has on his work.  Holder stresses the need for fantasy and splendor in his work and in the world."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG89-F29",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "New York"
+        },
+        {
+          "tag": "b",
+          "content": "WPIX,"
+        },
+        {
+          "tag": "c",
+          "content": "1979-04-02."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "Sc Visual VRB-87"
+        },
+        {
+          "tag": "z",
+          "content": "Original of Sc Visual DVD-792"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1 videocassette of 1 (U-matic) (27 min.) :"
+        },
+        {
+          "tag": "b",
+          "content": "sd., col. ;"
+        },
+        {
+          "tag": "c",
+          "content": "3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Black conversations."
+        },
+        {
+          "tag": "p",
+          "content": "[An Interview with Geoffrey Holder]"
+        },
+        {
+          "tag": "h",
+          "content": "[videorecording] / "
+        },
+        {
+          "tag": "c",
+          "content": "WPIX-TV, New York ; directed by Jim Hunter and Peter Pontillo."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Interview with Geoffrey Holder."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b22777349"
+        },
+        {
+          "tag": "b",
+          "content": "03-09-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-30-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629180250.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "vfrccahrm",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "890522s1978    xxu027 g          vleng dcgm a ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "033",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19780321"
+        },
+        {
+          "tag": "b",
+          "content": "3804"
+        },
+        {
+          "tag": "c",
+          "content": "N4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "si"
+        },
+        {
+          "tag": "b",
+          "content": "10-21-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "g"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "xxu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cgm  2200433 a 4500",
+      "subFields": null
+    }
+  ]
+}

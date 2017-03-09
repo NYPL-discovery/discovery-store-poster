@@ -1,0 +1,820 @@
+{
+  "id": "13706421",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-12-30T21:00:41Z",
+  "createdDate": "2008-12-17T12:41:00Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "Slovenian"
+  },
+  "title": "Slovenska bibliografija [electronic resource] = The Slovenian national bibliography.",
+  "author": null,
+  "materialType": {
+    "code": "m",
+    "value": "COMPUTER FILE"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 1995,
+  "catalogDate": "2001-01-03",
+  "country": {
+    "code": "0",
+    "name": "Slovenia"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "slv",
+      "display": "Slovenian"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "Schwarzman Building - Service Desk Rm 217"
+    },
+    {
+      "label": "COPIES",
+      "value": "17",
+      "display": "17"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2001-01-03",
+      "display": "2001-01-03"
+    },
+    {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    {
+      "label": "Material Type",
+      "value": "m",
+      "display": "COMPUTER FILE"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "13706421",
+      "display": "13706421"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-17T12:41:00Z",
+      "display": "2008-12-17T12:41:00Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-12-30T21:00:41Z",
+      "display": "2015-12-30T21:00:41Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "13",
+      "display": "13"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "xv ",
+      "display": "Slovenia"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-12-17T18:00:20Z",
+      "display": "2015-12-17T18:00:20Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Narodna in univerzitetna knjižnica v Ljubljani."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "Desk-Slav. Div. *WBC-525+"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenia"
+        },
+        {
+          "tag": "x",
+          "content": "Imprints"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals"
+        },
+        {
+          "tag": "v",
+          "content": "Databases."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1318-5640"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1335-2002"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "96652315"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0459108"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Title from disc label."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Represents a segment of the COBIB database and therefore accessible online through the OPAC of: Narodna in univerzitetna knjižnica v Ljubljani."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "515",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Issue 1 covers 1989-1994."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "National bibliography of Slovenian monographs comprised of: works by Slovenian authors, publications in Slovenian, and works issued by Slovenian publishers."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "System requirements: IBM compatible PC; MS-DOS version 3.3 or higher; Windows version 3.1 or higher; at least 4 MB of RAM free and at least 2 MB of free storage space; CD-ROM drive."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "530",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "CD-ROM ed. of: Slovenska bibliografija. Knjige."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Chiefly in Slovenian; searching available in English and Slovenian."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "556",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Accompanied by users' guide, in English and Slovenian."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "36037944",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Ljubljana :"
+        },
+        {
+          "tag": "b",
+          "content": "Narodna in univerzitetna knjižnica,"
+        },
+        {
+          "tag": "c",
+          "content": "1995-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "Desk-Slav. Div. *WBC-525+"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "computer optical discs ;"
+        },
+        {
+          "tag": "c",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Irregular"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenska bibliografija"
+        },
+        {
+          "tag": "h",
+          "content": "[electronic resource] ="
+        },
+        {
+          "tag": "b",
+          "content": "The Slovenian national bibliography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenska bibliografija (CD-ROM)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenian national bibliography"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "0",
+      "ind2": "3",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenska bibliografija CD-ROM"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "3",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenian national bibliography CD-ROM"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "3",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "SNB"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenska bibliografija"
+        },
+        {
+          "tag": "b",
+          "content": "The Slovenian national bibliography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenian national bibliography"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenska bibliografija CD-ROM"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Slovenian national bibliography CD-ROM"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "SNB"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b52730359"
+        },
+        {
+          "tag": "b",
+          "content": "08-17-07"
+        },
+        {
+          "tag": "c",
+          "content": "06-17-98"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "t",
+          "content": "Slovenska bibliografija. Knjige"
+        },
+        {
+          "tag": "x",
+          "content": "0353-1716"
+        },
+        {
+          "tag": "w",
+          "content": "(DLC)   90646277"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)13766759"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925124841.1",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "006",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "s x    b    0    0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "couugu        ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "961205c19959999xv         d        slv  cms a ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "DLC"
+        },
+        {
+          "tag": "c",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "slveng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "lc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "e-xv---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPX"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Z2931"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Z2931"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "s"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "hv"
+        },
+        {
+          "tag": "b",
+          "content": "01-03-01"
+        },
+        {
+          "tag": "c",
+          "content": "s"
+        },
+        {
+          "tag": "d",
+          "content": "m"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "slv"
+        },
+        {
+          "tag": "g",
+          "content": "xv "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cms  2200577 a 4500",
+      "subFields": null
+    }
+  ]
+}

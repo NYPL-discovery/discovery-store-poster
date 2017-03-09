@@ -1,0 +1,464 @@
+{
+  "id": "20827868",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-11-03T05:11:59Z",
+  "createdDate": "2015-10-30T13:32:28Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "German"
+  },
+  "title": "Eine neue Methode zur quantitativen Trennung des Nickels vom Kobalt und Zink : sowie Studien uber die Trennung des Kobalts vom Zink.",
+  "author": "Huldschinsky, Ernst, 1875-",
+  "materialType": {
+    "code": "t",
+    "value": "MANUSCRIPT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1902,
+  "catalogDate": "2015-10-30",
+  "country": {
+    "code": "0",
+    "name": "Hawaii"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "ger",
+      "display": "German"
+    },
+    {
+      "label": "Skip",
+      "value": "5",
+      "display": "5"
+    },
+    {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    {
+      "label": "COPIES",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2015-10-30",
+      "display": "2015-10-30"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "t",
+      "display": "MANUSCRIPT"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "20827868",
+      "display": "20827868"
+    },
+    {
+      "label": "Created Date",
+      "value": "2015-10-30T13:32:28Z",
+      "display": "2015-10-30T13:32:28Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-11-03T05:11:59Z",
+      "display": "2015-11-03T05:11:59Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "3",
+      "display": "3"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "hiu",
+      "display": "Hawaii"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-11-02T17:43:32Z",
+      "display": "2015-11-02T17:43:32Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Huldschinsky, Ernst,"
+        },
+        {
+          "tag": "d",
+          "content": "1875-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)843396061"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "\"Inaugaural-Dissertation Zur Erlangung der Doctorwürde von der Philosophischen Facultät der Friedrich-Wilhelms-Universität zu Berlin ... am 28. mai 1902.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "502",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "b",
+          "content": "doctoral"
+        },
+        {
+          "tag": "c",
+          "content": "Friedrich-Wilhelms-Universitat zu Berlin"
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "843396061",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Berlin :"
+        },
+        {
+          "tag": "b",
+          "content": "Gustave. Schade,"
+        },
+        {
+          "tag": "c",
+          "content": "1902."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "PMD p.v. 3, no. 14"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "43 pages ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "5",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Eine neue Methode zur quantitativen Trennung des Nickels vom Kobalt und Zink :"
+        },
+        {
+          "tag": "b",
+          "content": "sowie Studien uber die Trennung des Kobalts vom Zink."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Studien uber die Trennung des Kobalts vom Zink."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20151029151908.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "900321s1902    hiu      m    000 0 ger dctmMa ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ZAP"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "c",
+          "content": "ZAP"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ce"
+        },
+        {
+          "tag": "b",
+          "content": "CATRL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "b2=a;"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ctm  2200301Ma 4500",
+      "subFields": null
+    }
+  ]
+}

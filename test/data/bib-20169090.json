@@ -1,0 +1,902 @@
+{
+  "id": "20169090",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-01-10T03:53:17Z",
+  "createdDate": "2014-04-21T14:03:32Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Positively black. General Benjamin O. Davis.",
+  "author": null,
+  "materialType": {
+    "code": "s",
+    "value": "VHS"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1991,
+  "catalogDate": "2014-04-21",
+  "country": {
+    "code": "0",
+    "name": "New York (State)"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "scb  ",
+      "display": "Schomburg Center - Moving Image & Recorded Sound"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2014-04-21",
+      "display": "2014-04-21"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "s",
+      "display": "VHS"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "20169090",
+      "display": "20169090"
+    },
+    {
+      "label": "Created Date",
+      "value": "2014-04-21T14:03:32Z",
+      "display": "2014-04-21T14:03:32Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2016-01-10T03:53:17Z",
+      "display": "2016-01-10T03:53:17Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": "7"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "nyu",
+      "display": "New York (State)"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-12-31T09:21:07Z",
+      "display": "2015-12-31T09:21:07Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Davis, Benjamin O.,"
+        },
+        {
+          "tag": "c",
+          "content": "Jr.,"
+        },
+        {
+          "tag": "d",
+          "content": "1912-2002."
+        },
+        {
+          "tag": "t",
+          "content": "Benjamin O. Davis, Jr., American."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Davis, Benjamin O.,"
+        },
+        {
+          "tag": "c",
+          "content": "Jr.,"
+        },
+        {
+          "tag": "d",
+          "content": "1912-2002,"
+        },
+        {
+          "tag": "e",
+          "content": "interviewee."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Heningburg, Gus,"
+        },
+        {
+          "tag": "e",
+          "content": "host."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Heningburg, Gus,"
+        },
+        {
+          "tag": "e",
+          "content": "interviewer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Davis, Benjamin O.,"
+        },
+        {
+          "tag": "c",
+          "content": "Jr.,"
+        },
+        {
+          "tag": "d",
+          "content": "1912-2002."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Davis, Benjamin O.,"
+        },
+        {
+          "tag": "c",
+          "content": "Jr.,"
+        },
+        {
+          "tag": "d",
+          "content": "1912-2002"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "African American fighter pilots"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "African American generals"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "African Americans"
+        },
+        {
+          "tag": "x",
+          "content": "Civil rights."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Generals"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "v",
+          "content": "Interviews."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "Armed Forces"
+        },
+        {
+          "tag": "x",
+          "content": "African Americans."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "Race relations."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Nonfiction television programs."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Television news programs."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Filmed interviews."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)877106255"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Show no. 568-33."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "508",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Produced & directed by Harry McNeil."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Host: Gus Henniburg."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "518",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "o",
+          "content": "Broadcast"
+        },
+        {
+          "tag": "d",
+          "content": "May 26, 1991"
+        },
+        {
+          "tag": "p",
+          "content": "WNBC-TV, New York."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Benjamin O. Davis, Jr. was the first African American to graduate from West Point in the 20th century. In this interview conducted by Gus Henniburg on the television program \"Positively Black\" Davis discusses his recently published autobiography \"Benjamin O. Davis, Jr., American\" and reflects on his personal experience with racial discrimination in the Armed Forces, his successful command of air combat units in World War II, and his rise to the rank of three-star general."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "877106255",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "New York :"
+        },
+        {
+          "tag": "b",
+          "content": "WNBC-TV,"
+        },
+        {
+          "tag": "c",
+          "content": "1991."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "Sc Visual VRA-1177"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1 videocassette (28 min.) :"
+        },
+        {
+          "tag": "b",
+          "content": "sound, color ;"
+        },
+        {
+          "tag": "c",
+          "content": "1/2 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "two-dimensional moving image"
+        },
+        {
+          "tag": "b",
+          "content": "tdi"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "video"
+        },
+        {
+          "tag": "b",
+          "content": "v"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "videodisc"
+        },
+        {
+          "tag": "b",
+          "content": "vd"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "346",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "VHS"
+        },
+        {
+          "tag": "b",
+          "content": "NTSC"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Positively black."
+        },
+        {
+          "tag": "p",
+          "content": "General Benjamin O. Davis."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Positively black (Television program)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "General Benjamin O. Davis"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20140418120236.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "vd|cbahou",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "140418e19910526nyu028            vleng dngmIi ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "033",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19910526"
+        },
+        {
+          "tag": "b",
+          "content": "3804"
+        },
+        {
+          "tag": "c",
+          "content": "N4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYP"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "n-us---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "JCF"
+        },
+        {
+          "tag": "b",
+          "content": "SCL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "z",
+          "content": "8528"
+        },
+        {
+          "tag": "a",
+          "content": "Sc Visual VRA-1177"
+        },
+        {
+          "tag": "l",
+          "content": "SCBB2"
+        },
+        {
+          "tag": "h",
+          "content": "031"
+        },
+        {
+          "tag": "o",
+          "content": "a"
+        },
+        {
+          "tag": "s",
+          "content": "-"
+        },
+        {
+          "tag": "t",
+          "content": "014"
+        },
+        {
+          "tag": "v",
+          "content": "SCL/JCF"
+        },
+        {
+          "tag": "i",
+          "content": "33433076283286"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ngm  2200589Ii 4500",
+      "subFields": null
+    }
+  ]
+}

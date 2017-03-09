@@ -1,0 +1,692 @@
+{
+  "id": "11070917",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-12-31T18:16:18Z",
+  "createdDate": "2008-12-14T16:58:27Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Ella Fitzgerald sings the George and Ira Gershwin songbook [sound recording]",
+  "author": "Gershwin, George, 1898-1937.",
+  "materialType": {
+    "code": "j",
+    "value": "MUSIC NON-CD"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1959,
+  "catalogDate": "2001-01-04",
+  "country": {
+    "code": "0",
+    "name": "United States"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "myh  ",
+      "display": "Performing Arts Research Collections - Recorded Sound"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2001-01-04",
+      "display": "2001-01-04"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "j",
+      "display": "MUSIC NON-CD"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "11070917",
+      "display": "11070917"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-14T16:58:27Z",
+      "display": "2008-12-14T16:58:27Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-12-31T18:16:18Z",
+      "display": "2015-12-31T18:16:18Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": "7"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "xxu",
+      "display": "United States"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-12-22T11:42:15Z",
+      "display": "2015-12-22T11:42:15Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Gershwin, George,"
+        },
+        {
+          "tag": "d",
+          "content": "1898-1937."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Fitzgerald, Ella."
+        },
+        {
+          "tag": "4",
+          "content": "prf"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Gershwin, Ira,"
+        },
+        {
+          "tag": "d",
+          "content": "1896-1983."
+        },
+        {
+          "tag": "4",
+          "content": "lyr"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Stewart, Lawrence D."
+        },
+        {
+          "tag": "t",
+          "content": "Gershwins, words upon music."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*LRX 6407 (F)"
+        },
+        {
+          "tag": "z",
+          "content": "Program notes in listening room."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Musicals"
+        },
+        {
+          "tag": "v",
+          "content": "Excerpts, Arranged."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Motion picture music"
+        },
+        {
+          "tag": "v",
+          "content": "Excerpts, Arranged."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "r  59001818"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4024--4028"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4025"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4026"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4027"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4028"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "MG V-4024-4028"
+        },
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0007855"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Acc. by book published in conjunction with recording: The Gershwins, words upon music / [compiled by] Lawrence D. Stewart. c1959 (47 p. : ill.)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "With orchestra; Nelson Riddle, conductor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "In container; manual sequence."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG86-R121",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "b",
+          "content": "Verve Records"
+        },
+        {
+          "tag": "c",
+          "content": "[1959]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*LRX 6407 (F)"
+        },
+        {
+          "tag": "z",
+          "content": "Program notes in listening room."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "5 discs. :"
+        },
+        {
+          "tag": "b",
+          "content": "33 1/3 rpm. mono."
+        },
+        {
+          "tag": "c",
+          "content": "12 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Ella Fitzgerald sings the George and Ira Gershwin songbook"
+        },
+        {
+          "tag": "h",
+          "content": "[sound recording] /"
+        },
+        {
+          "tag": "c",
+          "content": "arrangements by Nelson Riddle."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "240",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Works."
+        },
+        {
+          "tag": "k",
+          "content": "Selections;"
+        },
+        {
+          "tag": "o",
+          "content": "arranged."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b20911087"
+        },
+        {
+          "tag": "b",
+          "content": "02-11-08"
+        },
+        {
+          "tag": "c",
+          "content": "08-24-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925123400.9",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "sd|bmmennmpln ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860908s1959    xxumcn   i          eng  cjm   ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "c",
+          "content": "IEN"
+        },
+        {
+          "tag": "d",
+          "content": "IEN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "g",
+          "content": "eng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "045",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "x0x3"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "048",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "b",
+          "content": "va01"
+        },
+        {
+          "tag": "a",
+          "content": "oa"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ph"
+        },
+        {
+          "tag": "b",
+          "content": "01-04-01"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "j"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "xxu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "y",
+          "content": "4304121"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cjm  2200409   4500",
+      "subFields": null
+    }
+  ]
+}

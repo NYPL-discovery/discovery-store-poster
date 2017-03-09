@@ -6,7 +6,7 @@
     "avsc": "^4.1.9",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.5.5",
-    "bluebird": "^3.4.6",
+    "bluebird": "^3.5.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "config": "^1.21.0",

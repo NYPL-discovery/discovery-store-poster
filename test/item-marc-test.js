@@ -124,4 +124,22 @@ describe('Item Marc Mapping', function () {
         })
     })
   })
+
+  describe('Item carrier, media type', function () {
+    it('should assign correct carrier, media types based on item type', function () {
+      var item = ItemSierraRecord.from(require('./data/item-10003973.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b10006965')
+          assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:6')
+          assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
+          assert.equal(item.literal('nypl:requestable'), true)
+          assert.equal(item.objectId('bf:media'), 'mediatypes:h')
+          assert.equal(item.objectId('bf:carrier'), 'carriertypes:hd')
+        })
+    })
+  })
 })

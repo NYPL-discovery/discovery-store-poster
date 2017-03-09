@@ -64,7 +64,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should extract many core properties', function () {
+    it('should extract many core properties from a MICROFORM', function () {
       var bib = BibSierraRecord.from(require('./data/bib-19995767.json'))
 
       return bibSerializer.fromMarcJson(bib)
@@ -81,6 +81,7 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.objectId('bf:media'), 'mediatypes:h')
           assert.equal(bib.statement('bf:media').object_label, 'microform')
 
+          // Material Type is 'h' and 007/00-01 == he, so:
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:he')
           assert.equal(bib.statement('bf:carrier').object_label, 'microfiche')
 
@@ -173,6 +174,154 @@ describe('Bib Marc Mapping', function () {
 
           // Serials are rdf:type Collection:
           assert.equal(bib.objectId('rdf:type'), 'nypl:Collection')
+
+          // Material Type is 'h' and has 007/00-01 == hd, so so carrier type should be hd
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:hd')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:h')
+          assert.equal(bib.statement('bf:carrier').object_label, 'microfilm reel')
+        })
+    })
+
+    it('should map carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-18501478.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'n', so carrier type should be cr (note that 007/00-01 == cr anyway)
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:cr')
+          assert.equal(bib.statement('bf:carrier').object_label, 'online resource')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:c')
+        })
+    })
+
+    it('should map vhs carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20169090.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 's' (VHS), so carrier type should be vf
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:v')
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:vf')
+          assert.equal(bib.statement('bf:carrier').object_label, 'videocassette')
+        })
+    })
+
+    it('should map teacher set carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-19818041.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is '-', so carrier type should be zu
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:zu')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:z')
+          assert.equal(bib.statement('bf:carrier').object_label, 'unspecified')
+        })
+    })
+
+    it('should map DVD carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12157346.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'v' (DVD), so carrier type should be vd
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:vd')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:v')
+          assert.equal(bib.statement('bf:carrier').object_label, 'videodisc')
+        })
+    })
+
+    it('should map BLU-RAY carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20289329.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'b' (blu-ray), so carrier type should be vd
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:vd')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:v')
+          assert.equal(bib.statement('bf:carrier').object_label, 'videodisc')
+        })
+    })
+
+    it('should map MUSIC NON-CD carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11070917.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'j' (music non-cd) and 007/00-01 == 'sd', so carrier type should be:
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:sd')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:s')
+          assert.equal(bib.statement('bf:carrier').object_label, 'audio disc')
+        })
+    })
+
+    it('should map SPOKEN WORD carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11079574.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'i' (spoken word) and no 007, so default 'sz'
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:sz')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:s')
+          assert.equal(bib.statement('bf:carrier').object_label, 'other audio carrier')
+        })
+    })
+
+    it('should map FILM, SLIDE, ETC. carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11253008.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'g' (film / slide) and 007/00-01 == vf so:
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:vf')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:v')
+          assert.equal(bib.statement('bf:carrier').object_label, 'videocassette')
+        })
+    })
+
+    it('should map COMPUTER FILE (cd) carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-13706421.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'm' (computer file) and 007/01 == o so cd:
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:cd')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:c')
+          assert.equal(bib.statement('bf:carrier').object_label, 'computer disc')
+        })
+    })
+
+    it('should map MANUSCRIPT carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20827868.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 't' (manuscript) and 338b === nc (which is fallback anyway) so:
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
+          assert.equal(bib.statement('bf:carrier').object_label, 'volume')
+        })
+    })
+
+    it('should identify bib carrier type', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Material Type is 'a' and no 007 or 338, so carrier type should be nc
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
+          assert.equal(bib.statement('bf:carrier').object_label, 'volume')
         })
     })
   })

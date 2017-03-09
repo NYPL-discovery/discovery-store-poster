@@ -1,0 +1,996 @@
+{
+  "id": "12157346",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2015-01-02T03:05:42Z",
+  "createdDate": "2008-12-15T18:23:00Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "ABC News close-up. Portraits, with Mikhail Baryshnikov [videorecording]",
+  "author": null,
+  "materialType": {
+    "code": "v",
+    "value": "DVD"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1976,
+  "catalogDate": "1999-09-04",
+  "country": {
+    "code": "0",
+    "name": "United States"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "myd  ",
+      "display": "Performing Arts Research Collections - Dance"
+    },
+    {
+      "label": "COPIES",
+      "value": "3",
+      "display": "3"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "1999-09-04",
+      "display": "1999-09-04"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "v",
+      "display": "DVD"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "12157346",
+      "display": "12157346"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-15T18:23:00Z",
+      "display": "2008-12-15T18:23:00Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2015-01-02T03:05:42Z",
+      "display": "2015-01-02T03:05:42Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "14",
+      "display": "14"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "xxu",
+      "display": "United States"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-01-02T00:32:33Z",
+      "display": "2015-01-02T00:32:33Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Baryshnikov, Mikhail,"
+        },
+        {
+          "tag": "d",
+          "content": "1948-"
+        },
+        {
+          "tag": "4",
+          "content": "ive"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Baryshnikov, Mikhail,"
+        },
+        {
+          "tag": "d",
+          "content": "1948-"
+        },
+        {
+          "tag": "e",
+          "content": "dancer"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Makarova, Natalia,"
+        },
+        {
+          "tag": "d",
+          "content": "1940-"
+        },
+        {
+          "tag": "e",
+          "content": "dancer"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Makarova, Natalia,"
+        },
+        {
+          "tag": "d",
+          "content": "1940-"
+        },
+        {
+          "tag": "4",
+          "content": "cmm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Makarova, Natalia,"
+        },
+        {
+          "tag": "d",
+          "content": "1940-"
+        },
+        {
+          "tag": "e",
+          "content": "choreographer"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Jamison, Judith,"
+        },
+        {
+          "tag": "e",
+          "content": "dancer"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Lindsay, John V."
+        },
+        {
+          "tag": "q",
+          "content": "(John Vliet)"
+        },
+        {
+          "tag": "4",
+          "content": "hst"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Barnes, Clive,"
+        },
+        {
+          "tag": "d",
+          "content": "1927-2008."
+        },
+        {
+          "tag": "4",
+          "content": "cmm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Van Hamel, Martine,"
+        },
+        {
+          "tag": "d",
+          "content": "1945-"
+        },
+        {
+          "tag": "4",
+          "content": "cmm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Avedon, Richard."
+        },
+        {
+          "tag": "4",
+          "content": "pht"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Victor, Thomas."
+        },
+        {
+          "tag": "4",
+          "content": "pht"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Swope, Martha."
+        },
+        {
+          "tag": "4",
+          "content": "pht"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "American Ballet Theatre."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ABC Television Network."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "DHCA."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*MGZIDVD 5-1845"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Interviews."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Dance."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Video."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(NN-PD)787011130"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp2144010"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Interviewee, Mikhail Baryshnikov."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Host, John V. Lindsay."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "518",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Telecast on WABC-TV on ABC News Closeup: Portraits, on June 17, 1976."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Profile of dancer Mikhail Baryshnikov, who talks about his decision to leave the U.S.S.R., the pressures of life in New York, partnering, and other topics. Included are brief commentaries by Clive Barnes, Martine van Hamel, Natalia Makarova, and Remi Saunder. Film clips show Baryshnikov in class and rehearsal with American Ballet Theatre at Kennedy Center in Washington, and he is also seen in still photographs by Richard Avedon, Tom Victor, and Martha Swope. He is seen performing brief excerpts from Makarova's staging of Marius Petipa's La bayadère; Alvin Ailey's Pas de Duke, which he rehearses with Judith Jamison; Twyla Tharp's Push comes to shove; and Kenneth MacMillan's Romeo and Juliet, with Makarova."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "536",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "This videorecording was preserved with support provided in part by Save America's Treasures through a partnership between the National Endowment for the Arts and the National Park Service, Department of the Interior."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "DVD."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Former classmark: *MGZIC 9-748."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "CATNYP bib. record updated 9/11/2006 by ESW."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Archive Original: 1 3/4\" cassette (formerly *MGZIC 9-748, was viewing copy until 12/97), was copied from 1/2\" open reel, recorded off-air by Steve Rutt on DC stock, 12/1976; missing 12/97; in Princeton ReCAP Regular Storage."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Master: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Additional Copies/Rough Edits/Outtakes: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Vid. Pres. Master: 1 Digital Betacam cassette, copied from 3/4\" AO by Specs Bros., 9/2006; in Princeton ReCAP Regular Storage. This replaced 3/4\" videocassette, copied from AO as part of JRA Preservation Project, 12/1997; deteriorated and withdrawn, 9/2006."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Vid. View. Copy: 1 DVD, copied from Pres Master by Specs Bros., 9/2006; on shelf.  Replaces 1 3/4\" cassette (formerly *MGZIC 9-748), copied from 3/4\" AO, detiorated and withdrawn, 2/2007."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Film View. Copy: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPY787011130-F",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States :"
+        },
+        {
+          "tag": "b",
+          "content": "ABC Television Network,"
+        },
+        {
+          "tag": "c",
+          "content": "1976."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*MGZIDVD 5-1845"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1 videodisc (NTSC) (16 min.) :"
+        },
+        {
+          "tag": "b",
+          "content": "sd., col. ;"
+        },
+        {
+          "tag": "c",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "ABC News close-up."
+        },
+        {
+          "tag": "p",
+          "content": "Portraits, with Mikhail Baryshnikov"
+        },
+        {
+          "tag": "h",
+          "content": "[videorecording] /"
+        },
+        {
+          "tag": "c",
+          "content": "ABC-TV."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Portraits, with Mikhail Baryshnikov"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Portraits"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Bayadère (Choreographic work : Makarova after Petipa, M)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Pas de Duke (Choreographic work : Ailey)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Push comes to shove (Choreographic work : Tharp)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Romeo and Juliet (Choreographic work : MacMillan)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b36339878"
+        },
+        {
+          "tag": "b",
+          "content": "04-20-09"
+        },
+        {
+          "tag": "c",
+          "content": "09-17-95"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "19990811163606.4",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "vd|cvaiz|",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "780705s1976    xxu016            vleng dcgmzi ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN-PD"
+        },
+        {
+          "tag": "c",
+          "content": "NN-PD"
+        },
+        {
+          "tag": "d",
+          "content": "CStRLIN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        },
+        {
+          "tag": "e",
+          "content": "amim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "909",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Dance"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "none"
+        },
+        {
+          "tag": "a",
+          "content": "pd"
+        },
+        {
+          "tag": "b",
+          "content": "09-04-99"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "g"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "nyu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cgm  2200637zi 4500",
+      "subFields": null
+    }
+  ]
+}

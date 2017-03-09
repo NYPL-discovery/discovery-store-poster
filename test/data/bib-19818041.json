@@ -1,0 +1,151 @@
+{
+  "id": "19818041",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2013-05-14T15:27:04Z",
+  "createdDate": "2013-05-14T15:23:00Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "Russian"
+  },
+  "title": "Sandro iz Chegema.",
+  "author": "Iskander, Fazil.",
+  "materialType": {
+    "code": "-",
+    "value": "MISC"
+  },
+  "bibLevel": {
+    "code": "-",
+    "value": "---"
+  },
+  "publishYear": null,
+  "catalogDate": null,
+  "country": {
+    "code": "0",
+    "name": "No country"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "rus",
+      "display": "Russian"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "none ",
+      "display": "none "
+    },
+    {
+      "label": "COPIES",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Bib Level",
+      "value": "-",
+      "display": "---"
+    },
+    {
+      "label": "Material Type",
+      "value": "-",
+      "display": "MISC"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "19818041",
+      "display": "19818041"
+    },
+    {
+      "label": "Created Date",
+      "value": "2013-05-14T15:23:00Z",
+      "display": "2013-05-14T15:23:00Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2013-05-14T15:27:04Z",
+      "display": "2013-05-14T15:27:04Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "   ",
+      "display": "No country"
+    },
+    {
+      "label": "PDATE",
+      "value": "2013-05-14T15:23:09Z",
+      "display": "2013-05-14T15:23:09Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Iskander, Fazil."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Sandro iz Chegema."
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  2200000 a 4500",
+      "subFields": null
+    }
+  ]
+}

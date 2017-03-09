@@ -1,0 +1,604 @@
+{
+  "id": "18501478",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-01-08T01:02:47Z",
+  "createdDate": "2010-07-12T12:41:20Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Cobbett's weekly political register [electronic resource].",
+  "author": null,
+  "materialType": {
+    "code": "n",
+    "value": "E-AUDIOBOOK"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 1802,
+  "catalogDate": "2011-11-14",
+  "country": {
+    "code": "0",
+    "name": "England"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "ia   ",
+      "display": "Electronic Material for Adults"
+    },
+    {
+      "label": "COPIES",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2011-11-14",
+      "display": "2011-11-14"
+    },
+    {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    {
+      "label": "Material Type",
+      "value": "n",
+      "display": "E-AUDIOBOOK"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "18501478",
+      "display": "18501478"
+    },
+    {
+      "label": "Created Date",
+      "value": "2010-07-12T12:41:20Z",
+      "display": "2010-07-12T12:41:20Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2016-01-08T01:02:47Z",
+      "display": "2016-01-08T01:02:47Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "12",
+      "display": "12"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    {
+      "label": "PDATE",
+      "value": "2015-12-31T06:41:59Z",
+      "display": "2015-12-31T06:41:59Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett, William,"
+        },
+        {
+          "tag": "d",
+          "content": "1763-1835."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "History, Modern"
+        },
+        {
+          "tag": "y",
+          "content": "19th century"
+        },
+        {
+          "tag": "v",
+          "content": "Newspapers."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Great Britain"
+        },
+        {
+          "tag": "x",
+          "content": "Politics and government"
+        },
+        {
+          "tag": "y",
+          "content": "1800-1837"
+        },
+        {
+          "tag": "v",
+          "content": "Newspapers."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)506484847"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Editor: William Cobbett."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Reproduction of the original from the British Library (London)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "510",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "BL 013911141; 013911140."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "533",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Electronic reproduction."
+        },
+        {
+          "tag": "b",
+          "content": "Farmington Hills, Mich. :"
+        },
+        {
+          "tag": "c",
+          "content": "Gale,"
+        },
+        {
+          "tag": "d",
+          "content": "2009."
+        },
+        {
+          "tag": "n",
+          "content": "Available via the World Wide Web."
+        },
+        {
+          "tag": "n",
+          "content": "Access limited by licensing agreements."
+        },
+        {
+          "tag": "7",
+          "content": "s2009   miunns."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Images from the source libraries are selected or scattered issues as well as various editions of the cataloged title and related titles (where indicated in the MARC record) as representative of the general publishing history of the title during the nineteenth century."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "galncbln000016",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "[London :"
+        },
+        {
+          "tag": "b",
+          "content": "R. Bagshaw],"
+        },
+        {
+          "tag": "c",
+          "content": "1802-1836."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "v. ;"
+        },
+        {
+          "tag": "c",
+          "content": "24 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Weekly"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "[Vol. 1], no. 1 (Jan. 1, 1802)-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19th century British Library newspapers"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Nineteenth century British Library newspapers"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19th century British Library newspapers"
+        },
+        {
+          "tag": "h",
+          "content": "[electronic resource]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett's weekly political register"
+        },
+        {
+          "tag": "h",
+          "content": "[electronic resource]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett's weekly political register (London, England : 1802)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett's weekly political register"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett's annual register"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "3",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Cobbett's annual register"
+        }
+      ]
+    },
+    {
+      "fieldTag": "z",
+      "marcTag": "785",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "t",
+          "content": "Cobbett's annual register"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "MiFhGG",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20090616085330.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "006",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "m    |   d |      ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "cr||n||||||||n",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "090616u18021836enkwr nes     0    0eng dnas a ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Gale"
+        },
+        {
+          "tag": "c",
+          "content": "UtOrBLW"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "e-uk---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "u",
+          "content": "http://find.galegroup.com/bncn/infomark.do?serQuery=Locale%28en%2C%2C%29%3AFQE%3D%28JX%2CNone%2C37%29%22Cobbett's+Weekly+Political+Register%22%24&queryType=PH&type=pubIssues&prodId=BNCN&version=1.0&source=library&userGroupName=nypl"
+        },
+        {
+          "tag": "y",
+          "content": "Full text online"
+        },
+        {
+          "tag": "z",
+          "content": "Available onsite at Research Libraries and Mid-Manhattan Library"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "kts"
+        },
+        {
+          "tag": "b",
+          "content": "CAT"
+        },
+        {
+          "tag": "n",
+          "content": "SCOPE2015"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nas  2200373 a 4500",
+      "subFields": null
+    }
+  ]
+}

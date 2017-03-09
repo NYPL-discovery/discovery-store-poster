@@ -1,0 +1,546 @@
+{
+  "id": "11079574",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-01-19T00:08:50Z",
+  "createdDate": "2008-12-14T17:08:11Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Marian McPartland's piano jazz [sound recording],",
+  "author": null,
+  "materialType": {
+    "code": "i",
+    "value": "SPOKEN WORD"
+  },
+  "bibLevel": {
+    "code": "7",
+    "value": "ARCHIVES & MSS"
+  },
+  "publishYear": 1970,
+  "catalogDate": "2000-10-20",
+  "country": {
+    "code": "0",
+    "name": "New York (State)"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "myh  ",
+      "display": "Performing Arts Research Collections - Recorded Sound"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2000-10-20",
+      "display": "2000-10-20"
+    },
+    {
+      "label": "Bib Level",
+      "value": "7",
+      "display": "ARCHIVES & MSS"
+    },
+    {
+      "label": "Material Type",
+      "value": "i",
+      "display": "SPOKEN WORD"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "11079574",
+      "display": "11079574"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-14T17:08:11Z",
+      "display": "2008-12-14T17:08:11Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2012-01-19T00:08:50Z",
+      "display": "2012-01-19T00:08:50Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "3",
+      "display": "3"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "nyu",
+      "display": "New York (State)"
+    },
+    {
+      "label": "PDATE",
+      "value": "2009-04-15T20:07:23Z",
+      "display": "2009-04-15T20:07:23Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "656",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "555",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "561",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPW87-A197",
+      "subFields": null
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629175634.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "870924i19709999nyu                 eng dcbc aa",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": null
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cbca 2200649 a 4500",
+      "subFields": null
+    }
+  ]
+}
