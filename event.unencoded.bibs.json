@@ -1,0 +1,64 @@
+{
+  "Records": [
+    {
+      "id":"17746307",
+      "nyplSource":"sierra-nypl",
+      "nyplType":"bib",
+      "updatedDate":"2016-01-07T02:32:51Z",
+      "createdDate":"2008-12-24T03:16:00Z",
+      "deletedDate":"2008-12-24",
+      "deleted":false,
+      "locations":[
+        {
+          "code":"rcma2",
+          "name":"OFFSITE - Request in Advance"
+        }
+      ],
+      "suppressed":false,
+      "lang":{
+        "code":"eng",
+        "name":"English"
+      },
+      "title":"Harry Potter and the Chamber of Secrets",
+      "author":"Rowling, J. K.",
+      "materialType":{
+        "code":"a",
+        "value":"BOOK/TEXT"
+      },
+      "bibLevel":{
+        "code":"m",
+        "value":"MONOGRAPH"
+      },
+      "publishYear":1999,
+      "catalogDate":"2008-12-24",
+      "country":{
+        "code":"nyu",
+        "name":"New York (State)"
+      },
+      "normTitle":"string",
+      "normAuthor":"string",
+      "fixedFields":{
+        "24":{
+          "label":"Language",
+          "value":"eng",
+          "display":"English"
+        }
+      },
+      "varFields":[
+        {
+          "fieldTag":"a",
+          "marcTag":"100",
+          "ind1":"1",
+          "ind2":"string",
+          "content":"string",
+          "subFields":[
+            {
+              "tag":"a",
+              "content":"Wizards"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

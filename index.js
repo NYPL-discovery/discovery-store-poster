@@ -1,6 +1,5 @@
 'use strict';
 
-// console.log(process.env);
 console.log('Loading Lambda function');
 const AWS = require('aws-sdk');
 const encrypted = process.env['DISCOVERY_STORE_CONNECTION_URI'];
@@ -10,9 +9,11 @@ const db = require('./lib/db');
 const avro = require('avsc');
 const schema = require('./avro-schema');
 const config = require('config')
+const OAuth = require('oauth');
+const request = require('request');
 
-const avroType = avro.parse(schema);
 let decrypted;
+let CACHE = {};
 
 // Will need to figure out how to set these values through the lambda.
 var opts = {
@@ -22,39 +23,93 @@ var opts = {
   seek: null,
 };
 
-function processEvent(event, context, callback) {
-  // console.log('Received event:', JSON.stringify(event, null, 2));
-  event.Records.forEach((record) => {
-    // Kinesis data is base64 encoded so decode here:
-    const payload = new Buffer(record.kinesis.data, 'base64').toString('utf-8');
-    // Decoded from Avro schema
-    // const data = avroType.fromBuffer(payload);
+function getSchema(schemaType) {
+  // schema in cache; just return it as a instant promise
+  if (CACHE[schemaType]) {
+    console.log(`Already have ${schemaType} schema`);
+    return new Promise((resolve, reject) => {
+      resolve(CACHE[schemaType]);
+    });
+  }
 
-    if (record.eventSourceARN === config.kinesisReadStreams.bib) {
-      (new BibsUpdater())
-        // .update(opts, data)
-        .update(opts, payload)
-        .then(() => {
-          return callback(null, `Successfully processed 1 bib record.`);
-        })
-        .catch(e => {
-          console.log(e);
-          return callback(null, `Failed to process bib record.`);
-        });
-    } else if (record.eventSourceARN === config.kinesisReadStreams.item) {
-      // Process an item
-      (new ItemsUpdater())
-        // .update(opts, data)
-        .update(opts, payload)
-        .then(() => {
-          return callback(null, `Successfully processed 1 item record.`);
-        })
-        .catch(e => {
-          console.log(e);
-          return callback(null, `Failed to process item record.`);
-        });
+  return new Promise((resolve, reject) => {
+    var options = {
+      uri: process.env['NYPL_API_SCHEMA_URL'] + schemaType,
+      json: true
+    };
+
+    console.log(`Loading ${schemaType} schema...`);
+    request(options, (error, resp, body) => {
+      if (error) {
+        reject(error);
+      }
+      if (body.data && body.data.schema) {
+        console.log(`Sucessfully loaded ${schemaType} schema`);
+        var schema = JSON.parse(body.data.schema);
+        CACHE[schemaType] = avro.parse(schema);
+        resolve(CACHE[schemaType]);
+      }
+      else {
+        reject();
+      }
+    });
+  });
+}
+
+
+function processEvent(event, context, callback) {
+  const promises = [];
+  const bib = "Bib";
+  const item = "Item";
+  let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? bib : item;
+
+  // console.log('Received event:', JSON.stringify(event, null, 2));
+  event.Records.forEach((record, i) => {
+    // Kinesis data is base64 encoded so decode here:
+    const kinesisData = new Buffer(record.kinesis.data, 'base64');//.toString('utf-8');
+
+    if (bibOrItem === bib) {
+      promises.push(new Promise((resolve, reject) => {
+        getSchema(bib)
+          .then(() => {
+            let decodedData = (CACHE[bib]).fromBuffer(kinesisData);
+            return (new BibsUpdater())
+              .update(opts, decodedData)
+              // .update(opts, kinesisData)
+              .then(() => resolve())
+              .catch(e => {
+                console.log(e);
+                return reject(`Failed to process bib record ${i + 1}.`);
+              });
+          })
+      }));
+    } else if (bibOrItem === item) {
+      promises.push(new Promise((resolve, reject) => {
+        getSchema(item)
+          .then(() => {
+            let decodedData = CACHE[item].fromBuffer(kinesisData);
+            return (new ItemsUpdater())
+              .update(opts, decodedData)
+              // .update(opts, kinesisData)
+              .then(() => resolve())
+              .catch(e => {
+                console.log(e);
+                return reject(`Failed to process item record ${i + 1}.`);
+              });
+          });
+      }));
     }
   });
+
+  // Wait until all bibs or items have been processed and pushed to Kinesis:
+  Promise.all(promises)
+    .then(() => {
+      console.log('all promises done');
+      callback(null, `Successfully processed ${event.Records.length} ${bibOrItem} records.`);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
 
 exports.handler = (event, context, callback) => {
