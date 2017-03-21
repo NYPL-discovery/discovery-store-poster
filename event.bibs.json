@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "s1",
+        "sequenceNumber": "00000000000000000000000000000000000000000000000000000001",
+        "data": "EDE3NzQ2MzA3ABZzaWVycmEtbnlwbAAGYmliACgyMDE2LTAxLTA3VDAyOjMyOjUxWgAoMjAwOC0xMi0yNFQwMzoxNjowMFoAFDIwMDgtMTItMjQAAgIAAApyY21hMgA4T0ZGU0lURSAtIFJlcXVlc3QgaW4gQWR2YW5jZQAAAAIGZW5nAA5FbmdsaXNoAE5IYXJyeSBQb3R0ZXIgYW5kIHRoZSBDaGFtYmVyIG9mIFNlY3JldHMAHFJvd2xpbmcsIEouIEsuAgJhEkJPT0svVEVYVAICbRJNT05PR1JBUEgAnh8AFDIwMDgtMTItMjQCBm55dSBOZXcgWW9yayAoU3RhdGUpAAxzdHJpbmcADHN0cmluZwICBDI0AAAQTGFuZ3VhZ2UABmVuZwAORW5nbGlzaAACAgAAAmEABjEwMAACMQAMc3RyaW5nAAxzdHJpbmcCAgAAAmEADldpemFyZHMAAA==",
+        "approximateArrivalTimestamp": 1428537600
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:00000000000000000000000000000000000000000000000000000001",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::EXAMPLE",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1::stream/Bib"
+    }
+  ]
+}

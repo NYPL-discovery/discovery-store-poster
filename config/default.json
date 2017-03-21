@@ -30,5 +30,20 @@
     "items": {
       "topic": "Item"
     }
+  },
+
+  "bibsSource": "kinesis",
+
+  "itemsSource": "kinesis",
+
+  "kinesisWriteStream": {
+    "shards": 1,
+    "stream": "IndexDocumentQueue",
+    "waitBetweenDescribeCallsInSeconds": 5
+  },
+
+  "kinesisReadStreams": {
+    "bib": "",
+    "item": ""
   }
 }

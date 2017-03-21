@@ -59,3 +59,51 @@ node jobs/update-vocab [name] [opts]
 * `offset`: Start at index
 * `limit`: Limit to this number of records
 * `loglevel`: Specify log level (default info)
+
+## AWS Lambda
+
+### node-lambda
+The node-lambda npm package is used to invoke the lambda locally and to deploy it to AWS. In order to run the Lambda locally, the following files are needed:
+* event.json - can be updated to include a sample Kinesis record to read from when testing locally - optional but useful.
+
+* .env - should be updated to include the following credentials:
+  * AWS_ACCESS_KEY_ID
+  * AWS_SECRET_ACCESS_KEY
+  * AWS_ROLE_ARN
+  * AWS_REGION
+
+  AWS_ROLE_ARN is the role for the Lambda. Add this file to .gitignore.
+
+* deploy.env - should be updated to include the AWS KMS environment variable with the encrypted string already encoded, `DISCOVERY_STORE_CONNECTION_URI`, to connect to the AWS RDS discovery_store instance. Add this file to .gitignore.
+  * To setup the Lambda with this configuration, select the "Configuration" tab for the Lambda in its dashboard. The "KMS Key" can be updated to `lambda-rds`. Back in the "Code" tab, click on "Enable encryption helpers" and select the `lambda-rds` Encryption key. Add the full RDS connection string as an environment variable value (`DISCOVERY_STORE_CONNECTION_URI` is the key), and then click on "Encrypt". This will give you the encoded string that needs to be added to the `deploy.env` file.
+
+* Index.js - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
+
+* post_install.sh - a bash script file executed by node-lambda after it performs `npm install` but before the repo is packaged and pushed to AWS. It is need to copy the static libpq library to the node_modules folder.
+
+To test locally run `node-lambda run -f deploy.env`. The `-f deploy.env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+
+To push to AWS run `node-lambda deploy -f deploy.env`.
+
+### Test Data
+
+The Lambda is set up to read AWS events, one of which is a Kinesis stream. The PCDM Store Updater reads from two Kinesis Streams: Bib and Item. As mentioned above, to test locally run `node-lambda run -f deploy.env`. This will use the `event.json` file as the Kinesis event source. Make sure you update your `config/local.json` file to include the values for the Kinesis streams:
+
+    "kinesisReadStreams": {
+      "bib": "arn:aws:kinesis:us-east-1:[AWS-ID]:stream/Bib",
+      "item": "arn:aws:kinesis:us-east-1:[AWS-ID]:stream/Item"
+    }
+
+*Note: Make sure you update the AWS-ID in the config and in kinesify-data.js*
+
+The script to generate mock data is from [Discovery Bib/Item Poster](https://github.com/NYPL-discovery/discovery-bib-poster).
+
+Run:
+
+    node kinesify-data.js event.unencoded.bibs.json event.bibs.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
+
+or
+
+    node kinesify-data.js event.unencoded.items.json event.items.json https://api.nypltech.org/api/v0.1/current-schemas/Item
+
+to generate an array of bib or item objects. Make sure you also update `kinesify-data.js` with the same "eventSourceARN" value you have in `config/local.json`. If you will generate Bibs, use the Bib eventSourceARN Kinesis stream. Otherwise, use the Item eventSourceARN for the Item Kinesis stream. Running the script above will generate `event.bibs.json` or `event.items.json` depending on the source data used. The resulting encoded data can be used in `event.json` when running locally.
