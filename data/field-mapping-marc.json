@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "Type",
+    "predicate": "rdfs:type",
+    "bib_path": "LDR/07 (see notes)",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Access message",
+    "predicate": "nypl:accessMessage",
+    "bib_path": "",
+    "item_path": "fixedFields.108.value",
+    "recap_path": "need either default or mapping rules",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Alternative title",
+    "predicate": "dcterms:alternative",
+    "bib_path": "130 $a $b $f $n $p\n210 $a $b $f $n $p\n222 $a $b $f $n $p\n240 $a $b $f $n $p\n246 $a $b $f $n $p",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Varying Form of Title"
+  },
+  {
+    "name": "Availability",
+    "predicate": "bf:status",
+    "bib_path": "",
+    "item_path": "status.code",
+    "recap_path": "876 $j (ReCAP)",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Barcode",
+    "predicate": "dcterms:identifier",
+    "bib_path": "",
+    "item_path": "barcode",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Call number",
+    "predicate": "nypl:shelfMark",
+    "bib_path": "",
+    "item_path": "Join 852$h and fieldTag 'v' value (if available) with a space\n",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Carrier type",
+    "predicate": "bf:carrier",
+    "bib_path": "see mapping tab \"Media and Carrier type mappings\"",
+    "item_path": "",
+    "recap_path": "TBD (probably 338b)",
+    "marc_field_name": "Specific Material Designation"
+  },
+  {
+    "name": "Catalog item type",
+    "predicate": "nypl:catalogItemType",
+    "bib_path": "",
+    "item_path": "fixedFields.61.value",
+    "recap_path": "need either default or mapping rules",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Content owner",
+    "predicate": "nypl:owner",
+    "bib_path": "",
+    "item_path": "location",
+    "recap_path": "for Princeton records: nyplOrg:0003\nfor Columbia records: nyplOrg:0002",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Contributor",
+    "predicate": "dcterms:contributor",
+    "bib_path": "100 $a $b $c $q $d $j\n110\n111\n700 $a $b $c $q $d $j\n710\n711",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Main Entry-Personal Name\nMain Entry-Corporate Name\nMain Entry-Meeting Name\nAdded Entry-Personal Name\nAdded Entry-Corporate Name\nAdded Entry-Meeting Name"
+  },
+  {
+    "name": "Contributor literal",
+    "predicate": "dc:contributor",
+    "bib_path": "700 $a $b $c $q $d $j\n710\n711",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Contributor by role",
+    "predicate": "based on mapping rules (see Notes)",
+    "bib_path": "100 $a $b $c $q $d $j\n110\n111\n700 $a $b $c $q $d $j\n710\n711",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Contributor literal by role",
+    "predicate": "based on mapping rules (see Notes)",
+    "bib_path": "700 $a $b $c $q $d $j\n710\n711",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Creator literal",
+    "predicate": "dc:creator",
+    "bib_path": "100 $a $b $c $q $d $j\n110\n111",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Date",
+    "predicate": "dc:date",
+    "bib_path": "publishYear",
+    "item_path": "",
+    "recap_path": "008/7-10",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Date created",
+    "predicate": "dcterms:created",
+    "bib_path": "publishYear",
+    "item_path": "",
+    "recap_path": "008/7-10",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Date end",
+    "predicate": "dbo:endDate",
+    "bib_path": "008/11-14",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Date start",
+    "predicate": "dbo:startDate",
+    "bib_path": "008/7-10",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Delivery location",
+    "predicate": "nypl:deliveryLocation",
+    "bib_path": "",
+    "item_path": "based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016",
+    "recap_path": "TBD",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Description",
+    "predicate": "dcterms:description",
+    "bib_path": "520 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Summary, Etc."
+  },
+  {
+    "name": "Dimensions",
+    "predicate": "bf:dimensions",
+    "bib_path": "300 $c",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Electronic location",
+    "predicate": "bf:electronicLocator",
+    "bib_path": "856 (see notes)",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Extent",
+    "predicate": "nypl:extent",
+    "bib_path": "300 $a $b",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Genre/Category",
+    "predicate": "TBD",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "008Book or Serial 24-27 (006Book or Serial 07-10)",
+    "marc_field_name": "Nature of contents"
+  },
+  {
+    "name": "Geographic coverage",
+    "predicate": "dcterms:geographic",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "651",
+    "marc_field_name": "Subject Added Entry-Geographic Name"
+  },
+  {
+    "name": "Holding location",
+    "predicate": "nypl:holdingLocation",
+    "bib_path": "",
+    "item_path": "location.code",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Identifier",
+    "predicate": "dcterms:identifier",
+    "bib_path": "see Identifiers tab",
+    "item_path": "see Identifiers tab",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Instance of work",
+    "predicate": "nypl:workId",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Issuance",
+    "predicate": "bf:issuance",
+    "bib_path": "bibLevel.code (bibLevel.value for prefLabel)",
+    "item_path": "",
+    "recap_path": "LDR/07",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Language",
+    "predicate": "dcterms:language",
+    "bib_path": "lang\nOR 008/35-37\nOR 041 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Language"
+  },
+  {
+    "name": "LCC classification",
+    "predicate": "nypl:lccClassification",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "LCC coarse classification",
+    "predicate": "nypl:lccCoarse",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Media type",
+    "predicate": "bf:media",
+    "bib_path": "see mapping tab \"Media and Carrier type mappings\"",
+    "item_path": "",
+    "recap_path": "TBD (probably 337b)",
+    "marc_field_name": "Category of Material"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "337 $b ($a for prefLabel)",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Note",
+    "predicate": "skos:note",
+    "bib_path": "500 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "General Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "501 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "With Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "502 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Dissertation Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "504 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Bibliography, Etc. Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "505 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Formatted Contents Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "506 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Restrictions on Access Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "507 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Scale Note for Graphic Material"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "508 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Creation/Production Credits Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "509 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "510 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Citation/References Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "511 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Participant or Performer Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "513 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Type of Report and Period Covered Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "514 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Data Quality Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "515 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Numbering Peculiarities Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "516 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Type of Computer File or Data Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "518 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Date/Time and Place of an Event Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "521 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Target Audience Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "522 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Geographic Coverage Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "524 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Preferred Citation of Described Materials Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "525 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Supplement Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "526 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Study Program Information Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "530 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Additional Physical Form Available Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "533 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Reproduction Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "534 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Original Version Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "535 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Location of Originals/Duplicates Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "536 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Funding Information Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "538 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "System Details Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "539 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "540 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Terms Governing Use and Reproduction Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "541 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Immediate Source of Acquisition Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "542 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Information Relating to Copyright Status"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "544 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Location of Other Archival Materials Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "545 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Biographical or Historical Data"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "546 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Language Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "547 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Former Title Complexity Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "550 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Issuing Body Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "555 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Cumulative Index/Finding Aids Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "556 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Information About Documentation Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "560 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "561 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Ownership and Custodial History"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "562 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Copy and Version Identification Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "563 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Binding Information"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "580 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Linking Entry Complexity Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "581 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Publications About Described Materials Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "583 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Action Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "585 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Exhibitions Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "586 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Awards Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "588 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Source of Description Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "590 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "591 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "599 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Unknown"
+  },
+  {
+    "name": "Number of items",
+    "predicate": "nypl:numItems",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Place of publication",
+    "predicate": "nypl:placeOfPublication",
+    "bib_path": "260 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Publisher",
+    "predicate": "roles:pbl",
+    "bib_path": "260 $b",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Publisher literal",
+    "predicate": "nypl:role-publisher",
+    "bib_path": "260 $b",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Requestable",
+    "predicate": "nypl:requestable",
+    "bib_path": "",
+    "item_path": "based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016",
+    "recap_path": "TBD",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Resource type",
+    "predicate": "dcterms:type",
+    "bib_path": "fixedFields.label = \"Material type\"",
+    "item_path": "",
+    "recap_path": "LDR/06 -- map to values in 'Resource type mappings' tab",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Subject",
+    "predicate": "dcterms:subject",
+    "bib_path": "600\n610\n611\n630\n648\n650\n651\n653\n655",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Subject Added Entry-Personal Name\nSubject Added Entry-Corporate Name\nSubject Added Entry-Meeting Name\nSubject Added Entry-Uniform Title\nSubject Added Entry-Chronological Term\nSubject Added Entry-Topical Term\nSubject Added Entry-Geographic Name\nIndex Term-Uncontrolled\nIndex Term-Genre/Form"
+  },
+  {
+    "name": "Subject literal",
+    "predicate": "dc:subject",
+    "bib_path": "same fields as for Subject",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Supplementary content",
+    "predicate": "bf:supplementaryContent",
+    "bib_path": "856 (see notes)",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Suppressed",
+    "predicate": "nypl:suppressed",
+    "bib_path": "suppressed",
+    "item_path": "suppressed or if location.code ends in 9. if bib's suppressed value is true, then item is suppressed",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Temporal coverage",
+    "predicate": "dcterms:temporal",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "648",
+    "marc_field_name": "Subject Added Entry-Chronological Term"
+  },
+  {
+    "name": "Title",
+    "predicate": "dcterms:title",
+    "bib_path": "title",
+    "item_path": "",
+    "recap_path": "245 $a",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Title display",
+    "predicate": "nypl:titleDisplay",
+    "bib_path": "245",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Work",
+    "predicate": "dcterms:identifier",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "ol:id",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "hathi:id",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "hathi:vols",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "hathi:access",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Not mapped for Alpha",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Agency code",
+    "predicate": "nypl:agency",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Author notes",
+    "predicate": "bt:authorNotes",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Cover image",
+    "predicate": "dbo:thumbnail",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Flap",
+    "predicate": "bt:flap",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Item type code",
+    "predicate": "nypl:itemType",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Review",
+    "predicate": "bt:review",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Summary",
+    "predicate": "dcterms:abstract",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "N/A",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Registry relationship",
+    "predicate": "RDF property",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Equivalent to",
+    "predicate": "bf:hasEquivalent",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Has member",
+    "predicate": "pcdm:hasMember",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Has item",
+    "predicate": "bf:hasItem",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Has reproduction",
+    "predicate": "bf:reproduction",
+    "bib_path": "533",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": "Reproduction Note"
+  },
+  {
+    "name": "Item of",
+    "predicate": "bf:itemOf",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Member of",
+    "predicate": "pcdm:memberOf",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Reproduction of",
+    "predicate": "bf:originalVersion",
+    "bib_path": "534",
+    "item_path": "",
+    "recap_path": "534",
+    "marc_field_name": "Original Version Note"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "In series",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "440",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "490",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "760",
+    "marc_field_name": "Main Series Entry"
+  },
+  {
+    "name": "Has subseries",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "762",
+    "marc_field_name": "Subseries Entry"
+  },
+  {
+    "name": "",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Other relationships we may be interested in expressing",
+    "predicate": "",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Translation",
+    "predicate": "bf:translation",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Translation of",
+    "predicate": "bf:translationOf",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  }
+]
