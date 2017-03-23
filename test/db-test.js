@@ -6,11 +6,15 @@ var db = require('../lib/db')
 const kmsHelper = require('../lib/kms-helper')
 
 describe('DB', function () {
-  this.timeout(1000)
+  this.timeout(5000)
 
   describe('create record', function () {
     it('create, delete record', function () {
       var testStatement = {subject_id: 'testsubject123', predicate: 'test:predicate', object_id: 'testobject456', index: 0, source: 'recap-PUL', source_record_id: 'source987', creator_id: -1}
+
+      // Ensure necessary env variables loaded
+      require('dotenv').config({ path: './deploy.env' })
+      require('dotenv').config({ path: './.env' })
 
       return kmsHelper.decryptDbCreds()
         .then((connectionUri) => db.setConn(connectionUri))

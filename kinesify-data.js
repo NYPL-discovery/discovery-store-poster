@@ -47,7 +47,20 @@ function onSchemaLoad (schema) {
 // Correct common record issues (e.g. missing fields)
 function fixRecord (record) {
   if (record.nyplType === 'bib') return fixBib(record)
+  if (record.nyplType === 'item') return fixItem(record)
   return record
+}
+
+function fixItem (item) {
+  // If fixedFields is an array, make it a hash:
+  if (typeof item.fixedFields.length === 'number') {
+    item.fixedFields = Object.keys(item.fixedFields).reduce((h, ind) => {
+      h[`${ind}`] = item.fixedFields[ind]
+      return h
+    }, {})
+  }
+  console.log('revised: ', item)
+  return item
 }
 
 function fixBib (bib) {
@@ -81,8 +94,10 @@ function kinesify (record, avroType) {
   } catch (e) {
     console.log('Validation errors:')
     getValidationIssues(record, avroType).forEach((e) => {
-      console.log(`  ${e.path.join('.')}: \n    Got ${e.value}\n    Expected ${e.type}`)
+      console.log(`  ${e.path.join('.')}: \n    Got: ${e.value}\n    Expected: ${e.type}`)
     })
+    console.log('Aborting because problems.')
+    process.exit()
   }
   // encode base64
   var encoded = buf.toString('base64')
@@ -114,7 +129,7 @@ request(options, function (error, resp, body) {
   if (error) console.log('Error (#request): ' + error)
 
   if (body.data && body.data.schema) {
-    console.log('Loaded schema')
+    console.log('Loaded schema', body.data.schema)
     var schema = JSON.parse(body.data.schema)
     onSchemaLoad(schema)
   }
