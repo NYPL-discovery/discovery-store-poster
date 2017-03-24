@@ -98,12 +98,22 @@ The Lambda is set up to read AWS events, one of which is a Kinesis stream. The P
 
 The script to generate mock data is from [Discovery Bib/Item Poster](https://github.com/NYPL-discovery/discovery-bib-poster).
 
-Run:
+Run this to generate `event.bibs.json` full of encoded bibs:
 
     node kinesify-data.js event.unencoded.bibs.json event.bibs.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
-or
+Or run this to generate `event.items.json` full of encoded items:
 
     node kinesify-data.js event.unencoded.items.json event.items.json https://api.nypltech.org/api/v0.1/current-schemas/Item
 
-to generate an array of bib or item objects. Make sure you also update `kinesify-data.js` with the same "eventSourceARN" value you have in `config/local.json`. If you will generate Bibs, use the Bib eventSourceARN Kinesis stream. Otherwise, use the Item eventSourceARN for the Item Kinesis stream. Running the script above will generate `event.bibs.json` or `event.items.json` depending on the source data used. The resulting encoded data can be used in `event.json` when running locally.
+Alternatively, to generate a event.json from a plain marcinjson document (such as retrieved from the sierra api), you can kinesify that directly:
+
+    node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
+
+Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy.env`.
+
+### Testing
+
+Ensure you have a `deploy.env` and `.env` as described above. Then:
+
+```npm test```

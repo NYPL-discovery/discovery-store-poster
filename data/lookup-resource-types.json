@@ -1,0 +1,10 @@
+{
+  "aud": "Audio",
+  "car": "Cartographic",
+  "mix": "Mixed material",
+  "mov": "Moving image",
+  "mul": "Multimedia",
+  "not": "Notated music",
+  "img": "Still image",
+  "txt": "Text"
+}

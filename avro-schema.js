@@ -6,4 +6,4 @@ module.exports = {
     {name: 'uri', type: 'string'},
     {name: 'type', type: 'string'}
   ]
-};
+}
