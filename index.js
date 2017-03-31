@@ -97,6 +97,10 @@ exports.handler = (event, context, callback) => {
   // TODO see if we can remove this now that we're no longer using libpq
   context.callbackWaitsForEmptyEventLoop = false
 
+  if (Object.keys(event).length === 0 && event.constructor === Object) {
+    return callback(new Error('No event was received.'))
+  }
+
   if (decrypted) {
     db.setConn(decrypted)
     processEvent(event, context, callback)

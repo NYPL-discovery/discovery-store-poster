@@ -14,6 +14,7 @@
     "highland": "^2.10.0",
     "image-size": "^0.5.0",
     "kafka-node": "^0.5.9",
+    "lambda-tester": "^2.8.1",
     "log4js": "^1.1.0",
     "loglevel": "^1.4.1",
     "mkdirp": "^0.5.1",
@@ -29,16 +30,18 @@
     "redis": "^2.6.3",
     "request": "^2.75.0",
     "request-promise": "^4.1.1",
+    "sinon": "^2.1.0",
     "util": "^0.10.3"
   },
   "devDependencies": {
+    "aws-sdk-mock": "^1.6.1",
     "csvtojson": "^1.1.4",
     "dotenv": "^4.0.0",
     "mocha": "^3.1.2",
     "node-lambda": "^0.8.13"
   },
   "scripts": {
-    "test": "standard && mocha"
+    "test": "mocha"
   },
   "standard": {
     "ignore": [

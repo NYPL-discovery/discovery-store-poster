@@ -326,4 +326,3 @@ describe('Bib Marc Mapping', function () {
     })
   })
 })
-
