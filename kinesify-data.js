@@ -73,6 +73,13 @@ function fixBib (bib) {
     return field
   }, {})
 
+  if (typeof bib.fixedFields.length === 'number') {
+    bib.fixedFields = Object.keys(bib.fixedFields).reduce((h, ind) => {
+      h[`${ind}`] = bib.fixedFields[ind]
+      return h
+    }, {})
+  }
+
   return bib
 }
 

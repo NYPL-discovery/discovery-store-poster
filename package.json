@@ -38,7 +38,8 @@
     "node-lambda": "^0.8.13"
   },
   "scripts": {
-    "test": "standard && mocha"
+    "test": "standard && mocha",
+    "invoke:remote": "aws lambda invoke --function-name discoveryStorePoster --payload file://event.json --log-type Tail invoked.json | jq -r '.LogResult' | base64 --decode && rm invoked.json"
   },
   "standard": {
     "ignore": [
