@@ -60,9 +60,7 @@ describe('AWS', function () {
 
     before(() => {
       spyPutRecordsFunc = sinon.stub()
-      AWS.mock('Kinesis', 'createStream', spyPutRecordsFunc)
-      AWS.mock('Kinesis', 'describeStream')
-      AWS.mock('Kinesis', 'putRecords', () => Promise.resolve(1))
+      AWS.mock('Kinesis', 'putRecords', spyPutRecordsFunc)
     })
 
     it('should call Kinesis.putRecords from the KinesisWriter util', () => {
@@ -95,6 +93,6 @@ describe('AWS', function () {
         .then(() => console.log('done?'))
     })
 
-    after(() => AWS.restore('Kinesis', 'createStream'))
+    after(() => AWS.restore('Kinesis', 'putRecords'))
   })
 })
