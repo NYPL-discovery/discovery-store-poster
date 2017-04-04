@@ -41,4 +41,3 @@ node_modules
 # AWS Lambda credentials
 .env
 deploy.env
-test.deploy.env
