@@ -1,3 +1,4 @@
+/* global before describe it */
 const lambdaTester = require('lambda-tester')
 const expect = require('chai').expect
 const handler = require('../index.js').handler
