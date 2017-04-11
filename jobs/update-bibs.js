@@ -30,6 +30,9 @@ log.setLevel(argv.loglevel || 'info')
 // If --until given, dynamically set limit:
 if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 
+require('dotenv').config({ path: './deploy.env' })
+require('dotenv').config({ path: './.env' })
+
 if (argv.uri_cache) {
   ; (new BibsUpdater()).uriFromCache(argv.uri_cache)
 } else if (argv.threads) {
