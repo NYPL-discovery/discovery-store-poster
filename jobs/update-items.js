@@ -25,10 +25,12 @@ var opts = {
 
 log.setLevel(argv.loglevel || 'info')
 
+require('dotenv').config({ path: './deploy.env' })
+require('dotenv').config({ path: './.env' })
+
 if (argv.uri_cache) {
   ; (new ItemsUpdater()).uriFromCache(argv.uri_cache)
 } else if (argv.threads) {
-  console.log('threaded')
   ItemsUpdater.threaded(argv)
 } else {
   ; (new ItemsUpdater()).update(opts)
