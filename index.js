@@ -73,7 +73,7 @@ function processEvent (event, context, callback) {
           .update(opts, [decodedData])
           .catch((e) => {
             log.error(e)
-            return Promise.reject(`Failed to process bib record ${decodedData.id}.`)
+            return Promise.reject(`Failed to process bib/item record ${decodedData.id}.`)
           })
       })
   })
