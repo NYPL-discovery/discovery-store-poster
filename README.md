@@ -71,11 +71,14 @@ The node-lambda npm package is used to invoke the lambda locally and to deploy i
   * AWS_SECRET_ACCESS_KEY
   * AWS_ROLE_ARN
   * AWS_REGION
+  * AWS_VPC
+  * AWS_VPC_SUBNETS
+  * AWS_VPC_SECURITY_GROUPS
 
   AWS_ROLE_ARN is the role for the Lambda. Add this file to .gitignore.
 
 * deploy.env - should be updated to include the AWS KMS environment variable with the encrypted string already encoded, `DISCOVERY_STORE_CONNECTION_URI`, to connect to the AWS RDS discovery_store instance. Add this file to .gitignore.
-  * To setup the Lambda with this configuration, select the "Configuration" tab for the Lambda in its dashboard. The "KMS Key" can be updated to `lambda-rds`. Back in the "Code" tab, click on "Enable encryption helpers" and select the `lambda-rds` Encryption key. Add the full RDS connection string as an environment variable value (`DISCOVERY_STORE_CONNECTION_URI` is the key), and then click on "Encrypt". This will give you the encoded string that needs to be added to the `deploy.env` file.
+  * To setup the Lambda with this configuration, select the "Configuration" tab for the Lambda in its dashboard. The "KMS Key" can be updated to `lambda-rds`. Back in the "Code" tab, click on "Enable encryption helpers" and select the `lambda-rds` Encryption key. Add the full RDS connection string as an environment variable value (`DISCOVERY_STORE_CONNECTION_URI` is the key), and then click on "Encrypt". This will give you the encoded string that needs to be added to the `deploy.env` file.  
 
 * Index.js - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
