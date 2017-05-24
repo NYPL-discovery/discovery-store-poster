@@ -1,17 +1,16 @@
 'use strict'
 
-// Set log level (default 'info')
-const log = require('loglevel')
-log.setLevel(process.env['LOGLEVEL'] || 'info')
-log.info('Loading Lambda function')
+var log = null
 
 const BibsUpdater = require('./lib/bibs-updater')
 const ItemsUpdater = require('./lib/items-updater')
 const avro = require('avsc')
 const config = require('config')
-const request = require('request')
 const db = require('./lib/db')
 const kmsHelper = require('./lib/kms-helper')
+const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
+
+var dataApi = null
 
 let decrypted
 let CACHE = {}
@@ -24,71 +23,49 @@ var opts = {
   seek: null
 }
 
-function getSchema (schemaType) {
+function getSchema (schemaName) {
   // schema in cache; just return it as a instant promise
-  if (CACHE[schemaType]) {
-    log.debug(`Already have ${schemaType} schema`)
-    return new Promise((resolve, reject) => {
-      resolve(CACHE[schemaType])
-    })
+  if (CACHE[schemaName]) {
+    log.debug(`Already have ${schemaName} schema`)
+    return Promise.resolve(CACHE[schemaName])
   }
 
-  return new Promise((resolve, reject) => {
-    var options = {
-      uri: process.env['NYPL_API_SCHEMA_URL'] + schemaType,
-      json: true
-    }
+  // Initialize client if not previously initialized
+  if (!dataApi) dataApi = new NYPLDataApiClient({ base_url: process.env['NYPL_API_BASE_URL'] })
 
-    log.debug(`Loading ${schemaType} schema...`)
-    request(options, (error, resp, body) => {
-      if (error) {
-        reject(error)
-      }
-      if (body.data && body.data.schema) {
-        log.debug(`Sucessfully loaded ${schemaType} schema`)
-        var schema = JSON.parse(body.data.schema)
-        CACHE[schemaType] = avro.parse(schema)
-        resolve(CACHE[schemaType])
-      } else {
-        reject()
-      }
-    })
+  // Fetch schema and parse it as an AVSC decoder
+  return dataApi.get(`current-schemas/${schemaName}`, { authenticate: false }).then((schema) => {
+    CACHE[schemaName] = avro.parse(schema.schemaObject)
+    return CACHE[schemaName]
   })
 }
 
 function processEvent (event, context, callback) {
-  const bib = 'Bib'
-  const item = 'Item'
-  let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? bib : item
+  let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? 'Bib' : 'Item'
 
-  var promises = event.Records.map((record) => {
-    return getSchema(bibOrItem)
-      .then((schemaType) => {
-        const kinesisData = new Buffer(record.kinesis.data, 'base64')
-        log.debug('using schema: ', bibOrItem, schemaType)
-        let decodedData = schemaType.fromBuffer(kinesisData)
-        log.debug('Got decoded: ', decodedData)
-        var updater = bibOrItem === 'Bib' ? (new BibsUpdater()) : (new ItemsUpdater())
-        return updater
-          .update(opts, [decodedData])
-          .catch((e) => {
-            log.error(e)
-            return Promise.reject(`Failed to process bib/item record ${decodedData.id}.`)
-          })
+  log.debug('Using schema: ', bibOrItem)
+  getSchema(bibOrItem).then((schemaType) => {
+    // Get array of decoded records:
+    var decoded = event.Records.map((record) => {
+      const kinesisData = new Buffer(record.kinesis.data, 'base64')
+      return schemaType.fromBuffer(kinesisData)
+    })
+    log.debug('Processing ' + bibOrItem + ' records: ', decoded)
+
+    // Invoke appropriate updater:
+    var updater = bibOrItem === 'Bib' ? (new BibsUpdater()) : (new ItemsUpdater())
+    updater
+      .update(opts, decoded)
+      .then(() => {
+        log.debug('Wrote ' + decoded.length + ' successfully')
+        callback(null, 'Done!')
+      })
+      .catch((error) => {
+        log.error('processEvent: error: ' + error)
+        log.trace(error)
+        callback(error)
       })
   })
-
-  // Wait until all bibs or items have been processed and pushed to Kinesis:
-  Promise.all(promises)
-    .then(() => {
-      log.debug('All promises done')
-      callback(null, 'Done!')
-    })
-    .catch((error) => {
-      log.error('processEvent: error: ' + error)
-      log.trace(error)
-      callback(error)
-    })
 }
 
 exports.handler = (event, context, callback) => {
@@ -96,6 +73,13 @@ exports.handler = (event, context, callback) => {
   // tell the lambda engine to just kill the process when callback called:
   // TODO see if we can remove this now that we're no longer using libpq
   context.callbackWaitsForEmptyEventLoop = false
+
+  if (!log) {
+    // Set log level (default 'info')
+    log = require('loglevel')
+    log.setLevel(process.env['LOGLEVEL'] || 'info')
+    log.info('Loading Lambda function')
+  }
 
   if (decrypted) {
     db.setConn(decrypted)

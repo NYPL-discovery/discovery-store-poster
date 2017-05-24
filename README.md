@@ -64,22 +64,43 @@ node jobs/update-vocab [name] [opts]
 
 ### node-lambda
 The node-lambda npm package is used to invoke the lambda locally and to deploy it to AWS. In order to run the Lambda locally, the following files are needed:
-* event.json - can be updated to include a sample Kinesis record to read from when testing locally - optional but useful.
 
-* .env - should be updated to include the following credentials:
-  * AWS_ACCESS_KEY_ID
-  * AWS_SECRET_ACCESS_KEY
-  * AWS_ROLE_ARN
-  * AWS_REGION
+**event.json** - can be updated to include a sample Kinesis record to read from when testing locally - optional but useful.
 
-  AWS_ROLE_ARN is the role for the Lambda. Add this file to .gitignore.
+**.env** - should be updated to include the following:
+```
+AWS_ENVIRONMENT=
+AWS_ACCESS_KEY_ID=[enter key here]
+AWS_SECRET_ACCESS_KEY=[enter secret here]
+AWS_PROFILE=
+AWS_SESSION_TOKEN=
+AWS_ROLE_ARN=arn:aws:iam::224280085904:role/lambda_basic_execution
+AWS_REGION=us-east-1
+AWS_FUNCTION_NAME=discoveryStorePoster
+AWS_HANDLER=index.handler
+AWS_MEMORY_SIZE=512
+AWS_TIMEOUT=15
+AWS_DESCRIPTION=
+AWS_RUNTIME=nodejs4.3
+AWS_VPC=vpc-dbc4f7bc
+AWS_VPC_SUBNETS=subnet-f4fe56af
+AWS_VPC_SECURITY_GROUPS=sg-1d544067
+EXCLUDE_GLOBS="event.json"
+PACKAGE_DIRECTORY=build
+```
 
-* deploy.env - should be updated to include the AWS KMS environment variable with the encrypted string already encoded, `DISCOVERY_STORE_CONNECTION_URI`, to connect to the AWS RDS discovery_store instance. Add this file to .gitignore.
-  * To setup the Lambda with this configuration, select the "Configuration" tab for the Lambda in its dashboard. The "KMS Key" can be updated to `lambda-rds`. Back in the "Code" tab, click on "Enable encryption helpers" and select the `lambda-rds` Encryption key. Add the full RDS connection string as an environment variable value (`DISCOVERY_STORE_CONNECTION_URI` is the key), and then click on "Encrypt". This will give you the encoded string that needs to be added to the `deploy.env` file.
+**deploy.env** - should be updated to include the following:
+```
+DISCOVERY_STORE_CONNECTION_URI=[discovery-store postgres connection string, ecrypted via KMS 'lambda-rds' key]
+NYPL_API_BASE_URL=[base url for NYPL data api ending in "/"]
+```
 
-* Index.js - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
+To retrieve KMS encrypted values using the AWS cli:
+```
+aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext connection string]"
+```
 
-* post_install.sh - a bash script file executed by node-lambda after it performs `npm install` but before the repo is packaged and pushed to AWS. It is need to copy the static libpq library to the node_modules folder.
+**index.js** - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
 To test locally run `node-lambda run -f deploy.env`. The `-f deploy.env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
 

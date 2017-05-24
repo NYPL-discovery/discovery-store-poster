@@ -5,6 +5,10 @@
 //  If infile is a plain marcinjson document, it will be converted into the right form.
 //  i.e. You can load sample docs directly from the test data:
 //    node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//
+//  If you want to load up multiple bibs or items in one event.json (to test batches > 1),
+//  infile accepts comma-delimited paths:
+//    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
 const args = process.argv.slice(2)
 const avro = require('avsc')
@@ -22,10 +26,12 @@ function onSchemaLoad (schema) {
   var avroType = avro.parse(schema)
 
   // read unencoded data
-  var unencodedData = JSON.parse(fs.readFileSync(infile, 'utf8'))
+  var unencodedData = infile.split(',')
+    .map((f) => fs.readFileSync(f, 'utf8'))
+    .map(JSON.parse)
 
   // If it's a plain marcinjson document, convert it into the event.json form:
-  if (!unencodedData.Records && unencodedData.id) unencodedData = { Records: [unencodedData] }
+  if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
 
   // encode data and put in kinesis format
   var kinesisEncodedData = unencodedData.Records
@@ -70,7 +76,17 @@ function fixBib (bib) {
       field.subFields = field.subfields
       delete field.subfields
     }
+    // Assign following fields to null if not otherwise set:
+    field = ['subFields', 'content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
+
     return field
+  }, {})
+
+  bib.fixedFields = Object.keys(bib.fixedFields).reduce((h, ind) => {
+    var field = bib.fixedFields[ind]
+    if (!field.display) field.display = null
+    h[`${ind}`] = field
+    return h
   }, {})
 
   if (typeof bib.fixedFields.length === 'number') {
@@ -79,6 +95,9 @@ function fixBib (bib) {
       return h
     }, {})
   }
+
+  bib = ['deletedDate'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), bib)
+  // if (!bib.deletedDate) bib.deletedDate = null
 
   return bib
 }
@@ -136,7 +155,7 @@ request(options, function (error, resp, body) {
   if (error) console.log('Error (#request): ' + error)
 
   if (body.data && body.data.schema) {
-    console.log('Loaded schema', body.data.schema)
+    // console.log('Loaded schema', body.data.schema)
     var schema = JSON.parse(body.data.schema)
     onSchemaLoad(schema)
   }
