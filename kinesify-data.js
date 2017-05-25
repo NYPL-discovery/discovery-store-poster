@@ -1,4 +1,6 @@
 // Usage:
+//    node kinesify-data.js INFILES OUTFILE [SCHEMAURL]
+//
 //  The following command will take unencoded json, encode it with avro schema, encode it with base64, and put in Kinesis format.
 //    node kinesify-data.js event.unencoded.bibs.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 //
@@ -19,19 +21,11 @@ const config = require('config')
 // config
 const infile = args[0]
 const outfile = args[1]
-const schemaUrl = args[2]
+var schemaUrl = args[2]
 
 function onSchemaLoad (schema) {
   // initialize avro schema
   var avroType = avro.parse(schema)
-
-  // read unencoded data
-  var unencodedData = infile.split(',')
-    .map((f) => fs.readFileSync(f, 'utf8'))
-    .map(JSON.parse)
-
-  // If it's a plain marcinjson document, convert it into the event.json form:
-  if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
 
   // encode data and put in kinesis format
   var kinesisEncodedData = unencodedData.Records
@@ -45,7 +39,7 @@ function onSchemaLoad (schema) {
     if (err) {
       console.log('Write error:', err)
     } else {
-      console.log('Successfully wrote data to file')
+      console.log(`Successfully wrote event.json with ${kinesisEncodedData.length} encoded record(s)`)
     }
   })
 }
@@ -59,13 +53,12 @@ function fixRecord (record) {
 
 function fixItem (item) {
   // If fixedFields is an array, make it a hash:
-  if (typeof item.fixedFields.length === 'number') {
+  if (Array.isArray(item.fixedFields)) {
     item.fixedFields = Object.keys(item.fixedFields).reduce((h, ind) => {
       h[`${ind}`] = item.fixedFields[ind]
       return h
     }, {})
   }
-  console.log('revised: ', item)
   return item
 }
 
@@ -146,11 +139,28 @@ function kinesify (record, avroType) {
   }
 }
 
+// read unencoded data
+var unencodedData = infile.split(',')
+  .map((f) => fs.readFileSync(f, 'utf8'))
+  .map(JSON.parse)
+
+// If they're plain marcinjson document(s), convert them into the event.json form:
+if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
+
+// Otherwise, if it's a single event-formatted json:
+else if (unencodedData[0].Records && unencodedData.length === 1) unencodedData = unencodedData.shift()
+
+// As a convenience, if schemaUrl not explicitly given, derive it from nyplType of first record:
+if (!schemaUrl) {
+  var type = unencodedData.Records[0].nyplType
+  console.log('Inferring schema type: ', type)
+  schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${type.substring(0, 1).toUpperCase()}${type.substring(1)}`
+}
+
 var options = {
   uri: schemaUrl,
   json: true
 }
-
 request(options, function (error, resp, body) {
   if (error) console.log('Error (#request): ' + error)
 
