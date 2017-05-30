@@ -4,11 +4,28 @@ const assert = require('assert')
 const itemSerializer = require('./../lib/serializers/item')
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
+const ItemFieldMapper = require('./../lib/field-mapper').ItemFieldMapper
 
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
   describe('Parse', function () {
+    it('should parse marc mapping for sierra-nypl', function () {
+      var mapper = new ItemFieldMapper('sierra-nypl')
+
+      var mapping = mapper.getMapping('Availability')
+      assert.equal(mapping.paths.length, 1)
+      assert.equal(mapping.paths[0].marc, 'status')
+    })
+
+    it('should parse marc mapping differently for recap-pul', function () {
+      var mapper = new ItemFieldMapper('recap-pul')
+
+      var mapping = mapper.getMapping('Availability')
+      assert.equal(mapping.paths.length, 2)
+      assert.equal(mapping.paths[1].marc, '876')
+    })
+
     it('should extract certain basic item props', function () {
       var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
 

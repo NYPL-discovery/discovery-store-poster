@@ -27,7 +27,7 @@
     "name": "Availability",
     "predicate": "bf:status",
     "bib_path": "",
-    "item_path": "status.code",
+    "item_path": "Map to corresponding nypl:Status -- match by code on skos:notation. If code is \"-\", for Sierra items, then check ItemStatus.duedate for a date. If present, map to e \n\nFor ReCAP data in 876$j, map to http://data.nypl.org/statuses/ as follows:\n\"Available\" = a\n\"Not Available\" = na\n\"Loaned\" = r",
     "recap_path": "876 $j (ReCAP)",
     "marc_field_name": ""
   },
@@ -42,7 +42,7 @@
   {
     "name": "Call number",
     "predicate": "nypl:shelfMark",
-    "bib_path": "",
+    "bib_path": "852$h",
     "item_path": "Join 852$h and fieldTag 'v' value (if available) with a space\n",
     "recap_path": "",
     "marc_field_name": ""
@@ -80,17 +80,17 @@
     "marc_field_name": "Main Entry-Personal Name\nMain Entry-Corporate Name\nMain Entry-Meeting Name\nAdded Entry-Personal Name\nAdded Entry-Corporate Name\nAdded Entry-Meeting Name"
   },
   {
-    "name": "Contributor literal",
-    "predicate": "dc:contributor",
-    "bib_path": "700 $a $b $c $q $d $j\n710\n711",
+    "name": "Contributor by role",
+    "predicate": "based on mapping rules (see Notes)",
+    "bib_path": "100 $a $b $c $q $d $j\n110\n111\n700 $a $b $c $q $d $j\n710\n711",
     "item_path": "",
     "recap_path": "",
     "marc_field_name": ""
   },
   {
-    "name": "Contributor by role",
-    "predicate": "based on mapping rules (see Notes)",
-    "bib_path": "100 $a $b $c $q $d $j\n110\n111\n700 $a $b $c $q $d $j\n710\n711",
+    "name": "Contributor literal",
+    "predicate": "dc:contributor",
+    "bib_path": "700 $a $b $c $q $d $j\n710\n711",
     "item_path": "",
     "recap_path": "",
     "marc_field_name": ""
@@ -184,22 +184,6 @@
     "marc_field_name": ""
   },
   {
-    "name": "Genre/Category",
-    "predicate": "TBD",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "008Book or Serial 24-27 (006Book or Serial 07-10)",
-    "marc_field_name": "Nature of contents"
-  },
-  {
-    "name": "Geographic coverage",
-    "predicate": "dcterms:geographic",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "651",
-    "marc_field_name": "Subject Added Entry-Geographic Name"
-  },
-  {
     "name": "Holding location",
     "predicate": "nypl:holdingLocation",
     "bib_path": "",
@@ -224,11 +208,35 @@
     "marc_field_name": ""
   },
   {
+    "name": "ISBN",
+    "predicate": "dcterms:identifier",
+    "bib_path": "020 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "ISSN",
+    "predicate": "dcterms:identifier",
+    "bib_path": "022 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
     "name": "Issuance",
     "predicate": "bf:issuance",
     "bib_path": "bibLevel.code (bibLevel.value for prefLabel)",
     "item_path": "",
     "recap_path": "LDR/07",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Label",
+    "predicate": "skos:prefLabel",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
     "marc_field_name": ""
   },
   {
@@ -242,7 +250,7 @@
   {
     "name": "LCC classification",
     "predicate": "nypl:lccClassification",
-    "bib_path": "",
+    "bib_path": "010 $a",
     "item_path": "",
     "recap_path": "",
     "marc_field_name": ""
@@ -506,7 +514,7 @@
   {
     "name": "",
     "predicate": "",
-    "bib_path": "541 $a",
+    "bib_path": "541 $a (If ind1==0, this note should be private--do not index or publish)",
     "item_path": "",
     "recap_path": "",
     "marc_field_name": "Immediate Source of Acquisition Note"
@@ -586,7 +594,7 @@
   {
     "name": "",
     "predicate": "",
-    "bib_path": "561 $a",
+    "bib_path": "561 $a (If ind1==0, this note should be private--do not index or publish)",
     "item_path": "",
     "recap_path": "",
     "marc_field_name": "Ownership and Custodial History"
@@ -688,6 +696,14 @@
     "marc_field_name": ""
   },
   {
+    "name": "OCLC number",
+    "predicate": "dcterms:identifier",
+    "bib_path": "991 $y\nOR 001 if 003 == 'OCoLC'\nOR 035 $a if 'OCoLC' in 035 $a",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
     "name": "Place of publication",
     "predicate": "nypl:placeOfPublication",
     "bib_path": "260 $a",
@@ -760,19 +776,11 @@
     "marc_field_name": ""
   },
   {
-    "name": "Temporal coverage",
-    "predicate": "dcterms:temporal",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "648",
-    "marc_field_name": "Subject Added Entry-Chronological Term"
-  },
-  {
     "name": "Title",
     "predicate": "dcterms:title",
     "bib_path": "title",
     "item_path": "",
-    "recap_path": "245 $a",
+    "recap_path": "245 $a $b",
     "marc_field_name": ""
   },
   {
@@ -784,23 +792,7 @@
     "marc_field_name": ""
   },
   {
-    "name": "Work",
-    "predicate": "dcterms:identifier",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "",
-    "predicate": "ol:id",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "",
+    "name": "HathiTrust version",
     "predicate": "hathi:id",
     "bib_path": "",
     "item_path": "",
@@ -808,7 +800,7 @@
     "marc_field_name": ""
   },
   {
-    "name": "",
+    "name": "HathiTrust volumes",
     "predicate": "hathi:vols",
     "bib_path": "",
     "item_path": "",
@@ -816,8 +808,48 @@
     "marc_field_name": ""
   },
   {
-    "name": "",
+    "name": "HathiTrust access",
     "predicate": "hathi:access",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Equivalent to",
+    "predicate": "bf:hasEquivalent",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Has member",
+    "predicate": "pcdm:hasMember",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Has item",
+    "predicate": "bf:hasItem",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "Item of",
+    "predicate": "bf:itemOf",
+    "bib_path": "",
+    "item_path": "",
+    "recap_path": "",
+    "marc_field_name": ""
+  },
+  {
+    "name": "",
+    "predicate": "",
     "bib_path": "",
     "item_path": "",
     "recap_path": "",
@@ -896,80 +928,32 @@
     "marc_field_name": ""
   },
   {
-    "name": "",
-    "predicate": "",
+    "name": "Genre/Category",
+    "predicate": "TBD",
     "bib_path": "",
     "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
+    "recap_path": "008Book or Serial 24-27 (006Book or Serial 07-10)",
+    "marc_field_name": "Nature of contents"
   },
   {
-    "name": "",
-    "predicate": "",
+    "name": "Geographic coverage",
+    "predicate": "dcterms:geographic",
     "bib_path": "",
     "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
+    "recap_path": "651",
+    "marc_field_name": "Subject Added Entry-Geographic Name"
   },
   {
-    "name": "",
-    "predicate": "",
+    "name": "Temporal coverage",
+    "predicate": "dcterms:temporal",
     "bib_path": "",
     "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
+    "recap_path": "648",
+    "marc_field_name": "Subject Added Entry-Chronological Term"
   },
   {
-    "name": "",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "Registry relationship",
-    "predicate": "RDF property",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "Equivalent to",
-    "predicate": "bf:hasEquivalent",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "Has member",
-    "predicate": "pcdm:hasMember",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "Has item",
-    "predicate": "bf:hasItem",
+    "name": "Open Library identifier",
+    "predicate": "ol:id",
     "bib_path": "",
     "item_path": "",
     "recap_path": "",
@@ -1008,14 +992,6 @@
     "marc_field_name": "Original Version Note"
   },
   {
-    "name": "",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
     "name": "In series",
     "predicate": "",
     "bib_path": "",
@@ -1046,22 +1022,6 @@
     "item_path": "",
     "recap_path": "762",
     "marc_field_name": "Subseries Entry"
-  },
-  {
-    "name": "",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
-  },
-  {
-    "name": "Other relationships we may be interested in expressing",
-    "predicate": "",
-    "bib_path": "",
-    "item_path": "",
-    "recap_path": "",
-    "marc_field_name": ""
   },
   {
     "name": "Translation",

@@ -1,28 +1,34 @@
-,RDF property,Shadowcat,API bibs,API items,Princeton/Columbia MARC source,Audit count,MARC field name,Definition,Notes
+Property,RDF property,Shadowcat,API bibs,API items,Princeton/Columbia MARC source,Audit count,MARC field name,Definition,Notes,Work/Item
 Type,rdfs:type,,LDR/07 (see notes),,,,,,"If LDR/07 (BIB LVL) == 'c' or 's' > nypl:Collection, else nypl:Item (Looks like individual issues of serials are also cataloged 's' but we can improve on this later)
 
-For alpha, add bf:Item to anything with data from an item record. We'll refine the logic after the alpha when we figure out serial/multipart serialziation"
-Access message,nypl:accessMessage,,,fixedFields.108.value,need either default or mapping rules,,,,
+For alpha, add bf:Item to anything with data from an item record. We'll refine the logic after the alpha when we figure out serial/multipart serialziation",
+Access message,nypl:accessMessage,,,fixedFields.108.value,need either default or mapping rules,,,,,bf:Item
 Alternative title,dcterms:alternative,,"130 $a $b $f $n $p
 210 $a $b $f $n $p
 222 $a $b $f $n $p
 240 $a $b $f $n $p
-246 $a $b $f $n $p",,,"951,898",Varying Form of Title,,
-Availability,bf:status,,,status.code,876 $j (ReCAP),,,,"Map to corresponding nypl:Status -- match by code on skos:notation. If code is ""-"", for Sierra items, then check ItemStatus.duedate for a date. If present, map to http://data.nypl.org/statuses/co. 
+246 $a $b $f $n $p",,,"951,898",Varying Form of Title,,,bf:Work subtype
+Availability,bf:status,,,"Map to corresponding nypl:Status -- match by code on skos:notation. If code is ""-"", for Sierra items, then check ItemStatus.duedate for a date. If present, map to e 
 
 For ReCAP data in 876$j, map to http://data.nypl.org/statuses/ as follows:
 ""Available"" = a
 ""Not Available"" = na
 ""Loaned"" = r
-"
-Barcode,dcterms:identifier,,,barcode,,,,,
-Call number,nypl:shelfMark,,,"Join 852$h and fieldTag 'v' value (if available) with a space
-",,,,,
+",876 $j (ReCAP),,,,"Map to corresponding nypl:Status -- match by code on skos:notation. If code is ""-"", for Sierra items, then check ItemStatus.duedate for a date. If present, map to http://data.nypl.org/statuses/co. 
+
+For ReCAP data in 876$j, map to http://data.nypl.org/statuses/ as follows:
+""Available"" = a
+""Not Available"" = na
+""Loaned"" = r
+",bf:Item
+Barcode,dcterms:identifier,,,barcode,,,,,,bf:Item
+Call number,nypl:shelfMark,,852$h,"Join 852$h and fieldTag 'v' value (if available) with a space
+",,,,,,bf:Item
 Carrier type,bf:carrier,,"see mapping tab ""Media and Carrier type mappings""",,TBD (probably 338b),,Specific Material Designation,,"Concatenate 007/00 + 007/01 and map to http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fcarriers, ex. 00=h + 01=e > http://id.loc.gov/vocabulary/carriers/he (Can also append new 2-character code to ""http://id.loc.gov/vocabulary/carriers/"")
-Concatenate 337$b + 338$b and map to http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fcarriers, ex. 00=h + 01=e > http://id.loc.gov/vocabulary/carriers/he (Can also append new 2-character code to ""http://id.loc.gov/vocabulary/carriers/"")"
-Catalog item type,nypl:catalogItemType,,,fixedFields.61.value,need either default or mapping rules,,,,No item type for partner data
+Concatenate 337$b + 338$b and map to http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fcarriers, ex. 00=h + 01=e > http://id.loc.gov/vocabulary/carriers/he (Can also append new 2-character code to ""http://id.loc.gov/vocabulary/carriers/"")",bf:Item
+Catalog item type,nypl:catalogItemType,,,fixedFields.61.value,need either default or mapping rules,,,,No item type for partner data,bf:Item
 Content owner,nypl:owner,,,location,"for Princeton records: nyplOrg:0003
-for Columbia records: nyplOrg:0002",,,,Map to organization unit entities using ??? mapping
+for Columbia records: nyplOrg:0002",,,,Map to organization unit entities using ??? mapping,bf:Work subtype
 Contributor,dcterms:contributor,"classify:creatorLC
 classify:creatorVIAF
 worldcat:contributors","100 $a $b $c $q $d $j
@@ -35,107 +41,111 @@ Main Entry-Corporate Name
 Main Entry-Meeting Name
 Added Entry-Personal Name
 Added Entry-Corporate Name
-Added Entry-Meeting Name",,More on name subfields: https://www.loc.gov/marc/bibliographic/bdx00.html
-Contributor literal,dc:contributor,,"700 $a $b $c $q $d $j
-710
-711",,,,,,
+Added Entry-Meeting Name",,More on name subfields: https://www.loc.gov/marc/bibliographic/bdx00.html,bf:Work subtype
 Contributor by role,based on mapping rules (see Notes),,"100 $a $b $c $q $d $j
 110
 111
 700 $a $b $c $q $d $j
 710
-711",,,,,,"if subfield $e, property is 'http://id.loc.gov/vocabulary/relators/' + mapping from shadowcat_agent_roles.json"
+711",,,,,,"if subfield $e, property is 'http://id.loc.gov/vocabulary/relators/' + mapping from shadowcat_agent_roles.json",bf:Work subtype
+Contributor literal,dc:contributor,,"700 $a $b $c $q $d $j
+710
+711",,,,,,,bf:Work subtype
 Contributor literal by role,based on mapping rules (see Notes),,"700 $a $b $c $q $d $j
 710
-711",,,,,,"if subfield $e, property is 'http://id.loc.gov/vocabulary/relators/' + mapping from shadowcat_agent_roles.json"
+711",,,,,,"if subfield $e, property is 'http://id.loc.gov/vocabulary/relators/' + mapping from shadowcat_agent_roles.json",bf:Work subtype
 Creator literal,dc:creator,,"100 $a $b $c $q $d $j
 110
-111",,,,,,
-Date,dc:date,,publishYear,,008/7-10,,,,
-Date created,dcterms:created,,publishYear,,008/7-10,,,,
-Date end,dbo:endDate,,008/11-14,,,,,,
-Date start,dbo:startDate,,008/7-10,,,,,,
-Delivery location,nypl:deliveryLocation,,,based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016,TBD,,,,
-Description,dcterms:description,,520 $a,,,"307,174","Summary, Etc.",,
-Dimensions,bf:dimensions,,300 $c,,,,,,
-Electronic location,bf:electronicLocator,,856 (see notes),,,,,,See Electronic Location / Supplementary Content tab for object mapping and see https://docs.google.com/spreadsheets/d/184IYVm8u5kthp6qtm06ryJkcfDykjG2DNXuAGvqt0wY/edit#gid=2105311450 for parsing and filtering to either Electronic location or Supplementary content. Ignore partner data for alpha.
-Extent,nypl:extent,,300 $a $b,,,,,,"Concatentate 300 $a + $b with /s, (?) and drop trailing ISBD punctuation, ex. $a11 v. :$bill. ; > ""11 v., ill."""
-Genre/Category,TBD,,,,008Book or Serial 24-27 (006Book or Serial 07-10),,Nature of contents,Up to four one-character codes that indicate whether a significant part of the item is or contains certain types of material.,"Includes some potentially valuable access points for categorizing material, see codes at https://www.loc.gov/marc/bibliographic/concise/bd008b.html"
-Geographic coverage,dcterms:geographic,,,,651,"2,553,859",Subject Added Entry-Geographic Name,,This could be used to generate more structured place terms for geographic coverage
-Holding location,nypl:holdingLocation,,,location.code,,,,,Map code to corresponding nypl:Location (to be serialized) -- match on skos:notation
-Identifier,dcterms:identifier,,see Identifiers tab,see Identifiers tab,,,,,
-Instance of work,nypl:workId,classify:owi,,,,,,,
+111",,,,,,,bf:Work subtype
+Date,dc:date,,publishYear,,008/7-10,,,,,bf:Work subtype
+Date created,dcterms:created,,publishYear,,008/7-10,,,,,bf:Work subtype
+Date end,dbo:endDate,,008/11-14,,,,,,,bf:Work subtype
+Date start,dbo:startDate,,008/7-10,,,,,,,bf:Work subtype
+Delivery location,nypl:deliveryLocation,,,based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016,TBD,,,,,bf:Item
+Description,dcterms:description,,520 $a,,,"307,174","Summary, Etc.",,,bf:Work subtype
+Dimensions,bf:dimensions,,300 $c,,,,,,,bf:Work subtype
+Electronic location,bf:electronicLocator,,856 (see notes),,,,,,See Electronic Location / Supplementary Content tab for object mapping and see https://docs.google.com/spreadsheets/d/184IYVm8u5kthp6qtm06ryJkcfDykjG2DNXuAGvqt0wY/edit#gid=2105311450 for parsing and filtering to either Electronic location or Supplementary content. Ignore partner data for alpha. Create new bf:Item if Electronic Location and just link if Supplementary Content.,bf:Item ?
+Extent,nypl:extent,,300 $a $b,,,,,,"Concatentate 300 $a + $b with /s, (?) and drop trailing ISBD punctuation, ex. $a11 v. :$bill. ; > ""11 v., ill.""",bf:Work subtype
+Holding location,nypl:holdingLocation,,,location.code,,,,,Map code to corresponding nypl:Location (to be serialized) -- match on skos:notation,bf:Item
+Identifier,dcterms:identifier,,see Identifiers tab,see Identifiers tab,,,,,,see identifier tab for breakdown
+Instance of work,nypl:workId,classify:owi,,,,,,,,bf:Work subtype
+ISBN,dcterms:identifier,,020 $a,,,,,,repeatable,bf:Work subtype
+ISSN,dcterms:identifier,,022 $a,,,,,,repeatable,bf:Work subtype
 Issuance,bf:issuance,,bibLevel.code (bibLevel.value for prefLabel),,LDR/07,,,,"For now we can take either code or map to label for literal in data. We will eventually want to change to bf:issuance with objects (or maybe not)
-Append code to ""http://data.nypl.org/issuances/"" and store value as prefLabel, if desired."
+Append code to ""http://data.nypl.org/issuances/"" and store value as prefLabel, if desired.",bf:Work subtype
+Label,skos:prefLabel,,,,,,,,,
 Language,dcterms:language,,"lang
 OR 008/35-37
 OR 041 $a",,,,Language  ,,"First try taking from 008 35-37: map code to http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Flanguages (or append code to ""http://id.loc.gov/vocabulary/languages/"")
 
-If 008 35-37 not present, try 041 $a using above rules"
+If 008 35-37 not present, try 041 $a using above rules",bf:Work subtype
 LCC classification,nypl:lccClassification,"lc:lcc
-classify:lcc",,,,,,,Placeholder property and pattern for alpha release. Post-alpha we will consider bf classifiation property with Classification objects to accommodate multiple classifications
-LCC coarse classification,nypl:lccCoarse,sc:lccCoarse,,,,,,,Placeholder property and pattern for alpha release. Post-alpha we will consider bf classifiation property with Classification objects to accommodate multiple classifications
-Media type,bf:media,,"see mapping tab ""Media and Carrier type mappings""",,TBD (probably 337b),,Category of Material,,"Map to media types vocabulary: http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2FmediaTypes (can also append code to ""http://id.loc.gov/vocabulary/mediaTypes/"")"
-,,,337 $b ($a for prefLabel),,,,,,
-Note,skos:note,,500 $a,,,"7,081,713",General Note,,
-,,,501 $a,,,"6,186",With Note,"Note indicating that more than one bibliographical work is contained in the physical item at the time of publishing, release, issue, or execution. The works that are contained in the item usually have distinctive titles and lack a collective title.",potential for linking relationship
-,,,502 $a,,,"78,334",Dissertation Note,,
-,,,504 $a,,,"2,749,553","Bibliography, Etc. Note","Information on the presence of one or more bibliographies, discographies, filmographies, and/or other bibliographic references in a described item or in accompanying material.",
-,,,505 $a,,,"645,323",Formatted Contents Note,Titles of separate works or parts of an item or the table of contents. The field may also contain statements of responsibility and volume numbers or other sequential designations.,Could maybe be a separate property?
-,,,506 $a,,,"245,041",Restrictions on Access Note,,
-,,,507 $a,,,293,Scale Note for Graphic Material,"Scale of a graphic material item given as a note. For visual materials, this field contains the scale of architectural drawings or three-dimensional artifacts. For maps, the scale of an item is contained in this field only in pre-AACR 2 cataloging records. Scale information is contained in field 255 (Mathematical Data Area) in AACR 2 formulated records.",
-,,,508 $a,,,"33,891",Creation/Production Credits Note,"Credits for persons or organizations, other than members of the cast, who have participated in the creation and/or production of the work. The introductory term Credits: is usually generated as a display constant.",Names/roles could be extracted as Agents and mapped to Contributor
-,,,509 $a,,,"68,011",Unknown,,
-,,,510 $a,,,"722,129",Citation/References Note,"Citations or references to published bibliographic descriptions, reviews, abstracts, or indexes of the content of the described item.",potential for linking relationship
-,,,511 $a,,,"185,575",Participant or Performer Note,"Information about the participants, players, narrators, presenters, or performers. The participant or performer note is sometimes displayed and/or printed with an introductory term or phrase that is generated as a display constant based on the first indicator value.","When first indicator = 1, this is a cast list. Could map other name/roles as Agents to Contributor"
-,,,513 $a,,,"5,011",Type of Report and Period Covered Note,,
-,,,514 $a,,,45,Data Quality Note,,
-,,,515 $a,,,"98,169",Numbering Peculiarities Note,"Unformatted note giving irregularities and peculiarities in numbering or publishing patterns, report year coverage, revised editions, and/or issuance in parts.",
-,,,516 $a,,,"40,583",Type of Computer File or Data Note,"General descriptor that characterizes the file (e.g., text, computer program, numeric). Specific information, such as the form or genre of textual material (e.g., biography, dictionaries, indexes) may be included. The general type of computer file information in coded form is recorded in 008/26 (Type of computer file). The type of computer file or data note is sometimes displayed and/or printed with an introductory term or phrase that is generated as a display constant based on the first indicator value.",
-,,,518 $a,,,"106,651",Date/Time and Place of an Event Note,"Note on the date/time and/or place of creation, capture, recording, filming, execution, or broadcast associated with an event or the finding of a naturally occurring object. Field 033 (Date/Time and Place of an Event) contains the same information in coded form. Date/time and place of an event note information may be encoded as a note in subfield $a or parsed into specific subfields.",Could be encoded as temporal subjects or to supplement date created
-,,,521 $a,,,"10,248",Target Audience Note,"Information that identifies the specific audience or intellectual level for which the content of the described item is considered appropriate. Used to record interest and motivation levels and special learner characteristics. Information about the target audience and/or intellectual level may also be recorded in coded form in field 008/22 (Target audience) for some types of material. (Note: If a computer files or visual materials record has both reading grade and interest age or interest grade level information present in 521 fields, field 008/22 is coded based on the interest age information.) Notes that include restrictions on access are recorded in field 506 (Restrictions on Access Note). The note is sometimes displayed and/or printed with an introductory term that is generated as a display constant based on the first indicator value.",
-,,,522 $a,,,80,Geographic Coverage Note,Information about the geographic coverage of the described material (usually survey material). This information in coded form may be contained in field 052 (Geographic Classification Code). Sometimes displayed and/or printed with an introductory phrase that is generated as a display constant based on the first indicator value.,Places could be extracted and mapped to geographic coverage.
-,,,524 $a,,,"2,037",Preferred Citation of Described Materials Note,,
-,,,525 $a,,,"11,980",Supplement Note,"Information on the existence of supplements or special issues that are neither cataloged in separate records nor recorded in a linking entry field 770 (Supplement/Special Issue Entry). Generally, this note field is used only for unnamed supplements and/or special issues.",
-,,,526 $a,,,168,Study Program Information Note,,
-,,,530 $a,,,"212,494",Additional Physical Form Available Note,"Information concerning a different physical format in which the described item is available. If the publisher of the additional physical form is different from the publisher of the item being cataloged, this field also contains source and order number information for the additional form. The additional form may be published and/or made available for use at a repository in the additional form. When specific title and data base control number information is available for the other format, the title and control numbers may be recorded in field 776 (Additional Physical Form Entry). Field 530 is used only for notes describing different physical formats. Notes conveying information about other editions (e.g., earlier versions, shorter versions, different language versions) are recorded in field 500 (General Note).",
-,,,533 $a,,,"1,051,080",Reproduction Note,"Descriptive data for a reproduction of an original item when the main portion of the bibliographic record describes the original item and the data differ. The original item is described in the main portion of the bibliographic record and data relevant to the reproduction are given as a note in field 533 when they differ from the information describing the original. It is used whenever an institution chooses to have the description reflect the original and the notes reflect information about the copy. For mixed materials, this field contains information describing a copy of a record unit when the agency describing the materials possesses only a copy and, in accordance with conventions, the original is described in the main portion of the control record. This field is normally used in conjunction with field 535 (Location of Originals/Duplicates Note) which indicates the repository holding the original. ",potential for linking relationship -- reproduction of
-,,,534 $a,,,"25,099",Original Version Note,"Descriptive data for an original item when the main portion of the bibliographic record describes a reproduction of that item and the data differ. Details relevant to the original are given in field 534. The resource being cataloged may either be a reproduction (e.g., scanned image, or PDF), or an edition that is similar enough that it could serve as a surrogate for the original (e.g., HTML).",
-,,,535 $a,,,725,Location of Originals/Duplicates Note,Name and address of the repository with custody over originals or duplicates of the described materials. This field is used only when the originals or duplicates are housed in a repository different from that of the materials being described.,
-,,,536 $a,,,"20,319",Funding Information Note,"Contract, grant, and project numbers when the material results from a funded project. Information concerning the sponsor or funding agency also may be included.",
-,,,538 $a,,,"115,840",System Details Note,"Technical information about an item, such as the presence or absence of certain kinds of codes; or the physical characteristics of a computer file, such as recording densities, parity, blocking factors, mode of access, software programming language, computer requirements, peripheral requirements, trade name or recording systems, number of lines of resolution, and modulation frequency. For sound and videorecordings, information about the trade name or recording system(s) (e.g., VHS), modulation frequency and number of lines of resolution may be included.",
-,,,539 $a,,,"3,464",Unknown,,
-,,,540 $a,,,"6,834",Terms Governing Use and Reproduction Note,"Terms governing the use of the materials after access has been provided. The field includes, but is not limited to, copyrights, film rights, trade restrictions, etc. that restrict the right to reproduce, exhibit, fictionalize, quote, etc.",
-,,,541 $a,,,"213,277",Immediate Source of Acquisition Note,"Information about the immediate source of acquisition of the described materials and is used primarily with original or historical items, or other archival collections. The original source of acquisition is recorded in field 561 (Ownership and Custodial History). Field 541 is repeated when recording the acquisition of additional material in a collection. An additional field 541 is made for each addition.",
-,,,542 $a,,,23,Information Relating to Copyright Status,,
-,,,544 $a,,,980,Location of Other Archival Materials Note,,
-,,,545 $a,,,"15,256",Biographical or Historical Data,,
-,,,546 $a,,,"445,413",Language Note,,Map to Language
-,,,547 $a,,,"4,338",Former Title Complexity Note,,
-,,,550 $a,,,"66,887",Issuing Body Note,"Information about the current and former issuing bodies of a continuing resource. Includes notes containing editing, compiling, or translating information that involves an issuing body and notes denoting the item as an official organ of a society, etc. Field 550 is generally used for issuing bodies traced in a 7XX added entry field. The field explains their relationship to the publication and justifies the 7XX added entries. Notes relating to commercial publishers, distributors, or places of publication are recorded in field 500 (General Note).",
-,,,555 $a,,,"16,036",Cumulative Index/Finding Aids Note,"Information on the availability of cumulative indexes for continuing resources or finding aids and similar control materials for archival and manuscripts control and visual materials whose only or major focus is the described material. Field 510 (Citation/References Note) is used to record the existence of abstracting and indexing services for an item. For archival materials and visual materials, this field contains information identifying administrative and intellectual controls over the described materials and indicating the degree of control each provides. This usually implies finding aids and similar control materials. For serials, this field contains a statement of volumes and/or dates covered by cumulative indexes of an item and a statement of location of these indexes. Indexes may be issued as part of an issue of the serial or issued separately.",Could point to additional data to incorporate sometime in the future
-,,,556 $a,,,80,Information About Documentation Note,,
-,,,560 $a,,,192,Unknown,,
-,,,561 $a,,,"11,152",Ownership and Custodial History,"Copy-specific field that contains information concerning the ownership and custodial history of the described materials from the time of their creation to the time of their accessioning, including the time at which individual items or groups of items were first brought together in their current arrangement or collation.",Could extract name and map to former owner role
-,,,562 $a,,,277,Copy and Version Identification Note,Information that distinguishes the copy(s) or version(s) of materials held by an archive or manuscript repository when more than one copy or version exists or could exist.,
-,,,563 $a,,,"10,179",Binding Information,,
-,,,580 $a,,,"69,525",Linking Entry Complexity Note,Description of the complex relationship between the item described in the record and other items that cannot be adequately generated from the linking entry fields 760-787,potential for linking relationship
-,,,581 $a,,,192,Publications About Described Materials Note,,
-,,,583 $a,,,"51,747",Action Note,"Information about processing, reference, and preservation actions.",
-,,,585 $a,,,502,Exhibitions Note,,
-,,,586 $a,,,"5,937",Awards Note,Information on awards associated with the described item.,
-,,,588 $a,,,"109,417",Source of Description Note,Information used for tracking and controlling the metadata contained in the record. It includes general and specific source of description notes that are especially of interest to other catalogers.,
-,,,590 $a,,,"515,069",Unknown,,
-,,,591 $a,,,"3,655",Unknown,,
-,,,599 $a,,,"1,562",Unknown,,
-Number of items,nypl:numItems,,,,,,,,
-Place of publication,nypl:placeOfPublication,,260 $a,,,,,,Look at mapping 260 $e (place of Manufacture) after alpha
-Publisher,roles:pbl,,260 $b,,,,,,Needs new agent entification pipeline. We can address this post-alpha release
-Publisher literal,nypl:role-publisher,,260 $b,,,,,,
-Requestable,nypl:requestable,,,based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016,TBD,,,,
+classify:lcc",010 $a,,,,,,Placeholder property and pattern for alpha release. Post-alpha we will consider bf classifiation property with Classification objects to accommodate multiple classifications,bf:Work subtype
+LCC coarse classification,nypl:lccCoarse,sc:lccCoarse,,,,,,,Placeholder property and pattern for alpha release. Post-alpha we will consider bf classifiation property with Classification objects to accommodate multiple classifications,bf:Work subtype
+Media type,bf:media,,"see mapping tab ""Media and Carrier type mappings""",,TBD (probably 337b),,Category of Material,,"Map to media types vocabulary: http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2FmediaTypes (can also append code to ""http://id.loc.gov/vocabulary/mediaTypes/"")",bf:item
+,,,337 $b ($a for prefLabel),,,,,,,
+Note,skos:note,,500 $a,,,"7,081,713",General Note,,,bf:Work subtype
+,,,501 $a,,,"6,186",With Note,"Note indicating that more than one bibliographical work is contained in the physical item at the time of publishing, release, issue, or execution. The works that are contained in the item usually have distinctive titles and lack a collective title.",potential for linking relationship,
+,,,502 $a,,,"78,334",Dissertation Note,,,
+,,,504 $a,,,"2,749,553","Bibliography, Etc. Note","Information on the presence of one or more bibliographies, discographies, filmographies, and/or other bibliographic references in a described item or in accompanying material.",,
+,,,505 $a,,,"645,323",Formatted Contents Note,Titles of separate works or parts of an item or the table of contents. The field may also contain statements of responsibility and volume numbers or other sequential designations.,Could maybe be a separate property?,
+,,,506 $a,,,"245,041",Restrictions on Access Note,,,
+,,,507 $a,,,293,Scale Note for Graphic Material,"Scale of a graphic material item given as a note. For visual materials, this field contains the scale of architectural drawings or three-dimensional artifacts. For maps, the scale of an item is contained in this field only in pre-AACR 2 cataloging records. Scale information is contained in field 255 (Mathematical Data Area) in AACR 2 formulated records.",,
+,,,508 $a,,,"33,891",Creation/Production Credits Note,"Credits for persons or organizations, other than members of the cast, who have participated in the creation and/or production of the work. The introductory term Credits: is usually generated as a display constant.",Names/roles could be extracted as Agents and mapped to Contributor,
+,,,509 $a,,,"68,011",Unknown,,,
+,,,510 $a,,,"722,129",Citation/References Note,"Citations or references to published bibliographic descriptions, reviews, abstracts, or indexes of the content of the described item.",potential for linking relationship,
+,,,511 $a,,,"185,575",Participant or Performer Note,"Information about the participants, players, narrators, presenters, or performers. The participant or performer note is sometimes displayed and/or printed with an introductory term or phrase that is generated as a display constant based on the first indicator value.","When first indicator = 1, this is a cast list. Could map other name/roles as Agents to Contributor",
+,,,513 $a,,,"5,011",Type of Report and Period Covered Note,,,
+,,,514 $a,,,45,Data Quality Note,,,
+,,,515 $a,,,"98,169",Numbering Peculiarities Note,"Unformatted note giving irregularities and peculiarities in numbering or publishing patterns, report year coverage, revised editions, and/or issuance in parts.",,
+,,,516 $a,,,"40,583",Type of Computer File or Data Note,"General descriptor that characterizes the file (e.g., text, computer program, numeric). Specific information, such as the form or genre of textual material (e.g., biography, dictionaries, indexes) may be included. The general type of computer file information in coded form is recorded in 008/26 (Type of computer file). The type of computer file or data note is sometimes displayed and/or printed with an introductory term or phrase that is generated as a display constant based on the first indicator value.",,
+,,,518 $a,,,"106,651",Date/Time and Place of an Event Note,"Note on the date/time and/or place of creation, capture, recording, filming, execution, or broadcast associated with an event or the finding of a naturally occurring object. Field 033 (Date/Time and Place of an Event) contains the same information in coded form. Date/time and place of an event note information may be encoded as a note in subfield $a or parsed into specific subfields.",Could be encoded as temporal subjects or to supplement date created,
+,,,521 $a,,,"10,248",Target Audience Note,"Information that identifies the specific audience or intellectual level for which the content of the described item is considered appropriate. Used to record interest and motivation levels and special learner characteristics. Information about the target audience and/or intellectual level may also be recorded in coded form in field 008/22 (Target audience) for some types of material. (Note: If a computer files or visual materials record has both reading grade and interest age or interest grade level information present in 521 fields, field 008/22 is coded based on the interest age information.) Notes that include restrictions on access are recorded in field 506 (Restrictions on Access Note). The note is sometimes displayed and/or printed with an introductory term that is generated as a display constant based on the first indicator value.",,
+,,,522 $a,,,80,Geographic Coverage Note,Information about the geographic coverage of the described material (usually survey material). This information in coded form may be contained in field 052 (Geographic Classification Code). Sometimes displayed and/or printed with an introductory phrase that is generated as a display constant based on the first indicator value.,Places could be extracted and mapped to geographic coverage.,
+,,,524 $a,,,"2,037",Preferred Citation of Described Materials Note,,,
+,,,525 $a,,,"11,980",Supplement Note,"Information on the existence of supplements or special issues that are neither cataloged in separate records nor recorded in a linking entry field 770 (Supplement/Special Issue Entry). Generally, this note field is used only for unnamed supplements and/or special issues.",,
+,,,526 $a,,,168,Study Program Information Note,,,
+,,,530 $a,,,"212,494",Additional Physical Form Available Note,"Information concerning a different physical format in which the described item is available. If the publisher of the additional physical form is different from the publisher of the item being cataloged, this field also contains source and order number information for the additional form. The additional form may be published and/or made available for use at a repository in the additional form. When specific title and data base control number information is available for the other format, the title and control numbers may be recorded in field 776 (Additional Physical Form Entry). Field 530 is used only for notes describing different physical formats. Notes conveying information about other editions (e.g., earlier versions, shorter versions, different language versions) are recorded in field 500 (General Note).",,
+,,,533 $a,,,"1,051,080",Reproduction Note,"Descriptive data for a reproduction of an original item when the main portion of the bibliographic record describes the original item and the data differ. The original item is described in the main portion of the bibliographic record and data relevant to the reproduction are given as a note in field 533 when they differ from the information describing the original. It is used whenever an institution chooses to have the description reflect the original and the notes reflect information about the copy. For mixed materials, this field contains information describing a copy of a record unit when the agency describing the materials possesses only a copy and, in accordance with conventions, the original is described in the main portion of the control record. This field is normally used in conjunction with field 535 (Location of Originals/Duplicates Note) which indicates the repository holding the original. ",potential for linking relationship -- reproduction of,
+,,,534 $a,,,"25,099",Original Version Note,"Descriptive data for an original item when the main portion of the bibliographic record describes a reproduction of that item and the data differ. Details relevant to the original are given in field 534. The resource being cataloged may either be a reproduction (e.g., scanned image, or PDF), or an edition that is similar enough that it could serve as a surrogate for the original (e.g., HTML).",,
+,,,535 $a,,,725,Location of Originals/Duplicates Note,Name and address of the repository with custody over originals or duplicates of the described materials. This field is used only when the originals or duplicates are housed in a repository different from that of the materials being described.,,
+,,,536 $a,,,"20,319",Funding Information Note,"Contract, grant, and project numbers when the material results from a funded project. Information concerning the sponsor or funding agency also may be included.",,
+,,,538 $a,,,"115,840",System Details Note,"Technical information about an item, such as the presence or absence of certain kinds of codes; or the physical characteristics of a computer file, such as recording densities, parity, blocking factors, mode of access, software programming language, computer requirements, peripheral requirements, trade name or recording systems, number of lines of resolution, and modulation frequency. For sound and videorecordings, information about the trade name or recording system(s) (e.g., VHS), modulation frequency and number of lines of resolution may be included.",,
+,,,539 $a,,,"3,464",Unknown,,,
+,,,540 $a,,,"6,834",Terms Governing Use and Reproduction Note,"Terms governing the use of the materials after access has been provided. The field includes, but is not limited to, copyrights, film rights, trade restrictions, etc. that restrict the right to reproduce, exhibit, fictionalize, quote, etc.",,
+,,,"541 $a (If ind1==0, this note should be private--do not index or publish)",,,"213,277",Immediate Source of Acquisition Note,"Information about the immediate source of acquisition of the described materials and is used primarily with original or historical items, or other archival collections. The original source of acquisition is recorded in field 561 (Ownership and Custodial History). Field 541 is repeated when recording the acquisition of additional material in a collection. An additional field 541 is made for each addition.",,
+,,,542 $a,,,23,Information Relating to Copyright Status,,,
+,,,544 $a,,,980,Location of Other Archival Materials Note,,,
+,,,545 $a,,,"15,256",Biographical or Historical Data,,,
+,,,546 $a,,,"445,413",Language Note,,Map to Language,
+,,,547 $a,,,"4,338",Former Title Complexity Note,,,
+,,,550 $a,,,"66,887",Issuing Body Note,"Information about the current and former issuing bodies of a continuing resource. Includes notes containing editing, compiling, or translating information that involves an issuing body and notes denoting the item as an official organ of a society, etc. Field 550 is generally used for issuing bodies traced in a 7XX added entry field. The field explains their relationship to the publication and justifies the 7XX added entries. Notes relating to commercial publishers, distributors, or places of publication are recorded in field 500 (General Note).",,
+,,,555 $a,,,"16,036",Cumulative Index/Finding Aids Note,"Information on the availability of cumulative indexes for continuing resources or finding aids and similar control materials for archival and manuscripts control and visual materials whose only or major focus is the described material. Field 510 (Citation/References Note) is used to record the existence of abstracting and indexing services for an item. For archival materials and visual materials, this field contains information identifying administrative and intellectual controls over the described materials and indicating the degree of control each provides. This usually implies finding aids and similar control materials. For serials, this field contains a statement of volumes and/or dates covered by cumulative indexes of an item and a statement of location of these indexes. Indexes may be issued as part of an issue of the serial or issued separately.",Could point to additional data to incorporate sometime in the future,
+,,,556 $a,,,80,Information About Documentation Note,,,
+,,,560 $a,,,192,Unknown,,,
+,,,"561 $a (If ind1==0, this note should be private--do not index or publish)",,,"11,152",Ownership and Custodial History,"Copy-specific field that contains information concerning the ownership and custodial history of the described materials from the time of their creation to the time of their accessioning, including the time at which individual items or groups of items were first brought together in their current arrangement or collation.",Could extract name and map to former owner role,
+,,,562 $a,,,277,Copy and Version Identification Note,Information that distinguishes the copy(s) or version(s) of materials held by an archive or manuscript repository when more than one copy or version exists or could exist.,,
+,,,563 $a,,,"10,179",Binding Information,,,
+,,,580 $a,,,"69,525",Linking Entry Complexity Note,Description of the complex relationship between the item described in the record and other items that cannot be adequately generated from the linking entry fields 760-787,potential for linking relationship,
+,,,581 $a,,,192,Publications About Described Materials Note,,,
+,,,583 $a,,,"51,747",Action Note,"Information about processing, reference, and preservation actions.",,
+,,,585 $a,,,502,Exhibitions Note,,,
+,,,586 $a,,,"5,937",Awards Note,Information on awards associated with the described item.,,
+,,,588 $a,,,"109,417",Source of Description Note,Information used for tracking and controlling the metadata contained in the record. It includes general and specific source of description notes that are especially of interest to other catalogers.,,
+,,,590 $a,,,"515,069",Unknown,,,
+,,,591 $a,,,"3,655",Unknown,,,
+,,,599 $a,,,"1,562",Unknown,,,
+Number of items,nypl:numItems,,,,,,,,,bf:Work subtype
+OCLC number,dcterms:identifier,,"991 $y
+OR 001 if 003 == 'OCoLC'
+OR 035 $a if 'OCoLC' in 035 $a",,,,,,,
+Place of publication,nypl:placeOfPublication,,260 $a,,,,,,Look at mapping 260 $e (place of Manufacture) after alpha,bf:Work subtype
+Publisher,roles:pbl,,260 $b,,,,,,Needs new agent entification pipeline. We can address this post-alpha release,bf:Work subtype
+Publisher literal,nypl:role-publisher,,260 $b,,,,,,,bf:Work subtype
+Requestable,nypl:requestable,,,based on application/mapping logic at: https://docs.google.com/spreadsheets/d/1SwZyCSUMsQ0Lf91t39_LxKpSLbvNNEliOhF1bnyUwcA/edit?gid=940035354#gid=1104339016,TBD,,,,,bf:Item
 Resource type,dcterms:type,,"fixedFields.label = ""Material type""",,LDR/06 -- map to values in 'Resource type mappings' tab,,,,"See ""Resource type mappings"" tab for more detailed mapping instructions.
 map = {""r"" : ""art"", ""u"" : ""aud"", ""n"" : ""aud"", ""q"" : ""aud"", ""y"" : ""aud"", ""j"" : ""aud"", ""i"" : ""aud"", ""e"" : ""car"", ""p"" : ""mix"", ""v"" : ""mov"", ""3"" : ""mov"", ""s"" : ""mov"", ""b"" : ""mov"", ""m"" : ""mul"", ""d"" : ""not"", ""c"" : ""not"", ""g"" : ""img"", ""k"" : ""img"", ""a"" : ""txt"", ""z"" : ""txt"", ""l"" : ""txt"", ""t"" : ""txt"", ""h"" : ""txt"",}
-'http://id.loc.gov/vocabulary/resourceTypes/' + map['materialType'['code']]"
+'http://id.loc.gov/vocabulary/resourceTypes/' + map['materialType'['code']]",bf:Work subtype
 Subject,dcterms:subject,classify:fast,"600
 610
 611
@@ -152,47 +162,40 @@ Subject Added Entry-Chronological Term
 Subject Added Entry-Topical Term
 Subject Added Entry-Geographic Name
 Index Term-Uncontrolled
-Index Term-Genre/Form",,
-Subject literal,dc:subject,,same fields as for Subject,,,,,,"Join all subfields by "" -- """
-Supplementary content,bf:supplementaryContent,,856 (see notes),,,,,,See Electronic Location / Supplementary Content tab for object mapping and see https://docs.google.com/spreadsheets/d/184IYVm8u5kthp6qtm06ryJkcfDykjG2DNXuAGvqt0wY/edit#gid=2105311450 for parsing and filtering to either Electronic location or Supplementary content. Ignore partner data for alpha.
-Suppressed,nypl:suppressed,,suppressed,"suppressed or if location.code ends in 9. if bib's suppressed value is true, then item is suppressed",,,,,
-Temporal coverage,dcterms:temporal,,,,648,"19,135",Subject Added Entry-Chronological Term,,This could be used to generate more structured temporal terms for temporal coverage
-Title,dcterms:title,,title,,245 $a,"8,448,413",,,
-Title display,nypl:titleDisplay,,245,,,,,,Concatenate all fields in the 245 field
-Work,dcterms:identifier,classify:owi,,,,,,,
-,ol:id,,,,,,,,
-,hathi:id,,,,,,,,
-,hathi:vols,,,,,,,,
-,hathi:access,,,,,,,,
-,,,,,,,,,
-Not mapped for Alpha,,,,,,,,,
-Agency code,nypl:agency,,,,,,,,
-Author notes,bt:authorNotes,,,,,,,,
-Cover image,dbo:thumbnail,,,,,,,,
-Flap,bt:flap,,,,,,,,
-Item type code,nypl:itemType,,,,,,,,
-Review,bt:review,,,,,,,,
-Summary,dcterms:abstract,,,,N/A,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-Registry relationship,RDF property,,,,,,,,
-Equivalent to,bf:hasEquivalent,,,,,,,,
-Has member,pcdm:hasMember,,,,,,,,
-Has item,bf:hasItem,,,,,,,,
-Has reproduction,bf:reproduction,,533,,,"1,051,080",Reproduction Note,,
-Item of,bf:itemOf,,,,,,,,
-Member of,pcdm:memberOf,,,,,,,,
-Reproduction of,bf:originalVersion,,534,,534,"25,099",Original Version Note,,
-,,,,,,,,,
-In series,,,,,440,"725,404",,,
-,,,,,490,"1,501,279",,,
-,,,,,760,"3,426",Main Series Entry,,
-Has subseries,,,,,762,633,Subseries Entry,,
-,,,,,,,,,
-Other relationships we may be interested in expressing,,,,,,,,,
-Translation,bf:translation ,,,,,,,,
-Translation of,bf:translationOf,,,,,,,,
+Index Term-Genre/Form",,,bf:Work subtype
+Subject literal,dc:subject,,same fields as for Subject,,,,,,"Join all subfields by "" -- """,bf:Work subtype
+Supplementary content,bf:supplementaryContent,,856 (see notes),,,,,,See Electronic Location / Supplementary Content tab for object mapping and see https://docs.google.com/spreadsheets/d/184IYVm8u5kthp6qtm06ryJkcfDykjG2DNXuAGvqt0wY/edit#gid=2105311450 for parsing and filtering to either Electronic location or Supplementary content. Ignore partner data for alpha.,bf:Item ?
+Suppressed,nypl:suppressed,,suppressed,"suppressed or if location.code ends in 9. if bib's suppressed value is true, then item is suppressed",,,,,,both
+Title,dcterms:title,,title,,245 $a $b,"8,448,413",,,,bf:Work subtype
+Title display,nypl:titleDisplay,,245,,,,,,Concatenate all fields in the 245 field,bf:Work subtype
+HathiTrust version,hathi:id,sc:hathi,,,,,,,,
+HathiTrust volumes,hathi:vols,,,,,,,,,
+HathiTrust access,hathi:access,,,,,,,,,
+Equivalent to,bf:hasEquivalent,,,,,,,,,
+Has member,pcdm:hasMember,,,,,,,,,
+Has item,bf:hasItem,,,,,,,,,bf:Work subtype
+Item of,bf:itemOf,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+Not mapped for Alpha,,,,,,,,,,
+Agency code,nypl:agency,,,,,,,,,
+Author notes,bt:authorNotes,,,,,,,,,
+Cover image,dbo:thumbnail,,,,,,,,,
+Flap,bt:flap,,,,,,,,,
+Item type code,nypl:itemType,,,,,,,,,
+Review,bt:review,,,,,,,,,
+Summary,dcterms:abstract,,,,N/A,,,,,
+Genre/Category,TBD,,,,008Book or Serial 24-27 (006Book or Serial 07-10),,Nature of contents,Up to four one-character codes that indicate whether a significant part of the item is or contains certain types of material.,"Includes some potentially valuable access points for categorizing material, see codes at https://www.loc.gov/marc/bibliographic/concise/bd008b.html",
+Geographic coverage,dcterms:geographic,,,,651,"2,553,859",Subject Added Entry-Geographic Name,,This could be used to generate more structured place terms for geographic coverage,
+Temporal coverage,dcterms:temporal,,,,648,"19,135",Subject Added Entry-Chronological Term,,This could be used to generate more structured temporal terms for temporal coverage,
+Open Library identifier,ol:id,,,,,,,,,
+Has reproduction,bf:reproduction,,533,,,"1,051,080",Reproduction Note,,,
+Item of,bf:itemOf,,,,,,,,,bf:Item
+Member of,pcdm:memberOf,,,,,,,,,
+Reproduction of,bf:originalVersion,,534,,534,"25,099",Original Version Note,,,
+In series,,,,,440,"725,404",,,,
+,,,,,490,"1,501,279",,,,
+,,,,,760,"3,426",Main Series Entry,,,
+Has subseries,,,,,762,633,Subseries Entry,,,
+Translation,bf:translation ,,,,,,,,,
+Translation of,bf:translationOf,,,,,,,,,

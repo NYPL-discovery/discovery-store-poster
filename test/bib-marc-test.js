@@ -1,8 +1,7 @@
 /* global describe it */
 
-// var request = require('request')
 const assert = require('assert')
-const MarcMapping = require('./../lib/field-mapping').MarcMapping
+const BibFieldMapper = require('./../lib/field-mapper').BibFieldMapper
 const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const Bib = require('./../lib/models/bib')
@@ -12,16 +11,14 @@ describe('Bib Marc Mapping', function () {
 
   describe('Parse', function () {
     it('should parse marc mapping', function () {
-      return MarcMapping.initialize().then(function (mapping) {
-        assert(true)
+      var mapping = new BibFieldMapper('sierra-nypl')
 
-        var altTitleMapping = mapping.allMappings('nypl-sierra').filter((m) => m.name === 'Alternative title')[0]
-        // right number of alt title mappings:
-        assert.equal(altTitleMapping.marcs.length, 5)
+      var altTitleMapping = mapping.getMapping('Alternative title')
+      // right number of alt title mappings:
+      assert.equal(altTitleMapping.paths.length, 5)
 
-        var contribLIteralMapping = mapping.allMappings('nypl-sierra').filter((m) => m.name === 'Contributor literal')[0]
-        assert.equal(contribLIteralMapping.marcs.length, 3)
-      })
+      var contribLIteralMapping = mapping.getMapping('Contributor literal')
+      assert.equal(contribLIteralMapping.paths.length, 3)
     })
 
     it('should identify var field', function () {
@@ -89,6 +86,9 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literals('dc:subject')[0], 'Board of Governors of the Federal Reserve System (U.S.)')
           assert.equal(bib.literals('dc:subject')[1], 'Dollar, American.')
           assert.equal(bib.literals('dc:subject')[2], 'Monetary policy -- United States.')
+
+          // Creator literal:
+          assert.equal(bib.literals('dc:creator')[0], 'United States. Congress. Joint Economic Committee, author.')
         })
     })
 
@@ -182,7 +182,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should map carrier type', function () {
+    it('should map carrier type, dimensions, extent', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18501478.json'))
 
       return bibSerializer.fromMarcJson(bib)
@@ -192,6 +192,9 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:cr')
           assert.equal(bib.statement('bf:carrier').object_label, 'online resource')
           assert.equal(bib.objectId('bf:media'), 'mediatypes:c')
+
+          assert.equal(bib.literal('bf:dimensions'), '24 cm.')
+          assert.equal(bib.literal('nypl:extent'), 'v. ;')
         })
     })
 
