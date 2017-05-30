@@ -1,10 +1,16 @@
 // Usage:
+//    node kinesify-data.js INFILES OUTFILE [SCHEMAURL]
+//
 //  The following command will take unencoded json, encode it with avro schema, encode it with base64, and put in Kinesis format.
 //    node kinesify-data.js event.unencoded.bibs.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 //
 //  If infile is a plain marcinjson document, it will be converted into the right form.
 //  i.e. You can load sample docs directly from the test data:
 //    node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//
+//  If you want to load up multiple bibs or items in one event.json (to test batches > 1),
+//  infile accepts comma-delimited paths:
+//    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
 const args = process.argv.slice(2)
 const avro = require('avsc')
@@ -15,17 +21,11 @@ const config = require('config')
 // config
 const infile = args[0]
 const outfile = args[1]
-const schemaUrl = args[2]
+var schemaUrl = args[2]
 
 function onSchemaLoad (schema) {
   // initialize avro schema
   var avroType = avro.parse(schema)
-
-  // read unencoded data
-  var unencodedData = JSON.parse(fs.readFileSync(infile, 'utf8'))
-
-  // If it's a plain marcinjson document, convert it into the event.json form:
-  if (!unencodedData.Records && unencodedData.id) unencodedData = { Records: [unencodedData] }
 
   // encode data and put in kinesis format
   var kinesisEncodedData = unencodedData.Records
@@ -39,7 +39,7 @@ function onSchemaLoad (schema) {
     if (err) {
       console.log('Write error:', err)
     } else {
-      console.log('Successfully wrote data to file')
+      console.log(`Successfully wrote event.json with ${kinesisEncodedData.length} encoded record(s)`)
     }
   })
 }
@@ -53,13 +53,12 @@ function fixRecord (record) {
 
 function fixItem (item) {
   // If fixedFields is an array, make it a hash:
-  if (typeof item.fixedFields.length === 'number') {
+  if (Array.isArray(item.fixedFields)) {
     item.fixedFields = Object.keys(item.fixedFields).reduce((h, ind) => {
       h[`${ind}`] = item.fixedFields[ind]
       return h
     }, {})
   }
-  console.log('revised: ', item)
   return item
 }
 
@@ -70,7 +69,17 @@ function fixBib (bib) {
       field.subFields = field.subfields
       delete field.subfields
     }
+    // Assign following fields to null if not otherwise set:
+    field = ['subFields', 'content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
+
     return field
+  }, {})
+
+  bib.fixedFields = Object.keys(bib.fixedFields).reduce((h, ind) => {
+    var field = bib.fixedFields[ind]
+    if (!field.display) field.display = null
+    h[`${ind}`] = field
+    return h
   }, {})
 
   if (typeof bib.fixedFields.length === 'number') {
@@ -79,6 +88,9 @@ function fixBib (bib) {
       return h
     }, {})
   }
+
+  bib = ['deletedDate'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), bib)
+  // if (!bib.deletedDate) bib.deletedDate = null
 
   return bib
 }
@@ -127,16 +139,33 @@ function kinesify (record, avroType) {
   }
 }
 
+// read unencoded data
+var unencodedData = infile.split(',')
+  .map((f) => fs.readFileSync(f, 'utf8'))
+  .map(JSON.parse)
+
+// If they're plain marcinjson document(s), convert them into the event.json form:
+if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
+
+// Otherwise, if it's a single event-formatted json:
+else if (unencodedData[0].Records && unencodedData.length === 1) unencodedData = unencodedData.shift()
+
+// As a convenience, if schemaUrl not explicitly given, derive it from nyplType of first record:
+if (!schemaUrl) {
+  var type = unencodedData.Records[0].nyplType
+  console.log('Inferring schema type: ', type)
+  schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${type.substring(0, 1).toUpperCase()}${type.substring(1)}`
+}
+
 var options = {
   uri: schemaUrl,
   json: true
 }
-
 request(options, function (error, resp, body) {
   if (error) console.log('Error (#request): ' + error)
 
   if (body.data && body.data.schema) {
-    console.log('Loaded schema', body.data.schema)
+    // console.log('Loaded schema', body.data.schema)
     var schema = JSON.parse(body.data.schema)
     onSchemaLoad(schema)
   }
