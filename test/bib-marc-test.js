@@ -182,7 +182,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should map carrier type, dimensions, extent', function () {
+    it('should map carrier type, dimensions, extent, alt title', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18501478.json'))
 
       return bibSerializer.fromMarcJson(bib)
@@ -195,6 +195,8 @@ describe('Bib Marc Mapping', function () {
 
           assert.equal(bib.literal('bf:dimensions'), '24 cm.')
           assert.equal(bib.literal('nypl:extent'), 'v. ;')
+
+          assert.equal(bib.literal('dcterms:alternative'), 'Cobbett\'s weekly political register (London, England : 1802)')
         })
     })
 
@@ -325,6 +327,28 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
           assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
           assert.equal(bib.statement('bf:carrier').object_label, 'volume')
+        })
+    })
+
+    it('should serialize notes', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10537687.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Notes for this bib:
+          //  * 'Translation of La vie quotidienne dans l\'Empire carolingien.'
+          //  * 'Includes bibliographical references and index.'
+          //  * 'Purchased from the Carl B. and Marjorie N. Boyer Fund' (541 $a with ind1 '0', so suppress)
+
+          // There is one note in 505 $a
+          assert.equal(bib.literal('skos:note'), 'Translation of La vie quotidienne dans l\'Empire carolingien.')
+
+          // Another note in 504 $a:
+          assert.equal(bib.literals('skos:note')[1], 'Includes bibliographical references and index.')
+
+          // There's another note in 541 but ind1 === '0', so above should be all we get:
+          assert.equal(bib.literals('skos:note').length, 2)
         })
     })
   })

@@ -29,16 +29,12 @@
       },
       {
         "marc": "240",
-        "subfields": [
-          "a", "b", "f", "n", "p"
-        ],
+        "subfields": [ "a", "b", "f", "n", "p" ],
         "description": "Varying Form of Title"
       },
       {
         "marc": "246",
-        "subfields": [
-          "a", "b", "f", "n", "p"
-        ],
+        "subfields": [ "a", "b", "f", "n", "p" ],
         "description": "Varying Form of Title"
       }
     ]
@@ -449,7 +445,8 @@
         "description": "Terms Governing Use and Reproduction Note"
       },
       {
-        "marc": "541 (If ind1==0, this note should be private--do not index or publish)",
+        "marc": "541",
+        "notes": "If ind1==0, this note should be private--do not index or publish",
         "subfields": [ "a" ],
         "description": "Immediate Source of Acquisition Note"
       },
@@ -499,7 +496,8 @@
         "description": "Unknown"
       },
       {
-        "marc": "561 (If ind1==0, this note should be private--do not index or publish)",
+        "marc": "561",
+        "notes": "If ind1==0, this note should be private--do not index or publish",
         "subfields": [ "a" ],
         "description": "Ownership and Custodial History"
       },
