@@ -9,11 +9,21 @@
       "@id": "nyplAccessMessage:o",
       "@type": "nypl:Location",
       "nypl:locationType": [
-        "Research",
-        "Branch"
+        "Branch",
+        "Research"
       ],
       "skos:notation": "o",
       "skos:prefLabel": "OVERSIZE"
+    },
+    {
+      "@id": "nyplAccessMessage:-",
+      "@type": "nypl:Location",
+      "nypl:locationType": [
+        "Branch",
+        "Research"
+      ],
+      "skos:notation": "-",
+      "skos:prefLabel": "NO RESTRICTIONS"
     },
     {
       "@id": "nyplAccessMessage:a",
