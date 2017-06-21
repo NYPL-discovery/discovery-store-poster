@@ -22,4 +22,7 @@ if (['locations', 'statuses', 'organizations', 'datasources', 'accessmessages', 
   error('Must specify vocab to update')
 }
 
+require('dotenv').config({ path: './deploy.env' })
+require('dotenv').config({ path: './.env' })
+
 ; (new ControlledVocabUpdater(vocab)).update(argv.offset, argv.limit)
