@@ -20,8 +20,8 @@ const config = require('config')
 
 // config
 const infile = args[0]
-const outfile = args[1]
-var schemaUrl = args[2]
+const outfile = args[1] || 'event.json'
+var schemaUrl = args[2] || 'https://api.nypltech.org/api/v0.1/current-schemas/Bib'
 
 function onSchemaLoad (schema) {
   // initialize avro schema

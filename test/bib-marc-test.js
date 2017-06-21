@@ -358,6 +358,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((item) => {
+          assert.equal(item.id, 'pb176961')
           // TODO need to check a whole bunch more fields...
           assert.equal(item.objectId('rdf:type'), 'nypl:Item')
           assert.equal(item.objectId('bf:media'), 'mediatypes:n')
