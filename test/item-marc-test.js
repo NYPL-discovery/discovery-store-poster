@@ -138,6 +138,8 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:1')
           assert.equal(item.objectId('nypl:owner'), 'orgs:0003')
           assert.equal(item.objectId('bf:status'), 'status:a')
+          // No restrictions:
+          assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:-')
         })
     })
   })
