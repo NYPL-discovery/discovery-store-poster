@@ -351,6 +351,19 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literals('skos:note').length, 2)
         })
     })
+
+    it('should assign correct PUL fields', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-pul-176961.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((item) => {
+          // TODO need to check a whole bunch more fields...
+          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(item.objectId('bf:media'), 'mediatypes:n')
+          assert.equal(item.objectId('bf:carrier'), 'carriertypes:nc')
+        })
+    })
   })
 })
 

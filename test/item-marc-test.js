@@ -135,7 +135,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:pb176961')
           // No item types currently assigned to PUL/CUL
-          assert.equal(item.objectId('nypl:catalogItemType'), null)
+          assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:1')
           assert.equal(item.objectId('nypl:owner'), 'orgs:0003')
           assert.equal(item.objectId('bf:status'), 'status:a')
         })

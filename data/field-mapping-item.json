@@ -41,6 +41,10 @@
     "paths": [
       {
         "notes": "Join 852$h and fieldTag 'v' value (if available) with a space"
+      },
+      {
+        "marc": "945",
+        "subfields": [ "g" ]
       }
     ]
   },

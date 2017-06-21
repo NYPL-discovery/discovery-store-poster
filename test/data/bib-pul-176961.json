@@ -1,0 +1,386 @@
+{
+  "id": "176961",
+  "nyplSource": "recap-PUL",
+  "nyplType": "bib",
+  "updatedDate": "2016-11-22T21:34:31Z",
+  "createdDate": "",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": ""
+  },
+  "title": null,
+  "author": null,
+  "materialType": null,
+  "bibLevel": null,
+  "publishYear": null,
+  "catalogDate": null,
+  "country": {
+    "code": "0",
+    "name": ""
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [],
+  "varFields": [
+    {
+      "fieldTag": null,
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "3871185949"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)10770935"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(CStRLIN)NJPG83-B63807"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "9",
+          "content": "AAZ1850TS"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NNU"
+        },
+        {
+          "tag": "d",
+          "content": "NjP"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "arager"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Handbuch der arabischen Literatur /"
+        },
+        {
+          "tag": "c",
+          "content": "Abdulghafur Sabuni."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Hamburg :"
+        },
+        {
+          "tag": "b",
+          "content": "Buske,"
+        },
+        {
+          "tag": "c",
+          "content": "1983-1985."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "2 v. ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Discontinued after v. 2."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Added title in arabic: Marjaʻ al-adab al-ʻarabī."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Text in arabic; introductory matters and commentaries in German."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "1-2. Anthologie der traditionellen Prosa."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Arabic literature."
+        },
+        {
+          "tag": "0",
+          "content": "(uri)http://id.loc.gov/authorities/subjects/sh85006314"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Sabuni, Abdulghafur."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Marjaʻ al-adab al-ʻarabī."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "998",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "06/07/94"
+        },
+        {
+          "tag": "s",
+          "content": "9114"
+        },
+        {
+          "tag": "n",
+          "content": "NjP"
+        },
+        {
+          "tag": "w",
+          "content": "NYPG84B85189"
+        },
+        {
+          "tag": "d",
+          "content": "09/21/83"
+        },
+        {
+          "tag": "c",
+          "content": "HBA"
+        },
+        {
+          "tag": "b",
+          "content": "AD"
+        },
+        {
+          "tag": "i",
+          "content": "940607"
+        },
+        {
+          "tag": "l",
+          "content": "NJPG"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "911",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19940617"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "912",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "19940607000000.0"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "001",
+      "ind1": null,
+      "ind2": null,
+      "content": "176961",
+      "subFields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "005",
+      "ind1": null,
+      "ind2": null,
+      "content": "20160519233759.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "008",
+      "ind1": null,
+      "ind2": null,
+      "content": "830921m19831985gw            00000 ger d",
+      "subFields": null
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "01074cam a2200301 a 4500",
+      "subFields": null
+    }
+  ]
+}
