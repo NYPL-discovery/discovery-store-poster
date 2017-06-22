@@ -3,6 +3,7 @@
     "dcterms": "http://purl.org/dc/terms/",
     "nypl": "http://data.nypl.org/nypl-core/",
     "nyplLocation": "http://data.nypl.org/locations/",
+    "recapCustomerCode": "http://data.nypl.org/recapCustomerCodes",
     "skos": "http://www.w3.org/2004/02/skos/core#"
   },
   "@graph": [
@@ -15,10 +16,22 @@
       "nypl:actualLocation": "OFFSITE - TSD - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:slr"
+        },
+        {
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:maf"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:map"
         },
         {
           "@id": "nyplLocation:malc"
@@ -27,31 +40,19 @@
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
           "@id": "nyplLocation:myr"
         },
         {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:sc"
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:sc"
+        },
+        {
+          "@id": "nyplLocation:malw"
         }
       ],
       "nypl:owner": {
@@ -59,7 +60,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qc2mj",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance"
@@ -95,14 +96,14 @@
       "skos:prefLabel": "Columbus"
     },
     {
-      "@id": "nyplLocation:ctj0y",
+      "@id": "nyplLocation:cp",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ct"
+        "@id": "nyplLocation:cp"
       },
-      "nypl:actualLocation": "Castle Hill Children's Young Reader",
-      "skos:notation": "ctj0y",
-      "skos:prefLabel": "Castle Hill Children's Young Reader"
+      "nypl:actualLocation": "Clason's Point",
+      "skos:notation": "cp",
+      "skos:prefLabel": "Clason's Point"
     },
     {
       "@id": "nyplLocation:qc2ma",
@@ -113,22 +114,19 @@
       "nypl:actualLocation": "OFFSITE - TSD - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:slr"
+          "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:sc"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:maln"
         },
         {
           "@id": "nyplLocation:maf"
@@ -137,16 +135,19 @@
           "@id": "nyplLocation:malc"
         },
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:malw"
         },
         {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:slr"
         },
         {
           "@id": "nyplLocation:map"
         },
         {
-          "@id": "nyplLocation:sc"
+          "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:myr"
@@ -157,20 +158,20 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qc2ma",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance"
     },
     {
-      "@id": "nyplLocation:ch",
+      "@id": "nyplLocation:ctj0a",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ch"
+        "@id": "nyplLocation:ct"
       },
-      "nypl:actualLocation": "Chatham Square",
-      "skos:notation": "ch",
-      "skos:prefLabel": "Chatham Square"
+      "nypl:actualLocation": "Castle Hill Children's Easy Book",
+      "skos:notation": "ctj0a",
+      "skos:prefLabel": "Castle Hill Children's Easy Book"
     },
     {
       "@id": "nyplLocation:ci",
@@ -193,14 +194,14 @@
       "skos:prefLabel": "Castle Hill Children's Fiction"
     },
     {
-      "@id": "nyplLocation:cl",
+      "@id": "nyplLocation:kbjr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cl"
+        "@id": "nyplLocation:kb"
       },
-      "nypl:actualLocation": "Morningside Heights",
-      "skos:notation": "cl",
-      "skos:prefLabel": "Morningside Heights"
+      "nypl:actualLocation": "Kingsbridge Children's Reference",
+      "skos:notation": "kbjr",
+      "skos:prefLabel": "Kingsbridge Children's Reference"
     },
     {
       "@id": "nyplLocation:ctj0i",
@@ -223,14 +224,14 @@
       "skos:prefLabel": "Castle Hill Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:ctj0n",
+      "@id": "nyplLocation:tgzzz",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ct"
+        "@id": "nyplLocation:tg"
       },
-      "nypl:actualLocation": "Castle Hill Children's Non-Fiction",
-      "skos:notation": "ctj0n",
-      "skos:prefLabel": "Castle Hill Children's Non-Fiction"
+      "nypl:actualLocation": "Throg's Neck (error code)",
+      "skos:notation": "tgzzz",
+      "skos:prefLabel": "Throg's Neck (error code)"
     },
     {
       "@id": "nyplLocation:ctj0l",
@@ -416,14 +417,14 @@
       "skos:prefLabel": "Yorkville YA Reference"
     },
     {
-      "@id": "nyplLocation:cp",
+      "@id": "nyplLocation:ctj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cp"
+        "@id": "nyplLocation:ct"
       },
-      "nypl:actualLocation": "Clason's Point",
-      "skos:notation": "cp",
-      "skos:prefLabel": "Clason's Point"
+      "nypl:actualLocation": "Castle Hill Children's Young Reader",
+      "skos:notation": "ctj0y",
+      "skos:prefLabel": "Castle Hill Children's Young Reader"
     },
     {
       "@id": "nyplLocation:mag98",
@@ -617,31 +618,31 @@
       },
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
           "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:maln"
         },
         {
+          "@id": "nyplLocation:mal"
+        },
+        {
           "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:malc"
@@ -668,14 +669,14 @@
       "skos:prefLabel": "Grand Central (error code)"
     },
     {
-      "@id": "nyplLocation:ctj0a",
+      "@id": "nyplLocation:ch",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ct"
+        "@id": "nyplLocation:ch"
       },
-      "nypl:actualLocation": "Castle Hill Children's Easy Book",
-      "skos:notation": "ctj0a",
-      "skos:prefLabel": "Castle Hill Children's Easy Book"
+      "nypl:actualLocation": "Chatham Square",
+      "skos:notation": "ch",
+      "skos:prefLabel": "Chatham Square"
     },
     {
       "@id": "nyplLocation:yvy0f",
@@ -688,14 +689,14 @@
       "skos:prefLabel": "Yorkville YA Fiction"
     },
     {
-      "@id": "nyplLocation:stj",
+      "@id": "nyplLocation:fea01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:st"
+        "@id": "nyplLocation:fe"
       },
-      "nypl:actualLocation": "Stapleton Children",
-      "skos:notation": "stj",
-      "skos:prefLabel": "Stapleton Children"
+      "nypl:actualLocation": "58th Street Reference",
+      "skos:notation": "fea01",
+      "skos:prefLabel": "58th Street Reference"
     },
     {
       "@id": "nyplLocation:lmzzz",
@@ -748,14 +749,14 @@
       "skos:prefLabel": "High Bridge Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:kbjr",
+      "@id": "nyplLocation:cl",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:kb"
+        "@id": "nyplLocation:cl"
       },
-      "nypl:actualLocation": "Kingsbridge Children's Reference",
-      "skos:notation": "kbjr",
-      "skos:prefLabel": "Kingsbridge Children's Reference"
+      "nypl:actualLocation": "Morningside Heights",
+      "skos:notation": "cl",
+      "skos:prefLabel": "Morningside Heights"
     },
     {
       "@id": "nyplLocation:kpj0a",
@@ -921,14 +922,14 @@
       "skos:prefLabel": "St. Agnes YA Reference"
     },
     {
-      "@id": "nyplLocation:tgzzz",
+      "@id": "nyplLocation:ctj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:tg"
+        "@id": "nyplLocation:ct"
       },
-      "nypl:actualLocation": "Throg's Neck (error code)",
-      "skos:notation": "tgzzz",
-      "skos:prefLabel": "Throg's Neck (error code)"
+      "nypl:actualLocation": "Castle Hill Children's Non-Fiction",
+      "skos:notation": "ctj0n",
+      "skos:prefLabel": "Castle Hill Children's Non-Fiction"
     },
     {
       "@id": "nyplLocation:feyr",
@@ -1160,6 +1161,16 @@
       "skos:prefLabel": "Andrew Heiskell YA Fiction"
     },
     {
+      "@id": "nyplLocation:ewj0a",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ew"
+      },
+      "nypl:actualLocation": "Edenwald Children's Easy Book",
+      "skos:notation": "ewj0a",
+      "skos:prefLabel": "Edenwald Children's Easy Book"
+    },
+    {
       "@id": "nyplLocation:mny0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -1256,6 +1267,9 @@
         "@id": "nyplLocation:xf"
       },
       "nypl:actualLocation": "Inter-Library Loan",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NE"
+      },
       "skos:notation": "xfill",
       "skos:prefLabel": "Inter-Library Loan"
     },
@@ -1400,14 +1414,17 @@
       "skos:prefLabel": "Jerome Park YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:ewj0a",
+      "@id": "nyplLocation:mma2f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ew"
+        "@id": "nyplLocation:mm"
       },
-      "nypl:actualLocation": "Edenwald Children's Easy Book",
-      "skos:notation": "ewj0a",
-      "skos:prefLabel": "Edenwald Children's Easy Book"
+      "nypl:actualLocation": "Mid-Manhattan Fiction Second Floor",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1500"
+      },
+      "skos:notation": "mma2f",
+      "skos:prefLabel": "Mid-Manhattan Fiction Second Floor"
     },
     {
       "@id": "nyplLocation:ewj0l",
@@ -1924,62 +1941,14 @@
       "skos:prefLabel": "West Farms YA World Languages"
     },
     {
-      "@id": "nyplLocation:rc",
+      "@id": "nyplLocation:gdy",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:rc"
+        "@id": "nyplLocation:gd"
       },
-      "nypl:actualLocation": "NYPL Research Libraries",
-      "nypl:deliverableTo": [
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:myr"
-        },
-        {
-          "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:slr"
-        },
-        {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:mai"
-        },
-        {
-          "@id": "nyplLocation:sc"
-        },
-        {
-          "@id": "nyplLocation:mab"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:map"
-        }
-      ],
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/0001"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "true"
-      },
-      "skos:notation": "rc",
-      "skos:prefLabel": "NYPL Research Libraries"
+      "nypl:actualLocation": "Grand Concourse Young Adult",
+      "skos:notation": "gdy",
+      "skos:prefLabel": "Grand Concourse Young Adult"
     },
     {
       "@id": "nyplLocation:epy",
@@ -2122,14 +2091,14 @@
       "skos:prefLabel": "Bronx Library Center Non-Fiction"
     },
     {
-      "@id": "nyplLocation:alj0y",
+      "@id": "nyplLocation:sejr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:al"
+        "@id": "nyplLocation:se"
       },
-      "nypl:actualLocation": "Allerton Children's Young Reader",
-      "skos:notation": "alj0y",
-      "skos:prefLabel": "Allerton Children's Young Reader"
+      "nypl:actualLocation": "Seward Park Children's Reference",
+      "skos:notation": "sejr",
+      "skos:prefLabel": "Seward Park Children's Reference"
     },
     {
       "@id": "nyplLocation:cta",
@@ -2180,19 +2149,16 @@
       "nypl:actualLocation": "Schwarzman Building - Main Reading Room 315",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:malc"
         },
         {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:maf"
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:mai"
@@ -2201,13 +2167,16 @@
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:malw"
-        },
-        {
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:malc"
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:maf"
         }
       ],
       "nypl:owner": {
@@ -2602,52 +2571,13 @@
       "skos:prefLabel": "St. George Adult"
     },
     {
-      "@id": "nyplLocation:maj92",
+      "@id": "nyplLocation:ina0w",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ma"
+        "@id": "nyplLocation:in"
       },
-      "nypl:deliverableTo": [
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:mai"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:mab"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        }
-      ],
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1101"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "true"
-      },
-      "skos:notation": "maj92",
-      "skos:prefLabel": "SASB M2 - General Research - Room 315"
+      "skos:notation": "ina0w",
+      "skos:prefLabel": "Inwood Adult Learning Center"
     },
     {
       "@id": "nyplLocation:sgj",
@@ -2740,16 +2670,6 @@
       "skos:prefLabel": "Tottenville Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:bry01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:br"
-      },
-      "nypl:actualLocation": "George Bruce YA Reference",
-      "skos:notation": "bry01",
-      "skos:prefLabel": "George Bruce YA Reference"
-    },
-    {
       "@id": "nyplLocation:mbj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -2810,14 +2730,14 @@
       "skos:prefLabel": "Macomb's Bridge Children's Non-Print Media"
     },
     {
-      "@id": "nyplLocation:wly01",
+      "@id": "nyplLocation:mbj0t",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wl"
+        "@id": "nyplLocation:mb"
       },
-      "nypl:actualLocation": "Woodlawn Heights YA Reference",
-      "skos:notation": "wly01",
-      "skos:prefLabel": "Woodlawn Heights YA Reference"
+      "nypl:actualLocation": "Macomb's Bridge Children's Fairy Tale",
+      "skos:notation": "mbj0t",
+      "skos:prefLabel": "Macomb's Bridge Children's Fairy Tale"
     },
     {
       "@id": "nyplLocation:mpa0f",
@@ -2897,31 +2817,7 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:myr"
-        },
-        {
-          "@id": "nyplLocation:sc"
-        },
-        {
-          "@id": "nyplLocation:slr"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mala"
-        },
-        {
           "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:malw"
@@ -2930,10 +2826,34 @@
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:maln"
+          "@id": "nyplLocation:sc"
+        },
+        {
+          "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:myr"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:slr"
         }
       ],
       "nypl:owner": {
@@ -2945,16 +2865,6 @@
       },
       "skos:notation": "rc2mj",
       "skos:prefLabel": "OFFSITE - Request in Advance"
-    },
-    {
-      "@id": "nyplLocation:bay01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:ba"
-      },
-      "nypl:actualLocation": "Baychester YA Reference",
-      "skos:notation": "bay01",
-      "skos:prefLabel": "Baychester YA Reference"
     },
     {
       "@id": "nyplLocation:gdjr",
@@ -2985,43 +2895,43 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:sc"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:myr"
         },
         {
-          "@id": "nyplLocation:slr"
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:sc"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:malc"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:slr"
+        },
+        {
+          "@id": "nyplLocation:maf"
         }
       ],
       "nypl:owner": {
@@ -3364,14 +3274,14 @@
       "skos:prefLabel": "Tompkins Square Non-Print Media"
     },
     {
-      "@id": "nyplLocation:tsa0w",
+      "@id": "nyplLocation:nsj",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ts"
+        "@id": "nyplLocation:ns"
       },
-      "nypl:actualLocation": "Tompkins Square Center for Reading & Writing",
-      "skos:notation": "tsa0w",
-      "skos:prefLabel": "Tompkins Square Center for Reading & Writing"
+      "nypl:actualLocation": "96th Street Children",
+      "skos:notation": "nsj",
+      "skos:prefLabel": "96th Street Children"
     },
     {
       "@id": "nyplLocation:ewy01",
@@ -3414,14 +3324,17 @@
       "skos:prefLabel": "67th Street Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:mry0v",
+      "@id": "nyplLocation:sla0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mr"
+        "@id": "nyplLocation:sl"
       },
-      "nypl:actualLocation": "Morrisania YA Non-Print Media",
-      "skos:notation": "mry0v",
-      "skos:prefLabel": "Morrisania YA Non-Print Media"
+      "nypl:actualLocation": "SIBL - Non-Fiction",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1125"
+      },
+      "skos:notation": "sla0n",
+      "skos:prefLabel": "SIBL - Non-Fiction"
     },
     {
       "@id": "nyplLocation:ssj0l",
@@ -3614,7 +3527,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmo2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
@@ -3671,6 +3584,16 @@
       "nypl:actualLocation": "Tottenville Adult Reference",
       "skos:notation": "tvar",
       "skos:prefLabel": "Tottenville Adult Reference"
+    },
+    {
+      "@id": "nyplLocation:tgar",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:tg"
+      },
+      "nypl:actualLocation": "Throg's Neck Adult Reference",
+      "skos:notation": "tgar",
+      "skos:prefLabel": "Throg's Neck Adult Reference"
     },
     {
       "@id": "nyplLocation:riy0f",
@@ -3760,43 +3683,43 @@
       },
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:mai"
         },
         {
-          "@id": "nyplLocation:slr"
-        },
-        {
           "@id": "nyplLocation:mab"
-        },
-        {
-          "@id": "nyplLocation:myr"
-        },
-        {
-          "@id": "nyplLocation:sc"
-        },
-        {
-          "@id": "nyplLocation:maln"
         },
         {
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:map"
+          "@id": "nyplLocation:sc"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:slr"
+        },
+        {
+          "@id": "nyplLocation:maln"
         },
         {
           "@id": "nyplLocation:malw"
         },
         {
+          "@id": "nyplLocation:myr"
+        },
+        {
           "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:malc"
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:map"
         }
       ],
       "nypl:owner": {
@@ -3830,14 +3753,14 @@
       "skos:prefLabel": "Huguenot Park Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:hkj0i",
+      "@id": "nyplLocation:muj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hk"
+        "@id": "nyplLocation:mu"
       },
-      "nypl:actualLocation": "Huguenot Park Children's Picture Book",
-      "skos:notation": "hkj0i",
-      "skos:prefLabel": "Huguenot Park Children's Picture Book"
+      "nypl:actualLocation": "Muhlenberg Children's Non-Print Media",
+      "skos:notation": "muj0v",
+      "skos:prefLabel": "Muhlenberg Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:hkj0h",
@@ -3887,16 +3810,6 @@
       "nypl:actualLocation": "Huguenot Park Children's Easy Book",
       "skos:notation": "hkj0a",
       "skos:prefLabel": "Huguenot Park Children's Easy Book"
-    },
-    {
-      "@id": "nyplLocation:rta",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:rt"
-      },
-      "nypl:actualLocation": "Richmondtown Adult",
-      "skos:notation": "rta",
-      "skos:prefLabel": "Richmondtown Adult"
     },
     {
       "@id": "nyplLocation:cpj01",
@@ -4075,14 +3988,14 @@
       "skos:prefLabel": "Huguenot Park Children's Reference"
     },
     {
-      "@id": "nyplLocation:rdj0t",
+      "@id": "nyplLocation:cpj0a",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:rd"
+        "@id": "nyplLocation:cp"
       },
-      "nypl:actualLocation": "Riverdale Children's Fairy Tale",
-      "skos:notation": "rdj0t",
-      "skos:prefLabel": "Riverdale Children's Fairy Tale"
+      "nypl:actualLocation": "Clason's Point Children's Easy Book",
+      "skos:notation": "cpj0a",
+      "skos:prefLabel": "Clason's Point Children's Easy Book"
     },
     {
       "@id": "nyplLocation:rdj0h",
@@ -4135,14 +4048,14 @@
       "skos:prefLabel": "Clason's Point Children's Young Reader"
     },
     {
-      "@id": "nyplLocation:otj0v",
+      "@id": "nyplLocation:nba0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ot"
+        "@id": "nyplLocation:nb"
       },
-      "nypl:actualLocation": "Ottendorfer Children's Non-Print Media",
-      "skos:notation": "otj0v",
-      "skos:prefLabel": "Ottendorfer Children's Non-Print Media"
+      "nypl:actualLocation": "West New Brighton Non-Print Media",
+      "skos:notation": "nba0v",
+      "skos:prefLabel": "West New Brighton Non-Print Media"
     },
     {
       "@id": "nyplLocation:cpj0v",
@@ -4175,6 +4088,16 @@
       "skos:prefLabel": "Riverdale Children's Fiction"
     },
     {
+      "@id": "nyplLocation:sgj0n",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sg"
+      },
+      "nypl:actualLocation": "St. George Children's Non-Fiction",
+      "skos:notation": "sgj0n",
+      "skos:prefLabel": "St. George Children's Non-Fiction"
+    },
+    {
       "@id": "nyplLocation:myt42",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -4190,7 +4113,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "myt42",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -4337,14 +4260,14 @@
       "skos:prefLabel": "South Beach Fiction"
     },
     {
-      "@id": "nyplLocation:cha0l",
+      "@id": "nyplLocation:mpy",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ch"
+        "@id": "nyplLocation:mp"
       },
-      "nypl:actualLocation": "Chatham Square World Languages",
-      "skos:notation": "cha0l",
-      "skos:prefLabel": "Chatham Square World Languages"
+      "nypl:actualLocation": "Morris Park Young Adult",
+      "skos:notation": "mpy",
+      "skos:prefLabel": "Morris Park Young Adult"
     },
     {
       "@id": "nyplLocation:otj0l",
@@ -4557,14 +4480,24 @@
       "skos:prefLabel": "South Beach Closed Shelf Reference"
     },
     {
-      "@id": "nyplLocation:sba01",
+      "@id": "nyplLocation:rcmq2",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sb"
+        "@id": "nyplLocation:rc"
       },
-      "nypl:actualLocation": "South Beach Reference",
-      "skos:notation": "sba01",
-      "skos:prefLabel": "South Beach Reference"
+      "nypl:actualLocation": "OFFSITE - Request in Advance for use at Schwarzman Bldg",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:maq"
+      },
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "rcmq2",
+      "skos:prefLabel": "OFFSITE - Request in Advance for use at Schwarzman Bldg -"
     },
     {
       "@id": "nyplLocation:jpa0l",
@@ -4653,34 +4586,34 @@
       },
       "nypl:deliverableTo": [
         {
+          "@id": "nyplLocation:malc"
+        },
+        {
           "@id": "nyplLocation:mag"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:malw"
         },
         {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:maf"
         }
       ],
       "nypl:owner": {
@@ -4824,24 +4757,14 @@
       "skos:prefLabel": "Mott Haven Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:malc",
+      "@id": "nyplLocation:huy0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ma"
+        "@id": "nyplLocation:hu"
       },
-      "nypl:actualLocation": "SASB - Cullman Center",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:mala"
-      },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1127"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "false"
-      },
-      "skos:notation": "malc",
-      "skos:prefLabel": "SASB - Cullman Center"
+      "nypl:actualLocation": "115th Street YA World Languages",
+      "skos:notation": "huy0l",
+      "skos:prefLabel": "115th Street YA World Languages"
     },
     {
       "@id": "nyplLocation:hgj0l",
@@ -5087,24 +5010,14 @@
       "skos:prefLabel": "South Beach"
     },
     {
-      "@id": "nyplLocation:sc",
+      "@id": "nyplLocation:stj",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sc"
+        "@id": "nyplLocation:st"
       },
-      "nypl:actualLocation": "Schomburg Center",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:sc"
-      },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1001"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "true"
-      },
-      "skos:notation": "sc",
-      "skos:prefLabel": "Schomburg Center"
+      "nypl:actualLocation": "Stapleton Children",
+      "skos:notation": "stj",
+      "skos:prefLabel": "Stapleton Children"
     },
     {
       "@id": "nyplLocation:sa",
@@ -5658,16 +5571,6 @@
       "skos:prefLabel": "Ottendorfer Children"
     },
     {
-      "@id": "nyplLocation:wla03",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:wl"
-      },
-      "nypl:actualLocation": "Woodlawn Heights Closed Shelf Reference",
-      "skos:notation": "wla03",
-      "skos:prefLabel": "Woodlawn Heights Closed Shelf Reference"
-    },
-    {
       "@id": "nyplLocation:ota",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -5798,14 +5701,14 @@
       "skos:prefLabel": "Andrew Heiskell Non-Print Media"
     },
     {
-      "@id": "nyplLocation:nba01",
+      "@id": "nyplLocation:otj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:nb"
+        "@id": "nyplLocation:ot"
       },
-      "nypl:actualLocation": "West New Brighton Reference",
-      "skos:notation": "nba01",
-      "skos:prefLabel": "West New Brighton Reference"
+      "nypl:actualLocation": "Ottendorfer Children's Reference",
+      "skos:notation": "otj01",
+      "skos:prefLabel": "Ottendorfer Children's Reference"
     },
     {
       "@id": "nyplLocation:thj0f",
@@ -5985,6 +5888,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1115"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/SA"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "false"
@@ -6103,19 +6009,6 @@
       "skos:prefLabel": "Pelham Parkway-Van Nest Reference"
     },
     {
-      "@id": "nyplLocation:mmy0v",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:mm"
-      },
-      "nypl:actualLocation": "Mid-Manhattan Young Adult Non-Print",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1500"
-      },
-      "skos:notation": "mmy0v",
-      "skos:prefLabel": "Mid-Manhattan Young Adult Non-Print"
-    },
-    {
       "@id": "nyplLocation:nbyr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -6137,6 +6030,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1116"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NS"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -6197,14 +6093,14 @@
       "skos:prefLabel": "Chatham Square Fiction"
     },
     {
-      "@id": "nyplLocation:mpy",
+      "@id": "nyplLocation:cha0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mp"
+        "@id": "nyplLocation:ch"
       },
-      "nypl:actualLocation": "Morris Park Young Adult",
-      "skos:notation": "mpy",
-      "skos:prefLabel": "Morris Park Young Adult"
+      "nypl:actualLocation": "Chatham Square World Languages",
+      "skos:notation": "cha0l",
+      "skos:prefLabel": "Chatham Square World Languages"
     },
     {
       "@id": "nyplLocation:kpyr",
@@ -6316,26 +6212,6 @@
       "skos:prefLabel": "Wakefield Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:qcml2",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:qc"
-      },
-      "nypl:actualLocation": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:mal"
-      },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1000"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "true"
-      },
-      "skos:notation": "qcml2",
-      "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
-    },
-    {
       "@id": "nyplLocation:malm2",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -6344,34 +6220,34 @@
       "nypl:actualLocation": "Schwarzman Building - Main Reading Room 315 - Mezzanine",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:map"
         },
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:malw"
         },
         {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:maln"
+          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:mai"
         },
         {
-          "@id": "nyplLocation:malc"
+          "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:malc"
         }
       ],
       "nypl:owner": {
@@ -6505,16 +6381,6 @@
       "skos:prefLabel": "Macomb's Bridge Adult"
     },
     {
-      "@id": "nyplLocation:dhj0v",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:dh"
-      },
-      "nypl:actualLocation": "Dongan Hills Children's Non-Print Media",
-      "skos:notation": "dhj0v",
-      "skos:prefLabel": "Dongan Hills Children's Non-Print Media"
-    },
-    {
       "@id": "nyplLocation:woy01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -6523,16 +6389,6 @@
       "nypl:actualLocation": "Woodstock YA Reference",
       "skos:notation": "woy01",
       "skos:prefLabel": "Woodstock YA Reference"
-    },
-    {
-      "@id": "nyplLocation:huy0l",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:hu"
-      },
-      "nypl:actualLocation": "115th Street YA World Languages",
-      "skos:notation": "huy0l",
-      "skos:prefLabel": "115th Street YA World Languages"
     },
     {
       "@id": "nyplLocation:mej0v",
@@ -6775,14 +6631,14 @@
       "skos:prefLabel": "Dongan Hills Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:tmj0l",
+      "@id": "nyplLocation:mej01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:tm"
+        "@id": "nyplLocation:me"
       },
-      "nypl:actualLocation": "Tremont Children's World Languages",
-      "skos:notation": "tmj0l",
-      "skos:prefLabel": "Tremont Children's World Languages"
+      "nypl:actualLocation": "Melrose Children's Reference",
+      "skos:notation": "mej01",
+      "skos:prefLabel": "Melrose Children's Reference"
     },
     {
       "@id": "nyplLocation:woy0v",
@@ -6964,14 +6820,14 @@
       "skos:prefLabel": "OFFSITE - Request in Advance for use at Performing Arts"
     },
     {
-      "@id": "nyplLocation:pkar",
+      "@id": "nyplLocation:alj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pk"
+        "@id": "nyplLocation:al"
       },
-      "nypl:actualLocation": "Parkchester Adult Reference",
-      "skos:notation": "pkar",
-      "skos:prefLabel": "Parkchester Adult Reference"
+      "nypl:actualLocation": "Allerton Children's Non-Print Media",
+      "skos:notation": "alj0v",
+      "skos:prefLabel": "Allerton Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:alj0i",
@@ -7174,18 +7030,6 @@
       "skos:prefLabel": "Morris Park YA World Languages"
     },
     {
-      "@id": "nyplLocation:Mar-92",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:Ma"
-      },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1108"
-      },
-      "skos:notation": "Mar-92",
-      "skos:prefLabel": "SASB - Rare Books Division - Room 324"
-    },
-    {
       "@id": "nyplLocation:gda0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -7275,7 +7119,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmb2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg"
@@ -7463,16 +7307,6 @@
       "skos:prefLabel": "St. George YA Non-Print Media"
     },
     {
-      "@id": "nyplLocation:nba0v",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:nb"
-      },
-      "nypl:actualLocation": "West New Brighton Non-Print Media",
-      "skos:notation": "nba0v",
-      "skos:prefLabel": "West New Brighton Non-Print Media"
-    },
-    {
       "@id": "nyplLocation:moj0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -7581,6 +7415,16 @@
       "nypl:actualLocation": "Pelham Bay Fiction",
       "skos:notation": "pma0f",
       "skos:prefLabel": "Pelham Bay Fiction"
+    },
+    {
+      "@id": "nyplLocation:sgj0a",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sg"
+      },
+      "nypl:actualLocation": "St. George Children's Easy Book",
+      "skos:notation": "sgj0a",
+      "skos:prefLabel": "St. George Children's Easy Book"
     },
     {
       "@id": "nyplLocation:pma0l",
@@ -7844,14 +7688,14 @@
       "skos:prefLabel": "Morrisania Adult Reference"
     },
     {
-      "@id": "nyplLocation:lma",
+      "@id": "nyplLocation:cly0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:lm"
+        "@id": "nyplLocation:cl"
       },
-      "nypl:actualLocation": "New Amsterdam Adult",
-      "skos:notation": "lma",
-      "skos:prefLabel": "New Amsterdam Adult"
+      "nypl:actualLocation": "Morningside Heights YA Non-Fiction",
+      "skos:notation": "cly0n",
+      "skos:prefLabel": "Morningside Heights YA Non-Fiction"
     },
     {
       "@id": "nyplLocation:pma01",
@@ -8114,14 +7958,14 @@
       "skos:prefLabel": "Mulberry Street Children's Fairy Tale"
     },
     {
-      "@id": "nyplLocation:clzzz",
+      "@id": "nyplLocation:mlj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cl"
+        "@id": "nyplLocation:ml"
       },
-      "nypl:actualLocation": "Morningside Heights (error code)",
-      "skos:notation": "clzzz",
-      "skos:prefLabel": "Morningside Heights (error code)"
+      "nypl:actualLocation": "Mulberry Street Children's Non-Print Media",
+      "skos:notation": "mlj0v",
+      "skos:prefLabel": "Mulberry Street Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:tga03",
@@ -8134,14 +7978,14 @@
       "skos:prefLabel": "Throg's Neck Closed Shelf Reference"
     },
     {
-      "@id": "nyplLocation:otzzz",
+      "@id": "nyplLocation:tga01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ot"
+        "@id": "nyplLocation:tg"
       },
-      "nypl:actualLocation": "Ottendorfer (error code)",
-      "skos:notation": "otzzz",
-      "skos:prefLabel": "Ottendorfer (error code)"
+      "nypl:actualLocation": "Throg's Neck Reference",
+      "skos:notation": "tga01",
+      "skos:prefLabel": "Throg's Neck Reference"
     },
     {
       "@id": "nyplLocation:jmy0v",
@@ -8214,6 +8058,15 @@
       "skos:prefLabel": "115th Street Children's Fiction"
     },
     {
+      "@id": "nyplLocation:max",
+      "@type": "nypl:Location",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NX"
+      },
+      "skos:notation": "max",
+      "skos:prefLabel": ""
+    },
+    {
       "@id": "nyplLocation:baj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -8266,6 +8119,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1108"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NR"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "false"
@@ -8295,6 +8151,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1106"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/ND"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -8336,6 +8195,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1107"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NO"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "false"
@@ -8355,6 +8217,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NH"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -8384,6 +8249,15 @@
       "skos:prefLabel": "115th Street Children's Non-Print Media"
     },
     {
+      "@id": "nyplLocation:lsca",
+      "@type": "nypl:Location",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NY"
+      },
+      "skos:notation": "lsca",
+      "skos:prefLabel": ""
+    },
+    {
       "@id": "nyplLocation:huj0t",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -8406,6 +8280,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1103"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NJ"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "true"
@@ -8422,14 +8299,17 @@
       "nypl:actualLocation": "Schwarzman Building - Milstein Division Rm 121",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:mal"
         }
       ],
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1105"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NM"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -8470,6 +8350,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1110"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NG"
       },
       "skos:notation": "mab",
       "skos:prefLabel": "SASB - Art & Architecture Rm 300"
@@ -8830,16 +8713,6 @@
       "skos:prefLabel": "Mid-Manhattan Non-Fiction Second Floor"
     },
     {
-      "@id": "nyplLocation:mej01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:me"
-      },
-      "nypl:actualLocation": "Melrose Children's Reference",
-      "skos:notation": "mej01",
-      "skos:prefLabel": "Melrose Children's Reference"
-    },
-    {
       "@id": "nyplLocation:rsy",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -9009,14 +8882,14 @@
       "skos:prefLabel": "125th Street Fiction"
     },
     {
-      "@id": "nyplLocation:hda0v",
+      "@id": "nyplLocation:kba03",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hd"
+        "@id": "nyplLocation:kb"
       },
-      "nypl:actualLocation": "125th Street Non-Print Media",
-      "skos:notation": "hda0v",
-      "skos:prefLabel": "125th Street Non-Print Media"
+      "nypl:actualLocation": "Kingsbridge Closed Shelf Reference",
+      "skos:notation": "kba03",
+      "skos:prefLabel": "Kingsbridge Closed Shelf Reference"
     },
     {
       "@id": "nyplLocation:kba01",
@@ -9029,14 +8902,14 @@
       "skos:prefLabel": "Kingsbridge Reference"
     },
     {
-      "@id": "nyplLocation:epar",
+      "@id": "nyplLocation:hbj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ep"
+        "@id": "nyplLocation:hb"
       },
-      "nypl:actualLocation": "Epiphany Adult Reference",
-      "skos:notation": "epar",
-      "skos:prefLabel": "Epiphany Adult Reference"
+      "nypl:actualLocation": "High Bridge Children's Young Reader",
+      "skos:notation": "hbj0y",
+      "skos:prefLabel": "High Bridge Children's Young Reader"
     },
     {
       "@id": "nyplLocation:tgj0i",
@@ -9121,14 +8994,14 @@
       "skos:prefLabel": "High Bridge Children's Picture Book"
     },
     {
-      "@id": "nyplLocation:hbj0n",
+      "@id": "nyplLocation:mha0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hb"
+        "@id": "nyplLocation:mh"
       },
-      "nypl:actualLocation": "High Bridge Children's Non-Fiction",
-      "skos:notation": "hbj0n",
-      "skos:prefLabel": "High Bridge Children's Non-Fiction"
+      "nypl:actualLocation": "Mott Haven Non-Fiction",
+      "skos:notation": "mha0n",
+      "skos:prefLabel": "Mott Haven Non-Fiction"
     },
     {
       "@id": "nyplLocation:hbj0l",
@@ -9231,14 +9104,14 @@
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
     },
     {
-      "@id": "nyplLocation:pra0f",
+      "@id": "nyplLocation:wta03",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pr"
+        "@id": "nyplLocation:wt"
       },
-      "nypl:actualLocation": "Port Richmond Fiction",
-      "skos:notation": "pra0f",
-      "skos:prefLabel": "Port Richmond Fiction"
+      "nypl:actualLocation": "Westchester Square Closed Shelf Reference",
+      "skos:notation": "wta03",
+      "skos:prefLabel": "Westchester Square Closed Shelf Reference"
     },
     {
       "@id": "nyplLocation:maf99",
@@ -9349,25 +9222,14 @@
       "skos:prefLabel": "Port Richmond Non-Print Media"
     },
     {
-      "@id": "nyplLocation:mym38",
+      "@id": "nyplLocation:hsj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:my"
+        "@id": "nyplLocation:hs"
       },
-      "nypl:actualLocation": "Performing Arts Research Collections - Music",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:myr"
-      },
-      "nypl:locationType": "Research",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1123"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "false"
-      },
-      "skos:notation": "mym38",
-      "skos:prefLabel": "Performing Arts Research Collections - Music"
+      "nypl:actualLocation": "Hunt's Point Children's Young Reader",
+      "skos:notation": "hsj0y",
+      "skos:prefLabel": "Hunt's Point Children's Young Reader"
     },
     {
       "@id": "nyplLocation:fwyr",
@@ -9390,14 +9252,14 @@
       "skos:prefLabel": "West Farms Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:sgj0n",
+      "@id": "nyplLocation:alzzz",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sg"
+        "@id": "nyplLocation:al"
       },
-      "nypl:actualLocation": "St. George Children's Non-Fiction",
-      "skos:notation": "sgj0n",
-      "skos:prefLabel": "St. George Children's Non-Fiction"
+      "nypl:actualLocation": "Allerton (error code)",
+      "skos:notation": "alzzz",
+      "skos:prefLabel": "Allerton (error code)"
     },
     {
       "@id": "nyplLocation:clj0i",
@@ -9410,14 +9272,14 @@
       "skos:prefLabel": "Morningside Heights Children's Picture Book"
     },
     {
-      "@id": "nyplLocation:clj0h",
+      "@id": "nyplLocation:svj",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cl"
+        "@id": "nyplLocation:sv"
       },
-      "nypl:actualLocation": "Morningside Heights Children's Holiday Book",
-      "skos:notation": "clj0h",
-      "skos:prefLabel": "Morningside Heights Children's Holiday Book"
+      "nypl:actualLocation": "Soundview Children",
+      "skos:notation": "svj",
+      "skos:prefLabel": "Soundview Children"
     },
     {
       "@id": "nyplLocation:clj0n",
@@ -9652,14 +9514,14 @@
       "skos:prefLabel": "Westchester Square Young Adult"
     },
     {
-      "@id": "nyplLocation:tha0n",
+      "@id": "nyplLocation:bezzz",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:th"
+        "@id": "nyplLocation:be"
       },
-      "nypl:actualLocation": "Todt Hill-Westerleigh Non-Fiction",
-      "skos:notation": "tha0n",
-      "skos:prefLabel": "Todt Hill-Westerleigh Non-Fiction"
+      "nypl:actualLocation": "Belmont (error code)",
+      "skos:notation": "bezzz",
+      "skos:prefLabel": "Belmont (error code)"
     },
     {
       "@id": "nyplLocation:pra01",
@@ -9672,24 +9534,24 @@
       "skos:prefLabel": "Port Richmond Reference"
     },
     {
-      "@id": "nyplLocation:epj0a",
+      "@id": "nyplLocation:sgj0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ep"
+        "@id": "nyplLocation:sg"
       },
-      "nypl:actualLocation": "Epiphany Children's Easy Book",
-      "skos:notation": "epj0a",
-      "skos:prefLabel": "Epiphany Children's Easy Book"
+      "nypl:actualLocation": "St. George Children's Fiction",
+      "skos:notation": "sgj0f",
+      "skos:prefLabel": "St. George Children's Fiction"
     },
     {
-      "@id": "nyplLocation:yva",
+      "@id": "nyplLocation:wta0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:yv"
+        "@id": "nyplLocation:wt"
       },
-      "nypl:actualLocation": "Yorkville Adult",
-      "skos:notation": "yva",
-      "skos:prefLabel": "Yorkville Adult"
+      "nypl:actualLocation": "Westchester Square Fiction",
+      "skos:notation": "wta0f",
+      "skos:prefLabel": "Westchester Square Fiction"
     },
     {
       "@id": "nyplLocation:maj0a",
@@ -9834,14 +9696,14 @@
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
     },
     {
-      "@id": "nyplLocation:sgj0a",
+      "@id": "nyplLocation:pkar",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sg"
+        "@id": "nyplLocation:pk"
       },
-      "nypl:actualLocation": "St. George Children's Easy Book",
-      "skos:notation": "sgj0a",
-      "skos:prefLabel": "St. George Children's Easy Book"
+      "nypl:actualLocation": "Parkchester Adult Reference",
+      "skos:notation": "pkar",
+      "skos:prefLabel": "Parkchester Adult Reference"
     },
     {
       "@id": "nyplLocation:ota0l",
@@ -9914,14 +9776,14 @@
       "skos:prefLabel": "New Dorp Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:ota0f",
+      "@id": "nyplLocation:sga0w",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ot"
+        "@id": "nyplLocation:sg"
       },
-      "nypl:actualLocation": "Ottendorfer Fiction",
-      "skos:notation": "ota0f",
-      "skos:prefLabel": "Ottendorfer Fiction"
+      "nypl:actualLocation": "St. George Center for Reading & Writing",
+      "skos:notation": "sga0w",
+      "skos:prefLabel": "St. George Center for Reading & Writing"
     },
     {
       "@id": "nyplLocation:sga0v",
@@ -10432,14 +10294,14 @@
       "skos:prefLabel": "96th Street YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:brj0v",
+      "@id": "nyplLocation:sbj0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:br"
+        "@id": "nyplLocation:sb"
       },
-      "nypl:actualLocation": "George Bruce Children's Non-Print Media",
-      "skos:notation": "brj0v",
-      "skos:prefLabel": "George Bruce Children's Non-Print Media"
+      "nypl:actualLocation": "South Beach Children's Picture Book",
+      "skos:notation": "sbj0i",
+      "skos:prefLabel": "South Beach Children's Picture Book"
     },
     {
       "@id": "nyplLocation:brj0h",
@@ -10565,14 +10427,14 @@
       "skos:prefLabel": "Bloomingdale YA World Languages"
     },
     {
-      "@id": "nyplLocation:bly0n",
+      "@id": "nyplLocation:cay0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:bl"
+        "@id": "nyplLocation:ca"
       },
-      "nypl:actualLocation": "Bloomingdale YA Non-Fiction",
-      "skos:notation": "bly0n",
-      "skos:prefLabel": "Bloomingdale YA Non-Fiction"
+      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral YA Fiction",
+      "skos:notation": "cay0f",
+      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral YA Fiction"
     },
     {
       "@id": "nyplLocation:nsy0f",
@@ -10625,6 +10487,16 @@
       "skos:prefLabel": "Bronx Library Center Children's Fiction"
     },
     {
+      "@id": "nyplLocation:gka",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:gk"
+      },
+      "nypl:actualLocation": "Great Kills Adult",
+      "skos:notation": "gka",
+      "skos:prefLabel": "Great Kills Adult"
+    },
+    {
       "@id": "nyplLocation:brj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -10675,14 +10547,24 @@
       "skos:prefLabel": "Woodstock Non-Print Media"
     },
     {
-      "@id": "nyplLocation:woa0l",
+      "@id": "nyplLocation:qcml2",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wo"
+        "@id": "nyplLocation:qc"
       },
-      "nypl:actualLocation": "Woodstock World Languages",
-      "skos:notation": "woa0l",
-      "skos:prefLabel": "Woodstock World Languages"
+      "nypl:actualLocation": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:mal"
+      },
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "qcml2",
+      "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
     },
     {
       "@id": "nyplLocation:woa0n",
@@ -10790,14 +10672,17 @@
       "skos:prefLabel": "125th Street Children's Non-Print Media"
     },
     {
-      "@id": "nyplLocation:hdj0h",
+      "@id": "nyplLocation:slajn",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hd"
+        "@id": "nyplLocation:sl"
       },
-      "nypl:actualLocation": "125th Street Children's Holiday Book",
-      "skos:notation": "hdj0h",
-      "skos:prefLabel": "125th Street Children's Holiday Book"
+      "nypl:actualLocation": "SIBL - Job Search Central Non-Fiction",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1125"
+      },
+      "skos:notation": "slajn",
+      "skos:prefLabel": "SIBL - Job Search Central Non-Fiction"
     },
     {
       "@id": "nyplLocation:hdj0i",
@@ -11050,6 +10935,16 @@
       "skos:prefLabel": "George Bruce Adult"
     },
     {
+      "@id": "nyplLocation:alj0y",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:al"
+      },
+      "nypl:actualLocation": "Allerton Children's Young Reader",
+      "skos:notation": "alj0y",
+      "skos:prefLabel": "Allerton Children's Young Reader"
+    },
+    {
       "@id": "nyplLocation:tgj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -11195,6 +11090,16 @@
       "skos:prefLabel": "OFFSITE - Request in Advance for use at Performing Arts"
     },
     {
+      "@id": "nyplLocation:gka0n",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:gk"
+      },
+      "nypl:actualLocation": "Great Kills Non-Fiction",
+      "skos:notation": "gka0n",
+      "skos:prefLabel": "Great Kills Non-Fiction"
+    },
+    {
       "@id": "nyplLocation:rcpd9",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -11333,26 +11238,6 @@
       "skos:prefLabel": "SASB M2 - General Research - Room 315"
     },
     {
-      "@id": "nyplLocation:wtj0f",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:wt"
-      },
-      "nypl:actualLocation": "Westchester Square Children's Fiction",
-      "skos:notation": "wtj0f",
-      "skos:prefLabel": "Westchester Square Children's Fiction"
-    },
-    {
-      "@id": "nyplLocation:nsj",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:ns"
-      },
-      "nypl:actualLocation": "96th Street Children",
-      "skos:notation": "nsj",
-      "skos:prefLabel": "96th Street Children"
-    },
-    {
       "@id": "nyplLocation:blyr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -11454,10 +11339,10 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance for use at Schwarzman Bldg - Art Division",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mal"
         }
       ],
       "nypl:owner": {
@@ -11702,14 +11587,14 @@
       "skos:prefLabel": "Belmont Children's Non-Print Media"
     },
     {
-      "@id": "nyplLocation:mna",
+      "@id": "nyplLocation:dhj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mn"
+        "@id": "nyplLocation:dh"
       },
-      "nypl:actualLocation": "Mariner's Harbor Adult",
-      "skos:notation": "mna",
-      "skos:prefLabel": "Mariner's Harbor Adult"
+      "nypl:actualLocation": "Dongan Hills Children's Non-Fiction",
+      "skos:notation": "dhj0n",
+      "skos:prefLabel": "Dongan Hills Children's Non-Fiction"
     },
     {
       "@id": "nyplLocation:wtjr",
@@ -11904,14 +11789,25 @@
       "skos:prefLabel": "Woodlawn Heights YA Fiction"
     },
     {
-      "@id": "nyplLocation:gka0n",
+      "@id": "nyplLocation:mym28",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:gk"
+        "@id": "nyplLocation:my"
       },
-      "nypl:actualLocation": "Great Kills Non-Fiction",
-      "skos:notation": "gka0n",
-      "skos:prefLabel": "Great Kills Non-Fiction"
+      "nypl:actualLocation": "Performing Arts Research Collections - Music",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:myr"
+      },
+      "nypl:locationType": "Research",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1123"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "mym28",
+      "skos:prefLabel": "Performing Arts Research Collections - Music"
     },
     {
       "@id": "nyplLocation:myar1",
@@ -11999,14 +11895,14 @@
       "skos:prefLabel": "SASB (Children's Center at 42nd St.) - Young Reader Rm 84"
     },
     {
-      "@id": "nyplLocation:mny",
+      "@id": "nyplLocation:eaar",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mn"
+        "@id": "nyplLocation:ea"
       },
-      "nypl:actualLocation": "Mariner's Harbor Young Adult",
-      "skos:notation": "mny",
-      "skos:prefLabel": "Mariner's Harbor Young Adult"
+      "nypl:actualLocation": "Eastchester Adult Reference",
+      "skos:notation": "eaar",
+      "skos:prefLabel": "Eastchester Adult Reference"
     },
     {
       "@id": "nyplLocation:tvy01",
@@ -12565,14 +12461,14 @@
       "skos:prefLabel": "Van Cortlandt YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:bezzz",
+      "@id": "nyplLocation:tha0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:be"
+        "@id": "nyplLocation:th"
       },
-      "nypl:actualLocation": "Belmont (error code)",
-      "skos:notation": "bezzz",
-      "skos:prefLabel": "Belmont (error code)"
+      "nypl:actualLocation": "Todt Hill-Westerleigh Non-Fiction",
+      "skos:notation": "tha0n",
+      "skos:prefLabel": "Todt Hill-Westerleigh Non-Fiction"
     },
     {
       "@id": "nyplLocation:tha0l",
@@ -12645,14 +12541,62 @@
       "skos:prefLabel": "Mott Haven Children's Reference"
     },
     {
-      "@id": "nyplLocation:gdy",
+      "@id": "nyplLocation:rc",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:gd"
+        "@id": "nyplLocation:rc"
       },
-      "nypl:actualLocation": "Grand Concourse Young Adult",
-      "skos:notation": "gdy",
-      "skos:prefLabel": "Grand Concourse Young Adult"
+      "nypl:actualLocation": "NYPL Research Libraries",
+      "nypl:deliverableTo": [
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:slr"
+        },
+        {
+          "@id": "nyplLocation:sc"
+        },
+        {
+          "@id": "nyplLocation:maf"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:myr"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        }
+      ],
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/0001"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "true"
+      },
+      "skos:notation": "rc",
+      "skos:prefLabel": "NYPL Research Libraries"
     },
     {
       "@id": "nyplLocation:gdy0v",
@@ -12706,6 +12650,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1118"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/SP"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -13092,19 +13039,13 @@
       },
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:mai"
-        },
-        {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:map"
@@ -13113,13 +13054,19 @@
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:maln"
+          "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
+          "@id": "nyplLocation:maln"
         }
       ],
       "nypl:owner": {
@@ -13133,14 +13080,14 @@
       "skos:prefLabel": "SASB M2 - Milstein Division - Room 121"
     },
     {
-      "@id": "nyplLocation:saa0f",
+      "@id": "nyplLocation:kby01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sa"
+        "@id": "nyplLocation:kb"
       },
-      "nypl:actualLocation": "St. Agnes Fiction",
-      "skos:notation": "saa0f",
-      "skos:prefLabel": "St. Agnes Fiction"
+      "nypl:actualLocation": "Kingsbridge YA Reference",
+      "skos:notation": "kby01",
+      "skos:prefLabel": "Kingsbridge YA Reference"
     },
     {
       "@id": "nyplLocation:tgy01",
@@ -13171,6 +13118,16 @@
       "nypl:actualLocation": "Tompkins Square Children",
       "skos:notation": "tsj",
       "skos:prefLabel": "Tompkins Square Children"
+    },
+    {
+      "@id": "nyplLocation:hfy0f",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:hf"
+      },
+      "nypl:actualLocation": "Hamilton Fish Park YA Fiction",
+      "skos:notation": "hfy0f",
+      "skos:prefLabel": "Hamilton Fish Park YA Fiction"
     },
     {
       "@id": "nyplLocation:chj01",
@@ -13292,14 +13249,14 @@
       "skos:prefLabel": "Mosholu Adult Learning Center"
     },
     {
-      "@id": "nyplLocation:moa0v",
+      "@id": "nyplLocation:wha01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mo"
+        "@id": "nyplLocation:wh"
       },
-      "nypl:actualLocation": "Mosholu Non-Print Media",
-      "skos:notation": "moa0v",
-      "skos:prefLabel": "Mosholu Non-Print Media"
+      "nypl:actualLocation": "Washington Heights Reference",
+      "skos:notation": "wha01",
+      "skos:prefLabel": "Washington Heights Reference"
     },
     {
       "@id": "nyplLocation:wha03",
@@ -13350,6 +13307,16 @@
       "nypl:actualLocation": "Hunt's Point (error code)",
       "skos:notation": "hszzz",
       "skos:prefLabel": "Hunt's Point (error code)"
+    },
+    {
+      "@id": "nyplLocation:whj0a",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:wh"
+      },
+      "nypl:actualLocation": "Washington Heights Children's Easy Book",
+      "skos:notation": "whj0a",
+      "skos:prefLabel": "Washington Heights Children's Easy Book"
     },
     {
       "@id": "nyplLocation:yvzzz",
@@ -13492,14 +13459,14 @@
       "skos:prefLabel": "Washington Heights Non-Fiction"
     },
     {
-      "@id": "nyplLocation:mua0l",
+      "@id": "nyplLocation:pry0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mu"
+        "@id": "nyplLocation:pr"
       },
-      "nypl:actualLocation": "Muhlenberg World Languages",
-      "skos:notation": "mua0l",
-      "skos:prefLabel": "Muhlenberg World Languages"
+      "nypl:actualLocation": "Port Richmond YA Fiction",
+      "skos:notation": "pry0f",
+      "skos:prefLabel": "Port Richmond YA Fiction"
     },
     {
       "@id": "nyplLocation:muj",
@@ -13595,7 +13562,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmp2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg - Maps"
@@ -13702,16 +13669,14 @@
       "skos:prefLabel": "Van Cortlandt Children's Easy Book"
     },
     {
-      "@id": "nyplLocation:mma0w",
+      "@id": "nyplLocation:ndar",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mm"
+        "@id": "nyplLocation:nd"
       },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1500"
-      },
-      "skos:notation": "mma0w",
-      "skos:prefLabel": "Mid-Manhattan Adult Learning Center"
+      "nypl:actualLocation": "New Dorp Adult Reference",
+      "skos:notation": "ndar",
+      "skos:prefLabel": "New Dorp Adult Reference"
     },
     {
       "@id": "nyplLocation:nda01",
@@ -13901,10 +13866,10 @@
       "nypl:actualLocation": "Schwarzman Building - Milstein Division - Mezzanine",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mag"
         }
       ],
       "nypl:owner": {
@@ -14206,14 +14171,14 @@
       "skos:prefLabel": "Great Kills Children's Fiction"
     },
     {
-      "@id": "nyplLocation:caj0v",
+      "@id": "nyplLocation:bry01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ca"
+        "@id": "nyplLocation:br"
       },
-      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral Children's Non-Print Media",
-      "skos:notation": "caj0v",
-      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral Children's Non-Print Media"
+      "nypl:actualLocation": "George Bruce YA Reference",
+      "skos:notation": "bry01",
+      "skos:prefLabel": "George Bruce YA Reference"
     },
     {
       "@id": "nyplLocation:csj0i",
@@ -14376,14 +14341,14 @@
       "skos:prefLabel": "Pelham Bay Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:pmj0l",
+      "@id": "nyplLocation:wfyr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pm"
+        "@id": "nyplLocation:wf"
       },
-      "nypl:actualLocation": "Pelham Bay Children's World Languages",
-      "skos:notation": "pmj0l",
-      "skos:prefLabel": "Pelham Bay Children's World Languages"
+      "nypl:actualLocation": "West Farms Young Adult Reference",
+      "skos:notation": "wfyr",
+      "skos:prefLabel": "West Farms Young Adult Reference"
     },
     {
       "@id": "nyplLocation:hpzzz",
@@ -14547,14 +14512,14 @@
       "skos:prefLabel": "Inwood"
     },
     {
-      "@id": "nyplLocation:wha01",
+      "@id": "nyplLocation:moa0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wh"
+        "@id": "nyplLocation:mo"
       },
-      "nypl:actualLocation": "Washington Heights Reference",
-      "skos:notation": "wha01",
-      "skos:prefLabel": "Washington Heights Reference"
+      "nypl:actualLocation": "Mosholu Non-Print Media",
+      "skos:notation": "moa0v",
+      "skos:prefLabel": "Mosholu Non-Print Media"
     },
     {
       "@id": "nyplLocation:hlar",
@@ -14645,16 +14610,6 @@
       },
       "skos:notation": "rcpr9",
       "skos:prefLabel": "OFFSITE - Performing Arts--Offsite--Restricted Use"
-    },
-    {
-      "@id": "nyplLocation:pky0n",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:pk"
-      },
-      "nypl:actualLocation": "Parkchester YA Non-Fiction",
-      "skos:notation": "pky0n",
-      "skos:prefLabel": "Parkchester YA Non-Fiction"
     },
     {
       "@id": "nyplLocation:aly0v",
@@ -14798,13 +14753,14 @@
       "skos:prefLabel": "Parkchester YA Non-Print Media"
     },
     {
-      "@id": "nyplLocation:fty0v",
+      "@id": "nyplLocation:jmj0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ft"
+        "@id": "nyplLocation:jm"
       },
-      "skos:notation": "fty0v",
-      "skos:prefLabel": "53rd Street YA Non-Print Media"
+      "nypl:actualLocation": "Jefferson Market Children's Fiction",
+      "skos:notation": "jmj0f",
+      "skos:prefLabel": "Jefferson Market Children's Fiction"
     },
     {
       "@id": "nyplLocation:sda0f",
@@ -14827,14 +14783,14 @@
       "skos:prefLabel": "Sedgwick World Languages"
     },
     {
-      "@id": "nyplLocation:jmjr",
+      "@id": "nyplLocation:sda0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:jm"
+        "@id": "nyplLocation:sd"
       },
-      "nypl:actualLocation": "Jefferson Market Children's Reference",
-      "skos:notation": "jmjr",
-      "skos:prefLabel": "Jefferson Market Children's Reference"
+      "nypl:actualLocation": "Sedgwick Non-Fiction",
+      "skos:notation": "sda0n",
+      "skos:prefLabel": "Sedgwick Non-Fiction"
     },
     {
       "@id": "nyplLocation:aly01",
@@ -14868,6 +14824,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1102"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NZ"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -14937,14 +14896,14 @@
       "skos:prefLabel": "St. George YA Fiction"
     },
     {
-      "@id": "nyplLocation:cly0n",
+      "@id": "nyplLocation:lma",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cl"
+        "@id": "nyplLocation:lm"
       },
-      "nypl:actualLocation": "Morningside Heights YA Non-Fiction",
-      "skos:notation": "cly0n",
-      "skos:prefLabel": "Morningside Heights YA Non-Fiction"
+      "nypl:actualLocation": "New Amsterdam Adult",
+      "skos:notation": "lma",
+      "skos:prefLabel": "New Amsterdam Adult"
     },
     {
       "@id": "nyplLocation:sgy0l",
@@ -14997,6 +14956,16 @@
       "skos:prefLabel": "Sedgwick Closed Shelf Reference"
     },
     {
+      "@id": "nyplLocation:wlyr",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:wl"
+      },
+      "nypl:actualLocation": "Woodlawn Heights Young Adult Reference",
+      "skos:notation": "wlyr",
+      "skos:prefLabel": "Woodlawn Heights Young Adult Reference"
+    },
+    {
       "@id": "nyplLocation:sdj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -15017,14 +14986,24 @@
       "skos:prefLabel": "Bloomingdale Adult"
     },
     {
-      "@id": "nyplLocation:pky0l",
+      "@id": "nyplLocation:mua03",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pk"
+        "@id": "nyplLocation:mu"
       },
-      "nypl:actualLocation": "Parkchester YA World Languages",
-      "skos:notation": "pky0l",
-      "skos:prefLabel": "Parkchester YA World Languages"
+      "nypl:actualLocation": "Muhlenberg Closed Shelf Reference",
+      "skos:notation": "mua03",
+      "skos:prefLabel": "Muhlenberg Closed Shelf Reference"
+    },
+    {
+      "@id": "nyplLocation:tgj0n",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:tg"
+      },
+      "nypl:actualLocation": "Throg's Neck Children's Non-Fiction",
+      "skos:notation": "tgj0n",
+      "skos:prefLabel": "Throg's Neck Children's Non-Fiction"
     },
     {
       "@id": "nyplLocation:bly",
@@ -15064,16 +15043,6 @@
       },
       "skos:notation": "scbb2",
       "skos:prefLabel": "Schomburg Center - Moving Image & Recorded Sound"
-    },
-    {
-      "@id": "nyplLocation:chyr",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:ch"
-      },
-      "nypl:actualLocation": "Chatham Square Young Adult Reference",
-      "skos:notation": "chyr",
-      "skos:prefLabel": "Chatham Square Young Adult Reference"
     },
     {
       "@id": "nyplLocation:char",
@@ -15679,14 +15648,14 @@
       "skos:prefLabel": "High Bridge Adult Reference"
     },
     {
-      "@id": "nyplLocation:jpj0y",
+      "@id": "nyplLocation:pry0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:jp"
+        "@id": "nyplLocation:pr"
       },
-      "nypl:actualLocation": "Jerome Park Children's Young Reader",
-      "skos:notation": "jpj0y",
-      "skos:prefLabel": "Jerome Park Children's Young Reader"
+      "nypl:actualLocation": "Port Richmond YA World Languages",
+      "skos:notation": "pry0l",
+      "skos:prefLabel": "Port Richmond YA World Languages"
     },
     {
       "@id": "nyplLocation:wla0l",
@@ -15797,16 +15766,6 @@
       "nypl:actualLocation": "Jerome Park Children's Reference",
       "skos:notation": "jpj01",
       "skos:prefLabel": "Jerome Park Children's Reference"
-    },
-    {
-      "@id": "nyplLocation:pry0f",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:pr"
-      },
-      "nypl:actualLocation": "Port Richmond YA Fiction",
-      "skos:notation": "pry0f",
-      "skos:prefLabel": "Port Richmond YA Fiction"
     },
     {
       "@id": "nyplLocation:tva0l",
@@ -16341,14 +16300,14 @@
       "skos:prefLabel": "67th Street Young Adult"
     },
     {
-      "@id": "nyplLocation:mlj0v",
+      "@id": "nyplLocation:bay01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ml"
+        "@id": "nyplLocation:ba"
       },
-      "nypl:actualLocation": "Mulberry Street Children's Non-Print Media",
-      "skos:notation": "mlj0v",
-      "skos:prefLabel": "Mulberry Street Children's Non-Print Media"
+      "nypl:actualLocation": "Baychester YA Reference",
+      "skos:notation": "bay01",
+      "skos:prefLabel": "Baychester YA Reference"
     },
     {
       "@id": "nyplLocation:lbj01",
@@ -16369,6 +16328,16 @@
       "nypl:actualLocation": "67th Street Children",
       "skos:notation": "ssj",
       "skos:prefLabel": "67th Street Children"
+    },
+    {
+      "@id": "nyplLocation:mny",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:mn"
+      },
+      "nypl:actualLocation": "Mariner's Harbor Young Adult",
+      "skos:notation": "mny",
+      "skos:prefLabel": "Mariner's Harbor Young Adult"
     },
     {
       "@id": "nyplLocation:moy0n",
@@ -16441,14 +16410,14 @@
       "skos:prefLabel": "Hudson Park Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:tga01",
+      "@id": "nyplLocation:otzzz",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:tg"
+        "@id": "nyplLocation:ot"
       },
-      "nypl:actualLocation": "Throg's Neck Reference",
-      "skos:notation": "tga01",
-      "skos:prefLabel": "Throg's Neck Reference"
+      "nypl:actualLocation": "Ottendorfer (error code)",
+      "skos:notation": "otzzz",
+      "skos:prefLabel": "Ottendorfer (error code)"
     },
     {
       "@id": "nyplLocation:hpj0h",
@@ -16491,14 +16460,14 @@
       "skos:prefLabel": "Hudson Park Children's Fairy Tale"
     },
     {
-      "@id": "nyplLocation:yvjr",
+      "@id": "nyplLocation:wtj0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:yv"
+        "@id": "nyplLocation:wt"
       },
-      "nypl:actualLocation": "Yorkville Children's Reference",
-      "skos:notation": "yvjr",
-      "skos:prefLabel": "Yorkville Children's Reference"
+      "nypl:actualLocation": "Westchester Square Children's Fiction",
+      "skos:notation": "wtj0f",
+      "skos:prefLabel": "Westchester Square Children's Fiction"
     },
     {
       "@id": "nyplLocation:hpj0v",
@@ -16581,14 +16550,14 @@
       "skos:prefLabel": "Westchester Square Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:hby",
+      "@id": "nyplLocation:sbj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hb"
+        "@id": "nyplLocation:sb"
       },
-      "nypl:actualLocation": "High Bridge Young Adult",
-      "skos:notation": "hby",
-      "skos:prefLabel": "High Bridge Young Adult"
+      "nypl:actualLocation": "South Beach Children's Non-Fiction",
+      "skos:notation": "sbj0n",
+      "skos:prefLabel": "South Beach Children's Non-Fiction"
     },
     {
       "@id": "nyplLocation:otj0y",
@@ -16611,14 +16580,14 @@
       "skos:prefLabel": "Great Kills Children's Reference"
     },
     {
-      "@id": "nyplLocation:sea0w",
+      "@id": "nyplLocation:otj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:se"
+        "@id": "nyplLocation:ot"
       },
-      "nypl:actualLocation": "Seward Park Center for Reading & Writing",
-      "skos:notation": "sea0w",
-      "skos:prefLabel": "Seward Park Center for Reading & Writing"
+      "nypl:actualLocation": "Ottendorfer Children's Non-Print Media",
+      "skos:notation": "otj0v",
+      "skos:prefLabel": "Ottendorfer Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:otj0t",
@@ -16830,16 +16799,6 @@
       "skos:prefLabel": "Spuyten Duyvil"
     },
     {
-      "@id": "nyplLocation:alj0v",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:al"
-      },
-      "nypl:actualLocation": "Allerton Children's Non-Print Media",
-      "skos:notation": "alj0v",
-      "skos:prefLabel": "Allerton Children's Non-Print Media"
-    },
-    {
       "@id": "nyplLocation:moy01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -16923,14 +16882,14 @@
       "skos:prefLabel": "West New Brighton Closed Shelf Reference"
     },
     {
-      "@id": "nyplLocation:otj01",
+      "@id": "nyplLocation:nba01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ot"
+        "@id": "nyplLocation:nb"
       },
-      "nypl:actualLocation": "Ottendorfer Children's Reference",
-      "skos:notation": "otj01",
-      "skos:prefLabel": "Ottendorfer Children's Reference"
+      "nypl:actualLocation": "West New Brighton Reference",
+      "skos:notation": "nba01",
+      "skos:prefLabel": "West New Brighton Reference"
     },
     {
       "@id": "nyplLocation:hka0v",
@@ -16963,6 +16922,16 @@
       "skos:prefLabel": "Morrisania Young Adult Reference"
     },
     {
+      "@id": "nyplLocation:tsa0w",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ts"
+      },
+      "nypl:actualLocation": "Tompkins Square Center for Reading & Writing",
+      "skos:notation": "tsa0w",
+      "skos:prefLabel": "Tompkins Square Center for Reading & Writing"
+    },
+    {
       "@id": "nyplLocation:mas",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -16981,6 +16950,16 @@
       },
       "skos:notation": "mas",
       "skos:prefLabel": "SASB - Photography Collection Rm 308"
+    },
+    {
+      "@id": "nyplLocation:caj0y",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ca"
+      },
+      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral Children's Young Reader",
+      "skos:notation": "caj0y",
+      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral Children's Young Reader"
     },
     {
       "@id": "nyplLocation:baj0f",
@@ -17011,16 +16990,28 @@
       "nypl:actualLocation": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg",
       "nypl:deliverableTo": [
         {
+          "@id": "nyplLocation:mal"
+        },
+        {
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:slr"
+          "@id": "nyplLocation:myr"
+        },
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:map"
+          "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:mai"
@@ -17032,22 +17023,10 @@
           "@id": "nyplLocation:sc"
         },
         {
-          "@id": "nyplLocation:myr"
-        },
-        {
           "@id": "nyplLocation:malw"
         },
         {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:slr"
         }
       ],
       "nypl:owner": {
@@ -17055,7 +17034,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcma2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg"
@@ -17069,16 +17048,6 @@
       "nypl:actualLocation": "Melrose Children",
       "skos:notation": "mej",
       "skos:prefLabel": "Melrose Children"
-    },
-    {
-      "@id": "nyplLocation:fxa03",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:fx"
-      },
-      "nypl:actualLocation": "Francis Martin Closed Shelf Reference",
-      "skos:notation": "fxa03",
-      "skos:prefLabel": "Francis Martin Closed Shelf Reference"
     },
     {
       "@id": "nyplLocation:hua",
@@ -17154,16 +17123,6 @@
       "skos:prefLabel": "115th Street Young Adult"
     },
     {
-      "@id": "nyplLocation:mbj0t",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:mb"
-      },
-      "nypl:actualLocation": "Macomb's Bridge Children's Fairy Tale",
-      "skos:notation": "mbj0t",
-      "skos:prefLabel": "Macomb's Bridge Children's Fairy Tale"
-    },
-    {
       "@id": "nyplLocation:vca01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -17215,6 +17174,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NF"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -17491,6 +17453,9 @@
         "@id": "nyplLocation:ls"
       },
       "nypl:actualLocation": "Library Services Center - Cataloging",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NC"
+      },
       "skos:notation": "lsbb2",
       "skos:prefLabel": "Library Services Center - ON THE FLY - Cataloging"
     },
@@ -17571,7 +17536,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "myd42",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -17916,7 +17881,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "myh42",
       "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
@@ -17940,22 +17905,19 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance for use at Schwarzman Bldg",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:malc"
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:map"
@@ -17964,10 +17926,13 @@
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:maln"
+          "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:maln"
         }
       ],
       "nypl:owner": {
@@ -18095,6 +18060,16 @@
       "skos:prefLabel": "Kips Bay Adult"
     },
     {
+      "@id": "nyplLocation:mua0l",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:mu"
+      },
+      "nypl:actualLocation": "Muhlenberg World Languages",
+      "skos:notation": "mua0l",
+      "skos:prefLabel": "Muhlenberg World Languages"
+    },
+    {
       "@id": "nyplLocation:kpj",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -18211,6 +18186,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1002"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NP"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "true"
@@ -18275,6 +18253,9 @@
       "nypl:locationType": "Research",
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1120"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NV"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -18495,16 +18476,6 @@
       "skos:prefLabel": "Hudson Park Adult"
     },
     {
-      "@id": "nyplLocation:jmj0f",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:jm"
-      },
-      "nypl:actualLocation": "Jefferson Market Children's Fiction",
-      "skos:notation": "jmj0f",
-      "skos:prefLabel": "Jefferson Market Children's Fiction"
-    },
-    {
       "@id": "nyplLocation:mhjr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -18604,6 +18575,29 @@
       "nypl:actualLocation": "Mulberry Street Non-Print Media",
       "skos:notation": "mla0v",
       "skos:prefLabel": "Mulberry Street Non-Print Media"
+    },
+    {
+      "@id": "nyplLocation:sc",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sc"
+      },
+      "nypl:actualLocation": "Schomburg Center",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:sc"
+      },
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1001"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/SR"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "true"
+      },
+      "skos:notation": "sc",
+      "skos:prefLabel": "Schomburg Center"
     },
     {
       "@id": "nyplLocation:slr22",
@@ -18863,6 +18857,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1125"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NB"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "true"
@@ -18935,7 +18932,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmr2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg - Rare"
@@ -19238,14 +19235,14 @@
       "skos:prefLabel": "Riverside World Languages"
     },
     {
-      "@id": "nyplLocation:dyj0y",
+      "@id": "nyplLocation:mrj0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:dy"
+        "@id": "nyplLocation:mr"
       },
-      "nypl:actualLocation": "Spuyten Duyvil Children's Young Reader",
-      "skos:notation": "dyj0y",
-      "skos:prefLabel": "Spuyten Duyvil Children's Young Reader"
+      "nypl:actualLocation": "Morrisania Children's Picture Book",
+      "skos:notation": "mrj0i",
+      "skos:prefLabel": "Morrisania Children's Picture Book"
     },
     {
       "@id": "nyplLocation:rsa0n",
@@ -19467,14 +19464,14 @@
       "skos:prefLabel": "Andrew Heiskell Children's Disabilities Collection Fiction"
     },
     {
-      "@id": "nyplLocation:csj0h",
+      "@id": "nyplLocation:caj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cs"
+        "@id": "nyplLocation:ca"
       },
-      "nypl:actualLocation": "Columbus Children's Holiday Book",
-      "skos:notation": "csj0h",
-      "skos:prefLabel": "Columbus Children's Holiday Book"
+      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral Children's Non-Print Media",
+      "skos:notation": "caj0v",
+      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:fwy0v",
@@ -19487,14 +19484,14 @@
       "skos:prefLabel": "Fort Washington YA Non-Print Media"
     },
     {
-      "@id": "nyplLocation:sejr",
+      "@id": "nyplLocation:wkj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:se"
+        "@id": "nyplLocation:wk"
       },
-      "nypl:actualLocation": "Seward Park Children's Reference",
-      "skos:notation": "sejr",
-      "skos:prefLabel": "Seward Park Children's Reference"
+      "nypl:actualLocation": "Wakefield Children's Reference",
+      "skos:notation": "wkj01",
+      "skos:prefLabel": "Wakefield Children's Reference"
     },
     {
       "@id": "nyplLocation:whj01",
@@ -19817,14 +19814,14 @@
       "skos:prefLabel": "West Farms Children's World Languages"
     },
     {
-      "@id": "nyplLocation:whj0a",
+      "@id": "nyplLocation:fxa03",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wh"
+        "@id": "nyplLocation:fx"
       },
-      "nypl:actualLocation": "Washington Heights Children's Easy Book",
-      "skos:notation": "whj0a",
-      "skos:prefLabel": "Washington Heights Children's Easy Book"
+      "nypl:actualLocation": "Francis Martin Closed Shelf Reference",
+      "skos:notation": "fxa03",
+      "skos:prefLabel": "Francis Martin Closed Shelf Reference"
     },
     {
       "@id": "nyplLocation:rda",
@@ -19897,14 +19894,14 @@
       "skos:prefLabel": "Fort Washington YA Reference"
     },
     {
-      "@id": "nyplLocation:wkj0t",
+      "@id": "nyplLocation:whj0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wk"
+        "@id": "nyplLocation:wh"
       },
-      "nypl:actualLocation": "Wakefield Children's Fairy Tale",
-      "skos:notation": "wkj0t",
-      "skos:prefLabel": "Wakefield Children's Fairy Tale"
+      "nypl:actualLocation": "Washington Heights Children's Picture Book",
+      "skos:notation": "whj0i",
+      "skos:prefLabel": "Washington Heights Children's Picture Book"
     },
     {
       "@id": "nyplLocation:fxa",
@@ -20037,14 +20034,14 @@
       "skos:prefLabel": "Wakefield Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:wkj0i",
+      "@id": "nyplLocation:whj0t",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wk"
+        "@id": "nyplLocation:wh"
       },
-      "nypl:actualLocation": "Wakefield Children's Picture Book",
-      "skos:notation": "wkj0i",
-      "skos:prefLabel": "Wakefield Children's Picture Book"
+      "nypl:actualLocation": "Washington Heights Children's Fairy Tale",
+      "skos:notation": "whj0t",
+      "skos:prefLabel": "Washington Heights Children's Fairy Tale"
     },
     {
       "@id": "nyplLocation:wkj0f",
@@ -20137,14 +20134,14 @@
       "skos:prefLabel": "Dongan Hills Children"
     },
     {
-      "@id": "nyplLocation:rdy0f",
+      "@id": "nyplLocation:wka",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:rd"
+        "@id": "nyplLocation:wk"
       },
-      "nypl:actualLocation": "Riverdale YA Fiction",
-      "skos:notation": "rdy0f",
-      "skos:prefLabel": "Riverdale YA Fiction"
+      "nypl:actualLocation": "Wakefield Adult",
+      "skos:notation": "wka",
+      "skos:prefLabel": "Wakefield Adult"
     },
     {
       "@id": "nyplLocation:dha",
@@ -20367,16 +20364,6 @@
       "skos:prefLabel": "Woodstock Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:kby01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:kb"
-      },
-      "nypl:actualLocation": "Kingsbridge YA Reference",
-      "skos:notation": "kby01",
-      "skos:prefLabel": "Kingsbridge YA Reference"
-    },
-    {
       "@id": "nyplLocation:bra0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -20456,24 +20443,33 @@
       "skos:prefLabel": "Parkchester Young Adult"
     },
     {
-      "@id": "nyplLocation:sezzz",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:se"
-      },
-      "nypl:actualLocation": "Seward Park (error code)",
-      "skos:notation": "sezzz",
-      "skos:prefLabel": "Seward Park (error code)"
-    },
-    {
-      "@id": "nyplLocation:pkj",
+      "@id": "nyplLocation:pka",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
         "@id": "nyplLocation:pk"
       },
-      "nypl:actualLocation": "Parkchester Children",
-      "skos:notation": "pkj",
-      "skos:prefLabel": "Parkchester Children"
+      "nypl:actualLocation": "Parkchester Adult",
+      "skos:notation": "pka",
+      "skos:prefLabel": "Parkchester Adult"
+    },
+    {
+      "@id": "nyplLocation:ma0p",
+      "@type": "nypl:Location",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NT"
+      },
+      "skos:notation": "ma0p",
+      "skos:prefLabel": ""
+    },
+    {
+      "@id": "nyplLocation:muj01",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:mu"
+      },
+      "nypl:actualLocation": "Muhlenberg Children's Reference",
+      "skos:notation": "muj01",
+      "skos:prefLabel": "Muhlenberg Children's Reference"
     },
     {
       "@id": "nyplLocation:saj0t",
@@ -20804,6 +20800,16 @@
       "skos:prefLabel": "Huguenot Park YA Fiction"
     },
     {
+      "@id": "nyplLocation:sv",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sv"
+      },
+      "nypl:actualLocation": "Soundview",
+      "skos:notation": "sv",
+      "skos:prefLabel": "Soundview"
+    },
+    {
       "@id": "nyplLocation:hfyr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -21014,14 +21020,14 @@
       "skos:prefLabel": "Aguilar YA Reference"
     },
     {
-      "@id": "nyplLocation:caj0y",
+      "@id": "nyplLocation:pmj0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ca"
+        "@id": "nyplLocation:pm"
       },
-      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral Children's Young Reader",
-      "skos:notation": "caj0y",
-      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral Children's Young Reader"
+      "nypl:actualLocation": "Pelham Bay Children's World Languages",
+      "skos:notation": "pmj0l",
+      "skos:prefLabel": "Pelham Bay Children's World Languages"
     },
     {
       "@id": "nyplLocation:woj0v",
@@ -21504,14 +21510,14 @@
       "skos:prefLabel": "Bloomingdale Adult Reference"
     },
     {
-      "@id": "nyplLocation:inj0h",
+      "@id": "nyplLocation:cia0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:in"
+        "@id": "nyplLocation:ci"
       },
-      "nypl:actualLocation": "Inwood Children's Holiday Book",
-      "skos:notation": "inj0h",
-      "skos:prefLabel": "Inwood Children's Holiday Book"
+      "nypl:actualLocation": "City Island World Languages",
+      "skos:notation": "cia0l",
+      "skos:prefLabel": "City Island World Languages"
     },
     {
       "@id": "nyplLocation:bea03",
@@ -21651,36 +21657,30 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmg2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
     },
     {
-      "@id": "nyplLocation:sla0n",
+      "@id": "nyplLocation:mry0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sl"
+        "@id": "nyplLocation:mr"
       },
-      "nypl:actualLocation": "SIBL - Non-Fiction",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1125"
-      },
-      "skos:notation": "sla0n",
-      "skos:prefLabel": "SIBL - Non-Fiction"
+      "nypl:actualLocation": "Morrisania YA Non-Print Media",
+      "skos:notation": "mry0v",
+      "skos:prefLabel": "Morrisania YA Non-Print Media"
     },
     {
-      "@id": "nyplLocation:mma2f",
+      "@id": "nyplLocation:rty0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mm"
+        "@id": "nyplLocation:rt"
       },
-      "nypl:actualLocation": "Mid-Manhattan Fiction Second Floor",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1500"
-      },
-      "skos:notation": "mma2f",
-      "skos:prefLabel": "Mid-Manhattan Fiction Second Floor"
+      "nypl:actualLocation": "Richmondtown YA Non-Print Media",
+      "skos:notation": "rty0v",
+      "skos:prefLabel": "Richmondtown YA Non-Print Media"
     },
     {
       "@id": "nyplLocation:bea0n",
@@ -21716,14 +21716,14 @@
       "skos:prefLabel": "SIBL - Fiction"
     },
     {
-      "@id": "nyplLocation:tgar",
+      "@id": "nyplLocation:hda0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:tg"
+        "@id": "nyplLocation:hd"
       },
-      "nypl:actualLocation": "Throg's Neck Adult Reference",
-      "skos:notation": "tgar",
-      "skos:prefLabel": "Throg's Neck Adult Reference"
+      "nypl:actualLocation": "125th Street Non-Print Media",
+      "skos:notation": "hda0v",
+      "skos:prefLabel": "125th Street Non-Print Media"
     },
     {
       "@id": "nyplLocation:bea0v",
@@ -21819,24 +21819,24 @@
       "skos:prefLabel": "Eastchester YA Non-Print Media"
     },
     {
-      "@id": "nyplLocation:rcmq2",
+      "@id": "nyplLocation:rdj0t",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:rc"
+        "@id": "nyplLocation:rd"
       },
-      "nypl:actualLocation": "OFFSITE - Request in Advance for use at Schwarzman Bldg",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:maq"
+      "nypl:actualLocation": "Riverdale Children's Fairy Tale",
+      "skos:notation": "rdj0t",
+      "skos:prefLabel": "Riverdale Children's Fairy Tale"
+    },
+    {
+      "@id": "nyplLocation:be",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:be"
       },
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1000"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "false"
-      },
-      "skos:notation": "rcmq2",
-      "skos:prefLabel": "OFFSITE - Request in Advance for use at Schwarzman Bldg -"
+      "nypl:actualLocation": "Belmont",
+      "skos:notation": "be",
+      "skos:prefLabel": "Belmont"
     },
     {
       "@id": "nyplLocation:eay0f",
@@ -21953,14 +21953,14 @@
       "skos:prefLabel": "Stapleton YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:muj0v",
+      "@id": "nyplLocation:hkj0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mu"
+        "@id": "nyplLocation:hk"
       },
-      "nypl:actualLocation": "Muhlenberg Children's Non-Print Media",
-      "skos:notation": "muj0v",
-      "skos:prefLabel": "Muhlenberg Children's Non-Print Media"
+      "nypl:actualLocation": "Huguenot Park Children's Picture Book",
+      "skos:notation": "hkj0i",
+      "skos:prefLabel": "Huguenot Park Children's Picture Book"
     },
     {
       "@id": "nyplLocation:macc2",
@@ -22093,6 +22093,27 @@
       "skos:prefLabel": "Countee Cullen Children's Non-Fiction"
     },
     {
+      "@id": "nyplLocation:mym42",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:my"
+      },
+      "nypl:actualLocation": "OFFSITE Rose - Request in advance for use at Performing Arts",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:myr"
+      },
+      "nypl:locationType": "Research",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1002"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "mym42",
+      "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
+    },
+    {
       "@id": "nyplLocation:htj0a",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -22101,6 +22122,16 @@
       "nypl:actualLocation": "Countee Cullen Children's Easy Book",
       "skos:notation": "htj0a",
       "skos:prefLabel": "Countee Cullen Children's Easy Book"
+    },
+    {
+      "@id": "nyplLocation:saa0f",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sa"
+      },
+      "nypl:actualLocation": "St. Agnes Fiction",
+      "skos:notation": "saa0f",
+      "skos:prefLabel": "St. Agnes Fiction"
     },
     {
       "@id": "nyplLocation:htj0f",
@@ -22133,14 +22164,14 @@
       "skos:prefLabel": "Hamilton Grange Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:mha0n",
+      "@id": "nyplLocation:hbj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mh"
+        "@id": "nyplLocation:hb"
       },
-      "nypl:actualLocation": "Mott Haven Non-Fiction",
-      "skos:notation": "mha0n",
-      "skos:prefLabel": "Mott Haven Non-Fiction"
+      "nypl:actualLocation": "High Bridge Children's Non-Fiction",
+      "skos:notation": "hbj0n",
+      "skos:prefLabel": "High Bridge Children's Non-Fiction"
     },
     {
       "@id": "nyplLocation:htj0t",
@@ -22171,6 +22202,16 @@
       "nypl:actualLocation": "Countee Cullen Children's Non-Print Media",
       "skos:notation": "htj0v",
       "skos:prefLabel": "Countee Cullen Children's Non-Print Media"
+    },
+    {
+      "@id": "nyplLocation:clzzz",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:cl"
+      },
+      "nypl:actualLocation": "Morningside Heights (error code)",
+      "skos:notation": "clzzz",
+      "skos:prefLabel": "Morningside Heights (error code)"
     },
     {
       "@id": "nyplLocation:iny01",
@@ -22643,24 +22684,24 @@
       "skos:prefLabel": "St. George Children's Picture Book"
     },
     {
-      "@id": "nyplLocation:sgj0f",
+      "@id": "nyplLocation:epj0a",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sg"
+        "@id": "nyplLocation:ep"
       },
-      "nypl:actualLocation": "St. George Children's Fiction",
-      "skos:notation": "sgj0f",
-      "skos:prefLabel": "St. George Children's Fiction"
+      "nypl:actualLocation": "Epiphany Children's Easy Book",
+      "skos:notation": "epj0a",
+      "skos:prefLabel": "Epiphany Children's Easy Book"
     },
     {
-      "@id": "nyplLocation:wta03",
+      "@id": "nyplLocation:pra0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wt"
+        "@id": "nyplLocation:pr"
       },
-      "nypl:actualLocation": "Westchester Square Closed Shelf Reference",
-      "skos:notation": "wta03",
-      "skos:prefLabel": "Westchester Square Closed Shelf Reference"
+      "nypl:actualLocation": "Port Richmond Fiction",
+      "skos:notation": "pra0f",
+      "skos:prefLabel": "Port Richmond Fiction"
     },
     {
       "@id": "nyplLocation:wlj01",
@@ -22833,14 +22874,13 @@
       "skos:prefLabel": "Spuyten Duyvil YA Fiction"
     },
     {
-      "@id": "nyplLocation:cay0f",
+      "@id": "nyplLocation:go",
       "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:ca"
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/GO"
       },
-      "nypl:actualLocation": "Terence Cardinal Cooke-Cathedral YA Fiction",
-      "skos:notation": "cay0f",
-      "skos:prefLabel": "Terence Cardinal Cooke-Cathedral YA Fiction"
+      "skos:notation": "go",
+      "skos:prefLabel": ""
     },
     {
       "@id": "nyplLocation:ina",
@@ -23330,14 +23370,25 @@
       "skos:prefLabel": "Francis Martin YA Reference"
     },
     {
-      "@id": "nyplLocation:hsj0y",
+      "@id": "nyplLocation:mym38",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hs"
+        "@id": "nyplLocation:my"
       },
-      "nypl:actualLocation": "Hunt's Point Children's Young Reader",
-      "skos:notation": "hsj0y",
-      "skos:prefLabel": "Hunt's Point Children's Young Reader"
+      "nypl:actualLocation": "Performing Arts Research Collections - Music",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:myr"
+      },
+      "nypl:locationType": "Research",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1123"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "mym38",
+      "skos:prefLabel": "Performing Arts Research Collections - Music"
     },
     {
       "@id": "nyplLocation:wkj0v",
@@ -23380,14 +23431,14 @@
       "skos:prefLabel": "Clason's Point Children's Fiction"
     },
     {
-      "@id": "nyplLocation:whj0i",
+      "@id": "nyplLocation:wkj0t",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wh"
+        "@id": "nyplLocation:wk"
       },
-      "nypl:actualLocation": "Washington Heights Children's Picture Book",
-      "skos:notation": "whj0i",
-      "skos:prefLabel": "Washington Heights Children's Picture Book"
+      "nypl:actualLocation": "Wakefield Children's Fairy Tale",
+      "skos:notation": "wkj0t",
+      "skos:prefLabel": "Wakefield Children's Fairy Tale"
     },
     {
       "@id": "nyplLocation:tsj0y",
@@ -23490,14 +23541,14 @@
       "skos:prefLabel": "Tompkins Square Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:svj",
+      "@id": "nyplLocation:clj0h",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sv"
+        "@id": "nyplLocation:cl"
       },
-      "nypl:actualLocation": "Soundview Children",
-      "skos:notation": "svj",
-      "skos:prefLabel": "Soundview Children"
+      "nypl:actualLocation": "Morningside Heights Children's Holiday Book",
+      "skos:notation": "clj0h",
+      "skos:prefLabel": "Morningside Heights Children's Holiday Book"
     },
     {
       "@id": "nyplLocation:ftzzz",
@@ -23756,14 +23807,14 @@
       "skos:prefLabel": "Soundview Children's Young Reader"
     },
     {
-      "@id": "nyplLocation:muj01",
+      "@id": "nyplLocation:rta",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mu"
+        "@id": "nyplLocation:rt"
       },
-      "nypl:actualLocation": "Muhlenberg Children's Reference",
-      "skos:notation": "muj01",
-      "skos:prefLabel": "Muhlenberg Children's Reference"
+      "nypl:actualLocation": "Richmondtown Adult",
+      "skos:notation": "rta",
+      "skos:prefLabel": "Richmondtown Adult"
     },
     {
       "@id": "nyplLocation:ssa0l",
@@ -23856,6 +23907,16 @@
       "skos:prefLabel": "Countee Cullen YA Non-Print Media"
     },
     {
+      "@id": "nyplLocation:hgy01",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:hg"
+      },
+      "nypl:actualLocation": "Hamilton Grange YA Reference",
+      "skos:notation": "hgy01",
+      "skos:prefLabel": "Hamilton Grange YA Reference"
+    },
+    {
       "@id": "nyplLocation:tsj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -23866,14 +23927,14 @@
       "skos:prefLabel": "Tompkins Square Children's Reference"
     },
     {
-      "@id": "nyplLocation:whj0t",
+      "@id": "nyplLocation:wkj0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wh"
+        "@id": "nyplLocation:wk"
       },
-      "nypl:actualLocation": "Washington Heights Children's Fairy Tale",
-      "skos:notation": "whj0t",
-      "skos:prefLabel": "Washington Heights Children's Fairy Tale"
+      "nypl:actualLocation": "Wakefield Children's Picture Book",
+      "skos:notation": "wkj0i",
+      "skos:prefLabel": "Wakefield Children's Picture Book"
     },
     {
       "@id": "nyplLocation:ctyr",
@@ -23886,34 +23947,34 @@
       "skos:prefLabel": "Castle Hill Young Adult Reference"
     },
     {
-      "@id": "nyplLocation:mua01",
+      "@id": "nyplLocation:pky0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mu"
+        "@id": "nyplLocation:pk"
       },
-      "nypl:actualLocation": "Muhlenberg Reference",
-      "skos:notation": "mua01",
-      "skos:prefLabel": "Muhlenberg Reference"
+      "nypl:actualLocation": "Parkchester YA Non-Fiction",
+      "skos:notation": "pky0n",
+      "skos:prefLabel": "Parkchester YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:wlyr",
+      "@id": "nyplLocation:csj0h",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wl"
+        "@id": "nyplLocation:cs"
       },
-      "nypl:actualLocation": "Woodlawn Heights Young Adult Reference",
-      "skos:notation": "wlyr",
-      "skos:prefLabel": "Woodlawn Heights Young Adult Reference"
+      "nypl:actualLocation": "Columbus Children's Holiday Book",
+      "skos:notation": "csj0h",
+      "skos:prefLabel": "Columbus Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:mua03",
+      "@id": "nyplLocation:pky0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mu"
+        "@id": "nyplLocation:pk"
       },
-      "nypl:actualLocation": "Muhlenberg Closed Shelf Reference",
-      "skos:notation": "mua03",
-      "skos:prefLabel": "Muhlenberg Closed Shelf Reference"
+      "nypl:actualLocation": "Parkchester YA World Languages",
+      "skos:notation": "pky0l",
+      "skos:prefLabel": "Parkchester YA World Languages"
     },
     {
       "@id": "nyplLocation:hty0f",
@@ -24269,24 +24330,24 @@
       "skos:prefLabel": "Riverdale Closed Shelf Reference"
     },
     {
-      "@id": "nyplLocation:sbj0n",
+      "@id": "nyplLocation:hby",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sb"
+        "@id": "nyplLocation:hb"
       },
-      "nypl:actualLocation": "South Beach Children's Non-Fiction",
-      "skos:notation": "sbj0n",
-      "skos:prefLabel": "South Beach Children's Non-Fiction"
+      "nypl:actualLocation": "High Bridge Young Adult",
+      "skos:notation": "hby",
+      "skos:prefLabel": "High Bridge Young Adult"
     },
     {
-      "@id": "nyplLocation:sbj0i",
+      "@id": "nyplLocation:sea0w",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sb"
+        "@id": "nyplLocation:se"
       },
-      "nypl:actualLocation": "South Beach Children's Picture Book",
-      "skos:notation": "sbj0i",
-      "skos:prefLabel": "South Beach Children's Picture Book"
+      "nypl:actualLocation": "Seward Park Center for Reading & Writing",
+      "skos:notation": "sea0w",
+      "skos:prefLabel": "Seward Park Center for Reading & Writing"
     },
     {
       "@id": "nyplLocation:sea0v",
@@ -24332,7 +24393,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmf2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
@@ -24428,14 +24489,13 @@
       "skos:prefLabel": "Tremont YA Non-Fiction"
     },
     {
-      "@id": "nyplLocation:hfy0f",
+      "@id": "nyplLocation:fty0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hf"
+        "@id": "nyplLocation:ft"
       },
-      "nypl:actualLocation": "Hamilton Fish Park YA Fiction",
-      "skos:notation": "hfy0f",
-      "skos:prefLabel": "Hamilton Fish Park YA Fiction"
+      "skos:notation": "fty0v",
+      "skos:prefLabel": "53rd Street YA Non-Print Media"
     },
     {
       "@id": "nyplLocation:tsy0f",
@@ -24628,14 +24688,14 @@
       "skos:prefLabel": "Van Cortlandt Children's World Languages"
     },
     {
-      "@id": "nyplLocation:sda0n",
+      "@id": "nyplLocation:jmjr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sd"
+        "@id": "nyplLocation:jm"
       },
-      "nypl:actualLocation": "Sedgwick Non-Fiction",
-      "skos:notation": "sda0n",
-      "skos:prefLabel": "Sedgwick Non-Fiction"
+      "nypl:actualLocation": "Jefferson Market Children's Reference",
+      "skos:notation": "jmjr",
+      "skos:prefLabel": "Jefferson Market Children's Reference"
     },
     {
       "@id": "nyplLocation:vcj0i",
@@ -24768,14 +24828,14 @@
       "skos:prefLabel": "High Bridge YA Reference"
     },
     {
-      "@id": "nyplLocation:mrj0i",
+      "@id": "nyplLocation:dyj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:mr"
+        "@id": "nyplLocation:dy"
       },
-      "nypl:actualLocation": "Morrisania Children's Picture Book",
-      "skos:notation": "mrj0i",
-      "skos:prefLabel": "Morrisania Children's Picture Book"
+      "nypl:actualLocation": "Spuyten Duyvil Children's Young Reader",
+      "skos:notation": "dyj0y",
+      "skos:prefLabel": "Spuyten Duyvil Children's Young Reader"
     },
     {
       "@id": "nyplLocation:mrj0h",
@@ -24838,16 +24898,6 @@
       "skos:prefLabel": "Spuyten Duyvil Children's Fairy Tale"
     },
     {
-      "@id": "nyplLocation:hbj0y",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:hb"
-      },
-      "nypl:actualLocation": "High Bridge Children's Young Reader",
-      "skos:notation": "hbj0y",
-      "skos:prefLabel": "High Bridge Children's Young Reader"
-    },
-    {
       "@id": "nyplLocation:inj01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -24868,14 +24918,14 @@
       "skos:prefLabel": "City Island Closed Shelf Reference"
     },
     {
-      "@id": "nyplLocation:wta0f",
+      "@id": "nyplLocation:yva",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wt"
+        "@id": "nyplLocation:yv"
       },
-      "nypl:actualLocation": "Westchester Square Fiction",
-      "skos:notation": "wta0f",
-      "skos:prefLabel": "Westchester Square Fiction"
+      "nypl:actualLocation": "Yorkville Adult",
+      "skos:notation": "yva",
+      "skos:prefLabel": "Yorkville Adult"
     },
     {
       "@id": "nyplLocation:cia01",
@@ -25071,14 +25121,14 @@
       "skos:prefLabel": "City Island Non-Print Media"
     },
     {
-      "@id": "nyplLocation:wka",
+      "@id": "nyplLocation:rdy0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:wk"
+        "@id": "nyplLocation:rd"
       },
-      "nypl:actualLocation": "Wakefield Adult",
-      "skos:notation": "wka",
-      "skos:prefLabel": "Wakefield Adult"
+      "nypl:actualLocation": "Riverdale YA Fiction",
+      "skos:notation": "rdy0f",
+      "skos:prefLabel": "Riverdale YA Fiction"
     },
     {
       "@id": "nyplLocation:inj0v",
@@ -25121,14 +25171,14 @@
       "skos:prefLabel": "Inwood Children's Picture Book"
     },
     {
-      "@id": "nyplLocation:cia0l",
+      "@id": "nyplLocation:inj0h",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ci"
+        "@id": "nyplLocation:in"
       },
-      "nypl:actualLocation": "City Island World Languages",
-      "skos:notation": "cia0l",
-      "skos:prefLabel": "City Island World Languages"
+      "nypl:actualLocation": "Inwood Children's Holiday Book",
+      "skos:notation": "inj0h",
+      "skos:prefLabel": "Inwood Children's Holiday Book"
     },
     {
       "@id": "nyplLocation:inj0n",
@@ -25199,34 +25249,34 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance for use at Schwarzman Bldg",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:maf"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
           "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
           "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:mai"
         }
       ],
       "nypl:owner": {
@@ -25308,10 +25358,10 @@
       "nypl:actualLocation": "Schwarzman Building - Milstein Division Microforms Rm 119",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mag"
         }
       ],
       "nypl:owner": {
@@ -25342,7 +25392,19 @@
       },
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:myr"
+        },
+        {
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:slr"
+        },
+        {
+          "@id": "nyplLocation:sc"
         },
         {
           "@id": "nyplLocation:maln"
@@ -25351,31 +25413,19 @@
           "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:myr"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
           "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:slr"
-        },
-        {
-          "@id": "nyplLocation:mab"
-        },
-        {
           "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:sc"
         },
         {
           "@id": "nyplLocation:map"
@@ -25552,14 +25602,17 @@
       "skos:prefLabel": "Bloomingdale (error code)"
     },
     {
-      "@id": "nyplLocation:sej0i",
+      "@id": "nyplLocation:mmy0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:se"
+        "@id": "nyplLocation:mm"
       },
-      "nypl:actualLocation": "Seward Park Children's Picture Book",
-      "skos:notation": "sej0i",
-      "skos:prefLabel": "Seward Park Children's Picture Book"
+      "nypl:actualLocation": "Mid-Manhattan Young Adult Non-Print",
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1500"
+      },
+      "skos:notation": "mmy0v",
+      "skos:prefLabel": "Mid-Manhattan Young Adult Non-Print"
     },
     {
       "@id": "nyplLocation:ewy0f",
@@ -25765,14 +25818,14 @@
       "skos:prefLabel": "Seward Park Children's Holiday Book"
     },
     {
-      "@id": "nyplLocation:hfa0l",
+      "@id": "nyplLocation:sej0i",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hf"
+        "@id": "nyplLocation:se"
       },
-      "nypl:actualLocation": "Hamilton Fish Park World Languages",
-      "skos:notation": "hfa0l",
-      "skos:prefLabel": "Hamilton Fish Park World Languages"
+      "nypl:actualLocation": "Seward Park Children's Picture Book",
+      "skos:notation": "sej0i",
+      "skos:prefLabel": "Seward Park Children's Picture Book"
     },
     {
       "@id": "nyplLocation:stj01",
@@ -26025,47 +26078,6 @@
       "skos:prefLabel": "Stapleton Children's Young Reader"
     },
     {
-      "@id": "nyplLocation:mym28",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:my"
-      },
-      "nypl:actualLocation": "Performing Arts Research Collections - Music",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:myr"
-      },
-      "nypl:locationType": "Research",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1123"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "false"
-      },
-      "skos:notation": "mym28",
-      "skos:prefLabel": "Performing Arts Research Collections - Music"
-    },
-    {
-      "@id": "nyplLocation:alzzz",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:al"
-      },
-      "nypl:actualLocation": "Allerton (error code)",
-      "skos:notation": "alzzz",
-      "skos:prefLabel": "Allerton (error code)"
-    },
-    {
-      "@id": "nyplLocation:kba03",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:kb"
-      },
-      "nypl:actualLocation": "Kingsbridge Closed Shelf Reference",
-      "skos:notation": "kba03",
-      "skos:prefLabel": "Kingsbridge Closed Shelf Reference"
-    },
-    {
       "@id": "nyplLocation:maff1",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -26116,24 +26128,24 @@
       "skos:prefLabel": "Woodlawn Heights Children's Reference"
     },
     {
-      "@id": "nyplLocation:sga0w",
+      "@id": "nyplLocation:ota0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sg"
+        "@id": "nyplLocation:ot"
       },
-      "nypl:actualLocation": "St. George Center for Reading & Writing",
-      "skos:notation": "sga0w",
-      "skos:prefLabel": "St. George Center for Reading & Writing"
+      "nypl:actualLocation": "Ottendorfer Fiction",
+      "skos:notation": "ota0f",
+      "skos:prefLabel": "Ottendorfer Fiction"
     },
     {
-      "@id": "nyplLocation:cpj0a",
+      "@id": "nyplLocation:ssy0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:cp"
+        "@id": "nyplLocation:ss"
       },
-      "nypl:actualLocation": "Clason's Point Children's Easy Book",
-      "skos:notation": "cpj0a",
-      "skos:prefLabel": "Clason's Point Children's Easy Book"
+      "nypl:actualLocation": "67th Street YA Non-Fiction",
+      "skos:notation": "ssy0n",
+      "skos:prefLabel": "67th Street YA Non-Fiction"
     },
     {
       "@id": "nyplLocation:fxyr",
@@ -26184,34 +26196,34 @@
       "nypl:actualLocation": "Schwarzman Building - Art & Architecture Rm 300 (BPSE)",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:mai"
-        },
-        {
-          "@id": "nyplLocation:mag"
-        },
-        {
           "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
           "@id": "nyplLocation:maf"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:malw"
         }
       ],
       "nypl:owner": {
@@ -26514,6 +26526,16 @@
       "skos:prefLabel": "Castle Hill Adult Learning Center"
     },
     {
+      "@id": "nyplLocation:sba01",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:sb"
+      },
+      "nypl:actualLocation": "South Beach Reference",
+      "skos:notation": "sba01",
+      "skos:prefLabel": "South Beach Reference"
+    },
+    {
       "@id": "nyplLocation:aga0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -26595,16 +26617,10 @@
       "nypl:actualLocation": "Schwarzman Building - Milstein Division Rm 121",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mab"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:malc"
@@ -26613,16 +26629,22 @@
           "@id": "nyplLocation:map"
         },
         {
+          "@id": "nyplLocation:malw"
+        },
+        {
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mal"
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:mai"
         }
       ],
       "nypl:owner": {
@@ -26696,14 +26718,14 @@
       "skos:prefLabel": "Riverside Children's Easy Book"
     },
     {
-      "@id": "nyplLocation:ndy0n",
+      "@id": "nyplLocation:fey01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:nd"
+        "@id": "nyplLocation:fe"
       },
-      "nypl:actualLocation": "New Dorp YA Non-Fiction",
-      "skos:notation": "ndy0n",
-      "skos:prefLabel": "New Dorp YA Non-Fiction"
+      "nypl:actualLocation": "58th Street YA Reference",
+      "skos:notation": "fey01",
+      "skos:prefLabel": "58th Street YA Reference"
     },
     {
       "@id": "nyplLocation:rsj0f",
@@ -27271,6 +27293,16 @@
       "skos:prefLabel": "Kips Bay Non-Print Media"
     },
     {
+      "@id": "nyplLocation:yvjr",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:yv"
+      },
+      "nypl:actualLocation": "Yorkville Children's Reference",
+      "skos:notation": "yvjr",
+      "skos:prefLabel": "Yorkville Children's Reference"
+    },
+    {
       "@id": "nyplLocation:agj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -27332,6 +27364,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/OW"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -27451,13 +27486,52 @@
       "skos:prefLabel": "Inwood Non-Print Media"
     },
     {
-      "@id": "nyplLocation:ina0w",
+      "@id": "nyplLocation:maj92",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:in"
+        "@id": "nyplLocation:ma"
       },
-      "skos:notation": "ina0w",
-      "skos:prefLabel": "Inwood Adult Learning Center"
+      "nypl:deliverableTo": [
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:maf"
+        },
+        {
+          "@id": "nyplLocation:mab"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:malc"
+        }
+      ],
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1101"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "true"
+      },
+      "skos:notation": "maj92",
+      "skos:prefLabel": "SASB M2 - General Research - Room 315"
     },
     {
       "@id": "nyplLocation:mea01",
@@ -27478,16 +27552,6 @@
       "nypl:actualLocation": "Melrose Closed Shelf Reference",
       "skos:notation": "mea03",
       "skos:prefLabel": "Melrose Closed Shelf Reference"
-    },
-    {
-      "@id": "nyplLocation:wkj01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:wk"
-      },
-      "nypl:actualLocation": "Wakefield Children's Reference",
-      "skos:notation": "wkj01",
-      "skos:prefLabel": "Wakefield Children's Reference"
     },
     {
       "@id": "nyplLocation:yva0v",
@@ -27521,6 +27585,15 @@
       "nypl:actualLocation": "Yorkville Fiction",
       "skos:notation": "yva0f",
       "skos:prefLabel": "Yorkville Fiction"
+    },
+    {
+      "@id": "nyplLocation:ma0b",
+      "@type": "nypl:Location",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NK"
+      },
+      "skos:notation": "ma0b",
+      "skos:prefLabel": ""
     },
     {
       "@id": "nyplLocation:btar",
@@ -27771,6 +27844,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1002"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NN"
+      },
       "skos:notation": "myrfv",
       "skos:prefLabel": "Performing Arts - Reserve Film and Video"
     },
@@ -27805,14 +27881,14 @@
       "skos:prefLabel": "Melrose Fiction"
     },
     {
-      "@id": "nyplLocation:pka",
+      "@id": "nyplLocation:sezzz",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pk"
+        "@id": "nyplLocation:se"
       },
-      "nypl:actualLocation": "Parkchester Adult",
-      "skos:notation": "pka",
-      "skos:prefLabel": "Parkchester Adult"
+      "nypl:actualLocation": "Seward Park (error code)",
+      "skos:notation": "sezzz",
+      "skos:prefLabel": "Seward Park (error code)"
     },
     {
       "@id": "nyplLocation:mea0l",
@@ -27835,6 +27911,29 @@
       "skos:prefLabel": "Melrose Non-Fiction"
     },
     {
+      "@id": "nyplLocation:malc",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:ma"
+      },
+      "nypl:actualLocation": "SASB - Cullman Center",
+      "nypl:deliverableTo": {
+        "@id": "nyplLocation:mala"
+      },
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1127"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/OC"
+      },
+      "nypl:requestable": {
+        "@type": "XSD:boolean",
+        "@value": "false"
+      },
+      "skos:notation": "malc",
+      "skos:prefLabel": "SASB - Cullman Center"
+    },
+    {
       "@id": "nyplLocation:mala",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -27846,6 +27945,9 @@
       },
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1000"
+      },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/OA"
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
@@ -27917,6 +28019,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1000"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/ON"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "false"
@@ -27985,6 +28090,16 @@
       "skos:prefLabel": "Muhlenberg YA Fiction"
     },
     {
+      "@id": "nyplLocation:pkj",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:pk"
+      },
+      "nypl:actualLocation": "Parkchester Children",
+      "skos:notation": "pkj",
+      "skos:prefLabel": "Parkchester Children"
+    },
+    {
       "@id": "nyplLocation:muy0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -28015,6 +28130,18 @@
       "skos:prefLabel": "Tremont Children's Easy Book"
     },
     {
+      "@id": "nyplLocation:mar92",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:Ma"
+      },
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1108"
+      },
+      "skos:notation": "mar92",
+      "skos:prefLabel": "SASB - Rare Books Division - Room 324"
+    },
+    {
       "@id": "nyplLocation:tmj0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -28025,14 +28152,14 @@
       "skos:prefLabel": "Tremont Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:gka",
+      "@id": "nyplLocation:tmj0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:gk"
+        "@id": "nyplLocation:tm"
       },
-      "nypl:actualLocation": "Great Kills Adult",
-      "skos:notation": "gka",
-      "skos:prefLabel": "Great Kills Adult"
+      "nypl:actualLocation": "Tremont Children's World Languages",
+      "skos:notation": "tmj0l",
+      "skos:prefLabel": "Tremont Children's World Languages"
     },
     {
       "@id": "nyplLocation:vnzzz",
@@ -28365,6 +28492,16 @@
       "skos:prefLabel": "Tottenville Children's Fiction"
     },
     {
+      "@id": "nyplLocation:mua01",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:mu"
+      },
+      "nypl:actualLocation": "Muhlenberg Reference",
+      "skos:notation": "mua01",
+      "skos:prefLabel": "Muhlenberg Reference"
+    },
+    {
       "@id": "nyplLocation:tgj0f",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -28415,14 +28552,14 @@
       "skos:prefLabel": "Throg's Neck Children's World Languages"
     },
     {
-      "@id": "nyplLocation:tgj0n",
+      "@id": "nyplLocation:epar",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:tg"
+        "@id": "nyplLocation:ep"
       },
-      "nypl:actualLocation": "Throg's Neck Children's Non-Fiction",
-      "skos:notation": "tgj0n",
-      "skos:prefLabel": "Throg's Neck Children's Non-Fiction"
+      "nypl:actualLocation": "Epiphany Adult Reference",
+      "skos:notation": "epar",
+      "skos:prefLabel": "Epiphany Adult Reference"
     },
     {
       "@id": "nyplLocation:kbj01",
@@ -28632,6 +28769,16 @@
       "skos:prefLabel": "Todt Hill-Westerleigh Children"
     },
     {
+      "@id": "nyplLocation:brj0v",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:br"
+      },
+      "nypl:actualLocation": "George Bruce Children's Non-Print Media",
+      "skos:notation": "brj0v",
+      "skos:prefLabel": "George Bruce Children's Non-Print Media"
+    },
+    {
       "@id": "nyplLocation:mab92",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -28639,13 +28786,19 @@
       },
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:mal"
-        },
-        {
           "@id": "nyplLocation:mala"
         },
         {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
+          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:mab"
@@ -28654,16 +28807,10 @@
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:malc"
@@ -28987,14 +29134,14 @@
       "skos:prefLabel": "Dongan Hills Children's World Languages"
     },
     {
-      "@id": "nyplLocation:dhj0n",
+      "@id": "nyplLocation:mna",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:dh"
+        "@id": "nyplLocation:mn"
       },
-      "nypl:actualLocation": "Dongan Hills Children's Non-Fiction",
-      "skos:notation": "dhj0n",
-      "skos:prefLabel": "Dongan Hills Children's Non-Fiction"
+      "nypl:actualLocation": "Mariner's Harbor Adult",
+      "skos:notation": "mna",
+      "skos:prefLabel": "Mariner's Harbor Adult"
     },
     {
       "@id": "nyplLocation:ewzzz",
@@ -29027,14 +29174,14 @@
       "skos:prefLabel": "Dongan Hills Children's Fairy Tale"
     },
     {
-      "@id": "nyplLocation:eaar",
+      "@id": "nyplLocation:dhj0v",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:ea"
+        "@id": "nyplLocation:dh"
       },
-      "nypl:actualLocation": "Eastchester Adult Reference",
-      "skos:notation": "eaar",
-      "skos:prefLabel": "Eastchester Adult Reference"
+      "nypl:actualLocation": "Dongan Hills Children's Non-Print Media",
+      "skos:notation": "dhj0v",
+      "skos:prefLabel": "Dongan Hills Children's Non-Print Media"
     },
     {
       "@id": "nyplLocation:mlyr",
@@ -29166,34 +29313,34 @@
       "nypl:actualLocation": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg",
       "nypl:deliverableTo": [
         {
+          "@id": "nyplLocation:mab"
+        },
+        {
           "@id": "nyplLocation:mala"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:malw"
         },
         {
+          "@id": "nyplLocation:mag"
+        },
+        {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:map"
+        },
+        {
           "@id": "nyplLocation:maf"
         },
         {
-          "@id": "nyplLocation:mab"
+          "@id": "nyplLocation:mal"
         },
         {
           "@id": "nyplLocation:maln"
         },
         {
           "@id": "nyplLocation:mai"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:mag"
         }
       ],
       "nypl:owner": {
@@ -29201,20 +29348,10 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmj2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg"
-    },
-    {
-      "@id": "nyplLocation:rty0v",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:rt"
-      },
-      "nypl:actualLocation": "Richmondtown YA Non-Print Media",
-      "skos:notation": "rty0v",
-      "skos:prefLabel": "Richmondtown YA Non-Print Media"
     },
     {
       "@id": "nyplLocation:agj0n",
@@ -29235,6 +29372,16 @@
       "nypl:actualLocation": "Edenwald Adult",
       "skos:notation": "ewa",
       "skos:prefLabel": "Edenwald Adult"
+    },
+    {
+      "@id": "nyplLocation:hfa0l",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:hf"
+      },
+      "nypl:actualLocation": "Hamilton Fish Park World Languages",
+      "skos:notation": "hfa0l",
+      "skos:prefLabel": "Hamilton Fish Park World Languages"
     },
     {
       "@id": "nyplLocation:dhj01",
@@ -29275,43 +29422,43 @@
       "nypl:actualLocation": "OFFSITE - TSD - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mal"
-        },
-        {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:sc"
-        },
-        {
           "@id": "nyplLocation:myr"
-        },
-        {
-          "@id": "nyplLocation:maln"
-        },
-        {
-          "@id": "nyplLocation:mai"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:malc"
+          "@id": "nyplLocation:mala"
+        },
+        {
+          "@id": "nyplLocation:mal"
+        },
+        {
+          "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:maf"
         },
         {
           "@id": "nyplLocation:slr"
         },
         {
+          "@id": "nyplLocation:malc"
+        },
+        {
+          "@id": "nyplLocation:malw"
+        },
+        {
           "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:sc"
         }
       ],
       "nypl:owner": {
@@ -29319,7 +29466,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qc2sl",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance"
@@ -29375,14 +29522,16 @@
       "skos:prefLabel": "Riverside Children's Reference"
     },
     {
-      "@id": "nyplLocation:ndar",
+      "@id": "nyplLocation:mma0w",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:nd"
+        "@id": "nyplLocation:mm"
       },
-      "nypl:actualLocation": "New Dorp Adult Reference",
-      "skos:notation": "ndar",
-      "skos:prefLabel": "New Dorp Adult Reference"
+      "nypl:owner": {
+        "@id": "http://data.nypl.org/orgs/1500"
+      },
+      "skos:notation": "mma0w",
+      "skos:prefLabel": "Mid-Manhattan Adult Learning Center"
     },
     {
       "@id": "nyplLocation:mma0v",
@@ -29439,16 +29588,6 @@
       },
       "skos:notation": "mma0n",
       "skos:prefLabel": "Mid-Manhattan Non-Fiction First Floor"
-    },
-    {
-      "@id": "nyplLocation:wfyr",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:wf"
-      },
-      "nypl:actualLocation": "West Farms Young Adult Reference",
-      "skos:notation": "wfyr",
-      "skos:prefLabel": "West Farms Young Adult Reference"
     },
     {
       "@id": "nyplLocation:mhj0t",
@@ -29604,14 +29743,14 @@
       "skos:prefLabel": "Seward Park YA Fiction"
     },
     {
-      "@id": "nyplLocation:sv",
+      "@id": "nyplLocation:chyr",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sv"
+        "@id": "nyplLocation:ch"
       },
-      "nypl:actualLocation": "Soundview",
-      "skos:notation": "sv",
-      "skos:prefLabel": "Soundview"
+      "nypl:actualLocation": "Chatham Square Young Adult Reference",
+      "skos:notation": "chyr",
+      "skos:prefLabel": "Chatham Square Young Adult Reference"
     },
     {
       "@id": "nyplLocation:sey0n",
@@ -29684,14 +29823,14 @@
       "skos:prefLabel": "Clason's Point (error code)"
     },
     {
-      "@id": "nyplLocation:pry0l",
+      "@id": "nyplLocation:bly0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:pr"
+        "@id": "nyplLocation:bl"
       },
-      "nypl:actualLocation": "Port Richmond YA World Languages",
-      "skos:notation": "pry0l",
-      "skos:prefLabel": "Port Richmond YA World Languages"
+      "nypl:actualLocation": "Bloomingdale YA Non-Fiction",
+      "skos:notation": "bly0n",
+      "skos:prefLabel": "Bloomingdale YA Non-Fiction"
     },
     {
       "@id": "nyplLocation:tsjr",
@@ -29843,6 +29982,16 @@
       "skos:prefLabel": "Grand Central Children's Fiction"
     },
     {
+      "@id": "nyplLocation:wly01",
+      "@type": "nypl:Location",
+      "dcterms:isPartOf": {
+        "@id": "nyplLocation:wl"
+      },
+      "nypl:actualLocation": "Woodlawn Heights YA Reference",
+      "skos:notation": "wly01",
+      "skos:prefLabel": "Woodlawn Heights YA Reference"
+    },
+    {
       "@id": "nyplLocation:gcj0a",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
@@ -29883,14 +30032,14 @@
       "skos:prefLabel": "Grand Central Children's World Languages"
     },
     {
-      "@id": "nyplLocation:fea01",
+      "@id": "nyplLocation:jpj0y",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:fe"
+        "@id": "nyplLocation:jp"
       },
-      "nypl:actualLocation": "58th Street Reference",
-      "skos:notation": "fea01",
-      "skos:prefLabel": "58th Street Reference"
+      "nypl:actualLocation": "Jerome Park Children's Young Reader",
+      "skos:notation": "jpj0y",
+      "skos:prefLabel": "Jerome Park Children's Young Reader"
     },
     {
       "@id": "nyplLocation:gcj0h",
@@ -30046,24 +30195,14 @@
       "skos:prefLabel": "Mid-Manhattan Young Adult Fiction Second Floor"
     },
     {
-      "@id": "nyplLocation:hgy01",
+      "@id": "nyplLocation:woa0l",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:hg"
+        "@id": "nyplLocation:wo"
       },
-      "nypl:actualLocation": "Hamilton Grange YA Reference",
-      "skos:notation": "hgy01",
-      "skos:prefLabel": "Hamilton Grange YA Reference"
-    },
-    {
-      "@id": "nyplLocation:ssy0n",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:ss"
-      },
-      "nypl:actualLocation": "67th Street YA Non-Fiction",
-      "skos:notation": "ssy0n",
-      "skos:prefLabel": "67th Street YA Non-Fiction"
+      "nypl:actualLocation": "Woodstock World Languages",
+      "skos:notation": "woa0l",
+      "skos:prefLabel": "Woodstock World Languages"
     },
     {
       "@id": "nyplLocation:bta0l",
@@ -30385,14 +30524,14 @@
       "skos:prefLabel": "Harlem Children's Reference"
     },
     {
-      "@id": "nyplLocation:be",
+      "@id": "nyplLocation:bta01",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:be"
+        "@id": "nyplLocation:bt"
       },
-      "nypl:actualLocation": "Belmont",
-      "skos:notation": "be",
-      "skos:prefLabel": "Belmont"
+      "nypl:actualLocation": "Battery Park Reference",
+      "skos:notation": "bta01",
+      "skos:prefLabel": "Battery Park Reference"
     },
     {
       "@id": "nyplLocation:bta03",
@@ -30507,6 +30646,9 @@
       "nypl:owner": {
         "@id": "http://data.nypl.org/orgs/1117"
       },
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/SM"
+      },
       "nypl:requestable": {
         "@type": "XSD:boolean",
         "@value": "false"
@@ -30619,17 +30761,14 @@
       "skos:prefLabel": "Hunt's Point Children"
     },
     {
-      "@id": "nyplLocation:slajn",
+      "@id": "nyplLocation:hdj0h",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:sl"
+        "@id": "nyplLocation:hd"
       },
-      "nypl:actualLocation": "SIBL - Job Search Central Non-Fiction",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1125"
-      },
-      "skos:notation": "slajn",
-      "skos:prefLabel": "SIBL - Job Search Central Non-Fiction"
+      "nypl:actualLocation": "125th Street Children's Holiday Book",
+      "skos:notation": "hdj0h",
+      "skos:prefLabel": "125th Street Children's Holiday Book"
     },
     {
       "@id": "nyplLocation:hfy0v",
@@ -30703,34 +30842,34 @@
       "nypl:actualLocation": "Schwarzman Building - Dorot Jewish Division Rm 111",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:maf"
-        },
-        {
-          "@id": "nyplLocation:mai"
+          "@id": "nyplLocation:malc"
         },
         {
           "@id": "nyplLocation:mal"
         },
         {
-          "@id": "nyplLocation:malw"
-        },
-        {
-          "@id": "nyplLocation:map"
-        },
-        {
-          "@id": "nyplLocation:malc"
-        },
-        {
           "@id": "nyplLocation:maln"
+        },
+        {
+          "@id": "nyplLocation:mai"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:mab"
         },
         {
+          "@id": "nyplLocation:mala"
+        },
+        {
           "@id": "nyplLocation:mag"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:map"
+        },
+        {
+          "@id": "nyplLocation:maf"
         }
       ],
       "nypl:owner": {
@@ -31068,7 +31207,7 @@
       },
       "nypl:requestable": {
         "@type": "XSD:boolean",
-        "@value": "true"
+        "@value": "false"
       },
       "skos:notation": "qcmi2",
       "skos:prefLabel": "OFFSITE - TSD - Request in Advance for use at Schwarzman Bldg -"
@@ -31123,14 +31262,14 @@
       "skos:prefLabel": "New Dorp Adult Learning Center"
     },
     {
-      "@id": "nyplLocation:fey01",
+      "@id": "nyplLocation:ndy0n",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:fe"
+        "@id": "nyplLocation:nd"
       },
-      "nypl:actualLocation": "58th Street YA Reference",
-      "skos:notation": "fey01",
-      "skos:prefLabel": "58th Street YA Reference"
+      "nypl:actualLocation": "New Dorp YA Non-Fiction",
+      "skos:notation": "ndy0n",
+      "skos:prefLabel": "New Dorp YA Non-Fiction"
     },
     {
       "@id": "nyplLocation:vnj0f",
@@ -31193,22 +31332,15 @@
       "skos:prefLabel": "Pelham Parkway-Van Nest Children's Non-Fiction"
     },
     {
-      "@id": "nyplLocation:bta01",
-      "@type": "nypl:Location",
-      "dcterms:isPartOf": {
-        "@id": "nyplLocation:bt"
-      },
-      "nypl:actualLocation": "Battery Park Reference",
-      "skos:notation": "bta01",
-      "skos:prefLabel": "Battery Park Reference"
-    },
-    {
       "@id": "nyplLocation:lsdd2",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
         "@id": "nyplLocation:ls"
       },
       "nypl:actualLocation": "Library Services Center - Special Formats Processing",
+      "nypl:recapCustomerCode": {
+        "@id": "http://data.nypl.org/recapCustomerCodes/NI"
+      },
       "skos:notation": "lsdd2",
       "skos:prefLabel": "Library Services Center - Special Formats Processing"
     },
@@ -31294,19 +31426,19 @@
       "nypl:actualLocation": "OFFSITE - Request in Advance",
       "nypl:deliverableTo": [
         {
-          "@id": "nyplLocation:malw"
+          "@id": "nyplLocation:mala"
         },
         {
           "@id": "nyplLocation:myr"
         },
         {
-          "@id": "nyplLocation:map"
-        },
-        {
           "@id": "nyplLocation:maln"
         },
         {
-          "@id": "nyplLocation:mag"
+          "@id": "nyplLocation:sc"
+        },
+        {
+          "@id": "nyplLocation:malw"
         },
         {
           "@id": "nyplLocation:mal"
@@ -31315,22 +31447,22 @@
           "@id": "nyplLocation:slr"
         },
         {
-          "@id": "nyplLocation:sc"
+          "@id": "nyplLocation:mab"
         },
         {
-          "@id": "nyplLocation:mala"
+          "@id": "nyplLocation:maf"
+        },
+        {
+          "@id": "nyplLocation:mag"
         },
         {
           "@id": "nyplLocation:mai"
         },
         {
+          "@id": "nyplLocation:map"
+        },
+        {
           "@id": "nyplLocation:malc"
-        },
-        {
-          "@id": "nyplLocation:mab"
-        },
-        {
-          "@id": "nyplLocation:maf"
         }
       ],
       "nypl:owner": {
@@ -31977,25 +32109,14 @@
       "skos:prefLabel": "Soundview YA Reference"
     },
     {
-      "@id": "nyplLocation:mym42",
+      "@id": "nyplLocation:wla03",
       "@type": "nypl:Location",
       "dcterms:isPartOf": {
-        "@id": "nyplLocation:my"
+        "@id": "nyplLocation:wl"
       },
-      "nypl:actualLocation": "OFFSITE Rose - Request in advance for use at Performing Arts",
-      "nypl:deliverableTo": {
-        "@id": "nyplLocation:myr"
-      },
-      "nypl:locationType": "Research",
-      "nypl:owner": {
-        "@id": "http://data.nypl.org/orgs/1002"
-      },
-      "nypl:requestable": {
-        "@type": "XSD:boolean",
-        "@value": "true"
-      },
-      "skos:notation": "mym42",
-      "skos:prefLabel": "OFFSITE Rose - Request in advance for use at Performing Arts"
+      "nypl:actualLocation": "Woodlawn Heights Closed Shelf Reference",
+      "skos:notation": "wla03",
+      "skos:prefLabel": "Woodlawn Heights Closed Shelf Reference"
     }
   ]
 }

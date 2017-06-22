@@ -15,6 +15,7 @@ skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 dcterms = Namespace('http://purl.org/dc/terms/')
 nyplLocation = rdflib.URIRef('http://data.nypl.org/locations/')
 nyplOrg = rdflib.URIRef('http://data.nypl.org/orgs/')
+recapCustomerCode = rdflib.URIRef('http://data.nypl.org/recapCustomerCodes/')
 
 g = Graph()
 
@@ -53,13 +54,17 @@ for r in reader:
             if d != '':
                 d = nyplLocation + d.strip()
                 g.add( (location, nypl.deliverableTo, d))
+    if r['nypl:recapCustomerCode'] != '':
+        custcode = recapCustomerCode + str(r['nypl:recapCustomerCode'])
+        g.add( (location, nypl.recapCustomerCode, custcode))
 
 z = open('locations.json', 'wb')
 
 context = {"dcterms": "http://purl.org/dc/terms/",
            "nypl": "http://data.nypl.org/nypl-core/",
            "skos": "http://www.w3.org/2004/02/skos/core#", 
-           "nyplLocation": "http://data.nypl.org/locations/"}
+           "nyplLocation": "http://data.nypl.org/locations/",
+           "recapCustomerCode": "http://data.nypl.org/recapCustomerCodes"}
 z.write(g.serialize(format="json-ld", context=context))
 
 z.close()
