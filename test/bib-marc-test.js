@@ -127,6 +127,26 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should extract ISBN', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10392955.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10392955')
+        })
+    })
+
+    it('should extract ISSN', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10537687.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10537687')
+        })
+    })
+
     it('should extract contributor role', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10392955.json'))
 
@@ -357,12 +377,14 @@ describe('Bib Marc Mapping', function () {
 
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
-        .then((item) => {
-          assert.equal(item.id, 'pb176961')
+        .then((bib) => {
+          assert.equal(bib.id, 'pb176961')
           // TODO need to check a whole bunch more fields...
-          assert.equal(item.objectId('rdf:type'), 'nypl:Item')
-          assert.equal(item.objectId('bf:media'), 'mediatypes:n')
-          assert.equal(item.objectId('bf:carrier'), 'carriertypes:nc')
+          assert.equal(bib.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
+          assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
+          // Extracted ISBN?
+          assert(bib.objectIds('dcterms:identifier').indexOf('urn:isbn:3871185949') >= 0)
         })
     })
   })
