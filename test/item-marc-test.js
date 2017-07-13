@@ -6,6 +6,10 @@ const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const ItemFieldMapper = require('./../lib/field-mapper').ItemFieldMapper
 
+// Ensure necessary env variables loaded
+require('dotenv').config({ path: './deploy.env' })
+require('dotenv').config({ path: './.env' })
+
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
@@ -89,6 +93,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('dcterms:title'), null)
           assert.equal(item.objectId('bf:status'), null)
           assert.equal(item.objectId('nypl:holdingLocation'), null)
+          assert.equal(item.literal('nypl:shelfMark'), null)
         })
     })
   })
@@ -139,7 +144,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('nypl:owner'), 'orgs:0003')
           assert.equal(item.objectId('bf:status'), 'status:a')
           // No restrictions:
-          assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:-')
+          assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:1')
         })
     })
   })

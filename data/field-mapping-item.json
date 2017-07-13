@@ -32,6 +32,13 @@
     "paths": [
       {
         "marc": "barcode"
+      },
+      {
+        "marc": "876",
+        "subfields": [
+          "p"
+        ],
+        "nyplSources": ["recap-pul", "recap-col"]
       }
     ]
   },

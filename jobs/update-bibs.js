@@ -11,7 +11,7 @@ var argv = require('optimist')
   .describe('seek', 'skip everything except this id')
   .describe('limit', 'Limit to this number of records')
   .describe('until', 'Stop after processing this offset')
-  .describe('uri_cache', 'Process specific bib (from cache)')
+  .describe('uri', 'Process specific bib by prefixed uri (from api)')
   .describe('loglevel', 'Specify log level (default info)')
   .describe('threads', 'Specify number of threads to run it under')
   .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
@@ -25,16 +25,16 @@ var opts = {
   seek: argv.seek || null
 }
 
-log.setLevel(argv.loglevel || 'info')
-
 // If --until given, dynamically set limit:
 if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 
 require('dotenv').config({ path: './deploy.env' })
 require('dotenv').config({ path: './.env' })
 
-if (argv.uri_cache) {
-  ; (new BibsUpdater()).uriFromCache(argv.uri_cache)
+log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
+
+if (argv.uri) {
+  ; (new BibsUpdater()).uriFromApi(argv.uri)
 } else if (argv.threads) {
   BibsUpdater.threaded(argv)
 } else {

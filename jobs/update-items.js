@@ -9,6 +9,7 @@ var argv = require('optimist')
   .describe('offset', 'Start at index')
   .describe('limit', 'Limit to this number of records')
   .describe('uri_cache', 'Process specific item by prefixed uri (from cache)')
+  .describe('uri', 'Process specific item by prefixed uri (from api)')
   .describe('uri_seek', 'Process a specific item by non-prefixed uri (by skipping over everything else in the stream)')
   .describe('loglevel', 'Specify log level (default error)')
   .describe('threads', 'Specify number of threads to run it under')
@@ -23,13 +24,13 @@ var opts = {
   seek: argv.uri_seek || null
 }
 
-log.setLevel(argv.loglevel || 'info')
-
 require('dotenv').config({ path: './deploy.env' })
 require('dotenv').config({ path: './.env' })
 
-if (argv.uri_cache) {
-  ; (new ItemsUpdater()).uriFromCache(argv.uri_cache)
+log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
+
+if (argv.uri) {
+  ; (new ItemsUpdater()).uriFromApi(argv.uri)
 } else if (argv.threads) {
   ItemsUpdater.threaded(argv)
 } else {

@@ -57,7 +57,7 @@ function processEvent (event, context, callback) {
     updater
       .update(opts, decoded)
       .then(() => {
-        log.debug('Wrote ' + decoded.length + ' successfully')
+        log.info('Wrote ' + decoded.length + ' successfully')
         callback(null, 'Done!')
       })
       .catch((error) => {
