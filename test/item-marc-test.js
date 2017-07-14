@@ -88,6 +88,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17355748')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:101')
+          assert.equal(item.literal('nypl:suppressed'), true)
           // Make sure no other statements are being saved for this item because it's branch
           assert.equal(item.objectId('nypl:owner'), null)
           assert.equal(item.objectId('dcterms:title'), null)
@@ -145,6 +146,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('bf:status'), 'status:a')
           // No restrictions:
           assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:1')
+          assert.equal(item.literal('nypl:suppressed'), false)
         })
     })
   })
