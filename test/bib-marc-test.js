@@ -134,16 +134,18 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10392955')
+          assert.equal(bib.objectIds('dcterms:identifier')[1], 'urn:isbn:0192113860 :')
         })
     })
 
     it('should extract ISSN', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-10537687.json'))
+      var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
 
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10537687')
+          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10011745')
+          assert.equal(bib.objectIds('dcterms:identifier')[1], 'urn:issn:0165-0254')
         })
     })
 

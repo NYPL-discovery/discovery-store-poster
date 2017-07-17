@@ -87,9 +87,9 @@ describe('Item Marc Mapping', function () {
         .then((item) => {
           assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17355748')
-          assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:101')
           assert.equal(item.literal('nypl:suppressed'), true)
           // Make sure no other statements are being saved for this item because it's branch
+          assert.equal(item.objectId('nypl:catalogItemType'), null)
           assert.equal(item.objectId('nypl:owner'), null)
           assert.equal(item.objectId('dcterms:title'), null)
           assert.equal(item.objectId('bf:status'), null)
@@ -165,6 +165,54 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.literal('nypl:requestable'), true)
           assert.equal(item.objectId('bf:media'), 'mediatypes:h')
           assert.equal(item.objectId('bf:carrier'), 'carriertypes:hd')
+        })
+    })
+  })
+
+  describe('Item suppression rules', function () {
+    it('should suppress item based on 876 $x', function () {
+      // Let's add 876 $x === 'Private' to this recap item to confirm it becomes suppressed:
+      var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
+      item.varFields = item.varFields
+        .filter((f) => f.marcTag === '876')
+        .map((f) => {
+          f.subFields.push({ tag: 'x', content: 'Private' })
+          return f
+        })
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.literal('nypl:suppressed'), true)
+
+          // Because we modified the object, clear require cache
+          delete require.cache[require.resolve('./data/item-pul-189241.json')]
+        })
+    })
+
+    it('should suppress item based on 900 $a', function () {
+      // Let's add 876 $x === 'Private' to this recap item to confirm it becomes suppressed:
+      var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
+      item.varFields = item.varFields
+        .filter((f) => f.marcTag === '900')
+        .map((f) => {
+          // Modify the $a subField (currently "Shared"):
+          f.subFields = f.subFields.map((subField) => {
+            if (subField.tag === 'a') subField.content = 'Private'
+            return subField
+          })
+          return f
+        })
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.literal('nypl:suppressed'), true)
+
+          // Because we modified the object, clear require cache
+          delete require.cache[require.resolve('./data/item-pul-189241.json')]
         })
     })
   })

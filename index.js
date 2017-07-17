@@ -44,7 +44,7 @@ function processEvent (event, context, callback) {
   let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? 'Bib' : 'Item'
 
   log.debug('Using schema: ', bibOrItem)
-  getSchema(bibOrItem).then((schemaType) => {
+  db.connect().then(() => getSchema(bibOrItem)).then((schemaType) => {
     // Get array of decoded records:
     var decoded = event.Records.map((record) => {
       const kinesisData = new Buffer(record.kinesis.data, 'base64')
