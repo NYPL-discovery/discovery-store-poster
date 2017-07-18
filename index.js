@@ -12,7 +12,7 @@ const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
 
 var dataApi = null
 
-let decrypted
+let decryptedDbConnectionString
 let CACHE = {}
 
 // Will need to figure out how to set these values through the lambda.
@@ -44,7 +44,8 @@ function processEvent (event, context, callback) {
   let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? 'Bib' : 'Item'
 
   log.debug('Using schema: ', bibOrItem)
-  db.connect().then(() => getSchema(bibOrItem)).then((schemaType) => {
+  // db.connect().then(() => getSchema(bibOrItem)).then((schemaType) => {
+  getSchema(bibOrItem).then((schemaType) => {
     // Get array of decoded records:
     var decoded = event.Records.map((record) => {
       const kinesisData = new Buffer(record.kinesis.data, 'base64')
@@ -81,15 +82,15 @@ exports.handler = (event, context, callback) => {
     log.info('Loading Lambda function')
   }
 
-  if (decrypted) {
-    db.setConn(decrypted)
+  if (decryptedDbConnectionString) {
+    db.setConnectionString(decryptedDbConnectionString)
     processEvent(event, context, callback)
   } else {
     // Decrypt code should run once and variables stored outside of the function
     // handler so that these are decrypted once per container
     kmsHelper.decryptDbCreds().then((val) => {
-      decrypted = val
-      db.setConn(decrypted)
+      decryptedDbConnectionString = val
+      db.setConnectionString(decryptedDbConnectionString)
       processEvent(event, context, callback)
     }).catch((err) => {
       log.error('Decrypt error:', err)

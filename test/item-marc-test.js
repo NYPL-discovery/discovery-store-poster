@@ -6,10 +6,6 @@ const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const ItemFieldMapper = require('./../lib/field-mapper').ItemFieldMapper
 
-// Ensure necessary env variables loaded
-require('dotenv').config({ path: './deploy.env' })
-require('dotenv').config({ path: './.env' })
-
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
@@ -171,14 +167,11 @@ describe('Item Marc Mapping', function () {
 
   describe('Item suppression rules', function () {
     it('should suppress item based on 876 $x', function () {
-      // Let's add 876 $x === 'Private' to this recap item to confirm it becomes suppressed:
+      // Let's add 876 $x 'Private' to this recap item to confirm it becomes suppressed:
       var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
-      item.varFields = item.varFields
+      item.varFields
         .filter((f) => f.marcTag === '876')
-        .map((f) => {
-          f.subFields.push({ tag: 'x', content: 'Private' })
-          return f
-        })
+        .forEach((f) => f.subFields.push({ tag: 'x', content: 'Private' }))
 
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
@@ -192,17 +185,15 @@ describe('Item Marc Mapping', function () {
     })
 
     it('should suppress item based on 900 $a', function () {
-      // Let's add 876 $x === 'Private' to this recap item to confirm it becomes suppressed:
+      // Let's set 900 $a to 'Private' to this recap item to confirm it becomes suppressed:
       var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
-      item.varFields = item.varFields
+      item.varFields
         .filter((f) => f.marcTag === '900')
-        .map((f) => {
+        .forEach((f) => {
           // Modify the $a subField (currently "Shared"):
-          f.subFields = f.subFields.map((subField) => {
+          f.subFields.forEach((subField) => {
             if (subField.tag === 'a') subField.content = 'Private'
-            return subField
           })
-          return f
         })
 
       return itemSerializer.fromMarcJson(item)
@@ -214,6 +205,52 @@ describe('Item Marc Mapping', function () {
           // Because we modified the object, clear require cache
           delete require.cache[require.resolve('./data/item-pul-189241.json')]
         })
+    })
+
+    it('should suppress item based on fixed "Item Type"', function () {
+      // Amend this item to have Item Type '50'
+      var item = require('./data/item-10003973.json')
+      item.fixedFields
+        .filter((f) => f.label === 'Item Type')
+        .forEach((f) => {
+          f.value = '50'
+        })
+      item = ItemSierraRecord.from(item)
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          // Note we can't check 'nypl:catalogItemType' because almost nothing apart form nypl:suppressed is being serialized
+          assert.equal(item.literal('nypl:suppressed'), true)
+
+          // Because we modified the object, clear require cache
+          delete require.cache[require.resolve('./data/item-10003973.json')]
+        })
+    })
+
+    it('should suppress item based on fixed "Item Code 2"', function () { // Amend this item to have Item Code 2 any of four '50'
+      var item = require('./data/item-10003973.json')
+      return Promise.all(['-', 's', 'w', 'd', 'p'].map((code) => {
+        // Set Item Code 2 to code
+        item.fixedFields
+          .filter((f) => f.label === 'Item Code 2')
+          .forEach((f) => {
+            f.value = code
+          })
+        item = ItemSierraRecord.from(item)
+
+        return itemSerializer.fromMarcJson(item)
+          .then((statements) => new Item(statements))
+          .then((item) => {
+            assert.equal(item.objectId('rdf:type'), 'bf:Item')
+            // Of the five values we setting, only '-' should cause item to be not suppressed
+            assert.equal(item.literal('nypl:suppressed'), code !== '-')
+
+            // Because we modified the object, clear require cache
+            delete require.cache[require.resolve('./data/item-10003973.json')]
+          })
+      }))
     })
   })
 })

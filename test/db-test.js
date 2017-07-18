@@ -17,7 +17,7 @@ describe('DB', function () {
       require('dotenv').config({ path: './.env' })
 
       return kmsHelper.decryptDbCreds()
-        .then((connectionUri) => db.setConn(connectionUri))
+        .then((connectionUri) => db.setConnectionString(connectionUri))
         .then(() => {
           // Create test statement
           return db.upsertStatement('resource', testStatement)
