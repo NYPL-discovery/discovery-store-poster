@@ -704,11 +704,11 @@
     "paths": [
       {
         "marc": "130",
-        "subfields": ["a", "b", "f", "n", "p"]
+        "subfields": ["a","d","f","g","k","l","m","n","o","p","r","s","t"]
       },
       {
         "marc": "240",
-        "subfields": ["a", "b", "f", "n", "p"]
+        "subfields": ["a","d","f","g","k","l","m","n","o","p","r","s"]
       }
     ]
   },

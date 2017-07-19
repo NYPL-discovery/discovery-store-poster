@@ -397,7 +397,7 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.id, 'b11070917')
-          assert.equal(bib.literal('nypl:uniformTitle'), 'Works.')
+          assert.equal(bib.literal('nypl:uniformTitle'), 'Works. Selections; arranged.')
         })
     })
 
