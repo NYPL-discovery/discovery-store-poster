@@ -2,6 +2,8 @@
 
 const log = require('loglevel')
 
+const kmsHelper = require('../lib/kms-helper')
+const db = require('../lib/db')
 const BibsUpdater = require('../lib/bibs-updater')
 
 var argv = require('optimist')
@@ -33,10 +35,14 @@ require('dotenv').config({ path: './.env' })
 
 log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 
-if (argv.uri) {
-  ; (new BibsUpdater()).uriFromApi(argv.uri)
-} else if (argv.threads) {
-  BibsUpdater.threaded(argv)
-} else {
-  ; (new BibsUpdater()).update(opts)
-}
+kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
+  db.setConnectionString(decryptedDbConnectionString)
+
+  if (argv.uri) {
+    ; (new BibsUpdater()).uriFromApi(argv.uri)
+  } else if (argv.threads) {
+    BibsUpdater.threaded(argv)
+  } else {
+    ; (new BibsUpdater()).update(opts)
+  }
+})

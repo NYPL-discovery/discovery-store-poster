@@ -2,6 +2,8 @@
 
 const log = require('loglevel')
 
+const kmsHelper = require('../lib/kms-helper')
+const db = require('../lib/db')
 const ItemsUpdater = require('../lib/items-updater')
 
 var argv = require('optimist')
@@ -29,10 +31,14 @@ require('dotenv').config({ path: './.env' })
 
 log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 
-if (argv.uri) {
-  ; (new ItemsUpdater()).uriFromApi(argv.uri)
-} else if (argv.threads) {
-  ItemsUpdater.threaded(argv)
-} else {
-  ; (new ItemsUpdater()).update(opts)
-}
+kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
+  db.setConnectionString(decryptedDbConnectionString)
+
+  if (argv.uri) {
+    ; (new ItemsUpdater()).uriFromApi(argv.uri)
+  } else if (argv.threads) {
+    ItemsUpdater.threaded(argv)
+  } else {
+    ; (new ItemsUpdater()).update(opts)
+  }
+})
