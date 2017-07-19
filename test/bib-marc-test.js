@@ -411,6 +411,17 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:uniformTitle'), 'Positively black (Television program)')
         })
     })
+
+    it('should parse Series statement', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-15287586.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b15287586')
+          assert.equal(bib.literal('bf:seriesStatement'), 'Transaction ; no. 75')
+        })
+    })
   })
 })
 

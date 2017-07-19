@@ -621,6 +621,16 @@
       }
     ]
   },
+  "Series statement": {
+    "pred": "bf:seriesStatement",
+    "jsonLdKey": "seriesStatement",
+    "paths": [
+      {
+        "marc": "490",
+        "subfields": ["3","a","x","v","l"]
+      }
+    ]
+  },
   "Subject literal": {
     "pred": "dc:subject",
     "jsonLdKey": "subjectLiteral",
