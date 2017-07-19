@@ -207,7 +207,7 @@
     "jsonLdKey": "identifier",
     "paths": [
       {
-        "notes": "see Identifiers tab"
+        "notes": "There are many mapped identifiers"
       }
     ]
   },
@@ -274,9 +274,18 @@
     "jsonLdKey": "lccClassification",
     "paths": [
       {
+        "marc": "050",
+        "subfields": [ "a", "b", "c" ]
+      }
+    ]
+  },
+  "LCCN": {
+    "pred": "dcterms:identifier",
+    "jsonLdKey": "identifier",
+    "paths": [
+      {
         "marc": "010",
-        "subfields": [ "a" ],
-        "nyplSources": []
+        "subfields": [ "a" ]
       }
     ]
   },

@@ -422,6 +422,28 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('bf:seriesStatement'), 'Transaction ; no. 75')
         })
     })
+
+    it('should parse LCCN', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11070917.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b11070917')
+          assert(bib.objectIds('dcterms:identifier').indexOf('urn:lccn:r  59001818') >= 0)
+        })
+    })
+
+    it('should parse LCC classification', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10681848.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b10681848')
+          assert.equal(bib.literal('nypl:lccClassification'), 'N6797.P3 A4 1980')
+        })
+    })
   })
 })
 
