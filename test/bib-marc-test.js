@@ -389,6 +389,28 @@ describe('Bib Marc Mapping', function () {
           assert(bib.objectIds('dcterms:identifier').indexOf('urn:isbn:3871185949') >= 0)
         })
     })
+
+    it('should parse Uniform title from 240', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11070917.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b11070917')
+          assert.equal(bib.literal('nypl:uniformTitle'), 'Works.')
+        })
+    })
+
+    it('should parse Uniform title from 130', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20169090.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b20169090')
+          assert.equal(bib.literal('nypl:uniformTitle'), 'Positively black (Television program)')
+        })
+    })
   })
 })
 

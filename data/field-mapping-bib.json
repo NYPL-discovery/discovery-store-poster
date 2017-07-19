@@ -698,6 +698,20 @@
       }
     ]
   },
+  "Uniform title": {
+    "pred": "nypl:uniformTitle",
+    "jsonLdKey": "uniformTitle",
+    "paths": [
+      {
+        "marc": "130",
+        "subfields": ["a", "b", "f", "n", "p"]
+      },
+      {
+        "marc": "240",
+        "subfields": ["a", "b", "f", "n", "p"]
+      }
+    ]
+  },
   "Title display": {
     "pred": "nypl:titleDisplay",
     "jsonLdKey": "titleDisplay",
