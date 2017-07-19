@@ -48,6 +48,7 @@ function onSchemaLoad (schema) {
 function fixRecord (record) {
   if (record.nyplType === 'bib') return fixBib(record)
   if (record.nyplType === 'item') return fixItem(record)
+  if (!record.nyplType) console.error('Must set nyplType')
   return record
 }
 
@@ -89,8 +90,8 @@ function fixBib (bib) {
     }, {})
   }
 
-  bib = ['deletedDate'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), bib)
-  // if (!bib.deletedDate) bib.deletedDate = null
+  bib = ['deletedDate', 'locations', 'normTitle', 'normAuthor'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), bib)
+  if (!bib.nyplSource) bib.nyplSource = 'sierra-nypl'
 
   return bib
 }
