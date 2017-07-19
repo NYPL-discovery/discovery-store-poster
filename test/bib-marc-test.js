@@ -41,7 +41,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should extract e-item with mult urls', function () {
+    it('should extract electronic resource with mult urls', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
 
       // console.log('bib: ', bib)
@@ -442,6 +442,50 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           assert.equal(bib.id, 'b10681848')
           assert.equal(bib.literal('nypl:lccClassification'), 'N6797.P3 A4 1980')
+        })
+    })
+
+    it('should parse description', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11253008.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b11253008')
+          assert.equal(bib.literal('dcterms:description'), 'Geoffrey Holder discusses his work in the Broadway production of Timbuktu where he is the director, choreographer, and costume designer.  He also discusses the influence his family and his birthplace, Trinidad, has on his work.  Holder stresses the need for fantasy and splendor in his work and in the world.')
+        })
+    })
+
+    it('should parse dates', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11253008.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.id, 'b11253008')
+          assert.equal(bib.literal('dbo:startDate'), 1978)
+          assert.equal(bib.literal('dcterms:created'), 1978)
+          assert.equal(bib.literal('dc:date'), 1978)
+        })
+    })
+
+    it('should parse language', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10392955.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.objectId('dcterms:language'), 'lang:eng')
+        })
+    })
+
+    it('should parse publisher literal', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian,')
         })
     })
   })
