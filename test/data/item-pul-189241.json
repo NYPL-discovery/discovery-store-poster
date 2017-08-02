@@ -16,7 +16,7 @@
   "status": {
     "code": "-",
     "display": "Available",
-    "dueDate": null
+    "duedate": null
   },
   "barcode": "32101062243553",
   "callNumber": "PJ7601",
