@@ -1,5 +1,5 @@
 // Usage:
-//    node kinesify-data.js INFILES OUTFILE [SCHEMAURL]
+//    node kinesify-data.js [INFILES] [OUTFILE] [SCHEMAURL]
 //
 //  The following command will take unencoded json, encode it with avro schema, encode it with base64, and put in Kinesis format.
 //    node kinesify-data.js event.unencoded.bibs.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
@@ -11,17 +11,23 @@
 //  If you want to load up multiple bibs or items in one event.json (to test batches > 1),
 //  infile accepts comma-delimited paths:
 //    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//
+//  To build an event.json with nypl bib ids (i.e. to debug a failed run on a list of ids):
+//    node kinesify-data --ids "[comma delimited nypl bib ids]"
+//    e.g.
+//    node kinesify-data --ids "15796439, 15796440, 15796449, 15796502"
 
-const args = process.argv.slice(2)
 const avro = require('avsc')
 const fs = require('fs')
 const request = require('request')
 const config = require('config')
+const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
+const argv = require('minimist')(process.argv.slice(2))
 
 // config
-const infile = args[0]
-const outfile = args[1] || 'event.json'
-var schemaUrl = args[2] || 'https://api.nypltech.org/api/v0.1/current-schemas/Bib'
+const infile = argv._[0]
+const outfile = argv._[1] || 'event.json'
+var schemaUrl = argv._[2] || 'https://api.nypltech.org/api/v0.1/current-schemas/Bib'
 
 function onSchemaLoad (schema) {
   // initialize avro schema
@@ -140,16 +146,59 @@ function kinesify (record, avroType) {
   }
 }
 
-// read unencoded data
-var unencodedData = infile.split(',')
-  .map((f) => fs.readFileSync(f, 'utf8'))
-  .map(JSON.parse)
+const fetchSchema = () => {
+  var options = {
+    uri: schemaUrl,
+    json: true
+  }
+  request(options, function (error, resp, body) {
+    if (error) console.log('Error (#request): ' + error)
 
-// If they're plain marcinjson document(s), convert them into the event.json form:
-if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
+    if (body.data && body.data.schema) {
+      // console.log('Loaded schema', body.data.schema)
+      var schema = JSON.parse(body.data.schema)
+      onSchemaLoad(schema)
+    }
+  })
+}
 
-// Otherwise, if it's a single event-formatted json:
-else if (unencodedData[0].Records && unencodedData.length === 1) unencodedData = unencodedData.shift()
+let unencodedData = null
+
+// If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
+if (argv.ids) {
+  require('dotenv').config({ path: './deploy.env' })
+  require('dotenv').config({ path: '.env' })
+
+  // This draws from these env vars:
+  // NYPL_API_BASE_URL
+  // NYPL_OAUTH_KEY
+  // NYPL_OAUTH_SECRET
+  // NYPL_OAUTH_URL
+  let dataApi = new NYPLDataApiClient()
+  let ids = argv.ids.split(',').map((id) => id.trim())
+
+  Promise.all(
+    ids.map((id) => {
+      return dataApi.get(`bibs/sierra-nypl/${id}`)
+    })
+  ).then((bibs) => {
+    unencodedData = { Records: bibs }
+    fetchSchema()
+  })
+} else {
+  // read unencoded data
+  unencodedData = infile.split(',')
+    .map((f) => fs.readFileSync(f, 'utf8'))
+    .map(JSON.parse)
+
+  // If they're plain marcinjson document(s), convert them into the event.json form:
+  if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
+
+  // Otherwise, if it's a single event-formatted json:
+  else if (unencodedData[0].Records && unencodedData.length === 1) unencodedData = unencodedData.shift()
+
+  fetchSchema()
+}
 
 // As a convenience, if schemaUrl not explicitly given, derive it from nyplType of first record:
 if (!schemaUrl) {
@@ -158,16 +207,3 @@ if (!schemaUrl) {
   schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${type.substring(0, 1).toUpperCase()}${type.substring(1)}`
 }
 
-var options = {
-  uri: schemaUrl,
-  json: true
-}
-request(options, function (error, resp, body) {
-  if (error) console.log('Error (#request): ' + error)
-
-  if (body.data && body.data.schema) {
-    // console.log('Loaded schema', body.data.schema)
-    var schema = JSON.parse(body.data.schema)
-    onSchemaLoad(schema)
-  }
-})
