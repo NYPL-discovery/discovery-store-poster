@@ -4,14 +4,14 @@ const assert = require('assert')
 const itemSerializer = require('./../lib/serializers/item')
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
-const ItemFieldMapper = require('./../lib/field-mapper').ItemFieldMapper
+const buildMapper = require('./../lib/field-mapper')
 
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
   describe('Parse', function () {
     it('should parse marc mapping for sierra-nypl', function () {
-      var mapper = new ItemFieldMapper('sierra-nypl')
+      var mapper = buildMapper('item', 'sierra-nypl')
 
       var mapping = mapper.getMapping('Availability')
       assert.equal(mapping.paths.length, 1)
@@ -19,7 +19,7 @@ describe('Item Marc Mapping', function () {
     })
 
     it('should parse marc mapping differently for recap-pul', function () {
-      var mapper = new ItemFieldMapper('recap-pul')
+      var mapper = buildMapper('item', 'recap-pul')
 
       var mapping = mapper.getMapping('Availability')
       assert.equal(mapping.paths.length, 2)
