@@ -13,7 +13,7 @@
 //    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
 //
 //  To build an event.json with nypl bib ids (i.e. to debug a failed run on a list of ids):
-//    node kinesify-data --ids "[comma delimited nypl bib ids]"
+//    node kinesify-data --ids "[comma delimited nypl bib ids]" [--nyplType bib/item]
 //    e.g.
 //    node kinesify-data --ids "15796439, 15796440, 15796449, 15796502"
 
@@ -22,7 +22,12 @@ const fs = require('fs')
 const request = require('request')
 const config = require('config')
 const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
-const argv = require('minimist')(process.argv.slice(2))
+const argv = require('minimist')(process.argv.slice(2), {
+  string: ['ids'],
+  default: {
+    nyplType: 'bib'
+  }
+})
 
 // config
 const infile = argv._[0]
@@ -179,7 +184,7 @@ if (argv.ids) {
 
   Promise.all(
     ids.map((id) => {
-      return dataApi.get(`bibs/sierra-nypl/${id}`)
+      return dataApi.get(`${argv.nyplType}s/sierra-nypl/${id}`)
     })
   ).then((bibs) => {
     unencodedData = { Records: bibs }
