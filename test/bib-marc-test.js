@@ -1,7 +1,7 @@
 /* global describe it */
 
 const assert = require('assert')
-const BibFieldMapper = require('./../lib/field-mapper').BibFieldMapper
+const buildMapper = require('./../lib/field-mapper')
 const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const Bib = require('./../lib/models/bib')
@@ -11,7 +11,7 @@ describe('Bib Marc Mapping', function () {
 
   describe('Parse', function () {
     it('should parse marc mapping', function () {
-      var mapping = new BibFieldMapper('sierra-nypl')
+      var mapping = buildMapper('bib', 'sierra-nypl')
 
       var altTitleMapping = mapping.getMapping('Alternative title')
       // right number of alt title mappings:
@@ -144,6 +144,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
+          console.log('got bib: ', bib.objectIds('dcterms:identifier'))
           assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10011745')
           assert.equal(bib.objectIds('dcterms:identifier')[1], 'urn:issn:0165-0254')
         })
