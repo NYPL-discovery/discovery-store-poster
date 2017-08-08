@@ -1,6 +1,6 @@
 'use strict'
 
-const log = require('loglevel')
+const log = require('../lib/logger')
 
 const kmsHelper = require('../lib/kms-helper')
 const db = require('../lib/db')
@@ -33,7 +33,8 @@ if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 require('dotenv').config({ path: './deploy.env' })
 require('dotenv').config({ path: './.env' })
 
-log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
+if (argv.loglevel) log.level = argv.loglevel
+if (argv.loglevel) console.log('setting loglevel: ', log.level)
 
 kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
   db.setConnectionString(decryptedDbConnectionString)

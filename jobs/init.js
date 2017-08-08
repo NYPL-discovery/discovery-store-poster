@@ -1,7 +1,7 @@
 'use strict'
 
-const log = require('loglevel')
 const prompt = require('prompt')
+const log = require('../lib/logger')
 
 const argv = require('optimist')
   .describe('loglevel', 'Specify log level (default error)')
@@ -9,7 +9,6 @@ const argv = require('optimist')
   .describe('create', 'Create db')
   .describe('stats', 'Get stats')
   .argv
-log.setLevel(argv.loglevel || 'info')
 
 const db = require('../lib/db')
 

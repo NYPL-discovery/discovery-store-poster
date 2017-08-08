@@ -76,9 +76,7 @@ exports.handler = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false
 
   if (!log) {
-    // Set log level (default 'info')
-    log = require('loglevel')
-    log.setLevel(process.env['LOGLEVEL'] || 'info')
+    log = require('./lib/logger')
     log.info('Loading Lambda function')
   }
 
