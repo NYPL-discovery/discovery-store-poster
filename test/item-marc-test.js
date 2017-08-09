@@ -60,18 +60,6 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.statement('nypl:accessMessage').object_label, 'ADV REQUEST')
         })
     })
-
-    it('should extract delivery locations', function () {
-      return itemSerializer.fromMarcJson(item)
-        .then((statements) => new Item(statements))
-        .then((item) => {
-          // Look for a few known delivery locations for this location:
-          var deliveryLocations = item.objectIds('nypl:deliveryLocation')
-          assert(deliveryLocations.indexOf('loc:map') >= 0)
-          assert(deliveryLocations.indexOf('loc:mag') >= 0)
-          assert(deliveryLocations.indexOf('loc:maf') >= 0)
-        })
-    })
   })
 
   describe('Parse catalogItemType', function () {
