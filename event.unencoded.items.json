@@ -1,108 +1,297 @@
 {
   "Records": [
     {
-      "id": "189241",
-      "nyplSource": "recap-PUL",
+      "nyplSource": "sierra-nypl",
+      "bibIds": [
+        "11233776"
+      ],
+      "id": "12063851",
       "nyplType": "item",
-      "updatedDate": "2016-11-22T21:34:31Z",
-      "createdDate": "",
+      "updatedDate": "2016-10-20T23:49:04-04:00",
+      "createdDate": "2009-02-05T22:00:00-05:00",
       "deletedDate": null,
       "deleted": false,
-      "bibIds": [
-        "176961"
-      ],
       "location": {
-        "code": "rcppa",
-        "name": "Princeton University Library"
+        "code": "rc2ma",
+        "name": "OFFSITE - Request in Advance"
       },
       "status": {
         "code": "-",
-        "display": "Available",
+        "display": "AVAILABLE",
         "duedate": null
       },
-      "barcode": "32101062243553",
-      "callNumber": "PJ7601",
+      "barcode": "33433017300231",
+      "callNumber": "|h",
       "itemType": null,
-      "fixedFields": null,
+      "fixedFields": {
+        "57": {
+          "label": "BIB HOLD",
+          "value": false,
+          "display": null
+        },
+        "58": {
+          "label": "Copy No.",
+          "value": 1,
+          "display": null
+        },
+        "59": {
+          "label": "Item Code 1",
+          "value": "0",
+          "display": null
+        },
+        "60": {
+          "label": "Item Code 2",
+          "value": "-",
+          "display": null
+        },
+        "61": {
+          "label": "Item Type",
+          "value": "55",
+          "display": null
+        },
+        "62": {
+          "label": "Price",
+          "value": 0,
+          "display": null
+        },
+        "64": {
+          "label": "Checkout Location",
+          "value": 331,
+          "display": null
+        },
+        "68": {
+          "label": "Last Checkin",
+          "value": "2012-07-26T16:40:00Z",
+          "display": null
+        },
+        "69": {
+          "label": "Inventory Date",
+          "value": "2014-06-01T08:00:00Z",
+          "display": null
+        },
+        "70": {
+          "label": "Checkin Location",
+          "value": 331,
+          "display": null
+        },
+        "74": {
+          "label": "Item Use 3",
+          "value": 0,
+          "display": null
+        },
+        "76": {
+          "label": "Total Checkouts",
+          "value": 2,
+          "display": null
+        },
+        "77": {
+          "label": "Total Renewals",
+          "value": 0,
+          "display": null
+        },
+        "78": {
+          "label": "Last Checkout Date",
+          "value": "2012-07-26T16:02:00Z",
+          "display": null
+        },
+        "79": {
+          "label": "Location",
+          "value": "rc2ma",
+          "display": "OFFSITE - Request in Advance"
+        },
+        "80": {
+          "label": "Record Type",
+          "value": "i",
+          "display": null
+        },
+        "81": {
+          "label": "Record Number",
+          "value": "12063851",
+          "display": null
+        },
+        "83": {
+          "label": "Created Date",
+          "value": "2009-02-05T22:00:00Z",
+          "display": null
+        },
+        "84": {
+          "label": "Updated Date",
+          "value": "2016-10-20T23:49:04Z",
+          "display": null
+        },
+        "85": {
+          "label": "No. of Revisions",
+          "value": "33",
+          "display": null
+        },
+        "86": {
+          "label": "Agency",
+          "value": "1",
+          "display": null
+        },
+        "88": {
+          "label": "Status",
+          "value": "-",
+          "display": "AVAILABLE"
+        },
+        "93": {
+          "label": "Inhouse Use",
+          "value": 0,
+          "display": null
+        },
+        "94": {
+          "label": "Copy Use",
+          "value": 0,
+          "display": null
+        },
+        "97": {
+          "label": "Item Message",
+          "value": "-",
+          "display": null
+        },
+        "98": {
+          "label": "PDATE",
+          "value": "2014-08-09T00:03:29Z",
+          "display": null
+        },
+        "108": {
+          "label": "OPAC Message",
+          "value": "2",
+          "display": null
+        },
+        "109": {
+          "label": "Year-to-Date Circ",
+          "value": 0,
+          "display": null
+        },
+        "110": {
+          "label": "Last Year Circ",
+          "value": 0,
+          "display": null
+        },
+        "127": {
+          "label": "Item Agency",
+          "value": "214",
+          "display": "ReCAP (NA) - NYPL Standard"
+        },
+        "161": {
+          "label": "VI Central",
+          "value": 0,
+          "display": null
+        },
+        "162": {
+          "label": "IR Dist Learn Same Site",
+          "value": "0",
+          "display": null
+        },
+        "264": {
+          "label": "Holdings Item Tag",
+          "value": "6",
+          "display": null
+        },
+        "265": {
+          "label": "Inherit Location",
+          "value": false,
+          "display": null
+        }
+      },
       "varFields": [
         {
-          "fieldTag": null,
-          "marcTag": "876",
+          "fieldTag": "a",
+          "marcTag": "949",
           "ind1": " ",
           "ind2": " ",
           "content": null,
           "subFields": [
             {
-              "tag": "p",
-              "content": "32101062243553"
+              "tag": "c",
+              "content": "33433017300231"
             },
             {
               "tag": "h",
-              "content": ""
-            },
-            {
-              "tag": "a",
-              "content": "189241"
-            },
-            {
-              "tag": "j",
-              "content": "Available"
-            },
-            {
-              "tag": "t",
               "content": "1"
-            },
-            {
-              "tag": "3",
-              "content": "bd. 2 "
-            }
-          ]
-        },
-        {
-          "fieldTag": null,
-          "marcTag": "900",
-          "ind1": " ",
-          "ind2": " ",
-          "content": null,
-          "subFields": [
-            {
-              "tag": "a",
-              "content": "Shared"
-            },
-            {
-              "tag": "b",
-              "content": "PA"
-            }
-          ]
-        },
-        {
-          "fieldTag": null,
-          "marcTag": "852",
-          "ind1": "0",
-          "ind2": "1",
-          "content": null,
-          "subFields": [
-            {
-              "tag": "b",
-              "content": "rcppa"
-            },
-            {
-              "tag": "t",
-              "content": "1"
-            },
-            {
-              "tag": "h",
-              "content": "PJ7601"
             },
             {
               "tag": "i",
-              "content": ".H35"
+              "content": "0"
+            },
+            {
+              "tag": "j",
+              "content": "-"
+            },
+            {
+              "tag": "k",
+              "content": "2"
+            },
+            {
+              "tag": "l",
+              "content": "$0.00"
+            },
+            {
+              "tag": "m",
+              "content": "0"
+            },
+            {
+              "tag": "n",
+              "content": "1"
+            },
+            {
+              "tag": "o",
+              "content": "0"
+            },
+            {
+              "tag": "p",
+              "content": "rch  "
+            },
+            {
+              "tag": "q",
+              "content": "-"
+            },
+            {
+              "tag": "r",
+              "content": "0"
+            },
+            {
+              "tag": "s",
+              "content": "0"
+            },
+            {
+              "tag": "t",
+              "content": "-"
+            },
+            {
+              "tag": "u",
+              "content": "-"
+            },
+            {
+              "tag": "v",
+              "content": "1"
+            },
+            {
+              "tag": "w",
+              "content": "0"
             },
             {
               "tag": "x",
-              "content": "tr fr arab"
+              "content": ".i36188025"
+            },
+            {
+              "tag": "y",
+              "content": "06-26-03"
+            },
+            {
+              "tag": "z",
+              "content": "01-14-09"
             }
           ]
+        },
+        {
+          "fieldTag": "b",
+          "marcTag": null,
+          "ind1": null,
+          "ind2": null,
+          "content": "33433017300231",
+          "subFields": null
         }
       ]
     }

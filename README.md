@@ -89,10 +89,12 @@ EXCLUDE_GLOBS="event.json"
 PACKAGE_DIRECTORY=build
 ```
 
-**deploy.env** - should be updated to include the following:
+**deploy[.environment].env** - should be updated to include the following:
 ```
 DISCOVERY_STORE_CONNECTION_URI=[discovery-store postgres connection string, ecrypted via KMS 'lambda-rds' key]
 NYPL_API_BASE_URL=[base url for NYPL data api ending in "/"]
+INDEX_DOCUMENT_STREAM_NAME=[stream name to write to, e.g. IndexDocumentQueue-dev]
+INDEX_DOCUMENT_SCHEMA_NAME=[avro schema to use when encoding "index document" messages, e.g. IndexDocumentQueue]
 ```
 
 To retrieve KMS encrypted values using the AWS cli:
@@ -102,9 +104,9 @@ aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext co
 
 **index.js** - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
-To test locally run `node-lambda run -f deploy.env`. The `-f deploy.env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+To test locally run `node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
 
-To push to AWS run `node-lambda deploy -f deploy.env`.
+To push to AWS run `node-lambda deploy -f deploy[.environment].env`.
 
 ### Test Data
 
@@ -131,10 +133,10 @@ Alternatively, to generate a event.json from a plain marcinjson document (such a
 
     node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
-Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy.env`.
+Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy[.environment].env`.
 
 ### Testing
 
-Ensure you have a `deploy.env` and `.env` as described above. Then:
+Ensure you have a `deploy[.environment].env` and `.env` as described above. Then:
 
-```npm test```
+```ENVFILE=./deploy.environment.env npm test```

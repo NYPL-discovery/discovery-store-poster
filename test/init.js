@@ -1,11 +1,17 @@
 /* global before */
 
-const kmsHelper = require('./../lib/kms-helper')
-const db = require('./../lib/db')
+if (!process.env.ENVFILE) {
+  console.log('Missing ENVFILE env variable. E.g. `ENVFILE=deploy.production.env npm test`')
+  process.exit()
+}
 
 // Ensure necessary env variables loaded
-require('dotenv').config({ path: './deploy.env' })
-require('dotenv').config({ path: './.env' })
+require('dotenv').config({ path: 'deploy.production.env' })
+// process.env.ENVFILE })
+require('dotenv').config({ path: '.env' })
+
+const kmsHelper = require('./../lib/kms-helper')
+const db = require('./../lib/db')
 
 // Initialize db connection:
 before(() => {
