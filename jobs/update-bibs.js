@@ -33,8 +33,7 @@ if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 require('dotenv').config({ path: './deploy.env' })
 require('dotenv').config({ path: './.env' })
 
-if (argv.loglevel) log.level = argv.loglevel
-if (argv.loglevel) console.log('setting loglevel: ', log.level)
+if (argv.loglevel) log.setLevel(argv.loglevel)
 
 kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
   db.setConnectionString(decryptedDbConnectionString)

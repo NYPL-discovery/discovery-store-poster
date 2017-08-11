@@ -75,6 +75,8 @@ exports.handler = (event, context, callback) => {
   // TODO see if we can remove this now that we're no longer using libpq
   context.callbackWaitsForEmptyEventLoop = false
 
+  // Instantiate the logger inside the handler so that it has access to
+  // instance info when writing to console
   if (!log) {
     log = require('./lib/logger')
     log.info('Loading Lambda function')
