@@ -6,8 +6,7 @@ if (!process.env.ENVFILE) {
 }
 
 // Ensure necessary env variables loaded
-require('dotenv').config({ path: 'deploy.production.env' })
-// process.env.ENVFILE })
+require('dotenv').config({ path: process.env.ENVFILE })
 require('dotenv').config({ path: '.env' })
 
 const kmsHelper = require('./../lib/kms-helper')
