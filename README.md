@@ -104,13 +104,13 @@ aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext co
 
 **index.js** - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
-To test locally run `node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+To test locally run `./node_modules/.bin/node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
 
-To push to AWS run `node-lambda deploy -f deploy[.environment].env`.
+To push to AWS run `./node_modules/.bin/node-lambda deploy -f deploy[.environment].env`.
 
 ### Test Data
 
-The Lambda is set up to read AWS events, one of which is a Kinesis stream. The PCDM Store Updater reads from two Kinesis Streams: Bib and Item. As mentioned above, to test locally run `node-lambda run -f deploy.env`. This will use the `event.json` file as the Kinesis event source. Make sure you update your `config/local.json` file to include the values for the Kinesis streams:
+The Lambda is set up to read AWS events, one of which is a Kinesis stream. The PCDM Store Updater reads from two Kinesis Streams: Bib and Item. As mentioned above, to test locally run `./node_modules/.bin/node-lambda run -f deploy.env`. This will use the `event.json` file as the Kinesis event source. Make sure you update your `config/local.json` file to include the values for the Kinesis streams:
 
     "kinesisReadStreams": {
       "bib": "arn:aws:kinesis:us-east-1:[AWS-ID]:stream/Bib",
@@ -133,9 +133,33 @@ Alternatively, to generate a event.json from a plain marcinjson document (such a
 
     node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
-Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy[.environment].env`.
+Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `./node_modules/.bin/node-lambda run -f deploy[.environment].env`.
 
-### Testing
+## Initialization On a New Environment
+
+The very first time this is run on an environment, you'll need to initialize the DB environment.
+
+To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
+
+```
+node jobs/init.js check --envfile deploy[.environment].env
+```
+
+If no errors are thrown, and the reported creds look correct, proceed with DB creation:
+
+The following will create necessary tables in the DB instance (identified in specified `--envfile`):
+
+```
+node jobs/init.js create --envfile deploy[.environment].env
+```
+
+To verify that the serialization works on a sample document, you can run the following:
+
+```
+./node_modules/.bin/node-lambda run -f deploy[.environment].env`
+```
+
+## Testing
 
 Ensure you have a `deploy[.environment].env` and `.env` as described above. Then:
 
