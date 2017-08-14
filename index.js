@@ -88,8 +88,7 @@ exports.handler = (event, context, callback) => {
   } else {
     // Decrypt code should run once and variables stored outside of the function
     // handler so that these are decrypted once per container
-    kmsHelper.decryptDbCreds().then((val) => {
-      decryptedDbConnectionString = val
+    kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
       db.setConnectionString(decryptedDbConnectionString)
       processEvent(event, context, callback)
     }).catch((err) => {
