@@ -16,7 +16,6 @@
     "config": "^1.21.0",
     "highland": "^2.10.0",
     "image-size": "^0.5.0",
-    "kafka-node": "^0.5.9",
     "log4js": "^1.1.0",
     "loglevel": "^1.4.1",
     "mkdirp": "^0.5.1",
