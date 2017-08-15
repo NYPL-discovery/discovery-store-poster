@@ -2,6 +2,8 @@
 
 Operates in bulk/listener mode to pull bib/item/other data and translate it as a series of statements into a centeral data store.
 
+*Note: A known issue with node-lambda & aws-sdk may cause KMS `decrypt` to fail to use the correct AWS credentials if node-lambda is installed locally as a dev dependency. Until (this node-lambda PR)[https://github.com/motdotla/node-lambda/pull/369] is published to NPMJS, node-lambda should be installed globally, as noted below.*
+
 ## Usage
 
 ### Bibs
@@ -104,13 +106,13 @@ aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext co
 
 **index.js** - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
-To test locally run `./node_modules/.bin/node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+To test locally run `node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
 
-To push to AWS run `./node_modules/.bin/node-lambda deploy -f deploy[.environment].env`.
+To push to AWS run `node-lambda deploy -f deploy[.environment].env`.
 
 ### Test Data
 
-The Lambda is set up to read AWS events, one of which is a Kinesis stream. The PCDM Store Updater reads from two Kinesis Streams: Bib and Item. As mentioned above, to test locally run `./node_modules/.bin/node-lambda run -f deploy.env`. This will use the `event.json` file as the Kinesis event source. Make sure you update your `config/local.json` file to include the values for the Kinesis streams:
+The Lambda is set up to read AWS events, one of which is a Kinesis stream. The PCDM Store Updater reads from two Kinesis Streams: Bib and Item. As mentioned above, to test locally run `node-lambda run -f deploy.env`. This will use the `event.json` file as the Kinesis event source. Make sure you update your `config/local.json` file to include the values for the Kinesis streams:
 
     "kinesisReadStreams": {
       "bib": "arn:aws:kinesis:us-east-1:[AWS-ID]:stream/Bib",
@@ -133,7 +135,7 @@ Alternatively, to generate a event.json from a plain marcinjson document (such a
 
     node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
-Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `./node_modules/.bin/node-lambda run -f deploy[.environment].env`.
+Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy[.environment].env`.
 
 ## Initialization On a New Environment
 
@@ -156,7 +158,7 @@ node jobs/init.js create --envfile deploy[.environment].env
 To verify that the serialization works on a sample document, you can run the following:
 
 ```
-./node_modules/.bin/node-lambda run -f deploy[.environment].env`
+node-lambda run -f deploy[.environment].env`
 ```
 
 ## Testing
