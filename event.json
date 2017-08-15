@@ -14,7 +14,7 @@
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::EXAMPLE",
       "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:224280085904:stream/Bib"
+      "eventSourceARN": "the-first-part-of-the-arn-does-not-matter...this-part-does:/Bib"
     }
   ]
 }

@@ -2,11 +2,11 @@
 //    node kinesify-data.js [INFILES] [OUTFILE] [SCHEMAURL]
 //
 //  The following command will take unencoded json, encode it with avro schema, encode it with base64, and put in Kinesis format.
-//    node kinesify-data.js event.unencoded.bibs.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//    node kinesify-data.js event.unencoded.bibs.json
 //
 //  If infile is a plain marcinjson document, it will be converted into the right form.
 //  i.e. You can load sample docs directly from the test data:
-//    node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//    node kinesify-data test/data/bib-10011745.json
 //
 //  If you want to load up multiple bibs or items in one event.json (to test batches > 1),
 //  infile accepts comma-delimited paths:
@@ -20,7 +20,6 @@
 const avro = require('avsc')
 const fs = require('fs')
 const request = require('request')
-const config = require('config')
 const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
 const argv = require('minimist')(process.argv.slice(2), {
   string: ['ids'],
@@ -32,7 +31,7 @@ const argv = require('minimist')(process.argv.slice(2), {
 // config
 const infile = argv._[0]
 const outfile = argv._[1] || 'event.json'
-var schemaUrl = argv._[2] || 'https://api.nypltech.org/api/v0.1/current-schemas/Bib'
+var schemaUrl = argv._[2]
 
 function onSchemaLoad (schema) {
   // initialize avro schema
@@ -147,11 +146,25 @@ function kinesify (record, avroType) {
     'eventName': 'aws:kinesis:record',
     'invokeIdentityArn': 'arn:aws:iam::EXAMPLE',
     'awsRegion': 'us-east-1',
-    'eventSourceARN': config.get('kinesisReadStreams')[record.nyplType]
+    // We depend on the ARN ending in /Bib or /Item to determine how to decode the payload
+    // Everything up to that is ignored
+    'eventSourceARN': `the-first-part-of-the-arn-does-not-matter...this-part-does:/${schemaNameFromNyplType(record.nyplType)}`
+  }
+}
+
+function schemaNameFromNyplType (type) {
+  switch (type) {
+    case 'bib': return 'Bib'
+    case 'item': return 'Item'
+    default: throw new Error('Unrecognized nyplType: ' + type)
   }
 }
 
 const fetchSchema = () => {
+  // If schemaUrl not explicitly given, construct it from nyplType of first record:
+  let schemaName = schemaNameFromNyplType(unencodedData.Records[0].nyplType)
+  if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
+
   var options = {
     uri: schemaUrl,
     json: true
