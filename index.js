@@ -43,8 +43,8 @@ function processEvent (event, context, callback) {
   let bibOrItem = null
 
   // Determine whether event has Bibs or Items by checking end of eventSourceARN string:
-  if (/\/Bib$/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Bib'
-  if (/\/Item$/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Item'
+  if (/\/Bib/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Bib'
+  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Item'
 
   // Fail if the eventSourceARN didn't tell us what we're handling
   if (!bibOrItem) throw new Error('Unrecognized eventSourceARN. Aborting. ' + event.Records[0].eventSourceARN)
