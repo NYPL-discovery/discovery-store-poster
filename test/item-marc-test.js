@@ -6,6 +6,29 @@ const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
 
+/**
+ * Given an object (bib or item marc-in-json object)
+ *
+ * @return {object} Copy of given object with modified subfield content
+ */
+function changeSubField (object, marcTag, subfieldTag, newContent) {
+  // Deep copy object:
+  object = JSON.parse(JSON.stringify(object))
+
+  object.varFields = object.varFields.map((f) => {
+    if (String(f.marcTag) === String(marcTag)) {
+      f.subFields = f.subFields.map((s) => {
+        if (String(s.tag) === String(subfieldTag)) {
+          s.content = newContent
+        }
+        return s
+      })
+    }
+    return f
+  })
+  return object
+}
+
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
@@ -34,7 +57,8 @@ describe('Item Marc Mapping', function () {
         .then((item) => {
           assert.equal(item.objectId('rdf:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
-          assert.equal(item.objectId('bf:status'), 'status:a')
+          // This one happens to have a [faked] duedate, so will appear unavailable:
+          assert.equal(item.objectId('bf:status'), 'status:co')
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
           // Yeah i guess that's the actual call number?
           assert.equal(item.literal('nypl:shelfMark'), 'TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings) v. 2')
@@ -83,8 +107,8 @@ describe('Item Marc Mapping', function () {
     })
   })
 
-  describe('Determine requestable/availability', function () {
-    it('Ensure requestable', function () {
+  describe('requestability parsing', function () {
+    it('should identify an NYPL item that is requestable', function () {
       var item = ItemSierraRecord.from(require('./data/item-10008083.json'))
 
       return itemSerializer.fromMarcJson(item)
@@ -98,17 +122,44 @@ describe('Item Marc Mapping', function () {
         })
     })
 
-    it('Ensure NOT requestable', function () {
-      // test/data/item-10008083.json test/data/item-10781594.json  test/data/item-23971415.json  test/data/item-pul-189241.json
+    it('should identify an NYPL item that is NOT requestable because checked out', function () {
       var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
 
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
-          assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.objectId('bf:status'), 'status:co')
           assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:u')
 
+          assert.equal(item.literal('nypl:requestable'), false)
+        })
+    })
+
+    it('should check pul 876 $j to determine available & requestable', function () {
+      var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
+
+      // Confirm object is available and requestable:
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.literal('nypl:requestable'), true)
+        })
+    })
+
+    it('should check pul 876 $j to determine NOT available & NOT requestable', function () {
+      var item = require('./data/item-pul-189241.json')
+
+      // Change status to not-available:
+      item = changeSubField(item, '876', 'j', 'Not available')
+      item = ItemSierraRecord.from(item)
+
+      // Confirm it's now not available nor requestable
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('bf:status'), 'status:na')
           assert.equal(item.literal('nypl:requestable'), false)
         })
     })
@@ -128,6 +179,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:1')
           assert.equal(item.objectId('nypl:owner'), 'orgs:0003')
           assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.literal('nypl:requestable'), true)
           // No restrictions:
           assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:1')
           assert.equal(item.literal('nypl:suppressed'), false)

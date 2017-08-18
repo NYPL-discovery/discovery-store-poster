@@ -15,8 +15,8 @@
   },
   "status": {
     "code": "-",
-    "display": "AVAILABLE",
-    "duedate": null
+    "display": "NOT AVAILABLE",
+    "duedate": "faked date to cause this to appear checked out"
   },
   "barcode": "33433007725926",
   "callNumber": "|hTPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)",
@@ -155,7 +155,7 @@
     {
       "label": "Status",
       "value": "-",
-      "display": "AVAILABLE"
+      "display": "NOT AVAILABLE"
     },
     {
       "label": "Record Type",
