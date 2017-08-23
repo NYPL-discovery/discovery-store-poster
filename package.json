@@ -1,7 +1,7 @@
 {
   "author": "NYPL Discovery",
   "dependencies": {
-    "@nypl/nypl-core-objects": "^1.1.7",
+    "@nypl/nypl-core-objects": "^1.1.8",
     "@nypl/nypl-data-api-client": "^0.2.5",
     "@nypl/nypl-streams-client": "^0.1.4",
     "avro-js": "^1.8.0",
