@@ -57,7 +57,7 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rcma2')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:55')
           assert.equal(item.objectId('nypl:accessMessage'), 'accessMessage:2')
-          assert.equal(item.statement('nypl:accessMessage').object_label, 'ADV REQUEST')
+          assert.equal(item.statement('nypl:accessMessage').object_label, 'Request in advance')
         })
     })
   })
