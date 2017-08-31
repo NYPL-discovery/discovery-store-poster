@@ -29,11 +29,6 @@ var translations = [
     makeMap: true
   },
   {
-    from: './data/lookup-856-label-to-resource-class.csv',
-    headers: ['key', 'value'],
-    makeMap: true
-  },
-  {
     from: './data/lookup-language-code-to-label.csv',
     headers: ['key', 'value'],
     makeMap: true
