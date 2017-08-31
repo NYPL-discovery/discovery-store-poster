@@ -1,5 +1,5 @@
 // Usage:
-//    node kinesify-data.js [INFILES] [OUTFILE] [SCHEMAURL]
+//    node kinesify-data.js [--opts] [INFILES] [OUTFILE] [SCHEMAURL]
 //
 //  The following command will take unencoded json, encode it with avro schema, encode it with base64, and put in Kinesis format.
 //    node kinesify-data.js event.unencoded.bibs.json
@@ -32,27 +32,6 @@ const argv = require('minimist')(process.argv.slice(2), {
 const infile = argv._[0]
 const outfile = argv._[1] || 'event.json'
 var schemaUrl = argv._[2]
-
-function onSchemaLoad (schema) {
-  // initialize avro schema
-  var avroType = avro.parse(schema)
-
-  // encode data and put in kinesis format
-  var kinesisEncodedData = unencodedData.Records
-    .map(function (record) {
-      return kinesify(fixRecord(record), avroType)
-    })
-
-  // stringify and write to file
-  var json = JSON.stringify({ 'Records': kinesisEncodedData }, null, 2)
-  fs.writeFile(outfile, json, 'utf8', function (err, data) {
-    if (err) {
-      console.log('Write error:', err)
-    } else {
-      console.log(`Successfully wrote event.json with ${kinesisEncodedData.length} encoded record(s)`)
-    }
-  })
-}
 
 // Correct common record issues (e.g. missing fields)
 function fixRecord (record) {
@@ -160,30 +139,29 @@ function schemaNameFromNyplType (type) {
   }
 }
 
-const fetchSchema = () => {
-  // If schemaUrl not explicitly given, construct it from nyplType of first record:
-  let schemaName = schemaNameFromNyplType(unencodedData.Records[0].nyplType)
-  if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
-
+const fetchSchema = (url) => {
   var options = {
-    uri: schemaUrl,
+    url,
     json: true
   }
-  request(options, function (error, resp, body) {
-    if (error) console.log('Error (#request): ' + error)
+  return new Promise((resolve, reject) => {
+    request(options, function (error, resp, body) {
+      if (error) {
+        console.log('Error (#request): ' + error)
+        reject(error)
+      }
 
-    if (body.data && body.data.schema) {
-      // console.log('Loaded schema', body.data.schema)
-      var schema = JSON.parse(body.data.schema)
-      onSchemaLoad(schema)
-    }
+      if (body.data && body.data.schema) {
+        // console.log('Loaded schema', body.data.schema)
+        var schema = JSON.parse(body.data.schema)
+        resolve(schema)
+      }
+    })
   })
 }
 
-let unencodedData = null
-
-// If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
-if (argv.ids) {
+function buildRecordsByIds (ids, nyplType) {
+  // We'll need to hit nypl data api, so load in creds and api base url vars:
   require('dotenv').config({ path: './deploy.env' })
   require('dotenv').config({ path: '.env' })
 
@@ -193,35 +171,81 @@ if (argv.ids) {
   // NYPL_OAUTH_SECRET
   // NYPL_OAUTH_URL
   let dataApi = new NYPLDataApiClient()
-  let ids = argv.ids.split(',').map((id) => id.trim())
 
-  Promise.all(
+  return Promise.all(
     ids.map((id) => {
-      return dataApi.get(`${argv.nyplType}s/sierra-nypl/${id}`)
+      return dataApi.get(`${nyplType}s/sierra-nypl/${id}`)
     })
-  ).then((bibs) => {
-    unencodedData = { Records: bibs }
-    fetchSchema()
-  })
-} else {
+  )
+}
+
+function buildRecordsByPaths (paths) {
   // read unencoded data
-  unencodedData = infile.split(',')
+  let records = paths
     .map((f) => fs.readFileSync(f, 'utf8'))
     .map(JSON.parse)
 
-  // If they're plain marcinjson document(s), convert them into the event.json form:
-  if (!unencodedData[0].Records && unencodedData[0].id) unencodedData = { Records: unencodedData }
+  // If we're dealing with a single unencoded event json, extract the Records from it:
+  if (records.length === 1 && records[0].Records) records = records[0].Records
 
-  // Otherwise, if it's a single event-formatted json:
-  else if (unencodedData[0].Records && unencodedData.length === 1) unencodedData = unencodedData.shift()
-
-  fetchSchema()
+  return Promise.resolve(records)
 }
 
-// As a convenience, if schemaUrl not explicitly given, derive it from nyplType of first record:
-if (!schemaUrl) {
-  var type = unencodedData.Records[0].nyplType
-  console.log('Inferring schema type: ', type)
-  schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${type.substring(0, 1).toUpperCase()}${type.substring(1)}`
+function writeEncodedEvent (records, schema) {
+  // initialize avro schema
+  var avroType = avro.parse(schema)
+
+  // encode data and put in kinesis format
+  var kinesisEncodedData = records
+    .map(function (record) {
+      return kinesify(fixRecord(record), avroType)
+    })
+
+  // stringify and write to file
+  var json = JSON.stringify({ 'Records': kinesisEncodedData }, null, 2)
+  fs.writeFile(outfile, json, 'utf8', function (err, data) {
+    if (err) {
+      console.log('Write error:', err)
+    } else {
+      console.log(`Successfully wrote event.json with ${kinesisEncodedData.length} encoded ${records[0].nyplType} record(s)`)
+    }
+  })
+}
+
+// If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
+if (argv.ids) {
+  // If schemaUrl not explicitly given, construct it from nyplType of first record:
+  let schemaName = schemaNameFromNyplType(argv.nyplType)
+  if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
+
+  let ids = argv.ids.split(',').map((id) => id.trim())
+
+  // Fetch records and schema in parallel:
+  Promise.all([
+    buildRecordsByIds(ids, argv.nyplType),
+    fetchSchema(schemaUrl)
+  ]).then((resp) => {
+    let [records, schema] = resp
+    // Write the encoded event.json
+    return writeEncodedEvent(records, schema)
+  })
+
+// Otherwise process given infile(s)
+} else if (infile) {
+  // First parse given paths:
+  let paths = infile.split(',')
+  buildRecordsByPaths(paths)
+    .then((records) => {
+      // Now that we have the records, we can infer the schema (if needed)
+      // If schemaUrl not explicitly given, construct it from nyplType of first record:
+      let schemaName = schemaNameFromNyplType(records[0].nyplType)
+      if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
+
+      return fetchSchema(schemaUrl)
+        .then((schema) => {
+          // Write the encoded event.json
+          return writeEncodedEvent(records, schema)
+        })
+    })
 }
 
