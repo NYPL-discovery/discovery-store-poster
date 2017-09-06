@@ -1,0 +1,693 @@
+{
+  "id": "16099314",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2014-01-14T02:09:47-05:00",
+  "createdDate": "2008-12-20T22:52:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "myd",
+      "name": "Performing Arts Research Collections - Dance"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "José Limón Dance Foundation, Inc. records, (bulk 1980-1993)",
+  "author": "José Limón Dance Foundation.",
+  "materialType": {
+    "code": "p",
+    "value": "ARCHIVAL MIX"
+  },
+  "bibLevel": {
+    "code": "7",
+    "value": "ARCHIVES & MSS"
+  },
+  "publishYear": 1966,
+  "catalogDate": "2005-06-22",
+  "country": {
+    "code": "nyu",
+    "name": "New York (State)"
+  },
+  "normTitle": "josé limón dance foundation inc records bulk 1980 1993",
+  "normAuthor": "josé limón dance foundation",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "myd  ",
+      "display": "Performing Arts Research Collections - Dance"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "88",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2005-06-22",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "7",
+      "display": "ARCHIVES & MSS"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "p",
+      "display": "ARCHIVAL MIX"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "16099314",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-20T22:52:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2014-01-14T02:09:47Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "10",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "nyu",
+      "display": "New York (State)"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2013-10-01T23:01:10Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "110",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Foundation."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Limón, José."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Company."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Limón Institute."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "(S) *MGZMD 154"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Limón, José."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Foundation"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Company"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Limón Institute"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Dance companies"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "v",
+          "content": "Sources."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Contracts."
+        },
+        {
+          "tag": "2",
+          "content": "aat"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Financial records."
+        },
+        {
+          "tag": "2",
+          "content": "aat"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Minutes."
+        },
+        {
+          "tag": "2",
+          "content": "aat"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)G170000032"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "e",
+          "content": "(S)*MGZMD 154"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Foundation, Inc."
+        },
+        {
+          "tag": "c",
+          "content": "Gift"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The José Limón Dance Foundation, Inc., records consist mainly of the financial records of The Limón Institute."
+        },
+        {
+          "tag": "b",
+          "content": "The remainder of the material consists of administrative files, including minutes from meetings of the Board of Directors, office files, material relating to summer residencies, and contracts. The collection is important because even thirty years after the death of its founder, the Foundation is still actively supporting a modern dance company and the teaching of the Limón technique."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "545",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The José Limón Dance Foundation, which was incorporated in 1968, exists today to support the Limón Dance Company, a modern dance repertory company, and the Limón Institute, the documentation and educational arm of the Foundation."
+        },
+        {
+          "tag": "b",
+          "content": "The José Limón Dance Company was founded in 1946 and fostered from its beginnings a repertory concept of dance presentation. In his lifetime, company founder, José Limón (1908-1972), was recognized as one of the most influential male dancers of his generation and as an important pioneering choreographer. Today many of his works are considered masterpieces. Since Limón's death, the company's mission has been the creation of a modern dance repertory, with Limón works at its core, surrounded and enhanced by other dances expressing a similar humanistic point of view and theatrical base. In 1986, the company officially adopted the name, Limón Dance Company, to underscore its position as a repertory company; it has produced over fifty works by several different choreographers. The Limón Institute was established in 1985 to oversee the licensing of Limón's works and to offer classes in Limón technique through annual workshops and summer residencies. In addition, it has begun the comprehensive documentation of Limón's dances, techniques and writings."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "544",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "d",
+          "content": "For related materials regarding José Limón and the José Limón Dance Company, see also José Limón papers ((S)*MGZMD 24) and José Limon and Pauline Lawrence Limón photograph files (*MGZEB 95-5500), in the"
+        },
+        {
+          "tag": "a",
+          "content": "Jerome Robbins Dance Division, The New York Public Library for the Performing Arts."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "544",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "For related materials regarding José Limón and the Limón heritage, see also the Limón Institute Archives."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "555",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Collection guide available in repository and on internet."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG05-A10046",
+      "subfields": null
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "(S) *MGZMD 154"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "37 linear feet (88 boxes)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "351",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arranged in series: I. Contracts, 1974-1991; II. Office files, 1972-2002; III. Summer dance program, 1976-2001; IV. Administrative, 1972-1992; V. Finances, 1978-2002."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "José Limón Dance Foundation, Inc. records,"
+        },
+        {
+          "tag": "f",
+          "content": "1966-2002"
+        },
+        {
+          "tag": "g",
+          "content": "(bulk 1980-1993)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b77994772"
+        },
+        {
+          "tag": "b",
+          "content": "06-13-07"
+        },
+        {
+          "tag": "c",
+          "content": "06-20-05"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20050620105528.3",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "050616i19662002nyu||||| |||||||||||eng dcpczaa",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "e",
+          "content": "dacs"
+        },
+        {
+          "tag": "d",
+          "content": "UtOrBLW"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "3",
+          "content": "Finding Aid"
+        },
+        {
+          "tag": "u",
+          "content": "http://www.nypl.org/archives/789"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "New York Public Library"
+        },
+        {
+          "tag": "b",
+          "content": "pd"
+        },
+        {
+          "tag": "e",
+          "content": "Jerome Robbins Dance Division, The New York Public Library for the Performing Arts, 40 Lincoln Center Plaza, New York, NY 10023-7498"
+        },
+        {
+          "tag": "c",
+          "content": "OID=WPRC; CIN=HK"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "pd"
+        },
+        {
+          "tag": "b",
+          "content": "06-22-05"
+        },
+        {
+          "tag": "c",
+          "content": "c"
+        },
+        {
+          "tag": "d",
+          "content": "p"
+        },
+        {
+          "tag": "e",
+          "content": "m"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "nyu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cpca 2200421za 4500",
+      "subfields": null
+    }
+  ]
+}

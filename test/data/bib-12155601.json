@@ -1,15 +1,15 @@
 {
-  "id": "10011374",
+  "id": "12155601",
   "nyplSource": "sierra-nypl",
   "nyplType": "bib",
-  "updatedDate": "2016-06-26T01:00:05-04:00",
-  "createdDate": "2008-12-13T16:02:34-05:00",
+  "updatedDate": "2008-12-15T18:21:23-05:00",
+  "createdDate": "2008-12-15T18:21:23-05:00",
   "deletedDate": null,
   "deleted": false,
   "locations": [
     {
-      "code": "mal",
-      "name": "SASB - Service Desk Rm 315"
+      "code": "myd",
+      "name": "Performing Arts Research Collections - Dance"
     }
   ],
   "suppressed": false,
@@ -17,24 +17,24 @@
     "code": "eng",
     "name": "English"
   },
-  "title": "The table book,",
-  "author": "Hone, William, 1780-1842.",
+  "title": "Svetlova, Marina, 1922-",
+  "author": "",
   "materialType": {
-    "code": "a",
-    "value": "BOOK/TEXT"
+    "code": "k",
+    "value": "PICTURE"
   },
   "bibLevel": {
-    "code": "m",
-    "value": "MONOGRAPH"
+    "code": "a",
+    "value": "MONO COMP PT"
   },
-  "publishYear": 1827,
-  "catalogDate": "2000-12-15",
+  "publishYear": 1943,
+  "catalogDate": "1999-09-04",
   "country": {
-    "code": "enk",
-    "name": "England"
+    "code": "xxu",
+    "name": "United States"
   },
-  "normTitle": "table book",
-  "normAuthor": "hone william 1780 1842",
+  "normTitle": "svetlova marina 1922",
+  "normAuthor": "",
   "fixedFields": {
     "24": {
       "label": "Language",
@@ -43,33 +43,33 @@
     },
     "25": {
       "label": "Skip",
-      "value": "4",
+      "value": "0",
       "display": null
     },
     "26": {
       "label": "Location",
-      "value": "mal  ",
-      "display": "SASB - Service Desk Rm 315"
+      "value": "myd  ",
+      "display": "Performing Arts Research Collections - Dance"
     },
     "27": {
       "label": "COPIES",
-      "value": "4",
+      "value": "1",
       "display": null
     },
     "28": {
       "label": "Cat. Date",
-      "value": "2000-12-15",
+      "value": "1999-09-04",
       "display": null
     },
     "29": {
       "label": "Bib Level",
-      "value": "m",
-      "display": "MONOGRAPH"
+      "value": "a",
+      "display": "MONO COMP PT"
     },
     "30": {
       "label": "Material Type",
-      "value": "a",
-      "display": "BOOK/TEXT"
+      "value": "k",
+      "display": "PICTURE"
     },
     "31": {
       "label": "Bib Code 3",
@@ -83,22 +83,22 @@
     },
     "81": {
       "label": "Record Number",
-      "value": "10011374",
+      "value": "12155601",
       "display": null
     },
     "83": {
       "label": "Created Date",
-      "value": "2008-12-13T16:02:34Z",
+      "value": "2008-12-15T18:21:23Z",
       "display": null
     },
     "84": {
       "label": "Updated Date",
-      "value": "2016-06-26T01:00:05Z",
+      "value": "2008-12-15T18:21:23Z",
       "display": null
     },
     "85": {
       "label": "No. of Revisions",
-      "value": "11",
+      "value": "1",
       "display": null
     },
     "86": {
@@ -108,12 +108,12 @@
     },
     "89": {
       "label": "Country",
-      "value": "enk",
-      "display": "England"
+      "value": "xxu",
+      "display": "United States"
     },
     "98": {
       "label": "PDATE",
-      "value": "2014-10-29T01:00:08Z",
+      "value": "2008-12-15T18:21:23Z",
       "display": null
     },
     "107": {
@@ -124,32 +124,62 @@
   },
   "varFields": [
     {
-      "fieldTag": "a",
-      "marcTag": "100",
+      "fieldTag": "b",
+      "marcTag": "700",
       "ind1": "1",
       "ind2": " ",
       "content": null,
       "subFields": [
         {
           "tag": "a",
-          "content": "Hone, William,"
+          "content": "Seymour, Maurice,"
         },
         {
           "tag": "d",
-          "content": "1780-1842."
+          "content": "1904-"
         }
       ]
     },
     {
-      "fieldTag": "l",
-      "marcTag": "010",
-      "ind1": " ",
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
       "ind2": " ",
       "content": null,
       "subFields": [
         {
+          "tag": "h",
+          "content": "*MGZEB"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
           "tag": "a",
-          "content": "35038534"
+          "content": "Svetlova, Marina,"
+        },
+        {
+          "tag": "d",
+          "content": "1922-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Dolinoff, Alexis."
         }
       ]
     },
@@ -162,7 +192,7 @@
       "subFields": [
         {
           "tag": "a",
-          "content": "NNSZ01213343"
+          "content": "(NN-PD)767018736"
         }
       ]
     },
@@ -175,7 +205,7 @@
       "subFields": [
         {
           "tag": "a",
-          "content": "(WaOLN)nyp0211346"
+          "content": "(WaOLN)nyp2142262"
         }
       ]
     },
@@ -188,33 +218,7 @@
       "subFields": [
         {
           "tag": "a",
-          "content": "Vol. 1 has added t.p.: The Table book ... Every Saturday."
-        }
-      ]
-    },
-    {
-      "fieldTag": "n",
-      "marcTag": "500",
-      "ind1": " ",
-      "ind2": " ",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "a",
-          "content": "Originally published weekly, from Jan. 1827 to Jan. 1828 (55 nos.-including indexes)"
-        }
-      ]
-    },
-    {
-      "fieldTag": "n",
-      "marcTag": "500",
-      "ind1": " ",
-      "ind2": " ",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "a",
-          "content": "Library's copy lacks added t.p."
+          "content": "Posed with Alexis Dolinoff in a pas de poisson."
         }
       ]
     },
@@ -223,7 +227,7 @@
       "marcTag": "001",
       "ind1": " ",
       "ind2": " ",
-      "content": "NYPG012000337-B",
+      "content": "NYPY767018736-F",
       "subFields": null
     },
     {
@@ -234,16 +238,8 @@
       "content": null,
       "subFields": [
         {
-          "tag": "a",
-          "content": "London,"
-        },
-        {
-          "tag": "b",
-          "content": "Published for W. Hone, by Hunt and Clarke,"
-        },
-        {
           "tag": "c",
-          "content": "1827-1828."
+          "content": "ca. 1943-1950."
         }
       ]
     },
@@ -256,20 +252,7 @@
       "subFields": [
         {
           "tag": "h",
-          "content": "JFE 86-498"
-        }
-      ]
-    },
-    {
-      "fieldTag": "q",
-      "marcTag": "852",
-      "ind1": "8",
-      "ind2": " ",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "h",
-          "content": "*AY (Hone, W. Table book)"
+          "content": "*MGZEB"
         }
       ]
     },
@@ -281,33 +264,25 @@
       "content": null,
       "subFields": [
         {
-          "tag": "a",
-          "content": "2 v."
-        },
-        {
-          "tag": "b",
-          "content": "illus."
-        },
-        {
           "tag": "c",
-          "content": "24 cm."
+          "content": "8 x 10 in."
         }
       ]
     },
     {
       "fieldTag": "t",
       "marcTag": "245",
-      "ind1": "1",
-      "ind2": "4",
+      "ind1": "0",
+      "ind2": "0",
       "content": null,
       "subFields": [
         {
           "tag": "a",
-          "content": "The table book,"
+          "content": "Svetlova, Marina, 1922- /"
         },
         {
           "tag": "c",
-          "content": "by William Hone."
+          "content": "Photograph by Maurice Seymour."
         }
       ]
     },
@@ -320,92 +295,65 @@
       "subFields": [
         {
           "tag": "a",
-          "content": ".b10114464"
+          "content": ".b36322398"
         },
         {
           "tag": "b",
-          "content": "07-18-08"
+          "content": "09-27-07"
         },
         {
           "tag": "c",
-          "content": "07-29-91"
+          "content": "09-17-95"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "773",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "New York (City) Museum of Modern Art."
+        },
+        {
+          "tag": "t",
+          "content": "Photographs: Ballet,"
+        },
+        {
+          "tag": "d",
+          "content": "ca. 1900-1950."
+        },
+        {
+          "tag": "g",
+          "content": "v. 38, no. 3318"
         }
       ]
     },
     {
       "fieldTag": "y",
-      "marcTag": "856",
-      "ind1": "4",
-      "ind2": "0",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "u",
-          "content": "http://hdl.handle.net/2027/nyp.33433057532081"
-        },
-        {
-          "tag": "z",
-          "content": "Full text available via HathiTrust--v. 1"
-        }
-      ]
-    },
-    {
-      "fieldTag": "y",
-      "marcTag": "856",
-      "ind1": "4",
-      "ind2": "0",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "u",
-          "content": "http://hdl.handle.net/2027/nyp.33433057532339"
-        },
-        {
-          "tag": "z",
-          "content": "Full text available via HathiTrust--v. 2"
-        }
-      ]
-    },
-    {
-      "fieldTag": "y",
-      "marcTag": "856",
-      "ind1": "4",
-      "ind2": "0",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "u",
-          "content": "http://hdl.handle.net/2027/nyp.33433067332548"
-        },
-        {
-          "tag": "z",
-          "content": "Full text available via HathiTrust--v. 1"
-        }
-      ]
-    },
-    {
-      "fieldTag": "y",
-      "marcTag": "856",
-      "ind1": "4",
-      "ind2": "0",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "u",
-          "content": "http://hdl.handle.net/2027/nyp.33433067332555"
-        },
-        {
-          "tag": "z",
-          "content": "Full text available via HathiTrust--v. 2"
-        }
-      ]
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subFields": null
     },
     {
       "fieldTag": "y",
       "marcTag": "005",
       "ind1": " ",
       "ind2": " ",
-      "content": "20001116192555.6",
+      "content": "19990811163330.5",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "kh|b||",
       "subFields": null
     },
     {
@@ -413,7 +361,7 @@
       "marcTag": "008",
       "ind1": " ",
       "ind2": " ",
-      "content": "860923m18271828enka          001 0 eng  cam   ",
+      "content": "760323m19431950xxun    ||||||    ineng dckazi ",
       "subFields": null
     },
     {
@@ -424,12 +372,16 @@
       "content": null,
       "subFields": [
         {
+          "tag": "a",
+          "content": "NN-PD"
+        },
+        {
           "tag": "c",
-          "content": "NN"
+          "content": "NN-PD"
         },
         {
           "tag": "d",
-          "content": "NN"
+          "content": "CStRLIN"
         },
         {
           "tag": "d",
@@ -439,35 +391,14 @@
     },
     {
       "fieldTag": "y",
-      "marcTag": "050",
-      "ind1": "0",
-      "ind2": "0",
+      "marcTag": "909",
+      "ind1": " ",
+      "ind2": " ",
       "content": null,
       "subFields": [
         {
           "tag": "a",
-          "content": "AC4"
-        },
-        {
-          "tag": "b",
-          "content": ".H65"
-        }
-      ]
-    },
-    {
-      "fieldTag": "y",
-      "marcTag": "908",
-      "ind1": "0",
-      "ind2": "0",
-      "content": null,
-      "subFields": [
-        {
-          "tag": "a",
-          "content": "AC4"
-        },
-        {
-          "tag": "b",
-          "content": ".H65"
+          "content": "Not for export in OCLC Reclamation Project"
         }
       ]
     },
@@ -480,19 +411,19 @@
       "subFields": [
         {
           "tag": "a",
-          "content": "hg"
+          "content": "pd"
         },
         {
           "tag": "b",
-          "content": "12-15-00"
+          "content": "09-04-99"
         },
         {
           "tag": "c",
-          "content": "m"
+          "content": "a"
         },
         {
           "tag": "d",
-          "content": "a"
+          "content": "k"
         },
         {
           "tag": "e",
@@ -504,11 +435,11 @@
         },
         {
           "tag": "g",
-          "content": "enk"
+          "content": "xxu"
         },
         {
           "tag": "h",
-          "content": "4"
+          "content": "0"
         }
       ]
     },
@@ -517,7 +448,7 @@
       "marcTag": null,
       "ind1": null,
       "ind2": null,
-      "content": "00000cam  2200253   4500",
+      "content": "00000cka  2200265zi 4500",
       "subFields": null
     }
   ]

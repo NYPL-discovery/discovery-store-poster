@@ -38,6 +38,18 @@ describe('Bib Marc Mapping', function () {
       assert.equal(resources[0].path, '856')
     })
 
+    it('should extract supplementalContent electronic resource', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16099314.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.statement('bf:supplementaryContent'))
+          assert.equal(bib.literal('bf:supplementaryContent'), 'http://www.nypl.org/archives/789')
+          assert.equal(bib.statement('bf:supplementaryContent').object_label, 'Finding Aid')
+        })
+    })
+
     it('should extract electronic resource with mult urls', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
 
