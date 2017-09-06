@@ -488,6 +488,15 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian,')
         })
     })
+
+    it('should parse Part of literal', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12155601.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:partOf'), 'New York (City) Museum of Modern Art. Photographs: Ballet, ca. 1900-1950. v. 38, no. 3318')
+        })
+    })
   })
 })
-

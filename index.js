@@ -5,7 +5,6 @@ var log = null
 const BibsUpdater = require('./lib/bibs-updater')
 const ItemsUpdater = require('./lib/items-updater')
 const avro = require('avsc')
-const config = require('config')
 const db = require('./lib/db')
 const kmsHelper = require('./lib/kms-helper')
 const NYPLDataApiClient = require('@nypl/nypl-data-api-client')
@@ -41,7 +40,14 @@ function getSchema (schemaName) {
 }
 
 function processEvent (event, context, callback) {
-  let bibOrItem = event.Records[0].eventSourceARN === config.kinesisReadStreams.bib ? 'Bib' : 'Item'
+  let bibOrItem = null
+
+  // Determine whether event has Bibs or Items by checking end of eventSourceARN string:
+  if (/\/Bib/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Bib'
+  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Item'
+
+  // Fail if the eventSourceARN didn't tell us what we're handling
+  if (!bibOrItem) throw new Error('Unrecognized eventSourceARN. Aborting. ' + event.Records[0].eventSourceARN)
 
   log.debug('Using schema: ', bibOrItem)
   // db.connect().then(() => getSchema(bibOrItem)).then((schemaType) => {
@@ -88,8 +94,7 @@ exports.handler = (event, context, callback) => {
   } else {
     // Decrypt code should run once and variables stored outside of the function
     // handler so that these are decrypted once per container
-    kmsHelper.decryptDbCreds().then((val) => {
-      decryptedDbConnectionString = val
+    kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
       db.setConnectionString(decryptedDbConnectionString)
       processEvent(event, context, callback)
     }).catch((err) => {

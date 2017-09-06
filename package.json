@@ -1,22 +1,19 @@
 {
   "author": "NYPL Discovery",
   "dependencies": {
-    "@nypl/nypl-core-objects": "^1.1.7",
-    "@nypl/nypl-data-api-client": "^0.2.0",
+    "@nypl/nypl-core-objects": "^1.1.8",
+    "@nypl/nypl-data-api-client": "^0.2.5",
     "@nypl/nypl-streams-client": "^0.1.4",
     "avro-js": "^1.8.0",
     "avro-parser": "^1.0.1",
     "avsc": "^4.1.9",
-    "aws-sdk": "^2.12.0",
+    "aws-sdk": "^2.96.0",
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.5.5",
     "bluebird": "^3.5.0",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
     "config": "^1.21.0",
     "highland": "^2.10.0",
     "image-size": "^0.5.0",
-    "kafka-node": "^0.5.9",
     "log4js": "^1.1.0",
     "loglevel": "^1.4.1",
     "mkdirp": "^0.5.1",
@@ -29,17 +26,18 @@
     "pluralize": "^3.1.0",
     "prompt": "^1.0.0",
     "q-orm": "0.0.3",
-    "redis": "^2.6.3",
     "request": "^2.75.0",
     "request-promise": "^4.1.1",
     "util": "^0.10.3",
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "csvtojson": "^1.1.4",
     "dotenv": "^4.0.0",
-    "mocha": "^3.1.2",
-    "node-lambda": "^0.10.0"
+    "mocha": "^3.5.0",
+    "standard": "6.0.8"
   },
   "scripts": {
     "test": "standard && mocha",

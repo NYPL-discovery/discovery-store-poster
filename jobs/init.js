@@ -1,26 +1,68 @@
-'use strict'
+/**
+ * Initialize database, get stats
+ *
+ * Usage:
+ *  node jobs/init COMMAND [OPTS...]
+ *
+ * @param {string} command is one of following
+ *  - check: Check config (by printing to stdout)
+ *  - create: Create tables
+ *  - stats: Run aggregations
+ *
+ * @example
+ * // Prints out decrypted config:
+ * node jobs/init check --envfile ./deploy.production.env
+ *
+ * @example
+ * // Creates necessary tables (if they don't exist)
+ * node jobs/init create --envfile ./deploy.production.env
+ *
+ * @example
+ * // Removes all tables and then re-creates them
+ * node jobs/init create --recreate --envfile ./deploy.production.env
+ */
 
 const prompt = require('prompt')
 const log = require('../lib/logger')
 
-const argv = require('optimist')
-  .describe('loglevel', 'Specify log level (default error)')
-  .describe('recreate', 'Rebuild db even if it exists')
-  .describe('create', 'Create db')
-  .describe('stats', 'Get stats')
-  .argv
+/**
+ * Print message and exit
+ */
+function exitWithError (message) {
+  console.error('Aborting because: ' + message)
+  process.exit()
+}
 
-const db = require('../lib/db')
-
+/**
+ * Create db tables
+ */
 var create = (recreate) => {
   db.createDb(recreate)
     .then(db.initializeData)
     .then(() => {
-      log.info('Created db')
+      log.info('Finished confirming necessary db tables are created')
       process.exit()
     })
 }
 
+/**
+ * Prompts user before dropping and recreating db tables
+ */
+var promptForRecreate = () => {
+  prompt.start()
+
+  console.log('Really recreate db? confirm with y/n')
+  prompt.get(['confirm'], (err, res) => {
+    if (err) throw err
+
+    if (res.confirm.toLowerCase() === 'y') create(true)
+    else process.exit()
+  })
+}
+
+/**
+ * Print db stats to stdout
+ */
 var stats = () => {
   db.getStats().then((stats) => {
     log.info('Stats: ')
@@ -32,17 +74,48 @@ var stats = () => {
     .catch((e) => console.error('oh no: ' + e.message, e.stack))
 }
 
-if (argv.create) create(false)
-else if (argv.recreate) {
-  prompt.start()
+// These are the valid commands:
+const COMMANDS = ['create', 'stats', 'check']
 
-  console.log('Really recreate db? confirm with y/n')
-  prompt.get(['confirm'], (err, res) => {
-    if (err) throw err
+const argv = require('optimist')
+  .describe('loglevel', 'Specify log level (default error)')
+  .describe('recreate', 'Rebuild db even if it exists')
+  .describe('envfile', 'Specify ENV variable file (with encrypted credentials)')
+  .argv
 
-    if (res.confirm.toLowerCase() === 'y') create(true)
-    else process.exit()
-  })
-} else if (argv.stats) {
-  stats()
-}
+// Command to run is first arg given
+const command = argv._[0]
+
+// Validate command
+if (!argv._ || argv._.length === 0) exitWithError('No command given.')
+if (COMMANDS.indexOf(command) < 0) exitWithError('Invalid command.')
+
+// Require an envfile:
+if (!argv.envfile) exitWithError('Must specify --envfile FILE')
+
+// Load env files:
+require('dotenv').config({ path: argv.envfile })
+require('dotenv').config({ path: './.env' })
+
+const kmsHelper = require('../lib/kms-helper')
+const db = require('../lib/db')
+
+log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
+
+// Decrypt db creds before doing anything
+kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
+  db.setConnectionString(decryptedDbConnectionString)
+
+  switch (command) {
+    case 'check':
+      console.log('DB creds: ' + decryptedDbConnectionString)
+      break
+    case 'create':
+      if (argv.recreate) promptForRecreate()
+      else create(false)
+      break
+    case 'stats':
+      stats()
+      break
+  }
+})

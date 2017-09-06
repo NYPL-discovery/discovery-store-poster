@@ -2,6 +2,8 @@
 
 Operates in bulk/listener mode to pull bib/item/other data and translate it as a series of statements into a centeral data store.
 
+*Note: A known issue with node-lambda & aws-sdk may cause KMS `decrypt` to fail to use the correct AWS credentials if node-lambda is installed locally as a dev dependency. Until (this node-lambda PR)[https://github.com/motdotla/node-lambda/pull/369] is published to NPMJS, node-lambda should be installed globally, as noted below.*
+
 ## Usage
 
 ### Bibs
@@ -79,8 +81,8 @@ AWS_REGION=us-east-1
 AWS_FUNCTION_NAME=discoveryStorePoster
 AWS_HANDLER=index.handler
 AWS_MEMORY_SIZE=512
-AWS_TIMEOUT=15
-AWS_DESCRIPTION=
+AWS_TIMEOUT=60
+AWS_DESCRIPTION=Listens to Bibs, Items streams, writes statements to discovery-store, then writes to IndexDocumentQueue[-env] stream
 AWS_RUNTIME=nodejs6.10
 AWS_VPC=vpc-dbc4f7bc
 AWS_VPC_SUBNETS=subnet-f4fe56af
@@ -89,10 +91,12 @@ EXCLUDE_GLOBS="event.json"
 PACKAGE_DIRECTORY=build
 ```
 
-**deploy.env** - should be updated to include the following:
+**deploy[.environment].env** - should be updated to include the following:
 ```
 DISCOVERY_STORE_CONNECTION_URI=[discovery-store postgres connection string, ecrypted via KMS 'lambda-rds' key]
 NYPL_API_BASE_URL=[base url for NYPL data api ending in "/"]
+INDEX_DOCUMENT_STREAM_NAME=[stream name to write to, e.g. IndexDocumentQueue-dev]
+INDEX_DOCUMENT_SCHEMA_NAME=[avro schema to use when encoding "index document" messages, e.g. IndexDocumentQueue]
 ```
 
 To retrieve KMS encrypted values using the AWS cli:
@@ -102,9 +106,9 @@ aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext co
 
 **index.js** - is the wrapper file and handler that the Lambda uses. This should also include reading the environment variable to decrypt the KMS key.
 
-To test locally run `node-lambda run -f deploy.env`. The `-f deploy.env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
+To test locally run `node-lambda run -f deploy[.environment].env`. The `-f deploy[.environment].env` flag will include the `DISCOVERY_STORE_CONNECTION_URI` string needed to connect to the RDS database.
 
-To push to AWS run `node-lambda deploy -f deploy.env`.
+To push to AWS run `node-lambda deploy -f deploy[.environment].env`.
 
 ### Test Data
 
@@ -131,10 +135,34 @@ Alternatively, to generate a event.json from a plain marcinjson document (such a
 
     node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib
 
-Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy.env`.
+Any of the event jsons generated above can be copied to `event.json` to test the lambda locally via `node-lambda run -f deploy[.environment].env`.
 
-### Testing
+## Initialization On a New Environment
 
-Ensure you have a `deploy.env` and `.env` as described above. Then:
+The very first time this is run on an environment, you'll need to initialize the DB environment.
 
-```npm test```
+To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
+
+```
+node jobs/init.js check --envfile deploy[.environment].env
+```
+
+If no errors are thrown, and the reported creds look correct, proceed with DB creation:
+
+The following will create necessary tables in the DB instance (identified in specified `--envfile`):
+
+```
+node jobs/init.js create --envfile deploy[.environment].env
+```
+
+To verify that the serialization works on a sample document, you can run the following:
+
+```
+node-lambda run -f deploy[.environment].env`
+```
+
+## Testing
+
+Ensure you have a `deploy[.environment].env` and `.env` as described above. Then:
+
+```ENVFILE=./deploy.environment.env npm test```
