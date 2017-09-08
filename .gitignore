@@ -41,3 +41,5 @@ node_modules
 # AWS Lambda credentials
 deploy.env
 deploy.*.env
+./config/qa.env
+./config/prod.env
