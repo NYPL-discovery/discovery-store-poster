@@ -32,12 +32,21 @@ describe('Bib Marc Mapping', function () {
     it('should extract e-item', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
 
-      return bibSerializer.extractElectronicResourcesFromBibMarc(bib)
-        .then((resources) => {
-          assert.equal(resources[0].url, 'http://hdl.handle.net/2027/nyp.33433001892276')
-          assert.equal(resources[0].label, 'Full text available via HathiTrust')
-          assert.equal(resources[0].path, '856')
-          assert.equal(resources[0].type, 'ER')
+      let resources = bibSerializer.extractElectronicResourcesFromBibMarc(bib, 'ER')
+      assert.equal(resources[0].url, 'http://hdl.handle.net/2027/nyp.33433001892276')
+      assert.equal(resources[0].label, 'Full text available via HathiTrust')
+      assert.equal(resources[0].path, '856')
+    })
+
+    it('should extract supplementalContent electronic resource', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16099314.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.statement('bf:supplementaryContent'))
+          assert.equal(bib.literal('bf:supplementaryContent'), 'http://www.nypl.org/archives/789')
+          assert.equal(bib.statement('bf:supplementaryContent').object_label, 'Finding Aid')
         })
     })
 
@@ -45,20 +54,16 @@ describe('Bib Marc Mapping', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
 
       // console.log('bib: ', bib)
-      return bibSerializer.extractElectronicResourcesFromBibMarc(bib)
-        .then((resources) => {
-          assert.equal(resources.length, 4)
+      let resources = bibSerializer.extractElectronicResourcesFromBibMarc(bib, 'ER')
+      assert.equal(resources.length, 4)
 
-          assert.equal(resources[0].url, 'http://hdl.handle.net/2027/nyp.33433057532081')
-          assert.equal(resources[0].label, 'Full text available via HathiTrust--v. 1')
-          assert.equal(resources[0].path, '856')
-          assert.equal(resources[0].type, 'ER')
+      assert.equal(resources[0].url, 'http://hdl.handle.net/2027/nyp.33433057532081')
+      assert.equal(resources[0].label, 'Full text available via HathiTrust--v. 1')
+      assert.equal(resources[0].path, '856')
 
-          assert.equal(resources[1].url, 'http://hdl.handle.net/2027/nyp.33433057532339')
-          assert.equal(resources[1].label, 'Full text available via HathiTrust--v. 2')
-          assert.equal(resources[1].path, '856')
-          assert.equal(resources[1].type, 'ER')
-        })
+      assert.equal(resources[1].url, 'http://hdl.handle.net/2027/nyp.33433057532339')
+      assert.equal(resources[1].label, 'Full text available via HathiTrust--v. 2')
+      assert.equal(resources[1].path, '856')
     })
 
     it('should extract many core properties from a MICROFORM', function () {
