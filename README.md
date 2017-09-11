@@ -4,7 +4,7 @@ Operates in bulk/listener mode to pull bib/item/other data and translate it as a
 
 ## Usage
 
-The node-lambda npm package is used to invoke the lambda locally and to deploy it to AWS.
+The following describes how to set up your environment, create a test event, run the app against that event using `node-lambda`, and deploy the app to AWS.
 
 ### Setup
 
@@ -13,10 +13,10 @@ Before one can run or deploy, one needs to do two things:
 1. Ensure `nypl-digital-dev` and `nypl-sandbox` profiles are registered in `~/.aws/credentials` and `~/.aws/config`
 2. Obtain environment secrets from a colleague to initialize an environment file as follows:
   * `cp config/qa-sample.env config/qa.env`
-  * `cp config/prod-sample.env config/prod.env`
+  * `cp config/production-sample.env config/production.env`
   * Fill in missing secrets in both environment files
 
-The `DISCOVERY_STORE_CONNECTION_URI` variable should be encrypted. If you have the plaintext connection string, you can encrypt it using the aws cli:
+Note, the `DISCOVERY_STORE_CONNECTION_URI` variable should be encrypted. If you have the plaintext connection string, you can encrypt it using the aws cli:
 
 ```
 aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext connection string]"
@@ -44,13 +44,43 @@ This will run the lambda locally using secrets in `config/qa.env` and one's `nyp
 
 `npm run run-qa`
 
-This will run the lambda locally using secrets in `config/prod.env` and one's `nypl-digital-dev` profile:
+This will run the lambda locally using secrets in `config/production.env` and one's `nypl-digital-dev` profile:
 
 `npm run run-production`
 
+## Testing
+
+```
+npm test
+```
+
+## Initializing a New Environment
+
+When a brand new environment is created, you'll need to initialize the DB environment.
+
+To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
+
+```
+node jobs/init.js check --envfile config/[environment].env
+```
+
+If no errors are thrown, and the reported creds look correct, proceed with DB creation:
+
+The following will create necessary tables in the DB instance (identified in specified `--envfile`):
+
+```
+node jobs/init.js create --envfile config/[environment].env
+```
+
+To verify that the serialization works on a sample document, you can run the following:
+
+```
+npm run run-[environment]
+```
+
 ## Bulk (non-lambda) Execution
 
-Specialized "job" scripts are available for running this app in bulk against a large local data set.
+Specialized "job" scripts are available for running this app in bulk against a large local data set. These scripts do not use `node-lambda`.
 
 ### Bibs
 
@@ -93,32 +123,4 @@ node jobs/update-items.js [opts]
 * `threads`: Specify number of threads to run it under
 * `disablescreen`: If running multi-threaded, disables default screen takeover
 
-## Testing
 
-Ensure you have a `deploy[.environment].env` and `.env` as described above. Then:
-
-```ENVFILE=./config/environment.env npm test```
-
-## Initializing a New Environment
-
-When a brand new environment is created, you'll need to initialize the DB environment.
-
-To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
-
-```
-node jobs/init.js check --envfile config/[environment].env
-```
-
-If no errors are thrown, and the reported creds look correct, proceed with DB creation:
-
-The following will create necessary tables in the DB instance (identified in specified `--envfile`):
-
-```
-node jobs/init.js create --envfile config/[environment].env
-```
-
-To verify that the serialization works on a sample document, you can run the following:
-
-```
-npm run run-[environment]
-```
