@@ -26,15 +26,15 @@ aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext co
 
 Run this to generate `event.bibs.json` full of encoded bibs:
 
-`node kinesify-data.js event.unencoded.bibs.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib`
+`node kinesify-data.js event.unencoded.bibs.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Bib`
 
 Or run this to generate `event.items.json` full of encoded items:
 
-`node kinesify-data.js event.unencoded.items.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Item`
+`node kinesify-data.js event.unencoded.items.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Item`
 
 Alternatively, to generate a event.json from a plain marcinjson document (such as retrieved from the sierra api), you can kinesify that directly:
 
-`node kinesify-data test/data/bib-10011745.json event.json  https://api.nypltech.org/api/v0.1/current-schemas/Bib`
+`node kinesify-data test/data/bib-10011745.json event.json  https://platform.nypl.org/api/v0.1/current-schemas/Bib`
 
 The `event.json`s generated above will be used when running any version of `npm run run-[environment]` that follow.
 
