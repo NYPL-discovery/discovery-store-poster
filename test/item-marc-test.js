@@ -106,7 +106,7 @@ describe('Item Marc Mapping', function () {
         })
     })
 
-    it('should identify research item in a branch location', function () {
+    it('should identify research item with specific itype > 100', function () {
       var item = ItemSierraRecord.from(require('./data/item-23937039.json'))
 
       return itemSerializer.fromMarcJson(item)
