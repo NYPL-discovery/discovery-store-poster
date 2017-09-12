@@ -1,0 +1,16 @@
+{
+  "EventSourceMappings": [
+    {
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/Bib",
+      "StartingPosition": "LATEST",
+      "BatchSize": 100,
+      "Enabled": true
+    },
+    {
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/Item",
+      "StartingPosition": "LATEST",
+      "BatchSize": 100,
+      "Enabled": true
+    }
+  ]
+}
