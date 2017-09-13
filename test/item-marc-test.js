@@ -105,6 +105,24 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.literal('nypl:shelfMark'), null)
         })
     })
+
+    it('should identify research item with specific itype > 100', function () {
+      var item = ItemSierraRecord.from(require('./data/item-23937039.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17664294')
+          assert.equal(item.literal('nypl:suppressed'), false)
+          // itypes greater than 100 are normally non-research, but some are research!
+          assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:132')
+          assert.equal(item.objectId('nypl:owner'), 'orgs:1002')
+          assert.equal(item.objectId('bf:status'), 'status:a')
+          assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rcpr2')
+          assert.equal(item.literal('nypl:shelfMark'), 'M16 3584 W')
+        })
+    })
   })
 
   describe('requestability parsing', function () {
