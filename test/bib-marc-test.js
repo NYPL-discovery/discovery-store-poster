@@ -97,6 +97,20 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should extract subjects specific subfields', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10172462.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // This fixture was modified to include a $f subfield excluded from the mapping.
+          // This test confirms it is not pulled in:
+          assert.equal(bib.literal('dc:subject'), 'Albert -- II, -- Holy Roman Emperor, -- 1397-1439.')
+          assert.equal(bib.literals('dc:subject')[1], 'László -- V, -- King of Hungary and Bohemia, -- 1440-1457.')
+          assert.equal(bib.literals('dc:subject')[2], 'Holy Crown of Hungary.')
+        })
+    })
+
     it('should extract many core properties (2)', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
 
