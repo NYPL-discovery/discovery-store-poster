@@ -1,0 +1,316 @@
+{
+  "nyplSource": "sierra-nypl",
+  "bibIds": [
+    "17664294"
+  ],
+  "id": "23937039",
+  "nyplType": "item",
+  "updatedDate": "2017-09-08T19:57:49-04:00",
+  "createdDate": "2009-06-20T14:13:42-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "location": {
+    "code": "rcpr2",
+    "name": "OFFSITE - Request in Advance for use at Performing Arts"
+  },
+  "status": {
+    "code": "-",
+    "display": "AVAILABLE",
+    "duedate": null
+  },
+  "barcode": "33433081307138",
+  "callNumber": null,
+  "itemType": null,
+  "fixedFields": {
+    "57": {
+      "label": "BIB HOLD",
+      "value": false,
+      "display": null
+    },
+    "58": {
+      "label": "Copy No.",
+      "value": 1,
+      "display": null
+    },
+    "59": {
+      "label": "Item Code 1",
+      "value": "0",
+      "display": null
+    },
+    "60": {
+      "label": "Item Code 2",
+      "value": "-",
+      "display": null
+    },
+    "61": {
+      "label": "Item Type",
+      "value": "132",
+      "display": "RFVC - FILM"
+    },
+    "62": {
+      "label": "Price",
+      "value": 60000,
+      "display": null
+    },
+    "64": {
+      "label": "Checkout Location",
+      "value": 84,
+      "display": null
+    },
+    "68": {
+      "label": "Last Checkin",
+      "value": "2015-06-11T21:00:34Z",
+      "display": null
+    },
+    "69": {
+      "label": "Inventory Date",
+      "value": "2017-05-08T08:00:00Z",
+      "display": null
+    },
+    "70": {
+      "label": "Checkin Location",
+      "value": 84,
+      "display": null
+    },
+    "74": {
+      "label": "Item Use 3",
+      "value": 0,
+      "display": null
+    },
+    "76": {
+      "label": "Total Checkouts",
+      "value": 7,
+      "display": null
+    },
+    "77": {
+      "label": "Total Renewals",
+      "value": 0,
+      "display": null
+    },
+    "78": {
+      "label": "Last Checkout Date",
+      "value": "2015-06-11T20:57:05Z",
+      "display": null
+    },
+    "79": {
+      "label": "Location",
+      "value": "rcpr2",
+      "display": "OFFSITE - Request in Advance for use at Performing Arts"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "i",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "23937039",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-20T14:13:42Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2017-09-08T19:57:49Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "31",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "88": {
+      "label": "Status",
+      "value": "-",
+      "display": "AVAILABLE"
+    },
+    "93": {
+      "label": "Inhouse Use",
+      "value": 0,
+      "display": null
+    },
+    "94": {
+      "label": "Copy Use",
+      "value": 0,
+      "display": null
+    },
+    "97": {
+      "label": "Item Message",
+      "value": "x",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2017-05-08T13:08:12Z",
+      "display": null
+    },
+    "108": {
+      "label": "OPAC Message",
+      "value": "a",
+      "display": null
+    },
+    "109": {
+      "label": "Year-to-Date Circ",
+      "value": 0,
+      "display": null
+    },
+    "110": {
+      "label": "Last Year Circ",
+      "value": 0,
+      "display": null
+    },
+    "127": {
+      "label": "Item Agency",
+      "value": "219",
+      "display": "ReCAP (NN) - LPA Media Center"
+    },
+    "161": {
+      "label": "VI Central",
+      "value": 0,
+      "display": null
+    },
+    "162": {
+      "label": "IR Dist Learn Same Site",
+      "value": "0",
+      "display": null
+    },
+    "264": {
+      "label": "Holdings Item Tag",
+      "value": "6",
+      "display": null
+    },
+    "265": {
+      "label": "Inherit Location",
+      "value": false,
+      "display": null
+    },
+    "306": {
+      "label": "Sticky Status",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1993-06-03"
+        },
+        {
+          "tag": "b",
+          "content": "07/22/2008"
+        },
+        {
+          "tag": "e",
+          "content": "FILM"
+        },
+        {
+          "tag": "f",
+          "content": "6"
+        },
+        {
+          "tag": "g",
+          "content": "M16 3584 W"
+        },
+        {
+          "tag": "h",
+          "content": "NYPL"
+        },
+        {
+          "tag": "i",
+          "content": "MY"
+        },
+        {
+          "tag": "j",
+          "content": "TF"
+        },
+        {
+          "tag": "l",
+          "content": "2009-04-16"
+        },
+        {
+          "tag": "m",
+          "content": "898"
+        },
+        {
+          "tag": "n",
+          "content": "DMCAFILM"
+        },
+        {
+          "tag": "o",
+          "content": "DMCAFILM"
+        },
+        {
+          "tag": "r",
+          "content": "600.00"
+        },
+        {
+          "tag": "s",
+          "content": "C.1 REEL 1 OF 2"
+        },
+        {
+          "tag": "t",
+          "content": "CIRCS"
+        },
+        {
+          "tag": "u",
+          "content": "33433081307138"
+        },
+        {
+          "tag": "v",
+          "content": "mya  "
+        },
+        {
+          "tag": "w",
+          "content": "myzzz"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "33433081307138",
+      "subfields": null
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "1993-06-03",
+      "subfields": null
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "2009-04-16",
+      "subfields": null
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "C.1 REEL 1 OF 2",
+      "subfields": null
+    }
+  ]
+}
