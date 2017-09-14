@@ -379,6 +379,18 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should not serialize hidden notes', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10070948.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // This bib has one note in 505, but ind1 === 0, so it should be suppressed
+          // which means it has NO notes.
+          assert.equal(bib.literals('skos:note').length, 0)
+        })
+    })
+
     it('should assign correct PUL fields', function () {
       var bib = BibSierraRecord.from(require('./data/bib-pul-176961.json'))
 
