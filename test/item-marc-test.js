@@ -55,7 +55,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
           // This one happens to have a [faked] duedate, so will appear unavailable:
           assert.equal(item.objectId('bf:status'), 'status:co')
@@ -75,7 +75,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
           assert.equal(item.objectId('bf:status'), 'status:a')
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rcma2')
@@ -93,7 +93,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17355748')
           assert.equal(item.literal('nypl:suppressed'), true)
           // Make sure no other statements are being saved for this item because it's branch
@@ -112,7 +112,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b17664294')
           assert.equal(item.literal('nypl:suppressed'), false)
           // itypes greater than 100 are normally non-research, but some are research!
@@ -191,7 +191,7 @@ describe('Item Marc Mapping', function () {
         .then((statements) => new Item(statements))
         .then((item) => {
           // TODO need to check a whole bunch more fields...
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:pb176961')
           // No item types currently assigned to PUL/CUL
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:1')
@@ -212,7 +212,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b10006965')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:6')
           assert.equal(item.objectId('nypl:owner'), 'orgs:1000')
@@ -234,7 +234,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.literal('nypl:suppressed'), true)
 
           // Because we modified the object, clear require cache
@@ -257,7 +257,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           assert.equal(item.literal('nypl:suppressed'), true)
 
           // Because we modified the object, clear require cache
@@ -278,7 +278,7 @@ describe('Item Marc Mapping', function () {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
-          assert.equal(item.objectId('rdf:type'), 'bf:Item')
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
           // Note we can't check 'nypl:catalogItemType' because almost nothing apart form nypl:suppressed is being serialized
           assert.equal(item.literal('nypl:suppressed'), true)
 
@@ -301,7 +301,7 @@ describe('Item Marc Mapping', function () {
         return itemSerializer.fromMarcJson(item)
           .then((statements) => new Item(statements))
           .then((item) => {
-            assert.equal(item.objectId('rdf:type'), 'bf:Item')
+            assert.equal(item.objectId('rdfs:type'), 'bf:Item')
             // Of the five values we setting, only '-' should cause item to be not suppressed
             assert.equal(item.literal('nypl:suppressed'), code !== '-')
 
