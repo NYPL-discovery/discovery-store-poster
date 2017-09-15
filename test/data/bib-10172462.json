@@ -1,0 +1,493 @@
+{
+  "id": "10172462",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-02-04T19:46:56Z",
+  "createdDate": "2008-12-13T18:43:30Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "German"
+  },
+  "title": "Die Denkwürdigkeiten der Helene Kottannerin <1439-1440>. Hrsg. v. Karl Mollay.",
+  "author": "Kottannerin, Helene.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1971,
+  "catalogDate": "2000-10-04",
+  "country": {
+    "code": "0",
+    "name": "Austria"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "ger",
+      "display": "German"
+    },
+    {
+      "label": "Skip",
+      "value": "4",
+      "display": "4"
+    },
+    {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "Schwarzman Building - Service Desk Rm 217"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2000-10-04",
+      "display": "2000-10-04"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "10172462",
+      "display": "10172462"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-13T18:43:30Z",
+      "display": "2008-12-13T18:43:30Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2012-02-04T19:46:56Z",
+      "display": "2012-02-04T19:46:56Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "8",
+      "display": "8"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "au ",
+      "display": "Austria"
+    },
+    {
+      "label": "PDATE",
+      "value": "2012-02-03T21:02:10Z",
+      "display": "2012-02-03T21:02:10Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Kottannerin, Helene."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Mollay, Károly."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Albert"
+        },
+        {
+          "tag": "b",
+          "content": "II,"
+        },
+        {
+          "tag": "c",
+          "content": "Holy Roman Emperor,"
+        },
+        {
+          "tag": "d",
+          "content": "1397-1439."
+        },
+        {
+          "tag": "f",
+          "content": "This is a fake value I'm adding to confirm the mapping does not extract Subject subfields not explicitly queried"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "László"
+        },
+        {
+          "tag": "b",
+          "content": "V,"
+        },
+        {
+          "tag": "c",
+          "content": "King of Hungary and Bohemia,"
+        },
+        {
+          "tag": "d",
+          "content": "1440-1457."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Holy Crown of Hungary."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "72307037"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN744511216"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0173900"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "\"Handschrift der Wiener Hofbibliothek ... Hs Nr. 2920 der heutigen Nationalbibliothek.́\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG744511216-B",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Wien,"
+        },
+        {
+          "tag": "b",
+          "content": "Österr. Bundesverl."
+        },
+        {
+          "tag": "c",
+          "content": "(1971)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "JFD 73-3100"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "63 p., 4 p. of facs., 5-8 plans, 69-94 p."
+        },
+        {
+          "tag": "c",
+          "content": "21 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Wiener Neudrucke,"
+        },
+        {
+          "tag": "v",
+          "content": "Bd. 2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Die Denkwürdigkeiten der Helene Kottannerin <1439-1440>."
+        },
+        {
+          "tag": "b",
+          "content": "Hrsg. v. Karl Mollay."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b11763851"
+        },
+        {
+          "tag": "b",
+          "content": "06-28-07"
+        },
+        {
+          "tag": "c",
+          "content": "07-31-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629170453.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "740806s1971    au            00| 0cger| cam   ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "10-04-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "ger"
+        },
+        {
+          "tag": "g",
+          "content": "au "
+        },
+        {
+          "tag": "h",
+          "content": "4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "y",
+          "content": "527512"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200277   4500",
+      "subFields": null
+    }
+  ]
+}
