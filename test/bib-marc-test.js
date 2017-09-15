@@ -517,5 +517,15 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:partOf'), 'New York (City) Museum of Modern Art. Photographs: Ballet, ca. 1900-1950. v. 38, no. 3318')
         })
     })
+
+    it('should identify bibs with rectype g as resourcetype mov', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:mov')
+        })
+    })
   })
 })
