@@ -74,7 +74,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // console.log('bib: ', bib)
 
-          assert.equal(bib.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(bib.objectId('rdfs:type'), 'nypl:Item')
           assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:txt')
 
           assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:m')
@@ -199,8 +199,8 @@ describe('Bib Marc Mapping', function () {
           // Confirm issuance marks it as a serial:
           assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:s')
 
-          // Serials are rdf:type Collection:
-          assert.equal(bib.objectId('rdf:type'), 'nypl:Collection')
+          // Serials are rdfs:type Collection:
+          assert.equal(bib.objectId('rdfs:type'), 'nypl:Collection')
         })
     })
 
@@ -213,8 +213,8 @@ describe('Bib Marc Mapping', function () {
           // Confirm issuance marks it as a collection:
           assert.equal(bib.objectId('bf:issuance'), 'urn:biblevel:c')
 
-          // Serials are rdf:type Collection:
-          assert.equal(bib.objectId('rdf:type'), 'nypl:Collection')
+          // Serials are rdfs:type Collection:
+          assert.equal(bib.objectId('rdfs:type'), 'nypl:Collection')
 
           // Material Type is 'h' and has 007/00-01 == hd, so so carrier type should be hd
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:hd')
@@ -393,6 +393,18 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should not serialize hidden notes', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10070948.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // This bib has one note in 505, but ind1 === 0, so it should be suppressed
+          // which means it has NO notes.
+          assert.equal(bib.literals('skos:note').length, 0)
+        })
+    })
+
     it('should assign correct PUL fields', function () {
       var bib = BibSierraRecord.from(require('./data/bib-pul-176961.json'))
 
@@ -401,7 +413,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           assert.equal(bib.id, 'pb176961')
           // TODO need to check a whole bunch more fields...
-          assert.equal(bib.objectId('rdf:type'), 'nypl:Item')
+          assert.equal(bib.objectId('rdfs:type'), 'nypl:Item')
           assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
           // Extracted ISBN?

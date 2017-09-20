@@ -1,0 +1,438 @@
+{
+  "id": "10070948",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-01-09T16:47:09Z",
+  "createdDate": "2008-12-13T16:59:56Z",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "0",
+    "name": "English"
+  },
+  "title": "Soul clap hands and sing.",
+  "author": "Marshall, Paule, 1929-",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1971,
+  "catalogDate": "2000-10-03",
+  "country": {
+    "code": "0",
+    "name": "New Jersey"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": [
+    {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    {
+      "label": "Skip",
+      "value": "0",
+      "display": "0"
+    },
+    {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "Schwarzman Building - Service Desk Rm 217"
+    },
+    {
+      "label": "COPIES",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Cat. Date",
+      "value": "2000-10-03",
+      "display": "2000-10-03"
+    },
+    {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": "-"
+    },
+    {
+      "label": "Record Type",
+      "value": "b",
+      "display": "b"
+    },
+    {
+      "label": "Record Number",
+      "value": "10070948",
+      "display": "10070948"
+    },
+    {
+      "label": "Created Date",
+      "value": "2008-12-13T16:59:56Z",
+      "display": "2008-12-13T16:59:56Z"
+    },
+    {
+      "label": "Updated Date",
+      "value": "2012-01-09T16:47:09Z",
+      "display": "2012-01-09T16:47:09Z"
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "5",
+      "display": "5"
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": "1"
+    },
+    {
+      "label": "Country",
+      "value": "nju",
+      "display": "New Jersey"
+    },
+    {
+      "label": "PDATE",
+      "value": "2012-01-06T18:23:08Z",
+      "display": "2012-01-06T18:23:08Z"
+    },
+    {
+      "label": "MARC Type",
+      "value": " ",
+      "display": " "
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Marshall, Paule,"
+        },
+        {
+          "tag": "d",
+          "content": "1929-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "0911860061"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "78170921"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "NN724103130"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0071196"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Barbados.--Brooklyn.--British Guiana.--Brazil."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG724103130-B",
+      "subFields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Chatham, N.J.,"
+        },
+        {
+          "tag": "b",
+          "content": "Chatham Bookseller"
+        },
+        {
+          "tag": "c",
+          "content": "[1971, c1961]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "JFD 72-6746"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "177 p."
+        },
+        {
+          "tag": "c",
+          "content": "21 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "Soul clap hands and sing."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": ".b10718874"
+        },
+        {
+          "tag": "b",
+          "content": "07-18-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-30-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629165556.0",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "720911c19711961nju           00| 1|eng| cam   ",
+      "subFields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "PZ4.M369"
+        },
+        {
+          "tag": "b",
+          "content": "So4"
+        },
+        {
+          "tag": "a",
+          "content": "PS3563.A7223"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "PZ4.M369"
+        },
+        {
+          "tag": "b",
+          "content": "So4"
+        },
+        {
+          "tag": "a",
+          "content": "PS3563.A7223"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "10-03-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "nju"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "y",
+          "content": "222327"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200229   4500",
+      "subFields": null
+    }
+  ]
+}
