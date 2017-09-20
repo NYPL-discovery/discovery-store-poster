@@ -1,0 +1,1036 @@
+{
+  "id": "18064236",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2014-01-14T02:29:04-05:00",
+  "createdDate": "2009-06-16T21:05:00-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "myd",
+      "name": "Performing Arts Research Collections - Dance"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Jerome Robbins [videorecording] : something to dance about",
+  "author": "",
+  "materialType": {
+    "code": "v",
+    "value": "DVD"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2008,
+  "catalogDate": "2009-06-10",
+  "country": {
+    "code": "xxu",
+    "name": "United States"
+  },
+  "normTitle": "jerome robbins videorecording something to dance about",
+  "normAuthor": "",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "myd  ",
+      "display": "Performing Arts Research Collections - Dance"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "3",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2009-06-10",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "v",
+      "display": "DVD"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "18064236",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-16T21:05:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2014-01-14T02:29:04Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "9",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "xxu",
+      "display": "United States"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2013-03-07T19:01:35Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vaill, Amanda."
+        },
+        {
+          "tag": "4",
+          "content": "aus"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Kinberg, Judy."
+        },
+        {
+          "tag": "4",
+          "content": "pro"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Kinberg, Judy."
+        },
+        {
+          "tag": "4",
+          "content": "drt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rifkin, Ron."
+        },
+        {
+          "tag": "4",
+          "content": "nrt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Robbins, Jerome."
+        },
+        {
+          "tag": "4",
+          "content": "cre"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hurwitz, Tom."
+        },
+        {
+          "tag": "4",
+          "content": "cng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bernstein, Molly."
+        },
+        {
+          "tag": "4",
+          "content": "flm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bhargava, Girish."
+        },
+        {
+          "tag": "4",
+          "content": "flm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "WNET (Television station : New York, N.Y.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "American masters, Thirteen/WNET."
+        },
+        {
+          "tag": "4",
+          "content": "dnr"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*MGZIDVD 5-3013"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Robbins, Jerome."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Choreographers"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "v",
+          "content": "Biography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Musical theater producers and directors"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "v",
+          "content": "Biography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ballet"
+        },
+        {
+          "tag": "x",
+          "content": "Production and direction"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Dance"
+        },
+        {
+          "tag": "z",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "History"
+        },
+        {
+          "tag": "y",
+          "content": "20th century."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Dance."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Video."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Documentaries and factual works."
+        },
+        {
+          "tag": "2",
+          "content": "mim"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)379433457"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "Gift;"
+        },
+        {
+          "tag": "a",
+          "content": "American Masters, Thirteen/WNET."
+        },
+        {
+          "tag": "5",
+          "content": "NN-PD"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "Gift;"
+        },
+        {
+          "tag": "a",
+          "content": "American Masters, Thirteen/WNET."
+        },
+        {
+          "tag": "5",
+          "content": "NN-PD"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DVD."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Narrator, Ron Rifkin."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "508",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Director of photography, Tom Hurwitz ; editors, Molly Bernstein, Girish Bhargava ; self portraits and journal art work by Jerome Robbins."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "518",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Originally broadcast on PBS on Feb. 18, 2009 as an episode of the television series American masters."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Dolby 2.0; anamorphic widescreen format."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Examines the life of the controversial master of the Broadway musical and ballet choreographer Jerome Robbins."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Features excerpts from his personal journals, archival performance footage, and never-before-seen rehearsal recordings, as well as interviews with Robbins himself and over forty others."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Interviewees include: Stephen Sondheim, Eliot Feld, Chita Rivera, Jacques D'Amboise, Sono Osato, Nanette Fabry, Deborah Jowitt, Ruthanna Boris, Donald Saddler, Robert Gottlieb, Helen Gallagher, Arthur Laurents, Stephen Whitfield, Sondra Lee, James Mitchell, Rose Tobias Shaw, Peter Martins, Mikhail Baryshnikov, Yuriko, Rita Moreno, Floria Lasky, Madeline Lee Gilford, Barbara Horgan, Frank Rich, Carol Lawrence, Tony Mordente, Grover Dale, Gerald Freedman, Lane Bradbury, Austin Pendleton, Tony Walton, Joseph Stein, Sheldon Harnick, Barry Primus, Patricia McBride, Violetta Verdy, Suzanne Farrell, Bart Cook, Maria Calegari, and Jerry Bock."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Brief dance excerpts include: Afternoon of a faun parody (Imogene Coca, William Archibald), Goyescas (Jerome Robbins, Lucia Chase), Romeo and Juliet (Jerome Robbins), Yo bailé con Don Porfirio (Jerome Robbins first work preserved on film), Fancy free (Joseph Duell, Kipling Houston, Jean-Pierre Frohlich/Stephanie Saland and Joseph Duell), Interplay (Ballets U.S.A.), Look ma I'm dancin' (Harold Lang, Nancy Walker), High button shoes (Helen Gallagher, Donald Saddler), Symphony in C, The cage (Heather Watts, Bart Cook), Afternoon of a faun (Jacques D'Amboise, Taniquil Le Clercq), There once was a man, from Pajama Game (John Raitt, Janis Paige), Peter Pan (Mary Martin, Sondra Lee, Cyril Ritchard), sections of the West side story movie, Cool from West side story on Broadway, N.Y. export: opus jazz (Ed Sullivan show), Gypsy movie (strip number with Linda Hart, Anna McNeely, [Christine Ebersole]), Gypsy Broadway performance (Ethel Merman), Bottle dance from Fiddler on the roof movie, Les noces (Royal Swedish Ballet), Dances at a gathering (Patricia McBride and Anthony Blum/Stephanie Saland and Ib Andersen/Violette Verdy), Goldberg variations (Damian Woetzel, Darci Kistler), Two beggers from Pulcinella (Jerome Robbins, George Balanchine), In G major (Peter Martins, Suzanne Farrell), Dybbuk (Patricia McBride, Helgi Tomasson), Other dances (Mikhail Baryshnikov, Natalia Makarova), Glass pieces, Antique epigraphs (Maria Calegari), In memory of... (Suzanne Farrell, Adam Lüders), The poppa piece rehearsal, and A suite of dances (rehearsal and performance, Mikhail Baryshnikov)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jerome Rabinowitz -- Life-changing revelations -- Camp Tamiment -- Ballet Theatre -- Fancy free -- On the town -- The playful side and the darker side -- Love and loss -- Autobiographical material -- Broadway's rising star -- Balanchine and the New York City Ballet -- The king and I -- The House Un-American Activities Committee -- Robbins' muse, Tanaquil Le Clercq -- Peter Pan -- West side story -- Ballets U.S.A. -- Gypsy -- Challenges and fixes -- Fiddler on the roof -- Les noces -- Dances at a gathering -- The Goldberg variations -- Watermill -- Robbins and Balanchine -- Dybbuk -- Other dances -- Glass pieces and Antique epigraphs -- In memory of... -- Jerome Robbins' Broadway -- Dancing until the end."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Archive original: 1 DVD, donated by American Masters, Thirteen/WNET, 2/24/2009; in Princeton ReCAP Regular Storage."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Edit master: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Additional copies/Rough edits/Outtakes: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vid. pres. master: 1 DVD; donated by American Masters, Thirteen/WNET, 2/24/2009; in Princeton ReCAP Regular Storage."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vid. view. copy: 1 DVD; donated by American Masters, Thirteen/WNET, 2/24/2009; on shelf."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Film view. copy: none."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Other notes: titles on frame."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "379433457",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "c2008."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*MGZIDVD 5-3013"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1 videodisc (NTSC) (117 min.) :"
+        },
+        {
+          "tag": "b",
+          "content": "sd., col. with b&w sequences ;"
+        },
+        {
+          "tag": "c",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jerome Robbins"
+        },
+        {
+          "tag": "h",
+          "content": "[videorecording] :"
+        },
+        {
+          "tag": "b",
+          "content": "something to dance about /"
+        },
+        {
+          "tag": "c",
+          "content": "written by Amanda Vaill ; produced & directed by Judy Kinberg ; produced by Thirteen/WNET American Masters."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Something to dance about"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "American masters (Television program)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b101071978"
+        },
+        {
+          "tag": "b",
+          "content": "06-10-09"
+        },
+        {
+          "tag": "c",
+          "content": "06-10-09"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20090609143333.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "vd mvaizq",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "090609s2008    xxu117            vleng dngmIa ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYP"
+        },
+        {
+          "tag": "e",
+          "content": "amim"
+        },
+        {
+          "tag": "c",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "U.S."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.pbs.org/wnet/americanmasters/episodes/jerome-robbins/something-to-dance-about/437/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "pd"
+        },
+        {
+          "tag": "e",
+          "content": "Dance Division, New York Public Library for the Performing Arts, 40 Lincoln Center Plaza, New York, NY 10023-7498"
+        },
+        {
+          "tag": "c",
+          "content": "DAN/PDK"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "pd"
+        },
+        {
+          "tag": "b",
+          "content": "06-10-09"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "g"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "xxu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ngm  2200697Ia 4500",
+      "subfields": null
+    }
+  ]
+}
