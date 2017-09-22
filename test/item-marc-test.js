@@ -33,6 +33,16 @@ describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
   describe('Parse', function () {
+    it('parses deleted as suppressed', function () {
+      let item = ItemSierraRecord.from(require('./data/item-10781594-deleted.json'))
+      assert(item.deleted, true)
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.literal('nypl:suppressed'), true)
+        })
+    })
+
     it('should parse marc mapping for sierra-nypl', function () {
       var mapper = buildMapper('item', 'sierra-nypl')
 

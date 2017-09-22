@@ -38,6 +38,16 @@ describe('Bib Marc Mapping', function () {
       assert.equal(resources[0].path, '856')
     })
 
+    it('should serialize deleted bibs as suppressed', function () {
+      let bib = BibSierraRecord.from(require('./data/bib-20827868-deleted.json'))
+      assert(bib.deleted, true)
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:suppressed'), true)
+        })
+    })
+
     it('should extract supplementalContent electronic resource', function () {
       var bib = BibSierraRecord.from(require('./data/bib-16099314.json'))
 
