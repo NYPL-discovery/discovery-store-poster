@@ -406,6 +406,14 @@
       "content": null,
       "subFields": [
         {
+          "tag": "6",
+          "content": "tag-6"
+        },
+        {
+          "tag": "8",
+          "content": "tag-8"
+        },
+        {
           "tag": "a",
           "content": "Cobbett's weekly political register"
         },
