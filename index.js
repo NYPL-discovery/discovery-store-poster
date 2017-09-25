@@ -76,30 +76,37 @@ function processEvent (event, context, callback) {
 }
 
 exports.handler = (event, context, callback) => {
-  // Use of libpq seems to cause something to hang out in the event loop, so
-  // tell the lambda engine to just kill the process when callback called:
-  // TODO see if we can remove this now that we're no longer using libpq
-  context.callbackWaitsForEmptyEventLoop = false
+  try {
+    // Use of libpq seems to cause something to hang out in the event loop, so
+    // tell the lambda engine to just kill the process when callback called:
+    // TODO see if we can remove this now that we're no longer using libpq
+    context.callbackWaitsForEmptyEventLoop = false
 
-  if (!log) {
-    // Set log level (default 'info')
-    log = require('loglevel')
-    log.setLevel(process.env['LOGLEVEL'] || 'info')
-    log.info('Loading Lambda function')
-  }
+    if (!log) {
+      // Set log level (default 'info')
+      log = require('loglevel')
+      log.setLevel(process.env['LOGLEVEL'] || 'info')
+      log.info('Loading Lambda function')
+    }
 
-  if (decryptedDbConnectionString) {
-    db.setConnectionString(decryptedDbConnectionString)
-    processEvent(event, context, callback)
-  } else {
-    // Decrypt code should run once and variables stored outside of the function
-    // handler so that these are decrypted once per container
-    kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
+    if (decryptedDbConnectionString) {
       db.setConnectionString(decryptedDbConnectionString)
       processEvent(event, context, callback)
-    }).catch((err) => {
-      log.error('Decrypt error:', err)
-      return callback(err)
-    })
+    } else {
+      // Decrypt code should run once and variables stored outside of the function
+      // handler so that these are decrypted once per container
+      kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
+        db.setConnectionString(decryptedDbConnectionString)
+        processEvent(event, context, callback)
+      }).catch((err) => {
+        log.error('Decrypt error:', err)
+        return callback(err)
+      })
+    }
+  } catch (e) {
+    console.log('uh ohhhhhh')
+    console.log(e.stack)
+    return callback(e)
   }
+
 }
