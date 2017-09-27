@@ -233,7 +233,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should map carrier type, dimensions, extent, alt title', function () {
+    it('should map carrier type, dimensions, extent, alt title, display title', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18501478.json'))
 
       return bibSerializer.fromMarcJson(bib)
@@ -248,6 +248,9 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:extent'), 'v. ;')
 
           assert.equal(bib.literal('dcterms:alternative'), 'Cobbett\'s weekly political register (London, England : 1802)')
+          assert.equal(
+            bib.literal('nypl:titleDisplay'), 'Cobbett\'s weekly political register [electronic resource].'
+          )
         })
     })
 

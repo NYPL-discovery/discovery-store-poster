@@ -39,5 +39,8 @@
   "kinesisReadStreams": {
     "bib": "",
     "item": ""
+  },
+  "nyplCoreMappings": {
+    "version_tag": "v1.1"
   }
 }
