@@ -1,0 +1,1018 @@
+{
+  "id": "16734592",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-01-10T07:14:03-05:00",
+  "createdDate": "2008-12-21T18:23:14-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mya",
+      "name": "Performing Arts - Adult"
+    },
+    {
+      "code": "myh",
+      "name": "Performing Arts Research Collections - Recorded Sound"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "zxx",
+    "name": "No linguistic content"
+  },
+  "title": "Woodwind quintets. Volume 9 [sound recording]",
+  "author": "Reicha, Anton, 1770-1836.",
+  "materialType": {
+    "code": "y",
+    "value": "MUSIC CD"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2007,
+  "catalogDate": "2015-11-26",
+  "country": {
+    "code": "wau",
+    "name": "Washington (State)"
+  },
+  "normTitle": "woodwind quintets volume 9 sound recording",
+  "normAuthor": "reicha anton 1770 1836",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "zxx",
+      "display": "No linguistic content"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "multi",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "3",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2015-11-26",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "y",
+      "display": "MUSIC CD"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "16734592",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-21T18:23:14Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2016-01-10T07:14:03Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "12",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "wau",
+      "display": "Washington (State)"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2016-01-01T08:29:35Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Reicha, Anton,"
+        },
+        {
+          "tag": "d",
+          "content": "1770-1836."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Reicha, Anton,"
+        },
+        {
+          "tag": "d",
+          "content": "1770-1836."
+        },
+        {
+          "tag": "t",
+          "content": "Quintets,"
+        },
+        {
+          "tag": "m",
+          "content": "flute, oboe, clarinet, horn, bassoon,"
+        },
+        {
+          "tag": "n",
+          "content": "op. 99."
+        },
+        {
+          "tag": "n",
+          "content": "No. 6."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Westwood Wind Quintet."
+        },
+        {
+          "tag": "4",
+          "content": "prf"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "091",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "f",
+          "content": "CD"
+        },
+        {
+          "tag": "a",
+          "content": "CHAMBER"
+        },
+        {
+          "tag": "c",
+          "content": "REICHA,A-2152"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wind quintets (Bassoon, clarinet, flute, horn, oboe)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wind quintets (Bassoon, clarinet, flute, horn, oboe)"
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01175679"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Chamber music."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "  2009546141"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "009414726926"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "7",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "00009414726926"
+        },
+        {
+          "tag": "2",
+          "content": "gtin-14"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CD269"
+        },
+        {
+          "tag": "b",
+          "content": "Crystal Records"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)182522152"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)166364461"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)166392078"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Westwood Wind Quintet (John Barcellona, flute ; Peter Christ, oboe ; Dileep Gangolli, clarinet ; Charles Kavalovski, horn ; Patricia Nelson, bassoon)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "518",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Recorded July 8-9 and 13-14, 2005, Crystal Chamber Hall, Camas, Wash."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Compact disc."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Program and biographical notes in English (16 p.) inserted in container."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "t",
+          "content": "B minor, op. 99, no. 5"
+        },
+        {
+          "tag": "g",
+          "content": "(38:33) -- G major, op. 99, no. 6"
+        },
+        {
+          "tag": "g",
+          "content": "(35:36)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "182522152",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Camas, WA :"
+        },
+        {
+          "tag": "b",
+          "content": "Crystal Records,"
+        },
+        {
+          "tag": "c",
+          "content": "[2007]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "℗2007"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*LDC 43703"
+        },
+        {
+          "tag": "z",
+          "content": "Notes on file."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1 sound disc :"
+        },
+        {
+          "tag": "b",
+          "content": "digital ;"
+        },
+        {
+          "tag": "c",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "306",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "003833"
+        },
+        {
+          "tag": "a",
+          "content": "003536"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "performed music"
+        },
+        {
+          "tag": "b",
+          "content": "prm"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "audio"
+        },
+        {
+          "tag": "b",
+          "content": "s"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "audio disc"
+        },
+        {
+          "tag": "b",
+          "content": "sd"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "347",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "audio file"
+        },
+        {
+          "tag": "b",
+          "content": "CD audio"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "382",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "flute"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "a",
+          "content": "oboe"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "a",
+          "content": "clarinet"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "a",
+          "content": "horn"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "a",
+          "content": "bassoon"
+        },
+        {
+          "tag": "n",
+          "content": "1"
+        },
+        {
+          "tag": "s",
+          "content": "5"
+        },
+        {
+          "tag": "2",
+          "content": "lcmpt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Woodwind quintets."
+        },
+        {
+          "tag": "n",
+          "content": "Volume 9"
+        },
+        {
+          "tag": "h",
+          "content": "[sound recording] /"
+        },
+        {
+          "tag": "c",
+          "content": "Anton Reicha."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "240",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Quintets,"
+        },
+        {
+          "tag": "m",
+          "content": "flute, oboe, clarinet, horn, bassoon,"
+        },
+        {
+          "tag": "n",
+          "content": "op. 99."
+        },
+        {
+          "tag": "n",
+          "content": "No. 5"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b88766986"
+        },
+        {
+          "tag": "b",
+          "content": "11-27-07"
+        },
+        {
+          "tag": "c",
+          "content": "11-27-07"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20151125102528.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "sd fsngnnmmned",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "090522p20072006waumunn  efhi     n zxx dcjm a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "019",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "166364461"
+        },
+        {
+          "tag": "a",
+          "content": "166392078"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "033",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "20060708"
+        },
+        {
+          "tag": "a",
+          "content": "20060714"
+        },
+        {
+          "tag": "b",
+          "content": "4284"
+        },
+        {
+          "tag": "c",
+          "content": "C2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYP"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "c",
+          "content": "NYP"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "IHI"
+        },
+        {
+          "tag": "d",
+          "content": "BTCTA"
+        },
+        {
+          "tag": "d",
+          "content": "CN8ML"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "WAU"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "eng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "lccopycat"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "M3.1.R453"
+        },
+        {
+          "tag": "b",
+          "content": "W559 2007"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "M3.1.R453"
+        },
+        {
+          "tag": "b",
+          "content": "W559 2007"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "cam"
+        },
+        {
+          "tag": "b",
+          "content": "CATBL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b167345928"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "ph"
+        },
+        {
+          "tag": "c",
+          "content": "RHA/TS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cjm  2200589 a 4500",
+      "subfields": null
+    }
+  ]
+}
