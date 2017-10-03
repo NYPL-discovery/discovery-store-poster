@@ -54,13 +54,8 @@ function fixItem (item) {
 
 function fixBib (bib) {
   bib.varFields = (bib.varFields || []).map((field) => {
-    // Seems that var subFields sometimes appear under `subfields` in violation of schema, so correct it:
-    if (field.subfields) {
-      field.subFields = field.subfields
-      delete field.subfields
-    }
     // Assign following fields to null if not otherwise set:
-    field = ['subFields', 'content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
+    field = ['content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
 
     return field
   }, {})
@@ -258,4 +253,3 @@ if (argv.ids) {
         })
     })
 }
-
