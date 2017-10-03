@@ -48,6 +48,13 @@ This will run the lambda locally using secrets in `config/production.env` and on
 
 `npm run run-production`
 
+## Development
+The PCDM Store Updater uses field mapping files in `nypl-core` to determine which fields in the MarcInJSON file to
+save — and how to record them — in the PCDM store. So while we run tests to check that the metadata is correct in this
+app, a lot of the actual data is controlled by `field-mapping-bib.json` and `field-mapping-item.json` in `nypl-core`. 
+In order to control which version of these files we use, we tag different versions of `nypl-core` and
+specify the tag to link to via the `nyplCoreMappings.version_tag` variable in `config/default.json`.
+
 ## Testing
 
 ```
