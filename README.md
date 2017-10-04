@@ -61,7 +61,7 @@ When a brand new environment is created, you'll need to initialize the DB enviro
 To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
 
 ```
-node jobs/init.js check --envfile config/[environment].env
+node jobs/init.js check --envfile config/[environment].env --profile [aws profile]
 ```
 
 If no errors are thrown, and the reported creds look correct, proceed with DB creation:
@@ -69,7 +69,7 @@ If no errors are thrown, and the reported creds look correct, proceed with DB cr
 The following will create necessary tables in the DB instance (identified in specified `--envfile`):
 
 ```
-node jobs/init.js create --envfile config/[environment].env
+node jobs/init.js create --envfile config/[environment].env --profile [aws profile]
 ```
 
 To verify that the serialization works on a sample document, you can run the following:
@@ -91,6 +91,8 @@ node jobs/update-bibs.js [opts]
 ```
 
 `Opts` can include:
+* `profile`: AWS profile (required)
+* `envfile`: Node-lambda .env file containing deployed ENV vars (required)
 * `offset`: Start at index
 * `limit`: Limit to this number of records
 * `skip`: Skip this many (useful if starting offset unknown)
@@ -116,6 +118,8 @@ node jobs/update-items.js [opts]
 ```
 
 `Opts` can include:
+* `profile`: AWS profile (required)
+* `envfile`: Node-lambda .env file containing deployed ENV vars (required)
 * `offset`: Start at index
 * `limit`: Limit to this number of records
 * `uri`: Process specific bib (from cache)
