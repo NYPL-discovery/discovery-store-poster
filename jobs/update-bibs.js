@@ -8,6 +8,8 @@ const BibsUpdater = require('../lib/bibs-updater')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
+  .describe('profile', 'AWS profile (required)')
+  .describe('envfile', 'Node-lambda .env file containing deployed ENV vars (required)')
   .describe('offset', 'Start at index')
   .describe('skip', 'Skip this many (useful if starting offset unknown)')
   .describe('seek', 'skip everything except this id')
@@ -30,8 +32,8 @@ var opts = {
 // If --until given, dynamically set limit:
 if (argv.until) argv.limit = argv.until - (argv.offset || 0) + 1
 
-require('dotenv').config({ path: './deploy.env' })
-require('dotenv').config({ path: './.env' })
+// Load up AWS creds:
+require('../lib/local-env-helper')
 
 log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 

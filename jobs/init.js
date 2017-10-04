@@ -93,9 +93,8 @@ if (COMMANDS.indexOf(command) < 0) exitWithError('Invalid command.')
 // Require an envfile:
 if (!argv.envfile) exitWithError('Must specify --envfile FILE')
 
-// Load env files:
-require('dotenv').config({ path: argv.envfile })
-require('dotenv').config({ path: './.env' })
+// Load up AWS creds:
+require('../lib/local-env-helper')
 
 const kmsHelper = require('../lib/kms-helper')
 const db = require('../lib/db')

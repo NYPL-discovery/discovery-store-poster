@@ -8,6 +8,8 @@ const ItemsUpdater = require('../lib/items-updater')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
+  .describe('profile', 'AWS profile (required)')
+  .describe('envfile', 'Node-lambda *.env file containing deployed ENV vars (required)')
   .describe('offset', 'Start at index')
   .describe('limit', 'Limit to this number of records')
   .describe('uri_cache', 'Process specific item by prefixed uri (from cache)')
@@ -26,8 +28,8 @@ var opts = {
   seek: argv.uri_seek || null
 }
 
-require('dotenv').config({ path: './deploy.env' })
-require('dotenv').config({ path: './.env' })
+// Load up AWS creds:
+require('../lib/local-env-helper')
 
 log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 
