@@ -37,6 +37,7 @@
     "dotenv": "^4.0.0",
     "mocha": "^3.5.0",
     "node-lambda": "^0.11.3",
+    "sinon": "^4.0.1",
     "standard": "6.0.8"
   },
   "scripts": {
