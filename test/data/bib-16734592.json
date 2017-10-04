@@ -459,6 +459,10 @@
         {
           "tag": "a",
           "content": "℗2007"
+        },
+        {
+          "tag": "b",
+          "content": "Test Placeholder Records,"
         }
       ]
     },
