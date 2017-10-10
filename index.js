@@ -72,6 +72,10 @@ function processEvent (event, context, callback) {
         log.trace(error)
         callback(error)
       })
+  }).catch((error) => {
+    log.error(`processEvent: Error fetching schema (${bibOrItem})`)
+    log.trace(error)
+    callback(error)
   })
 }
 
