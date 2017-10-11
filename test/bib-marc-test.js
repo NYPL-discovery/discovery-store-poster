@@ -523,13 +523,69 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should parse publisher literal', function () {
+    it('should parse publisher literal from marc 260$b subfield', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
 
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian,')
+        })
+    })
+
+    it('should parse publisher literal from marc 264$b subfield', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20549111.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:role-publisher'), 'Edizioni Edicampus,')
+        })
+    })
+
+    it('should parse publisher literal from both marc 260 & 264 fields', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-16734592.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let placeOfPublications = bib.literals('nypl:role-publisher')
+
+          assert(placeOfPublications.indexOf('Crystal Records,') !== -1)
+          assert(placeOfPublications.indexOf('Test Placeholder Records,') !== -1)
+        })
+    })
+
+    it('should parse place of publication literal from marc 260 field', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-10001936.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:placeOfPublication'), 'Ṛostov (Doni Vra) :')
+        })
+    })
+
+    it('should parse place of publication literal from marc 264 field', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-20549111.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:placeOfPublication'), 'Roma :')
+        })
+    })
+
+    it('should parse place of publication literal from both marc 260 & 264 fields', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-16734592.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let placeOfPublications = bib.literals('nypl:placeOfPublication')
+
+          assert(placeOfPublications.indexOf('Camas, WA :') !== -1)
+          assert(placeOfPublications.indexOf('℗2007') !== -1)
         })
     })
 
