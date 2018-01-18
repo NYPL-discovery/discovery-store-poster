@@ -1,0 +1,554 @@
+{
+  "id": "17678033",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-01-10T08:57:27-05:00",
+  "createdDate": "2008-12-24T00:05:38-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "hda",
+      "name": "125th Street Adult"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Cantarella. Vol. 6",
+  "author": "Higuri, Yū.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2007,
+  "catalogDate": "2008-12-22",
+  "country": {
+    "code": "cau",
+    "name": "California"
+  },
+  "normTitle": "cantarella vol 6",
+  "normAuthor": "higuri yū",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "hda  ",
+      "display": "125th Street Adult"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "9",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2008-12-22",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "17678033",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-24T00:05:38Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2016-01-10T08:57:27Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "41",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "cau",
+      "display": "California"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2016-01-01T10:30:34Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Higuri, Yū."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Schilling, Christine."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Taylor, Audry."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "091",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "f",
+          "content": "GRAPHIC"
+        },
+        {
+          "tag": "a",
+          "content": "GN FIC"
+        },
+        {
+          "tag": "c",
+          "content": "H"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Borgia, Cesare,"
+        },
+        {
+          "tag": "d",
+          "content": "1476?-1507"
+        },
+        {
+          "tag": "v",
+          "content": "Comic books, strips, etc."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Graphic novels."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9781933617091 (pbk.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1933617098 (pbk.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"A Go! Comi manga.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"Originally published in Japan in 2003 by Akita Publishing Co., Ltd., Tokyo.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Translated from the Japanese."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "84903746 ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[Agoura Hills, CA] :"
+        },
+        {
+          "tag": "b",
+          "content": "Go! Media Entertainment,"
+        },
+        {
+          "tag": "c",
+          "content": "c2007."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1 v. (unpaged) :"
+        },
+        {
+          "tag": "b",
+          "content": "chiefly ill., maps ;"
+        },
+        {
+          "tag": "c",
+          "content": "19 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cantarella."
+        },
+        {
+          "tag": "n",
+          "content": "Vol. 6 /"
+        },
+        {
+          "tag": "c",
+          "content": "story and art by You Higuri ; [translation, Christine Schilling ; adaptation, Audry Taylor]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "240",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Kantarera."
+        },
+        {
+          "tag": "l",
+          "content": "English"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "i",
+          "content": "Original Japanese title:"
+        },
+        {
+          "tag": "a",
+          "content": "Kantarera"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "995",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2530153"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20070830170051.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "070223t20072003cauab  d      000 c eng dcamIa ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)84903746"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "KNJ"
+        },
+        {
+          "tag": "c",
+          "content": "KNJ"
+        },
+        {
+          "tag": "d",
+          "content": "BAKER"
+        },
+        {
+          "tag": "d",
+          "content": "BTCTA"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "BNY"
+        },
+        {
+          "tag": "d",
+          "content": "UtOrBLW"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "$1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "246-01/$1"
+        },
+        {
+          "tag": "i",
+          "content": "Original Japanese title:"
+        },
+        {
+          "tag": "a",
+          "content": "カンタレラ"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "kts"
+        },
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "969",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DOE migration record (2011)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200337Ia 4500",
+      "subfields": null
+    }
+  ]
+}
