@@ -90,9 +90,6 @@ const command = argv._[0]
 if (!argv._ || argv._.length === 0) exitWithError('No command given.')
 if (COMMANDS.indexOf(command) < 0) exitWithError('Invalid command.')
 
-// Require an envfile:
-if (!argv.envfile) exitWithError('Must specify --envfile FILE')
-
 // Load up AWS creds:
 require('../lib/local-env-helper')
 

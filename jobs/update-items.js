@@ -1,4 +1,23 @@
-'use strict'
+/**
+ * This script may be used in one of two ways to directly process items(s).
+ *
+ * 1. Process a single item:
+ *
+ *   `node jobs/update-item --inum [inum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *
+ * 2. Process item in bulk using a ndjson file:
+ *
+ *   `node jobs/update-items --itemsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *
+ * Other options available for bulk processing:
+ *  `--offset`: Skip over this many item in the ndjson
+ *  `--offset`: Skip this many items in the ndjson
+ *  `--seek`: Skip over everything in ndjson until this inum found
+ *  `--limit`: Stop processing after this many have been processed
+ *  `--until`: Stop processing when this offset is reached
+ *  `--threads`: Use this many parallel threads to process the workloadStop processing when this offset is reached
+ *  `--disablescreen`: Override default use of fancy `screen` visualization (which may interfere with capturing output)
+ */
 
 const log = require('loglevel')
 
@@ -12,9 +31,8 @@ var argv = require('optimist')
   .describe('envfile', 'Node-lambda *.env file containing deployed ENV vars (required)')
   .describe('offset', 'Start at index')
   .describe('limit', 'Limit to this number of records')
-  .describe('uri_cache', 'Process specific item by prefixed uri (from cache)')
-  .describe('uri', 'Process specific item by prefixed uri (from api)')
-  .describe('uri_seek', 'Process a specific item by non-prefixed uri (by skipping over everything else in the stream)')
+  .describe('inum', 'Process specific item by prefixed uri (from api)')
+  .alias('inum', 'uri')
   .describe('loglevel', 'Specify log level (default error)')
   .describe('threads', 'Specify number of threads to run it under')
   .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')

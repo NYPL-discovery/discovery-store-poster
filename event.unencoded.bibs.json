@@ -126,7 +126,7 @@
           "ind1": "1",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Holder, Geoffrey,"
@@ -147,7 +147,7 @@
           "ind1": "1",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Coombs, Orde."
@@ -164,7 +164,7 @@
           "ind1": "1",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Hunter, Jim"
@@ -185,7 +185,7 @@
           "ind1": "1",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Pontillo, Peter."
@@ -202,7 +202,7 @@
           "ind1": "2",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "WPIX (Television station : New York, N.Y.)"
@@ -215,7 +215,7 @@
           "ind1": "2",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "World Institute of Black Communications."
@@ -228,7 +228,7 @@
           "ind1": "2",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "CEBA Collection."
@@ -241,7 +241,7 @@
           "ind1": "8",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "h",
               "content": "Sc Visual VRB-87"
@@ -254,7 +254,7 @@
           "ind1": "1",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Holder, Geoffrey,"
@@ -271,7 +271,7 @@
           "ind1": "0",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Timbuktu."
@@ -284,7 +284,7 @@
           "ind1": " ",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "African American theater."
@@ -297,7 +297,7 @@
           "ind1": " ",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Costume design"
@@ -318,7 +318,7 @@
           "ind1": " ",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Theater"
@@ -339,7 +339,7 @@
           "ind1": " ",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Costume designers"
@@ -360,7 +360,7 @@
           "ind1": " ",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "African American fashion designers"
@@ -377,7 +377,7 @@
           "ind1": " ",
           "ind2": "7",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Black films and programs."
@@ -394,7 +394,7 @@
           "ind1": " ",
           "ind2": "7",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Talk shows."
@@ -411,7 +411,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "United States."
@@ -424,7 +424,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "(WaOLN)nyp1260684"
@@ -437,7 +437,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "This program forms part of the Communications Excellence to Black Audiences (CEBA) Award Collection, a competition sponsored by the World Institute of Black Communications, Inc."
@@ -450,7 +450,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Host, Orde Coombs."
@@ -463,7 +463,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Geoffrey Holder discusses his work in the Broadway production of Timbuktu where he is the director, choreographer, and costume designer.  He also discusses the influence his family and his birthplace, Trinidad, has on his work.  Holder stresses the need for fantasy and splendor in his work and in the world."
@@ -476,7 +476,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": "NYPG89-F29",
-          "subFields": null
+          "subfields": null
         },
         {
           "fieldTag": "p",
@@ -484,7 +484,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "New York"
@@ -505,7 +505,7 @@
           "ind1": "8",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "h",
               "content": "Sc Visual VRB-87"
@@ -522,7 +522,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "1 videocassette of 1 (U-matic) (27 min.) :"
@@ -543,7 +543,7 @@
           "ind1": "0",
           "ind2": "0",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Black conversations."
@@ -568,7 +568,7 @@
           "ind1": "0",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "Interview with Geoffrey Holder."
@@ -581,7 +581,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": ".b22777349"
@@ -602,7 +602,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": "20000629180250.0",
-          "subFields": null
+          "subfields": null
         },
         {
           "fieldTag": "y",
@@ -610,7 +610,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": "vfrccahrm",
-          "subFields": null
+          "subfields": null
         },
         {
           "fieldTag": "y",
@@ -618,7 +618,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": "890522s1978    xxu027 g          vleng dcgm a ",
-          "subFields": null
+          "subfields": null
         },
         {
           "fieldTag": "y",
@@ -626,7 +626,7 @@
           "ind1": "0",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "19780321"
@@ -647,7 +647,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "NN"
@@ -668,7 +668,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "a",
               "content": "si"
@@ -709,7 +709,7 @@
           "ind1": null,
           "ind2": null,
           "content": "00000cgm  2200433 a 4500",
-          "subFields": null
+          "subfields": null
         }
       ]
     }

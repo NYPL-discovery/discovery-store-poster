@@ -12,23 +12,27 @@ Before one can run or deploy, one needs to do two things:
 
 1. Ensure `nypl-digital-dev` and `nypl-sandbox` profiles are registered in `~/.aws/credentials` and `~/.aws/config`
 2. Obtain environment secrets from a colleague to initialize an environment file as follows:
-  * `cp config/qa-sample.env config/qa.env`
-  * `cp config/production-sample.env config/production.env`
+  * `cp config/sample.env config/qa.env`
+  * `cp config/sample.env config/production.env`
   * Fill in missing secrets in both environment files
 
-Note, the `DISCOVERY_STORE_CONNECTION_URI` variable should be encrypted. If you have the plaintext connection string, you can encrypt it using the aws cli:
+Note, the `DISCOVERY_STORE_CONNECTION_URI` variable should be encrypted. See [NYPL notes on encrypting secrets on the command line](https://github.com/NYPL/engineering-general/blob/master/security/secrets.md#using-the-aws-command-line) for more information.
 
-```
-aws kms encrypt --key-id "[arn for 'lambda-rds' key]" --plaintext "[plaintext connection string]"
-```
+### Verifying your configuration
+
+It can be useful to inspect the configuration represented by different env files - as a sanity check before running a command. The following displays the decrypted configuration from the given env file:
+
+`node jobs/init check --envfile [path to env file] --profile [aws profile]`
 
 ### Creating a Test Event
 
-Run this to generate `event.bibs.json` full of encoded bibs:
+Test event json files can be generated to emulate lambda invocations locally.
+
+Run this to generate `event.json` full of encoded bibs:
 
 `node kinesify-data.js event.unencoded.bibs.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Bib`
 
-Or run this to generate `event.items.json` full of encoded items:
+Or run this to generate `event.json` full of encoded items:
 
 `node kinesify-data.js event.unencoded.items.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Item`
 
@@ -36,24 +40,77 @@ Alternatively, to generate a event.json from a plain marcinjson document (such a
 
 `node kinesify-data test/data/bib-10011745.json event.json  https://platform.nypl.org/api/v0.1/current-schemas/Bib`
 
-The `event.json`s generated above will be used when running any version of `npm run run-[environment]` that follow.
-
-### Running Locally
-
-This will run the lambda locally using secrets in `config/qa.env` and one's `nypl-sandbox` profile:
+Either of the `event.json`s generated above can be processed against QA infrastructure like this:
 
 `npm run run-qa`
 
-This will run the lambda locally using secrets in `config/production.env` and one's `nypl-digital-dev` profile:
+### Directly Serializing a Specific Bib/Item Id
 
-`npm run run-production`
+A simple CLI exists allowing you to run the app against a specific single bib or item id. When invoked in this way, the app will query the bib/item data it needs against the platform API and write the result to the configured database.
 
-## Development
-The PCDM Store Updater uses field mapping files in `nypl-core` to determine which fields in the MarcInJSON file to
-save — and how to record them — in the PCDM store. So while we run tests to check that the metadata is correct in this
-app, a lot of the actual data is controlled by `field-mapping-bib.json` and `field-mapping-item.json` in `nypl-core`. 
-In order to control which version of these files we use, we tag different versions of `nypl-core` and
-specify the tag to link to via the `nyplCoreMappings.version_tag` variable in `config/default.json`.
+To get started, you'll need to initialize a local env file containing the db & API credentials you want:
+
+```
+cp config/sample-with-api-credentials.env config/production-api-qa-db.env
+```
+
+Presumably, `config/production-api-qa-db.env` will contain *production* platform API credentials and *QA* DB credentials, so get those from a co-worker.
+
+The following will fetch bib "b10001936" from the platform API and write it to the configured database.
+
+```
+node jobs/update-bibs --bnum b10001936 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+```
+
+Equlivalently, one can update a single item by inumber:
+
+```
+node jobs/update-items --inum i10003973 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+```
+
+Updating Columbia and Princeton items by the same mechanism is accomplished by preceding bnum/inum with 'c' and 'p', respectively. For example, this will process Princeton bib "176961":
+
+```
+node jobs/update-bibs --bnum pb176961 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+```
+
+## Git & Deployment Workflow
+
+`master` has the lastest-and-greatest commits, `production` should represent what's in our production environment. Because we deploy often, master and production will often be in parity.
+
+### Ideal Workflow
+
+ - Cut a feature branch off of master.
+ - Commit changes to your feature branch.
+ - File a pull request against master and assign reviewers.
+ - After the PR is accepted, merge into master.
+ - As necessary, you can `node-lambda deploy` the `master` branch to QA to test on sandbox infrastructure
+ - Merge / promote master into production and push to origin.
+ - Deploy to production when appropriate (Ideally very soon)
+
+### Release Tags
+
+We're still discussing how and when we want to create release tags. We're dedicated to:
+
+ - Making sure release tag version mirrors the app version in package.json.
+ - Bumping that version on each deployment.
+
+### NYPL Core changes
+
+The PCDM Store Updater uses field mapping files in `nypl-core` to determine which fields in the MarcInJSON file to save — and how to record them — in the PCDM store. So while we run tests to check that the metadata is correct in this app, a lot of the actual data is controlled by `field-mapping-bib.json` and `field-mapping-item.json` in `nypl-core`. In order to control which version of these files we use, we tag different versions of `nypl-core` and specify the tag to link to via the `NYPL_CORE_VERSION` variable (e.g. "master", "v1.4a").
+
+### Deploying
+
+This component utilizes *two* environments:
+
+ * *QA*: Represented by `qa` branch, deployed to `nypl-sandbox` account with a dedicated RDS instance
+ * *Production*: Represented by `production` branch, deployed to `nypl-digital-dev` account with a dedicated RDS instance
+
+To deploy:
+
+```
+npm run deploy-[qa/production]
+```
 
 ## Testing
 
@@ -61,9 +118,9 @@ specify the tag to link to via the `nyplCoreMappings.version_tag` variable in `c
 npm test
 ```
 
-## Initializing a New Environment
+## Initializing a New Deployment Environment
 
-When a brand new environment is created, you'll need to initialize the DB environment.
+When a brand new environment is created (e.g. creating a new "Development" environment on AWS infrastructure), you'll need to initialize the DB environment.
 
 To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
 
@@ -78,60 +135,3 @@ The following will create necessary tables in the DB instance (identified in spe
 ```
 node jobs/init.js create --envfile config/[environment].env --profile [aws profile]
 ```
-
-To verify that the serialization works on a sample document, you can run the following:
-
-```
-npm run run-[environment]
-```
-
-## Bulk (non-lambda) Execution
-
-Specialized "job" scripts are available for running this app in bulk against a large local data set. These scripts do not use `node-lambda`.
-
-### Bibs
-
-Processes NYPL Bibs
-
-```
-node jobs/update-bibs.js [opts]
-```
-
-`Opts` can include:
-* `profile`: AWS profile (required)
-* `envfile`: Node-lambda .env file containing deployed ENV vars (required)
-* `offset`: Start at index
-* `limit`: Limit to this number of records
-* `skip`: Skip this many (useful if starting offset unknown)
-* `seek`: Skip everything except this id (useful id is known to exist insource, but offset not known)
-* `until`: Stop after processing this offset
-* `uri`: Process specific bib (from cache)
-* `loglevel`: Specify log level (default info)
-* `threads`: Specify number of threads to run it under
-* `disablescreen`: If running multi-threaded, disables default screen takeover
-
-For example, to process the first 100 records with verbose debug output:
-
-```
-node jobs/update-bibs.js --limit 100 --loglevel debug
-```
-
-### Items
-
-Processes NYPL Items
-
-```
-node jobs/update-items.js [opts]
-```
-
-`Opts` can include:
-* `profile`: AWS profile (required)
-* `envfile`: Node-lambda .env file containing deployed ENV vars (required)
-* `offset`: Start at index
-* `limit`: Limit to this number of records
-* `uri`: Process specific bib (from cache)
-* `loglevel`: Specify log level (default info)
-* `threads`: Specify number of threads to run it under
-* `disablescreen`: If running multi-threaded, disables default screen takeover
-
-
