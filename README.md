@@ -30,15 +30,15 @@ Test event json files can be generated to emulate lambda invocations locally.
 
 Run this to generate `event.json` full of encoded bibs:
 
-`node kinesify-data.js event.unencoded.bibs.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Bib`
+`node kinesify-data.js event.unencoded.bibs.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Bib --envfile [path to env file] --profile [aws profile]`
 
 Or run this to generate `event.json` full of encoded items:
 
-`node kinesify-data.js event.unencoded.items.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Item`
+`node kinesify-data.js event.unencoded.items.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Item --envfile [path to env file] --profile [aws profile]`
 
 Alternatively, to generate a event.json from a plain marcinjson document (such as retrieved from the sierra api), you can kinesify that directly:
 
-`node kinesify-data test/data/bib-10011745.json event.json  https://platform.nypl.org/api/v0.1/current-schemas/Bib`
+`node kinesify-data test/data/bib-10011745.json event.json  https://platform.nypl.org/api/v0.1/current-schemas/Bib --envfile [path to env file] --profile [aws profile]`
 
 Either of the `event.json`s generated above can be processed against QA infrastructure like this:
 
