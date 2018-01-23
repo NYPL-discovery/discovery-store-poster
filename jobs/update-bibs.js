@@ -1,4 +1,23 @@
-'use strict'
+/**
+ * This script may be used in one of two ways to directly process bib(s).
+ *
+ * 1. Process a single bib:
+ *
+ *   `node jobs/update-bibs --bnum [bnum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *
+ * 2. Process bibs in bulk using a ndjson file:
+ *
+ *   `node jobs/update-bibs --bibsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *
+ * Other options available for bulk processing:
+ *  `--offset`: Skip over this many bibs in the ndjson
+ *  `--offset`: Skip this many bibs in the ndjson
+ *  `--seek`: Skip over everything in ndjson until this bnum found
+ *  `--limit`: Stop processing after this many have been processed
+ *  `--until`: Stop processing when this offset is reached
+ *  `--threads`: Use this many parallel threads to process the workloadStop processing when this offset is reached
+ *  `--disablescreen`: Override default use of fancy `screen` visualization (which may interfere with capturing output)
+ */
 
 const log = require('loglevel')
 
@@ -11,11 +30,12 @@ var argv = require('optimist')
   .describe('profile', 'AWS profile (required)')
   .describe('envfile', 'Node-lambda .env file containing deployed ENV vars (required)')
   .describe('offset', 'Start at index')
-  .describe('skip', 'Skip this many (useful if starting offset unknown)')
   .describe('seek', 'skip everything except this id')
   .describe('limit', 'Limit to this number of records')
   .describe('until', 'Stop after processing this offset')
-  .describe('uri', 'Process specific bib by prefixed uri (from api)')
+  .describe('bnum', 'Process specific bib by prefixed bnum (queries api)')
+  .alias('bnum', 'uri')
+  .describe('bibsSource', 'Path to local ndjson file')
   .describe('loglevel', 'Specify log level (default info)')
   .describe('threads', 'Specify number of threads to run it under')
   .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
@@ -23,7 +43,6 @@ var argv = require('optimist')
 
 var opts = {
   debug: argv.debug,
-  skip: parseInt(argv.skip) || 0,
   offset: parseInt(argv.offset) || 0,
   limit: parseInt(argv.limit) || 0,
   seek: argv.seek || null
@@ -40,8 +59,8 @@ log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 kmsHelper.decryptDbCreds().then((decryptedDbConnectionString) => {
   db.setConnectionString(decryptedDbConnectionString)
 
-  if (argv.uri) {
-    ; (new BibsUpdater()).uriFromApi(argv.uri)
+  if (argv.bnum) {
+    ; (new BibsUpdater()).uriFromApi(argv.bnum)
   } else if (argv.threads) {
     BibsUpdater.threaded(argv)
   } else {
