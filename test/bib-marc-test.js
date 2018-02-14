@@ -115,8 +115,8 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // This fixture was modified to include a $f subfield excluded from the mapping.
           // This test confirms it is not pulled in:
-          assert.equal(bib.literal('dc:subject'), 'Albert -- II, -- Holy Roman Emperor, -- 1397-1439.')
-          assert.equal(bib.literals('dc:subject')[1], 'László -- V, -- King of Hungary and Bohemia, -- 1440-1457.')
+          assert.equal(bib.literal('dc:subject'), 'Albert II, Holy Roman Emperor, 1397-1439.')
+          assert.equal(bib.literals('dc:subject')[1], 'László V, King of Hungary and Bohemia, 1440-1457.')
           assert.equal(bib.literals('dc:subject')[2], 'Holy Crown of Hungary.')
         })
     })
@@ -606,6 +606,18 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:mov')
+        })
+    })
+
+    it('should format Subject Literal from 650 correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-17295111.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.literals('dc:subject'))
+          assert.equal(bib.literals('dc:subject').length, 1)
+          assert.equal(bib.literals('dc:subject')[0], 'Napoleonic Wars, 1800-1815 Emperor of the French, 1769-1821 -- Campaigns -- Russia -- Fiction.')
         })
     })
 
