@@ -393,13 +393,13 @@ describe('Bib Marc Mapping', function () {
           //  * 'Purchased from the Carl B. and Marjorie N. Boyer Fund' (541 $a with ind1 '0', so suppress)
 
           // There is one note in 505 $a
-          assert.equal(bib.blankNodes('skos:note')[0].literal('rdfs:label'), 'Translation of La vie quotidienne dans l\'Empire carolingien.')
+          assert.equal(bib.blankNodes('bf:note')[0].literal('rdfs:label'), 'Translation of La vie quotidienne dans l\'Empire carolingien.')
 
           // Another note in 504 $a:
-          assert.equal(bib.blankNodes('skos:note')[1].literal('rdfs:label'), 'Includes bibliographical references and index.')
+          assert.equal(bib.blankNodes('bf:note')[1].literal('rdfs:label'), 'Includes bibliographical references and index.')
 
           // There's another note in 541 but ind1 === '0', so above should be all we get:
-          assert.equal(bib.blankNodes('skos:note').length, 2)
+          assert.equal(bib.blankNodes('bf:note').length, 2)
         })
     })
 
@@ -411,7 +411,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // This bib has one note in 505, but ind1 === 0, so it should be suppressed
           // which means it has NO notes.
-          assert.equal(bib.literals('skos:note').length, 0)
+          assert.equal(bib.literals('bf:note').length, 0)
         })
     })
 
@@ -625,14 +625,14 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.equal(bib.statements('skos:note').length, 9)
+          assert.equal(bib.statements('bf:note').length, 9)
 
           // Among those 9 notes, grab the one with noteType "Immediate Source of Acquisition Note":
-          let blankNode = bib.blankNodes('skos:note')
+          let blankNode = bib.blankNodes('bf:note')
             .filter((node) => node.literal('bf:noteType') === 'Immediate Source of Acquisition Note')
             .pop()
           assert.equal(blankNode.statements().length, 3)
-          assert.equal(blankNode.objectId('rdfs:type'), 'bf:Note')
+          assert.equal(blankNode.objectId('rdf:type'), 'bf:Note')
           assert.equal(blankNode.literal('bf:noteType'), 'Immediate Source of Acquisition Note')
           assert.equal(blankNode.literal('rdfs:label'), 'American Masters, Thirteen/WNET.')
         })
