@@ -621,6 +621,22 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should parse Creator once without duplicating to Contributor', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10602209.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let creators = bib.literals('dc:creator')
+
+          assert.equal(creators.length, 1)
+          assert.equal(creators[0], 'Concha, Jaime.')
+
+          let contributors = bib.literals('dc:contributor')
+          assert.equal(contributors.length, 0)
+        })
+    })
+
     it('should parse Genre/Form literal correctly', function () {
       var bib = BibSierraRecord.from(require('./data/bib-17678033.json'))
 
