@@ -147,7 +147,6 @@ const fetchSchema = (url) => {
       }
 
       if (body.data && body.data.schema) {
-        // console.log('Loaded schema', body.data.schema)
         var schema = JSON.parse(body.data.schema)
         resolve(schema)
       }
@@ -156,10 +155,6 @@ const fetchSchema = (url) => {
 }
 
 function buildRecordsByIds (ids, nyplType) {
-  // We'll need to hit nypl data api, so load in creds and api base url vars:
-  require('dotenv').config({ path: './deploy.env' })
-  require('dotenv').config({ path: '.env' })
-
   // This draws from these env vars:
   // NYPL_API_BASE_URL
   // NYPL_OAUTH_KEY
@@ -216,6 +211,9 @@ function writeEncodedEvent (records, schema) {
     }
   })
 }
+
+// Load up AWS creds:
+require('./lib/local-env-helper')
 
 // If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
 if (argv.ids) {

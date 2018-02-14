@@ -624,5 +624,18 @@ describe('Bib Marc Mapping', function () {
           assert.equal(contributors.length, 0)
         })
     })
+
+    it('should parse Genre/Form literal correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-17678033.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:genreForm'), 'Graphic novels.')
+          let subjects = bib.literals('dc:subject')
+          let graphicNovelSubject = subjects.filter((subject) => subject === 'Graphic novels.')
+          assert.equal(graphicNovelSubject.length, 0)
+        })
+    })
   })
 })
