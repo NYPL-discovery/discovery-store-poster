@@ -11,7 +11,6 @@
     "blessed": "^0.1.81",
     "blessed-contrib": "^4.5.5",
     "bluebird": "^3.5.0",
-    "config": "^1.21.0",
     "highland": "^2.10.0",
     "image-size": "^0.5.0",
     "log4js": "^1.1.0",
@@ -45,7 +44,7 @@
     "invoke:remote": "aws lambda invoke --function-name discoveryStorePoster --payload file://event.json --log-type Tail invoked.json | jq -r '.LogResult' | base64 --decode && rm invoked.json",
     "deploy-production": "./node_modules/.bin/node-lambda deploy -e production -f ./config/production.env -b subnet-59bcdd03,subnet-5deecd15 -g sg-116eeb60 --role arn:aws:iam::946183545209:role/lambda-full-access --profile nypl-digital-dev -S config/event-sources-production.json",
     "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f ./config/qa.env -b subnet-f4fe56af -g sg-1d544067 --role arn:aws:iam::224280085904:role/lambda_basic_execution --profile nypl-sandbox -S config/event-sources-qa.json",
-    "run-production": "echo \"This won't work yet: waiting on support of --profile in node-lambda run\" && ./node_modules/.bin/node-lambda run -f ./config/production.env --profile nypl-digital-dev"
+    "run-qa": "AWS_PROFILE=nypl-sandbox ./node_modules/.bin/node-lambda run -f ./config/qa.env"
   },
   "standard": {
     "ignore": [

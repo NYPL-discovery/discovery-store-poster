@@ -54,13 +54,8 @@ function fixItem (item) {
 
 function fixBib (bib) {
   bib.varFields = (bib.varFields || []).map((field) => {
-    // Seems that var subFields sometimes appear under `subfields` in violation of schema, so correct it:
-    if (field.subfields) {
-      field.subFields = field.subfields
-      delete field.subfields
-    }
     // Assign following fields to null if not otherwise set:
-    field = ['subFields', 'content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
+    field = ['content', 'display', 'ind1', 'ind2', 'marcTag'].reduce((f, prop) => f[prop] ? f : Object.assign(f, { [prop]: null }), field)
 
     return field
   }, {})
@@ -152,7 +147,6 @@ const fetchSchema = (url) => {
       }
 
       if (body.data && body.data.schema) {
-        // console.log('Loaded schema', body.data.schema)
         var schema = JSON.parse(body.data.schema)
         resolve(schema)
       }
@@ -161,10 +155,6 @@ const fetchSchema = (url) => {
 }
 
 function buildRecordsByIds (ids, nyplType) {
-  // We'll need to hit nypl data api, so load in creds and api base url vars:
-  require('dotenv').config({ path: './deploy.env' })
-  require('dotenv').config({ path: '.env' })
-
   // This draws from these env vars:
   // NYPL_API_BASE_URL
   // NYPL_OAUTH_KEY
@@ -222,6 +212,9 @@ function writeEncodedEvent (records, schema) {
   })
 }
 
+// Load up AWS creds:
+require('./lib/local-env-helper')
+
 // If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
 if (argv.ids) {
   // If schemaUrl not explicitly given, construct it from nyplType of first record:
@@ -258,4 +251,3 @@ if (argv.ids) {
         })
     })
 }
-
