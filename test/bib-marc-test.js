@@ -685,5 +685,15 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:publicationStatement'), '[Chilpancingo de los Bravo, México] : Guerrero, Gobierno del Estado Libre y Soberano, Secretaría de Cultura ; México, D.F. : CONACULTA : Editorial Praxis, 2015.')
         })
     })
+
+    it('should parse serialPublicationDates', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10011750.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:serialPublicationDates'), 'no 1-29.')
+        })
+    })
   })
 })
