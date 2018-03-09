@@ -1,0 +1,478 @@
+{
+  "id": "10794947",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2009-05-05T21:05:16-04:00",
+  "createdDate": "2008-12-14T06:06:18-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "slr",
+      "name": "SIBL - Science Industry and Business"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Minimum age : summary of reports on convention no. 138 and recommendation no. 146 (article 19 of the Constitution) : third item on the agenda : information and reports on the application of conventions and recommendations.",
+  "author": "International Labour Conference (67th : 1981 : Geneva, Switzerland)",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1981,
+  "catalogDate": "2000-10-17",
+  "country": {
+    "code": "sz ",
+    "name": "Switzerland"
+  },
+  "normTitle": "minimum age summary of reports on convention no 138 and recommendation no 146 article 19 of the constitution third item on the agenda information and reports on the application of conventions and recommendations",
+  "normAuthor": "international labour conference 67th 1981 geneva switzerland",
+  "standardNumbers": [
+    "9221023990"
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-10-17",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10794947",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T06:06:18Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2009-05-05T21:05:16Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "4",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "sz ",
+      "display": "Switzerland"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2009-02-11T00:27:06Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "111",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "International Labour Conference"
+        },
+        {
+          "tag": "n",
+          "content": "(67th :"
+        },
+        {
+          "tag": "d",
+          "content": "1981 :"
+        },
+        {
+          "tag": "c",
+          "content": "Geneva, Switzerland)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "International Labour Office."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JLL 82-79 no. 3,pt.2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Youth"
+        },
+        {
+          "tag": "x",
+          "content": "Employment"
+        },
+        {
+          "tag": "v",
+          "content": "Congresses."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9221023990"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0801866"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Folding chart inserted at end."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG83-B44351",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Geneva :"
+        },
+        {
+          "tag": "b",
+          "content": "International Labour Office,"
+        },
+        {
+          "tag": "c",
+          "content": "1981."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JLL 82-79 no. 3,pt.2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "162 p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "24 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Report / International Labour Conference, 67th session, 1981 ;"
+        },
+        {
+          "tag": "v",
+          "content": "3, pt. 2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "811",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "International Labour Conference"
+        },
+        {
+          "tag": "n",
+          "content": "(67th :"
+        },
+        {
+          "tag": "d",
+          "content": "1981 :"
+        },
+        {
+          "tag": "c",
+          "content": "Geneva, Switzerland)"
+        },
+        {
+          "tag": "t",
+          "content": "Report ;"
+        },
+        {
+          "tag": "v",
+          "content": "\\3, pt. 2."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Minimum age :"
+        },
+        {
+          "tag": "b",
+          "content": "summary of reports on convention no. 138 and recommendation no. 146 (article 19 of the Constitution) : third item on the agenda : information and reports on the application of conventions and recommendations."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b18114106"
+        },
+        {
+          "tag": "b",
+          "content": "01-10-09"
+        },
+        {
+          "tag": "c",
+          "content": "08-14-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629174631.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "830805s1981    sz           i100 0 eng dcam i ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NIC"
+        },
+        {
+          "tag": "c",
+          "content": "NIC"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "b"
+        },
+        {
+          "tag": "b",
+          "content": "10-17-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "sz "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200241 i 4500",
+      "subfields": null
+    }
+  ]
+}

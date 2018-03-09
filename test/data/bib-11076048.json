@@ -1,0 +1,892 @@
+{
+  "id": "11076048",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-01-12T04:47:05-05:00",
+  "createdDate": "2008-12-14T17:04:17-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "The Arctic news [microform].",
+  "author": "",
+  "materialType": {
+    "code": "h",
+    "value": "MICROFORM"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 999,
+  "catalogDate": "2001-01-03",
+  "country": {
+    "code": "onc",
+    "name": "Ontario"
+  },
+  "normTitle": "arctic news microform",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "4",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2001-01-03",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "h",
+      "display": "MICROFORM"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "11076048",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T17:04:17Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-01-12T04:47:05Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "onc",
+      "display": "Ontario"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-01-07T21:39:29Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Anglican Church of Canada."
+        },
+        {
+          "tag": "b",
+          "content": "Diocese of the Arctic."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*XLB-77"
+        },
+        {
+          "tag": "z",
+          "content": "[Library has: [1941]-fall 1976 (inc)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Anglican Church of Canada"
+        },
+        {
+          "tag": "x",
+          "content": "Missions"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indians of North America"
+        },
+        {
+          "tag": "x",
+          "content": "Missions"
+        },
+        {
+          "tag": "z",
+          "content": "Northwest Territories"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Inuit"
+        },
+        {
+          "tag": "x",
+          "content": "Missions"
+        },
+        {
+          "tag": "z",
+          "content": "Northwest Territories"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0518-3839"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "cn 76300363"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0311968"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "533",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Microfiche."
+        },
+        {
+          "tag": "b",
+          "content": "[New York, N.Y.] :"
+        },
+        {
+          "tag": "c",
+          "content": "Clearwater Pub. Co.,"
+        },
+        {
+          "tag": "d",
+          "content": "1981."
+        },
+        {
+          "tag": "e",
+          "content": "13 microfiches : negative ; 11 x 15 cm."
+        },
+        {
+          "tag": "f",
+          "content": "(American Indian periodicals in the Princeton University Library)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG86-S620",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Toronto,"
+        },
+        {
+          "tag": "b",
+          "content": "Diocese of the Arctic, [Anglican Church of Canada]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*XLB-77"
+        },
+        {
+          "tag": "z",
+          "content": "[Library has: [1941]-fall 1976 (inc)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "v."
+        },
+        {
+          "tag": "b",
+          "content": "ill."
+        },
+        {
+          "tag": "c",
+          "content": "25 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "two issues a year,"
+        },
+        {
+          "tag": "b",
+          "content": "1949-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "321",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Annual,"
+        },
+        {
+          "tag": "b",
+          "content": "<1941>-1948"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The Arctic news"
+        },
+        {
+          "tag": "h",
+          "content": "[microform]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Twilight"
+        },
+        {
+          "tag": "f",
+          "content": "1941"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Nine-nineteen"
+        },
+        {
+          "tag": "f",
+          "content": "1942"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arctic advance"
+        },
+        {
+          "tag": "f",
+          "content": "1943"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fort George"
+        },
+        {
+          "tag": "f",
+          "content": "1944"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "What price rats?"
+        },
+        {
+          "tag": "f",
+          "content": "1945"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fog, ice and sunshine"
+        },
+        {
+          "tag": "f",
+          "content": "1946"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Maiden voyage"
+        },
+        {
+          "tag": "f",
+          "content": "Oct. 1950"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The Arctic news."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Twilight"
+        },
+        {
+          "tag": "f",
+          "content": "1941."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Nine-nineteen"
+        },
+        {
+          "tag": "f",
+          "content": "1942."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arctic advance"
+        },
+        {
+          "tag": "f",
+          "content": "1943."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fort George"
+        },
+        {
+          "tag": "f",
+          "content": "1944."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "What price rats?"
+        },
+        {
+          "tag": "f",
+          "content": "1945."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fog, ice and sunshine"
+        },
+        {
+          "tag": "f",
+          "content": "1946."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Maiden voyage"
+        },
+        {
+          "tag": "f",
+          "content": "Oct. 1950."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b20967366"
+        },
+        {
+          "tag": "b",
+          "content": "10-28-08"
+        },
+        {
+          "tag": "c",
+          "content": "08-26-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "760",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "t",
+          "content": "American Indian periodicals in the Princeton University Library"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925124725.9",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "he bmu---bucu",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860129u19uu9999oncfr p b     0   a1eng dcas   ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "037",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "1055 Avenue Road, M5N 2C8"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MnMULS"
+        },
+        {
+          "tag": "c",
+          "content": "MnMULS"
+        },
+        {
+          "tag": "d",
+          "content": "CaOONL"
+        },
+        {
+          "tag": "d",
+          "content": "CStRLIN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "nlc"
+        },
+        {
+          "tag": "a",
+          "content": "isds/c"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "n-cn---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "055",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BX5601"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "01-03-01"
+        },
+        {
+          "tag": "c",
+          "content": "s"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "onc"
+        },
+        {
+          "tag": "h",
+          "content": "4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "222",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arctic news"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "25066202"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cas  2200529   4500",
+      "subfields": null
+    }
+  ]
+}
