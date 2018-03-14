@@ -1,0 +1,494 @@
+{
+  "id": "10762541",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-02-04T00:42:26-05:00",
+  "createdDate": "2008-12-14T05:29:36-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "ger",
+    "name": "German"
+  },
+  "title": "Das Schloss",
+  "author": "Kafka, Franz, 1883-1924.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1982,
+  "catalogDate": "2000-10-17",
+  "country": {
+    "code": "gw ",
+    "name": "Germany"
+  },
+  "normTitle": "das schloss",
+  "normAuthor": "kafka franz 1883 1924",
+  "standardNumbers": [
+    "3100381009",
+    "3100381335",
+    "3100381343"
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "ger",
+      "display": "German"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "4",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "3",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-10-17",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10762541",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T05:29:36Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-02-04T00:42:26Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "8",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "gw ",
+      "display": "Germany"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-01-30T02:51:44Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Kafka, Franz,"
+        },
+        {
+          "tag": "d",
+          "content": "1883-1924."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Pasley, Malcolm,"
+        },
+        {
+          "tag": "d",
+          "content": "1926-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JFD 82-2540"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3100381009"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3100381335 (Textband)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3100381343 (Apparatband)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0769425"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[v. 1. Textband] -- [v. 2]. Apparatband."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG83-B11170",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Frankfurt am Main :"
+        },
+        {
+          "tag": "b",
+          "content": "S. Fischer ;"
+        },
+        {
+          "tag": "a",
+          "content": "New York City :"
+        },
+        {
+          "tag": "b",
+          "content": "Schocken Books,"
+        },
+        {
+          "tag": "c",
+          "content": "1982."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JFD 82-2540"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2 v. ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Schriften, Tagebücher, Briefe. Kritische Ausg. / Franz Kafka"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "800",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Kafka, Franz,"
+        },
+        {
+          "tag": "d",
+          "content": "1883-1924."
+        },
+        {
+          "tag": "t",
+          "content": "Works."
+        },
+        {
+          "tag": "f",
+          "content": "1982."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Das Schloss /"
+        },
+        {
+          "tag": "c",
+          "content": "Franz Kafka ; herausgegeben von Malcolm Pasley."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b17788821"
+        },
+        {
+          "tag": "b",
+          "content": "03-06-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-14-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629174512.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "830301s1982    gw            000 1 ger dcam a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NhD"
+        },
+        {
+          "tag": "c",
+          "content": "NhD"
+        },
+        {
+          "tag": "d",
+          "content": "NjP"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "10-17-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "ger"
+        },
+        {
+          "tag": "g",
+          "content": "gw "
+        },
+        {
+          "tag": "h",
+          "content": "4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "9785761"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200253 a 4500",
+      "subfields": null
+    }
+  ]
+}

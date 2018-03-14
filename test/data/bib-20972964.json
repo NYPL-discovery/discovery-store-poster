@@ -1,0 +1,915 @@
+{
+  "id": "20972964",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-10-24T18:07:35-04:00",
+  "createdDate": "2016-06-06T16:02:08-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    },
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "spa",
+    "name": "Spanish"
+  },
+  "title": "Recetario gastronómico indígena : comida tradicional indígena",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2015,
+  "catalogDate": "2016-10-21",
+  "country": {
+    "code": "mx ",
+    "name": "Mexico"
+  },
+  "normTitle": "recetario gastronómico indígena comida tradicional indígena",
+  "normAuthor": "",
+  "standardNumbers": [
+    "9786074201727",
+    "6074201722"
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "spa",
+      "display": "Spanish"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2016-10-21",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "20972964",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2016-06-06T16:02:08Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2016-10-24T18:07:35Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "5",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "mx ",
+      "display": "Mexico"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2016-10-22T04:26:04Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "González Villalobos, Santano,"
+        },
+        {
+          "tag": "e",
+          "content": "editor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cooking"
+        },
+        {
+          "tag": "z",
+          "content": "Mexico"
+        },
+        {
+          "tag": "z",
+          "content": "Guerrero (State)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indian cooking."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cooking, Mexican."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indians of Mexico"
+        },
+        {
+          "tag": "x",
+          "content": "Food"
+        },
+        {
+          "tag": "z",
+          "content": "Mexico"
+        },
+        {
+          "tag": "z",
+          "content": "Guerrero (State)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cooking."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01754966"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cooking, Mexican."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01753395"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indian cooking."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01753866"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indians of Mexico"
+        },
+        {
+          "tag": "x",
+          "content": "Food."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00969552"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Mexico"
+        },
+        {
+          "tag": "z",
+          "content": "Guerrero (State)"
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01330184"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cookbooks."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cookbooks."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01752725"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "250",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Primera edición."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9786074201727"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "6074201722"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "  2016426637"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)953800919"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"Estudios Antropológicos o Escenográficos.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references (page 161)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "953800919",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[Chilpancingo de los Bravo, México] :"
+        },
+        {
+          "tag": "b",
+          "content": "Guerrero, Gobierno del Estado Libre y Soberano, Secretaría de Cultura ;"
+        },
+        {
+          "tag": "a",
+          "content": "México, D.F. :"
+        },
+        {
+          "tag": "b",
+          "content": "CONACULTA :"
+        },
+        {
+          "tag": "b",
+          "content": "Editorial Praxis,"
+        },
+        {
+          "tag": "c",
+          "content": "2015."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "ReCAP 16-31387"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "167 pages :"
+        },
+        {
+          "tag": "b",
+          "content": "1 map ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Colección Juan García Jiménez"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Colección Juan García Jiménez."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Recetario gastronómico indígena :"
+        },
+        {
+          "tag": "b",
+          "content": "comida tradicional indígena /"
+        },
+        {
+          "tag": "c",
+          "content": "Santano González Villalobos, coordinador."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20161021022807.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "160413s2015    mx b     b   f000 0 spa ccam i ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CUY"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "CUY"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "STF"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "pcc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "n-mx---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TX716.M4"
+        },
+        {
+          "tag": "b",
+          "content": "R376 2015"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "641.5972"
+        },
+        {
+          "tag": "2",
+          "content": "23"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TX716.M4"
+        },
+        {
+          "tag": "b",
+          "content": "R376 2015"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "jv"
+        },
+        {
+          "tag": "b",
+          "content": "CATRL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b209729648"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "8528"
+        },
+        {
+          "tag": "a",
+          "content": "ReCAP 16-31387"
+        },
+        {
+          "tag": "i",
+          "content": "33433120103340"
+        },
+        {
+          "tag": "l",
+          "content": "rc2ma"
+        },
+        {
+          "tag": "s",
+          "content": "b"
+        },
+        {
+          "tag": "t",
+          "content": "055"
+        },
+        {
+          "tag": "h",
+          "content": "033"
+        },
+        {
+          "tag": "o",
+          "content": "2"
+        },
+        {
+          "tag": "v",
+          "content": "CATRL/jv"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200565 i 4500",
+      "subfields": null
+    }
+  ]
+}

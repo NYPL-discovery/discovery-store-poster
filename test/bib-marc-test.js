@@ -63,7 +63,6 @@ describe('Bib Marc Mapping', function () {
     it('should extract electronic resource with mult urls', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10011374.json'))
 
-      // console.log('bib: ', bib)
       let resources = bibSerializer.extractElectronicResourcesFromBibMarc(bib, 'ER')
       assert.equal(resources.length, 4)
 
@@ -125,21 +124,62 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          // console.log('bib: ', bib)
           assert.equal(bib.literals('nypl:shelfMark')[0], 'JFE 86-498')
         })
     })
 
-    it('should extract alt title', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
+    describe('Alternative title (titleAlt)', function () {
+      it('should extract alt title', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          assert(bib.literals('dcterms:alternative').indexOf('IJBD') >= 0)
-          assert(bib.literals('dcterms:alternative').indexOf('Int. j. behav. dev.') >= 0)
-          assert(bib.literals('dcterms:alternative').indexOf('International journal of behavioral development') >= 0)
-        })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert(bib.literals('dcterms:alternative').indexOf('IJBD') >= 0)
+            assert(bib.literals('dcterms:alternative').indexOf('Int. j. behav. dev.') >= 0)
+            assert(bib.literals('dcterms:alternative').indexOf('International journal of behavioral development') >= 0)
+          })
+      })
+
+      it('should extract alt title from 740', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-11253008.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.literals('dcterms:alternative').length, 1)
+            assert.equal(bib.literal('dcterms:alternative'), 'Interview with Geoffrey Holder.')
+          })
+      })
+    })
+
+    describe('Former title (formerTitle)', function () {
+      it('should extract formerTitle from 247', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-11076048.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            /*
+            * This has the following 247s:
+            *  - Twilight 1941
+            *  - Nine-nineteen 1942
+            *  - Arctic advance 1943
+            *  - Fort George 1944
+            *  - What price rats? 1945
+            *  - Fog, ice and sunshine 1946
+            *  - Maiden voyage Oct. 1950
+            */
+            assert.equal(bib.literals('nypl:formerTitle').length, 7)
+            assert.equal(bib.literals('nypl:formerTitle')[0], 'Twilight 1941')
+            assert.equal(bib.literals('nypl:formerTitle')[1], 'Nine-nineteen 1942')
+            assert.equal(bib.literals('nypl:formerTitle')[2], 'Arctic advance 1943')
+            assert.equal(bib.literals('nypl:formerTitle')[3], 'Fort George 1944')
+            assert.equal(bib.literals('nypl:formerTitle')[4], 'What price rats? 1945')
+            assert.equal(bib.literals('nypl:formerTitle')[5], 'Fog, ice and sunshine 1946')
+            assert.equal(bib.literals('nypl:formerTitle')[6], 'Maiden voyage Oct. 1950')
+          })
+      })
     })
 
     it('should extract contributor', function () {
@@ -191,7 +231,6 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          // console.log('contribs: ', JSON.stringify(bib.statements(), null, 2))
           assert.equal(bib.literal('role:win'), 'Bowness, Alan,')
           assert.equal(bib.literals('role:win')[1], 'Lambertini, Luigi,')
         })
@@ -244,7 +283,7 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('bf:dimensions'), '24 cm.')
           assert.equal(bib.literal('nypl:extent'), 'v. ;')
 
-          assert.equal(bib.literal('dcterms:alternative'), 'Cobbett\'s weekly political register (London, England : 1802)')
+          assert.equal(bib.literal('dcterms:alternative'), 'Cobbett\'s annual register')
           assert.equal(
             bib.literal('nypl:titleDisplay'), 'Cobbett\'s weekly political register [electronic resource].'
           )
@@ -431,37 +470,126 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should parse Uniform title from 240', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-11070917.json'))
+    describe('Uniform title', function () {
+      it('should parse Uniform title from 240', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-11070917.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          assert.equal(bib.id, 'b11070917')
-          assert.equal(bib.literal('nypl:uniformTitle'), 'Works. Selections; arranged.')
-        })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b11070917')
+            assert.equal(bib.literal('nypl:uniformTitle'), 'Works. Selections; arranged.')
+          })
+      })
+
+      it('should parse Uniform title from 130', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-20169090.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b20169090')
+            assert.equal(bib.literal('nypl:uniformTitle'), 'Positively black (Television program)')
+          })
+      })
+
+      it('should parse Uniform title from 730', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-12157346.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b12157346')
+            /*
+             * This one has four 730s!:
+             *   'Bayadère (Choreographic work : Makarova after Petipa, M)'
+             *   'Pas de Duke (Choreographic work : Ailey)'
+             *   'Push comes to shove (Choreographic work : Tharp)'
+             *   'Romeo and Juliet (Choreographic work : MacMillan)'
+             */
+            assert.equal(bib.literals('nypl:uniformTitle').length, 4)
+            assert.equal(bib.literals('nypl:uniformTitle')[0], 'Bayadère (Choreographic work : Makarova after Petipa, M)')
+            assert.equal(bib.literals('nypl:uniformTitle')[1], 'Pas de Duke (Choreographic work : Ailey)')
+            assert.equal(bib.literals('nypl:uniformTitle')[2], 'Push comes to shove (Choreographic work : Tharp)')
+            assert.equal(bib.literals('nypl:uniformTitle')[3], 'Romeo and Juliet (Choreographic work : MacMillan)')
+          })
+      })
+
+      it('should parse Uniform title from 830', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-15287586.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b15287586')
+            assert.equal(bib.literals('nypl:uniformTitle').length, 1)
+            assert.equal(bib.literal('nypl:uniformTitle'), 'Transaction (Indian Institute of World Culture) ; no. 75.')
+          })
+      })
     })
 
-    it('should parse Uniform title from 130', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-20169090.json'))
+    describe('Series Statement', function () {
+      it('should parse Series statement from 490', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-15287586.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          assert.equal(bib.id, 'b20169090')
-          assert.equal(bib.literal('nypl:uniformTitle'), 'Positively black (Television program)')
-        })
-    })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b15287586')
+            assert.equal(bib.literal('bf:seriesStatement'), 'Transaction ; no. 75')
+          })
+      })
 
-    it('should parse Series statement', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-15287586.json'))
+      it('should parse Series statement from 800', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-10762541.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          assert.equal(bib.id, 'b15287586')
-          assert.equal(bib.literal('bf:seriesStatement'), 'Transaction ; no. 75')
-        })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b10762541')
+
+            // There are actually two seriesStatements in this bib:
+            assert.equal(bib.literals('bf:seriesStatement').length, 2)
+            // One from 490:
+            assert.equal(bib.literals('bf:seriesStatement')[0], 'Schriften, Tagebücher, Briefe. Kritische Ausg. / Franz Kafka')
+            // The other from 800:
+            assert.equal(bib.literals('bf:seriesStatement')[1], 'Kafka, Franz, 1883-1924. Works. 1982.')
+          })
+      })
+
+      it('should parse Series statement from 810', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-19995767.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b19995767')
+
+            // There are two seriesStatements in this bib:
+            assert.equal(bib.literals('bf:seriesStatement').length, 2)
+            // One from 490:
+            assert.equal(bib.literals('bf:seriesStatement')[0], 'S. hrg. ; 113-30')
+            // The other from 810:
+            assert.equal(bib.literals('bf:seriesStatement')[1], 'United States. Congress. Senate. S. hrg. ; 113-30.')
+          })
+      })
+
+      it('should parse Series statement from 811', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-10794947.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.id, 'b10794947')
+
+            // There are two seriesStatements in this bib:
+            assert.equal(bib.literals('bf:seriesStatement').length, 2)
+            // One from 490:
+            assert.equal(bib.literals('bf:seriesStatement')[0], 'Report / International Labour Conference, 67th session, 1981 ; 3, pt. 2')
+            // The other from 811:
+            assert.equal(bib.literals('bf:seriesStatement')[1], 'International Labour Conference (67th : 1981 : Geneva, Switzerland) Report ; \\3, pt. 2.')
+          })
+      })
     })
 
     it('should parse LCCN', function () {
