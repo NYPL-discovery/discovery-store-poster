@@ -82,8 +82,6 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          // console.log('bib: ', bib)
-
           assert.equal(bib.objectId('rdfs:type'), 'nypl:Item')
           assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:txt')
 
@@ -115,8 +113,8 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // This fixture was modified to include a $f subfield excluded from the mapping.
           // This test confirms it is not pulled in:
-          assert.equal(bib.literal('dc:subject'), 'Albert -- II, -- Holy Roman Emperor, -- 1397-1439.')
-          assert.equal(bib.literals('dc:subject')[1], 'László -- V, -- King of Hungary and Bohemia, -- 1440-1457.')
+          assert.equal(bib.literal('dc:subject'), 'Albert II, Holy Roman Emperor, 1397-1439.')
+          assert.equal(bib.literals('dc:subject')[1], 'László V, King of Hungary and Bohemia, 1440-1457.')
           assert.equal(bib.literals('dc:subject')[2], 'Holy Crown of Hungary.')
         })
     })
@@ -150,7 +148,6 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          // console.log('contribs: ', JSON.stringify(bib.statements('dc:contributor'), null, 2))
           // Note this is the pred for contributorLiteral:
           assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
         })
@@ -396,13 +393,13 @@ describe('Bib Marc Mapping', function () {
           //  * 'Purchased from the Carl B. and Marjorie N. Boyer Fund' (541 $a with ind1 '0', so suppress)
 
           // There is one note in 505 $a
-          assert.equal(bib.literal('skos:note'), 'Translation of La vie quotidienne dans l\'Empire carolingien.')
+          assert.equal(bib.blankNodes('bf:note')[0].literal('rdfs:label'), 'Translation of La vie quotidienne dans l\'Empire carolingien.')
 
           // Another note in 504 $a:
-          assert.equal(bib.literals('skos:note')[1], 'Includes bibliographical references and index.')
+          assert.equal(bib.blankNodes('bf:note')[1].literal('rdfs:label'), 'Includes bibliographical references and index.')
 
           // There's another note in 541 but ind1 === '0', so above should be all we get:
-          assert.equal(bib.literals('skos:note').length, 2)
+          assert.equal(bib.blankNodes('bf:note').length, 2)
         })
     })
 
@@ -414,7 +411,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // This bib has one note in 505, but ind1 === 0, so it should be suppressed
           // which means it has NO notes.
-          assert.equal(bib.literals('skos:note').length, 0)
+          assert.equal(bib.literals('bf:note').length, 0)
         })
     })
 
@@ -523,13 +520,69 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should parse publisher literal', function () {
+    it('should parse publisher literal from marc 260$b subfield', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
 
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian,')
+        })
+    })
+
+    it('should parse publisher literal from marc 264$b subfield', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20549111.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:role-publisher'), 'Edizioni Edicampus,')
+        })
+    })
+
+    it('should parse publisher literal from both marc 260 & 264 fields', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-16734592.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let placeOfPublications = bib.literals('nypl:role-publisher')
+
+          assert(placeOfPublications.indexOf('Crystal Records,') !== -1)
+          assert(placeOfPublications.indexOf('Test Placeholder Records,') !== -1)
+        })
+    })
+
+    it('should parse place of publication literal from marc 260 field', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-10001936.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:placeOfPublication'), 'Ṛostov (Doni Vra) :')
+        })
+    })
+
+    it('should parse place of publication literal from marc 264 field', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-20549111.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:placeOfPublication'), 'Roma :')
+        })
+    })
+
+    it('should parse place of publication literal from both marc 260 & 264 fields', function () {
+      var bibRecord = BibSierraRecord.from(require('./data/bib-16734592.json'))
+
+      return bibSerializer.fromMarcJson(bibRecord)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let placeOfPublications = bib.literals('nypl:placeOfPublication')
+
+          assert(placeOfPublications.indexOf('Camas, WA :') !== -1)
+          assert(placeOfPublications.indexOf('℗2007') !== -1)
         })
     })
 
@@ -550,6 +603,96 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.objectId('dcterms:type'), 'resourcetypes:mov')
+        })
+    })
+
+    it('should format Subject Literal from 650 correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-17295111.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.literals('dc:subject'))
+          assert.equal(bib.literals('dc:subject').length, 1)
+          assert.equal(bib.literals('dc:subject')[0], 'Napoleonic Wars, 1800-1815 Emperor of the French, 1769-1821 -- Campaigns -- Russia -- Fiction.')
+        })
+    })
+
+    it('should parse Creator once without duplicating to Contributor', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10602209.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          let creators = bib.literals('dc:creator')
+
+          assert.equal(creators.length, 1)
+          assert.equal(creators[0], 'Concha, Jaime.')
+
+          let contributors = bib.literals('dc:contributor')
+          assert.equal(contributors.length, 0)
+        })
+    })
+
+    it('should parse Genre/Form literal correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-17678033.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:genreForm'), 'Graphic novels.')
+          let subjects = bib.literals('dc:subject')
+          let graphicNovelSubject = subjects.filter((subject) => subject === 'Graphic novels.')
+          assert.equal(graphicNovelSubject.length, 0)
+        })
+    })
+
+    it('should parse Notes blank nodes correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.statements('bf:note').length, 9)
+
+          // Among those 9 notes, grab the one with noteType "Immediate Source of Acquisition Note":
+          let blankNode = bib.blankNodes('bf:note')
+            .filter((node) => node.literal('bf:noteType') === 'Immediate Source of Acquisition Note')
+            .pop()
+          assert.equal(blankNode.statements().length, 3)
+          assert.equal(blankNode.objectId('rdf:type'), 'bf:Note')
+          assert.equal(blankNode.literal('bf:noteType'), 'Immediate Source of Acquisition Note')
+          assert.equal(blankNode.literal('rdfs:label'), 'American Masters, Thirteen/WNET.')
+        })
+    })
+
+    it('should parse Contents (dcterms:tableOfContents) correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('dcterms:tableOfContents'), 'Jerome Rabinowitz -- Life-changing revelations -- Camp Tamiment -- Ballet Theatre -- Fancy free -- On the town -- The playful side and the darker side -- Love and loss -- Autobiographical material -- Broadway\'s rising star -- Balanchine and the New York City Ballet -- The king and I -- The House Un-American Activities Committee -- Robbins\' muse, Tanaquil Le Clercq -- Peter Pan -- West side story -- Ballets U.S.A. -- Gypsy -- Challenges and fixes -- Fiddler on the roof -- Les noces -- Dances at a gathering -- The Goldberg variations -- Watermill -- Robbins and Balanchine -- Dybbuk -- Other dances -- Glass pieces and Antique epigraphs -- In memory of... -- Jerome Robbins\' Broadway -- Dancing until the end.')
+        })
+    })
+
+    it('should parse publicationStatement correctly', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-20972964.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:publicationStatement'), '[Chilpancingo de los Bravo, México] : Guerrero, Gobierno del Estado Libre y Soberano, Secretaría de Cultura ; México, D.F. : CONACULTA : Editorial Praxis, 2015.')
+        })
+    })
+
+    it('should parse serialPublicationDates', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10011750.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:serialPublicationDates'), 'no 1-29.')
         })
     })
   })

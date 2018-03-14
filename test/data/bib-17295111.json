@@ -1,0 +1,450 @@
+{
+  "id": "17295111",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-03-14T16:26:05-04:00",
+  "createdDate": "2008-12-23T06:33:57-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Barlasch of the Guard.",
+  "author": "Merriman, Henry Seton.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1971,
+  "catalogDate": "2008-12-22",
+  "country": {
+    "code": "enk",
+    "name": "England"
+  },
+  "normTitle": "barlasch of the guard",
+  "normAuthor": "merriman henry seton",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "2",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2008-12-22",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "17295111",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-23T06:33:57Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-14T16:26:05Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "9",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2011-07-18T21:57:41Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Merriman, Henry Seton."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Gough, Philip,"
+        },
+        {
+          "tag": "e",
+          "content": "ill."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "091",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "p",
+          "content": "J"
+        },
+        {
+          "tag": "a",
+          "content": "FIC"
+        },
+        {
+          "tag": "c",
+          "content": "M"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Napoleonic Wars, 1800-1815"
+        },
+        {
+          "tag": "c",
+          "content": "Emperor of the French,"
+        },
+        {
+          "tag": "d",
+          "content": "1769-1821"
+        },
+        {
+          "tag": "x",
+          "content": "Campaigns"
+        },
+        {
+          "tag": "z",
+          "content": "Russia"
+        },
+        {
+          "tag": "v",
+          "content": "Fiction."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0460050893"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "   79024293"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"In this edition some minor cuts have been made.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(Children's illustrated classics)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "A story of love and intrigue during Napoleon's march to Russia."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Illustrations by Philip Gough."
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "London, New York,"
+        },
+        {
+          "tag": "c",
+          "content": "1971, c1970."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Barlasch of the Guard."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "995",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "586666"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20060625224639.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "721004t19711970enk    j      0   1 eng  nam   ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "002073346"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "996",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "720532527"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "d",
+          "content": "UtOrBLW"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "037",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "4.50."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PZ3.S426"
+        },
+        {
+          "tag": "b",
+          "content": "B8"
+        },
+        {
+          "tag": "a",
+          "content": "PR5299.S5"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PZ3.S426"
+        },
+        {
+          "tag": "b",
+          "content": "B8"
+        },
+        {
+          "tag": "a",
+          "content": "PR5299.S5"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  2200277   4500",
+      "subfields": null
+    }
+  ]
+}

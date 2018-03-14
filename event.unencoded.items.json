@@ -202,7 +202,7 @@
           "ind1": " ",
           "ind2": " ",
           "content": null,
-          "subFields": [
+          "subfields": [
             {
               "tag": "c",
               "content": "33433017300231"
@@ -291,7 +291,7 @@
           "ind1": null,
           "ind2": null,
           "content": "33433017300231",
-          "subFields": null
+          "subfields": null
         }
       ]
     }
