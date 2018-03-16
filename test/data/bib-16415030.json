@@ -1,0 +1,717 @@
+{
+  "id": "16415030",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-04-10T21:39:09-04:00",
+  "createdDate": "2008-12-21T10:10:48-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "slr",
+      "name": "SIBL - Science Industry and Business"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Hazards XIX : process safety and environmental protection : what do we know? where are we going?",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2006,
+  "catalogDate": "2006-07-07",
+  "country": {
+    "code": "enk",
+    "name": "England"
+  },
+  "normTitle": "hazards xix process safety and environmental protection what do we know where are we going",
+  "normAuthor": "",
+  "standardNumbers": [
+    "0852954921",
+    "9780852954928"
+  ],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "2",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2006-07-07",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "16415030",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-21T10:10:48Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-04-10T21:39:09Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-03-13T23:24:24Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Institution of Chemical Engineers (Great Britain)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Institution of Chemical Engineers (Great Britain). North Western Branch."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JSD 06-106"
+        },
+        {
+          "tag": "m",
+          "content": "[Text]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Chemical industry"
+        },
+        {
+          "tag": "x",
+          "content": "Safety measures"
+        },
+        {
+          "tag": "v",
+          "content": "Congresses."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Chemical processes"
+        },
+        {
+          "tag": "x",
+          "content": "Safety measures"
+        },
+        {
+          "tag": "v",
+          "content": "Congresses."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0852954921"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "3",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9780852954928"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)M060000159"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"This book contains the papers and posters presented at Hazard XIX\"--p. iv."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references and index."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "63186498",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rugby :"
+        },
+        {
+          "tag": "b",
+          "content": "Institution of Chemical Engineers,"
+        },
+        {
+          "tag": "c",
+          "content": "c2006."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JSD 06-106"
+        },
+        {
+          "tag": "m",
+          "content": "[Text]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*WSC-4863"
+        },
+        {
+          "tag": "m",
+          "content": "[CD-ROM]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "xvi, 1023 p. :"
+        },
+        {
+          "tag": "b",
+          "content": "ill. ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm. +"
+        },
+        {
+          "tag": "e",
+          "content": "1 CD-ROM."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Institution of Chemical Engineers symposium series ;"
+        },
+        {
+          "tag": "v",
+          "content": "no. 151"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Symposium series (Institution of Chemical Engineers (Great Britain)) ;"
+        },
+        {
+          "tag": "v",
+          "content": "no. 151."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hazards XIX :"
+        },
+        {
+          "tag": "b",
+          "content": "process safety and environmental protection : what do we know? where are we going?"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b81282126"
+        },
+        {
+          "tag": "b",
+          "content": "09-26-06"
+        },
+        {
+          "tag": "c",
+          "content": "07-07-06"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20060707063402.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "006",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "m        u        ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "co ugu        ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "060120s2006    enka     b    001 0 eng  pam a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "015",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "GBA617093"
+        },
+        {
+          "tag": "2",
+          "content": "bnb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "016",
+      "ind1": "7",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "013386638"
+        },
+        {
+          "tag": "2",
+          "content": "Uk"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "UKM"
+        },
+        {
+          "tag": "c",
+          "content": "UKM"
+        },
+        {
+          "tag": "d",
+          "content": "BWKUK"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        },
+        {
+          "tag": "d",
+          "content": "UtOrBLW"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ukblsr"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TP200"
+        },
+        {
+          "tag": "b",
+          "content": ".I44 2006"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TP200"
+        },
+        {
+          "tag": "b",
+          "content": ".I44 2006"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "660.2804"
+        },
+        {
+          "tag": "2",
+          "content": "22"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "b"
+        },
+        {
+          "tag": "c",
+          "content": "cft/wlt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "b"
+        },
+        {
+          "tag": "c",
+          "content": "cft/wlt"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "b"
+        },
+        {
+          "tag": "b",
+          "content": "07-07-06"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "enk"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000pam  2200433 a 4500",
+      "subfields": null
+    }
+  ]
+}

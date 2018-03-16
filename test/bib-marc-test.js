@@ -18,7 +18,7 @@ describe('Bib Marc Mapping', function () {
       assert.equal(altTitleMapping.paths.length, 5)
 
       var contribLIteralMapping = mapping.getMapping('Contributor literal')
-      assert.equal(contribLIteralMapping.paths.length, 3)
+      assert.equal(contribLIteralMapping.paths.length, 4)
     })
 
     it('should identify var field', function () {
@@ -182,15 +182,30 @@ describe('Bib Marc Mapping', function () {
       })
     })
 
-    it('should extract contributor', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
+    describe('Contributor', function () {
+      it('should extract contributor (710, ..)', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          // Note this is the pred for contributorLiteral:
-          assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
-        })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            // Note this is the pred for contributorLiteral:
+            assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
+          })
+      })
+
+      it('should extract contributor from 720', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-16415030.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            // Note comes from 710:
+            assert.equal(bib.literals('dc:contributor')[0], 'Institution of Chemical Engineers (Great Britain)')
+            // Note comes from 720:
+            assert.equal(bib.literals('dc:contributor')[1], 'Institution of Chemical Engineers (Great Britain). North Western Branch.')
+          })
+      })
     })
 
     it('should extract ISBN', function () {
