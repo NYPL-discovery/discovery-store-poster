@@ -809,13 +809,13 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           assert.equal(bib.statements('bf:note').length, 9)
 
-          // Among those 9 notes, grab the one with noteType "Immediate Source of Acquisition Note":
+          // Among those 9 notes, grab the one with noteType "Source":
           let blankNode = bib.blankNodes('bf:note')
-            .filter((node) => node.literal('bf:noteType') === 'Immediate Source of Acquisition Note')
+            .filter((node) => node.literal('bf:noteType') === 'Source')
             .pop()
           assert.equal(blankNode.statements().length, 3)
           assert.equal(blankNode.objectId('rdf:type'), 'bf:Note')
-          assert.equal(blankNode.literal('bf:noteType'), 'Immediate Source of Acquisition Note')
+          assert.equal(blankNode.literal('bf:noteType'), 'Source')
           assert.equal(blankNode.literal('rdfs:label'), 'American Masters, Thirteen/WNET.')
         })
     })
