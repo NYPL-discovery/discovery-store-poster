@@ -18,7 +18,7 @@ describe('Bib Marc Mapping', function () {
       assert.equal(altTitleMapping.paths.length, 5)
 
       var contribLIteralMapping = mapping.getMapping('Contributor literal')
-      assert.equal(contribLIteralMapping.paths.length, 3)
+      assert.equal(contribLIteralMapping.paths.length, 4)
     })
 
     it('should identify var field', function () {
@@ -190,6 +190,17 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // Note this is the pred for contributorLiteral:
           assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
+        })
+    })
+
+    it('should extract contributor from 720', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16415030.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Note this is the pred for contributorLiteral:
+          assert.equal(bib.literal('dc:contributor'), 'Institution of Chemical Engineers (Great Britain)')
         })
     })
 
