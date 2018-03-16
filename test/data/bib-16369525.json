@@ -1,0 +1,880 @@
+{
+  "id": "16369525",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2010-02-11T22:02:45-05:00",
+  "createdDate": "2008-12-21T08:40:09-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "ia",
+      "name": "Electronic Material for Adults"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "High-throughput approaches to optimization of crystal silicon surface passivation and heterojunction solar cells [electronic resource]",
+  "author": "",
+  "materialType": {
+    "code": "w",
+    "value": "WEB RESOURCE"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2005,
+  "catalogDate": "2006-06-14",
+  "country": {
+    "code": "cou",
+    "name": "Colorado"
+  },
+  "normTitle": "high throughput approaches to optimization of crystal silicon surface passivation and heterojunction solar cells electronic resource",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "ia   ",
+      "display": "Electronic Material for Adults"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "0",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2006-06-14",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "w",
+      "display": "WEB RESOURCE"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "16369525",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-21T08:40:09Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2010-02-11T22:02:45Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "2",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "cou",
+      "display": "Colorado"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2008-12-21T08:40:09Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wang, Qi."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "National Renewable Energy Laboratory (U.S.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wang, Q."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Page, M."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Yan, Y."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wang, T."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "GPO Internet E 9.17:NREL/CP-520-37439"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "36 MATERIALS SCIENCE"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "14 SOLAR ENERGY"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CARRIER LIFETIME"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CHEMICAL VAPOR DEPOSITION"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DECAY"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "EFFICIENCY"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "HETEROJUNCTIONS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MIXTURES"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "OPTIMIZATION"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PASSIVATION"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "RADICALS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "SILICON"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "SILICON SOLAR CELLS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "SOLAR CELLS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "SURFACE TREATMENTS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "THICKNESS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TRANSMISSION ELECTRON MICROSCOPY"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Solar cells"
+        },
+        {
+          "tag": "x",
+          "content": "Materials."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Chemical vapor deposition."
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "074",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0430-P-04 (online)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "086",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "E 9.17:NREL/CP-520-37439"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(GPO)99189986"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Mode of access: Internet from the NREL web site. Address as of 5/8/06: http://www.nrel.gov/docs/fy05osti/37439.pdf; current access available via PURL."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Title from title screen (viewed on May 8, 2006)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"February 2005.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2005-08-21."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "We use a high-throughput (combinatorial) hot-wire chemical vapor deposition system to passivate the crystal silicon surface and to grow heterojunction silicon solar cells. We study the effectiveness of crystal surface treatments by atomic H or/and NHx radicals, followed by the growth of thin hydrogenated amorphous silicon (a Si:H) films. Treatment and layer properties such as times, thicknesses, and gas mixtures can be continuously graded, creating a two-dimensional sample with each variable varying in one direction. This results in high-throughput optimization of the processes. Effective carrier lifetime is measured by photoconductive decay to evaluate the effectiveness of the surface passivation by surface treatments. The effective carrier lifetime increases from about 5 [micro]s without passivation to about 24 [micro]s with an optimized surface treatment and thickness a-Si:H on single-sided c-Si. Transmission electron microscopy reveals that a-Si:H, a mixed phase, or epitaxial growth of thin-film Si depending on the surface treatment. Improvement in effective carrier lifetime correlates with an immediate a-Si:H growth on c-Si, rather than a mixed phase and epitaxial Si growth. We have obtained an efficiency of 13.4% on a non-textured single-sided heterojunction solar cell on p-type CZ-Si processed with optimized surface treatment."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "marcive68230260",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Golden, Colo. :"
+        },
+        {
+          "tag": "b",
+          "content": "National Renewable Energy Laboratory,"
+        },
+        {
+          "tag": "c",
+          "content": "[2005]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "GPO Internet E 9.17:NREL/CP-520-37439"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "4 p. :"
+        },
+        {
+          "tag": "b",
+          "content": "digital, PDF file."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Conference paper ;"
+        },
+        {
+          "tag": "v",
+          "content": "NREL/CP-520-37439"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "High-throughput approaches to optimization of crystal silicon surface passivation and heterojunction solar cells"
+        },
+        {
+          "tag": "h",
+          "content": "[electronic resource] /"
+        },
+        {
+          "tag": "c",
+          "content": "Q. Wang ... [et al.]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "High throughput approaches to optimization of crystal silicon surface passivation and heterojunction solar cells"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b8082559x"
+        },
+        {
+          "tag": "b",
+          "content": "03-05-08"
+        },
+        {
+          "tag": "c",
+          "content": "06-14-06"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20060508165849.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "006",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "m        d f      ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "060505s2005    cou     s    f000 0 eng dnam3u ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DOX"
+        },
+        {
+          "tag": "c",
+          "content": "DOX"
+        },
+        {
+          "tag": "d",
+          "content": "GPO"
+        },
+        {
+          "tag": "d",
+          "content": "MvI"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "dc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.osti.gov/servlets/purl/15016491-ZrQ6NY/native/"
+        },
+        {
+          "tag": "q",
+          "content": "application/pdf"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://purl.access.gpo.gov/GPO/LPS69649"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "909",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Not for export in OCLC Reclamation Project"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "i"
+        },
+        {
+          "tag": "b",
+          "content": "06-14-06"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "@"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "cou"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  22006493u 4500",
+      "subfields": null
+    }
+  ]
+}
