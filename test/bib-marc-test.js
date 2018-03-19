@@ -849,5 +849,18 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:serialPublicationDates'), 'no 1-29.')
         })
     })
+
+    it('should parse "Catalog bib location code" (nypl:catalogBibLocation)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16369525.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.statement('nypl:catalogBibLocation'))
+          assert.equal(bib.objectId('nypl:catalogBibLocation'), 'loc:ia')
+          assert.equal(bib.statement('nypl:catalogBibLocation').object_label, 'Electronic Material for Adults')
+          assert.equal(bib.statements('nypl:catalogBibLocation').length, 1)
+        })
+    })
   })
 })
