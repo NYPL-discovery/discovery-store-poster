@@ -225,8 +225,10 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10392955')
-          assert.equal(bib.objectIds('dcterms:identifier')[1], 'urn:isbn:0192113860 :')
+          assert.equal(bib.objectIds('dcterms:identifier')[0], '10392955')
+          assert.equal(bib.statements('dcterms:identifier')[0].object_type, 'nypl:Bnumber')
+          assert.equal(bib.objectIds('dcterms:identifier')[1], '0192113860 :')
+          assert.equal(bib.statements('dcterms:identifier')[1].object_type, 'bf:Isbn')
         })
     })
 
@@ -236,8 +238,10 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.equal(bib.objectIds('dcterms:identifier')[0], 'urn:bnum:10011745')
-          assert.equal(bib.objectIds('dcterms:identifier')[1], 'urn:issn:0165-0254')
+          assert.equal(bib.statements('dcterms:identifier')[0].object_id, '10011745')
+          assert.equal(bib.statements('dcterms:identifier')[0].object_type, 'nypl:Bnumber')
+          assert.equal(bib.statements('dcterms:identifier')[1].object_id, '0165-0254')
+          assert.equal(bib.statements('dcterms:identifier')[1].object_type, 'bf:Issn')
         })
     })
 
@@ -492,7 +496,7 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.objectId('bf:media'), 'mediatypes:n')
           assert.equal(bib.objectId('bf:carrier'), 'carriertypes:nc')
           // Extracted ISBN?
-          assert(bib.objectIds('dcterms:identifier').indexOf('urn:isbn:3871185949') >= 0)
+          assert(bib.statements('dcterms:identifier').filter((ident) => ident.object_id === '3871185949' && ident.object_type === 'bf:Isbn').length >= 0)
         })
     })
 
@@ -625,7 +629,7 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.id, 'b11070917')
-          assert(bib.objectIds('dcterms:identifier').indexOf('urn:lccn:r  59001818') >= 0)
+          assert(bib.statements('dcterms:identifier').filter((ident) => ident.object_id === 'r  59001818' && ident.object_type === 'bf:Lccn').length >= 0)
         })
     })
 
