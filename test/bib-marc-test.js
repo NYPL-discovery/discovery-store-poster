@@ -18,7 +18,7 @@ describe('Bib Marc Mapping', function () {
       assert.equal(altTitleMapping.paths.length, 5)
 
       var contribLIteralMapping = mapping.getMapping('Contributor literal')
-      assert.equal(contribLIteralMapping.paths.length, 3)
+      assert.equal(contribLIteralMapping.paths.length, 4)
     })
 
     it('should identify var field', function () {
@@ -182,14 +182,40 @@ describe('Bib Marc Mapping', function () {
       })
     })
 
-    it('should extract contributor', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
+    describe('Contributor', function () {
+      it('should extract contributor (710, ..)', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-10011745.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            // Note this is the pred for contributorLiteral:
+            assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
+          })
+      })
+
+      it('should extract contributor from 720', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-16415030.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            // Note comes from 710:
+            assert.equal(bib.literals('dc:contributor')[0], 'Institution of Chemical Engineers (Great Britain)')
+            // Note comes from 720:
+            assert.equal(bib.literals('dc:contributor')[1], 'Institution of Chemical Engineers (Great Britain). North Western Branch.')
+          })
+      })
+    })
+
+    it('should extract contributor from 720', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16415030.json'))
 
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
           // Note this is the pred for contributorLiteral:
-          assert.equal(bib.literal('dc:contributor'), 'International Society for the Study of Behavioral Development.')
+          assert.equal(bib.literal('dc:contributor'), 'Institution of Chemical Engineers (Great Britain)')
         })
     })
 
@@ -783,13 +809,13 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           assert.equal(bib.statements('bf:note').length, 9)
 
-          // Among those 9 notes, grab the one with noteType "Immediate Source of Acquisition Note":
+          // Among those 9 notes, grab the one with noteType "Source":
           let blankNode = bib.blankNodes('bf:note')
-            .filter((node) => node.literal('bf:noteType') === 'Immediate Source of Acquisition Note')
+            .filter((node) => node.literal('bf:noteType') === 'Source')
             .pop()
           assert.equal(blankNode.statements().length, 3)
           assert.equal(blankNode.objectId('rdf:type'), 'bf:Note')
-          assert.equal(blankNode.literal('bf:noteType'), 'Immediate Source of Acquisition Note')
+          assert.equal(blankNode.literal('bf:noteType'), 'Source')
           assert.equal(blankNode.literal('rdfs:label'), 'American Masters, Thirteen/WNET.')
         })
     })
@@ -821,6 +847,19 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           assert.equal(bib.literal('nypl:serialPublicationDates'), 'no 1-29.')
+        })
+    })
+
+    it('should parse "Catalog bib location code" (nypl:catalogBibLocation)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-16369525.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert(bib.statement('nypl:catalogBibLocation'))
+          assert.equal(bib.objectId('nypl:catalogBibLocation'), 'loc:ia')
+          assert.equal(bib.statement('nypl:catalogBibLocation').object_label, 'Electronic Material for Adults')
+          assert.equal(bib.statements('nypl:catalogBibLocation').length, 1)
         })
     })
   })
