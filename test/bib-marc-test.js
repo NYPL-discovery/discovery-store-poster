@@ -29,6 +29,26 @@ describe('Bib Marc Mapping', function () {
       assert.equal(val[0].z, 'Full text available via HathiTrust')
     })
 
+    it('should parse single parallel field', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11012182.json'))
+
+      var val = bib.parallel('245', ['a', 'b'])
+      assert.equal(val[0], 'הרבי, שלושים שנות נשיאות /')
+    })
+
+    it('should parse parallel fields from bib with multiple 880s', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11009512.json'))
+
+      const parallelTitle = bib.parallel('245', ['a', 'b'])
+      assert.equal(parallelTitle[0], '李鸿章历聘欧美记 /')
+
+      const parallelTitleDisplay = bib.parallel('245', ['a', 'b', 'c', 'f', 'g', 'h', 'k', 'n', 'p', 's'])
+      assert.equal(parallelTitleDisplay[0], '李鸿章历聘欧美记 / 蔡尔康, 林乐知编译 ; 张英宇点 ; 张玄浩校.')
+
+      const parallelSeriesStatement = bib.parallel('440', ['3', 'a', 'x', 'v', 'l'])
+      assert.equal(parallelSeriesStatement[0], '走向世界叢書')
+    })
+
     it('should extract e-item', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
 
@@ -805,6 +825,63 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should parse parallel title', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11012182.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:parallelTitle'), 'הרבי, שלושים שנות נשיאות /')
+          assert.equal(bib.literal('nypl:parallelTitleDisplay'), 'הרבי, שלושים שנות נשיאות / [ערוכה, חנוך גליצנשטיין, עדין שטיינזלץ ; איסוף חומר, חנוך גליצנשטיין, ברקה וולף].')
+        })
+    })
+
+    it('should parse mapped parallel fields from bib with multiple 880s', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-11009512.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          assert.equal(bib.literal('nypl:parallelTitle'), '李鸿章历聘欧美记 /')
+          assert.equal(bib.literal('nypl:parallelTitleDisplay'), '李鸿章历聘欧美记 / 蔡尔康, 林乐知编译 ; 张英宇点 ; 张玄浩校.')
+          assert.equal(bib.literal('nypl:parallelSeriesStatement'), '走向世界叢書')
+        })
+    })
+
+    it('should parse mapped parallelSeriesStatement via linked 490', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-19683865.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // Arabic is challenging to write expectations around for one not
+          // fluent in arabic. Resorting to \u representation:
+          const expectedParallelTitleDisplay = [
+            // Subfield a:
+            '\u0643\u062A\u0627\u0628 \u0627\u0644\u0627\u0635\u0646\u0627\u0645 /',
+            // Subfield c:
+            '\u0639\u0646 \u0627\u0628\u064A \u0627\u0644\u0645\u0646\u0630\u0631 \u0647\u0634\u0627\u0645 \u0628\u0646 \u0645\u062D\u0645\u062F \u0628\u0646 \u0627\u0644\u0633\u0627\u064A\u0628 \u0627\u0644\u0643\u0644\u0628\u064A, \u0637\u0628\u0642\u0627 \u0644\u0644\u0646\u0633\u062E\u0629 \u0627\u0644\u0648\u062D\u064A\u062F\u0629 \u0627\u0644\u0645\u062D\u0641\u0648\u0638\u0629 \u0628\u0627\u0644\u062E\u0632\u0627\u0646\u0629 \u0627\u0644\u0632\u0643\u064A\u0629 \u061B \u0628\u062A\u062D\u0642\u064A\u0642 \u0627\u062D\u0645\u062F \u0632\u0643\u064A.'
+          ].join(' ')
+          assert.equal(bib.literal('nypl:parallelTitleDisplay'), expectedParallelTitleDisplay)
+
+          // Join subfields "3","a","x","v","l":
+          const expectedParallelSeriesStatement = [
+            // Subfield a:
+            '\u0645\u0643\u062A\u0628\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u061B',
+            // Subfield v:
+            '21.',
+            // Subfield a
+            '\u062A\u062D\u0642\u064A\u0642 \u0627\u0644\u062A\u0631\u0627\u062B \u0627\u0644\u0639\u0631\u0628\u064A \u061B',
+            // Subfield v
+            '7.',
+            // Subfield a
+            '\u0627\u062F\u0628 \u061B',
+            // Subfield v
+            '12'
+          ].join(' ')
+          assert.equal(bib.literal('nypl:parallelSeriesStatement'), expectedParallelSeriesStatement)
+        })
+    })
     it('should parse Notes blank nodes correctly', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
 
