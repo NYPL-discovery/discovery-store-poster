@@ -33,7 +33,7 @@ describe('Bib Marc Mapping', function () {
       var bib = BibSierraRecord.from(require('./data/bib-11012182.json'))
 
       var val = bib.parallel('245', ['a', 'b'])
-      assert.equal(val[0], 'הרבי, שלושים שנות נשיאות /')
+      assert.equal(val[0], '\u200Fהרבי, שלושים שנות נשיאות /')
     })
 
     it('should parse parallel fields from bib with multiple 880s', function () {
@@ -831,8 +831,8 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.equal(bib.literal('nypl:parallelTitle'), 'הרבי, שלושים שנות נשיאות /')
-          assert.equal(bib.literal('nypl:parallelTitleDisplay'), 'הרבי, שלושים שנות נשיאות / [ערוכה, חנוך גליצנשטיין, עדין שטיינזלץ ; איסוף חומר, חנוך גליצנשטיין, ברקה וולף].')
+          assert.equal(bib.literal('nypl:parallelTitle'), '\u200Fהרבי, שלושים שנות נשיאות /')
+          assert.equal(bib.literal('nypl:parallelTitleDisplay'), '\u200Fהרבי, שלושים שנות נשיאות / [ערוכה, חנוך גליצנשטיין, עדין שטיינזלץ ; איסוף חומר, חנוך גליצנשטיין, ברקה וולף].')
         })
     })
 
@@ -856,7 +856,8 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           // Arabic is challenging to write expectations around for one not
           // fluent in arabic. Resorting to \u representation:
-          const expectedParallelTitleDisplay = [
+          // Include '\u200F' control character indicating RTL
+          const expectedParallelTitleDisplay = '\u200F' + [
             // Subfield a:
             '\u0643\u062A\u0627\u0628 \u0627\u0644\u0627\u0635\u0646\u0627\u0645 /',
             // Subfield c:
@@ -865,7 +866,7 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:parallelTitleDisplay'), expectedParallelTitleDisplay)
 
           // Join subfields "3","a","x","v","l":
-          const expectedParallelSeriesStatement = [
+          const expectedParallelSeriesStatement = '\u200F' + [
             // Subfield a:
             '\u0645\u0643\u062A\u0628\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u061B',
             // Subfield v:
@@ -882,6 +883,7 @@ describe('Bib Marc Mapping', function () {
           assert.equal(bib.literal('nypl:parallelSeriesStatement'), expectedParallelSeriesStatement)
         })
     })
+
     it('should parse Notes blank nodes correctly', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
 
