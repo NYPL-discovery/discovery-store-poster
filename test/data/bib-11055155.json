@@ -1,0 +1,496 @@
+{
+  "id": "10019865",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2014-01-15T02:02:10-05:00",
+  "createdDate": "2008-12-13T16:12:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mym",
+      "name": "Performing Arts Research Collections - Music"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Elvis Presley anthology.",
+  "author": "",
+  "materialType": {
+    "code": "c",
+    "value": "SCORE"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1978,
+  "catalogDate": "2001-01-04",
+  "country": {
+    "code": "wiu",
+    "name": "Wisconsin"
+  },
+  "normTitle": "elvis presley anthology",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPG1832-C",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mym  ",
+      "display": "Performing Arts Research Collections - Music"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2001-01-04",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "c",
+      "display": "SCORE"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10019865",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-13T16:12:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2014-01-15T02:02:10Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "7",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "wiu",
+      "display": "Wisconsin"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2011-10-18T00:44:32Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Presley, Elvis,"
+        },
+        {
+          "tag": "d",
+          "content": "1935-1977."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "American Music Collection."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Popular music"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rock music"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0219769"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "For voice and piano with guitar chord symbols."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "With photos, extensive biography, and complete discography and filmography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vol. 1: Ain't that loving you baby -- All shook up -- Amazing grace -- Angel -- Any way you want me (that's how I will be) -- Anyplace is paradise -- Anything that's part of you -- Are you lonesome tonight? -- As long as I have you -- (You're so square) Baby, I don't care -- Beach boy blues -- Beach shack -- Beginner's luck -- Big boots -- Big boss man -- A big hunk o' love -- Blue Christmas -- Blue moon -- Blue moon of Kentucky -- Blue suede shoes -- Bossa nova, baby -- A boy like me, a girl like you -- Burning love -- Can't help falling in love -- Change of habit -- Charro -- Cindy, Cindy -- Come what may -- Crying in the chapel -- Danny -- Do not disturb -- Doncha' think it's time? -- Don't -- Don't ask me why -- Don't be cruel (to a heart that's true) -- Don't cry daddy -- Don't leave me now -- Double truble -- Down by the riverside & When the saints come marching in -- (Such an) Easy question. -- Everybody come aboard -- Fame and fortune -- Farther along -- Finders keepers, losers weepers -- Flaming star -- Follow that dream -- Fool -- (Now and then, there's) A fool such as I -- For the heart -- Frankfort special -- Frankie and Johnny -- Fun in Acapulco -- G. I. blues -- Girl happy -- The girl of my best friend -- Girls! girls! girls! -- Gonna get back home somehow -- Good luck charm -- Got a lot o' livin to do -- Hard headed woman -- Hard knocks -- Hard luck -- Harem holiday -- The Hawaiian wedding song -- Heartbreak Hotel -- Help me -- Help me make it through the night -- Hey little girl -- His latest flame -- Holly leaves and Christmas trees -- Hound dog -- How can you lose (what you never had) -- How would you like to be -- Hurt -- I beg of you -- I believe -- I believe in the Man in the sky -- I feel that I've known you forever -- I got a woman -- I got lucky -- I got stung! -- I gotta know -- I need your love tonight -- I slipped, I stumbled, I fell. -- I think I'm gonna like it here -- I want you, I need you, I love you -- I was the one -- If I can dream -- If you love me (let me know) -- I'll be back -- I'm falling in love tonight -- I'm leavin' -- I'm left, you're right, she's gone -- I'm yours -- In the ghetto -- In your arms -- Island of love -- It's a wonderful world -- It's now or never -- I've got to find my baby -- Jailhouse rock -- Joshua at the battle -- Just for old time's sake -- Just pretend -- Just tell her Jim said hello -- Kentucky rain -- King Creole -- Kiss me quick -- Kissin' cousins. "
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vol. 2: Let it be me -- Let me be there -- Let us pray -- Let's be friends -- Little sister -- Lonely man -- Lonesome cowboy -- Love me -- Love me tender -- Loving you -- Mama -- Mean woman blues -- Memories -- Merry Christmas baby -- Milk cow blues -- Milky white way -- Mirage -- Moody blue -- My baby left me -- My boy -- My little friend -- My way -- Mystery train -- Never-ending -- Never say yes -- Night rider -- No more -- Old shep -- Once is enough -- One broken heart for sale -- One night -- Only believe -- Paralyzed -- Party -- Patch it up -- (There'll be) Peace in the Valley (for me) -- Playin' for keeps -- Please don't drag that string around -- Please don't stop loving me -- Pledging my love -- Poor boy -- Puppet on a string -- Put the blame on me -- Raised on rock -- Ready Teddy -- Relax -- Release me -- Return to sender -- Ridin' the rainbow -- Rock-a-hula baby – Roustabout -- Rubberneckin' -- Santa, bring my baby back (to me) -- Santa Claus is back in town -- See see rider -- Separate ways -- Shake that tambourine -- She thinks I still care -- She's not you -- Shoppin' around -- Shout it out -- Slowly but surely -- Smorgasbord -- So close, yet so far (from paradise) -- So glad you're mine -- Softly, as I leave you -- The sound of your cry -- Spinout -- Spring fever -- Starting today -- Steadfast, loyal and true -- Steppin' out of line -- Stop, look, listen -- Stuck on you -- Such a night -- Surrender -- Suspicion -- Suspicious minds -- Take my hand, precious Lord -- (Let me be your) Teddy bear -- That's all right -- There's so much world to see -- This is living -- This is my heaven -- Today, tomorrow and forever -- Too much -- Treat me nice -- Trouble -- Unchained melody -- Viva Las Vegas -- The walls have ears -- Way down -- We call on Him -- We can make the morning -- Wear my ring around your neck -- Wearin' that loved on look. -- We're coming in loaded -- What every woman lives for -- Wheels on my heels -- When I'm over you -- Where did they go, Lord -- Where do you come from? -- Wild in the country -- The wonder of you -- Wooden heart -- You don't have to say you love me -- You don't know me -- You gave me a mountain -- Young and beautiful -- Young dreams -- You'll never walk alone -- You're a heartbreaker -- You're the devil in disguise. "
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG1832-C",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Milwaukee, Wis. :"
+        },
+        {
+          "tag": "b",
+          "content": "H. Leonard Pub. Corp.,"
+        },
+        {
+          "tag": "c",
+          "content": "1978."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JNG 81-151"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1 vocal score (2 v.) :"
+        },
+        {
+          "tag": "b",
+          "content": "ill. ;"
+        },
+        {
+          "tag": "c",
+          "content": "31 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Elvis Presley anthology."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b10201671"
+        },
+        {
+          "tag": "b",
+          "content": "07-18-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-29-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925123420.5",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "810818s1978    wiumuc   abf        eng dccm a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "CStRLIN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "n-us---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "047",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "pp"
+        },
+        {
+          "tag": "a",
+          "content": "rc"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "048",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "vu01"
+        },
+        {
+          "tag": "a",
+          "content": "ka01"
+        },
+        {
+          "tag": "a",
+          "content": "tb01"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "pm"
+        },
+        {
+          "tag": "b",
+          "content": "01-04-01"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "c"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "wiu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ccm  2200265 a 4500",
+      "subfields": null
+    }
+  ]
+}

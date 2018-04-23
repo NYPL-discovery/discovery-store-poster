@@ -903,14 +903,26 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should parse Contents (dcterms:tableOfContents) correctly', function () {
-      var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
+    describe.only('Contents', function () {
+      it('should parse plain Contents (dcterms:tableOfContents) correctly', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
 
-      return bibSerializer.fromMarcJson(bib)
-        .then((statements) => new Bib(statements))
-        .then((bib) => {
-          assert.equal(bib.literal('dcterms:tableOfContents'), 'Jerome Rabinowitz -- Life-changing revelations -- Camp Tamiment -- Ballet Theatre -- Fancy free -- On the town -- The playful side and the darker side -- Love and loss -- Autobiographical material -- Broadway\'s rising star -- Balanchine and the New York City Ballet -- The king and I -- The House Un-American Activities Committee -- Robbins\' muse, Tanaquil Le Clercq -- Peter Pan -- West side story -- Ballets U.S.A. -- Gypsy -- Challenges and fixes -- Fiddler on the roof -- Les noces -- Dances at a gathering -- The Goldberg variations -- Watermill -- Robbins and Balanchine -- Dybbuk -- Other dances -- Glass pieces and Antique epigraphs -- In memory of... -- Jerome Robbins\' Broadway -- Dancing until the end.')
-        })
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.literal('dcterms:tableOfContents'), 'Jerome Rabinowitz -- Life-changing revelations -- Camp Tamiment -- Ballet Theatre -- Fancy free -- On the town -- The playful side and the darker side -- Love and loss -- Autobiographical material -- Broadway\'s rising star -- Balanchine and the New York City Ballet -- The king and I -- The House Un-American Activities Committee -- Robbins\' muse, Tanaquil Le Clercq -- Peter Pan -- West side story -- Ballets U.S.A. -- Gypsy -- Challenges and fixes -- Fiddler on the roof -- Les noces -- Dances at a gathering -- The Goldberg variations -- Watermill -- Robbins and Balanchine -- Dybbuk -- Other dances -- Glass pieces and Antique epigraphs -- In memory of... -- Jerome Robbins\' Broadway -- Dancing until the end.')
+          })
+      })
+
+      it('should parse enhanced? Contents (dcterms:tableOfContents) correctly', function () {
+        var bib = BibSierraRecord.from(require('./data/bib-11055155.json'))
+
+        return bibSerializer.fromMarcJson(bib)
+          .then((statements) => new Bib(statements))
+          .then((bib) => {
+            assert.equal(bib.literal('dcterms:tableOfContents'), 'Jerome Rabinowitz -- Life-changing revelations -- Camp Tamiment -- Ballet Theatre -- Fancy free -- On the town -- The playful side and the darker side -- Love and loss -- Autobiographical material -- Broadway\'s rising star -- Balanchine and the New York City Ballet -- The king and I -- The House Un-American Activities Committee -- Robbins\' muse, Tanaquil Le Clercq -- Peter Pan -- West side story -- Ballets U.S.A. -- Gypsy -- Challenges and fixes -- Fiddler on the roof -- Les noces -- Dances at a gathering -- The Goldberg variations -- Watermill -- Robbins and Balanchine -- Dybbuk -- Other dances -- Glass pieces and Antique epigraphs -- In memory of... -- Jerome Robbins\' Broadway -- Dancing until the end.')
+          })
+      })
     })
 
     it('should parse publicationStatement correctly', function () {
