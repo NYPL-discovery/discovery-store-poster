@@ -1,0 +1,727 @@
+{
+  "id": "11012182",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-06-05T17:53:52-04:00",
+  "createdDate": "2008-12-14T15:52:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "maf",
+      "name": "SASB - Dorot Jewish Division Rm 111"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "heb",
+    "name": "Hebrew"
+  },
+  "title": "ha-Rebi, sheloshim shenot neśiʼut.",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1980,
+  "catalogDate": "2000-10-19",
+  "country": {
+    "code": "is ",
+    "name": "Israel"
+  },
+  "normTitle": "ha rebi sheloshim shenot neśiʼut",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPX86-B2366",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "heb",
+      "display": "Hebrew"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "3",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "maf  ",
+      "display": "SASB - Dorot Jewish Division Rm 111"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-10-19",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "11012182",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T15:52:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-06-05T17:53:52Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "6",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "is ",
+      "display": "Israel"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-01-11T12:12:37Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-04."
+        },
+        {
+          "tag": "a",
+          "content": "Glitsenshṭain, Avraham Ḥanokh,"
+        },
+        {
+          "tag": "d",
+          "content": "1929-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-05."
+        },
+        {
+          "tag": "a",
+          "content": "Steinsaltz, Adin."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-06."
+        },
+        {
+          "tag": "a",
+          "content": "Wolf, Berka."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*PWZ (Schneersohn, M.) 85-1961"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03."
+        },
+        {
+          "tag": "a",
+          "content": "Schneerson, Menachem Mendel,"
+        },
+        {
+          "tag": "d",
+          "content": "1902-1994."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Habad."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rabbis"
+        },
+        {
+          "tag": "z",
+          "content": "New York (State)"
+        },
+        {
+          "tag": "z",
+          "content": "New York"
+        },
+        {
+          "tag": "v",
+          "content": "Biography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hasidim"
+        },
+        {
+          "tag": "z",
+          "content": "New York (State)"
+        },
+        {
+          "tag": "z",
+          "content": "New York"
+        },
+        {
+          "tag": "v",
+          "content": "Biography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "81175425"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp1019480"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Title on added t.p.: Rebbe, thirty years of leadership."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPX86-B2366",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "[Ḥ. m.] :"
+        },
+        {
+          "tag": "b",
+          "content": "Ṿaʻad hotsaʼat sefer ha-yovel li-shenot ha-sheloshim,"
+        },
+        {
+          "tag": "c",
+          "content": "[0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*PWZ (Schneersohn, M.) 85-1961"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "345 p., [28] p. of plates :"
+        },
+        {
+          "tag": "b",
+          "content": "ill., ports.;"
+        },
+        {
+          "tag": "c",
+          "content": "28 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "3",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "ha-Rebi, sheloshim shenot neśiʼut."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rebbe, thirty years of leadership."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rabi, sheloshim shenot neśiʼut."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b20320097"
+        },
+        {
+          "tag": "b",
+          "content": "04-10-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-23-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629175403.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860730s1980    is co         000 0bheb  cam a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BM755.S288"
+        },
+        {
+          "tag": "b",
+          "content": "R35"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "(2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-01/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "הרבי, שלושים שנות נשיאות /"
+        },
+        {
+          "tag": "c",
+          "content": "[ערוכה, חנוך גליצנשטיין, עדין שטיינזלץ ; איסוף חומר, חנוך גליצנשטיין, ברקה וולף]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "260-02/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "[ח\"מ] :"
+        },
+        {
+          "tag": "b",
+          "content": "ועד הוצאת ספר היובל לשנות השלושים,"
+        },
+        {
+          "tag": "c",
+          "content": "[0891]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "600-03/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "שניאורסאהן, מנחם מנדל,"
+        },
+        {
+          "tag": "d",
+          "content": "2091-4991."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "700-04/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "גליצנשטיין, אברהם חנוך,"
+        },
+        {
+          "tag": "d",
+          "content": "9191-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "700-05/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "שטיינזלץ, עדין."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "700-06/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "וולף, ברקה."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BM755.S288"
+        },
+        {
+          "tag": "b",
+          "content": "R35"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hj"
+        },
+        {
+          "tag": "b",
+          "content": "10-19-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "heb"
+        },
+        {
+          "tag": "g",
+          "content": "is "
+        },
+        {
+          "tag": "h",
+          "content": "3"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "17040741"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200397 a 4500",
+      "subfields": null
+    }
+  ]
+}
