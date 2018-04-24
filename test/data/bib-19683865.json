@@ -1,0 +1,813 @@
+{
+  "id": "19683865",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2016-01-20T23:33:56-05:00",
+  "createdDate": "2012-09-07T14:15:07-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "ara",
+    "name": "Arabic"
+  },
+  "title": "Kitāb al-aṣnām",
+  "author": "Ibn al-Kalbī, d. 819?",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1965,
+  "catalogDate": "2012-09-07",
+  "country": {
+    "code": "ua ",
+    "name": "Egypt"
+  },
+  "normTitle": "kitāb al aṣnām",
+  "normAuthor": "ibn al kalbī d 819",
+  "standardNumbers": [],
+  "controlNumber": "23494481",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "ara",
+      "display": "Arabic"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2012-09-07",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "19683865",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2012-09-07T14:15:07Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2016-01-20T23:33:56Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "6",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "ua ",
+      "display": "Egypt"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2016-01-01T14:09:24Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "Ibn al-Kalbī,"
+        },
+        {
+          "tag": "d",
+          "content": "d. 819?"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-07"
+        },
+        {
+          "tag": "a",
+          "content": "Aḥmad Zakī,"
+        },
+        {
+          "tag": "d",
+          "content": "1866 (ca.)-1934."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Idols and images"
+        },
+        {
+          "tag": "x",
+          "content": "Worship."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arab cults."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Arabian Peninsula"
+        },
+        {
+          "tag": "x",
+          "content": "Religion."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ne 65002370"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)23494481"
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "23494481 ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-05"
+        },
+        {
+          "tag": "a",
+          "content": "al-Qāhirah :"
+        },
+        {
+          "tag": "b",
+          "content": "al-Dār al-Qawmīyah lil-Ṭibāʻah wa-al-Nashr,"
+        },
+        {
+          "tag": "c",
+          "content": "1965."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*OGN (Kalbī. Kitāb al-aṣnām)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "111, iv p. :"
+        },
+        {
+          "tag": "b",
+          "content": "facsims. ;"
+        },
+        {
+          "tag": "c",
+          "content": "27 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-06"
+        },
+        {
+          "tag": "a",
+          "content": "Maktabah al-ʻArabīyah ;"
+        },
+        {
+          "tag": "v",
+          "content": "21."
+        },
+        {
+          "tag": "a",
+          "content": "Taḥqīq al-turāth al-ʻArabī,"
+        },
+        {
+          "tag": "v",
+          "content": "7."
+        },
+        {
+          "tag": "a",
+          "content": "Adab ;"
+        },
+        {
+          "tag": "v",
+          "content": "12"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03"
+        },
+        {
+          "tag": "a",
+          "content": "Kitāb al-aṣnām /"
+        },
+        {
+          "tag": "c",
+          "content": "ʻan Abī al-Mundhir Hishām ibn Muḥammad al-Sāʼib al-Kalbī, ubqan lil-naskhah al-waḥīdah al-maḥfūẓah bi-al-khāznah al-zakīyah ; bi-taḥqīq Aḥmad Zakī."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "240",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Aṣnām"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-04"
+        },
+        {
+          "tag": "a",
+          "content": "Aṣnām"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Online version:"
+        },
+        {
+          "tag": "a",
+          "content": "Ibn al-Kalbī, d. 819?"
+        },
+        {
+          "tag": "s",
+          "content": "Aṣnām."
+        },
+        {
+          "tag": "t",
+          "content": "Kitāb al-aṣnām."
+        },
+        {
+          "tag": "d",
+          "content": "al-Qāhirah : al-Dār al-Qawmīyah lil-Ṭibāʻah wa-al-Nashr, 1965"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)607923424"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20120906140711.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "890510s1965    ua h          000 0 arar cam1a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DLC"
+        },
+        {
+          "tag": "c",
+          "content": "EYM"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCG"
+        },
+        {
+          "tag": "d",
+          "content": "IUL"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ar-----"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NYPP"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BL1685"
+        },
+        {
+          "tag": "b",
+          "content": ".I2 1965"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BL1685"
+        },
+        {
+          "tag": "b",
+          "content": ".I2 1965"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "(3"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "100-01/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "ابن الكلبي."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "240-02/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "اصنام"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-03/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "كتاب الاصنام /"
+        },
+        {
+          "tag": "c",
+          "content": "عن ابي المنذر هشام بن محمد بن السايب الكلبي, طبقا للنسخة الوحيدة المحفوظة بالخزانة الزكية ؛ بتحقيق احمد زكي."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "246-04/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "اصنام"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "260-05/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "القاهرة :"
+        },
+        {
+          "tag": "b",
+          "content": "الدار القومية للطباعة والنشر,"
+        },
+        {
+          "tag": "c",
+          "content": "1965."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "490-06/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "مكتبة العربية ؛"
+        },
+        {
+          "tag": "v",
+          "content": "21."
+        },
+        {
+          "tag": "a",
+          "content": "تحقيق التراث العربي ؛"
+        },
+        {
+          "tag": "v",
+          "content": "7."
+        },
+        {
+          "tag": "a",
+          "content": "ادب ؛"
+        },
+        {
+          "tag": "v",
+          "content": "12"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "700-07/(3/r"
+        },
+        {
+          "tag": "a",
+          "content": "احمد زكي."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "als"
+        },
+        {
+          "tag": "b",
+          "content": "CATRL"
+        },
+        {
+          "tag": "n",
+          "content": "BarCAT"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "8528"
+        },
+        {
+          "tag": "a",
+          "content": "*OGN (Kalbī. Kitāb al-aṣnām)"
+        },
+        {
+          "tag": "i",
+          "content": "33433101157307"
+        },
+        {
+          "tag": "l",
+          "content": "mal62"
+        },
+        {
+          "tag": "s",
+          "content": "-"
+        },
+        {
+          "tag": "t",
+          "content": "055"
+        },
+        {
+          "tag": "h",
+          "content": "033"
+        },
+        {
+          "tag": "o",
+          "content": "1"
+        },
+        {
+          "tag": "v",
+          "content": "CATRL/als/BarCAT"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  22004811a 4500",
+      "subfields": null
+    }
+  ]
+}
