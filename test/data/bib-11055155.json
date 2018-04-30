@@ -1,15 +1,15 @@
 {
-  "id": "10019865",
+  "id": "11055155",
   "nyplSource": "sierra-nypl",
   "nyplType": "bib",
-  "updatedDate": "2014-01-15T02:02:10-05:00",
-  "createdDate": "2008-12-13T16:12:00-05:00",
+  "updatedDate": "2015-04-18T01:02:19-04:00",
+  "createdDate": "2008-12-14T16:40:08-05:00",
   "deletedDate": null,
   "deleted": false,
   "locations": [
     {
-      "code": "mym",
-      "name": "Performing Arts Research Collections - Music"
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
     }
   ],
   "suppressed": false,
@@ -17,26 +17,26 @@
     "code": "eng",
     "name": "English"
   },
-  "title": "Elvis Presley anthology.",
-  "author": "",
+  "title": "Topographical bibliography of ancient Egyptian hieroglyphic texts, reliefs, and paintings",
+  "author": "Porter, Bertha, 1852-1941.",
   "materialType": {
-    "code": "c",
-    "value": "SCORE"
+    "code": "a",
+    "value": "BOOK/TEXT"
   },
   "bibLevel": {
     "code": "m",
     "value": "MONOGRAPH"
   },
-  "publishYear": 1978,
-  "catalogDate": "2001-01-04",
+  "publishYear": 1927,
+  "catalogDate": "2015-04-17",
   "country": {
-    "code": "wiu",
-    "name": "Wisconsin"
+    "code": "enk",
+    "name": "England"
   },
-  "normTitle": "elvis presley anthology",
-  "normAuthor": "",
+  "normTitle": "topographical bibliography of ancient egyptian hieroglyphic texts reliefs and paintings",
+  "normAuthor": "porter bertha 1852 1941",
   "standardNumbers": [],
-  "controlNumber": "NYPG1832-C",
+  "controlNumber": "2362202",
   "fixedFields": {
     "24": {
       "label": "Language",
@@ -50,17 +50,17 @@
     },
     "26": {
       "label": "Location",
-      "value": "mym  ",
-      "display": "Performing Arts Research Collections - Music"
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
     },
     "27": {
       "label": "COPIES",
-      "value": "1",
+      "value": "11",
       "display": null
     },
     "28": {
       "label": "Cat. Date",
-      "value": "2001-01-04",
+      "value": "2015-04-17",
       "display": null
     },
     "29": {
@@ -70,8 +70,8 @@
     },
     "30": {
       "label": "Material Type",
-      "value": "c",
-      "display": "SCORE"
+      "value": "a",
+      "display": "BOOK/TEXT"
     },
     "31": {
       "label": "Bib Code 3",
@@ -85,22 +85,22 @@
     },
     "81": {
       "label": "Record Number",
-      "value": "10019865",
+      "value": "11055155",
       "display": null
     },
     "83": {
       "label": "Created Date",
-      "value": "2008-12-13T16:12:00Z",
+      "value": "2008-12-14T16:40:08Z",
       "display": null
     },
     "84": {
       "label": "Updated Date",
-      "value": "2014-01-15T02:02:10Z",
+      "value": "2015-04-18T01:02:19Z",
       "display": null
     },
     "85": {
       "label": "No. of Revisions",
-      "value": "7",
+      "value": "17",
       "display": null
     },
     "86": {
@@ -110,12 +110,12 @@
     },
     "89": {
       "label": "Country",
-      "value": "wiu",
-      "display": "Wisconsin"
+      "value": "enk",
+      "display": "England"
     },
     "98": {
       "label": "PDATE",
-      "value": "2011-10-18T00:44:32Z",
+      "value": "2015-04-17T14:49:48Z",
       "display": null
     },
     "107": {
@@ -126,6 +126,23 @@
   },
   "varFields": [
     {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Porter, Bertha,"
+        },
+        {
+          "tag": "d",
+          "content": "1852-1941."
+        }
+      ]
+    },
+    {
       "fieldTag": "b",
       "marcTag": "700",
       "ind1": "1",
@@ -134,24 +151,84 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "Presley, Elvis,"
+          "content": "Moss, Rosalind L. B."
         },
         {
-          "tag": "d",
-          "content": "1935-1977."
+          "tag": "q",
+          "content": "(Rosalind Louisa Beaufort)"
         }
       ]
     },
     {
       "fieldTag": "b",
-      "marcTag": "791",
-      "ind1": "2",
+      "marcTag": "700",
+      "ind1": "1",
       "ind2": " ",
       "content": null,
       "subfields": [
         {
           "tag": "a",
-          "content": "American Music Collection."
+          "content": "Burney, Ethel W."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Málek, Jaromír."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Magee, Diana."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Miles, Elizabeth,"
+        },
+        {
+          "tag": "d",
+          "content": "1965-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*OBI 86-874"
+        },
+        {
+          "tag": "z",
+          "content": "Library has: Vol. 1-7; v. 8, pt. 1-4."
         }
       ]
     },
@@ -164,11 +241,53 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "Popular music"
+          "content": "Egyptian language"
         },
         {
-          "tag": "z",
-          "content": "United States."
+          "tag": "x",
+          "content": "Writing, Hieroglyphic"
+        },
+        {
+          "tag": "v",
+          "content": "Bibliography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Egypt"
+        },
+        {
+          "tag": "x",
+          "content": "Antiquities"
+        },
+        {
+          "tag": "v",
+          "content": "Bibliography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Thebes (Egypt : Extinct city)"
+        },
+        {
+          "tag": "v",
+          "content": "Bibliography."
         }
       ]
     },
@@ -181,11 +300,166 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "Rock music"
+          "content": "Tombs"
         },
         {
           "tag": "z",
-          "content": "United States."
+          "content": "Egypt"
+        },
+        {
+          "tag": "z",
+          "content": "Thebes (Extinct city)"
+        },
+        {
+          "tag": "v",
+          "content": "Bibliography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Antiquities."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00810745"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Egyptian language"
+        },
+        {
+          "tag": "x",
+          "content": "Writing, Hieroglyphic."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00903961"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Tombs."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01152439"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Egypt."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01208755"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Egypt"
+        },
+        {
+          "tag": "z",
+          "content": "Thebes (Extinct city)"
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01897333"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bibliography."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01423717"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "   28025172"
         }
       ]
     },
@@ -198,7 +472,11 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "(WaOLN)nyp0219769"
+          "content": "(OCoLC)2362202"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)26527129"
         }
       ]
     },
@@ -211,7 +489,7 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "For voice and piano with guitar chord symbols."
+          "content": "\"List of abbreviations\" and \"List of collections of manuscripts\" in each volume."
         }
       ]
     },
@@ -224,7 +502,7 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "With photos, extensive biography, and complete discography and filmography."
+          "content": "Includes indexes."
         }
       ]
     },
@@ -232,12 +510,16 @@
       "fieldTag": "n",
       "marcTag": "505",
       "ind1": "0",
-      "ind2": " ",
+      "ind2": "0",
       "content": null,
       "subfields": [
         {
-          "tag": "a",
-          "content": "Vol. 1: Ain't that loving you baby -- All shook up -- Amazing grace -- Angel -- Any way you want me (that's how I will be) -- Anyplace is paradise -- Anything that's part of you -- Are you lonesome tonight? -- As long as I have you -- (You're so square) Baby, I don't care -- Beach boy blues -- Beach shack -- Beginner's luck -- Big boots -- Big boss man -- A big hunk o' love -- Blue Christmas -- Blue moon -- Blue moon of Kentucky -- Blue suede shoes -- Bossa nova, baby -- A boy like me, a girl like you -- Burning love -- Can't help falling in love -- Change of habit -- Charro -- Cindy, Cindy -- Come what may -- Crying in the chapel -- Danny -- Do not disturb -- Doncha' think it's time? -- Don't -- Don't ask me why -- Don't be cruel (to a heart that's true) -- Don't cry daddy -- Don't leave me now -- Double truble -- Down by the riverside & When the saints come marching in -- (Such an) Easy question. -- Everybody come aboard -- Fame and fortune -- Farther along -- Finders keepers, losers weepers -- Flaming star -- Follow that dream -- Fool -- (Now and then, there's) A fool such as I -- For the heart -- Frankfort special -- Frankie and Johnny -- Fun in Acapulco -- G. I. blues -- Girl happy -- The girl of my best friend -- Girls! girls! girls! -- Gonna get back home somehow -- Good luck charm -- Got a lot o' livin to do -- Hard headed woman -- Hard knocks -- Hard luck -- Harem holiday -- The Hawaiian wedding song -- Heartbreak Hotel -- Help me -- Help me make it through the night -- Hey little girl -- His latest flame -- Holly leaves and Christmas trees -- Hound dog -- How can you lose (what you never had) -- How would you like to be -- Hurt -- I beg of you -- I believe -- I believe in the Man in the sky -- I feel that I've known you forever -- I got a woman -- I got lucky -- I got stung! -- I gotta know -- I need your love tonight -- I slipped, I stumbled, I fell. -- I think I'm gonna like it here -- I want you, I need you, I love you -- I was the one -- If I can dream -- If you love me (let me know) -- I'll be back -- I'm falling in love tonight -- I'm leavin' -- I'm left, you're right, she's gone -- I'm yours -- In the ghetto -- In your arms -- Island of love -- It's a wonderful world -- It's now or never -- I've got to find my baby -- Jailhouse rock -- Joshua at the battle -- Just for old time's sake -- Just pretend -- Just tell her Jim said hello -- Kentucky rain -- King Creole -- Kiss me quick -- Kissin' cousins. "
+          "tag": "g",
+          "content": "[v. ] 1"
+        },
+        {
+          "tag": "t",
+          "content": "The Theban necropolis."
         }
       ]
     },
@@ -245,12 +527,158 @@
       "fieldTag": "n",
       "marcTag": "505",
       "ind1": "0",
-      "ind2": " ",
+      "ind2": "0",
       "content": null,
       "subfields": [
         {
-          "tag": "a",
-          "content": "Vol. 2: Let it be me -- Let me be there -- Let us pray -- Let's be friends -- Little sister -- Lonely man -- Lonesome cowboy -- Love me -- Love me tender -- Loving you -- Mama -- Mean woman blues -- Memories -- Merry Christmas baby -- Milk cow blues -- Milky white way -- Mirage -- Moody blue -- My baby left me -- My boy -- My little friend -- My way -- Mystery train -- Never-ending -- Never say yes -- Night rider -- No more -- Old shep -- Once is enough -- One broken heart for sale -- One night -- Only believe -- Paralyzed -- Party -- Patch it up -- (There'll be) Peace in the Valley (for me) -- Playin' for keeps -- Please don't drag that string around -- Please don't stop loving me -- Pledging my love -- Poor boy -- Puppet on a string -- Put the blame on me -- Raised on rock -- Ready Teddy -- Relax -- Release me -- Return to sender -- Ridin' the rainbow -- Rock-a-hula baby – Roustabout -- Rubberneckin' -- Santa, bring my baby back (to me) -- Santa Claus is back in town -- See see rider -- Separate ways -- Shake that tambourine -- She thinks I still care -- She's not you -- Shoppin' around -- Shout it out -- Slowly but surely -- Smorgasbord -- So close, yet so far (from paradise) -- So glad you're mine -- Softly, as I leave you -- The sound of your cry -- Spinout -- Spring fever -- Starting today -- Steadfast, loyal and true -- Steppin' out of line -- Stop, look, listen -- Stuck on you -- Such a night -- Surrender -- Suspicion -- Suspicious minds -- Take my hand, precious Lord -- (Let me be your) Teddy bear -- That's all right -- There's so much world to see -- This is living -- This is my heaven -- Today, tomorrow and forever -- Too much -- Treat me nice -- Trouble -- Unchained melody -- Viva Las Vegas -- The walls have ears -- Way down -- We call on Him -- We can make the morning -- Wear my ring around your neck -- Wearin' that loved on look. -- We're coming in loaded -- What every woman lives for -- Wheels on my heels -- When I'm over you -- Where did they go, Lord -- Where do you come from? -- Wild in the country -- The wonder of you -- Wooden heart -- You don't have to say you love me -- You don't know me -- You gave me a mountain -- Young and beautiful -- Young dreams -- You'll never walk alone -- You're a heartbreaker -- You're the devil in disguise. "
+          "tag": "g",
+          "content": "[v. ] 2."
+        },
+        {
+          "tag": "t",
+          "content": "Theban temples."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 3."
+        },
+        {
+          "tag": "t",
+          "content": "Memphis (Abû Rawâsh to Dahshûr)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 4."
+        },
+        {
+          "tag": "t",
+          "content": "Lower and middle Egypt (Delta and Cairo to Asyût)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 5."
+        },
+        {
+          "tag": "t",
+          "content": "Upper Egypt: sites (Deir Rîfa to Aswân, excluding Thebes and the temples of Abydos, Dendera, Esna, Edfu, Kôm Ombo and Philae)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 6."
+        },
+        {
+          "tag": "t",
+          "content": "Upper Egypt : chief temples (excluding Thebes) : Abydos, Dendera, Esna, Edfu, Kôm Ombo, and Philae."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 7."
+        },
+        {
+          "tag": "t",
+          "content": "Nubia, the deserts, and outside Egypt /"
+        },
+        {
+          "tag": "r",
+          "content": "by Bertha Porter and Rosalind L.B. Moss; assisted by Ethel W. Burney."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "g",
+          "content": "[v. ] 8."
+        },
+        {
+          "tag": "t",
+          "content": "Objects of provenance not known."
+        },
+        {
+          "tag": "g",
+          "content": "pt. 1."
+        },
+        {
+          "tag": "t",
+          "content": "Royal Statues. private Statues (Predynastic to Dynasty XVII) --"
+        },
+        {
+          "tag": "g",
+          "content": "pt. 2."
+        },
+        {
+          "tag": "t",
+          "content": "Private Statues (Dynasty XVIII to the Roman Periiod). Statues of Deities --"
+        },
+        {
+          "tag": "g",
+          "content": "[pt. 3]"
+        },
+        {
+          "tag": "t",
+          "content": "Indices to parts 1 and 2, Statues --"
+        },
+        {
+          "tag": "g",
+          "content": "pt. 4."
+        },
+        {
+          "tag": "t",
+          "content": "Stelae (Dynasty XVIII to the Roman Period) 803-044-050 to 803-099-990 /"
+        },
+        {
+          "tag": "r",
+          "content": "by Jaromir Malek, assisted by Diana Magee and Elizabeth Miles."
         }
       ]
     },
@@ -259,7 +687,7 @@
       "marcTag": "001",
       "ind1": " ",
       "ind2": " ",
-      "content": "NYPG1832-C",
+      "content": "2362202 ",
       "subfields": null
     },
     {
@@ -271,15 +699,36 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "Milwaukee, Wis. :"
+          "content": "Oxford :"
         },
         {
           "tag": "b",
-          "content": "H. Leonard Pub. Corp.,"
+          "content": "Clarendon Press,"
         },
         {
           "tag": "c",
-          "content": "1978."
+          "content": "1927-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "3",
+          "content": "v. 8, pt. 3-4 :"
+        },
+        {
+          "tag": "a",
+          "content": "Oxford :"
+        },
+        {
+          "tag": "b",
+          "content": "Griffith Institute."
         }
       ]
     },
@@ -292,7 +741,11 @@
       "subfields": [
         {
           "tag": "h",
-          "content": "JNG 81-151"
+          "content": "*OBI 86-874"
+        },
+        {
+          "tag": "z",
+          "content": "Library has: Vol. 1-7; v. 8, pt. 1-4"
         }
       ]
     },
@@ -305,28 +758,112 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "1 vocal score (2 v.) :"
+          "content": "volumes :"
         },
         {
           "tag": "b",
-          "content": "ill. ;"
+          "content": "maps, plans ;"
         },
         {
           "tag": "c",
-          "content": "31 cm."
+          "content": "29 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
         }
       ]
     },
     {
       "fieldTag": "t",
       "marcTag": "245",
-      "ind1": "0",
+      "ind1": "1",
       "ind2": "0",
       "content": null,
       "subfields": [
         {
           "tag": "a",
-          "content": "Elvis Presley anthology."
+          "content": "Topographical bibliography of ancient Egyptian hieroglyphic texts, reliefs, and paintings /"
+        },
+        {
+          "tag": "c",
+          "content": "by Bertha Porter and Rosalind L.B. Moss."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Title on v. 8, pt. 3-4:"
+        },
+        {
+          "tag": "a",
+          "content": "Topographical bibliography of ancient Egyptian hieroglyphic texts, statues, reliefs, and paintings"
         }
       ]
     },
@@ -339,24 +876,61 @@
       "subfields": [
         {
           "tag": "a",
-          "content": ".b10201671"
+          "content": ".b20752611"
         },
         {
           "tag": "b",
-          "content": "07-18-08"
+          "content": "08-12-08"
         },
         {
           "tag": "c",
-          "content": "07-29-91"
+          "content": "08-24-91"
         }
       ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Online version:"
+        },
+        {
+          "tag": "a",
+          "content": "Porter, Bertha, 1852-1941."
+        },
+        {
+          "tag": "t",
+          "content": "Topographical bibliography of ancient Egyptian hieroglyphic texts, reliefs, and paintings."
+        },
+        {
+          "tag": "d",
+          "content": "Oxford, Clarendon Press, 1927-"
+        },
+        {
+          "tag": "w",
+          "content": "(OCoLC)607714416"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
     },
     {
       "fieldTag": "y",
       "marcTag": "005",
       "ind1": " ",
       "ind2": " ",
-      "content": "20000925123420.5",
+      "content": "20150416154259.0",
       "subfields": null
     },
     {
@@ -364,8 +938,34 @@
       "marcTag": "008",
       "ind1": " ",
       "ind2": " ",
-      "content": "810818s1978    wiumuc   abf        eng dccm a ",
+      "content": "760809m19279999enkbe    b    000 0 eng  camIa ",
       "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "015",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "GB52-203"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "019",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "26527129"
+        }
+      ]
     },
     {
       "fieldTag": "y",
@@ -376,19 +976,71 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "NN"
+          "content": "DLC"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
         },
         {
           "tag": "c",
-          "content": "NN"
+          "content": "IRU"
         },
         {
           "tag": "d",
-          "content": "CStRLIN"
+          "content": "DLC"
         },
         {
           "tag": "d",
-          "content": "WaOLN"
+          "content": "UKM"
+        },
+        {
+          "tag": "d",
+          "content": "TXA"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCG"
+        },
+        {
+          "tag": "d",
+          "content": "CUN"
+        },
+        {
+          "tag": "d",
+          "content": "IXA"
+        },
+        {
+          "tag": "d",
+          "content": "YUS"
+        },
+        {
+          "tag": "d",
+          "content": "CGU"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "CHVBK"
+        },
+        {
+          "tag": "d",
+          "content": "NYP"
         }
       ]
     },
@@ -401,86 +1053,210 @@
       "subfields": [
         {
           "tag": "a",
-          "content": "n-us---"
+          "content": "f-ua---"
         }
       ]
     },
     {
       "fieldTag": "y",
-      "marcTag": "047",
+      "marcTag": "049",
       "ind1": " ",
       "ind2": " ",
       "content": null,
       "subfields": [
         {
           "tag": "a",
-          "content": "pp"
-        },
-        {
-          "tag": "a",
-          "content": "rc"
+          "content": "NYPP"
         }
       ]
     },
     {
       "fieldTag": "y",
-      "marcTag": "048",
-      "ind1": " ",
-      "ind2": " ",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": "0",
       "content": null,
       "subfields": [
         {
           "tag": "a",
-          "content": "vu01"
-        },
-        {
-          "tag": "a",
-          "content": "ka01"
-        },
-        {
-          "tag": "a",
-          "content": "tb01"
-        }
-      ]
-    },
-    {
-      "fieldTag": "y",
-      "marcTag": "997",
-      "ind1": " ",
-      "ind2": " ",
-      "content": null,
-      "subfields": [
-        {
-          "tag": "a",
-          "content": "pm"
+          "content": "Z7064"
         },
         {
           "tag": "b",
-          "content": "01-04-01"
+          "content": ".P84"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PJ1097"
+        },
+        {
+          "tag": "b",
+          "content": ".P67 1927"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "016.4931"
+        },
+        {
+          "tag": "2",
+          "content": "18"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PJ1097"
+        },
+        {
+          "tag": "b",
+          "content": ".P67 1927"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "mnm"
+        },
+        {
+          "tag": "b",
+          "content": "CATRL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Z7064"
+        },
+        {
+          "tag": "b",
+          "content": ".P84"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MARS"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b110551552"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "946",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "m"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "8528"
+        },
+        {
+          "tag": "a",
+          "content": "*OBI 86-874"
         },
         {
           "tag": "c",
-          "content": "m"
+          "content": "v. 8, pt. 4"
         },
         {
-          "tag": "d",
-          "content": "c"
+          "tag": "i",
+          "content": "33433114008463"
         },
         {
-          "tag": "e",
-          "content": "-"
+          "tag": "l",
+          "content": "mal"
         },
         {
-          "tag": "f",
-          "content": "eng"
+          "tag": "s",
+          "content": "b"
         },
         {
-          "tag": "g",
-          "content": "wiu"
+          "tag": "t",
+          "content": "055"
         },
         {
           "tag": "h",
-          "content": "0"
+          "content": "033"
+        },
+        {
+          "tag": "o",
+          "content": "1"
+        },
+        {
+          "tag": "v",
+          "content": "CATRL/mnm"
         }
       ]
     },
@@ -489,7 +1265,7 @@
       "marcTag": null,
       "ind1": null,
       "ind2": null,
-      "content": "00000ccm  2200265 a 4500",
+      "content": "00000cam  2200769Ia 4500",
       "subfields": null
     }
   ]
