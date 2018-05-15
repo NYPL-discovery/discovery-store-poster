@@ -22,7 +22,7 @@ Note, the `DISCOVERY_STORE_CONNECTION_URI` variable should be encrypted. See [NY
 
 It can be useful to inspect the configuration represented by different env files - as a sanity check before running a command. The following displays the decrypted configuration from the given env file:
 
-`node jobs/init check --envfile [path to env file] --profile [aws profile]`
+`node scripts/init check --envfile [path to env file] --profile [aws profile]`
 
 ### Creating a Test Event
 
@@ -59,19 +59,19 @@ Presumably, `config/production-api-qa-db.env` will contain *production* platform
 The following will fetch bib "b10001936" from the platform API and write it to the configured database.
 
 ```
-node jobs/update-bibs --bnum b10001936 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+node scripts/update-bibs --bnum b10001936 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
 ```
 
 Equlivalently, one can update a single item by inumber:
 
 ```
-node jobs/update-items --inum i10003973 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+node scripts/update-items --inum i10003973 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
 ```
 
 Updating Columbia and Princeton items by the same mechanism is accomplished by preceding bnum/inum with 'c' and 'p', respectively. For example, this will process Princeton bib "176961":
 
 ```
-node jobs/update-bibs --bnum pb176961 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
+node scripts/update-bibs --bnum pb176961 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
 ```
 
 ## Git & Deployment Workflow
@@ -118,6 +118,12 @@ npm run deploy-[qa/production]
 npm test
 ```
 
+For doing ad hoc testing, a script is available for printing statements to the console based on the current extraction rules:
+
+```
+node scripts/print-statements-for-resource --bnum [bnum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+```
+
 ## Initializing a New Deployment Environment
 
 When a brand new environment is created (e.g. creating a new "Development" environment on AWS infrastructure), you'll need to initialize the DB environment.
@@ -125,7 +131,7 @@ When a brand new environment is created (e.g. creating a new "Development" envir
 To verify that you've entered your encrypted creds correctly and that KMS is able to decrypt them to DB credentials, run the following:
 
 ```
-node jobs/init.js check --envfile config/[environment].env --profile [aws profile]
+node scripts/init.js check --envfile config/[environment].env --profile [aws profile]
 ```
 
 If no errors are thrown, and the reported creds look correct, proceed with DB creation:
@@ -133,5 +139,5 @@ If no errors are thrown, and the reported creds look correct, proceed with DB cr
 The following will create necessary tables in the DB instance (identified in specified `--envfile`):
 
 ```
-node jobs/init.js create --envfile config/[environment].env --profile [aws profile]
+node scripts/init.js create --envfile config/[environment].env --profile [aws profile]
 ```

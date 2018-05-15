@@ -3,11 +3,11 @@
  *
  * 1. Process a single bib:
  *
- *   `node jobs/update-bibs --bnum [bnum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *   `node scripts/update-bibs --bnum [bnum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
  *
  * 2. Process bibs in bulk using a ndjson file:
  *
- *   `node jobs/update-bibs --bibsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *   `node scripts/update-bibs --bibsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
  *
  * Other options available for bulk processing:
  *  `--offset`: Skip over this many bibs in the ndjson
