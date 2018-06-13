@@ -10,7 +10,7 @@
 //
 //  If you want to load up multiple bibs or items in one event.json (to test batches > 1),
 //  infile accepts comma-delimited paths:
-//    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://api.nypltech.org/api/v0.1/current-schemas/Bib
+//    node kinesify-data test/data/bib-11079574.json,test/data/bib-11253008.json,test/data/bib-10011745.json event.json https://platform.nypl.org/api/v0.1/current-schemas/Bib
 //
 //  To build an event.json with nypl bib ids (i.e. to debug a failed run on a list of ids):
 //    node kinesify-data --ids "[comma delimited nypl bib ids]" [--nyplType bib/item]
@@ -219,7 +219,7 @@ require('./lib/local-env-helper')
 if (argv.ids) {
   // If schemaUrl not explicitly given, construct it from nyplType of first record:
   let schemaName = schemaNameFromNyplType(argv.nyplType)
-  if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
+  if (!schemaUrl) schemaUrl = `https://platform.nypl.org/api/v0.1/current-schemas/${schemaName}`
 
   let ids = argv.ids.split(',').map((id) => id.trim())
 
@@ -242,7 +242,7 @@ if (argv.ids) {
       // Now that we have the records, we can infer the schema (if needed)
       // If schemaUrl not explicitly given, construct it from nyplType of first record:
       let schemaName = schemaNameFromNyplType(records[0].nyplType)
-      if (!schemaUrl) schemaUrl = `https://api.nypltech.org/api/v0.1/current-schemas/${schemaName}`
+      if (!schemaUrl) schemaUrl = `https://platform.nypl.org/api/v0.1/current-schemas/${schemaName}`
 
       return fetchSchema(schemaUrl)
         .then((schema) => {
