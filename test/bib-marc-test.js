@@ -966,4 +966,26 @@ describe('Bib Marc Mapping', function () {
         })
     })
   })
+
+  describe('Parallel field extraction', function () {
+    it('should skip over malformed 880s', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-21581489.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          // This is an odd record.
+
+          // We have one 245 with $6=880-01
+          // The first 880 has a valid reverse link in $6
+          // but does not define any other subfields, so no valid value:
+          assert(!bib.statement('nypl:parallelTitle'))
+
+          // There are also two 246s (dcterms:alternative).
+          // The first has a $6 link (880-02), but no other subfields.
+          // The linked 880 has a $6 linking to 246-02 (which has no $6)
+          // So that link is also broken, although we're not currently mapping any parallels for 246
+        })
+    })
+  })
 })
