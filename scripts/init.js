@@ -2,7 +2,7 @@
  * Initialize database, get stats
  *
  * Usage:
- *  node jobs/init COMMAND [OPTS...]
+ *  node scripts/init COMMAND [OPTS...]
  *
  * @param {string} command is one of following
  *  - check: Check config (by printing to stdout)
@@ -11,15 +11,15 @@
  *
  * @example
  * // Prints out decrypted config:
- * node jobs/init check --envfile ./deploy.production.env
+ * node scripts/init check --envfile ./deploy.production.env
  *
  * @example
  * // Creates necessary tables (if they don't exist)
- * node jobs/init create --envfile ./deploy.production.env
+ * node scripts/init create --envfile ./deploy.production.env
  *
  * @example
  * // Removes all tables and then re-creates them
- * node jobs/init create --recreate --envfile ./deploy.production.env
+ * node scripts/init create --recreate --envfile ./deploy.production.env
  */
 
 const log = require('loglevel')

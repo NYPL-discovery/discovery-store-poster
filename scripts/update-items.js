@@ -3,11 +3,11 @@
  *
  * 1. Process a single item:
  *
- *   `node jobs/update-item --inum [inum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *   `node scripts/update-item --inum [inum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
  *
  * 2. Process item in bulk using a ndjson file:
  *
- *   `node jobs/update-items --itemsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *   `node scripts/update-items --itemsSource [path to ndjson] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
  *
  * Other options available for bulk processing:
  *  `--offset`: Skip over this many item in the ndjson

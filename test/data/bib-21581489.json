@@ -1,0 +1,570 @@
+{
+  "id": "21581489",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2018-06-11T19:56:41-04:00",
+  "createdDate": "2018-06-11T19:54:08-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "zzzzz",
+      "name": "NYPL Default Location"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Muhammed : messenger of peace and tolerance = Muḥammad-- rasūl al-salām wa-al-tasāmuḥ",
+  "author": "Jibouri, Yasin T.",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2014,
+  "catalogDate": null,
+  "country": {
+    "code": "inu",
+    "name": "Indiana"
+  },
+  "normTitle": "muhammed messenger of peace and tolerance muḥammad rasūl al salām wa al tasāmuḥ",
+  "normAuthor": "jibouri yasin t",
+  "standardNumbers": [
+    "9781491855126",
+    "1491855126"
+  ],
+  "controlNumber": "BK0014446361",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "zzzzz",
+      "display": "NYPL Default Location"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "0",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "f",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "21581489",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2018-06-11T19:54:08Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2018-06-11T19:56:41Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "2",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "inu",
+      "display": "Indiana"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2018-06-11T19:56:41Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jibouri, Yasin T."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Muḥammad,"
+        },
+        {
+          "tag": "c",
+          "content": "Prophet,"
+        },
+        {
+          "tag": "d",
+          "content": "-632"
+        },
+        {
+          "tag": "v",
+          "content": "Biography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Islam"
+        },
+        {
+          "tag": "x",
+          "content": "Origin."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Islam"
+        },
+        {
+          "tag": "x",
+          "content": "History."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9781491855126"
+        },
+        {
+          "tag": "c",
+          "content": "26.95"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1491855126"
+        },
+        {
+          "tag": "c",
+          "content": "26.95"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2014901243"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In English; some in Arabic."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "BK0014446361",
+      "subfields": null
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "576 pages :"
+        },
+        {
+          "tag": "b",
+          "content": "illustrations, map ;"
+        },
+        {
+          "tag": "c",
+          "content": "24 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Muhammed :"
+        },
+        {
+          "tag": "b",
+          "content": "messenger of peace and tolerance = Muḥammad-- rasūl al-salām wa-al-tasāmuḥ /"
+        },
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "c",
+          "content": "Yasin T. al-Jibouri."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Muḥammad-- rasūl al-salām wa-al-tasāmuḥ"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "DLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20140930063950.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "140613s2014    inuab         000 0beng  cam i ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DLC"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "DLC"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "eng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ara"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "(3"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bloomington, IN :"
+        },
+        {
+          "tag": "b",
+          "content": "Authorhouse,"
+        },
+        {
+          "tag": "c",
+          "content": "[2014]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-01/(3/r"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Muhammed :"
+        },
+        {
+          "tag": "b",
+          "content": "messenger of peace and tolerance = (3eMeO(B-- (3QShd(B (3GdSdGe(B (3hGdJSGeM(B /"
+        },
+        {
+          "tag": "c",
+          "content": "Yasin T. al-Jibouri."
+        },
+        {
+          "tag": "6",
+          "content": "246-02/(3/r"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(3eMeO(B-- (3QShd(B (3GdSdGe(B (3hGdJSGeM(B"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200385 i 4500",
+      "subfields": null
+    }
+  ]
+}
