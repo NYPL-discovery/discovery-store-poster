@@ -68,6 +68,19 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should extract supplementalContent with no labels', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          console.log(bib.statements('bf:supplementaryContent'))
+          assert(bib.statement('bf:supplementaryContent'))
+          assert.equal(bib.literals('bf:supplementaryContent')[1], 'http://www.ThereIsNoLabelSubfieldInThis856-42-supplementary.com/')
+          assert.equal(bib.literals('bf:supplementaryContent')[2], 'http://www.ThereIsNoLabelSubfieldInThis856-4b-supplementary.com/')
+        })
+    })
+
     it('should extract supplementalContent electronic resource', function () {
       var bib = BibSierraRecord.from(require('./data/bib-16099314.json'))
 
@@ -93,6 +106,19 @@ describe('Bib Marc Mapping', function () {
       assert.equal(resources[1].url, 'http://hdl.handle.net/2027/nyp.33433057532339')
       assert.equal(resources[1].label, 'Full text available via HathiTrust--v. 2')
       assert.equal(resources[1].path, '856')
+    })
+
+    it('should extract electronic resources with no label', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+
+      let resources = bibSerializer.extractElectronicResourcesFromBibMarc(bib, 'ER')
+      assert.equal(resources.length, 4)
+
+      assert.equal(resources[2].url, 'http://www.ThereIsNoLabelSubfieldInThis856-40-fulltext.com/')
+      assert.equal(resources[2].label, undefined)
+
+      assert.equal(resources[3].url, 'http://www.ThereIsNoLabelSubfieldInThis856-41-fulltext.com/')
+      assert.equal(resources[3].label, undefined)
     })
 
     it('should extract many core properties from a MICROFORM', function () {
