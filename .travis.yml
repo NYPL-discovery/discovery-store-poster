@@ -2,19 +2,38 @@ language: node_js
 node_js:
 - '6.11'
 install: npm install
-script:
- - npm test
- - echo "Travis branch is $TRAVIS_BRANCH"
+script: npm test
 cache:
   directories:
    - node_modules
-before_deploy: echo "All unit tests passed; Preparing to deploy $TRAVIS_BRANCH"
+before_deploy:
+ - echo "All unit tests passed; Preparing to deploy $TRAVIS_BRANCH"
+after_success:
+ - if [ "$TRAVIS_BRANCH" == "development" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_DEVELOPMENT; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_DEVELOPMENT; fi
+ - if [ "$TRAVIS_BRANCH" == "qa" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_QA; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_QA; fi
+ - if [ "$TRAVIS_BRANCH" == "production" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_PRODUCTION; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_PRODUCTION; fi
 deploy:
  - provider: script
    skip_cleanup: true
-   script: npm run deploy-development
+   script: npm run deploy-$TRAVIS_BRANCH
    on:
-     branch: development
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+ - provider: script
+   script: ./node_modules/.bin/node-lambda package -e "$TRAVIS_BRANCH"
+   skip_cleanup: true
+   on:
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+ - provider: s3
+   access_key_id: "${!AWS_KEY_VAR}"
+   secret_access_key: "${!AWS_SECRET_VAR}"
+   bucket: "nypl-travis-builds-$TRAVIS_BRANCH"
+   skip_cleanup: true
+   local_dir: build
+   on:
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
 after_deploy: echo "Successfully executed deploy trigger for $TRAVIS_BRANCH"
 env:
   global:
