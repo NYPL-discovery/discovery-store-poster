@@ -2,7 +2,9 @@ language: node_js
 node_js:
 - '6.11'
 install: npm install
-script: npm test
+script:
+ - npm test
+ - echo "Travis branch is $TRAVIS_BRANCH"
 cache:
   directories:
    - node_modules
