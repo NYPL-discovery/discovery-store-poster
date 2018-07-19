@@ -3,26 +3,15 @@ node_js:
 - '6.11'
 install: npm install
 script: npm test
+cache:
+  directories:
+   - node_modules
 before_deploy: echo "All unit tests passed; Preparing to deploy $TRAVIS_BRANCH"
 deploy:
- - provider: lambda
-   function_name: 'discovery-store-poster-development'
-   region: 'us-east-1'
-   role: 'arn:aws:iam::224280085904:role/lambda_basic_execution'
-   subnet_ids:
-    - 'subnet-f4fe56af'
-   security_group_ids:
-    - 'sg-1d544067'
-   access_key_id: "$AWS_ACCESS_KEY_ID_DEVELOPMENT"
-   secret_access_key: "$AWS_SECRET_ACCESS_KEY_DEVELOPMENT"
-   environment_variables:
-    - 'DISCOVERY_STORE_CONNECTION_URI=AQECAHjqALewp8JBJNxIQvR4oY795dyG7INaGR1glMsTEgetggAAAOcwgeQGCSqGSIb3DQEHBqCB1jCB0wIBADCBzQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAy8NAZRHDMiPVOFZ20CARCAgZ9v4/iUjf76msO/dehow3RN6kqHnuEuhiHLkJs/ohOj1GYzoFTIQxNMbWkU13VOmrfsusYzH3yHy3prZIfpb4K+TMo847n9D62/OhqNy1vnO8XGRHDYnKBKWtvb/rNeODZIW+YU+5YyZuApR1xkViJ6+pS5zR88RWgTTS1nXZGG23lN6153B3f0usY3uAEDcbYOs0ik1fG+SVI+mmuSWxQ='
-    - 'LOGLEVEL=info'
-    - 'INDEX_DOCUMENT_STREAM_NAME=IndexDocumentQueue'
-    - 'INDEX_DOCUMENT_SCHEMA_NAME=IndexDocumentQueue'
-    - 'NYPL_API_BASE_URL=http://platform.nypl.org/api/v0.1'
+ - provider: script
+   skip_cleanup: true
+   script: npm run deploy-development
    on:
-     repo: NYPL-discovery/discovery-store-poster
      branch: development
 after_deploy: echo "Successfully executed deploy trigger for $TRAVIS_BRANCH"
 env:
