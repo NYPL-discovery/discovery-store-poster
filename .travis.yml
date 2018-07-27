@@ -15,7 +15,7 @@ after_success:
 deploy:
  - provider: script
    skip_cleanup: true
-   script: npm run deploy-$TRAVIS_BRANCH
+   script: ./scripts/travis-deploy.sh $TRAVIS_BRANCH
    on:
      all_branches: true
      condition: $TRAVIS_BRANCH =~ ^development|qa|production$
