@@ -1,3 +1,42 @@
 language: node_js
 node_js:
 - '6.11'
+install: npm install
+script: npm test
+cache:
+  directories:
+   - node_modules
+before_deploy:
+ - echo "All unit tests passed; Preparing to deploy $TRAVIS_BRANCH"
+after_success:
+ - if [ "$TRAVIS_BRANCH" == "development" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_DEVELOPMENT; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_DEVELOPMENT; fi
+ - if [ "$TRAVIS_BRANCH" == "qa" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_QA; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_QA; fi
+ - if [ "$TRAVIS_BRANCH" == "production" ]; then AWS_KEY_VAR=AWS_ACCESS_KEY_ID_PRODUCTION; AWS_SECRET_VAR=AWS_SECRET_ACCESS_KEY_PRODUCTION; fi
+deploy:
+ - provider: script
+   skip_cleanup: true
+   script: ./scripts/travis-deploy.sh $TRAVIS_BRANCH
+   on:
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+ - provider: script
+   script: ./node_modules/.bin/node-lambda package -e "$TRAVIS_BRANCH"
+   skip_cleanup: true
+   on:
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+ - provider: s3
+   access_key_id: "${!AWS_KEY_VAR}"
+   secret_access_key: "${!AWS_SECRET_VAR}"
+   bucket: "nypl-travis-builds-$TRAVIS_BRANCH"
+   skip_cleanup: true
+   local_dir: build
+   on:
+     all_branches: true
+     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+after_deploy: echo "Successfully executed deploy trigger for $TRAVIS_BRANCH"
+env:
+  global:
+  - secure: X4gszdRzbOL0nnvAMQmAYmsJAG8EYTwEVJ1GfwpoJzHR5ryD4TDkktAjBoNKKNYFIf5PepP6DkuR7tVFHzzhBK4jDto9uaI+9lA7NklQyCxCVbMOCz31Kn/9QAJ3tJAc2IO/SFG03DKmc+lAMGGX2H7eCDpc0oIvmBFTbvf0Z9Yxi8Qij79sys+qHh79wDqH7B8incUJt9hpfYqrFn0BdTARmWpmpU+pAXSJ0bWg9YDDOgjgguCpfyexniOylVOaK2WqPcy6nKih6FP9QZ30eGfUuHJyiTIFn4s3aBxl8hQJ8ut4LF2mBPVZJbTmEXQdyjrAMPKS6SDyovBDCK7MXQKf1GL41YOuIXR9vQRpwNU7T1GsfnV5Oaap1vu0faE5ZTZMf/KQwB0wBjjVLc2ShRAN2ADUf05lSOKRG/hGHuKQzRA6QOqc9FcNYMK81Qj/88r4bU7a9apqG0Y4kej8zz18732P2f2FluDCnPU0jNgyi5ij04MrIKrFp5VUqT3Dovgo4hGi6l2v1JChwDkWV9/+9KBkJ+bnrDxAisdMQNSDdf6oKdSUWDnhgD6xEHEYG7gPCeISxuNWJ4tdRLwE8ZCPnNODo2//ZWYLpW4osKXC/Z3Vh8vqGPAHg8WTkUmpkxIaYxPuoEtCI9seW2YvfSmus9CgJPVtMwmWTFxDTlY=
+  - secure: V2k0Fl+hpmijLqMJ2RFCLbzcp0jTkQifFQhNg3jwHO+U0LmVnkNZe9PQ4L6ghjUSezdawJ1GM7S4WcgjUvS+QgTezKebmLEzmEx8KmPSmMcTQO41SsguBvgf/oLKYTpAy/K4HYLinFGnD5Pt134a2mqmEL+ApGdZCFVzbDJ2NDy8nWQ1FGZayw091wa+inowinZoW466lYJAQ3NElDLnBB7Yuf/p92v1rK4sX5BlVj/6EKspCfd5DfYZeu+LL/Vr/gNejY5tG3xXI9O/UkArd4xZDPbjOYYw6d1OZTEOnf5bc4fBNTX6TMGUOhNHHiJ0yrjw5+5uj3ncGy1ghk5WO34/+8Srw/nHHQcvFwFlqrVNFphaqnsse1p55RudzNm+vj96p0PIe884dqEf4K+vAxTORMdb44GFDpSst3STx9ZQjPWHFRNZ+fwwfUKP6jVW/pK8k6PpPhKRjGWrUX/CUP+I0wfng7bnMnv5//cn/euqu/Iq/FpHA2wz2/b9EtXyo2PmHcHSpF9g8V9wXZ5JS8U8eY6kTtCoDAV7uFRFSqdBWE99evDQgfvXyi82lfJ6YE9XJVPvRtJPkx8O5jVQiCe3vKPyFo73T2ekKFVPUBac9b5qowCkNFbG9X/zQQwqXK7T1f/escBtp71byAUlfl0kKFF1LjRZDcq5RDPScjI=
+  - secure: ijIgAH+qT5lFpASwrZNmB+2os6rpxWe0NAVXsP4sisx2NJ2TvweLtrcMeF+lQTU8VIdWEv62w5DHtpJEeJRihaLQ5/eFcaJ4FYbIpO6yFHYm1/AkDfYBQvPI2UakJOqfSFiOcE7ACQ5eaKSooqagO8JDkOh0hG5wiAKyFqPjKkyhN6xhIJfcFlrz/pUvZNeSNh+Du0PHDmwTBhiVwQ6TQCaGyYKQtAYrOj/BGJL6j+BfL79GEowtVobkQkZEllnyETgG3A0N0zyfI8Fv9/wgVU55UU/VPXULfPx5w92t9B3rJVky8bUjptirHMZ2Zjc6N/s/e3yIaUJq9jQ6GxLH0+7Gi5uixeenjGE4L2r/Gt+USudzfXq15uPS7D2D24bLoOZZ/jE1jP5jxKJc1yAdblUuqvD6zuAKOdK5SoqGmxVJDsu0M0H6/t3xToqiTRBrFptiBFoYMolB9JywRxtF4paOkcIE/Es+5L/v55ylyy5do3K9JmqCAP30GmhXf3ML4uydi5ZG033+1TiDtRFBtROKFy1m1WfEOZACzVA0RXYDYI4D9kmCcchGlw8Nc9xmi5pKD0byS+3LrR2W/uWAuMARinoDH+yCSFpdtZSMkUm9tE3//JPs0uc6rpiCiYr07GmIpkUwFYdgvFVTIREUznM424ShvZgB5vcfQyB/ncU=
