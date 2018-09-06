@@ -1,25 +1,25 @@
 {
   "EventSourceMappings": [
     {
-      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/Bib",
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:946183545209:stream/Bib-qa",
       "StartingPosition": "LATEST",
       "BatchSize": 100,
       "Enabled": true
     },
     {
-      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/BibBulk",
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:946183545209:stream/BibBulk-qa",
       "StartingPosition": "LATEST",
       "BatchSize": 100,
       "Enabled": true
     },
     {
-      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/Item",
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:946183545209:stream/Item-qa",
       "StartingPosition": "LATEST",
       "BatchSize": 100,
       "Enabled": true
     },
     {
-      "EventSourceArn": "arn:aws:kinesis:us-east-1:224280085904:stream/ItemBulk",
+      "EventSourceArn": "arn:aws:kinesis:us-east-1:946183545209:stream/ItemBulk-qa",
       "StartingPosition": "LATEST",
       "BatchSize": 100,
       "Enabled": true
