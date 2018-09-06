@@ -18,13 +18,13 @@ deploy:
    script: ./scripts/travis-deploy.sh $TRAVIS_BRANCH
    on:
      all_branches: true
-     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+     condition: $TRAVIS_BRANCH =~ ^(development|qa|production)$
  - provider: script
    script: ./node_modules/.bin/node-lambda package -e "$TRAVIS_BRANCH"
    skip_cleanup: true
    on:
      all_branches: true
-     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+     condition: $TRAVIS_BRANCH =~ ^(development|qa|production)$
  - provider: s3
    access_key_id: "${!AWS_KEY_VAR}"
    secret_access_key: "${!AWS_SECRET_VAR}"
@@ -33,7 +33,7 @@ deploy:
    local_dir: build
    on:
      all_branches: true
-     condition: $TRAVIS_BRANCH =~ ^development|qa|production$
+     condition: $TRAVIS_BRANCH =~ ^(development|qa|production)$
 after_deploy: echo "Successfully executed deploy trigger for $TRAVIS_BRANCH"
 env:
   global:
