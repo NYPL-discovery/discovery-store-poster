@@ -1014,4 +1014,35 @@ describe('Bib Marc Mapping', function () {
         })
     })
   })
+
+  describe('Un-typed Identifier extraction', function () {
+    it('should extract un-typed identifiers', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const identifierStatements = bib.statements('dcterms:identifier')
+          assert(identifierStatements.length)
+          assert.equal(identifierStatements.length, 17)
+
+          const untypedIdentifiers = identifierStatements
+            .filter((statement) => !statement.object_type)
+            .map((statement) => statement.object_id)
+
+          assert.equal(untypedIdentifiers.length, 6)
+
+          ; [
+            'ISBN -- 020 $z',
+            'GPO Item number. -- 074',
+            'Sudoc no.  -- 086',
+            'Standard number (old RLIN, etc.) -- 035',
+            'Publisher no. -- 028 02  ',
+            'Report number. -- 027'
+          ].forEach((identifier) => {
+            assert(untypedIdentifiers.indexOf(identifier) >= 0)
+          })
+        })
+    })
+  })
 })
