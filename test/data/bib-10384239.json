@@ -1,0 +1,635 @@
+{
+  "id": "10384239",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-03-08T23:19:32-05:00",
+  "createdDate": "2008-12-13T22:29:11-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "slr",
+      "name": "SIBL - Science Industry and Business"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "fre",
+    "name": "French"
+  },
+  "title": "Hommes et migrations. études.",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 1966,
+  "catalogDate": "1999-07-14",
+  "country": {
+    "code": "fr ",
+    "name": "France"
+  },
+  "normTitle": "hommes et migrations études",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPG764472191-S",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "fre",
+      "display": "French"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "slr  ",
+      "display": "SIBL - Science Industry and Business"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "2",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "1999-07-14",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "10384239",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-13T22:29:11Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-08T23:19:32Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "6",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "fr ",
+      "display": "France"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2011-10-20T00:58:31Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Etudes sociales nord-africaines (Association)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JLK 75-318"
+        },
+        {
+          "tag": "z",
+          "content": "Library has: Library has: no 104, 110-122; published 1966, 1968-1975."
+        },
+        {
+          "tag": "z",
+          "content": "Library has: No. 104 in C-14-50."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Emigration and immigration"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "France"
+        },
+        {
+          "tag": "x",
+          "content": "Emigration and immigration"
+        },
+        {
+          "tag": "v",
+          "content": "Periodicals."
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0223-3304"
+        },
+        {
+          "tag": "y",
+          "content": "0018-4365"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "sn 85005895"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "RCON-EPA"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0387785"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "510",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "International labour documentation"
+        },
+        {
+          "tag": "x",
+          "content": "0020-7756"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "580",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "For earlier file whose numbering it continues, see: Études sociales nord-africains (Association). Cahiers nord-africains."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ceased publication."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG764472191-S",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Paris,"
+        },
+        {
+          "tag": "b",
+          "content": "Études sociales nord-africaines,"
+        },
+        {
+          "tag": "c",
+          "content": "1968-1978."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JLK 75-318"
+        },
+        {
+          "tag": "z",
+          "content": "Library has: Library has: no 104, 110-122; published 1966, 1968-1975."
+        },
+        {
+          "tag": "z",
+          "content": "Library has: No. 104 in C-14-50."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "21 v."
+        },
+        {
+          "tag": "b",
+          "content": "ill."
+        },
+        {
+          "tag": "c",
+          "content": "20 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Annual"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "no 104-124."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hommes et migrations."
+        },
+        {
+          "tag": "p",
+          "content": "études."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "210",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hommes migr., Étud."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hommes et migrations."
+        },
+        {
+          "tag": "p",
+          "content": "études."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b13928260"
+        },
+        {
+          "tag": "b",
+          "content": "09-07-07"
+        },
+        {
+          "tag": "c",
+          "content": "08-05-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": "780",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "t",
+          "content": "Cahiers nord-africains"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "19990702085825.6",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "760629d19661978fr arz        0   b0fre dcas   ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MnMULS"
+        },
+        {
+          "tag": "c",
+          "content": "MnMULS"
+        },
+        {
+          "tag": "d",
+          "content": "NIC"
+        },
+        {
+          "tag": "d",
+          "content": "AIP"
+        },
+        {
+          "tag": "d",
+          "content": "NSDP"
+        },
+        {
+          "tag": "d",
+          "content": "DLC"
+        },
+        {
+          "tag": "d",
+          "content": "CU"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "042",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "nsdp"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "e-fr---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "b"
+        },
+        {
+          "tag": "b",
+          "content": "07-14-99"
+        },
+        {
+          "tag": "c",
+          "content": "s"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "fre"
+        },
+        {
+          "tag": "g",
+          "content": "fr "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "222",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hommes et migrations. Études"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cas  2200373   4500",
+      "subfields": null
+    }
+  ]
+}

@@ -74,7 +74,6 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          console.log(bib.statements('bf:supplementaryContent'))
           assert(bib.statement('bf:supplementaryContent'))
           assert.equal(bib.literals('bf:supplementaryContent')[1], 'http://www.ThereIsNoLabelSubfieldInThis856-42-supplementary.com/')
           assert.equal(bib.literals('bf:supplementaryContent')[2], 'http://www.ThereIsNoLabelSubfieldInThis856-4b-supplementary.com/')
@@ -1011,6 +1010,80 @@ describe('Bib Marc Mapping', function () {
           // The first has a $6 link (880-02), but no other subfields.
           // The linked 880 has a $6 linking to 246-02 (which has no $6)
           // So that link is also broken, although we're not currently mapping any parallels for 246
+        })
+    })
+  })
+
+  describe('Canceled/Invalid identifier extraction', function () {
+    it('should extract Canceled ISBNs', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const identifierBlankNodes = bib.blankNodes('dcterms:identifier')
+          assert(identifierBlankNodes.length)
+          assert.equal(identifierBlankNodes.length, 1)
+
+          const isbnNodes = identifierBlankNodes
+            .filter((node) => {
+              return node.objectId('rdf:type') === 'bf:Isbn' &&
+                node.literal('bf:identifierStatus') === 'canceled/invalid'
+            })
+
+          assert.equal(isbnNodes.length, 1)
+          assert.equal(isbnNodes[0].literal('value', 'ISBN -- 020 $z'))
+        })
+    })
+
+    it('should extract ISSN (Incorrect)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-10384239.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const identifierBlankNodes = bib.blankNodes('dcterms:identifier')
+          assert(identifierBlankNodes.length)
+          assert.equal(identifierBlankNodes.length, 1)
+
+          const isbnNodes = identifierBlankNodes
+            .filter((node) => {
+              return node.objectId('rdf:type') === 'bf:Issn' &&
+                node.literal('bf:identifierStatus') === 'incorrect'
+            })
+
+          assert.equal(isbnNodes.length, 1)
+          assert.equal(isbnNodes[0].literal('value', '0018-4365'))
+        })
+    })
+  })
+
+  describe('Generic Identifier extraction', function () {
+    it('should extract generic typed identifiers', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const identifierStatements = bib.statements('dcterms:identifier')
+          assert(identifierStatements.length)
+          assert.equal(identifierStatements.length, 17)
+
+          const genericIdentifiers = identifierStatements
+            .filter((statement) => statement.object_type === 'bf:Identifier')
+            .map((statement) => statement.object_id)
+
+          assert.equal(genericIdentifiers.length, 5)
+
+          ; [
+            'GPO Item number. -- 074',
+            'Sudoc no.  -- 086',
+            'Standard number (old RLIN, etc.) -- 035',
+            'Publisher no. -- 028 02  ',
+            'Report number. -- 027'
+          ].forEach((identifier) => {
+            assert(genericIdentifiers.indexOf(identifier) >= 0)
+          })
         })
     })
   })
