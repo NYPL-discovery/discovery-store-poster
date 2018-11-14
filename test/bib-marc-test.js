@@ -1,6 +1,7 @@
 /* global describe it */
 
 const assert = require('assert')
+const expect = require('chai').expect
 const buildMapper = require('./../lib/field-mapper')
 const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
@@ -1044,7 +1045,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           const identifierBlankNodes = bib.blankNodes('dcterms:identifier')
           assert(identifierBlankNodes.length)
-          assert.equal(identifierBlankNodes.length, 1)
+          assert.equal(identifierBlankNodes.length, 2)
 
           const isbnNodes = identifierBlankNodes
             .filter((node) => {
@@ -1084,6 +1085,22 @@ describe('Bib Marc Mapping', function () {
           ].forEach((identifier) => {
             assert(genericIdentifiers.indexOf(identifier) >= 0)
           })
+        })
+    })
+
+    it('should save repeating canceled identifiers as individual statements', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-19940200.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const identifierStatements = bib.blankNodes('dcterms:identifier')
+          const canceledIdentifierStatements = identifierStatements
+            .filter((ident) => ident.literal('bf:identifierStatus') === 'canceled')
+            .map((ident) => ident.literal('rdf:value'))
+
+          expect(canceledIdentifierStatements).to.have.lengthOf(44)
+          expect(canceledIdentifierStatements).to.include.members(['(OCoLC)671656697', '(OCoLC)1040025891', '(OCoLC)1044717955'])
         })
     })
   })

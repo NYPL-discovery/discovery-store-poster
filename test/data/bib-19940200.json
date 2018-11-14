@@ -1,0 +1,3751 @@
+{
+  "id": "19940200",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2018-11-13T17:42:37-05:00",
+  "createdDate": "2013-08-29T18:37:00-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "ftj",
+      "name": "53rd Street Children"
+    },
+    {
+      "code": "fej",
+      "name": "58th Street Children"
+    },
+    {
+      "code": "ssj",
+      "name": "67th Street Children"
+    },
+    {
+      "code": "nsj",
+      "name": "96th Street Children"
+    },
+    {
+      "code": "huj",
+      "name": "115th Street Children"
+    },
+    {
+      "code": "hdj",
+      "name": "125th Street Children"
+    },
+    {
+      "code": "agj",
+      "name": "Aguilar Children "
+    },
+    {
+      "code": "alj",
+      "name": "Allerton Children"
+    },
+    {
+      "code": "baj",
+      "name": "Baychester Children"
+    },
+    {
+      "code": "bcj",
+      "name": "Bronx Library Center Children"
+    },
+    {
+      "code": "bej",
+      "name": "Belmont Children"
+    },
+    {
+      "code": "blj",
+      "name": "Bloomingdale Children"
+    },
+    {
+      "code": "brj",
+      "name": "George Bruce Children"
+    },
+    {
+      "code": "caj",
+      "name": "Terence Cardinal Cooke-Cathedral Children"
+    },
+    {
+      "code": "chj",
+      "name": "Chatham Square Children"
+    },
+    {
+      "code": "cij",
+      "name": "City Island Children"
+    },
+    {
+      "code": "cpj",
+      "name": "Clason's Point Children "
+    },
+    {
+      "code": "csj",
+      "name": "Columbus Children"
+    },
+    {
+      "code": "ctj",
+      "name": "Castle Hill Children"
+    },
+    {
+      "code": "dhj",
+      "name": "Dongan Hills Children "
+    },
+    {
+      "code": "dyj",
+      "name": "Spuyten Duyvil Children"
+    },
+    {
+      "code": "eaj",
+      "name": "Eastchester Children"
+    },
+    {
+      "code": "epj",
+      "name": "Epiphany Children"
+    },
+    {
+      "code": "ewj",
+      "name": "Edenwald Children"
+    },
+    {
+      "code": "fwj",
+      "name": "Fort Washington Children"
+    },
+    {
+      "code": "fxj",
+      "name": "Francis Martin Children"
+    },
+    {
+      "code": "gcj",
+      "name": "Grand Central Children"
+    },
+    {
+      "code": "gdj",
+      "name": "Grand Concourse Children"
+    },
+    {
+      "code": "gkj",
+      "name": "Great Kills Children"
+    },
+    {
+      "code": "hbj",
+      "name": "High Bridge Children"
+    },
+    {
+      "code": "hfj",
+      "name": "Hamilton Fish Park Children"
+    },
+    {
+      "code": "hgj",
+      "name": "Hamilton Grange Children"
+    },
+    {
+      "code": "hkj",
+      "name": "Huguenot Park Children "
+    },
+    {
+      "code": "hlj",
+      "name": "Harlem Children"
+    },
+    {
+      "code": "hpj",
+      "name": "Hudson Park Children"
+    },
+    {
+      "code": "hsj",
+      "name": "Hunt's Point Children"
+    },
+    {
+      "code": "htj",
+      "name": "Countee Cullen Children"
+    },
+    {
+      "code": "inj",
+      "name": "Inwood Children"
+    },
+    {
+      "code": "jmj",
+      "name": "Jefferson Market Children"
+    },
+    {
+      "code": "jpj",
+      "name": "Jerome Park Children"
+    },
+    {
+      "code": "kbj",
+      "name": "Kingsbridge Children"
+    },
+    {
+      "code": "kpj",
+      "name": "Kips Bay Children"
+    },
+    {
+      "code": "mbj",
+      "name": "Macomb's Bridge Children"
+    },
+    {
+      "code": "mej",
+      "name": "Melrose Children"
+    },
+    {
+      "code": "mhj",
+      "name": "Mott Haven Children"
+    },
+    {
+      "code": "mlj",
+      "name": "Mulberry Street Children"
+    },
+    {
+      "code": "mnj",
+      "name": "Mariner's Harbor Children"
+    },
+    {
+      "code": "moj",
+      "name": "Mosholu Children"
+    },
+    {
+      "code": "mpj",
+      "name": "Morris Park Children"
+    },
+    {
+      "code": "mrj",
+      "name": "Morrisania Children"
+    },
+    {
+      "code": "muj",
+      "name": "Muhlenberg Children"
+    },
+    {
+      "code": "nbj",
+      "name": "West New Brighton Children"
+    },
+    {
+      "code": "ndj",
+      "name": "New Dorp Children"
+    },
+    {
+      "code": "otj",
+      "name": "Ottendorfer Children"
+    },
+    {
+      "code": "pkj",
+      "name": "Parkchester Children"
+    },
+    {
+      "code": "pmj",
+      "name": "Pelham Bay Children"
+    },
+    {
+      "code": "rdj",
+      "name": "Riverdale Children"
+    },
+    {
+      "code": "rij",
+      "name": "Roosevelt Island Children"
+    },
+    {
+      "code": "rsj",
+      "name": "Riverside Children"
+    },
+    {
+      "code": "rtj",
+      "name": "Richmondtown Children"
+    },
+    {
+      "code": "saj",
+      "name": "St. Agnes Children"
+    },
+    {
+      "code": "sbj",
+      "name": "South Beach Children"
+    },
+    {
+      "code": "sdj",
+      "name": "Sedgwick Children"
+    },
+    {
+      "code": "sej",
+      "name": "Seward Park Children"
+    },
+    {
+      "code": "sgj",
+      "name": "St. George Children"
+    },
+    {
+      "code": "stj",
+      "name": "Stapleton Children"
+    },
+    {
+      "code": "svj",
+      "name": "Soundview Children"
+    },
+    {
+      "code": "thj",
+      "name": "Todt Hill-Westerleigh Children"
+    },
+    {
+      "code": "tmj",
+      "name": "Tremont Children"
+    },
+    {
+      "code": "tsj",
+      "name": "Tompkins Square Children"
+    },
+    {
+      "code": "tvj",
+      "name": "Tottenville Children"
+    },
+    {
+      "code": "vnj",
+      "name": "Pelham Parkway-Van Nest Children"
+    },
+    {
+      "code": "wbj",
+      "name": "Webster Children"
+    },
+    {
+      "code": "wfj",
+      "name": "West Farms Children"
+    },
+    {
+      "code": "whj",
+      "name": "Washington Heights Children"
+    },
+    {
+      "code": "wkj",
+      "name": "Wakefield Children"
+    },
+    {
+      "code": "wlj",
+      "name": "Woodlawn Heights Children"
+    },
+    {
+      "code": "woj",
+      "name": "Woodstock Children"
+    },
+    {
+      "code": "wtj",
+      "name": "Westchester Square Children"
+    },
+    {
+      "code": "yvj",
+      "name": "Yorkville Children"
+    },
+    {
+      "code": "ccj",
+      "name": "SASB - Children's Center Rm 84"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "The Incredibles",
+  "author": "",
+  "materialType": {
+    "code": "v",
+    "value": "DVD"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2005,
+  "catalogDate": "2018-08-13",
+  "country": {
+    "code": "cau",
+    "name": "California"
+  },
+  "normTitle": "incredibles",
+  "normAuthor": "",
+  "standardNumbers": [
+    "0788855212",
+    "786936244250"
+  ],
+  "controlNumber": "57246031",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "4",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "multi",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "293",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2018-08-13",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "v",
+      "display": "DVD"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "a",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "19940200",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2013-08-29T18:37:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2018-11-13T17:42:37Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "2286",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "cau",
+      "display": "California"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2018-11-13T16:22:39Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bird, Brad,"
+        },
+        {
+          "tag": "d",
+          "content": "1957-"
+        },
+        {
+          "tag": "e",
+          "content": "screenwriter,"
+        },
+        {
+          "tag": "e",
+          "content": "film director,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Walker, John,"
+        },
+        {
+          "tag": "d",
+          "content": "1956 April 21-"
+        },
+        {
+          "tag": "e",
+          "content": "film producer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Lasseter, John,"
+        },
+        {
+          "tag": "e",
+          "content": "film producer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Lucroy, Janet,"
+        },
+        {
+          "tag": "d",
+          "content": "1970-"
+        },
+        {
+          "tag": "e",
+          "content": "director of photography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Lin, Patrick"
+        },
+        {
+          "tag": "q",
+          "content": "(Pat),"
+        },
+        {
+          "tag": "e",
+          "content": "director of photography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jimenez, Andrew,"
+        },
+        {
+          "tag": "e",
+          "content": "director of photography."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Nelson, Craig T.,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hunter, Holly,"
+        },
+        {
+          "tag": "d",
+          "content": "1958-"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jackson, Samuel L.,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Lee, Jason,"
+        },
+        {
+          "tag": "d",
+          "content": "1970-"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fox, Spencer,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Vowell, Sarah,"
+        },
+        {
+          "tag": "d",
+          "content": "1969-"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Peña, Elizabeth,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Luckey, Bud,"
+        },
+        {
+          "tag": "d",
+          "content": "1934-"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Clark, Kimberly Adair,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ratzenberger, John,"
+        },
+        {
+          "tag": "e",
+          "content": "voice actor."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Giacchino, Michael,"
+        },
+        {
+          "tag": "e",
+          "content": "composer (expression)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rae, Kori,"
+        },
+        {
+          "tag": "e",
+          "content": "film producer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Andrews, Mark."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Schaffer, Stephen"
+        },
+        {
+          "tag": "c",
+          "content": "(Film editor),"
+        },
+        {
+          "tag": "e",
+          "content": "editor of moving image work."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Sayre, Rick,"
+        },
+        {
+          "tag": "e",
+          "content": "technical director."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Romano, Lou,"
+        },
+        {
+          "tag": "e",
+          "content": "production designer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fucile, Tony,"
+        },
+        {
+          "tag": "e",
+          "content": "production designer,"
+        },
+        {
+          "tag": "e",
+          "content": "animator."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Newton, Teddy,"
+        },
+        {
+          "tag": "e",
+          "content": "production designer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hunter, Steven Clay,"
+        },
+        {
+          "tag": "e",
+          "content": "animator."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Barillaro, Alan,"
+        },
+        {
+          "tag": "e",
+          "content": "animator."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Eggleston, Ralph,"
+        },
+        {
+          "tag": "e",
+          "content": "art director."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Imagire, Bryn,"
+        },
+        {
+          "tag": "e",
+          "content": "art director."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Wise, Bill."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Henne, Mark Thomas."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hardwidge, Nigel."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Karpman, Sandra."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Schreiter, Don."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Sarafian, Katherine,"
+        },
+        {
+          "tag": "e",
+          "content": "assistant producer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Thom, Randy,"
+        },
+        {
+          "tag": "e",
+          "content": "sound designer."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Walt Disney Pictures,"
+        },
+        {
+          "tag": "e",
+          "content": "presenter."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Pixar (Firm),"
+        },
+        {
+          "tag": "e",
+          "content": "production company."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Walt Disney Home Entertainment (Firm)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Buena Vista Home Entertainment (Firm)"
+        },
+        {
+          "tag": "4",
+          "content": "fds"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "091",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "p",
+          "content": "J"
+        },
+        {
+          "tag": "f",
+          "content": "DVD"
+        },
+        {
+          "tag": "a",
+          "content": "MOVIE"
+        },
+        {
+          "tag": "c",
+          "content": "I"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Heroes"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal investigation"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal behavior"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Heroes"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminología"
+        },
+        {
+          "tag": "v",
+          "content": "Teatro."
+        },
+        {
+          "tag": "2",
+          "content": "bidex"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Comunicaciones"
+        },
+        {
+          "tag": "v",
+          "content": "Teatro."
+        },
+        {
+          "tag": "2",
+          "content": "bidex"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Spanish language materials"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        },
+        {
+          "tag": "2",
+          "content": "bidex"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal behavior."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00883170"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal investigation."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00883201"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Heroes."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst00955558"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal investigation"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        },
+        {
+          "tag": "2",
+          "content": "sears"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal psychology"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        },
+        {
+          "tag": "2",
+          "content": "sears"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Summons"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        },
+        {
+          "tag": "2",
+          "content": "sears"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Feature films"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DVD-Video discs."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Juvenile works."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01411637"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Comedy films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01710291"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Animated films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01726127"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Children's films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01920781"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Drama."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01423879"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Feature films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01710384"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fiction films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01710264"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Animated films."
+        },
+        {
+          "tag": "2",
+          "content": "gsafd"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Superhero films."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01710406"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Animated films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Superhero films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Children's films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Fiction films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Comedy films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Video recordings for the hearing impaired."
+        },
+        {
+          "tag": "2",
+          "content": "fast"
+        },
+        {
+          "tag": "0",
+          "content": "(OCoLC)fst01710450"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Feature films."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal investigation"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Video recordings for the hearing impaired."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Criminal psychology"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Video recordings."
+        },
+        {
+          "tag": "2",
+          "content": "lcgft"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Summons"
+        },
+        {
+          "tag": "v",
+          "content": "Drama."
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "250",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2-disc collector's edition."
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "2",
+          "content": "naf"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0788855212"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "57246032"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "786936244250"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "4",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "36387"
+        },
+        {
+          "tag": "b",
+          "content": "Walt Disney Home Entertainment"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)57246031"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)671656697"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)733764547"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)760072493"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)965568993"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)966533756"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)973996703"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)977912566"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)980274602"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)981055855"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)982574447"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)985240287"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)989705142"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)990349737"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)993273787"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)994024765"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)995521242"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1000124885"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1001360472"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1001464465"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1002679908"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1003177625"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1003372413"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1005491716"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1010971279"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1011016540"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1014309422"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1022884655"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1026285153"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1029380748"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1029633138"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1030669503"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1031545399"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1032034634"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1032950718"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1034892389"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1035034043"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1039968266"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1040025891"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1040645602"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1042120872"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1043462403"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1043677700"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1044638271"
+        },
+        {
+          "tag": "z",
+          "content": "(OCoLC)1044717955"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DVD format; region 1, NTSC; Widescreen (2.39:1) presentation ; enhanced for 16 x 9 televisions ; Dolby Digital 5.1 surround, EX, THX."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Voices: Craig T. Nelson, Holly Hunter, Samuel L. Jackson, Jason Lee, Spencer Fox, Sarah Vowell, Elizabeth Peña, Bud Luckey, Brad Bird, Kimberly Adair Clark, John Ratzenberger."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "508",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Associate producer, Kori Rae ; music by Michael Giacchino ; story supervisor, Mark Andrews ; film editor, Stephen Schaffer ; supervising technical director, Rick Sayre ; production designer, Lou Romano ; character design, Tony Fucile & Teddy Newton ; supervising animators, Tony Fucile, Steven Clay Hunter, Alan Barillaro ; art director, Ralph Eggleston ; shading art director, Bryn Imagire ; character supervisor, Bill Wise ; hair & cloth simulation supervisor, Mark Thomas Henne ; sequence supervisor, Nigel Hardwidge ; effects supervisor, Sandra Karpman ; rendering supervisor, Don Schreiter ; production manager, Katherine Sarafian ; sound designer, Randy Thom."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "521",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MPAA rating: PG; for action violence."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Original released in 2004."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"Bob and his wife Helen used to be among the world's greatest crime fighters, saving lives and battling evil on a daily basis. Fifteen years later, they have been forced to adopt civilian identities and retreat to the suburbs where they live \"normal\" lives with their three kids, Violet, Dash, and Jack-Jack. Itching to get back into action, Bob gets his chance when a mysterious communication summons him to a remote island for a top secret assignment. He soon discovers that it will take a super family effort to rescue the world from total destruction.\"--Back of container."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Special features: Disc 1. Introduction by Brad Bird; commentary with writer/director Brad Bird, producer John Walker; commentary with animators ; Sneak peeks -- Disc 2. Intro; Jack-Jack attack; Deleted scenes; Making of the Incredibles; More making of the Incredibles; Incredi-blunders; Vowellet: an essay by Sarah Vowell; Art gallery; Publicity; Mr. Incredible and pals; Mr. Incredible and pals with commentary; NSA files; Boundin'; Boundin' with commentary; Who is Bud Luckey?"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "disc 1. Feature film -- disc 2. Bonus material: Jack-Jack attack, Boundin'."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "506",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"For private home use only.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In English, dubbed French or dubbed Spanish with optional subtitles in English, Spanish or French; closed-captioned. Optional English subtitles for the deaf and hard of hearing [SDH]."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "586",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Academy Awards, 2005: Best Animated Feature Film, Best Sound Editing (Silvers, Thom) ; Los Angeles Film Critics Association Awards, 2004: LAFCA Award - Best Animation; Best Music Score (Michael Giacchino)."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "506",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "\"For private home use only.\""
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "57246031",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[Burbank, CA] :"
+        },
+        {
+          "tag": "b",
+          "content": "Walt Disney Studios Home Entertainment,"
+        },
+        {
+          "tag": "c",
+          "content": "[2005]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[Burbank, CA] :"
+        },
+        {
+          "tag": "b",
+          "content": "Distributed by Buena Vista Home Entertainment,"
+        },
+        {
+          "tag": "c",
+          "content": "[2005]"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "©2005"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2 videodiscs (approximately 115 min.) :"
+        },
+        {
+          "tag": "b",
+          "content": "sound, color ;"
+        },
+        {
+          "tag": "c",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "306",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "015500"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "two-dimensional moving image"
+        },
+        {
+          "tag": "b",
+          "content": "tdi"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "video"
+        },
+        {
+          "tag": "b",
+          "content": "v"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "videodisc"
+        },
+        {
+          "tag": "b",
+          "content": "vd"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "4 3/4 in."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "344",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "digital"
+        },
+        {
+          "tag": "b",
+          "content": "optical"
+        },
+        {
+          "tag": "g",
+          "content": "surround"
+        },
+        {
+          "tag": "h",
+          "content": "Dolby Digital 5.1"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "345",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "widescreen (2.35:1)"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "346",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "NTSC"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "347",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "video file"
+        },
+        {
+          "tag": "b",
+          "content": "DVD video"
+        },
+        {
+          "tag": "e",
+          "content": "Region 1"
+        },
+        {
+          "tag": "2",
+          "content": "rda"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "380",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Motion picture"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Disney DVD"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Disney DVD."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Incredibles (Motion picture)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "The Incredibles /"
+        },
+        {
+          "tag": "c",
+          "content": "Walt Disney Pictures presents a Pixar Animation Studios film ; written & directed by Brad Bird ; produced by John Walker ; executive producer, John Lasseter ; directors of photography, Janet Lucroy, Patrick Lin, Andrew Jimenez."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Container of (work):"
+        },
+        {
+          "tag": "a",
+          "content": "Jack-Jack attack."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Container of (work):"
+        },
+        {
+          "tag": "a",
+          "content": "Boundin'."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "995",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2155379"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "OCoLC",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20180810044424.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "007",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "vd cvaizq",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "041216p20052004cau115 g          vaeng dcgmIa ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "019",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "671656697"
+        },
+        {
+          "tag": "a",
+          "content": "733764547"
+        },
+        {
+          "tag": "a",
+          "content": "760072493"
+        },
+        {
+          "tag": "a",
+          "content": "965568993"
+        },
+        {
+          "tag": "a",
+          "content": "966533756"
+        },
+        {
+          "tag": "a",
+          "content": "973996703"
+        },
+        {
+          "tag": "a",
+          "content": "977912566"
+        },
+        {
+          "tag": "a",
+          "content": "980274602"
+        },
+        {
+          "tag": "a",
+          "content": "981055855"
+        },
+        {
+          "tag": "a",
+          "content": "982574447"
+        },
+        {
+          "tag": "a",
+          "content": "985240287"
+        },
+        {
+          "tag": "a",
+          "content": "989705142"
+        },
+        {
+          "tag": "a",
+          "content": "990349737"
+        },
+        {
+          "tag": "a",
+          "content": "993273787"
+        },
+        {
+          "tag": "a",
+          "content": "994024765"
+        },
+        {
+          "tag": "a",
+          "content": "995521242"
+        },
+        {
+          "tag": "a",
+          "content": "1000124885"
+        },
+        {
+          "tag": "a",
+          "content": "1001360472"
+        },
+        {
+          "tag": "a",
+          "content": "1001464465"
+        },
+        {
+          "tag": "a",
+          "content": "1002679908"
+        },
+        {
+          "tag": "a",
+          "content": "1003177625"
+        },
+        {
+          "tag": "a",
+          "content": "1003372413"
+        },
+        {
+          "tag": "a",
+          "content": "1005491716"
+        },
+        {
+          "tag": "a",
+          "content": "1010971279"
+        },
+        {
+          "tag": "a",
+          "content": "1011016540"
+        },
+        {
+          "tag": "a",
+          "content": "1014309422"
+        },
+        {
+          "tag": "a",
+          "content": "1022884655"
+        },
+        {
+          "tag": "a",
+          "content": "1026285153"
+        },
+        {
+          "tag": "a",
+          "content": "1029380748"
+        },
+        {
+          "tag": "a",
+          "content": "1029633138"
+        },
+        {
+          "tag": "a",
+          "content": "1030669503"
+        },
+        {
+          "tag": "a",
+          "content": "1031545399"
+        },
+        {
+          "tag": "a",
+          "content": "1032034634"
+        },
+        {
+          "tag": "a",
+          "content": "1032950718"
+        },
+        {
+          "tag": "a",
+          "content": "1034892389"
+        },
+        {
+          "tag": "a",
+          "content": "1035034043"
+        },
+        {
+          "tag": "a",
+          "content": "1039968266"
+        },
+        {
+          "tag": "a",
+          "content": "1040025891"
+        },
+        {
+          "tag": "a",
+          "content": "1040645602"
+        },
+        {
+          "tag": "a",
+          "content": "1042120872"
+        },
+        {
+          "tag": "a",
+          "content": "1043462403"
+        },
+        {
+          "tag": "a",
+          "content": "1043677700"
+        },
+        {
+          "tag": "a",
+          "content": "1044638271"
+        },
+        {
+          "tag": "a",
+          "content": "1044717955"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "eng"
+        },
+        {
+          "tag": "a",
+          "content": "fre"
+        },
+        {
+          "tag": "a",
+          "content": "spa"
+        },
+        {
+          "tag": "h",
+          "content": "eng"
+        },
+        {
+          "tag": "j",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "eng"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "TEFMT"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "c",
+          "content": "TEFMT"
+        },
+        {
+          "tag": "d",
+          "content": "TEF"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "IUI"
+        },
+        {
+          "tag": "d",
+          "content": "WCM"
+        },
+        {
+          "tag": "d",
+          "content": "IBI"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCL"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "RCS"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "BTCTA"
+        },
+        {
+          "tag": "d",
+          "content": "PSC"
+        },
+        {
+          "tag": "d",
+          "content": "JED"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "KZV"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "TXI"
+        },
+        {
+          "tag": "d",
+          "content": "MARHG"
+        },
+        {
+          "tag": "d",
+          "content": "KPLCP"
+        },
+        {
+          "tag": "d",
+          "content": "SLV"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "RS$"
+        },
+        {
+          "tag": "d",
+          "content": "TXBXL"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "JSE"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "IUL"
+        },
+        {
+          "tag": "d",
+          "content": "ORX"
+        },
+        {
+          "tag": "d",
+          "content": "BDX"
+        },
+        {
+          "tag": "d",
+          "content": "DB@"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "OSU"
+        },
+        {
+          "tag": "d",
+          "content": "P4I"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "WAU"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCF"
+        },
+        {
+          "tag": "d",
+          "content": "OVV"
+        },
+        {
+          "tag": "d",
+          "content": "ZCU"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCL"
+        },
+        {
+          "tag": "d",
+          "content": "WVX"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "CUS"
+        },
+        {
+          "tag": "d",
+          "content": "NKM"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "LTP"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "TDS"
+        },
+        {
+          "tag": "d",
+          "content": "VPI"
+        },
+        {
+          "tag": "d",
+          "content": "YT5"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "PRSPR"
+        },
+        {
+          "tag": "d",
+          "content": "IPU"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "HOKAH"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCL"
+        },
+        {
+          "tag": "d",
+          "content": "NRG"
+        },
+        {
+          "tag": "d",
+          "content": "TXWAL"
+        },
+        {
+          "tag": "d",
+          "content": "CNUTO"
+        },
+        {
+          "tag": "d",
+          "content": "KYC"
+        },
+        {
+          "tag": "d",
+          "content": "WYZ"
+        },
+        {
+          "tag": "d",
+          "content": "GK8"
+        },
+        {
+          "tag": "d",
+          "content": "ALRCP"
+        },
+        {
+          "tag": "d",
+          "content": "B@L"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "P@N"
+        },
+        {
+          "tag": "d",
+          "content": "ZGR"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "T7F"
+        },
+        {
+          "tag": "d",
+          "content": "ILM"
+        },
+        {
+          "tag": "d",
+          "content": "TY7"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "RB0"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "DVR"
+        },
+        {
+          "tag": "d",
+          "content": "YU2"
+        },
+        {
+          "tag": "d",
+          "content": "PX0"
+        },
+        {
+          "tag": "d",
+          "content": "MUC"
+        },
+        {
+          "tag": "d",
+          "content": "WLM"
+        },
+        {
+          "tag": "d",
+          "content": "EZC"
+        },
+        {
+          "tag": "d",
+          "content": "TXCVP"
+        },
+        {
+          "tag": "d",
+          "content": "QQ3"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCO"
+        },
+        {
+          "tag": "d",
+          "content": "OJ4"
+        },
+        {
+          "tag": "d",
+          "content": "GILDS"
+        },
+        {
+          "tag": "d",
+          "content": "XOH"
+        },
+        {
+          "tag": "d",
+          "content": "JN3"
+        },
+        {
+          "tag": "d",
+          "content": "OCL"
+        },
+        {
+          "tag": "d",
+          "content": "MMK"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "TXHUT"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCA"
+        },
+        {
+          "tag": "d",
+          "content": "M4L"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "046",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "k",
+          "content": "2004"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "037",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "Midwest Tapes"
+        },
+        {
+          "tag": "n",
+          "content": "http://www.midwesttapes.com"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "049",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "MAIN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PN1997.2"
+        },
+        {
+          "tag": "b",
+          "content": ".I513 2005"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PN1997.2"
+        },
+        {
+          "tag": "b",
+          "content": ".I513 2005"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "791.43/72"
+        },
+        {
+          "tag": "2",
+          "content": "22"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "791.43/34"
+        },
+        {
+          "tag": "2",
+          "content": "22"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://mediabook.library.unt.edu/login.php?marc099=DVD4516&marc245=TheIncredibles"
+        },
+        {
+          "tag": "3",
+          "content": "null"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o24616096"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20180129"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20161219"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20160427"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20150518"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest140601"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20140116"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20131017"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20121129"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "wch"
+        },
+        {
+          "tag": "b",
+          "content": "CMA"
+        },
+        {
+          "tag": "c",
+          "content": "CATBL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest20120210"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest110408"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Midwest100325"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o23922023"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o21952383"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o20946442"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o19636714"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o18329469"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "945",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".o17277747"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cgm a2203769Ia 4500",
+      "subfields": null
+    }
+  ]
+}
