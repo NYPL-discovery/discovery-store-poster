@@ -49,6 +49,26 @@ describe('Bib Marc Mapping', function () {
       assert.equal(parallelSeriesStatement[0], '走向世界叢書')
     })
 
+    it('should pass over parallel fields with malformed 880 $6 (reverse link)', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-pul-9109782.json'))
+
+      const parallelTitle = bib.parallel('245', ['a', 'b'])
+      assert.equal(parallelTitle[0], '‏העורך העירום : איך תורת המשחקים קובעת על מה כולם ידברו מחר = The naked editor /')
+
+      const parallelTitleDisplay = bib.parallel('245', ['a', 'b', 'c', 'f', 'g', 'h', 'k', 'n', 'p', 's'])
+      assert.equal(parallelTitleDisplay[0], '‏העורך העירום : איך תורת המשחקים קובעת על מה כולם ידברו מחר = The naked editor / אורי רוזן.')
+
+      // This marc record has a parallel for 264 (placeOfPublication)
+      // That first 264 block has a $6 with "880-03", however the third 880 has
+      // a malformed $6 linking back to 264, which we choose to reject. Hence
+      // there will be no parallel for placeOfPublication. That's not something
+      // we currently extract anyway, but we're adding this assertion to assert
+      // that 1) the malformed back-link is treated as such and 2) its presence
+      // does not disrupt other parallel field extraction.
+      const parallelPlaceOfPublication = bib.parallel('264', ['a', 'b', 'c', 'f', 'g', 'h', 'k', 'n', 'p', 's'])
+      assert.equal(parallelPlaceOfPublication.length, 0)
+    })
+
     it('should extract e-item', function () {
       var bib = BibSierraRecord.from(require('./data/bib-10001936.json'))
 
