@@ -130,7 +130,7 @@ function schemaNameFromNyplType (type) {
   switch (type) {
     case 'bib': return 'Bib'
     case 'item': return 'Item'
-    default: throw new Error('Unrecognized nyplType: ' + type)
+    default: return null
   }
 }
 
