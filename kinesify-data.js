@@ -94,9 +94,9 @@ function kinesify (record, avroType) {
   // encode avro
   var buf
   try {
-    buf = avroType.toBuffer(record)
+    buf = avroType.toBuffer(record);
   } catch (e) {
-    console.log('Validation errors:')
+    console.log('Validation errors:');
     getValidationIssues(record, avroType).forEach((e) => {
       console.log(`  ${e.path.join('.')}: \n    Got: ${e.value}\n    Expected: ${e.type}`)
     })
@@ -130,7 +130,7 @@ function schemaNameFromNyplType (type) {
   switch (type) {
     case 'bib': return 'Bib'
     case 'item': return 'Item'
-    default: throw new Error('Unrecognized nyplType: ' + type)
+    default: return null
   }
 }
 
@@ -243,7 +243,7 @@ if (argv.ids) {
       // If schemaUrl not explicitly given, construct it from nyplType of first record:
       let schemaName = schemaNameFromNyplType(records[0].nyplType)
       if (!schemaUrl) schemaUrl = `https://platform.nypl.org/api/v0.1/current-schemas/${schemaName}`
-
+      
       return fetchSchema(schemaUrl)
         .then((schema) => {
           // Write the encoded event.json
