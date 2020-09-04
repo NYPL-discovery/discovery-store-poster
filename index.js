@@ -4,6 +4,7 @@ var log = null
 
 const BibsUpdater = require('./lib/bibs-updater')
 const ItemsUpdater = require('./lib/items-updater')
+const HoldingUpdater = require('./lib/holdings-updater')
 const avro = require('avsc')
 const db = require('./lib/db')
 const kmsHelper = require('./lib/kms-helper')
@@ -20,6 +21,12 @@ var opts = {
   offset: 0,
   limit: 0,
   seek: null
+}
+
+const updaters = {
+  Bib: BibsUpdater,
+  Item: ItemsUpdater,
+  Holding: HoldingUpdater
 }
 
 function getSchema (schemaName) {
@@ -40,18 +47,19 @@ function getSchema (schemaName) {
 }
 
 function processEvent (event, context, callback) {
-  let bibOrItem = null
+  let bibItemOrHolding = null
 
   // Determine whether event has Bibs or Items by checking end of eventSourceARN string:
-  if (/\/Bib/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Bib'
-  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibOrItem = 'Item'
+  if (/\/Bib/.test(event.Records[0].eventSourceARN)) bibItemOrHolding = 'Bib'
+  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibOrItemOrHolding = 'Item'
+  if (/\/Holding/.test(event.Records[0].eventSourceARN)) bibOrItemOrHolding = 'Holding'
 
   // Fail if the eventSourceARN didn't tell us what we're handling
-  if (!bibOrItem) throw new Error('Unrecognized eventSourceARN. Aborting. ' + event.Records[0].eventSourceARN)
+  if (!bibItemOrHolding) throw new Error('Unrecognized eventSourceARN. Aborting. ' + event.Records[0].eventSourceARN)
 
-  log.debug('Using schema: ', bibOrItem)
+  log.debug('Using schema: ', bibItemOrHolding)
   // db.connect().then(() => getSchema(bibOrItem)).then((schemaType) => {
-  getSchema(bibOrItem).then((schemaType) => {
+  getSchema(bibItemOrHolding).then((schemaType) => {
     // Get array of decoded records:
     var decoded = event.Records.map((record) => {
       const kinesisData = new Buffer(record.kinesis.data, 'base64')
@@ -60,7 +68,7 @@ function processEvent (event, context, callback) {
     log.debug('Processing ' + bibOrItem + ' records: ', decoded)
 
     // Invoke appropriate updater:
-    var updater = bibOrItem === 'Bib' ? (new BibsUpdater()) : (new ItemsUpdater())
+    var updater = new updaters[bibItemOrHolding]()
     updater
       .update(opts, decoded)
       .then(() => {
