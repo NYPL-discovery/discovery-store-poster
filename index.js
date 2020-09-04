@@ -51,8 +51,8 @@ function processEvent (event, context, callback) {
 
   // Determine whether event has Bibs or Items by checking end of eventSourceARN string:
   if (/\/Bib/.test(event.Records[0].eventSourceARN)) bibItemOrHolding = 'Bib'
-  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibOrItemOrHolding = 'Item'
-  if (/\/Holding/.test(event.Records[0].eventSourceARN)) bibOrItemOrHolding = 'Holding'
+  if (/\/Item/.test(event.Records[0].eventSourceARN)) bibItemOrHolding = 'Item'
+  if (/\/Holding/.test(event.Records[0].eventSourceARN)) bibItemOrHolding = 'Holding'
 
   // Fail if the eventSourceARN didn't tell us what we're handling
   if (!bibItemOrHolding) throw new Error('Unrecognized eventSourceARN. Aborting. ' + event.Records[0].eventSourceARN)
@@ -65,7 +65,7 @@ function processEvent (event, context, callback) {
       const kinesisData = new Buffer(record.kinesis.data, 'base64')
       return schemaType.fromBuffer(kinesisData)
     })
-    log.debug('Processing ' + bibOrItem + ' records: ', decoded)
+    log.debug('Processing ' + bibItemOrHolding + ' records: ', decoded)
 
     // Invoke appropriate updater:
     var updater = new updaters[bibItemOrHolding]()
@@ -81,7 +81,7 @@ function processEvent (event, context, callback) {
         callback(error)
       })
   }).catch((error) => {
-    log.error(`processEvent: Error fetching schema (${bibOrItem})`)
+    log.error(`processEvent: Error fetching schema (${bibItemOrHolding})`)
     log.trace(error)
     callback(error)
   })
