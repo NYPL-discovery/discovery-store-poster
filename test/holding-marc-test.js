@@ -34,7 +34,7 @@ describe('Holding Marc Mapping', () => {
     it('parses suppressed/deleted as suppressed', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1080389-deleted.json'))
       assert(holding.suppressed, true)
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.literal('nypl:suppressed'), true)
@@ -53,7 +53,7 @@ describe('Holding Marc Mapping', () => {
     it('should extract certain basic holding props', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1082762.json'))
 
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
@@ -67,7 +67,7 @@ describe('Holding Marc Mapping', () => {
     it('should create multiple shelfMarks that include prefixes and suffixes', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1089484.json'))
 
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
@@ -80,7 +80,7 @@ describe('Holding Marc Mapping', () => {
     it('should create multiple holdings statements for all supplied fields', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1089484.json'))
 
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
@@ -93,7 +93,7 @@ describe('Holding Marc Mapping', () => {
     it('should create blank nodes for all supplied check in boxes', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1089484.json'))
 
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
@@ -118,7 +118,7 @@ describe('Holding Marc Mapping', () => {
     it('should create multiple note statements', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1066022.json'))
 
-      holdingSerializer.fromMarcJson(holding)
+      return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
