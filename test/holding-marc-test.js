@@ -6,29 +6,6 @@ const HoldingSierraRecord = require('./../lib/models/holding-sierra-record')
 const Holding = require('./../lib/models/holding')
 const buildMapper = require('./../lib/field-mapper')
 
-/**
- * Given an object (bib or item marc-in-json object)
- *
- * @return {object} Copy of given object with modified subfield content
- function changeSubField (object, marcTag, subfieldTag, newContent) {
-   // Deep copy object:
-   object = JSON.parse(JSON.stringify(object))
-
-   object.varFields = object.varFields.map((f) => {
-     if (String(f.marcTag) === String(marcTag)) {
-       f.subFields = f.subFields.map((s) => {
-         if (String(s.tag) === String(subfieldTag)) {
-           s.content = newContent
-          }
-          return s
-        })
-      }
-      return f
-    })
-    return object
-  }
- */
-
 describe('Holding Marc Mapping', () => {
   describe('Parse', function () {
     it('parses suppressed/deleted as suppressed', () => {
