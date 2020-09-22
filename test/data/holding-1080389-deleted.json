@@ -1,0 +1,237 @@
+{
+  "id": 1080389,
+  "bibIds": [
+    11837598
+  ],
+  "bibIdLinks": [
+    "https://ilsstaff.nypl.org/iii/sierra-api/v6/bibs/11837598"
+  ],
+  "itemIds": [],
+  "itemIdLinks": [],
+  "inheritLocation": false,
+  "allocationRule": null,
+  "accountingUnit": 1,
+  "labelCode": "a",
+  "serialCode1": "z",
+  "serialCode2": "-",
+  "serialCode3": "-",
+  "serialCode4": "n",
+  "claimOnDate": null,
+  "receivingLocationCode": "255",
+  "vendorCode": "oifp",
+  "updateCount": "z",
+  "pieceCount": 0,
+  "eCheckInCode": " ",
+  "mediaTypeCode": " ",
+  "updatedDate": "2020-09-14",
+  "createdDate": "2009-06-23",
+  "deletedDate": null,
+  "deleted": false,
+  "suppressed": true,
+  "fixedFields": {
+    "35": {
+      "label": "Label Type",
+      "value": "a",
+      "display": null
+    },
+    "36": {
+      "label": "Serial Code 1",
+      "value": "z",
+      "display": null
+    },
+    "37": {
+      "label": "Serial Code 2",
+      "value": "-",
+      "display": null
+    },
+    "38": {
+      "label": "Copies",
+      "value": "1",
+      "display": null
+    },
+    "40": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": null
+    },
+    "41": {
+      "label": "Recv Location",
+      "value": "255",
+      "display": null
+    },
+    "42": {
+      "label": "Vendor",
+      "value": "oifp ",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "c",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "1080389",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-23T15:04:29Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2020-09-14T18:24:21Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "5",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2015-02-25T17:19:20Z",
+      "display": null
+    },
+    "118": {
+      "label": "Serial Code 3",
+      "value": "-",
+      "display": null
+    },
+    "119": {
+      "label": "Serial Code 4",
+      "value": "n",
+      "display": null
+    },
+    "120": {
+      "label": "Update Count",
+      "value": "z",
+      "display": null
+    },
+    "121": {
+      "label": "Piece Count",
+      "value": "0",
+      "display": null
+    },
+    "137": {
+      "label": "E-Checkin",
+      "value": " ",
+      "display": null
+    },
+    "159": {
+      "label": "Media Type",
+      "value": " ",
+      "display": null
+    },
+    "266": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ny   22000003n 4500",
+      "marcTag": null,
+      "fieldTag": "_",
+      "subfields": null
+    },
+    {
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JBM 99-134"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": ".c2091896",
+      "marcTag": null,
+      "fieldTag": "d",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Mar. (1992)-Mar. (1993).",
+      "marcTag": null,
+      "fieldTag": "h",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "843",
+      "fieldTag": "i",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PRINT"
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "930",
+      "fieldTag": "o",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "02-22-99"
+        },
+        {
+          "tag": "9",
+          "content": "12-01-08"
+        },
+        {
+          "tag": "j",
+          "content": "-  -  "
+        },
+        {
+          "tag": "m",
+          "content": "b5"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Close file with Mar. 1993. No Longer wanted per J.Ganly/SIBL.",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    }
+  ],
+  "holdings": [
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "Mar. (1992)-Mar. (1993)."
+    }
+  ],
+  "location": {
+    "code": "mal",
+    "label": "Schwarzman Building - Main Reading Room 315"
+  },
+  "checkInCards": []
+}
