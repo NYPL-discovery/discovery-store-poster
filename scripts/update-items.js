@@ -35,7 +35,6 @@ var argv = require('optimist')
   .alias('inum', 'uri')
   .describe('loglevel', 'Specify log level (default error)')
   .describe('threads', 'Specify number of threads to run it under')
-  .describe('disablescreen', 'If running multi-threaded, disables default screen takeover')
   .argv
 
 var opts = {

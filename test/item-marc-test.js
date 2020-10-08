@@ -72,6 +72,8 @@ describe('Item Marc Mapping', function () {
           assert.equal(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
           // Yeah i guess that's the actual call number?
           assert.equal(item.literal('nypl:shelfMark'), 'TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings) v. 2')
+          assert.equal(item.literal('bf:physicalLocation'), 'TPB (International Railway Congress. (VII) Washington, 1905. Summary of proceedings)')
+          assert.equal(item.literal('bf:enumerationAndChronology'), 'v. 2')
           assert.equal(item.objectId('nypl:catalogItemType'), 'catalogItemType:66')
           assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b13689507')
         })
@@ -319,6 +321,25 @@ describe('Item Marc Mapping', function () {
             delete require.cache[require.resolve('./data/item-10003973.json')]
           })
       }))
+    })
+  })
+
+  describe('Complex Call Number Formatting', function () {
+    it('should add call number prefix and suffixes', function () {
+      const item = ItemSierraRecord.from(require('./data/item-33770493.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          assert.equal(item.objectId('rdfs:type'), 'bf:Item')
+          assert.equal(item.objectId('nypl:owner'), 'orgs:1101')
+          assert.equal(item.objectId('nypl:holdingLocation'), 'loc:mall1')
+          // Yeah i guess that's the actual call number?
+          assert.equal(item.literal('nypl:shelfMark'), '*R-RMRR PR451 .E553 2015 v. 3')
+          assert.equal(item.literal('bf:physicalLocation'), '*R-RMRR PR451 .E553 2015')
+          assert.equal(item.literal('bf:enumerationAndChronology'), 'v. 3')
+          assert.equal(item.objectId('nypl:bnum'), 'urn:bnum:b20857278')
+        })
     })
   })
 })

@@ -74,6 +74,10 @@ Updating Columbia and Princeton items by the same mechanism is accomplished by p
 node scripts/update-bibs --bnum pb176961 --profile nypl-sandbox --envfile config/production-api-qa-db.env --loglevel info
 ```
 
+### Deprecation Notice
+
+The  `--disablescreen` flag has been removed from the latest versions of this module as it depends on a class that has dependencies that are no longer compatible with `node6.X`. This does not impact the running of these scripts, only how their progress is presented
+
 ## Git & Deployment Workflow
 
 `master` has the lastest-and-greatest commits, `production` should represent what's in our production environment. Because we deploy often, master and production will often be in parity.
