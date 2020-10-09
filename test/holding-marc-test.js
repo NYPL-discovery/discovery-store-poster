@@ -35,9 +35,18 @@ describe('Holding Marc Mapping', () => {
         .then((holding) => {
           assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
           assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b14630864')
-          assert.equal(holding.literal('dcterms:format'), 'PRINT')
           assert.equal(holding.objectId('nypl:holdingLocation'), 'loc:mal')
           assert.equal(holding.literal('nypl:shelfMark'), 'JBM 00-489')
+        })
+    })
+
+    it('should extract format statements from legacy i fieldTag', () => {
+      const holding = HoldingSierraRecord.from(require('./data/holding-1082762.json'))
+
+      return holdingSerializer.fromMarcJson(holding)
+        .then((statements) => new Holding(statements))
+        .then((holding) => {
+          assert.strictEqual(holding.literal('dcterms:format'), 'PRINT')
         })
     })
 
