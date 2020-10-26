@@ -1,0 +1,264 @@
+{
+  "id": 1082762,
+  "bibIds": [
+    14630864
+  ],
+  "bibIdLinks": [
+    "https://ilsstaff.nypl.org/iii/sierra-api/v6/bibs/14630864"
+  ],
+  "itemIds": [],
+  "itemIdLinks": [],
+  "inheritLocation": false,
+  "allocationRule": null,
+  "accountingUnit": 1,
+  "labelCode": "n",
+  "serialCode1": "z",
+  "serialCode2": "-",
+  "serialCode3": "-",
+  "serialCode4": "-",
+  "claimOnDate": null,
+  "receivingLocationCode": "19",
+  "vendorCode": "hrr",
+  "updateCount": "z",
+  "pieceCount": 0,
+  "eCheckInCode": " ",
+  "mediaTypeCode": " ",
+  "updatedDate": "2020-09-14",
+  "createdDate": "2009-06-23",
+  "deletedDate": null,
+  "deleted": false,
+  "suppressed": false,
+  "fixedFields": {
+    "35": {
+      "label": "Label Type",
+      "value": "n",
+      "display": null
+    },
+    "36": {
+      "label": "Serial Code 1",
+      "value": "z",
+      "display": null
+    },
+    "37": {
+      "label": "Serial Code 2",
+      "value": "-",
+      "display": null
+    },
+    "38": {
+      "label": "Copies",
+      "value": "1",
+      "display": null
+    },
+    "40": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": null
+    },
+    "41": {
+      "label": "Recv Location",
+      "value": "19 ",
+      "display": null
+    },
+    "42": {
+      "label": "Vendor",
+      "value": "hrr  ",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "c",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "1082762",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-23T15:25:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2020-09-14T18:25:24Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "24",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2017-11-22T17:22:33Z",
+      "display": null
+    },
+    "118": {
+      "label": "Serial Code 3",
+      "value": "-",
+      "display": null
+    },
+    "119": {
+      "label": "Serial Code 4",
+      "value": "-",
+      "display": null
+    },
+    "120": {
+      "label": "Update Count",
+      "value": "z",
+      "display": null
+    },
+    "121": {
+      "label": "Piece Count",
+      "value": "0",
+      "display": null
+    },
+    "137": {
+      "label": "E-Checkin",
+      "value": " ",
+      "display": null
+    },
+    "159": {
+      "label": "Media Type",
+      "value": " ",
+      "display": null
+    },
+    "266": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ny   22000003n 4500",
+      "marcTag": null,
+      "fieldTag": "_",
+      "subfields": null
+    },
+    {
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JBM 00-489"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": ".c2184746",
+      "marcTag": null,
+      "fieldTag": "d",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "9:2(2000)-14(2005),15:2(2006)-15:4(2006),16:2(2007)-18(2009).",
+      "marcTag": null,
+      "fieldTag": "h",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "PRINT",
+      "marcTag": null,
+      "fieldTag": "i",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "930",
+      "fieldTag": "o",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "10-25-00"
+        },
+        {
+          "tag": "9",
+          "content": "03-18-09"
+        },
+        {
+          "tag": "j",
+          "content": "08-02-09"
+        },
+        {
+          "tag": "m",
+          "content": "b5"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "This title is not available through trade from January 2010.  The refund of your payment of USD 145.96 is currently being processed with invoice number 5200146983. It will be credited into your account in the next invoice run.    PER EMAIL FROM SWETS ON 10/27/10 ASP/rocasio",
+      "marcTag": null,
+      "fieldTag": "v",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "#92",
+      "marcTag": null,
+      "fieldTag": "w",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Cancelled after 2009/BH/5/11/11.",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "This title is still being published but the publisher does not allow orders to be placed through an agent. If you wish to subscribe to this title, you will have to order directly through the publisher.  PER EMAIL FROM SWETS ON 10/26/10 ASP/rocasio",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "We want to claim WORLDatWORK JOURNAL, Library Order No. 010365199.  Our Science, Industry and Business Library informs us that this subscription stopped coming after Volume 18 (2009). We still need Volume 19, No. 1 to the most current issue. PER ECLAIM ON 10/22/10 ASP/rocasio",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    }
+  ],
+  "holdings": [
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "9:2(2000)-14(2005),15:2(2006)-15:4(2006),16:2(2007)-18(2009)."
+    }
+  ],
+  "location": {
+    "code": "mal",
+    "label": "Schwarzman Building - Main Reading Room 315"
+  },
+  "checkInCards": []
+}
