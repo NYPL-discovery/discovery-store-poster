@@ -23,7 +23,7 @@
       "StartingPosition": "LATEST",
       "BatchSize": 100,
       "Enabled": true
-    }
+    },
     {
       "EventSourceArn": "arn:aws:kinesis:us-east-1:946183545209:stream/Holding-production",
       "StartingPosition": "LATEST",
