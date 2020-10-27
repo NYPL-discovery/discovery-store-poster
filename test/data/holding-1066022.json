@@ -1,0 +1,248 @@
+{
+  "id": 1066022,
+  "bibIds": [
+    11929657
+  ],
+  "bibIdLinks": [
+    "https://ilsstaff.nypl.org/iii/sierra-api/v6/bibs/11929657"
+  ],
+  "itemIds": [],
+  "itemIdLinks": [],
+  "inheritLocation": false,
+  "allocationRule": null,
+  "accountingUnit": 1,
+  "labelCode": "a",
+  "serialCode1": "i",
+  "serialCode2": "-",
+  "serialCode3": "-",
+  "serialCode4": "-",
+  "claimOnDate": null,
+  "receivingLocationCode": "18",
+  "vendorCode": "none",
+  "updateCount": "z",
+  "pieceCount": 0,
+  "eCheckInCode": " ",
+  "mediaTypeCode": " ",
+  "updatedDate": "2020-09-14",
+  "createdDate": "2009-06-23",
+  "deletedDate": null,
+  "deleted": false,
+  "suppressed": false,
+  "fixedFields": {
+    "35": {
+      "label": "Label Type",
+      "value": "a",
+      "display": null
+    },
+    "36": {
+      "label": "Serial Code 1",
+      "value": "i",
+      "display": null
+    },
+    "37": {
+      "label": "Serial Code 2",
+      "value": "-",
+      "display": null
+    },
+    "38": {
+      "label": "Copies",
+      "value": "1",
+      "display": null
+    },
+    "40": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": null
+    },
+    "41": {
+      "label": "Recv Location",
+      "value": "18 ",
+      "display": null
+    },
+    "42": {
+      "label": "Vendor",
+      "value": "none ",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "c",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "1066022",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-23T13:02:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2020-09-14T18:33:52Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "3",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2013-11-08T13:11:15Z",
+      "display": null
+    },
+    "118": {
+      "label": "Serial Code 3",
+      "value": "-",
+      "display": null
+    },
+    "119": {
+      "label": "Serial Code 4",
+      "value": "-",
+      "display": null
+    },
+    "120": {
+      "label": "Update Count",
+      "value": "z",
+      "display": null
+    },
+    "121": {
+      "label": "Piece Count",
+      "value": "0",
+      "display": null
+    },
+    "137": {
+      "label": "E-Checkin",
+      "value": " ",
+      "display": null
+    },
+    "159": {
+      "label": "Media Type",
+      "value": " ",
+      "display": null
+    },
+    "266": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ny   22000003n 4500",
+      "marcTag": null,
+      "fieldTag": "_",
+      "subfields": null
+    },
+    {
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JBM 94-932"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": ".c1687530",
+      "marcTag": null,
+      "fieldTag": "d",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "4(1995)-Aug(1997),1998-2004-",
+      "marcTag": null,
+      "fieldTag": "h",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Checkin **EDITION SPECIALE** here.",
+      "marcTag": null,
+      "fieldTag": "n",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "IRREGULAR",
+      "marcTag": null,
+      "fieldTag": "n",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "930",
+      "fieldTag": "o",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "09-28-94"
+        },
+        {
+          "tag": "9",
+          "content": "03-26-07"
+        },
+        {
+          "tag": "j",
+          "content": "-  -  "
+        },
+        {
+          "tag": "m",
+          "content": "b"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Publication du Service$Information et Presse$43 Boulevard Roosevelt$2450 Luxembourg, LUXEMBOURG",
+      "marcTag": null,
+      "fieldTag": "q",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "92",
+      "marcTag": null,
+      "fieldTag": "w",
+      "subfields": null
+    }
+  ],
+  "holdings": [
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "4(1995)-Aug(1997),1998-2004-"
+    }
+  ],
+  "location": {
+    "code": "mal",
+    "label": "Schwarzman Building - Main Reading Room 315"
+  },
+  "checkInCards": []
+}

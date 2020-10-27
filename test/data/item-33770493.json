@@ -1,0 +1,233 @@
+{
+  "nyplSource": "sierra-nypl",
+  "bibIds": [
+    "20857278"
+  ],
+  "id": "33770493",
+  "nyplType": "item",
+  "updatedDate": "2018-10-11T19:05:46-04:00",
+  "createdDate": "2016-02-24T15:27:47-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "location": {
+    "code": "mall1",
+    "name": "SASB - General Research - Room 315"
+  },
+  "status": {
+    "code": "o",
+    "display": "USE IN LIBRARY",
+    "duedate": null
+  },
+  "barcode": "33433118059629",
+  "callNumber": "*R-RMRR PR451 .E553 2015",
+  "itemType": null,
+  "fixedFields": {
+    "57": {
+      "label": "BIB HOLD",
+      "value": "false",
+      "display": null
+    },
+    "58": {
+      "label": "Copy No.",
+      "value": "1",
+      "display": null
+    },
+    "59": {
+      "label": "Item Code 1",
+      "value": "0",
+      "display": null
+    },
+    "60": {
+      "label": "Item Code 2",
+      "value": "-",
+      "display": null
+    },
+    "61": {
+      "label": "Item Type",
+      "value": "2",
+      "display": "book non-circ"
+    },
+    "62": {
+      "label": "Price",
+      "value": "0.000000",
+      "display": null
+    },
+    "64": {
+      "label": "Checkout Location",
+      "value": "0",
+      "display": null
+    },
+    "70": {
+      "label": "Checkin Location",
+      "value": "0",
+      "display": null
+    },
+    "74": {
+      "label": "Item Use 3",
+      "value": "0",
+      "display": null
+    },
+    "76": {
+      "label": "Total Checkouts",
+      "value": "0",
+      "display": null
+    },
+    "77": {
+      "label": "Total Renewals",
+      "value": "0",
+      "display": null
+    },
+    "79": {
+      "label": "Location",
+      "value": "mall1",
+      "display": "SASB - General Research - Room 315"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "i",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "33770493",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2016-02-24T15:27:47Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2018-10-11T19:05:46Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "5",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "88": {
+      "label": "Status",
+      "value": "o",
+      "display": "USE IN LIBRARY"
+    },
+    "93": {
+      "label": "Inhouse Use",
+      "value": "0",
+      "display": null
+    },
+    "94": {
+      "label": "Copy Use",
+      "value": "0",
+      "display": null
+    },
+    "97": {
+      "label": "Item Message",
+      "value": "-",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2017-01-16T15:57:32Z",
+      "display": null
+    },
+    "108": {
+      "label": "OPAC Message",
+      "value": "-",
+      "display": null
+    },
+    "109": {
+      "label": "Year-to-Date Circ",
+      "value": "0",
+      "display": null
+    },
+    "110": {
+      "label": "Last Year Circ",
+      "value": "0",
+      "display": null
+    },
+    "127": {
+      "label": "Item Agency",
+      "value": "33",
+      "display": "S.A. Schwarzman Bldg."
+    },
+    "161": {
+      "label": "VI Central",
+      "value": "0",
+      "display": null
+    },
+    "162": {
+      "label": "IR Dist Learn Same Site",
+      "value": "0",
+      "display": null
+    },
+    "264": {
+      "label": "Holdings Item Tag",
+      "value": "6",
+      "display": null
+    },
+    "265": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    },
+    "306": {
+      "label": "Sticky Status",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "33433118059629",
+      "subfields": null
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "k",
+          "content": "*R-RMRR"
+        },
+        {
+          "tag": "h",
+          "content": "PR451"
+        },
+        {
+          "tag": "i",
+          "content": ".E553 2015"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "CATRL/mnm",
+      "subfields": null
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "v. 3",
+      "subfields": null
+    }
+  ]
+}
