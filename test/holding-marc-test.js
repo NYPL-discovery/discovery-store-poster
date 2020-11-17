@@ -14,7 +14,7 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.literal('nypl:suppressed'), true)
+          assert.strictEqual(holding.literal('nypl:suppressed'), true)
         })
     })
 
@@ -22,9 +22,9 @@ describe('Holding Marc Mapping', () => {
       const mapper = buildMapper('holding', null)
 
       const mapping = mapper.getMapping('Holding Statement')
-      assert.equal(mapping.paths.length, 5)
-      assert.equal(mapping.paths[0].marc, '866')
-      assert.equal(mapping.paths[2].marc, '863')
+      assert.strictEqual(mapping.paths.length, 5)
+      assert.strictEqual(mapping.paths[0].marc, '866')
+      assert.strictEqual(mapping.paths[2].marc, '863')
     })
 
     it('should extract certain basic holding props', () => {
@@ -33,10 +33,10 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
-          assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b14630864')
-          assert.equal(holding.objectId('nypl:holdingLocation'), 'loc:mal')
-          assert.equal(holding.literal('nypl:shelfMark'), 'JBM 00-489')
+          assert.strictEqual(holding.objectId('rdfs:type'), 'nypl:Holding')
+          assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b14630864')
+          assert.strictEqual(holding.objectId('nypl:holdingLocation'), 'loc:mal')
+          assert.strictEqual(holding.literal('nypl:shelfMark'), 'JBM 00-489')
         })
     })
 
@@ -56,10 +56,10 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
-          assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
-          assert.equal(holding.literals('nypl:shelfMark')[0], '*R-SIBL NK9509 .T722 Latest ed.')
-          assert.equal(holding.literals('nypl:shelfMark')[1], 'JBM 07-158 Bound vols.')
+          assert.strictEqual(holding.objectId('rdfs:type'), 'nypl:Holding')
+          assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
+          assert.strictEqual(holding.literals('nypl:shelfMark')[0], '*R-SIBL NK9509 .T722 Latest ed.')
+          assert.strictEqual(holding.literals('nypl:shelfMark')[1], 'JBM 07-158 Bound vols.')
         })
     })
 
@@ -69,10 +69,10 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
-          assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
-          assert.equal(holding.literals('dcterms:coverage')[0], '[Bound vols.-SIBL Delivery Desk] ed. 14 (2007)-ed. 19 (2013),')
-          assert.equal(holding.literals('dcterms:coverage')[1], 'ed.  20 (2015)')
+          assert.strictEqual(holding.objectId('rdfs:type'), 'nypl:Holding')
+          assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
+          assert.strictEqual(holding.literals('dcterms:coverage')[0], '[Bound vols.-SIBL Delivery Desk] ed. 14 (2007)-ed. 19 (2013),')
+          assert.strictEqual(holding.literals('dcterms:coverage')[1], 'ed.  20 (2015)')
         })
     })
 
@@ -82,22 +82,22 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
-          assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
+          assert.strictEqual(holding.objectId('rdfs:type'), 'nypl:Holding')
+          assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b16543663')
 
           const checkInBox1 = holding.blankNodes('dcterms:hasPart')[0]
-          assert.equal(checkInBox1.objectId('rdf:type'), 'nypl:CheckInBox')
-          assert.equal(checkInBox1.literal('dcterms:coverage'), '20 (--)')
-          assert.equal(checkInBox1.literal('bf:status'), 'Bound')
-          assert.equal(checkInBox1.literal('bf:count'), undefined)
-          assert.equal(checkInBox1.literal('bf:part'), 1)
+          assert.strictEqual(checkInBox1.objectId('rdf:type'), 'nypl:CheckInBox')
+          assert.strictEqual(checkInBox1.literal('dcterms:coverage'), '20 (--)')
+          assert.strictEqual(checkInBox1.literal('bf:status'), 'Bound')
+          assert.strictEqual(checkInBox1.literal('bf:count'), undefined)
+          assert.strictEqual(checkInBox1.literal('bf:part'), 1)
 
           const checkInBox2 = holding.blankNodes('dcterms:hasPart')[1]
-          assert.equal(checkInBox2.objectId('rdf:type'), 'nypl:CheckInBox')
-          assert.equal(checkInBox2.literal('dcterms:coverage'), '21 (--)')
-          assert.equal(checkInBox2.literal('bf:status'), 'Expected')
-          assert.equal(checkInBox2.literal('bf:count'), undefined)
-          assert.equal(checkInBox2.literal('bf:part'), 2)
+          assert.strictEqual(checkInBox2.objectId('rdf:type'), 'nypl:CheckInBox')
+          assert.strictEqual(checkInBox2.literal('dcterms:coverage'), '21 (--)')
+          assert.strictEqual(checkInBox2.literal('bf:status'), 'Expected')
+          assert.strictEqual(checkInBox2.literal('bf:count'), undefined)
+          assert.strictEqual(checkInBox2.literal('bf:part'), 2)
         })
     })
 
@@ -107,10 +107,10 @@ describe('Holding Marc Mapping', () => {
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => new Holding(statements))
         .then((holding) => {
-          assert.equal(holding.objectId('rdfs:type'), 'nypl:Holding')
-          assert.equal(holding.objectId('nypl:bnum'), 'urn:bnum:b11929657')
-          assert.equal(holding.literals('bf:note')[0], 'Checkin **EDITION SPECIALE** here.')
-          assert.equal(holding.literals('bf:note')[1], 'IRREGULAR')
+          assert.strictEqual(holding.objectId('rdfs:type'), 'nypl:Holding')
+          assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b11929657')
+          assert.strictEqual(holding.literals('bf:note')[0], 'Checkin **EDITION SPECIALE** here.')
+          assert.strictEqual(holding.literals('bf:note')[1], 'IRREGULAR')
         })
     })
   })
