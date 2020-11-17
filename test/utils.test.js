@@ -1,3 +1,5 @@
+/* global describe it */
+
 const Statement = require('../lib/models/statement')
 const utils = require('../lib/utils')
 const expect = require('chai').expect

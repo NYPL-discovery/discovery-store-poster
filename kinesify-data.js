@@ -107,22 +107,22 @@ function kinesify (record, avroType) {
   var encoded = buf.toString('base64')
   // kinesis format
   return {
-    'kinesis': {
-      'kinesisSchemaVersion': '1.0',
-      'partitionKey': 's1',
-      'sequenceNumber': '00000000000000000000000000000000000000000000000000000001',
-      'data': encoded,
-      'approximateArrivalTimestamp': 1428537600
+    kinesis: {
+      kinesisSchemaVersion: '1.0',
+      partitionKey: 's1',
+      sequenceNumber: '00000000000000000000000000000000000000000000000000000001',
+      data: encoded,
+      approximateArrivalTimestamp: 1428537600
     },
-    'eventSource': 'aws:kinesis',
-    'eventVersion': '1.0',
-    'eventID': 'shardId-000000000000:00000000000000000000000000000000000000000000000000000001',
-    'eventName': 'aws:kinesis:record',
-    'invokeIdentityArn': 'arn:aws:iam::EXAMPLE',
-    'awsRegion': 'us-east-1',
+    eventSource: 'aws:kinesis',
+    eventVersion: '1.0',
+    eventID: 'shardId-000000000000:00000000000000000000000000000000000000000000000000000001',
+    eventName: 'aws:kinesis:record',
+    invokeIdentityArn: 'arn:aws:iam::EXAMPLE',
+    awsRegion: 'us-east-1',
     // We depend on the ARN ending in /Bib or /Item to determine how to decode the payload
     // Everything up to that is ignored
-    'eventSourceARN': `the-first-part-of-the-arn-does-not-matter...this-part-does:/${schemaNameFromNyplType(record.nyplType)}`
+    eventSourceARN: `the-first-part-of-the-arn-does-not-matter...this-part-does:/${schemaNameFromNyplType(record.nyplType)}`
   }
 }
 
@@ -160,7 +160,7 @@ function buildRecordsByIds (ids, nyplType) {
   // NYPL_OAUTH_KEY
   // NYPL_OAUTH_SECRET
   // NYPL_OAUTH_URL
-  let dataApi = new NYPLDataApiClient()
+  const dataApi = new NYPLDataApiClient()
 
   return Promise.all(
     ids.map((id) => {
@@ -202,7 +202,7 @@ function writeEncodedEvent (records, schema) {
     })
 
   // stringify and write to file
-  var json = JSON.stringify({ 'Records': kinesisEncodedData }, null, 2)
+  var json = JSON.stringify({ Records: kinesisEncodedData }, null, 2)
   fs.writeFile(outfile, json, 'utf8', function (err, data) {
     if (err) {
       console.log('Write error:', err)
@@ -218,17 +218,17 @@ require('./lib/local-env-helper')
 // If called with -ids="15796439, 15796440, 15796449, 15796502...", fetch [nypl] bibs by id:
 if (argv.ids) {
   // If schemaUrl not explicitly given, construct it from nyplType of first record:
-  let schemaName = schemaNameFromNyplType(argv.nyplType)
+  const schemaName = schemaNameFromNyplType(argv.nyplType)
   if (!schemaUrl) schemaUrl = `https://platform.nypl.org/api/v0.1/current-schemas/${schemaName}`
 
-  let ids = argv.ids.split(',').map((id) => id.trim())
+  const ids = argv.ids.split(',').map((id) => id.trim())
 
   // Fetch records and schema in parallel:
   Promise.all([
     buildRecordsByIds(ids, argv.nyplType),
     fetchSchema(schemaUrl)
   ]).then((resp) => {
-    let [records, schema] = resp
+    const [records, schema] = resp
     // Write the encoded event.json
     return writeEncodedEvent(records, schema)
   })
@@ -236,12 +236,12 @@ if (argv.ids) {
 // Otherwise process given infile(s)
 } else if (infile) {
   // First parse given paths:
-  let paths = infile.split(',')
+  const paths = infile.split(',')
   buildRecordsByPaths(paths)
     .then((records) => {
       // Now that we have the records, we can infer the schema (if needed)
       // If schemaUrl not explicitly given, construct it from nyplType of first record:
-      let schemaName = schemaNameFromNyplType(records[0].nyplType)
+      const schemaName = schemaNameFromNyplType(records[0].nyplType)
       if (!schemaUrl) schemaUrl = `https://platform.nypl.org/api/v0.1/current-schemas/${schemaName}`
 
       return fetchSchema(schemaUrl)
