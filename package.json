@@ -21,7 +21,7 @@
     "csvtojson": "^1.1.4",
     "dotenv": "^4.0.0",
     "mocha": "^8.2.0",
-    "node-lambda": "^0.11.3",
+    "node-lambda": "^0.17.0",
     "sinon": "^4.0.1",
     "standard": "^14.3.4"
   },

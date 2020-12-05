@@ -62,7 +62,7 @@ function processEvent (event, resolve, reject) {
   getSchema(bibItemOrHolding).then((schemaType) => {
     // Get array of decoded records:
     var decoded = event.Records.map((record) => {
-      const kinesisData = new Buffer.From(record.kinesis.data, 'base64')
+      const kinesisData = Buffer.from(record.kinesis.data, 'base64')
       return schemaType.fromBuffer(kinesisData)
     })
     log.debug('Processing ' + bibItemOrHolding + ' records: ', decoded)
