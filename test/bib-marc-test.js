@@ -140,6 +140,16 @@ describe('Bib Marc Mapping', function () {
       assert.strictEqual(resources[3].label, undefined)
     })
 
+    it('should extract electronic resource representing aeon link', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-10204814.json'))
+
+      const resources = bibSerializer.extractElectronicResourcesFromBibMarc(bib, 'ER')
+      assert.strictEqual(resources.length, 1)
+
+      assert.strictEqual(resources[0].url, 'https://specialcollections.nypl.org/aeon/Aeon.dll?Action=10&Form=30&Title=Something+concerning+Nobody.&Site=SASAR&CallNumber=Arents+S+0937&ItemPlace=London,&ItemPublisher=Printed+for+Robert+Scholey,&Date=1814.&Site=SASAR')
+      assert.strictEqual(resources[0].label, 'Request Access to Special Collections Material')
+    })
+
     it('should extract many core properties from a MICROFORM', function () {
       var bib = BibSierraRecord.from(require('./data/bib-19995767.json'))
 
