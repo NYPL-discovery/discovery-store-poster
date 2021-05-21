@@ -1,6 +1,8 @@
 /* global describe it */
 
 const assert = require('assert')
+const expect = require('chai').expect
+
 const itemSerializer = require('./../lib/serializers/item')
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
@@ -339,6 +341,56 @@ describe('Item Marc Mapping', function () {
           assert.strictEqual(item.literal('bf:physicalLocation'), '*R-RMRR PR451 .E553 2015')
           assert.strictEqual(item.literal('bf:enumerationAndChronology'), 'v. 3')
           assert.strictEqual(item.objectId('nypl:bnum'), 'urn:bnum:b20857278')
+        })
+    })
+  })
+
+  describe('Harvard Integration', function () {
+    it('should serialize HL HD record', function () {
+      var item = ItemSierraRecord.from(require('./data/item-hl-231732642680003941.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          const statements = item.statements()
+          expect(statements.length).to.be.above(9)
+
+          expect(statements[0].subject_id).to.eq('hi231732642680003941')
+
+          expect(item.objectId('nypl:accessMessage')).to.eq('accessMessage:1')
+          expect(item.objectId('rdfs:type')).to.eq('bf:Item')
+          expect(item.literal('nypl:shelfMark')).to.eq('Heb 14060.271.5')
+          expect(item.literal('bf:physicalLocation')).to.eq('Heb 14060.271.5')
+          expect(item.objectId('nypl:catalogItemType')).to.eq('catalogItemType:1')
+          expect(item.objectId('nypl:bnum')).to.eq('urn:bnum:hb990000453050203941')
+
+          expect(item.statements('dcterms:identifier')).to.be.a('array')
+          expect(item.statements('dcterms:identifier')[0]).to.be.a('object')
+          expect(item.statements('dcterms:identifier')[0].object_id).to.be.eq('HX328Q')
+          expect(item.statements('dcterms:identifier')[0].object_type).to.be.eq('bf:Barcode')
+        })
+    })
+
+    it('should serialize HL ReCAP record', function () {
+      var item = ItemSierraRecord.from(require('./data/item-hl-232166335350003941.json'))
+
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          const statements = item.statements()
+          expect(statements.length).to.be.above(7)
+
+          expect(statements[0].subject_id).to.eq('hi232166335350003941')
+
+          expect(item.objectId('nypl:accessMessage')).to.eq('accessMessage:1')
+          expect(item.objectId('rdfs:type')).to.eq('bf:Item')
+          expect(item.objectId('nypl:catalogItemType')).to.eq('catalogItemType:1')
+          expect(item.objectId('nypl:bnum')).to.eq('urn:bnum:hb990137923810203941')
+
+          expect(item.statements('dcterms:identifier')).to.be.a('array')
+          expect(item.statements('dcterms:identifier')[0]).to.be.a('object')
+          expect(item.statements('dcterms:identifier')[0].object_id).to.be.eq('32044129177036')
+          expect(item.statements('dcterms:identifier')[0].object_type).to.be.eq('bf:Barcode')
         })
     })
   })
