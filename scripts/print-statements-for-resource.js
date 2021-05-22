@@ -14,7 +14,7 @@ const BibSierraRecord = require('../lib/models/bib-sierra-record')
 const BibsUpdater = require('../lib/bibs-updater')
 const ItemSierraRecord = require('../lib/models/item-sierra-record')
 const ItemsUpdater = require('../lib/items-updater')
-const NyplSourceMapper = require('../lib/nypl-source-mapper')
+const NyplSourceMapper = require('discovery-store-models/lib/nypl-source-mapper')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
