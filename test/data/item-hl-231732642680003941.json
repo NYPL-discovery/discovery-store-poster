@@ -1,0 +1,332 @@
+{
+  "id": "231732642680003941",
+  "nyplSource": "recap-hl",
+  "nyplType": "item",
+  "updatedDate": "2021-05-18T01:31:11+00:00",
+  "createdDate": "2021-05-17T21:31:13-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "bibIds": [
+    "990000453050203941"
+  ],
+  "location": {
+    "code": "WID",
+    "name": "OFFSITE - Request In Advance - hl"
+  },
+  "status": {
+    "code": "-",
+    "display": "AVAILABLE",
+    "duedate": null
+  },
+  "barcode": "HX328Q",
+  "callNumber": "Heb 14060.271.5",
+  "itemType": null,
+  "fixedFields": {
+    "57": {
+      "label": "BIB HOLD",
+      "value": false,
+      "display": null
+    },
+    "58": {
+      "label": "Copy No.",
+      "value": "",
+      "display": null
+    },
+    "59": {
+      "label": "Item Code 1",
+      "value": null,
+      "display": null
+    },
+    "60": {
+      "label": "Item Code 2",
+      "value": null,
+      "display": null
+    },
+    "61": {
+      "label": "Item Type",
+      "value": "55",
+      "display": null
+    },
+    "62": {
+      "label": "Price",
+      "value": null,
+      "display": null
+    },
+    "64": {
+      "label": "Checkout Location",
+      "value": null,
+      "display": null
+    },
+    "68": {
+      "label": "Last Checkin",
+      "value": null,
+      "display": null
+    },
+    "70": {
+      "label": "Checkin Location",
+      "value": null,
+      "display": null
+    },
+    "74": {
+      "label": "Item Use 3",
+      "value": null,
+      "display": null
+    },
+    "76": {
+      "label": "Total Checkouts",
+      "value": null,
+      "display": null
+    },
+    "77": {
+      "label": "Total Renewals",
+      "value": null,
+      "display": null
+    },
+    "79": {
+      "label": "Location",
+      "value": "rchl",
+      "display": "OFFSITE - Request In Advance"
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "i",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "231732642680003941",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": null,
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-05-18T01:31:11Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": null,
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "209",
+      "display": null
+    },
+    "88": {
+      "label": "Status",
+      "value": "-",
+      "display": "AVAILABLE"
+    },
+    "93": {
+      "label": "Internal Use",
+      "value": null,
+      "display": null
+    },
+    "94": {
+      "label": "Copy Use",
+      "value": null,
+      "display": null
+    },
+    "97": {
+      "label": "Item Message",
+      "value": null,
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": null,
+      "display": null
+    },
+    "108": {
+      "label": "OPAC Message",
+      "value": "2",
+      "display": null
+    },
+    "109": {
+      "label": "Year-to-Date Circ",
+      "value": null,
+      "display": null
+    },
+    "110": {
+      "label": "Last Year Circ",
+      "value": null,
+      "display": null
+    },
+    "127": {
+      "label": "Item Agency",
+      "value": "209",
+      "display": "ReCAP - (DEFAULT)"
+    },
+    "161": {
+      "label": "VI Central",
+      "value": null,
+      "display": null
+    },
+    "162": {
+      "label": "IR Dist Learn Same Site",
+      "value": null,
+      "display": null
+    },
+    "264": {
+      "label": "Holdings Item Tag",
+      "value": null,
+      "display": null
+    },
+    "265": {
+      "label": "Inherit Location",
+      "value": null,
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": null,
+      "marcTag": "876",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "p",
+          "content": "HX328Q"
+        },
+        {
+          "tag": "h",
+          "content": ""
+        },
+        {
+          "tag": "a",
+          "content": "231732642680003941"
+        },
+        {
+          "tag": "j",
+          "content": "Available"
+        },
+        {
+          "tag": "t",
+          "content": ""
+        },
+        {
+          "tag": "3",
+          "content": ""
+        },
+        {
+          "tag": "l",
+          "content": "HD"
+        },
+        {
+          "tag": "k",
+          "content": "WID"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Heb 14060.271.5"
+        },
+        {
+          "tag": "c",
+          "content": ""
+        },
+        {
+          "tag": "g",
+          "content": ""
+        },
+        {
+          "tag": "i",
+          "content": "HX328Q"
+        },
+        {
+          "tag": "l",
+          "content": "rchl"
+        },
+        {
+          "tag": "o",
+          "content": "2"
+        },
+        {
+          "tag": "s",
+          "content": "-"
+        },
+        {
+          "tag": "t",
+          "content": null
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "HX328Q",
+      "subfields": null
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "",
+      "subfields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "900",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Shared"
+        },
+        {
+          "tag": "b",
+          "content": "HW"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "852",
+      "ind1": "7",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "2",
+          "content": "ZHCL"
+        },
+        {
+          "tag": "b",
+          "content": "WID"
+        },
+        {
+          "tag": "c",
+          "content": "HD"
+        },
+        {
+          "tag": "h",
+          "content": "Heb 14060.271.5"
+        },
+        {
+          "tag": "8",
+          "content": "221732642690003941"
+        }
+      ]
+    }
+  ]
+}

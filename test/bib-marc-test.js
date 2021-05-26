@@ -1,6 +1,8 @@
 /* global describe it */
 
 const assert = require('assert')
+const expect = require('chai').expect
+
 const buildMapper = require('./../lib/field-mapper')
 const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
@@ -1114,6 +1116,67 @@ describe('Bib Marc Mapping', function () {
           ].forEach((identifier) => {
             assert(genericIdentifiers.indexOf(identifier) >= 0)
           })
+        })
+    })
+  })
+
+  describe('Harvard Integration', function () {
+    it('should serialize HL HD record', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-hl-990000453050203941.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const statements = bib.statements()
+          expect(statements.length).to.be.above(20)
+
+          expect(statements[0].subject_id).to.eq('hb990000453050203941')
+
+          expect(bib.objectId('rdfs:type')).to.eq('nypl:Item')
+          expect(bib.objectId('bf:issuance')).to.eq('urn:biblevel:m')
+          expect(bib.objectId('dcterms:language')).to.eq('lang:heb')
+          expect(bib.literal('dcterms:created')).to.eq(1971)
+          expect(bib.literal('dcterms:title')).to.eq('ʻOrekh ha-din be-Yiśraʾel : maʻamado, zekhuyotaṿ ṿe-ḥovotaṿ : leḳeṭ dinim ṿe-halakhot / ba-ʻarikhat S. Ginosar.')
+          expect(bib.literal('nypl:placeOfPublication')).to.eq('Jerusalem :')
+
+          expect(bib.statements('dcterms:identifier')).to.be.a('array')
+          expect(bib.statements('dcterms:identifier')[0]).to.be.a('object')
+          expect(bib.statements('dcterms:identifier')[0].object_id).to.be.eq('990000453050203941')
+          expect(bib.statements('dcterms:identifier')[0].object_type).to.be.eq('nypl:Bnumber')
+          expect(bib.statements('dcterms:identifier')[1]).to.be.a('object')
+          expect(bib.statements('dcterms:identifier')[1].object_id).to.be.eq('he^76953970^')
+          expect(bib.statements('dcterms:identifier')[1].object_type).to.be.eq('bf:Lccn')
+          expect(bib.statements('dcterms:identifier')[2]).to.be.a('object')
+          expect(bib.statements('dcterms:identifier')[2].object_id).to.be.eq('(OCoLC)19176985')
+          expect(bib.statements('dcterms:identifier')[2].object_type).to.be.eq('bf:Identifier')
+        })
+    })
+
+    it('should serialize HL ReCAP record', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-hl-990137923810203941.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const statements = bib.statements()
+          expect(statements.length).to.be.above(20)
+
+          expect(statements[0].subject_id).to.eq('hb990137923810203941')
+
+          expect(bib.objectId('rdfs:type')).to.eq('nypl:Item')
+          expect(bib.objectId('bf:issuance')).to.eq('urn:biblevel:m')
+          expect(bib.objectId('dcterms:language')).to.eq('lang:ara')
+          expect(bib.literal('dcterms:created')).to.eq(2013)
+          expect(bib.literal('dcterms:title')).to.eq('ʻItāb al-sāqiyāt : shiʻr / Ḥasan Aḥmad al-Būrīnī.')
+          expect(bib.literal('nypl:placeOfPublication')).to.eq('ʻAmmān :')
+
+          expect(bib.statements('dcterms:identifier')).to.be.a('array')
+          expect(bib.statements('dcterms:identifier')[0]).to.be.a('object')
+          expect(bib.statements('dcterms:identifier')[0].object_id).to.be.eq('990137923810203941')
+          expect(bib.statements('dcterms:identifier')[0].object_type).to.be.eq('nypl:Bnumber')
+          expect(bib.statements('dcterms:identifier')[1]).to.be.a('object')
+          expect(bib.statements('dcterms:identifier')[1].object_id).to.be.eq('(OCoLC)860431222')
+          expect(bib.statements('dcterms:identifier')[1].object_type).to.be.eq('bf:Identifier')
         })
     })
   })
