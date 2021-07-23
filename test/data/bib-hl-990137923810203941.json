@@ -1,0 +1,448 @@
+{
+  "id": "990137923810203941",
+  "nyplSource": "recap-hl",
+  "nyplType": "bib",
+  "updatedDate": "2021-05-18T01:49:42+00:00",
+  "createdDate": "2021-05-17T21:49:44-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "ara",
+    "name": "Arabic"
+  },
+  "title": "ʻItāb al-sāqiyāt : shiʻr / Ḥasan Aḥmad al-Būrīnī.",
+  "author": "Būrīnī, Ḥasan Aḥmad,",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 2013,
+  "catalogDate": null,
+  "country": {
+    "code": "jo",
+    "name": "Jordan"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "ara",
+      "display": "Arabic"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "rchl",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": null,
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": null,
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "990137923810203941",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": null,
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-05-18T01:49:42Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "1",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "6",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "jo",
+      "display": "Jordan"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": null,
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": null,
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)860431222"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "HLS"
+        },
+        {
+          "tag": "b",
+          "content": "eng"
+        },
+        {
+          "tag": "e",
+          "content": "rda"
+        },
+        {
+          "tag": "c",
+          "content": "HLS"
+        },
+        {
+          "tag": "d",
+          "content": "OCLCQ"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "Būrīnī, Ḥasan Aḥmad,"
+        },
+        {
+          "tag": "e",
+          "content": "author."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "100-01/"
+        },
+        {
+          "tag": "a",
+          "content": "بوريني، حسن احمد."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ʻItāb al-sāqiyāt :"
+        },
+        {
+          "tag": "b",
+          "content": "shiʻr /"
+        },
+        {
+          "tag": "c",
+          "content": "Ḥasan Aḥmad al-Būrīnī."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "ʻAmmān :"
+        },
+        {
+          "tag": "b",
+          "content": "al-Jinān lil-Nashr wa-al-Tawzīʻ,"
+        },
+        {
+          "tag": "c",
+          "content": "2013."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "264-02/"
+        },
+        {
+          "tag": "a",
+          "content": "عمان :"
+        },
+        {
+          "tag": "b",
+          "content": "الجنان للنشر والتوزيع،"
+        },
+        {
+          "tag": "c",
+          "content": "2013."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "125 pages ;"
+        },
+        {
+          "tag": "c",
+          "content": "22 cm"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "text"
+        },
+        {
+          "tag": "b",
+          "content": "txt"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "unmediated"
+        },
+        {
+          "tag": "b",
+          "content": "n"
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "volume"
+        },
+        {
+          "tag": "b",
+          "content": "nc"
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Poems."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "752",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jordan"
+        },
+        {
+          "tag": "d",
+          "content": "Amman."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "583",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "committed to retain"
+        },
+        {
+          "tag": "c",
+          "content": "20181001"
+        },
+        {
+          "tag": "d",
+          "content": "in perpetuity"
+        },
+        {
+          "tag": "f",
+          "content": "ReCAP Shared Collection"
+        },
+        {
+          "tag": "5",
+          "content": "HUL"
+        },
+        {
+          "tag": "8",
+          "content": "222166335380003941"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "005",
+      "ind1": null,
+      "ind2": null,
+      "content": "SCSB-9864630",
+      "subfields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "008",
+      "ind1": null,
+      "ind2": null,
+      "content": "131003s2013    jo            000 p ara d",
+      "subfields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "001",
+      "ind1": null,
+      "ind2": null,
+      "content": "990137923810203941",
+      "subfields": null
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "     cam a2200241Mi 4500",
+      "subfields": null
+    }
+  ]
+}

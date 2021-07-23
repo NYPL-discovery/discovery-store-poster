@@ -1,0 +1,412 @@
+{
+  "id": "990000453050203941",
+  "nyplSource": "recap-hl",
+  "nyplType": "bib",
+  "updatedDate": "2021-05-18T01:46:01+00:00",
+  "createdDate": "2021-05-17T21:46:04-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": null,
+  "suppressed": false,
+  "lang": {
+    "code": "heb",
+    "name": "Hebrew"
+  },
+  "title": "ʻOrekh ha-din be-Yiśraʾel : maʻamado, zekhuyotaṿ ṿe-ḥovotaṿ : leḳeṭ dinim ṿe-halakhot / ba-ʻarikhat S. Ginosar.",
+  "author": null,
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1971,
+  "catalogDate": null,
+  "country": {
+    "code": "is",
+    "name": "Israel"
+  },
+  "normTitle": null,
+  "normAuthor": null,
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "heb",
+      "display": "Hebrew"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "rchl",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": null,
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": null,
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "990000453050203941",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": null,
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-05-18T01:46:01Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "1",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "6",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "is",
+      "display": "Israel"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": null,
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": null,
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "he^76953970^"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(OCoLC)19176985"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "HLS"
+        },
+        {
+          "tag": "c",
+          "content": "HLS"
+        },
+        {
+          "tag": "d",
+          "content": "HVL"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "110",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Israel."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ʻOrekh ha-din be-Yiśraʾel :"
+        },
+        {
+          "tag": "b",
+          "content": "maʻamado, zekhuyotaṿ ṿe-ḥovotaṿ : leḳeṭ dinim ṿe-halakhot /"
+        },
+        {
+          "tag": "c",
+          "content": "ba-ʻarikhat S. Ginosar."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "250",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Mahad. metuḳenet u-meʻudkenet le-taʾarikh 15.1.71."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jerusalem :"
+        },
+        {
+          "tag": "b",
+          "content": "Aḳademon,"
+        },
+        {
+          "tag": "c",
+          "content": "1971."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "19, 355 p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "24 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Law"
+        },
+        {
+          "tag": "z",
+          "content": "Israel."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Lawyers"
+        },
+        {
+          "tag": "z",
+          "content": "Israel."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "650",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Attorney and client"
+        },
+        {
+          "tag": "z",
+          "content": "Israel."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ginosar, Sh."
+        },
+        {
+          "tag": "q",
+          "content": "(Shaleṿ),"
+        },
+        {
+          "tag": "d",
+          "content": "1902-"
+        },
+        {
+          "tag": "e",
+          "content": "ed."
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "752",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Israel"
+        },
+        {
+          "tag": "d",
+          "content": "Jerusalem"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "583",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "committed to retain"
+        },
+        {
+          "tag": "c",
+          "content": "20181001"
+        },
+        {
+          "tag": "d",
+          "content": "in perpetuity"
+        },
+        {
+          "tag": "f",
+          "content": "ReCAP Shared Collection"
+        },
+        {
+          "tag": "5",
+          "content": "HUL"
+        },
+        {
+          "tag": "8",
+          "content": "221732642690003941"
+        }
+      ]
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "005",
+      "ind1": null,
+      "ind2": null,
+      "content": "SCSB-10328624",
+      "subfields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "008",
+      "ind1": null,
+      "ind2": null,
+      "content": "840815s1971    is            000 0 heb d",
+      "subfields": null
+    },
+    {
+      "fieldTag": null,
+      "marcTag": "001",
+      "ind1": null,
+      "ind2": null,
+      "content": "990000453050203941",
+      "subfields": null
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00834nam a22002537  4500",
+      "subfields": null
+    }
+  ]
+}

@@ -3,7 +3,7 @@
  *
  * 1. Process a single bib:
  *
- *   `node scripts/print-statements-for-resource --bnum [bnum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
+ *   `node scripts/print-statements-for-resource --uri [bnum/inum] --loglevel (info|debug|error) --profile [aws profile] --envfile [local env file with db & api creds]`
  *
  * Other options available for bulk processing:
  */
@@ -12,6 +12,9 @@ const log = require('loglevel')
 
 const BibSierraRecord = require('../lib/models/bib-sierra-record')
 const BibsUpdater = require('../lib/bibs-updater')
+const ItemSierraRecord = require('../lib/models/item-sierra-record')
+const ItemsUpdater = require('../lib/items-updater')
+const NyplSourceMapper = require('discovery-store-models/lib/nypl-source-mapper')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
@@ -30,18 +33,25 @@ require('../lib/local-env-helper')
 
 log.setLevel(argv.loglevel || process.env.LOGLEVEL || 'info')
 
-if (argv.bnum) {
-  const prefix = argv.bnum.match(/^[a-z]+/)[0]
-  const id = argv.bnum.replace(prefix, '')
-  let nyplSource = 'sierra-nypl'
-  if (prefix === 'pb') nyplSource = 'recap-pul'
-  if (prefix === 'cb') nyplSource = 'recap-cul'
+if (argv.uri) {
+  const { nyplSource, id, type } = NyplSourceMapper.instance().splitIdentifier(argv.uri)
 
-  const bibsUpdater = new BibsUpdater()
+  const statements = {
+    bib: () => {
+      const bibsUpdater = new BibsUpdater()
+      return bibsUpdater.bibByApi(nyplSource, id)
+        .then(BibSierraRecord.from)
+        .then(bibsUpdater.extractStatements.bind(bibsUpdater))
+    },
+    item: () => {
+      const itemsUpdater = new ItemsUpdater()
+      return itemsUpdater.itemByApi(nyplSource, id)
+        .then(ItemSierraRecord.from)
+        .then(itemsUpdater.extractStatements.bind(itemsUpdater))
+    }
+  }[type]
 
-  bibsUpdater.bibByApi(nyplSource, id)
-    .then(BibSierraRecord.from)
-    .then(bibsUpdater.extractStatements.bind(bibsUpdater))
+  statements()
     .then((statements) => {
       console.log('Statements: ', statements)
     })

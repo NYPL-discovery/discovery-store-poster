@@ -70,27 +70,27 @@ translations.forEach((translation) => {
 
   var consumed = 0
   csv(opts)
-  .fromFile(translation.from)
-  .on('json', (row) => {
-    consumed += 1
+    .fromFile(translation.from)
+    .on('json', (row) => {
+      consumed += 1
 
-    if (translation.startAt && translation.startAt > consumed) return
+      if (translation.startAt && translation.startAt > consumed) return
 
-    if (translation.makeMap) {
+      if (translation.makeMap) {
       // Don't override existing value; keep first
-      if (obj[row.key]) return
+        if (obj[row.key]) return
 
-      obj[row.key] = row.value
-    } else obj.push(row)
-  })
-  .on('done', (error) => {
-    if (error) console.error(error.message)
-
-    var savePath = translation.from.replace(/\.csv$/, '.json')
-    fs.writeFile(savePath, JSON.stringify(obj, null, 2), function (err) {
-      if (err) console.error('Error: ' + err.message)
-
-      console.log('Wrote ' + savePath)
+        obj[row.key] = row.value
+      } else obj.push(row)
     })
-  })
+    .on('done', (error) => {
+      if (error) console.error(error.message)
+
+      var savePath = translation.from.replace(/\.csv$/, '.json')
+      fs.writeFile(savePath, JSON.stringify(obj, null, 2), function (err) {
+        if (err) console.error('Error: ' + err.message)
+
+        console.log('Wrote ' + savePath)
+      })
+    })
 })
