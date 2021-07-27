@@ -162,14 +162,16 @@ function buildRecordsByIds (ids, nyplType) {
   // NYPL_OAUTH_URL
   const dataApi = new NYPLDataApiClient()
 
+  const nyplSource = argv.nyplSource || 'sierra-nypl'
+
   return Promise.all(
     ids.map((id) => {
-      return dataApi.get(`${nyplType}s/sierra-nypl/${id}`)
+      return dataApi.get(`${nyplType}s/${nyplSource}/${id}`)
         .then((rec) => {
           if (!rec || rec.statusCode === 404) {
             // Fatal error if it's the only failure
-            if (ids.length === 1) throw new Error(`Error fetching ${nyplType}s/sierra-nypl/${id}`)
-            else console.warn(`Error fetching ${nyplType}s/sierra-nypl/${id}`)
+            if (ids.length === 1) throw new Error(`Error fetching ${nyplType}s/${nyplSource}/${id}`)
+            else console.warn(`Error fetching ${nyplType}s/${nyplSource}/${id}`)
             return null
           }
           return rec
