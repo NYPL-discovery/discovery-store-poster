@@ -110,8 +110,8 @@ describe('Item Marc Mapping', function () {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
           assert.strictEqual(item.objectId('nypl:bnum'), 'urn:bnum:b17355748')
           assert.strictEqual(item.literal('nypl:suppressed'), true)
+          assert.strictEqual(item.objectId('nypl:catalogItemType'), 'catalogItemType:101')
           // Make sure no other statements are being saved for this item because it's branch
-          assert.strictEqual(item.objectId('nypl:catalogItemType'), undefined)
           assert.strictEqual(item.objectId('nypl:owner'), undefined)
           assert.strictEqual(item.objectId('dcterms:title'), undefined)
           assert.strictEqual(item.objectId('bf:status'), undefined)

@@ -1,0 +1,148 @@
+{
+  "id": "22180568",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2021-08-28T01:00:01-04:00",
+  "createdDate": "2021-08-27T17:40:00-04:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "os",
+      "name": "OFFSITE - ReCAP Partner"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "   ",
+    "name": "---"
+  },
+  "title": "[Standard NYPL restrictions apply] 11-SAL KOYANGI HONGJO ILGI / HONGJO ILGI      [RECAP]",
+  "author": "Min, Chŏng-wŏn, author,",
+  "materialType": {
+    "code": "-  ",
+    "value": "MISC"
+  },
+  "bibLevel": {
+    "code": "-",
+    "value": "---"
+  },
+  "publishYear": null,
+  "catalogDate": null,
+  "country": {
+    "code": "   ",
+    "name": "No country"
+  },
+  "normTitle": "standard nypl restrictions apply 11 sal koyangi hongjo ilgi",
+  "normAuthor": "min chŏng wŏn author",
+  "standardNumbers": [],
+  "controlNumber": "",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "   ",
+      "display": "---"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "os   ",
+      "display": "OFFSITE - ReCAP Partner"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "0",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "-",
+      "display": "---"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "-  ",
+      "display": "MISC"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "22180568",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2021-08-27T17:40:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-08-28T01:00:01Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "2",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "   ",
+      "display": "No country"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2021-08-27T17:40:02Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "Min, Chŏng-wŏn, author,   ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "[Standard NYPL restrictions apply] 11-SAL KOYANGI HONGJO ILGI / HONGJO ILGI      [RECAP]",
+      "subfields": null
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  2200000 a 4500",
+      "subfields": null
+    }
+  ]
+}

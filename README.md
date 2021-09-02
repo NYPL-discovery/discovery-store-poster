@@ -1,4 +1,6 @@
-# NYPL Discovery Data Store Poster
+# NYPL Discovery Store Poster
+
+*Note*: This app is now used solely inside the [DiscoveryHybridIndexer](https://github.com/NYPL/discovery-hybrid-indexer) where it's included as amodule. This app should not be run on its own; Its deployments have been deprecated.
 
 Operates in bulk/listener mode to pull bib/item/other data and translate it as a series of statements into a centeral data store.
 

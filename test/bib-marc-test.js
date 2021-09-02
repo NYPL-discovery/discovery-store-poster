@@ -1180,4 +1180,28 @@ describe('Bib Marc Mapping', function () {
         })
     })
   })
+
+  describe('OTF record handling', function () {
+    it('should mark OTF bibs as suppressed', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-22180568-otf.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const suppression = bib.literal('nypl:suppressed')
+
+          expect(suppression).to.eq(true)
+        })
+    })
+
+    it('should not mark non-OTF bibs as suppressed', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-10762541.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const suppression = bib.literal('nypl:suppressed')
+
+          expect(suppression).to.eq(false)
+        })
+    })
+  })
 })
