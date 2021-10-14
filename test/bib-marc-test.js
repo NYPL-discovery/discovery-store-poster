@@ -17,10 +17,10 @@ describe('Bib Marc Mapping', function () {
 
       var altTitleMapping = mapping.getMapping('Alternative title')
       // right number of alt title mappings:
-      assert.strictEqual(altTitleMapping.paths.length, 5)
+      assert.strictEqual(altTitleMapping.paths.length, 6)
 
       var contribLIteralMapping = mapping.getMapping('Contributor literal')
-      assert.strictEqual(contribLIteralMapping.paths.length, 4)
+      assert.strictEqual(contribLIteralMapping.paths.length, 5)
     })
 
     it('should identify var field', function () {
@@ -1201,6 +1201,17 @@ describe('Bib Marc Mapping', function () {
           const suppression = bib.literal('nypl:suppressed')
 
           expect(suppression).to.eq(false)
+        })
+    })
+  })
+
+  describe('Excluding excludedSubfields', function () {
+    it('should exclude subfields marked as excluded', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-12082323-plus-excluded.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literal('dcterms:alternative')).to.not.include('Excluded alternative title')
         })
     })
   })
