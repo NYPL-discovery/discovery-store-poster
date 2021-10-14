@@ -1205,6 +1205,18 @@ describe('Bib Marc Mapping', function () {
     })
   })
 
+  describe('Donor/Sponsor', function () {
+    it('should extract Donor/Sponsor', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-12082323.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const donor = bib.literal('nypl:donor')
+          expect(donor).to.eq('Donor / Sponsor --  799 bb')
+        })
+    })
+  })
+
   describe('Excluding excludedSubfields', function () {
     it('should exclude subfields marked as excluded', function () {
       const bib = BibSierraRecord.from(require('./data/bib-12082323-plus-excluded.json'))
