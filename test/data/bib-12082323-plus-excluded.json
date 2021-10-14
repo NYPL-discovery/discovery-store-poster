@@ -1,0 +1,3535 @@
+{
+  "id": "12082323",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2018-06-25T22:45:46-04:00",
+  "createdDate": "2008-12-15T16:57:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mm",
+      "name": "Mid-Manhattan Library at 42nd Street"
+    },
+    {
+      "code": "maf",
+      "name": "SASB - Dorot Jewish Division Rm 111"
+    },
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Life is a strange circle circle2 --245 10 $a, Testing period --$g [Virtual-- 245 $h] (245-- $n) Titles, includes RDA specific fields -- 245 $p : Maintenance test record-- 245 $b, ",
+  "author": "Gloger, Miriam.",
+  "materialType": {
+    "code": "b",
+    "value": "BLU-RAY"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 201,
+  "catalogDate": "2011-05-07",
+  "country": {
+    "code": "nyu",
+    "name": "New York (State)"
+  },
+  "normTitle": "life is a strange circle circle2 245 10 $a testing period $g virtual 245 $h 245 $n titles includes rda specific fields 245 $p maintenance test record 245 $b",
+  "normAuthor": "gloger miriam",
+  "standardNumbers": [
+    "0123456789",
+    "9780123456786",
+    "ISBN",
+    "9790001138673",
+    "ISMN",
+    "Danacode",
+    "UPC",
+    "EAN"
+  ],
+  "controlNumber": "",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "multi",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "5",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2011-05-07",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "b",
+      "display": "BLU-RAY"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "12082323",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-15T16:57:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2018-06-25T22:45:46Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "119",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "nyu",
+      "display": "New York (State)"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2018-06-25T21:44:00Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "100",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "Gloger, Miriam."
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "110",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "BookOps."
+        },
+        {
+          "tag": "b",
+          "content": "Cataloging. --110 2b ab."
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "111",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Congress"
+        },
+        {
+          "tag": "n",
+          "content": "(13th :"
+        },
+        {
+          "tag": "d",
+          "content": "2013 :"
+        },
+        {
+          "tag": "c",
+          "content": "LIC, Queens) -- 111 2b (ndc)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cramer, Richard,"
+        },
+        {
+          "tag": "d",
+          "content": "1948-."
+        },
+        {
+          "tag": "e",
+          "content": "Original author -- 700 1b with $e"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cramer, Richard,"
+        },
+        {
+          "tag": "d",
+          "content": "1948- ,"
+        },
+        {
+          "tag": "4",
+          "content": "aut -- 700 1b with $4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cramer, Richard,"
+        },
+        {
+          "tag": "d",
+          "content": "1948- ,"
+        },
+        {
+          "tag": "e",
+          "content": "author -- 700 1b with $e"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bayer, Jeffrey."
+        },
+        {
+          "tag": "t",
+          "content": "Cataloging test record. 700 1b with $t"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bayer, Jeffrey,"
+        },
+        {
+          "tag": "e",
+          "content": "artist,"
+        },
+        {
+          "tag": "e",
+          "content": "printer. 700 1b with multiple $e"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bayer, Jeffrey."
+        },
+        {
+          "tag": "4",
+          "content": "art"
+        },
+        {
+          "tag": "4",
+          "content": "prt 700 1b with multiple $4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bayer, Jeffrey."
+        },
+        {
+          "tag": "4",
+          "content": "prt"
+        },
+        {
+          "tag": "4",
+          "content": "art 700 1b with multiple $4 reversed order"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "710",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "New York Public Library"
+        },
+        {
+          "tag": "b",
+          "content": "Database Management Group. -- 710 2b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "711",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Conference added author.  711 2b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "720",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Added entry (uncontrolled name) -- 7201"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cramer, Richard,"
+        },
+        {
+          "tag": "d",
+          "content": "1948-"
+        },
+        {
+          "tag": "4",
+          "content": "fmo"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Virtual collection -- 791 2b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "790",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local name -- 790 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "796",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local name test 2 -- 796 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "091",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "p",
+          "content": "J-LANG"
+        },
+        {
+          "tag": "f",
+          "content": "FORMAT"
+        },
+        {
+          "tag": "a",
+          "content": "Branch --  091 (C-Tag Branch call)"
+        },
+        {
+          "tag": "b",
+          "content": "Biographee"
+        },
+        {
+          "tag": "c",
+          "content": "CUTTER"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Starving artist -- 600 00."
+        },
+        {
+          "tag": "t",
+          "content": "I always wanted to write a book 600 $t. -- 600 00 with $t"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Corporate body subject. --  610 20"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "611",
+      "ind1": "2",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Conference subject entry. --  611 20"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "630",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Uniform title."
+        },
+        {
+          "tag": "p",
+          "content": "Subunit."
+        },
+        {
+          "tag": "l",
+          "content": "Catalogerese.  -- 630 00 $p, $l"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Undiscovered country. -- 651 b0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "653",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indexed term -- 653"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "655",
+      "ind1": " ",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Genre heading."
+        },
+        {
+          "tag": "2",
+          "content": "NYPL -- 655 b7"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "690",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local subject heading. -- 690 b4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "752",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "b",
+          "content": "New York (State)"
+        },
+        {
+          "tag": "d",
+          "content": "New York -- 752"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "250",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Only edition. -- 250"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "254",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Format (musical presentation statement) -- 254"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "255",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cartographic data -- 255"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "256",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Computer data -- 256"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "257",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Produced In (country of producing archival films) -- 257"
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "258",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Philatelic Issue Data  -- 258"
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "074",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "GPO Item number. -- 074"
+        }
+      ]
+    },
+    {
+      "fieldTag": "g",
+      "marcTag": "086",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Sudoc no.  -- 086"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "0123456789"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9780123456786 (qualifier)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "z",
+          "content": "ISBN -- 020 $z"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "020",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ISBN -- 020"
+        }
+      ]
+    },
+    {
+      "fieldTag": "i",
+      "marcTag": "022",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ISSN -- 022"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "LCCN -- 010"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "9790001138673"
+        },
+        {
+          "tag": "q",
+          "content": "(Serie VIII, Werkgruppe 3, Bd. 1) "
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ISMN"
+        },
+        {
+          "tag": "q",
+          "content": "(International Standard Music Number) 024 2b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "7",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Danacode"
+        },
+        {
+          "tag": "2",
+          "content": "danacode 024 7b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "UPC"
+        },
+        {
+          "tag": "q",
+          "content": "(Universal Product code) 024 1b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "024",
+      "ind1": "3",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "EAN"
+        },
+        {
+          "tag": "q",
+          "content": "(Euro Article Number or 13 dig. ISMN) 024 3b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "027",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Report number. -- 027"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "028",
+      "ind1": "0",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Publisher no. -- 028 02  "
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Standard number (old RLIN, etc.) -- 035"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "947",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Former classmark -- 947 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Source display-- 5411b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Source \\\\DO NOT DISPLAY\\\\ -- 541 0b $a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Source \\\\DO NOT DISPLAY\\\\ -- 541 bb $a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "m",
+      "marcTag": "541",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "e",
+          "content": "Accession number -- 541 bb $e"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Ordinary note. -- 500"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "501",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Bound with note. -- 501"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "502",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Thesis -- (degree) note.  -- 502"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "504",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Includes bibliographical references (p. [1235]). -- 504"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Complete table of contents.   -- 505 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1."
+        },
+        {
+          "tag": "t",
+          "content": "Incomplete table of contents. -- First instance.-- 505 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "2."
+        },
+        {
+          "tag": "t",
+          "content": "Incomplete table of contents -- Second  instance. 505 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "506",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Access -- 506 blank,any"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "506",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Access -- 506 0,any"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "506",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Restricted Access -- 506 1,any"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "507",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Scale (graphic) -- 507"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "508",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Credits (Creation/production credits note) -- 508"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "510",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indexed In: -- 510 "
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Performer: ME, I get to be a star-- 511 0b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "511",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cast --511 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "513",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Type of Report. -- 513"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "514",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Data quality -- 514"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "515",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Completely irregular. -- 515"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "516",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "File type. -- 516"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "518",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Event. -- 518"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "This record was originally created as a test record in CATNYP.  It was greatly expanded in ILS-STAFF to test the public display of various MARC fields. -- 520 (first)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "520",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Use this record to test CATALOG, OPAC, ENCORE, and BIBLIOCOMMONS display of MARC fields -- 520 (second)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "521",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Audience: Rated for Catalogers and Metadata Junkies only -- 521"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "521",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Audience (2): Test of 2nd 521 field."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "522",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Coverage -- 522"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "524",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cite as: The Mega-MARC test record. -- 524"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "525",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Supplement -- 525"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "526",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Study program -- 526 8b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "530",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Other test records available. -- 530"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "533",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Microfilm."
+        },
+        {
+          "tag": "b",
+          "content": "New York :"
+        },
+        {
+          "tag": "c",
+          "content": "New York Public Library,"
+        },
+        {
+          "tag": "d",
+          "content": "[19--]."
+        },
+        {
+          "tag": "e",
+          "content": "0  microfilm reels ; 35 mm."
+        },
+        {
+          "tag": "n",
+          "content": "(MN *ZZ-00000) -- 533"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "534",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "p",
+          "content": "Reprint."
+        },
+        {
+          "tag": "c",
+          "content": "Originally published in CATNYP. -- 534"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "535",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Original location in SASB -- 535"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "536",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Funding -- 536"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "538",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "System Details  -- 538"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "540",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Use as test record  -- 540"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "542",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "f",
+          "content": "© World Enterprises"
+        },
+        {
+          "tag": "n",
+          "content": "on back cover -- 542 bb $f$n"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "544",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Location of Other Archival Materials -- 544"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "545",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Biography -- 545"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "545",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Biography -- 5450 Biographical sketch"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "545",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Biography -- 5451 Administrative history"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In English and non-roman scripts. -- 546"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "547",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Former title (complexity note) -- 547"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "550",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Issued by CCO -- 550"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "552",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Entity  (and attribute information note) -- 552"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "555",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Indexes -- 555 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "555",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Finding aids -- 555 0b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "556",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Documentation (information about, note) -- 556"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "561",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Provenance display --5611b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "561",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Provenance \\\\DO NOT DISPLAY\\\\ -- 561 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "561",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Provenance \\\\DO NOT DISPLAY\\\\ -- 561 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "562",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Copy/Version (identification note) -- 562"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "563",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Binding  -- 563"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "565",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Case file --  565"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "567",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Methodology -- 567"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "580",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Complemented by Linking entry: Bogus title -- 580"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "580",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Linking Entry (complexity note) -- 580"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "581",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Publications (about described material note) -- 581"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Processing Action display --583 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Processing Action \\\\DO NOT DISPLAY\\\\ -- 583 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "583",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Processing Action \\\\DO NOT DISPLAY\\\\ -- 583 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "584",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Frequency of Use (and accumulation note) 584"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "585",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Exhibitions -- 585"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "586",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Awards -- 586"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local note display --  590 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local note display --  590 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "590",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Local note \\\\DO NOT DISPLAY\\\\ -- 590 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "²³¹"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "505",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3."
+        },
+        {
+          "tag": "t",
+          "content": "Incomplete table of contents -- Third instance entered out of order. 505 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "¯¯¯\\⠀⠀⠀⠀⠀⠀⠀⠀/¯¯¯"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "⠀⠀⠀\\___(  ツ   )___/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "588",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Description based on: 1900/1901; title from cover. -- 588 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "588",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Latest issue consulted: 1900/1901. -- 588 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "[s.l.] :"
+        },
+        {
+          "tag": "b",
+          "content": "Specious Publ. [prev.pub.-- 260.2b],"
+        },
+        {
+          "tag": "c",
+          "content": "2001. "
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Long Island CIty, N.Y. :"
+        },
+        {
+          "tag": "b",
+          "content": "CopyCat pub. co. -- 260 bb,"
+        },
+        {
+          "tag": "c",
+          "content": "2011."
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Production -- 264 b0 (RDA) "
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Publisher -- 264 b1 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Distributor -- 264 b2 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "3",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Manufacturer -- 264 b3 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": " ",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Copyright Date -- 264 b4 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "2",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Earlier Publisher -- 264 21 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "2",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Earlier Distributor -- 264 22 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "2",
+      "ind2": "3",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Earlier Manufacturer -- 264 23 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "2",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Earlier Copyright Date -- 264 24 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Latest Publisher -- 264 31 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "3",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Latest Distributor -- 264 32 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "3",
+      "ind2": "3",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Latest Manufacturer -- 264 33 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "264",
+      "ind1": "3",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Latest Copyright Date -- 264 34 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "270",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Address -- 270"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "Q-TAG (852 8b q tag.  Staff call in bib.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "C-TAG (852 8b c tag.  Call in bib.)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1234, [1] pages, x leaves :"
+        },
+        {
+          "tag": "b",
+          "content": "illustrations ;"
+        },
+        {
+          "tag": "c",
+          "content": "26 cm +"
+        },
+        {
+          "tag": "e",
+          "content": " CD rom -- 300 (RDA) (1nd instance)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "1234, [1] p., x leaves :"
+        },
+        {
+          "tag": "b",
+          "content": "ill. ;"
+        },
+        {
+          "tag": "c",
+          "content": "26 cm. +"
+        },
+        {
+          "tag": "e",
+          "content": " CD rom -- 300 (AACR2 2nd instance)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Third description instance :"
+        },
+        {
+          "tag": "b",
+          "content": "More 3rd instance ;"
+        },
+        {
+          "tag": "c",
+          "content": "More 3rd instance -- 300 (3rd instance)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "306",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Playing time -- 306"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "307",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Hours -- 307"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "336",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "text-- 336 bb $a (RDA)"
+        },
+        {
+          "tag": "2",
+          "content": "rdacontent -- 336 bb (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "337",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "unmediated -- 337 bb $a (RDA) "
+        },
+        {
+          "tag": "2",
+          "content": "rdamedia -- 337 bb $2 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "338",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "volume -- 338 bb $a (RDA) "
+        },
+        {
+          "tag": "2",
+          "content": "rdacarrier -- 338 bb $2 (RDA)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Publication Date  (unformated) -- 362 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "350",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Price \\\\DO NOT DISPLAY\\\\ -- 350"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "310",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Current Frequency -- 310 (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "315",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Frequency (Obsolete) -- \\\\DO NOT DISPLAY\\\\ (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "321",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Former frequency -- 321 (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "340",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Physical Medium -- 340 (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "351",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Description (Organization and arrangement of materials)-- 351 (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "355",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Description (Security classification control) -- 355  (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "357",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Description (Originator dissemination control) -- 357 (n)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "342",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Geospatial Data -- 342 (l)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "343",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Planar data -- 343 (l)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "352",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Description (Digital graphic representation) -- 352 (l)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "440",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "440 Series ;"
+        },
+        {
+          "tag": "v",
+          "content": "v. number -- 440 b0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "490",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "490 Series ;"
+        },
+        {
+          "tag": "v",
+          "content": "v. number  -- 490 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "800",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Author, of series."
+        },
+        {
+          "tag": "t",
+          "content": "CMA Test Records. -- 800 1b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "810",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CMA (Cat)."
+        },
+        {
+          "tag": "t",
+          "content": "CMA Test Records -- 810 2b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "830",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "CMA Test Records -- 830 b0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "240",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "T tagged 240 Uniform title -- t240"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "Life is a strange circle circle2 --245 10 $a,"
+        },
+        {
+          "tag": "k",
+          "content": "Test record --$k"
+        },
+        {
+          "tag": "f",
+          "content": "current April 19, 2013 --$f,"
+        },
+        {
+          "tag": "g",
+          "content": "Testing period --$g"
+        },
+        {
+          "tag": "h",
+          "content": "[Virtual-- 245 $h]"
+        },
+        {
+          "tag": "n",
+          "content": "(245-- $n)"
+        },
+        {
+          "tag": "p",
+          "content": "Titles, includes RDA specific fields -- 245 $p :"
+        },
+        {
+          "tag": "b",
+          "content": "Maintenance test record-- 245 $b, "
+        },
+        {
+          "tag": "s",
+          "content": "Version--$s /"
+        },
+        {
+          "tag": "c",
+          "content": "CMA division -- 245 $c."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "210",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Abrev. title -- 210 "
+        },
+        {
+          "tag": "6",
+          "content": "Excluded alternative title"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "222",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Key title --  222 "
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Portion of title  \\\\DO NOT DISPLAY\\\\ --  246 10"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Parallel title \\\\DO NOT DISPLAY\\\\ -- 246 11"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Portion of title 246 30"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Parallel title 246 31"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Distinctive title 246 12"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "3",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Other title 246 13"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cover title 246 14"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "0",
+      "ind2": "4",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Cover title 246 04"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "5",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Added title page title 246 15"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Running title 246 17"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "6",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Caption title 246 16"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": "8",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Spine title 246 18"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "3",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "No type of title specified 246 3 blank"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "i",
+          "content": "Free-text label in Subfield i:"
+        },
+        {
+          "tag": "a",
+          "content": "246 1 blank"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "246",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03"
+        },
+        {
+          "tag": "a",
+          "content": "Zaglavie Russiĭi"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "247",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Former title -- 247 00"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Added Serial title \\\\DO NOT DISPLAY\\\\ -- 299"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Added title -- 730 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Added title -- 740 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "799",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Donor / Sponsor --  799 bb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b35502836"
+        },
+        {
+          "tag": "b",
+          "content": "10-17-08"
+        },
+        {
+          "tag": "c",
+          "content": "07-11-95"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "760",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Subseries Of:"
+        },
+        {
+          "tag": "t",
+          "content": "TEST RECORD -- 760 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "762",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Has Subseries:"
+        },
+        {
+          "tag": "t",
+          "content": "TEST RECORD -- 762 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "765",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Translation Of: -- 765 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "767",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Translated As:  -- 767 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "770",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Has Supplement: --770 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "772",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Supplement To:  -- 772 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "773",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In: -- 773 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "774",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Constituent Unit: -- 774 0b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "775",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Other Editions: -- 775 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "776",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Other Form: -- 776 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "777",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Issued With: -- 777 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "786",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Data source -- 786 0b "
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "787",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Related to -- 787 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "w",
+      "marcTag": "787",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "t",
+          "content": "Bogus title "
+        },
+        {
+          "tag": "n",
+          "content": "(Related to) -- 787 0b"
+        }
+      ]
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": "780",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Continues  -- 780 00"
+        }
+      ]
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": "780",
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Continues in part -- 780 01 --(test 0 2-7 and 1 0-7)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "z",
+      "marcTag": "785",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Continued by -- 785 00 -- (test other varients)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "z",
+      "marcTag": "785",
+      "ind1": "0",
+      "ind2": "7",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Separated from -- 785 07 "
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "      cyyyy2011nyua   f      000 faeng dnam a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "s",
+          "content": "Copyright Never display note -- 852 8b $s"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "100-01/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "גלוגר,מרים פ."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "246-03/(Q/"
+        },
+        {
+          "tag": "a",
+          "content": "зглавие руссий"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://blogs.nypl.org/rcramer/"
+        },
+        {
+          "tag": "z",
+          "content": "856 40"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://yizkor.nypl.org/index.php?id=2936"
+        },
+        {
+          "tag": "z",
+          "content": "Yizkor Book  (NYPL resource) 856 41"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.ilibri.casalini.it/toc/07260245.pdf"
+        },
+        {
+          "tag": "3",
+          "content": "Contents"
+        },
+        {
+          "tag": "z",
+          "content": "856 42"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.ThereIsNoLabelSubfieldInThis856-40-fulltext.com/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "1",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.ThereIsNoLabelSubfieldInThis856-41-fulltext.com/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": "2",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.ThereIsNoLabelSubfieldInThis856-42-supplementary.com/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "856",
+      "ind1": "4",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "u",
+          "content": "http://www.ThereIsNoLabelSubfieldInThis856-4b-supplementary.com/"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-02/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "כותר שאינו באותיות לטינית ="
+        },
+        {
+          "tag": "b",
+          "content": "зглавие руссий."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "loc1"
+        },
+        {
+          "tag": "c",
+          "content": "CIN=MFG ; OID=CMA"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "909",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Not for export in OCLC Reclamation Project"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hg"
+        },
+        {
+          "tag": "b",
+          "content": "05-07-11"
+        },
+        {
+          "tag": "c",
+          "content": "-"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "s"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "nyu"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "catcma/mfg (6/18/2012)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "901",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "catcma/mfg (5/12/2015) -- 024 Music standard numbers added"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "909",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Original Test record - others suppressed"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000nam  2200109 a 4500",
+      "subfields": null
+    }
+  ]
+}

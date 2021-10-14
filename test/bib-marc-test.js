@@ -1216,4 +1216,15 @@ describe('Bib Marc Mapping', function () {
         })
     })
   })
+
+  describe('Excluding excludedSubfields', function () {
+    it('should exclude subfields marked as excluded', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-12082323-plus-excluded.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literal('dcterms:alternative')).to.not.include('Excluded alternative title')
+        })
+    })
+  })
 })
