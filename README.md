@@ -90,9 +90,9 @@ The  `--disablescreen` flag has been removed from the latest versions of this mo
  - Commit changes to your feature branch.
  - File a pull request against master and assign reviewers.
  - After the PR is accepted, merge into master.
- - As necessary, you can `node-lambda deploy` the `master` branch to QA to test on sandbox infrastructure
- - Merge / promote master into production and push to origin.
- - Deploy to production when appropriate (Ideally very soon)
+ - Tag your release with the next logical version tag (e.g. `git tag -a v1.0.101; git push --tags`)
+
+Note that this repo is not directly deployed as a Lambda any more. It is brought in as a module in DiscoveryHybridIndexer. To ensure your changes to this repo are activated in [DiscoveryHybridIndexer](https://github.com/NYPL/discovery-hybrid-indexer), bump the [version in the Indexer's package.json](https://github.com/NYPL/discovery-hybrid-indexer/blob/aa70113f59e17f6be95713bf0af6e91c5e248550/package.json#L11).
 
 ### Release Tags
 
