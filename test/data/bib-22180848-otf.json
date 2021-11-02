@@ -1,0 +1,123 @@
+{
+  "id": "22180848",
+  "updatedDate": "2021-10-29T01:00:01Z",
+  "createdDate": "2021-10-28T16:21:43Z",
+  "deleted": false,
+  "suppressed": false,
+  "lang": {
+      "code": "   ",
+      "name": "---"
+  },
+  "title": "[Standard NYPL restrictions apply] TOAST / BY RICHARD BEAN. [RECAP]",
+  "author": "Bean, Richard, 1956-",
+  "materialType": {
+      "code": "-  ",
+      "value": "MISC"
+  },
+  "bibLevel": {
+      "code": "-",
+      "value": "---"
+  },
+  "country": {
+      "code": "   ",
+      "name": "No country"
+  },
+  "fixedFields": {
+      "24": {
+          "label": "Language",
+          "value": "   ",
+          "display": "---"
+      },
+      "25": {
+          "label": "Skip",
+          "value": "0"
+      },
+      "26": {
+          "label": "Location",
+          "value": "os   ",
+          "display": "OFFSITE - ReCAP Partner"
+      },
+      "27": {
+          "label": "COPIES",
+          "value": "0"
+      },
+      "29": {
+          "label": "Bib Level",
+          "value": "-",
+          "display": "---"
+      },
+      "30": {
+          "label": "Material Type",
+          "value": "-  ",
+          "display": "MISC"
+      },
+      "31": {
+          "label": "Bib Code 3",
+          "value": "-"
+      },
+      "80": {
+          "label": "Record Type",
+          "value": "b"
+      },
+      "81": {
+          "label": "Record Number",
+          "value": "22180848"
+      },
+      "83": {
+          "label": "Created Date",
+          "value": "2021-10-28T16:21:43Z"
+      },
+      "84": {
+          "label": "Updated Date",
+          "value": "2021-10-29T01:00:01Z"
+      },
+      "85": {
+          "label": "No. of Revisions",
+          "value": "2"
+      },
+      "86": {
+          "label": "Agency",
+          "value": "1"
+      },
+      "89": {
+          "label": "Country",
+          "value": "   ",
+          "display": "No country"
+      },
+      "98": {
+          "label": "PDATE",
+          "value": "2021-10-28T16:21:46Z"
+      },
+      "107": {
+          "label": "MARC Type",
+          "value": " "
+      }
+  },
+  "varFields": [
+      {
+          "fieldTag": "a",
+          "content": "Bean, Richard, 1956-   "
+      },
+      {
+          "fieldTag": "t",
+          "content": "[Standard NYPL restrictions apply] TOAST / BY RICHARD BEAN. [RECAP]"
+      },
+      {
+          "fieldTag": "y",
+          "marcTag": "910",
+          "ind1": " ",
+          "ind2": " ",
+          "subfields": [
+              {
+                  "tag": "a",
+                  "content": "RLOTF"
+              }
+          ]
+      },
+      {
+          "fieldTag": "_",
+          "content": "00000nam  2200000 a 4500"
+      }
+  ],
+  "nyplSource": "sierra-nypl"
+}
