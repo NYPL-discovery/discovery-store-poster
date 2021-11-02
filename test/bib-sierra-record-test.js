@@ -11,8 +11,17 @@ describe('BibSierraRecord', function () {
       expect(record.isOtfRecord()).to.eq(false)
     })
 
-    it('flags OTF Bib', function () {
+    it('flags OTF Bib based on location', function () {
       const record = new BibSierraRecord(require('./data/bib-22180568-otf.json'))
+      expect(record.isNyplRecord()).to.eq(true)
+      expect(record.isPartnerRecord()).to.eq(false)
+
+      // Check is-otf:
+      expect(record.isOtfRecord()).to.eq(true)
+    })
+
+    it('flags OTF Bib based on 910', function () {
+      const record = new BibSierraRecord(require('./data/bib-22180848-otf.json'))
       expect(record.isNyplRecord()).to.eq(true)
       expect(record.isPartnerRecord()).to.eq(false)
 
