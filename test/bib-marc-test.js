@@ -1147,8 +1147,8 @@ describe('Bib Marc Mapping', function () {
           expect(bib.statements('dcterms:identifier')[1].object_id).to.be.eq('he^76953970^')
           expect(bib.statements('dcterms:identifier')[1].object_type).to.be.eq('bf:Lccn')
           expect(bib.statements('dcterms:identifier')[2]).to.be.a('object')
-          expect(bib.statements('dcterms:identifier')[2].object_id).to.be.eq('(OCoLC)19176985')
-          expect(bib.statements('dcterms:identifier')[2].object_type).to.be.eq('bf:Identifier')
+          expect(bib.statements('dcterms:identifier')[2].object_id).to.be.eq('19176985')
+          expect(bib.statements('dcterms:identifier')[2].object_type).to.be.eq('nypl:Oclc')
         })
     })
 
@@ -1175,8 +1175,8 @@ describe('Bib Marc Mapping', function () {
           expect(bib.statements('dcterms:identifier')[0].object_id).to.be.eq('990137923810203941')
           expect(bib.statements('dcterms:identifier')[0].object_type).to.be.eq('nypl:Bnumber')
           expect(bib.statements('dcterms:identifier')[1]).to.be.a('object')
-          expect(bib.statements('dcterms:identifier')[1].object_id).to.be.eq('(OCoLC)860431222')
-          expect(bib.statements('dcterms:identifier')[1].object_type).to.be.eq('bf:Identifier')
+          expect(bib.statements('dcterms:identifier')[1].object_id).to.be.eq('860431222')
+          expect(bib.statements('dcterms:identifier')[1].object_type).to.be.eq('nypl:Oclc')
         })
     })
   })
@@ -1224,6 +1224,41 @@ describe('Bib Marc Mapping', function () {
         .then((statements) => new Bib(statements))
         .then((bib) => {
           expect(bib.literal('dcterms:alternative')).to.not.include('Excluded alternative title')
+        })
+    })
+  })
+
+  describe('OCLC', function () {
+    it('should extract OCLC from 991 $a', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-11074570.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const oclcStatements = bib.statements('dcterms:identifier')
+            .filter((statement) => statement.object_type === 'nypl:Oclc')
+
+          expect(oclcStatements[0]).to.be.a('object')
+          expect(oclcStatements[0].object_id).to.eq('14083629')
+          expect(oclcStatements[0].source_record_path).to.eq('991 $y')
+
+          // There also a 035 $a in this record with (WaOLN)nyp031187
+          // Make sure above is the only identified OCLC number
+          expect(oclcStatements).to.have.lengthOf(1)
+        })
+    })
+
+    it('should extract OCLC from 035 $a', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-20522059.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const oclcStatements = bib.statements('dcterms:identifier')
+            .filter((statement) => statement.object_type === 'nypl:Oclc')
+
+          expect(oclcStatements).to.have.lengthOf(1)
+          expect(oclcStatements[0]).to.be.a('object')
+          expect(oclcStatements[0].object_id).to.eq('901573922')
+          expect(oclcStatements[0].source_record_path).to.eq('035 $a')
         })
     })
   })

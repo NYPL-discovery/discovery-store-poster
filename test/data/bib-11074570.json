@@ -1,0 +1,424 @@
+{
+  "id": "11074570",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2021-10-18T00:20:00-04:00",
+  "createdDate": "2008-12-14T17:02:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mak",
+      "name": "SASB - Dewitt Wallace Room 108"
+    },
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "spa",
+    "name": "Spanish"
+  },
+  "title": "Brecha.",
+  "author": "",
+  "materialType": {
+    "code": "a  ",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "s",
+    "value": "SERIAL"
+  },
+  "publishYear": 1985,
+  "catalogDate": "2001-01-03",
+  "country": {
+    "code": "uy ",
+    "name": "Uruguay"
+  },
+  "normTitle": "brecha",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPG86-S4673",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "spa",
+      "display": "Spanish"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "multi",
+      "display": null
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "0",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2001-01-03",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "s",
+      "display": "SERIAL"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a  ",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "11074570",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T17:02:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-10-18T00:20:00Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "95",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "uy ",
+      "display": "Uruguay"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2021-04-20T20:12:32Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JFP 05-15"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp0311870"
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPG86-S4673",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Montevideo :"
+        },
+        {
+          "tag": "b",
+          "content": "Brecha,"
+        },
+        {
+          "tag": "c",
+          "content": "[1985]-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JFP 05-15"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "v. ;"
+        },
+        {
+          "tag": "c",
+          "content": "41 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "362",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Año 1, no. 1 (11 de oct. de 1985)-"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Brecha."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Brecha (Montevideo, Uruguay)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "299",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Brecha."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "799",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Gift of the DeWitt Wallace Endowment Fund, named in honor of the founder of Reader's Digest"
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b2095119x"
+        },
+        {
+          "tag": "b",
+          "content": "04-08-08"
+        },
+        {
+          "tag": "c",
+          "content": "08-26-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000925124725.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860624c19859999uy uu ne      0   a0spa dcas a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hp"
+        },
+        {
+          "tag": "b",
+          "content": "01-03-01"
+        },
+        {
+          "tag": "c",
+          "content": "s"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "spa"
+        },
+        {
+          "tag": "g",
+          "content": "uy "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "14083629"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "911",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "RL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cas  2200217 a 4500",
+      "subfields": null
+    }
+  ]
+}
