@@ -1064,7 +1064,7 @@ describe('Bib Marc Mapping', function () {
             })
 
           assert.strictEqual(isbnNodes.length, 1)
-          assert.strictEqual(isbnNodes[0].literal('value', 'ISBN -- 020 $z'))
+          assert.strictEqual(isbnNodes[0].literal('rdf:value'), 'ISBN -- 020 $z')
         })
     })
 
@@ -1085,7 +1085,7 @@ describe('Bib Marc Mapping', function () {
             })
 
           assert.strictEqual(isbnNodes.length, 1)
-          assert.strictEqual(isbnNodes[0].literal('value', '0018-4365'))
+          assert.strictEqual(isbnNodes[0].literal('rdf:value'), '0018-4365')
         })
     })
   })
