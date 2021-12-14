@@ -1261,5 +1261,24 @@ describe('Bib Marc Mapping', function () {
           expect(oclcStatements[0].source_record_path).to.eq('035 $a')
         })
     })
+
+    it('should not extract empty OCLC numbers', function () {
+      const bib = BibSierraRecord.from(require('./data/bib-pul-99107030473506421.json'))
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          const oclcStatements = bib.statements('dcterms:identifier')
+            .filter((statement) => statement.object_type === 'nypl:Oclc')
+
+          // This bib has 6 035 varfields, 3 of which have "(OCoLC)" prefixed values. But in one of those, there's no actual identifier (i.e. the content tag is just "(OCoLC)". So we should omit that one.
+          expect(oclcStatements).to.have.lengthOf(2)
+          expect(oclcStatements[0]).to.be.a('object')
+          expect(oclcStatements[0].object_id).to.eq('on1022275496')
+          expect(oclcStatements[0].source_record_path).to.eq('035 $a')
+          expect(oclcStatements[1]).to.be.a('object')
+          expect(oclcStatements[1].object_id).to.eq('1022275496')
+          expect(oclcStatements[1].source_record_path).to.eq('035 $a')
+        })
+    })
   })
 })
