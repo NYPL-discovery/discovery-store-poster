@@ -8,7 +8,7 @@ const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const Bib = require('./../lib/models/bib')
 
-describe('Bib Marc Mapping', function () {
+describe.only('Bib Marc Mapping', function () {
   this.timeout(1000)
 
   describe('Parse', function () {
@@ -68,6 +68,7 @@ describe('Bib Marc Mapping', function () {
       // that 1) the malformed back-link is treated as such and 2) its presence
       // does not disrupt other parallel field extraction.
       const parallelPlaceOfPublication = bib.parallel('264', ['a', 'b', 'c', 'f', 'g', 'h', 'k', 'n', 'p', 's'])
+      console.log('parallelPlaceOfPublication: ', parallelPlaceOfPublication)
       assert.strictEqual(parallelPlaceOfPublication.length, 0)
     })
 
@@ -941,6 +942,34 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
+    it('should parse parallelPlaceOfPublication and assign indices correctly', function() {
+      var bib = BibSierraRecord.from(require('./data/bib-11009512-with-parallels.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          console.log('bib parallel statements', bib.literal('nypl:parallelPlaceOfPublication'))
+          const statements = bib._statements
+          const placeOfPublicationStatements = statements.filter(statement => statement.predicate === 'nypl:placeOfPublication')
+          const parallelPlaceOfPublicationStatements = statements.filter(statement => statement.predicate === 'nypl:parallelPlaceOfPublication')
+
+          const mismatchedStatements = parallelPlaceOfPublicationStatements.filter((parallelStatement) => {
+            const matchingStatement = placeOfPublicationStatements.find(statement => statement.index === parallelStatement.index)
+            const misMatches = !matchingStatement.object_literal || !(
+              (parallelStatement.object_literal === "长沙市 :" && matchingStatement.object_literal === 'Changsha Shi :') ||
+              (parallelStatement.object_literal === " ") ||
+              (parallelStatement.object_literal.includes(matchingStatement.object_literal))
+            )
+            // console.log('matching statement: ', matchingStatement.object_literal, parallelStatement.object_literal, matches)
+          })
+
+          assert.deepEqual(mismatchedStatements, [])
+          // console.log('placeOfPublication: ', placeOfPublicationStatements)
+          // console.log('parallelPlaceOfPublication: ', parallelPlaceOfPublicationStatements)
+        })
+
+    })
+
     it('should parse Notes blank nodes correctly', function () {
       var bib = BibSierraRecord.from(require('./data/bib-18064236.json'))
 
@@ -1036,6 +1065,7 @@ describe('Bib Marc Mapping', function () {
           // We have one 245 with $6=880-01
           // The first 880 has a valid reverse link in $6
           // but does not define any other subfields, so no valid value:
+          console.log('nyplParallelTitle: ', bib.statement('nypl:parallelTitle'))
           assert(!bib.statement('nypl:parallelTitle'))
 
           // There are also two 246s (dcterms:alternative).

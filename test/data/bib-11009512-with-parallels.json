@@ -1,0 +1,1026 @@
+{
+  "id": "11009512",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2012-03-09T01:35:14-05:00",
+  "createdDate": "2008-12-14T15:49:25-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "mal",
+      "name": "SASB - Service Desk Rm 315"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "chi",
+    "name": "Chinese"
+  },
+  "title": "Li Hongzhang li pin Ou Mei ji",
+  "author": "",
+  "materialType": {
+    "code": "a",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1982,
+  "catalogDate": "2002-12-06",
+  "country": {
+    "code": "cc ",
+    "name": "China"
+  },
+  "normTitle": "li hongzhang li pin ou mei ji",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPO86-B2017",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "chi",
+      "display": "Chinese"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "mal  ",
+      "display": "SASB - Service Desk Rm 315"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2002-12-06",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "11009512",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-14T15:49:25Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2012-03-09T01:35:14Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "9",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "cc ",
+      "display": "China"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-02-03T23:51:33Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-07"
+        },
+        {
+          "tag": "a",
+          "content": "Cai, Erkang."
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": "700",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Allen, Young John,"
+        },
+        {
+          "tag": "d",
+          "content": "1836-1907."
+        }
+      ]
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*OVO 86-1818"
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-05"
+        },
+        {
+          "tag": "a",
+          "content": "Li, Hongzhang,"
+        },
+        {
+          "tag": "d",
+          "content": "1823-1901"
+        },
+        {
+          "tag": "x",
+          "content": "Travel"
+        },
+        {
+          "tag": "z",
+          "content": "Europe."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-06"
+        },
+        {
+          "tag": "a",
+          "content": "Li, Hongzhang,"
+        },
+        {
+          "tag": "d",
+          "content": "1823-1901"
+        },
+        {
+          "tag": "x",
+          "content": "Travel"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Europe"
+        },
+        {
+          "tag": "x",
+          "content": "Description and travel."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "651",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "United States"
+        },
+        {
+          "tag": "x",
+          "content": "Description and travel."
+        }
+      ]
+    },
+    {
+      "fieldTag": "e",
+      "marcTag": "250",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "Di 1 ban."
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "010",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "83127784 /ACN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "500",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Rev. ed. of: Li fu xiang li pin Ou Mei ji / Shanghai guang xue hui yi zhu. 1899."
+        }
+      ]
+    },
+    {
+      "fieldTag": "n",
+      "marcTag": "546",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "In Chinese."
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPO86-B2017",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03"
+        },
+        {
+          "tag": "a",
+          "content": "Changsha Shi :"
+        },
+        {
+          "tag": "b",
+          "content": "Hunan ren min chu ban she :"
+        },
+        {
+          "tag": "b",
+          "content": "Hunan sheng xin hua shu dian fa xing,"
+        },
+        {
+          "tag": "c",
+          "content": "1982."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "*OVO 86-1818"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "3, 260 p., [8] p. of plates :"
+        },
+        {
+          "tag": "b",
+          "content": "ill. ;"
+        },
+        {
+          "tag": "c",
+          "content": "19 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "s",
+      "marcTag": "440",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-04"
+        },
+        {
+          "tag": "a",
+          "content": "Zou xiang shi jie cong shu"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "Li Hongzhang li pin Ou Mei ji /"
+        },
+        {
+          "tag": "c",
+          "content": "Cai Erkang, Lin Lezhi bian yi ; Zhang Yingyu dian ; Zhang Xuanhao jiao."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "730",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-08"
+        },
+        {
+          "tag": "a",
+          "content": "Li fu xiang li pin Ou Mei ji."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b20293185"
+        },
+        {
+          "tag": "b",
+          "content": "01-10-08"
+        },
+        {
+          "tag": "c",
+          "content": "08-23-91"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20021115110330.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "860616s1982    cc af         00000bchi  camua ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "d",
+          "content": "CStRLIN"
+        },
+        {
+          "tag": "d",
+          "content": "NhD"
+        },
+        {
+          "tag": "d",
+          "content": "MnU"
+        },
+        {
+          "tag": "d",
+          "content": "NN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "043",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "e------"
+        },
+        {
+          "tag": "a",
+          "content": "n-us---"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "050",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DS763.63.L5"
+        },
+        {
+          "tag": "b",
+          "content": "L54 1982"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "908",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "DS763.63.L5"
+        },
+        {
+          "tag": "b",
+          "content": "L54 1982"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "$1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "082",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "951/.03/0924"
+        },
+        {
+          "tag": "2",
+          "content": "19"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-01/$1"
+        },
+        {
+          "tag": "a",
+          "content": "李鸿章历聘欧美记 /"
+        },
+        {
+          "tag": "c",
+          "content": "蔡尔康, 林乐知编译 ; 张英宇点 ; 张玄浩校."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "250-02/$1"
+        },
+        {
+          "tag": "a",
+          "content": "第1版."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "260-03/$1"
+        },
+        {
+          "tag": "a",
+          "content": "长沙市 :"
+        },
+        {
+          "tag": "b",
+          "content": "湖南人民出版社 :"
+        },
+        {
+          "tag": "b",
+          "content": "湖南省新華書店发行,"
+        },
+        {
+          "tag": "c",
+          "content": "1982."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": " ",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "440-04/$1"
+        },
+        {
+          "tag": "a",
+          "content": "走向世界叢書"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "600-05/$1"
+        },
+        {
+          "tag": "a",
+          "content": "李鸿章,"
+        },
+        {
+          "tag": "d",
+          "content": "1823-1901"
+        },
+        {
+          "tag": "x",
+          "content": "Travel"
+        },
+        {
+          "tag": "z",
+          "content": "Europe."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "600-06/$1"
+        },
+        {
+          "tag": "a",
+          "content": "李鸿章,"
+        },
+        {
+          "tag": "d",
+          "content": "1823-1901"
+        },
+        {
+          "tag": "x",
+          "content": "Travel"
+        },
+        {
+          "tag": "z",
+          "content": "United States."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "700-07/$1"
+        },
+        {
+          "tag": "a",
+          "content": "蔡尔康."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "730-08/$1"
+        },
+        {
+          "tag": "a",
+          "content": "李傅相历聘欧美记."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "987",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PINYIN"
+        },
+        {
+          "tag": "b",
+          "content": "CStRLIN"
+        },
+        {
+          "tag": "c",
+          "content": "20010108"
+        },
+        {
+          "tag": "d",
+          "content": "c"
+        },
+        {
+          "tag": "e",
+          "content": "1.0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "ho"
+        },
+        {
+          "tag": "b",
+          "content": "12-06-02"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "chi"
+        },
+        {
+          "tag": "g",
+          "content": "cc "
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "991",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "y",
+          "content": "10123100"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200469ua 4500",
+      "subfields": null
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Place 0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-10"
+        },
+        {
+          "tag": "a",
+          "content": "Place 1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "260-10"
+        },
+        {
+          "tag": "a",
+          "content": "Parallel Place 1"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Place 2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "264",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-11"
+        },
+        {
+          "tag": "a",
+          "content": "Place 3"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "264",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-12"
+        },
+        {
+          "tag": "a",
+          "content": "Place 4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "264-12"
+        },
+        {
+          "tag": "a",
+          "content": "Parallel Place 4"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "264",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-13"
+        },
+        {
+          "tag": "a",
+          "content": "Place 5"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "264-13"
+        },
+        {
+          "tag": "a",
+          "content": "Parallel Place 5"
+        }
+      ]
+    },
+    {
+      "fieldTag": "a",
+      "marcTag": "264",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Place 6"
+        }
+      ]
+    }
+  ]
+}
