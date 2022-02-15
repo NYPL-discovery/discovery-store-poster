@@ -68,7 +68,7 @@ describe('Bib Marc Mapping', function () {
       // that 1) the malformed back-link is treated as such and 2) its presence
       // does not disrupt other parallel field extraction.
       const parallelPlaceOfPublication = bib.parallel('264', ['a', 'b', 'c', 'f', 'g', 'h', 'k', 'n', 'p', 's'])
-      assert.deepEqual(parallelPlaceOfPublication, ['', ''])
+      assert.deepStrictEqual(parallelPlaceOfPublication, ['', ''])
     })
 
     it('should extract e-item', function () {
@@ -941,7 +941,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it('should parse parallelPlaceOfPublication and assign indices correctly', function() {
+    it('should parse parallelPlaceOfPublication and assign indices correctly', function () {
       var bib = BibSierraRecord.from(require('./data/bib-11009512-with-parallels.json'))
 
       return bibSerializer.fromMarcJson(bib)
@@ -954,15 +954,15 @@ describe('Bib Marc Mapping', function () {
           const mismatchedStatements = parallelPlaceOfPublicationStatements.filter((parallelStatement) => {
             const matchingStatement = placeOfPublicationStatements.find(statement => statement.index === parallelStatement.index)
             const misMatches = !matchingStatement.object_literal || !(
-              (parallelStatement.object_literal === "长沙市 :" && matchingStatement.object_literal === 'Changsha Shi :') ||
-              (parallelStatement.object_literal === " ") ||
+              (parallelStatement.object_literal === '长沙市 :' && matchingStatement.object_literal === 'Changsha Shi :') ||
+              (parallelStatement.object_literal === ' ') ||
               (parallelStatement.object_literal.includes(matchingStatement.object_literal))
             )
+            return misMatches
           })
 
-          assert.deepEqual(mismatchedStatements, [])
+          assert.deepStrictEqual(mismatchedStatements, [])
         })
-
     })
 
     it('should parse Notes blank nodes correctly', function () {
