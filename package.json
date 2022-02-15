@@ -4,6 +4,7 @@
     "@nypl/nypl-core-objects": "^2.0.0",
     "@nypl/nypl-data-api-client": "^0.2.5",
     "@nypl/nypl-streams-client": "^0.1.4",
+    "@nypl/scsb-rest-client": "^1.0.6",
     "avsc": "^4.1.9",
     "aws-sdk": "^2.96.0",
     "bluebird": "^3.7.2",
@@ -27,7 +28,8 @@
     "standard": "^14.3.4"
   },
   "scripts": {
-    "test": "./node_modules/.bin/standard --env mocha && ./node_modules/.bin/mocha",
+    "test-std": "./node_modules/.bin/standard --env mocha && ./node_modules/.bin/mocha",
+    "test": "./node_modules/.bin/mocha",
     "invoke:remote": "aws lambda invoke --function-name discoveryStorePoster --payload file://event.json --log-type Tail invoked.json | jq -r '.LogResult' | base64 --decode && rm invoked.json",
     "deploy-development": "./node_modules/.bin/node-lambda deploy -e development -f ./config/development.env -b subnet-f4fe56af -g sg-1d544067 --role arn:aws:iam::224280085904:role/lambda_basic_execution --profile nypl-sandbox -S config/event-sources-development.json",
     "deploy-qa": "./node_modules/.bin/node-lambda deploy -e qa -f ./config/qa.env -b subnet-21a3b244,subnet-f35de0a9 -g sg-aa74f1db --role arn:aws:iam::946183545209:role/lambda-full-access --profile nypl-digital-dev -S config/event-sources-qa.json",
