@@ -8,7 +8,7 @@ const bibSerializer = require('./../lib/serializers/bib')
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const Bib = require('./../lib/models/bib')
 
-describe.only('Bib Marc Mapping', function () {
+describe('Bib Marc Mapping', function () {
   this.timeout(1000)
 
   describe('Parse', function () {
