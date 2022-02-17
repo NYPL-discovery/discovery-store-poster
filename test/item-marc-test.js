@@ -10,6 +10,7 @@ const buildMapper = require('./../lib/field-mapper')
 const ScsbClient = require('../lib/scsb-client')
 let kmsHelper
 let itemSerializer
+let client
 
 /**
  * Given an object (bib or item marc-in-json object)
@@ -42,7 +43,7 @@ describe.only('Item Marc Mapping', function () {
     process.env.SCSB_API_KEY = 'key'
     kmsHelper = require('../lib/kms-helper')
     sinon.stub(kmsHelper, 'decrypt').callsFake(() => Promise.resolve('decrypted!'))
-    const client = await ScsbClient.instance()
+    client = await ScsbClient.instance()
     sinon.stub(client, 'search').callsFake(() => Promise.resolve('search result'))
     itemSerializer = require('./../lib/serializers/item')
   })
@@ -412,22 +413,61 @@ describe.only('Item Marc Mapping', function () {
         })
     })
   })
+
   describe('Add Recap Code', () => {
-    it('should add recap codes for nypl items', () => {
-      //
+    before(() => {
+      client.search.restore()
     })
+
+    it('should add recap codes for nypl items - serial', async () => {
+      const searchStub = sinon.stub(client, 'search').callsFake(() => {
+        return Promise.resolve({ 
+          searchResultRows: [{ searchItemResultRows: [{ customerCode: 'recap' }] }] })
+      })
+      itemSerializer = require('./../lib/serializers/item')
+      let item = ItemSierraRecord.from(require('./data/item-10781594.json'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
+      expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
+      expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
+
+      client.search.restore()
+    })
+
+    it('should add recap codes for nypl item - monograph', async () => {
+
+      const searchStub = sinon.stub(client, 'search').callsFake(() => {
+        return Promise.resolve({ 
+          searchResultRows: [{customerCode: 'recap'}] })
+      })
+      itemSerializer = require('./../lib/serializers/item')
+      let item = ItemSierraRecord.from(require('./data/item-10008083.json'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
+      expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
+      expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
+
+      client.search.restore()
+    })
+
     it('should add recap codes for partner items', async () => {
       let item = ItemSierraRecord.from(require('./data/item-pul-189241'))
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
-      
+
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal[0]).to.be.eq('PA')
       expect(item.statements('nypl:recapCustomerCode')[0].source_record_path).to.be.eq('900 $b')
     })
-    it('should not add recap codes for non-recap items', () => {
 
+    it('should not add recap codes for non-recap items', async () => {
+      let item = ItemSierraRecord.from(require('./data/item-23971415'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(!item.statements['nypl:recapCustomerCode'])
     })
   })
 })
