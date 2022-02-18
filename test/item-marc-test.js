@@ -35,7 +35,7 @@ function changeSubField(object, marcTag, subfieldTag, newContent) {
   return object
 }
 
-describe.only('Item Marc Mapping', function () {
+describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
   before(async () => {
