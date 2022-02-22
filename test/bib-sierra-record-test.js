@@ -1,3 +1,4 @@
+/* global describe it */
 const expect = require('chai').expect
 
 const BibSierraRecord = require('./../lib/models/bib-sierra-record')
