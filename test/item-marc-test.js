@@ -17,7 +17,7 @@ let client
  *
  * @return {object} Copy of given object with modified subfield content
  */
-function changeSubField(object, marcTag, subfieldTag, newContent) {
+function changeSubField (object, marcTag, subfieldTag, newContent) {
   // Deep copy object:
   object = JSON.parse(JSON.stringify(object))
 
@@ -51,7 +51,6 @@ describe('Item Marc Mapping', function () {
   after(() => {
     kmsHelper.decrypt.restore()
   })
-
 
   describe('Parse', function () {
     it('parses deleted as suppressed', function () {
@@ -420,9 +419,8 @@ describe('Item Marc Mapping', function () {
     })
 
     it('should add recap codes for nypl items - serial', async () => {
-      const searchStub = sinon.stub(client, 'search').callsFake(() => {
-        return Promise.resolve({ 
-          searchResultRows: [{ searchItemResultRows: [{ customerCode: 'recap' }] }] })
+      sinon.stub(client, 'search').callsFake(() => {
+        return Promise.resolve({ searchResultRows: [{ searchItemResultRows: [{ customerCode: 'recap' }] }] })
       })
       itemSerializer = require('./../lib/serializers/item')
       let item = ItemSierraRecord.from(require('./data/item-10781594.json'))
@@ -431,15 +429,12 @@ describe('Item Marc Mapping', function () {
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
-
       client.search.restore()
     })
 
     it('should add recap codes for nypl item - monograph', async () => {
-
-      const searchStub = sinon.stub(client, 'search').callsFake(() => {
-        return Promise.resolve({ 
-          searchResultRows: [{customerCode: 'recap'}] })
+      sinon.stub(client, 'search').callsFake(() => {
+        return Promise.resolve({ searchResultRows: [{ customerCode: 'recap' }] })
       })
       itemSerializer = require('./../lib/serializers/item')
       let item = ItemSierraRecord.from(require('./data/item-10008083.json'))
@@ -448,7 +443,6 @@ describe('Item Marc Mapping', function () {
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
-
       client.search.restore()
     })
 
