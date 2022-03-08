@@ -422,7 +422,6 @@ describe('Item Marc Mapping', function () {
       sinon.stub(client, 'search').callsFake(() => {
         return Promise.resolve({ searchResultRows: [{ searchItemResultRows: [{ customerCode: 'recap' }] }] })
       })
-      itemSerializer = require('./../lib/serializers/item')
       let item = ItemSierraRecord.from(require('./data/item-10781594.json'))
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
@@ -436,13 +435,13 @@ describe('Item Marc Mapping', function () {
       sinon.stub(client, 'search').callsFake(() => {
         return Promise.resolve({ searchResultRows: [{ customerCode: 'recap' }] })
       })
-      itemSerializer = require('./../lib/serializers/item')
       let item = ItemSierraRecord.from(require('./data/item-10008083.json'))
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
+
       client.search.restore()
     })
 
@@ -462,6 +461,21 @@ describe('Item Marc Mapping', function () {
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
       expect(!item.statements['nypl:recapCustomerCode'])
+    })
+
+    it('should not query SCSB for empty barcodes', async () => {
+      const scsbSearchSpy = sinon.spy(client, 'search')
+
+      // Make an item with a null barcode:
+      const itemData = Object.assign({}, require('./data/item-10008083.json'), { barcode: null })
+      let item = ItemSierraRecord.from(itemData)
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+
+      expect(item.statements['nypl:recapCustomerCode']).to.be.a('undefined')
+      expect(scsbSearchSpy.notCalled).to.eq(true)
+
+      client.search.restore()
     })
   })
 })
