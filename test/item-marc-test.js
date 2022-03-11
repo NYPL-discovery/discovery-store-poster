@@ -450,9 +450,7 @@ describe('Item Marc Mapping', function () {
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
 
-      expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
-      expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
-      expect(item.statements('nypl:recapCustomerCode')[0].object_literal[0]).to.be.eq('PA')
+      expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.be.eq('PA')
       expect(item.statements('nypl:recapCustomerCode')[0].source_record_path).to.be.eq('900 $b')
     })
 
