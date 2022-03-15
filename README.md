@@ -105,19 +105,6 @@ We're still discussing how and when we want to create release tags. We're dedica
 
 The PCDM Store Updater uses field mapping files in `nypl-core` to determine which fields in the MarcInJSON file to save — and how to record them — in the PCDM store. So while we run tests to check that the metadata is correct in this app, a lot of the actual data is controlled by `field-mapping-bib.json` and `field-mapping-item.json` in `nypl-core`. In order to control which version of these files we use, we tag different versions of `nypl-core` and specify the tag to link to via the `NYPL_CORE_VERSION` variable (e.g. "master", "v1.4a").
 
-### Deploying
-
-This component utilizes *two* environments:
-
- * *QA*: Represented by `qa` branch, deployed to `nypl-sandbox` account with a dedicated RDS instance
- * *Production*: Represented by `production` branch, deployed to `nypl-digital-dev` account with a dedicated RDS instance
-
-To deploy:
-
-```
-npm run deploy-[qa/production]
-```
-
 ## Testing
 
 ```
