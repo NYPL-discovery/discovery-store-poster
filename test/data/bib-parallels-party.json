@@ -1,0 +1,297 @@
+{
+  "id": "123456",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "title": "Bib asserting lots of characteristics of parallels parsing",
+  "varFields": [
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01"
+        },
+        {
+          "tag": "a",
+          "content": "content for 600$a"
+        },
+        {
+          "tag": "d",
+          "content": "content for 600$d"
+        },
+        {
+          "tag": "x",
+          "content": "content for 600$x"
+        },
+        {
+          "tag": "z",
+          "content": "content for 600$z"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "600-01/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 600$a"
+        },
+        {
+          "tag": "d",
+          "content": "parallel content for 600$d"
+        },
+        {
+          "tag": "x",
+          "content": "parallel content for 600$x"
+        },
+        {
+          "tag": "z",
+          "content": "parallel content for 600$z"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "content for 610$a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "610-02/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 610$a"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "610",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "content for 610$a (2)"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "440",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03"
+        },
+        {
+          "tag": "a",
+          "content": "content for 440$a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "440-03/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 440$a"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "440",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-04"
+        },
+        {
+          "tag": "a",
+          "content": "content for 440$a (2)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "440-04/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 440$a (2)"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "490",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "content for 490$a"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "800",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-05"
+        },
+        {
+          "tag": "a",
+          "content": "content for 800$a"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "800-05/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 800$a"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "content for 260$b"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-06"
+        },
+        {
+          "tag": "b",
+          "content": "content for 260$b (2)"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "260-06/$1"
+        },
+        {
+          "tag": "b",
+          "content": "parallel content for 260$b (2)"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
+      "marcTag": "260",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "b",
+          "content": "content for 260$b (3)"
+        }
+      ]
+    }
+  ]
+}
