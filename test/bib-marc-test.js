@@ -1088,7 +1088,7 @@ describe('Bib Marc Mapping', function () {
         })
     })
 
-    it.only('should retain index relationships between primary and parallel values for single-marc mappings', function () {
+    it('should retain index relationships between primary and parallel values for single-marc mappings', function () {
       var bib = BibSierraRecord.from(require('./data/bib-parallels-party.json'))
 
       return bibSerializer.fromMarcJson(bib)
