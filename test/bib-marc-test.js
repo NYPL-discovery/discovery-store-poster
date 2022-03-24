@@ -955,7 +955,7 @@ describe('Bib Marc Mapping', function () {
             const matchingStatement = placeOfPublicationStatements.find(statement => statement.index === parallelStatement.index)
             const misMatches = !matchingStatement.object_literal || !(
               (parallelStatement.object_literal === '长沙市 :' && matchingStatement.object_literal === 'Changsha Shi :') ||
-              (parallelStatement.object_literal === ' ') ||
+              (parallelStatement.object_literal === '') ||
               (parallelStatement.object_literal.includes(matchingStatement.object_literal))
             )
             return misMatches
@@ -1060,12 +1060,76 @@ describe('Bib Marc Mapping', function () {
           // We have one 245 with $6=880-01
           // The first 880 has a valid reverse link in $6
           // but does not define any other subfields, so no valid value:
-          assert(bib.statement('nypl:parallelTitle').object_literal === ' ')
+          assert(!bib.statement('nypl:parallelTitle'))
 
           // There are also two 246s (dcterms:alternative).
           // The first has a $6 link (880-02), but no other subfields.
           // The linked 880 has a $6 linking to 246-02 (which has no $6)
           // So that link is also broken, although we're not currently mapping any parallels for 246
+        })
+    })
+
+    it('should relate parallel to primary field', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-parallels-party.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literals('dc:subject')).to.deep.equal([
+            'content for 600$a content for 600$d -- content for 600$x -- content for 600$z',
+            'content for 610$a',
+            'content for 610$a (2)'
+          ])
+
+          expect(bib.literals('nypl:parallelSubjectLiteral')).to.deep.equal([
+            'parallel content for 600$a parallel content for 600$d parallel content for 600$x parallel content for 600$z',
+            'parallel content for 610$a'
+          ])
+        })
+    })
+
+    it.only('should retain index relationships between primary and parallel values for single-marc mappings', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-parallels-party.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literals('bf:seriesStatement')).to.deep.equal([
+            'content for 440$a',
+            'content for 440$a (2)',
+            'content for 490$a',
+            'content for 800$a'
+          ])
+
+          expect(bib.literals('nypl:parallelSeriesStatement')).to.deep.equal([
+            'parallel content for 440$a',
+            'parallel content for 440$a (2)',
+            '',
+            'parallel content for 800$a'
+          ])
+
+          // Also check that the actual .index prop is set correctly:
+          expect(bib.statements('nypl:parallelSeriesStatement')[2].index).to.eq(2)
+          expect(bib.statements('nypl:parallelSeriesStatement')[3].index).to.eq(3)
+        })
+    })
+
+    it('should retain index relationships between primary and parallel values for multi-marc mappings', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-parallels-party.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literals('nypl:role-publisher')).to.deep.equal([
+            'content for 260$b',
+            'content for 260$b (2)',
+            'content for 260$b (3)'
+          ])
+
+          expect(bib.literals('nypl:parallelPublisher')).to.deep.equal([
+            '',
+            'parallel content for 260$b (2)'
+          ])
         })
     })
   })
