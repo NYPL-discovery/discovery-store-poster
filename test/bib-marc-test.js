@@ -1132,6 +1132,22 @@ describe('Bib Marc Mapping', function () {
           ])
         })
     })
+
+    it('should handle parallel fields correctly when primary mapping is configured with excludedSubfields instead of explicit subfields', function () {
+      var bib = BibSierraRecord.from(require('./data/bib-parallels-party.json'))
+
+      return bibSerializer.fromMarcJson(bib)
+        .then((statements) => new Bib(statements))
+        .then((bib) => {
+          expect(bib.literals('dc:contributor')).to.deep.equal([
+            'content for 710$a content for 710$z'
+          ])
+
+          expect(bib.literals('nypl:parallelContributorLiteral')).to.deep.equal([
+            'parallel content for 710$a parallel content for 710$z'
+          ])
+        })
+    })
   })
 
   describe('Canceled/Invalid identifier extraction', function () {
