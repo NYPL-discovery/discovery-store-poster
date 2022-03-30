@@ -282,6 +282,49 @@
 
     {
       "fieldTag": "d",
+      "marcTag": "710",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-07"
+        },
+        {
+          "tag": "a",
+          "content": "content for 710$a"
+        },
+        {
+          "tag": "z",
+          "content": "content for 710$z"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "710-07/$1"
+        },
+        {
+          "tag": "a",
+          "content": "parallel content for 710$a"
+        },
+        {
+          "tag": "z",
+          "content": "parallel content for 710$z"
+        }
+      ]
+    },
+
+    {
+      "fieldTag": "d",
       "marcTag": "260",
       "ind1": "1",
       "ind2": "0",
