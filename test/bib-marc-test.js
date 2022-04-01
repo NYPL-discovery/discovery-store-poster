@@ -761,7 +761,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian,')
+          assert.strictEqual(bib.literal('nypl:role-publisher'), 'Tparan Hovhannu Tēr-Abrahamian')
         })
     })
 
@@ -771,7 +771,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:role-publisher'), 'Edizioni Edicampus,')
+          assert.strictEqual(bib.literal('nypl:role-publisher'), 'Edizioni Edicampus')
         })
     })
 
@@ -783,8 +783,8 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           const placeOfPublications = bib.literals('nypl:role-publisher')
 
-          assert(placeOfPublications.indexOf('Crystal Records,') !== -1)
-          assert(placeOfPublications.indexOf('Test Placeholder Records,') !== -1)
+          assert(placeOfPublications.indexOf('Crystal Records') !== -1)
+          assert(placeOfPublications.indexOf('Test Placeholder Records') !== -1)
         })
     })
 
@@ -794,7 +794,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bibRecord)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:placeOfPublication'), 'Ṛostov (Doni Vra) :')
+          assert.strictEqual(bib.literal('nypl:placeOfPublication'), 'Ṛostov (Doni Vra)')
         })
     })
 
@@ -804,7 +804,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bibRecord)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:placeOfPublication'), 'Roma :')
+          assert.strictEqual(bib.literal('nypl:placeOfPublication'), 'Roma')
         })
     })
 
@@ -816,7 +816,7 @@ describe('Bib Marc Mapping', function () {
         .then((bib) => {
           const placeOfPublications = bib.literals('nypl:placeOfPublication')
 
-          assert(placeOfPublications.indexOf('Camas, WA :') !== -1)
+          assert(placeOfPublications.indexOf('Camas, WA') !== -1)
           assert(placeOfPublications.indexOf('℗2007') !== -1)
         })
     })
@@ -888,7 +888,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:parallelTitle'), '\u200Fהרבי, שלושים שנות נשיאות /')
+          assert.strictEqual(bib.literal('nypl:parallelTitle'), '\u200Fהרבי, שלושים שנות נשיאות')
           assert.strictEqual(bib.literal('nypl:parallelTitleDisplay'), '\u200Fהרבי, שלושים שנות נשיאות / [ערוכה, חנוך גליצנשטיין, עדין שטיינזלץ ; איסוף חומר, חנוך גליצנשטיין, ברקה וולף].')
         })
     })
@@ -899,7 +899,7 @@ describe('Bib Marc Mapping', function () {
       return bibSerializer.fromMarcJson(bib)
         .then((statements) => new Bib(statements))
         .then((bib) => {
-          assert.strictEqual(bib.literal('nypl:parallelTitle'), '李鸿章历聘欧美记 /')
+          assert.strictEqual(bib.literal('nypl:parallelTitle'), '李鸿章历聘欧美记')
           assert.strictEqual(bib.literal('nypl:parallelTitleDisplay'), '李鸿章历聘欧美记 / 蔡尔康, 林乐知编译 ; 张英宇点 ; 张玄浩校.')
           assert.strictEqual(bib.literal('nypl:parallelSeriesStatement'), '走向世界叢書')
         })
@@ -954,7 +954,7 @@ describe('Bib Marc Mapping', function () {
           const mismatchedStatements = parallelPlaceOfPublicationStatements.filter((parallelStatement) => {
             const matchingStatement = placeOfPublicationStatements.find(statement => statement.index === parallelStatement.index)
             const misMatches = !matchingStatement.object_literal || !(
-              (parallelStatement.object_literal === '长沙市 :' && matchingStatement.object_literal === 'Changsha Shi :') ||
+              (parallelStatement.object_literal === '长沙市' && matchingStatement.object_literal === 'Changsha Shi') ||
               (parallelStatement.object_literal === '') ||
               (parallelStatement.object_literal.includes(matchingStatement.object_literal))
             )
@@ -1009,7 +1009,7 @@ describe('Bib Marc Mapping', function () {
             assert.strictEqual(bib.literals('nypl:contentsTitle').length, 8)
             assert.strictEqual(bib.literal('nypl:contentsTitle'), 'The Theban necropolis.')
             assert.strictEqual(bib.literals('nypl:contentsTitle')[1], 'Theban temples.')
-            assert.strictEqual(bib.literals('nypl:contentsTitle')[7], 'Objects of provenance not known. Royal Statues. private Statues (Predynastic to Dynasty XVII) -- Private Statues (Dynasty XVIII to the Roman Periiod). Statues of Deities -- Indices to parts 1 and 2, Statues -- Stelae (Dynasty XVIII to the Roman Period) 803-044-050 to 803-099-990 /')
+            assert.strictEqual(bib.literals('nypl:contentsTitle')[7], 'Objects of provenance not known. Royal Statues. private Statues (Predynastic to Dynasty XVII) -- Private Statues (Dynasty XVIII to the Roman Periiod). Statues of Deities -- Indices to parts 1 and 2, Statues -- Stelae (Dynasty XVIII to the Roman Period) 803-044-050 to 803-099-990')
           })
       })
     })
@@ -1241,7 +1241,7 @@ describe('Bib Marc Mapping', function () {
           expect(bib.objectId('dcterms:language')).to.eq('lang:heb')
           expect(bib.literal('dcterms:created')).to.eq(1971)
           expect(bib.literal('dcterms:title')).to.eq('ʻOrekh ha-din be-Yiśraʾel : maʻamado, zekhuyotaṿ ṿe-ḥovotaṿ : leḳeṭ dinim ṿe-halakhot / ba-ʻarikhat S. Ginosar.')
-          expect(bib.literal('nypl:placeOfPublication')).to.eq('Jerusalem :')
+          expect(bib.literal('nypl:placeOfPublication')).to.eq('Jerusalem')
 
           expect(bib.statements('dcterms:identifier')).to.be.a('array')
           expect(bib.statements('dcterms:identifier')[0]).to.be.a('object')
@@ -1272,7 +1272,7 @@ describe('Bib Marc Mapping', function () {
           expect(bib.objectId('dcterms:language')).to.eq('lang:ara')
           expect(bib.literal('dcterms:created')).to.eq(2013)
           expect(bib.literal('dcterms:title')).to.eq('ʻItāb al-sāqiyāt : shiʻr / Ḥasan Aḥmad al-Būrīnī.')
-          expect(bib.literal('nypl:placeOfPublication')).to.eq('ʻAmmān :')
+          expect(bib.literal('nypl:placeOfPublication')).to.eq('ʻAmmān')
 
           expect(bib.statements('dcterms:identifier')).to.be.a('array')
           expect(bib.statements('dcterms:identifier')[0]).to.be.a('object')

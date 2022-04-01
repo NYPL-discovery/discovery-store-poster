@@ -40,4 +40,24 @@ describe('Utils', function () {
       expect(res3).to.deep.equal(input3.slice(0, 4))
     })
   })
+
+  describe('trimTrailingPunctuation', () => {
+    it('removes trailing slash', () => {
+      expect(utils.trimTrailingPunctuation('foo/')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo /')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo / ')).to.eq('foo')
+    })
+
+    it('removes trailing colon', () => {
+      expect(utils.trimTrailingPunctuation('foo:')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo :')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo : ')).to.eq('foo')
+    })
+
+    it('removes trailing comma', () => {
+      expect(utils.trimTrailingPunctuation('foo,')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo ,')).to.eq('foo')
+      expect(utils.trimTrailingPunctuation('foo ,  ')).to.eq('foo')
+    })
+  })
 })
