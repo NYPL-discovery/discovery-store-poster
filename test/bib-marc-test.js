@@ -1126,7 +1126,7 @@ describe('Bib Marc Mapping', function () {
             'content for 260$b (3)'
           ])
 
-          expect(bib.literals('nypl:parallelPublisher')).to.deep.equal([
+          expect(bib.literals('nypl:parallelPublisherLiteral')).to.deep.equal([
             '',
             'parallel content for 260$b (2)'
           ])
