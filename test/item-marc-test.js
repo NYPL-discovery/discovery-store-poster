@@ -2,15 +2,10 @@
 
 const assert = require('assert')
 const expect = require('chai').expect
-const sinon = require('sinon')
-
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
-const ScsbClient = require('../lib/scsb-client')
-let kmsHelper
 let itemSerializer
-let client
 
 /**
  * Given an object (bib or item marc-in-json object)
@@ -35,21 +30,11 @@ function changeSubField (object, marcTag, subfieldTag, newContent) {
   return object
 }
 
-describe('Item Marc Mapping', function () {
+describe.only('Item Marc Mapping', function () {
   this.timeout(1000)
 
   before(async () => {
-    process.env.SCSB_URL = 'scsb.com'
-    process.env.SCSB_API_KEY = 'key'
-    kmsHelper = require('../lib/kms-helper')
-    sinon.stub(kmsHelper, 'decrypt').callsFake(() => Promise.resolve('decrypted!'))
-    client = await ScsbClient.instance()
-    sinon.stub(client, 'search').callsFake(() => Promise.resolve('search result'))
     itemSerializer = require('./../lib/serializers/item')
-  })
-
-  after(() => {
-    kmsHelper.decrypt.restore()
   })
 
   describe('Parse', function () {
@@ -414,35 +399,22 @@ describe('Item Marc Mapping', function () {
   })
 
   describe('Add Recap Code', () => {
-    before(() => {
-      client.search.restore()
-    })
-
     it('should add recap codes for nypl items - serial', async () => {
-      sinon.stub(client, 'search').callsFake(() => {
-        return Promise.resolve({ searchResultRows: [{ searchItemResultRows: [{ customerCode: 'recap' }] }] })
-      })
       let item = ItemSierraRecord.from(require('./data/item-10781594.json'))
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
-      client.search.restore()
     })
 
     it('should add recap codes for nypl item - monograph', async () => {
-      sinon.stub(client, 'search').callsFake(() => {
-        return Promise.resolve({ searchResultRows: [{ customerCode: 'recap' }] })
-      })
       let item = ItemSierraRecord.from(require('./data/item-10008083.json'))
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
       expect(item.statements('nypl:recapCustomerCode')[0].object_literal).to.eq('recap')
-
-      client.search.restore()
     })
 
     it('should add recap codes for partner items', async () => {
@@ -459,21 +431,6 @@ describe('Item Marc Mapping', function () {
       const statements = await itemSerializer.fromMarcJson(item)
       item = new Item(statements)
       expect(!item.statements['nypl:recapCustomerCode'])
-    })
-
-    it('should not query SCSB for empty barcodes', async () => {
-      const scsbSearchSpy = sinon.spy(client, 'search')
-
-      // Make an item with a null barcode:
-      const itemData = Object.assign({}, require('./data/item-10008083.json'), { barcode: null })
-      let item = ItemSierraRecord.from(itemData)
-      const statements = await itemSerializer.fromMarcJson(item)
-      item = new Item(statements)
-
-      expect(item.statements['nypl:recapCustomerCode']).to.be.a('undefined')
-      expect(scsbSearchSpy.notCalled).to.eq(true)
-
-      client.search.restore()
     })
   })
 })
