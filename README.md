@@ -28,7 +28,7 @@ It can be useful to inspect the configuration represented by different env files
 
 ### Creating a Test Event
 
-Test event json files can be generated to emulate lambda invocations locally.
+Test event json files can be generated to emulate lambda invocations locally. Note the env file needs to have decrypted NYPL OAuth creds. 
 
 Run this to generate `event.json` full of encoded bibs:
 
