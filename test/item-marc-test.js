@@ -433,4 +433,14 @@ describe('Item Marc Mapping', function () {
       expect(!item.statements['nypl:recapCustomerCode'])
     })
   })
+
+  describe('Add Aeon Site Code', () => {
+    it('should add aeonSiteCode', async () => {
+      let item = ItemSierraRecord.from(require('./data/item-aeon-eligible.json'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(item.statement('nypl:aeonSiteCode')).to.be.a('object')
+      expect(item.statement('nypl:aeonSiteCode').object_literal).to.eq('SCHRB')
+    })
+  })
 })
