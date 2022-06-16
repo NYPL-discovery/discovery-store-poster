@@ -1,0 +1,340 @@
+{
+  "id": "10003973",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "item",
+  "updatedDate": "2016-10-29T01:01:19+00:00",
+  "createdDate": "2009-02-03T00:41:00+00:00",
+  "deletedDate": null,
+  "deleted": false,
+  "bibIds": [
+    "10006965"
+  ],
+  "location": {
+    "code": "rcmi2",
+    "name": "OFFSITE - Request in Advance for use at Schwarzman Bldg - Microforms Rm 100"
+  },
+  "status": {
+    "code": "-",
+    "display": "AVAILABLE",
+    "duedate": null
+  },
+  "barcode": "33433107664710",
+  "callNumber": "|h*Z-3527 R. 2A",
+  "itemType": null,
+  "fixedFields": [
+    {
+      "label": "BIB HOLD",
+      "value": false,
+      "display": null
+    },
+    {
+      "label": "IR Dist Learn Same Site",
+      "value": "0",
+      "display": null
+    },
+    {
+      "label": "Created Date",
+      "value": "2009-02-03T00:41:00Z",
+      "display": null
+    },
+    {
+      "label": "Updated Date",
+      "value": "2016-10-29T01:01:19Z",
+      "display": null
+    },
+    {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    {
+      "label": "Item Code 2",
+      "value": "-",
+      "display": null
+    },
+    {
+      "label": "Item Use 3",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Inventory Date",
+      "value": "2014-06-01T08:00:00Z",
+      "display": null
+    },
+    {
+      "label": "Inherit Location",
+      "value": false,
+      "display": null
+    },
+    {
+      "label": "PDATE",
+      "value": "2016-10-27T01:12:16Z",
+      "display": null
+    },
+    {
+      "label": "Location",
+      "value": "rcmi2",
+      "display": "OFFSITE - Request in Advance for use at Schwarzman Bldg - Microforms Rm 100"
+    },
+    {
+      "label": "OPAC Message",
+      "value": "2",
+      "display": null
+    },
+    {
+      "label": "Total Renewals",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Copy No.",
+      "value": 1,
+      "display": null
+    },
+    {
+      "label": "Item Agency",
+      "value": "214",
+      "display": "ReCAP (NA) - NYPL Standard"
+    },
+    {
+      "label": "Checkin Location",
+      "value": 915,
+      "display": null
+    },
+    {
+      "label": "Price",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "VI Central",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Checkout Location",
+      "value": 344,
+      "display": null
+    },
+    {
+      "label": "Status",
+      "value": "-",
+      "display": "AVAILABLE"
+    },
+    {
+      "label": "Copy Use",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Year-to-Date Circ",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Record Type",
+      "value": "i",
+      "display": null
+    },
+    {
+      "label": "Last Year Circ",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Item Type",
+      "value": "6",
+      "display": null
+    },
+    {
+      "label": "Last Checkout Date",
+      "value": "2013-08-26T20:20:45Z",
+      "display": null
+    },
+    {
+      "label": "No. of Revisions",
+      "value": "48",
+      "display": null
+    },
+    {
+      "label": "Record Number",
+      "value": "10003973",
+      "display": null
+    },
+    {
+      "label": "Last Checkin",
+      "value": "2013-09-24T20:04:55Z",
+      "display": null
+    },
+    {
+      "label": "Holdings Item Tag",
+      "value": "6",
+      "display": null
+    },
+    {
+      "label": "Item Code 1",
+      "value": "0",
+      "display": null
+    },
+    {
+      "label": "Item Message",
+      "value": "-",
+      "display": null
+    },
+    {
+      "label": "Inhouse Use",
+      "value": 0,
+      "display": null
+    },
+    {
+      "label": "Total Checkouts",
+      "value": 1,
+      "display": null
+    }
+  ],
+  "varFields": [
+    {
+      "fieldTag": "a",
+      "marcTag": "949",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "a",
+          "content": "*Z-3527 R. 2"
+        },
+        {
+          "tag": "e",
+          "content": "(1801-1983) Washington, D.C. Sunday Morning Chronicle-Tonica, Ill. The Tonica Weekly Local"
+        },
+        {
+          "tag": "f",
+          "content": "Suppl. reel"
+        },
+        {
+          "tag": "h",
+          "content": "1"
+        },
+        {
+          "tag": "i",
+          "content": "0"
+        },
+        {
+          "tag": "j",
+          "content": "-"
+        },
+        {
+          "tag": "k",
+          "content": "6"
+        },
+        {
+          "tag": "l",
+          "content": "$0.00"
+        },
+        {
+          "tag": "m",
+          "content": "0"
+        },
+        {
+          "tag": "n",
+          "content": "0"
+        },
+        {
+          "tag": "o",
+          "content": "0"
+        },
+        {
+          "tag": "p",
+          "content": "hf   "
+        },
+        {
+          "tag": "q",
+          "content": "-"
+        },
+        {
+          "tag": "r",
+          "content": "0"
+        },
+        {
+          "tag": "s",
+          "content": "0"
+        },
+        {
+          "tag": "t",
+          "content": ""
+        },
+        {
+          "tag": "u",
+          "content": "-"
+        },
+        {
+          "tag": "v",
+          "content": "0"
+        },
+        {
+          "tag": "w",
+          "content": "0"
+        },
+        {
+          "tag": "x",
+          "content": ".i12007250"
+        },
+        {
+          "tag": "y",
+          "content": "07-31-00"
+        },
+        {
+          "tag": "z",
+          "content": "10-29-08"
+        }
+      ]
+    },
+    {
+      "fieldTag": "b",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "33433107664710",
+      "subFields": null
+    },
+    {
+      "fieldTag": "c",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subFields": [
+        {
+          "tag": "h",
+          "content": "*Z-3527 R. 2A"
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "barco/es",
+      "subFields": null
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "District of Columbia-Illinois",
+      "subFields": null
+    },
+    {
+      "fieldTag": "x",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "AEON eligible SCHRB",
+      "subFields": null
+    }
+  ]
+}
