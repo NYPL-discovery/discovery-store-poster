@@ -35,7 +35,6 @@ const dateParser = require('../lib/dateParser-lambda')
 const volumeParser = require('../lib/volume-parser')
 
 const parseRangeTargets = (target, intRange = false) => {
-  const ranges = []
   return target
     .match(/(?<=\[)([^\]]+)(?=\])/g)
     .map((range) => range.split(/, ?/))
@@ -50,7 +49,7 @@ const totals = {
 }
 
 const processNext = async (records, index = 0) => {
-  let { fieldtagv, volumeRange, dateRange } = records[index]
+  const { fieldtagv, volumeRange, dateRange } = records[index]
 
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
 
@@ -103,7 +102,7 @@ const checkParsedAgainstTargets = (parsed, targets, options) => {
     // Not a match; Report on what failed:
     console.log(`  ❌ ${options.label} parsing failed to match target`)
     const checkLines = Object.keys(checks).reduce((a, k) => {
-      return a.concat([ `${ checks[k] ? '✅' : '❌' } ${k}` ])
+      return a.concat([`${checks[k] ? '✅' : '❌'} ${k}`])
     }, [])
     console.log('     Checks: \n' + checkLines.map((l) => `       ${l}`).join('\n'))
     console.log('     Input parsed as: ', JSON.stringify(parsed))
