@@ -50,7 +50,6 @@ const totals = {
 }
 
 const processNext = async (records, index = 0) => {
-  console.log('records: ', records.length)
   let { fieldtagv, volumeRange, dateRange } = records[index]
 
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
