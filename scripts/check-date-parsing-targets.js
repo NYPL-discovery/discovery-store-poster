@@ -12,7 +12,7 @@
  * Arguments:
  *   --index N - Start processing at (0-indexed) row of input
  *   --limit K - Limit processing to this many rows
- *   --failures - display failed ranges 
+ *   --failures - display failed ranges
  *
  * Expects a file called ../data/date-and-volume-parsing-targets.csv in UTF8
  * formatted with \n linebreaks exportd from parsing targets spreadsheet
@@ -53,7 +53,7 @@ const totals = {
   dateRanges: { inspected: 0, matched: 0, failures: [] }
 }
 
-const processNext = async (records, index = 0, failures = false) => {
+const processNext = async (records, index = 0) => {
   const { fieldtagv, volumeRange, dateRange } = records[index]
 
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
