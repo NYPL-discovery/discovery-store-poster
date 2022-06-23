@@ -66,7 +66,7 @@ const processNext = async (records, index = 0, failures = false) => {
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
     totals.dateRanges.inspected += 1
     if (match) totals.dateRanges.matched += 1
-    else totals.dateRanges.failures.push(parsed, targets)
+    else totals.dateRanges.failures.push(fieldtagv)
   }
   if (volumeRange) {
     let parsed = volumeParser.parseVolume(fieldtagv)
@@ -76,7 +76,7 @@ const processNext = async (records, index = 0, failures = false) => {
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Volume' })
     totals.volumeRanges.inspected += 1
     if (match) totals.volumeRanges.matched += 1
-    else totals.volumeRanges.failures.push(parsed, targets)
+    else totals.volumeRanges.failures.push(fieldtagv)
   }
 
   // if (dateRange || volumeRange) {
