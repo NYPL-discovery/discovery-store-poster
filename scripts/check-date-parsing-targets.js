@@ -12,7 +12,7 @@
  * Arguments:
  *   --index N - Start processing at (0-indexed) row of input
  *   --limit K - Limit processing to this many rows
- *   --failures - display failed ranges 
+ *   --failures - display failed ranges
  *
  * Expects a file called ../data/date-and-volume-parsing-targets.csv in UTF8
  * formatted with \n linebreaks exportd from parsing targets spreadsheet
@@ -53,22 +53,21 @@ const totals = {
   dateRanges: { inspected: 0, matched: 0, failures: [] }
 }
 
-const processNext = async (records, index = 0, failures = false) => {
+const processNext = async (records, index = 0) => {
   const { fieldtagv, volumeRange, dateRange } = records[index]
-
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
 
   let match = true
 
-  if (dateRange) {
+  if (dateRange && argv.only !== 'volumes') {
     const parsed = await dateParser.parseDate(fieldtagv)
     const targets = parseRangeTargets(dateRange)
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
     totals.dateRanges.inspected += 1
     if (match) totals.dateRanges.matched += 1
-    else totals.dateRanges.failures.push(fieldtagv)
+    else totals.dateRanges.failures.push(`\n${fieldtagv}`)
   }
-  if (volumeRange) {
+  if (volumeRange && argv.only !== 'dates') {
     let parsed = volumeParser.parseVolume(fieldtagv)
     // If volume parsing returns single array, make it a 2D array to match targets:
     if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
@@ -76,7 +75,7 @@ const processNext = async (records, index = 0, failures = false) => {
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Volume' })
     totals.volumeRanges.inspected += 1
     if (match) totals.volumeRanges.matched += 1
-    else totals.volumeRanges.failures.push(fieldtagv)
+    else totals.volumeRanges.failures.push(`\n${fieldtagv}`)
   }
 
   // if (dateRange || volumeRange) {

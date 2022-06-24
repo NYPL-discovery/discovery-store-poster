@@ -2,7 +2,7 @@
 const expect = require('chai').expect
 const { parseDate } = require('../lib/dateParser-lambda')
 
-describe.only('dateParser Lambda', () => {
+describe('dateParser Lambda', () => {
   it('v. 36-37 (Nov. 1965-Oct. 1967)', async () => {
     const parsed = await parseDate('v. 36-37 (Nov. 1965-Oct. 1967)')
     expect(parsed).to.deep.equal([['1965-11', '1967-10']])
