@@ -7,11 +7,12 @@
  * expectations.
  *
  * Usage:
- *   node scripts/check-date-parsing-targets [--limit N] [--index K]
+ *   node scripts/check-date-parsing-targets [--limit N] [--index K] [--failures boolean]
  *
  * Arguments:
  *   --index N - Start processing at (0-indexed) row of input
  *   --limit K - Limit processing to this many rows
+ *   --failures - display failed ranges 
  *
  * Expects a file called ../data/date-and-volume-parsing-targets.csv in UTF8
  * formatted with \n linebreaks exportd from parsing targets spreadsheet
@@ -44,40 +45,54 @@ const parseRangeTargets = (target, intRange = false) => {
 }
 
 const totals = {
-  inspected: 0,
-  matched: 0
+  volumeRanges: {
+    inspected: 0,
+    matched: 0,
+    failures: []
+  },
+  dateRanges: { inspected: 0, matched: 0, failures: [] }
 }
 
-const processNext = async (records, index = 0) => {
+const processNext = async (records, index = 0, failures = false) => {
   const { fieldtagv, volumeRange, dateRange } = records[index]
 
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
 
-  let overallMatch = true
+  let match = true
 
   if (dateRange) {
     const parsed = await dateParser.parseDate(fieldtagv)
     const targets = parseRangeTargets(dateRange)
-    overallMatch &= checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
+    match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
+    totals.dateRanges.inspected += 1
+    if (match) totals.dateRanges.matched += 1
+    else totals.dateRanges.failures.push(fieldtagv)
   }
   if (volumeRange) {
     let parsed = volumeParser.parseVolume(fieldtagv)
     // If volume parsing returns single array, make it a 2D array to match targets:
     if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
     const targets = parseRangeTargets(volumeRange, true)
-    overallMatch &= checkParsedAgainstTargets(parsed, targets, { label: 'Volume' })
+    match = checkParsedAgainstTargets(parsed, targets, { label: 'Volume' })
+    totals.volumeRanges.inspected += 1
+    if (match) totals.volumeRanges.matched += 1
+    else totals.volumeRanges.failures.push(fieldtagv)
   }
 
-  if (dateRange || volumeRange) {
-    totals.inspected += 1
-    if (overallMatch) totals.matched += 1
-  }
+  // if (dateRange || volumeRange) {
+  //   totals.inspected += 1
+  //   if (overallMatch) totals.matched += 1
+  // }
 
   if (records[index + 1]) processNext(records, index + 1)
   else {
-    const percentageMatched = (totals.matched / totals.inspected) * 100
+    const percentageMatchedDates = (totals.dateRanges.matched / totals.dateRanges.inspected) * 100
+    const percentageMatchedVolumes = (totals.volumeRanges.matched / totals.volumeRanges.inspected) * 100
     console.log('_____________')
-    console.log(`Finished inspecting ${totals.inspected} values against targets: ${percentageMatched.toFixed(1)}% matched`)
+    console.log(`Finished inspecting ${totals.volumeRanges.inspected} volume ranges against targets: ${percentageMatchedVolumes.toFixed(1)}% matched`)
+    console.log(`Finished inspecting ${totals.dateRanges.inspected} date ranges against targets: ${percentageMatchedDates.toFixed(1)}% matched`)
+
+    if (argv.failures === 'true') console.log(`Failed volumes: ${totals.volumeRanges.failures}\nFailed dates: ${totals.dateRanges.failures}`)
   }
 }
 
