@@ -60,7 +60,8 @@ const processNext = async (records, index = 0) => {
   let match = true
 
   if (dateRange && argv.only !== 'volumes') {
-    const parsed = await dateParser.parseDate(fieldtagv)
+    let parsed = await dateParser.parseDate(fieldtagv)
+    parsed = parsed[0]
     const targets = parseRangeTargets(dateRange)
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
     totals.dateRanges.inspected += 1
@@ -88,8 +89,8 @@ const processNext = async (records, index = 0) => {
     const percentageMatchedDates = (totals.dateRanges.matched / totals.dateRanges.inspected) * 100
     const percentageMatchedVolumes = (totals.volumeRanges.matched / totals.volumeRanges.inspected) * 100
     console.log('_____________')
-    console.log(`Finished inspecting ${totals.volumeRanges.inspected} volume ranges against targets: ${percentageMatchedVolumes.toFixed(1)}% matched`)
-    console.log(`Finished inspecting ${totals.dateRanges.inspected} date ranges against targets: ${percentageMatchedDates.toFixed(1)}% matched`)
+    if (argv.only !== 'dates') console.log(`Finished inspecting ${totals.volumeRanges.inspected} volume ranges against targets: ${percentageMatchedVolumes.toFixed(1)}% matched`)
+    if (argv.only !== 'volumes') console.log(`Finished inspecting ${totals.dateRanges.inspected} date ranges against targets: ${percentageMatchedDates.toFixed(1)}% matched`)
 
     if (argv.failures === 'true') console.log(`Failed volumes: ${totals.volumeRanges.failures}\nFailed dates: ${totals.dateRanges.failures}`)
   }
