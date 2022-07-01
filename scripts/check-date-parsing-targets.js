@@ -32,7 +32,7 @@ const argv = require('minimist')(process.argv.slice(2))
 
 const input = fs.readFileSync('./data/date-and-volume-parsing-targets.csv', 'utf8')
 
-const dateParser = require('../lib/dateParser-objects')
+const dateParser = require('../lib/dateParser-lambda')
 const volumeParser = require('../lib/volume-parser')
 
 const parseRangeTargets = (target, intRange = false) => {
