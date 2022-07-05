@@ -70,6 +70,7 @@ const processNext = async (records, index = 0) => {
   }
   if (volumeRange && argv.only !== 'dates') {
     let parsed = volumeParser.parseVolume(fieldtagv)
+    parsed = parsed[0]
     // If volume parsing returns single array, make it a 2D array to match targets:
     if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
     const targets = parseRangeTargets(volumeRange, true)
