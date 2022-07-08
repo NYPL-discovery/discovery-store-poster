@@ -233,7 +233,7 @@ if (argv.ids) {
     const [records, schema] = resp
     // Write the encoded event.json
     return writeEncodedEvent(records, schema)
-  })
+  }).catch((error) => `error building records or fetching schema: ${error}`)
 
 // Otherwise process given infile(s)
 } else if (infile) {
@@ -250,6 +250,6 @@ if (argv.ids) {
         .then((schema) => {
           // Write the encoded event.json
           return writeEncodedEvent(records, schema)
-        })
+        }).catch((error) => console.log('error writing encoded event,', error))
     })
 }

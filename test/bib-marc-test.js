@@ -1385,4 +1385,21 @@ describe('Bib Marc Mapping', function () {
         })
     })
   })
+
+  describe('Add Aeon URL', () => {
+    it('should add aeonURL', async () => {
+      let bib = BibSierraRecord.from(require('./data/bib-10204814.json'))
+      const statements = await bibSerializer.fromMarcJson(bib)
+      bib = new Bib(statements)
+      expect(bib.statement('nypl:aeonUrl')).to.be.a('object')
+      expect(bib.statement('nypl:aeonUrl').object_literal).to.eq('https://specialcollections.nypl.org/aeon/Aeon.dll?Action=10&Form=30&Title=Something+concerning+Nobody.&Site=SASAR&CallNumber=Arents+S+0937&ItemPlace=London,&ItemPublisher=Printed+for+Robert+Scholey,&Date=1814.&Site=SASAR')
+    })
+
+    it('should not mistake non-Aeon URLs as aeonURL', async () => {
+      let bib = BibSierraRecord.from(require('./data/bib-20549111.json'))
+      const statements = await bibSerializer.fromMarcJson(bib)
+      bib = new Bib(statements)
+      expect(bib.statement('nypl:aeonUrl')).to.be.a('undefined')
+    })
+  })
 })
