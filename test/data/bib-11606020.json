@@ -1,0 +1,559 @@
+{
+  "id": "11606020",
+  "nyplSource": "sierra-nypl",
+  "nyplType": "bib",
+  "updatedDate": "2021-11-06T00:17:35-04:00",
+  "createdDate": "2008-12-15T03:30:00-05:00",
+  "deletedDate": null,
+  "deleted": false,
+  "locations": [
+    {
+      "code": "maf",
+      "name": "SASB - Dorot Jewish Division Rm 111"
+    }
+  ],
+  "suppressed": false,
+  "lang": {
+    "code": "eng",
+    "name": "English"
+  },
+  "title": "Sefer Toldot Yeshu = The gospel according to the Jews, called Toldoth Jesu : the generations of Jesus, now first translated from the Hebrew.",
+  "author": "",
+  "materialType": {
+    "code": "a  ",
+    "value": "BOOK/TEXT"
+  },
+  "bibLevel": {
+    "code": "m",
+    "value": "MONOGRAPH"
+  },
+  "publishYear": 1823,
+  "catalogDate": "2000-10-26",
+  "country": {
+    "code": "enk",
+    "name": "England"
+  },
+  "normTitle": "sefer toldot yeshu the gospel according to the jews called toldoth jesu the generations of jesus now first translated from the hebrew",
+  "normAuthor": "",
+  "standardNumbers": [],
+  "controlNumber": "NYPX92-B3784",
+  "fixedFields": {
+    "24": {
+      "label": "Language",
+      "value": "eng",
+      "display": "English"
+    },
+    "25": {
+      "label": "Skip",
+      "value": "0",
+      "display": null
+    },
+    "26": {
+      "label": "Location",
+      "value": "maf  ",
+      "display": "SASB - Dorot Jewish Division Rm 111"
+    },
+    "27": {
+      "label": "COPIES",
+      "value": "1",
+      "display": null
+    },
+    "28": {
+      "label": "Cat. Date",
+      "value": "2000-10-26",
+      "display": null
+    },
+    "29": {
+      "label": "Bib Level",
+      "value": "m",
+      "display": "MONOGRAPH"
+    },
+    "30": {
+      "label": "Material Type",
+      "value": "a  ",
+      "display": "BOOK/TEXT"
+    },
+    "31": {
+      "label": "Bib Code 3",
+      "value": "-",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "b",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "11606020",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2008-12-15T03:30:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-11-06T00:17:35Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "16",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "89": {
+      "label": "Country",
+      "value": "enk",
+      "display": "England"
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2021-10-17T21:19:56Z",
+      "display": null
+    },
+    "107": {
+      "label": "MARC Type",
+      "value": " ",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "fieldTag": "b",
+      "marcTag": "791",
+      "ind1": "2",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Schiff Collection."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "600",
+      "ind1": "0",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Jesus Christ"
+        },
+        {
+          "tag": "v",
+          "content": "Biography"
+        },
+        {
+          "tag": "v",
+          "content": "Apocryphal and legendary literature."
+        }
+      ]
+    },
+    {
+      "fieldTag": "d",
+      "marcTag": "752",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "England"
+        },
+        {
+          "tag": "d",
+          "content": "London"
+        }
+      ]
+    },
+    {
+      "fieldTag": "l",
+      "marcTag": "035",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "(WaOLN)nyp1614675"
+        }
+      ]
+    },
+    {
+      "fieldTag": "o",
+      "marcTag": "001",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "NYPX92-B3784",
+      "subfields": null
+    },
+    {
+      "fieldTag": "p",
+      "marcTag": "260",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "London :"
+        },
+        {
+          "tag": "b",
+          "content": "R. Carlile,"
+        },
+        {
+          "tag": "c",
+          "content": "1823."
+        }
+      ]
+    },
+    {
+      "fieldTag": "q",
+      "marcTag": "852",
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "**P 10-143"
+        }
+      ]
+    },
+    {
+      "fieldTag": "r",
+      "marcTag": "300",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "vi, [10] p. ;"
+        },
+        {
+          "tag": "c",
+          "content": "23 cm."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "245",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-02"
+        },
+        {
+          "tag": "a",
+          "content": "Sefer Toldot Yeshu ="
+        },
+        {
+          "tag": "b",
+          "content": "The gospel according to the Jews, called Toldoth Jesu : the generations of Jesus, now first translated from the Hebrew."
+        }
+      ]
+    },
+    {
+      "fieldTag": "t",
+      "marcTag": "130",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-01."
+        },
+        {
+          "tag": "a",
+          "content": "Toledot Yeshu."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "880-03"
+        },
+        {
+          "tag": "a",
+          "content": "Toldot Yeshu."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Gospel according to the Jews, called Toldoth Jesu."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Toldoth Jesu."
+        }
+      ]
+    },
+    {
+      "fieldTag": "u",
+      "marcTag": "740",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "Generations of Jesus."
+        }
+      ]
+    },
+    {
+      "fieldTag": "v",
+      "marcTag": "959",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": ".b26387797"
+        },
+        {
+          "tag": "b",
+          "content": "07-18-08"
+        },
+        {
+          "tag": "c",
+          "content": "09-24-92"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "003",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "CStRLIN",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "005",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "20000629181722.0",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "008",
+      "ind1": " ",
+      "ind2": " ",
+      "content": "920623s1823    enk           00  0beng dcam a ",
+      "subfields": null
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "040",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "NN"
+        },
+        {
+          "tag": "c",
+          "content": "NN"
+        },
+        {
+          "tag": "d",
+          "content": "WaOLN"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "041",
+      "ind1": "1",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "eng"
+        },
+        {
+          "tag": "h",
+          "content": "heb"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "066",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "c",
+          "content": "(2"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "130-01/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "תולדות ישו."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "1",
+      "ind2": "0",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "245-02/(2"
+        },
+        {
+          "tag": "a",
+          "content": "ספר תולדות ישו ="
+        },
+        {
+          "tag": "b",
+          "content": "The gospel according to the Jews, called Toldoth Jesu : the generations of Jesus, now first translated from the Hebrew."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "880",
+      "ind1": "0",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "6",
+          "content": "740-03/(2/r"
+        },
+        {
+          "tag": "a",
+          "content": "תולדות ישו."
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "997",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "hj"
+        },
+        {
+          "tag": "b",
+          "content": "10-26-00"
+        },
+        {
+          "tag": "c",
+          "content": "m"
+        },
+        {
+          "tag": "d",
+          "content": "a"
+        },
+        {
+          "tag": "e",
+          "content": "-"
+        },
+        {
+          "tag": "f",
+          "content": "eng"
+        },
+        {
+          "tag": "g",
+          "content": "enk"
+        },
+        {
+          "tag": "h",
+          "content": "0"
+        }
+      ]
+    },
+    {
+      "fieldTag": "y",
+      "marcTag": "910",
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "RL"
+        }
+      ]
+    },
+    {
+      "fieldTag": "_",
+      "marcTag": null,
+      "ind1": null,
+      "ind2": null,
+      "content": "00000cam  2200325 a 4500",
+      "subfields": null
+    }
+  ]
+}
