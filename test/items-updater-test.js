@@ -3,8 +3,10 @@
 const sinon = require('sinon')
 
 const assert = require('assert')
+const BibsUpdater = require('./../lib/bibs-updater')
 const ItemsUpdater = require('./../lib/items-updater')
 const db = require('./../lib/db')
+const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 
 describe('Items Updater', function () {
@@ -70,6 +72,47 @@ describe('Items Updater', function () {
               assert.strictEqual(bibIdsToReindex[0], 'cb4194299')
             })
         })
+    })
+  })
+
+  describe('item fromMarcJson', function () {
+    it('should use bib data as fallback when necessary', function () {
+      const bibData = require('./data/bib-15083136.json')
+      const bib = new BibSierraRecord(bibData)
+      const statementExtractors = [
+        (new BibsUpdater()).extractStatements(bib)
+      ].concat(bibData.items.map((item) => (new ItemsUpdater()).extractStatements(new ItemSierraRecord(item), bib)))
+
+      return Promise.all(statementExtractors).then((statements) => {
+        const flatStatements = statements.reduce((acc, el) => acc.concat(el), [])
+        const nyplShelfMarkStatements = flatStatements
+          .filter((statement) => statement.predicate === 'nypl:shelfMark')
+          .map((statement) => statement.object_literal)
+          .sort()
+
+        console.log('nyplShelfMarkStatements: ', nyplShelfMarkStatements)
+        const expectedShelMarkStatements = [
+          'QKG (Mosquito news)',
+          'QKG (Mosquito news) v. 1-2 (Dec. 1942)',
+          'QKG (Mosquito news) v. 12-13 (1952-53)',
+          'QKG (Mosquito news) v. 14-15 (1954-55)',
+          'QKG (Mosquito news) v. 16-17 (1956-57)',
+          'QKG (Mosquito news) v. 18-19 (1958-59)',
+          'QKG (Mosquito news) v. 20-21 (1960-61)',
+          'QKG (Mosquito news) v. 22-23 (1962-63)',
+          'QKG (Mosquito news) v. 24-25 (1964-65)',
+          'QKG (Mosquito news) v. 26 (1966)',
+          'QKG (Mosquito news) v. 27 (1967)',
+          'QKG (Mosquito news) v. 28 (1968)',
+          'QKG (Mosquito news) v. 29 (1969)',
+          'QKG (Mosquito news) v. 3-4 (June 1943-Dec. 1944)',
+          'QKG (Mosquito news) v. 30 (1970)',
+          'QKG (Mosquito news) v. 31 (1971)',
+          'QKG (Mosquito news) v. 5-6 (1945-46)',
+          'QKG (Mosquito news) v. 7-9 (1947-49)'
+        ]
+        assert.deepStrictEqual(nyplShelfMarkStatements, expectedShelMarkStatements)
+      })
     })
   })
 })
