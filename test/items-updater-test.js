@@ -90,7 +90,6 @@ describe('Items Updater', function () {
           .map((statement) => statement.object_literal)
           .sort()
 
-        console.log('nyplShelfMarkStatements: ', nyplShelfMarkStatements)
         const expectedShelMarkStatements = [
           'QKG (Mosquito news)',
           'QKG (Mosquito news) v. 1-2 (Dec. 1942)',
