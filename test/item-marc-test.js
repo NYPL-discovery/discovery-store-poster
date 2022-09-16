@@ -348,6 +348,17 @@ describe('Item Marc Mapping', function () {
     })
   })
 
+  describe('Volume Parsing', () => {
+    it('should add parsed volume values from field tag v', async () => {
+      const item = ItemSierraRecord.from(require('./data/item-10781594.json'))
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          expect(item.literal('nypl:volumeRange')).to.deep.equal([2, 2])
+        })
+    })
+  })
+
   describe('Harvard Integration', function () {
     it('should serialize HL HD record', function () {
       var item = ItemSierraRecord.from(require('./data/item-hl-231732642680003941.json'))
