@@ -2,9 +2,12 @@
 
 const assert = require('assert')
 const expect = require('chai').expect
+
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
+const { parseDatesAndCache } = require('../lib/date-parse')
+
 let itemSerializer
 
 /**
@@ -355,6 +358,18 @@ describe('Item Marc Mapping', function () {
         .then((statements) => new Item(statements))
         .then((item) => {
           expect(item.literal('nypl:volumeRange')).to.deep.equal([2, 2])
+        })
+    })
+  })
+
+  describe.only('Date Parsing', () => {
+    it('should add parsed dates from field tag v', async () => {
+      const item = ItemSierraRecord.from(require('./data/item-with-fieldtagv-date.json'))
+      await parseDatesAndCache([{ items: [item] }])
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          expect(item.literal('nypl:dateRange')).to.deep.equal([['1992-02', '1992-03']])
         })
     })
   })
