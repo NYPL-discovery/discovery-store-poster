@@ -2,11 +2,12 @@
 
 const assert = require('assert')
 const expect = require('chai').expect
+const sinon = require('sinon')
 
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
-const { parseDatesAndCache } = require('../lib/date-parse')
+const dateParse = require('../lib/date-parse')
 
 let itemSerializer
 
@@ -366,7 +367,7 @@ describe('Item Marc Mapping', function () {
     let item
     before(async () => {
       item = ItemSierraRecord.from(require('./data/item-with-fieldtagv-date.json'))
-      await parseDatesAndCache([{ items: [item] }])
+      sinon.stub(dateParse, 'checkCache').callsFake(() => [['1992-02', '1992-03']])
     })
     it('should add parsed dates from field tag v', async () => {
       return itemSerializer.fromMarcJson(item)
