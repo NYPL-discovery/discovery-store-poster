@@ -1,0 +1,46 @@
+[
+  {
+    "items": [
+      {
+        "varFields": [
+          {
+            "fieldTag": "v",
+            "marcTag": null,
+            "ind1": null,
+            "ind2": null,
+            "content": "v. 36-37 (Nov. 1965-Oct. 1967)",
+            "subfields": null
+          }
+        ]
+      },
+      {
+        "varFields": [
+          {
+            "fieldTag": "v",
+            "marcTag": null,
+            "ind1": null,
+            "ind2": null,
+            "content": "1992:Feb.-Mar.",
+            "subfields": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "varFields": [
+          {
+            "fieldTag": "v",
+            "marcTag": null,
+            "ind1": null,
+            "ind2": null,
+            "content": "v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)",
+            "subfields": null
+          }
+        ]
+      }
+    ]
+  }
+]
