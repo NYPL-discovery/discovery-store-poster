@@ -362,10 +362,13 @@ describe('Item Marc Mapping', function () {
     })
   })
 
-  describe.only('Date Parsing', () => {
-    it('should add parsed dates from field tag v', async () => {
-      const item = ItemSierraRecord.from(require('./data/item-with-fieldtagv-date.json'))
+  describe('Date Parsing', () => {
+    let item
+    before(async () => {
+      item = ItemSierraRecord.from(require('./data/item-with-fieldtagv-date.json'))
       await parseDatesAndCache([{ items: [item] }])
+    })
+    it('should add parsed dates from field tag v', async () => {
       return itemSerializer.fromMarcJson(item)
         .then((statements) => new Item(statements))
         .then((item) => {
