@@ -32,12 +32,12 @@ const argv = require('minimist')(process.argv.slice(2))
 
 const input = fs.readFileSync('./data/date-and-volume-parsing-targets.csv', 'utf8')
 
+const { private: { _parseDates } } = require('../lib/date-parse')
 const volumeParser = require('../lib/volume-parser')
 
 const parseRangeTargets = (target, intRange = false) => {
   return target
     .match(/(?<=\[)([^\]]+)(?=\])/g)
-    .filter(range => range)
     .map((range) => range.split(/, ?/))
     .map((range) => {
       return intRange ? range.map((v) => parseInt(v)) : range
@@ -49,33 +49,45 @@ const totals = {
     inspected: 0,
     matched: 0,
     failures: []
-  }
+  },
+  dateRanges: { inspected: 0, matched: 0, failures: [] }
 }
 
 const processNext = async (records, index = 0) => {
-  const { fieldtagv, volumeRange } = records[index]
+  const { fieldtagv, volumeRange, dateRange } = records[index]
   console.log(`${(argv.index || 0) + index}. Parsing: "${fieldtagv}"`)
 
   let match = true
 
-  let parsed = volumeParser.parseVolume(fieldtagv)
-  // If volume parsing returns single array, make it a 2D array to match targets:
-  if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
-  let targets
-  if (volumeRange) {
-    targets = parseRangeTargets(volumeRange, true)
+  if (dateRange && argv.only !== 'volumes') {
+    const parsed = await _parseDates(fieldtagv)
+    const targets = parseRangeTargets(dateRange)
+    match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
+    totals.dateRanges.inspected += 1
+    if (match) totals.dateRanges.matched += 1
+    else totals.dateRanges.failures.push(`\n${fieldtagv}`)
+  }
+  if (volumeRange && argv.only !== 'dates') {
+    let parsed = volumeParser.parseVolume(fieldtagv)
+    parsed = parsed[0]
+    // If volume parsing returns single array, make it a 2D array to match targets:
+    if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
+    const targets = parseRangeTargets(volumeRange, true)
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Volume' })
     totals.volumeRanges.inspected += 1
     if (match) totals.volumeRanges.matched += 1
     else totals.volumeRanges.failures.push(`\n${fieldtagv}`)
   }
+
   if (records[index + 1]) processNext(records, index + 1)
   else {
+    const percentageMatchedDates = (totals.dateRanges.matched / totals.dateRanges.inspected) * 100
     const percentageMatchedVolumes = (totals.volumeRanges.matched / totals.volumeRanges.inspected) * 100
     console.log('_____________')
-    console.log(`Finished inspecting ${totals.volumeRanges.inspected} volume ranges against targets: ${percentageMatchedVolumes.toFixed(1)}% matched`)
+    if (argv.only !== 'dates') console.log(`Finished inspecting ${totals.volumeRanges.inspected} volume ranges against targets: ${percentageMatchedVolumes.toFixed(1)}% matched`)
+    if (argv.only !== 'volumes') console.log(`Finished inspecting ${totals.dateRanges.inspected} date ranges against targets: ${percentageMatchedDates.toFixed(1)}% matched`)
 
-    if (argv.failures === 'true') console.log(`Failed volumes: ${totals.volumeRanges.failures}\n`)
+    if (argv.failures === 'true') console.log(`Failed volumes: ${totals.volumeRanges.failures}\nFailed dates: ${totals.dateRanges.failures}`)
   }
 }
 
