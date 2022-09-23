@@ -76,4 +76,18 @@ describe('SierraRecord', function () {
       expect(title[0]).to.eq('Niwtʻer azgayin patmutʻian hamar Ashkhatasirutʻiamb Galust Shermazaniani.')
     })
   })
+
+  describe('parallel', function () {
+    it('extracts correct text direction when record has multiple parallels with different text directions', function () {
+      const record = new SierraRecord(require('./data/bib-11606020.json'))
+
+      const parallelTitle = record.parallel('245', ['a', 'b'])
+      expect(parallelTitle).to.be.a('array')
+      // This asserts that there is no leading '\u200F' at the start of the
+      // title property, confirming a bug fix related to this record, where
+      // the extracted 'rtl' text direction of one 880 was incorrectly applied
+      // to a different 880 that should have been tagged 'ltr'
+      expect(parallelTitle[0]).to.eq('ספר תולדות ישו = The gospel according to the Jews, called Toldoth Jesu : the generations of Jesus, now first translated from the Hebrew.')
+    })
+  })
 })
