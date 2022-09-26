@@ -32,7 +32,7 @@ const argv = require('minimist')(process.argv.slice(2))
 
 const input = fs.readFileSync('./data/date-and-volume-parsing-targets.csv', 'utf8')
 
-const dateParser = require('../lib/dateParser-lambda')
+const { private: { _parseDates } } = require('../lib/date-parse')
 const volumeParser = require('../lib/volume-parser')
 
 const parseRangeTargets = (target, intRange = false) => {
@@ -60,8 +60,7 @@ const processNext = async (records, index = 0) => {
   let match = true
 
   if (dateRange && argv.only !== 'volumes') {
-    let parsed = await dateParser.parseDate(fieldtagv)
-    parsed = parsed[0]
+    const [parsed] = await _parseDates(fieldtagv)
     const targets = parseRangeTargets(dateRange)
     match = checkParsedAgainstTargets(parsed, targets, { label: 'Date' })
     totals.dateRanges.inspected += 1
@@ -70,7 +69,6 @@ const processNext = async (records, index = 0) => {
   }
   if (volumeRange && argv.only !== 'dates') {
     let parsed = volumeParser.parseVolume(fieldtagv)
-    parsed = parsed[0]
     // If volume parsing returns single array, make it a 2D array to match targets:
     if (parsed[0] && !Array.isArray(parsed[0])) parsed = [parsed]
     const targets = parseRangeTargets(volumeRange, true)
@@ -79,11 +77,6 @@ const processNext = async (records, index = 0) => {
     if (match) totals.volumeRanges.matched += 1
     else totals.volumeRanges.failures.push(`\n${fieldtagv}`)
   }
-
-  // if (dateRange || volumeRange) {
-  //   totals.inspected += 1
-  //   if (overallMatch) totals.matched += 1
-  // }
 
   if (records[index + 1]) processNext(records, index + 1)
   else {

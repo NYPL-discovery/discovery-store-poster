@@ -2,9 +2,13 @@
 
 const assert = require('assert')
 const expect = require('chai').expect
+const sinon = require('sinon')
+
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
+const dateParse = require('../lib/date-parse')
+
 let itemSerializer
 
 /**
@@ -344,6 +348,32 @@ describe('Item Marc Mapping', function () {
           assert.strictEqual(item.literal('bf:physicalLocation'), '*R-RMRR PR451 .E553 2015')
           assert.strictEqual(item.literal('bf:enumerationAndChronology'), 'v. 3')
           assert.strictEqual(item.objectId('nypl:bnum'), 'urn:bnum:b20857278')
+        })
+    })
+  })
+
+  describe('Volume Parsing', () => {
+    it('should add parsed volume values from field tag v', async () => {
+      const item = ItemSierraRecord.from(require('./data/item-10781594.json'))
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          expect(item.literal('nypl:volumeRange')).to.deep.equal([2, 2])
+        })
+    })
+  })
+
+  describe('Date Parsing', () => {
+    let item
+    before(async () => {
+      item = ItemSierraRecord.from(require('./data/item-with-fieldtagv-date.json'))
+      sinon.stub(dateParse, 'checkCache').callsFake(() => [['1992-02', '1992-03']])
+    })
+    it('should add parsed dates from field tag v', async () => {
+      return itemSerializer.fromMarcJson(item)
+        .then((statements) => new Item(statements))
+        .then((item) => {
+          expect(item.literal('nypl:dateRange')).to.deep.equal([['1992-02', '1992-03']])
         })
     })
   })
