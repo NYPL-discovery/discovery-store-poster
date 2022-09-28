@@ -1,0 +1,337 @@
+ {
+    "nyplSource": "sierra-nypl",
+    "bibIds": [
+      "15968272"
+    ],
+    "id": "15379839",
+    "nyplType": "item",
+    "updatedDate": "2022-09-12T08:34:29-04:00",
+    "createdDate": "2009-02-10T11:14:20-05:00",
+    "deletedDate": null,
+    "deleted": false,
+    "location": {
+      "code": "rc2ma",
+      "name": "OFFSITE - Request in Advance"
+    },
+    "status": {
+      "code": "-",
+      "display": "AVAILABLE",
+      "duedate": "2022-09-26T08:00:00+00:00"
+    },
+    "barcode": "33433064280419",
+    "callNumber": "JFE 04-15609",
+    "itemType": null,
+    "fixedFields": {
+      "57": {
+        "label": "BIB HOLD",
+        "value": "false",
+        "display": null
+      },
+      "58": {
+        "label": "Copy No.",
+        "value": "1",
+        "display": null
+      },
+      "59": {
+        "label": "Item Code 1",
+        "value": "0",
+        "display": null
+      },
+      "60": {
+        "label": "Item Code 2",
+        "value": "-",
+        "display": null
+      },
+      "61": {
+        "label": "Item Type",
+        "value": "55",
+        "display": "book, limited circ, MaRLI"
+      },
+      "62": {
+        "label": "Price",
+        "value": "0.000000",
+        "display": null
+      },
+      "63": {
+        "label": "Checkout Date",
+        "value": "2022-09-12T08:34:27Z",
+        "display": null
+      },
+      "64": {
+        "label": "Checkout Location",
+        "value": "814",
+        "display": null
+      },
+      "65": {
+        "label": "Due Date",
+        "value": "2022-09-26T08:00:00Z",
+        "display": null
+      },
+      "66": {
+        "label": "Patron No.",
+        "value": "7588839",
+        "display": null
+      },
+      "69": {
+        "label": "Inventory Date",
+        "value": "2014-06-01T08:00:00Z",
+        "display": null
+      },
+      "70": {
+        "label": "Checkin Location",
+        "value": "0",
+        "display": null
+      },
+      "71": {
+        "label": "No. of Renewals",
+        "value": "0",
+        "display": null
+      },
+      "72": {
+        "label": "No. of Overdues",
+        "value": "0",
+        "display": null
+      },
+      "74": {
+        "label": "Item Use 3",
+        "value": "0",
+        "display": null
+      },
+      "76": {
+        "label": "Total Checkouts",
+        "value": "1",
+        "display": null
+      },
+      "77": {
+        "label": "Total Renewals",
+        "value": "0",
+        "display": null
+      },
+      "79": {
+        "label": "Location",
+        "value": "rc2ma",
+        "display": "OFFSITE - Request in Advance"
+      },
+      "80": {
+        "label": "Record Type",
+        "value": "i",
+        "display": null
+      },
+      "81": {
+        "label": "Record Number",
+        "value": "15379839",
+        "display": null
+      },
+      "83": {
+        "label": "Created Date",
+        "value": "2009-02-10T11:14:20Z",
+        "display": null
+      },
+      "84": {
+        "label": "Updated Date",
+        "value": "2022-09-12T08:34:29Z",
+        "display": null
+      },
+      "85": {
+        "label": "No. of Revisions",
+        "value": "14",
+        "display": null
+      },
+      "86": {
+        "label": "Agency",
+        "value": "1",
+        "display": null
+      },
+      "87": {
+        "label": "Loanrule",
+        "value": "104",
+        "display": null
+      },
+      "88": {
+        "label": "Status",
+        "value": "-",
+        "display": "AVAILABLE"
+      },
+      "93": {
+        "label": "Inhouse Use",
+        "value": "0",
+        "display": null
+      },
+      "94": {
+        "label": "Copy Use",
+        "value": "0",
+        "display": null
+      },
+      "97": {
+        "label": "Item Message",
+        "value": "-",
+        "display": null
+      },
+      "98": {
+        "label": "PDATE",
+        "value": "2014-08-05T20:20:53Z",
+        "display": null
+      },
+      "108": {
+        "label": "OPAC Message",
+        "value": "2",
+        "display": "ADV REQUEST"
+      },
+      "109": {
+        "label": "Year-to-Date Circ",
+        "value": "1",
+        "display": null
+      },
+      "110": {
+        "label": "Last Year Circ",
+        "value": "0",
+        "display": null
+      },
+      "127": {
+        "label": "Item Agency",
+        "value": "214",
+        "display": "ReCAP (NA) - NYPL Standard"
+      },
+      "161": {
+        "label": "VI Central",
+        "value": "0",
+        "display": null
+      },
+      "162": {
+        "label": "IR Dist Learn Same Site",
+        "value": "0",
+        "display": null
+      },
+      "264": {
+        "label": "Holdings Item Tag",
+        "value": "6",
+        "display": null
+      },
+      "265": {
+        "label": "Inherit Location",
+        "value": "false",
+        "display": null
+      },
+      "306": {
+        "label": "Sticky Status",
+        "value": "",
+        "display": null
+      }
+    },
+    "varFields": [
+      {
+        "fieldTag": "a",
+        "marcTag": "949",
+        "ind1": " ",
+        "ind2": " ",
+        "content": null,
+        "subfields": [
+          {
+            "tag": "a",
+            "content": "JFE 04-15609"
+          },
+          {
+            "tag": "c",
+            "content": "33433064280419"
+          },
+          {
+            "tag": "h",
+            "content": "1"
+          },
+          {
+            "tag": "i",
+            "content": "0"
+          },
+          {
+            "tag": "j",
+            "content": "-"
+          },
+          {
+            "tag": "k",
+            "content": "2"
+          },
+          {
+            "tag": "l",
+            "content": "$0.00"
+          },
+          {
+            "tag": "m",
+            "content": "0"
+          },
+          {
+            "tag": "n",
+            "content": "0"
+          },
+          {
+            "tag": "o",
+            "content": "0"
+          },
+          {
+            "tag": "p",
+            "content": "hg   "
+          },
+          {
+            "tag": "q",
+            "content": "-"
+          },
+          {
+            "tag": "r",
+            "content": "0"
+          },
+          {
+            "tag": "s",
+            "content": "0"
+          },
+          {
+            "tag": "t",
+            "content": "-"
+          },
+          {
+            "tag": "u",
+            "content": "-"
+          },
+          {
+            "tag": "v",
+            "content": "0"
+          },
+          {
+            "tag": "w",
+            "content": "0"
+          },
+          {
+            "tag": "x",
+            "content": ".i61793553"
+          },
+          {
+            "tag": "y",
+            "content": "12-14-04"
+          },
+          {
+            "tag": "z",
+            "content": "12-14-04"
+          }
+        ]
+      },
+      {
+        "fieldTag": "b",
+        "marcTag": null,
+        "ind1": null,
+        "ind2": null,
+        "content": "33433064280419",
+        "subfields": null
+      },
+      {
+        "fieldTag": "c",
+        "marcTag": "852",
+        "ind1": "8",
+        "ind2": " ",
+        "content": null,
+        "subfields": [
+          {
+            "tag": "h",
+            "content": "JFE 04-15609"
+          }
+        ]
+      }
+    ]
+}

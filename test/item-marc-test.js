@@ -473,4 +473,20 @@ describe('Item Marc Mapping', function () {
       expect(item.statement('nypl:aeonSiteCode').object_literal).to.eq('SCHRB')
     })
   })
+
+  describe('Due date', () => {
+    it('should not add dueDate when not checked out', async () => {
+      let item = ItemSierraRecord.from(require('./data/item-23971415.json'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(item.literal('nypl:dueDate')).to.be.a('undefined')
+    })
+
+    it('should add dueDate when one is found', async () => {
+      let item = ItemSierraRecord.from(require('./data/item-15379839.json'))
+      const statements = await itemSerializer.fromMarcJson(item)
+      item = new Item(statements)
+      expect(item.literal('nypl:dueDate')).to.be.eq('2022-09-26')
+    })
+  })
 })
