@@ -1345,9 +1345,13 @@ describe('Bib Marc Mapping', function () {
           expect(oclcStatements[0].object_id).to.eq('14083629')
           expect(oclcStatements[0].source_record_path).to.eq('991 $y')
 
+          expect(oclcStatements[1]).to.be.a('object')
+          expect(oclcStatements[1].object_id).to.eq('NYPG86-S4673')
+          expect(oclcStatements[1].source_record_path).to.eq('001')
+
           // There also a 035 $a in this record with (WaOLN)nyp031187
-          // Make sure above is the only identified OCLC number
-          expect(oclcStatements).to.have.lengthOf(1)
+          // Make sure above are the only identified OCLC numbers
+          expect(oclcStatements).to.have.lengthOf(2)
         })
     })
 
@@ -1359,10 +1363,15 @@ describe('Bib Marc Mapping', function () {
           const oclcStatements = bib.statements('dcterms:identifier')
             .filter((statement) => statement.object_type === 'nypl:Oclc')
 
-          expect(oclcStatements).to.have.lengthOf(1)
           expect(oclcStatements[0]).to.be.a('object')
           expect(oclcStatements[0].object_id).to.eq('901573922')
           expect(oclcStatements[0].source_record_path).to.eq('035 $a')
+
+          expect(oclcStatements[1]).to.be.a('object')
+          expect(oclcStatements[1].object_id).to.eq('901573922')
+          expect(oclcStatements[1].source_record_path).to.eq('001')
+
+          expect(oclcStatements).to.have.lengthOf(2)
         })
     })
 
@@ -1375,13 +1384,19 @@ describe('Bib Marc Mapping', function () {
             .filter((statement) => statement.object_type === 'nypl:Oclc')
 
           // This bib has 6 035 varfields, 3 of which have "(OCoLC)" prefixed values. But in one of those, there's no actual identifier (i.e. the content tag is just "(OCoLC)". So we should omit that one.
-          expect(oclcStatements).to.have.lengthOf(2)
           expect(oclcStatements[0]).to.be.a('object')
           expect(oclcStatements[0].object_id).to.eq('on1022275496')
           expect(oclcStatements[0].source_record_path).to.eq('035 $a')
+
           expect(oclcStatements[1]).to.be.a('object')
           expect(oclcStatements[1].object_id).to.eq('1022275496')
           expect(oclcStatements[1].source_record_path).to.eq('035 $a')
+
+          expect(oclcStatements[2]).to.be.a('object')
+          expect(oclcStatements[2].object_id).to.eq('SCSB-8999933')
+          expect(oclcStatements[2].source_record_path).to.eq('001')
+
+          expect(oclcStatements).to.have.lengthOf(3)
         })
     })
   })

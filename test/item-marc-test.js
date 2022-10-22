@@ -5,6 +5,7 @@ const expect = require('chai').expect
 const sinon = require('sinon')
 
 const ItemSierraRecord = require('./../lib/models/item-sierra-record')
+const BibSierraRecord = require('./../lib/models/bib-sierra-record')
 const Item = require('./../lib/models/item')
 const buildMapper = require('./../lib/field-mapper')
 const dateParse = require('../lib/date-parse')
@@ -37,15 +38,20 @@ function changeSubField (object, marcTag, subfieldTag, newContent) {
 describe('Item Marc Mapping', function () {
   this.timeout(1000)
 
+  let genericBib
+
   before(async () => {
     itemSerializer = require('./../lib/serializers/item')
+    // Ready a random bib for passing into the item serializer for the few
+    // times that the item serializer needs to inspect the parent bib:
+    genericBib = BibSierraRecord.from(require('./data/bib-10001936.json'))
   })
 
   describe('Parse', function () {
     it('parses deleted as suppressed', function () {
       const item = ItemSierraRecord.from(require('./data/item-10781594-deleted.json'))
       assert(item.deleted, true)
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.literal('nypl:suppressed'), true)
@@ -71,7 +77,7 @@ describe('Item Marc Mapping', function () {
     it('should extract certain basic item props', function () {
       var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -93,7 +99,7 @@ describe('Item Marc Mapping', function () {
     var item = ItemSierraRecord.from(require('./data/item-10008083.json'))
 
     it('should extract opac message', function () {
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -111,7 +117,7 @@ describe('Item Marc Mapping', function () {
     it('should identify branch item', function () {
       var item = ItemSierraRecord.from(require('./data/item-23971415.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -130,7 +136,7 @@ describe('Item Marc Mapping', function () {
     it('should identify research item with specific itype > 100', function () {
       var item = ItemSierraRecord.from(require('./data/item-23937039.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -150,7 +156,7 @@ describe('Item Marc Mapping', function () {
     it('should identify an NYPL item that is requestable', function () {
       var item = ItemSierraRecord.from(require('./data/item-10008083.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('nypl:holdingLocation'), 'loc:rcma2')
@@ -164,7 +170,7 @@ describe('Item Marc Mapping', function () {
     it('should identify an NYPL item that is NOT requestable because checked out', function () {
       var item = ItemSierraRecord.from(require('./data/item-10781594.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('nypl:holdingLocation'), 'loc:rc2sl')
@@ -179,7 +185,7 @@ describe('Item Marc Mapping', function () {
       var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
 
       // Confirm object is available and requestable:
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('bf:status'), 'status:a')
@@ -195,7 +201,7 @@ describe('Item Marc Mapping', function () {
       item = ItemSierraRecord.from(item)
 
       // Confirm it's now not available nor requestable
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('bf:status'), 'status:na')
@@ -208,7 +214,7 @@ describe('Item Marc Mapping', function () {
     it('should assign correct PUL fields', function () {
       var item = ItemSierraRecord.from(require('./data/item-pul-189241.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           // TODO need to check a whole bunch more fields...
@@ -230,7 +236,7 @@ describe('Item Marc Mapping', function () {
     it('should assign correct carrier, media types based on item type', function () {
       var item = ItemSierraRecord.from(require('./data/item-10003973.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -252,7 +258,7 @@ describe('Item Marc Mapping', function () {
         .filter((f) => f.marcTag === '876')
         .forEach((f) => f.subFields.push({ tag: 'x', content: 'Private' }))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -275,7 +281,7 @@ describe('Item Marc Mapping', function () {
           })
         })
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -296,7 +302,7 @@ describe('Item Marc Mapping', function () {
         })
       item = ItemSierraRecord.from(item)
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -319,7 +325,7 @@ describe('Item Marc Mapping', function () {
           })
         item = ItemSierraRecord.from(item)
 
-        return itemSerializer.fromMarcJson(item)
+        return itemSerializer.fromMarcJson(item, null, genericBib)
           .then((statements) => new Item(statements))
           .then((item) => {
             assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -337,7 +343,7 @@ describe('Item Marc Mapping', function () {
     it('should add call number prefix and suffixes', function () {
       const item = ItemSierraRecord.from(require('./data/item-33770493.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           assert.strictEqual(item.objectId('rdfs:type'), 'bf:Item')
@@ -355,7 +361,7 @@ describe('Item Marc Mapping', function () {
   describe('Volume Parsing', () => {
     it('should add parsed volume values from field tag v', async () => {
       const item = ItemSierraRecord.from(require('./data/item-10781594.json'))
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           expect(item.literal('nypl:volumeRange')).to.deep.equal([2, 2])
@@ -370,10 +376,10 @@ describe('Item Marc Mapping', function () {
       sinon.stub(dateParse, 'checkCache').callsFake(() => [['1992-02', '1992-03']])
     })
     it('should add parsed dates from field tag v', async () => {
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
-          expect(item.literal('nypl:dateRange')).to.deep.equal([['1992-02', '1992-03']])
+          expect(item.literal('nypl:dateRange')).to.deep.equal(['1992-02', '1992-03'])
         })
     })
   })
@@ -382,7 +388,7 @@ describe('Item Marc Mapping', function () {
     it('should serialize HL HD record', function () {
       var item = ItemSierraRecord.from(require('./data/item-hl-231732642680003941.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           const statements = item.statements()
@@ -407,7 +413,7 @@ describe('Item Marc Mapping', function () {
     it('should serialize HL ReCAP record', function () {
       var item = ItemSierraRecord.from(require('./data/item-hl-232166335350003941.json'))
 
-      return itemSerializer.fromMarcJson(item)
+      return itemSerializer.fromMarcJson(item, null, genericBib)
         .then((statements) => new Item(statements))
         .then((item) => {
           const statements = item.statements()
@@ -431,7 +437,7 @@ describe('Item Marc Mapping', function () {
   describe('Add Recap Code', () => {
     it('should add recap codes for nypl items - serial', async () => {
       let item = ItemSierraRecord.from(require('./data/item-10781594.json'))
-      const statements = await itemSerializer.fromMarcJson(item)
+      const statements = await itemSerializer.fromMarcJson(item, null, genericBib)
       item = new Item(statements)
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
@@ -440,7 +446,7 @@ describe('Item Marc Mapping', function () {
 
     it('should add recap codes for nypl item - monograph', async () => {
       let item = ItemSierraRecord.from(require('./data/item-10008083.json'))
-      const statements = await itemSerializer.fromMarcJson(item)
+      const statements = await itemSerializer.fromMarcJson(item, null, genericBib)
       item = new Item(statements)
       expect(item.statements('nypl:recapCustomerCode')).to.be.a('array')
       expect(item.statements('nypl:recapCustomerCode')[0]).to.be.a('object')
