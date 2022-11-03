@@ -1,6 +1,6 @@
 /* global describe it */
 const expect = require('chai').expect
-const { parseDatesAndCache, checkCache, private: { _parseDates } } = require('../lib/date-parse')
+const { parseDatesAndCache, checkCache, private: { _parseDates, _has4DigitYear } } = require('../lib/date-parse')
 const serialBibs = require('./data/date-parse-bibs/v-bibs.json')
 const mixedBibs = require('./data/date-parse-bibs/mixed-bibs.json')
 
@@ -123,6 +123,23 @@ describe('dateParser Lambda', () => {
       const fieldtagv = 'Mar. 1969-Winter 1970'
       const [parsed] = await _parseDates(fieldtagv)
       expect(parsed).to.deep.equal([['1969-03-01', '1970-03-20']])
+    })
+  })
+
+  describe.only('_has4DigitYear', () => {
+    it('should identify string with a 4 digit year', () => {
+      expect(_has4DigitYear('some stuff 1998 other stuff')).to.eq(true)
+      expect(_has4DigitYear('1998 other stuff')).to.eq(true)
+      expect(_has4DigitYear('some stuff 1998')).to.eq(true)
+      expect(_has4DigitYear('1998')).to.eq(true)
+      expect(_has4DigitYear('1998-1999')).to.eq(true)
+      expect(_has4DigitYear('-1999')).to.eq(true)
+      expect(_has4DigitYear('2022.10')).to.eq(true)
+    })
+
+    it('should fail string with a number that is not 4 digits', () => {
+      expect(_has4DigitYear('some stuff 123')).to.eq(false)
+      expect(_has4DigitYear('some stuff 12345')).to.eq(false)
     })
   })
 })
