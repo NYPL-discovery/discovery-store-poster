@@ -126,7 +126,7 @@ describe('dateParser Lambda', () => {
     })
   })
 
-  describe.only('_has4DigitYear', () => {
+  describe('_has4DigitYear', () => {
     it('should identify string with a 4 digit year', () => {
       expect(_has4DigitYear('some stuff 1998 other stuff')).to.eq(true)
       expect(_has4DigitYear('1998 other stuff')).to.eq(true)
