@@ -100,6 +100,14 @@ describe('Holding Marc Mapping', () => {
           assert.strictEqual(checkInBox2.literal('bf:part'), 2)
         })
     })
+    it('should create item statements for each checkin card box', () => {
+      const holding = HoldingSierraRecord.from(require('./data/holding-1089484.json'))
+      return holdingSerializer.fromMarcJson(holding)
+        .then((statements) => new Holding(statements))
+        .then((item) => {
+
+        })
+    })
 
     it('should create multiple note statements', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1066022.json'))
