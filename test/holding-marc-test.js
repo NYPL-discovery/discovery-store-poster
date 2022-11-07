@@ -105,8 +105,18 @@ describe('Holding Marc Mapping', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1089484.json'))
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => {
+          // assert that both checkin cards got processed
           assert(statements.some((statement) => statement.subject_id.includes('-0')))
           assert(statements.some((statement) => statement.subject_id.includes('-1')))
+          // assert that all statements were added
+          assert(statements.some((statement) => statement.predicate.includes('volumeRange')))
+          assert(statements.some((statement) => statement.predicate.includes('volumeRaw')))
+          assert(statements.some((statement) => statement.predicate.includes('dateRange')))
+          assert(statements.some((statement) => statement.predicate.includes('status')))
+          assert(statements.some((statement) => statement.predicate.includes('shelfMark')))
+          assert(statements.some((statement) => statement.predicate.includes('format')))
+          assert(statements.some((statement) => statement.predicate.includes('accessMessage')))
+          assert(statements.some((statement) => statement.predicate.includes('enumerationAndChronology')))
         })
     })
 
