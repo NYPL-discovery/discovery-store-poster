@@ -1,5 +1,6 @@
 /* global describe it */
 
+const expect = require('chai').expect
 const assert = require('assert')
 const holdingSerializer = require('./../lib/serializers/holding')
 const HoldingSierraRecord = require('./../lib/models/holding-sierra-record')
@@ -111,7 +112,11 @@ describe('Holding Marc Mapping', () => {
           // assert that all statements were added
           assert(statements.some((statement) => statement.predicate.includes('volumeRange')))
           assert(statements.some((statement) => statement.predicate.includes('volumeRaw')))
-          assert(statements.some((statement) => statement.predicate.includes('dateRange')))
+
+          // Assert that this fixture has no parsable dates because it has
+          // start_date '--' and end_date null
+          assert(!statements.some((statement) => statement.predicate.includes('dateRange')))
+
           assert(statements.some((statement) => statement.predicate.includes('status')))
           assert(statements.some((statement) => statement.predicate.includes('shelfMark')))
           assert(statements.some((statement) => statement.predicate.includes('format')))
@@ -130,6 +135,34 @@ describe('Holding Marc Mapping', () => {
           assert.strictEqual(holding.objectId('nypl:bnum'), 'urn:bnum:b11929657')
           assert.strictEqual(holding.literals('bf:note')[0], 'Checkin **EDITION SPECIALE** here.')
           assert.strictEqual(holding.literals('bf:note')[1], 'IRREGULAR')
+        })
+    })
+
+    it('should create item statements with parsed date ranges for each checkin card box', () => {
+      const holding = HoldingSierraRecord.from(require('./data/holding-1032862.json'))
+      return holdingSerializer.fromMarcJson(holding)
+        .then((statements) => {
+          // Group by subject (i.e. item) id:
+          const statementsBySubjectId = statements.reduce((h, s) => {
+            if (!h[s.subject_id]) h[s.subject_id] = []
+            h[s.subject_id].push(s)
+            return h
+          }, {})
+
+          expect(statementsBySubjectId['i-h1032862-0'].filter((s) => s.predicate === 'nypl:dateRange')[0].object_literal)
+            .to.deep.equal(['2012-01-01', '2012-01-01'])
+          expect(statementsBySubjectId['i-h1032862-0'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)
+            .to.equal('Jan. 2012')
+
+          expect(statementsBySubjectId['i-h1032862-1'].filter((s) => s.predicate === 'nypl:dateRange')[0].object_literal)
+            .to.deep.equal(['2012-03-01', '2012-03-01'])
+          expect(statementsBySubjectId['i-h1032862-1'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)
+            .to.equal('Mar. 2012')
+
+          expect(statementsBySubjectId['i-h1032862-2'].filter((s) => s.predicate === 'nypl:dateRange')[0].object_literal)
+            .to.deep.equal(['2012-05-01', '2012-05-01'])
+          expect(statementsBySubjectId['i-h1032862-2'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)
+            .to.equal('May. 2012')
         })
     })
   })
