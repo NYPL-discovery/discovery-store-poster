@@ -2,7 +2,7 @@
 const expect = require('chai').expect
 const { parseVolume } = require('../lib/volume-parser')
 
-describe('volume parsing', () => {
+describe.only('volume parsing', () => {
   it('v. 36-37 (Nov. 1965-Oct. 1967)', () => {
     expect(parseVolume('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([[36, 37]])
   })
