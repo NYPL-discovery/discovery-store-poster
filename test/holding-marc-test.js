@@ -147,9 +147,8 @@ describe('Holding Marc Mapping', () => {
             h[s.subject_id].push(s)
             return h
           }, {})
-          console.log(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:VolumeRange'))
-          expect(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:VolumeRange')[0].object_literal)
-            .to.deep.equal(['21,26'])
+          expect(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:volumeRange')[0].object_literal)
+            .to.deep.equal([21, 26])
         })
     })
     it('should create item statements with parsed date ranges for each checkin card box', () => {
