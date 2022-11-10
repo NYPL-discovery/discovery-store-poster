@@ -7,7 +7,7 @@
     "avsc": "^4.1.9",
     "aws-sdk": "^2.96.0",
     "bluebird": "^3.7.2",
-    "discovery-store-models": "git+https://github.com/NYPL-discovery/discovery-store-models.git#v1.4.0",
+    "discovery-store-models": "github:NYPL-discovery/discovery-store-models#v1.5.0",
     "highland": "^2.10.0",
     "loglevel": "^1.4.1",
     "mkdirp": "^0.5.1",
