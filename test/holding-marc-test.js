@@ -137,7 +137,7 @@ describe('Holding Marc Mapping', () => {
         })
     })
 
-    it.only('should create item statement for volume range', () => {
+    it('should create item statement for volume range', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-with-volume-range.json'))
       return holdingSerializer.fromMarcJson(holding)
         .then((statements) => {
@@ -149,6 +149,8 @@ describe('Holding Marc Mapping', () => {
           }, {})
           expect(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:volumeRange')[0].object_literal)
             .to.deep.equal([21, 26])
+          expect(statementsBySubjectId['i-h1089484-1'].filter((s) => s.predicate === 'nypl:volumeRange')[0].object_literal)
+            .to.deep.equal([21, 21])
         })
     })
     it('should create item statements with parsed date ranges for each checkin card box', () => {
@@ -166,7 +168,6 @@ describe('Holding Marc Mapping', () => {
             .to.deep.equal(['2012-01-01', '2012-01-01'])
           expect(statementsBySubjectId['i-h1032862-0'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)
             .to.equal('Jan. 2012')
-
           expect(statementsBySubjectId['i-h1032862-1'].filter((s) => s.predicate === 'nypl:dateRange')[0].object_literal)
             .to.deep.equal(['2012-03-01', '2012-03-01'])
           expect(statementsBySubjectId['i-h1032862-1'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)

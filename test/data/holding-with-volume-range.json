@@ -380,6 +380,39 @@
       },
       "trans_end_date": null,
       "trans_start_date": "2018-10-1"
+    },
+    {
+      "url": null,
+      "note": null,
+      "box_id": 834530,
+      "status": {
+        "code": "E",
+        "label": "Expected"
+      },
+      "end_date": null,
+      "box_count": 2,
+      "copy_count": null,
+      "holding_id": 1089484,
+      "staff_note": "PL asked to investigate/BH/10/1/18",
+      "start_date": "--",
+      "suppressed": "f",
+      "claim_count": 1,
+      "enumeration": {
+        "levels": [
+          "21",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "enumeration": "21"
+      },
+      "trans_end_date": null,
+      "trans_start_date": "2018-10-1"
     }
+
   ]
 }
