@@ -14,7 +14,10 @@ const BibSierraRecord = require('../lib/models/bib-sierra-record')
 const BibsUpdater = require('../lib/bibs-updater')
 const ItemSierraRecord = require('../lib/models/item-sierra-record')
 const ItemsUpdater = require('../lib/items-updater')
+const HoldingsUpdater = require('../lib/holdings-updater')
+const HoldingSierraRecord = require('../lib/models/holding-sierra-record')
 const NyplSourceMapper = require('discovery-store-models/lib/nypl-source-mapper')
+const utils = require('../lib/utils')
 
 var argv = require('optimist')
   .usage('Usage: $0 [--offset=num] [--limit=num]')
@@ -48,11 +51,23 @@ if (argv.uri) {
       return itemsUpdater.itemByApi(nyplSource, id)
         .then(ItemSierraRecord.from)
         .then(itemsUpdater.extractStatements.bind(itemsUpdater))
+    },
+    holding: () => {
+      const holdingsUpdater = new HoldingsUpdater()
+      return holdingsUpdater.holdingByApi(id)
+        .then(HoldingSierraRecord.from)
+        .then(holdingsUpdater.extractStatements.bind(holdingsUpdater))
     }
   }[type]
 
   statements()
     .then((statements) => {
-      console.log('Statements: ', statements)
+      const subjects = utils.groupBy(statements, 'subject_id')
+      subjects.forEach((group) => {
+        const subjectId = group[0].subject_id
+        console.log('======================')
+        console.log(`${subjectId}:`)
+        console.log(group)
+      })
     })
 }

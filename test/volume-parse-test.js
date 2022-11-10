@@ -21,4 +21,10 @@ describe.only('volume parsing', () => {
   it('v. 6-7 no. 2, 5-v. 8-10 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)', () => {
     expect(parseVolume('v. 6-7 no. 2, 5-v. 8-10 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([[6, 7], [8, 10]])
   })
+  it('returns empty array for strings without obvious volume information', () => {
+    expect(parseVolume('')).to.deep.equal([])
+    expect(parseVolume('vol')).to.deep.equal([])
+    expect(parseVolume('no. a')).to.deep.equal([])
+    expect(parseVolume('May-June/July 1963')).to.deep.equal([])
+  })
 })

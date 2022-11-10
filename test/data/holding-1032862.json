@@ -1,0 +1,316 @@
+{
+  "id": 1032862,
+  "bibIds": [
+    12959619
+  ],
+  "bibIdLinks": [
+    "https://ilsstaff.nypl.org/iii/sierra-api/v6/bibs/12959619"
+  ],
+  "itemIds": [],
+  "itemIdLinks": [],
+  "inheritLocation": false,
+  "allocationRule": null,
+  "accountingUnit": 1,
+  "labelCode": "n",
+  "serialCode1": "a",
+  "serialCode2": "-",
+  "serialCode3": "-",
+  "serialCode4": "-",
+  "claimOnDate": null,
+  "receivingLocationCode": "17",
+  "vendorCode": "aahgs",
+  "updateCount": "z",
+  "pieceCount": 0,
+  "eCheckInCode": " ",
+  "mediaTypeCode": " ",
+  "updatedDate": "2021-07-08",
+  "createdDate": "2009-06-23",
+  "deletedDate": null,
+  "deleted": false,
+  "suppressed": false,
+  "fixedFields": {
+    "35": {
+      "label": "Label Type",
+      "value": "n",
+      "display": null
+    },
+    "36": {
+      "label": "Serial Code 1",
+      "value": "a",
+      "display": null
+    },
+    "37": {
+      "label": "Serial Code 2",
+      "value": "-",
+      "display": null
+    },
+    "38": {
+      "label": "Copies",
+      "value": "1",
+      "display": null
+    },
+    "40": {
+      "label": "Location",
+      "value": "scf  ",
+      "display": null
+    },
+    "41": {
+      "label": "Recv Location",
+      "value": "17 ",
+      "display": null
+    },
+    "42": {
+      "label": "Vendor",
+      "value": "aahgs",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "c",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "1032862",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-23T07:20:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2021-07-08T21:09:41Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "24",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2012-04-06T16:53:00Z",
+      "display": null
+    },
+    "118": {
+      "label": "Serial Code 3",
+      "value": "-",
+      "display": null
+    },
+    "119": {
+      "label": "Serial Code 4",
+      "value": "-",
+      "display": null
+    },
+    "120": {
+      "label": "Update Count",
+      "value": "z",
+      "display": null
+    },
+    "121": {
+      "label": "Piece Count",
+      "value": "0",
+      "display": null
+    },
+    "137": {
+      "label": "E-Checkin",
+      "value": " ",
+      "display": null
+    },
+    "159": {
+      "label": "Media Type",
+      "value": " ",
+      "display": null
+    },
+    "266": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ny   22000003n 4500",
+      "marcTag": null,
+      "fieldTag": "_",
+      "subfields": null
+    },
+    {
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "Sc Ser.-M .N489"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": ".c1998006",
+      "marcTag": null,
+      "fieldTag": "d",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Jan 1997-2011. INCOMPLETE",
+      "marcTag": null,
+      "fieldTag": "h",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "843",
+      "fieldTag": "i",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PRINT"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Due on membership, order# o10430635.  Thank you.",
+      "marcTag": null,
+      "fieldTag": "v",
+      "subfields": null
+    }
+  ],
+  "holdings": [
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "Jan 1997-2011. INCOMPLETE"
+    },
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": ""
+    }
+  ],
+  "location": {
+    "code": "scf",
+    "label": "Schomburg Center - Research & Reference"
+  },
+  "checkInCards": [
+    {
+      "url": null,
+      "note": null,
+      "box_id": 420595,
+      "status": {
+        "code": "A",
+        "label": "Arrived"
+      },
+      "end_date": null,
+      "box_count": 1,
+      "copy_count": null,
+      "holding_id": 1032862,
+      "staff_note": null,
+      "start_date": "Jan. 2012",
+      "suppressed": "f",
+      "claim_count": 0,
+      "enumeration": {
+        "levels": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "enumeration": null
+      },
+      "trans_end_date": null,
+      "trans_start_date": "Feb. 13, 2012"
+    },
+    {
+      "url": null,
+      "note": null,
+      "box_id": 420601,
+      "status": {
+        "code": "A",
+        "label": "Arrived"
+      },
+      "end_date": null,
+      "box_count": 2,
+      "copy_count": null,
+      "holding_id": 1032862,
+      "staff_note": null,
+      "start_date": "Mar. 2012",
+      "suppressed": "f",
+      "claim_count": 0,
+      "enumeration": {
+        "levels": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "enumeration": null
+      },
+      "trans_end_date": null,
+      "trans_start_date": "Apr. 6, 2012"
+    },
+    {
+      "url": null,
+      "note": null,
+      "box_id": 420607,
+      "status": {
+        "code": "E",
+        "label": "Expected"
+      },
+      "end_date": null,
+      "box_count": 3,
+      "copy_count": null,
+      "holding_id": 1032862,
+      "staff_note": null,
+      "start_date": "May. 2012",
+      "suppressed": null,
+      "claim_count": 0,
+      "enumeration": {
+        "levels": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "enumeration": null
+      },
+      "trans_end_date": null,
+      "trans_start_date": "Jun. 4, 2012"
+    }
+  ]
+}
