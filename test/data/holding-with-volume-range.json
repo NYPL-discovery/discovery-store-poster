@@ -1,0 +1,385 @@
+{
+  "id": 1089484,
+  "bibIds": [
+    16543663
+  ],
+  "bibIdLinks": [
+    "https://ilsstaff.nypl.org/iii/sierra-api/v6/bibs/16543663"
+  ],
+  "itemIds": [],
+  "itemIdLinks": [],
+  "inheritLocation": false,
+  "allocationRule": null,
+  "accountingUnit": 1,
+  "labelCode": "a",
+  "serialCode1": "a",
+  "serialCode2": "-",
+  "serialCode3": "-",
+  "serialCode4": "-",
+  "claimOnDate": "2019-04-01T04:00:00Z",
+  "receivingLocationCode": "3",
+  "vendorCode": "ybp",
+  "updateCount": "z",
+  "pieceCount": 0,
+  "eCheckInCode": " ",
+  "mediaTypeCode": " ",
+  "updatedDate": "2020-09-14",
+  "createdDate": "2009-06-23",
+  "deletedDate": null,
+  "deleted": false,
+  "suppressed": false,
+  "fixedFields": {
+    "35": {
+      "label": "Label Type",
+      "value": "a",
+      "display": null
+    },
+    "36": {
+      "label": "Serial Code 1",
+      "value": "a",
+      "display": null
+    },
+    "37": {
+      "label": "Serial Code 2",
+      "value": "-",
+      "display": null
+    },
+    "38": {
+      "label": "Copies",
+      "value": "1",
+      "display": null
+    },
+    "39": {
+      "label": "Claim On",
+      "value": "2019-04-01",
+      "display": null
+    },
+    "40": {
+      "label": "Location",
+      "value": "slrb1",
+      "display": null
+    },
+    "41": {
+      "label": "Recv Location",
+      "value": "3  ",
+      "display": null
+    },
+    "42": {
+      "label": "Vendor",
+      "value": "ybp  ",
+      "display": null
+    },
+    "80": {
+      "label": "Record Type",
+      "value": "c",
+      "display": null
+    },
+    "81": {
+      "label": "Record Number",
+      "value": "1089484",
+      "display": null
+    },
+    "83": {
+      "label": "Created Date",
+      "value": "2009-06-23T16:24:00Z",
+      "display": null
+    },
+    "84": {
+      "label": "Updated Date",
+      "value": "2020-09-14T18:44:12Z",
+      "display": null
+    },
+    "85": {
+      "label": "No. of Revisions",
+      "value": "22",
+      "display": null
+    },
+    "86": {
+      "label": "Agency",
+      "value": "1",
+      "display": null
+    },
+    "98": {
+      "label": "PDATE",
+      "value": "2018-10-01T15:49:08Z",
+      "display": null
+    },
+    "118": {
+      "label": "Serial Code 3",
+      "value": "-",
+      "display": null
+    },
+    "119": {
+      "label": "Serial Code 4",
+      "value": "-",
+      "display": null
+    },
+    "120": {
+      "label": "Update Count",
+      "value": "z",
+      "display": null
+    },
+    "121": {
+      "label": "Piece Count",
+      "value": "0",
+      "display": null
+    },
+    "137": {
+      "label": "E-Checkin",
+      "value": " ",
+      "display": null
+    },
+    "159": {
+      "label": "Media Type",
+      "value": " ",
+      "display": null
+    },
+    "266": {
+      "label": "Inherit Location",
+      "value": "false",
+      "display": null
+    }
+  },
+  "varFields": [
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "00000ny   22000003n 4500",
+      "marcTag": null,
+      "fieldTag": "_",
+      "subfields": null
+    },
+    {
+      "ind1": "0",
+      "ind2": "1",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "k",
+          "content": "*R-SIBL"
+        },
+        {
+          "tag": "h",
+          "content": "NK9509"
+        },
+        {
+          "tag": "i",
+          "content": ".T722"
+        },
+        {
+          "tag": "z",
+          "content": "Latest ed."
+        }
+      ]
+    },
+    {
+      "ind1": "8",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "852",
+      "fieldTag": "c",
+      "subfields": [
+        {
+          "tag": "h",
+          "content": "JBM 07-158"
+        },
+        {
+          "tag": "z",
+          "content": "Bound vols."
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": ".c2407772",
+      "marcTag": null,
+      "fieldTag": "d",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "863",
+      "fieldTag": "h",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "1.1"
+        },
+        {
+          "tag": "a",
+          "content": "20"
+        },
+        {
+          "tag": "i",
+          "content": "2015"
+        },
+        {
+          "tag": "j",
+          "content": ""
+        },
+        {
+          "tag": "k",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "[Bound vols.-SIBL Delivery Desk] ed. 14 (2007)-ed. 19 (2013),",
+      "marcTag": null,
+      "fieldTag": "h",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "843",
+      "fieldTag": "i",
+      "subfields": [
+        {
+          "tag": "a",
+          "content": "PRINT     "
+        }
+      ]
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "930",
+      "fieldTag": "o",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "04-30-07"
+        },
+        {
+          "tag": "9",
+          "content": "11-08-08"
+        },
+        {
+          "tag": "j",
+          "content": "10-29-10"
+        },
+        {
+          "tag": "m",
+          "content": "b5"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "#26",
+      "marcTag": null,
+      "fieldTag": "w",
+      "subfields": null
+    },
+    {
+      "ind1": " ",
+      "ind2": " ",
+      "content": null,
+      "marcTag": "853",
+      "fieldTag": "y",
+      "subfields": [
+        {
+          "tag": "8",
+          "content": "1"
+        },
+        {
+          "tag": "a",
+          "content": "ed. "
+        },
+        {
+          "tag": "i",
+          "content": "(year)"
+        },
+        {
+          "tag": "j",
+          "content": "(month)"
+        },
+        {
+          "tag": "k",
+          "content": "(day)"
+        }
+      ]
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "***CHECKIN & BIND***",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    },
+    {
+      "ind1": null,
+      "ind2": null,
+      "content": "Is it now biennial? /BH/5/4/15.",
+      "marcTag": null,
+      "fieldTag": "z",
+      "subfields": null
+    }
+  ],
+  "holdings": [
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "[Bound vols.-SIBL Delivery Desk] ed. 14 (2007)-ed. 19 (2013),"
+    },
+    {
+      "index": false,
+      "negation": false,
+      "incomplete": false,
+      "holding_ranges": [],
+      "holding_string": "ed.  20 (2015)"
+    }
+  ],
+  "location": {
+    "code": "slrb1",
+    "label": "Science, Industry and Business Library (SIBL) - Reference"
+  },
+  "checkInCards": [
+    {
+      "url": null,
+      "note": null,
+      "box_id": 834530,
+      "status": {
+        "code": "E",
+        "label": "Expected"
+      },
+      "end_date": null,
+      "box_count": 2,
+      "copy_count": null,
+      "holding_id": 1089484,
+      "staff_note": "PL asked to investigate/BH/10/1/18",
+      "start_date": "--",
+      "suppressed": "f",
+      "claim_count": 1,
+      "enumeration": {
+        "levels": [
+          "21",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "enumeration": "v21-26"
+      },
+      "trans_end_date": null,
+      "trans_start_date": "2018-10-1"
+    }
+  ]
+}

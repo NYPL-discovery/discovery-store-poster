@@ -110,7 +110,6 @@ describe('Holding Marc Mapping', () => {
           assert(statements.some((statement) => statement.subject_id.includes('-0')))
           assert(statements.some((statement) => statement.subject_id.includes('-1')))
           // assert that all statements were added
-          assert(statements.some((statement) => statement.predicate.includes('volumeRange')))
           assert(statements.some((statement) => statement.predicate.includes('volumeRaw')))
 
           // Assert that this fixture has no parsable dates because it has
@@ -138,6 +137,21 @@ describe('Holding Marc Mapping', () => {
         })
     })
 
+    it.only('should create item statement for volume range', () => {
+      const holding = HoldingSierraRecord.from(require('./data/holding-with-volume-range.json'))
+      return holdingSerializer.fromMarcJson(holding)
+        .then((statements) => {
+          // Group by subject (i.e. item) id:
+          const statementsBySubjectId = statements.reduce((h, s) => {
+            if (!h[s.subject_id]) h[s.subject_id] = []
+            h[s.subject_id].push(s)
+            return h
+          }, {})
+          console.log(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:VolumeRange'))
+          expect(statementsBySubjectId['i-h1089484-0'].filter((s) => s.predicate === 'nypl:VolumeRange')[0].object_literal)
+            .to.deep.equal(['21,26'])
+        })
+    })
     it('should create item statements with parsed date ranges for each checkin card box', () => {
       const holding = HoldingSierraRecord.from(require('./data/holding-1032862.json'))
       return holdingSerializer.fromMarcJson(holding)
