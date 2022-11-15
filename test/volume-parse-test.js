@@ -26,5 +26,12 @@ describe('volume parsing', () => {
     expect(parseVolume('vol')).to.deep.equal([])
     expect(parseVolume('no. a')).to.deep.equal([])
     expect(parseVolume('May-June/July 1963')).to.deep.equal([])
+    expect(parseVolume('Sc News Daily monitor (Kampala, Uganda) Dec. 1-25,27-31, 2018')).to.deep.equal([])
+  })
+  it('matches on a single number', () => {
+    expect(parseVolume('23')).to.deep.equal([[23, 23]])
+  })
+  it('jaarg. 24 (Jan.-June 1967)', () => {
+    expect(parseVolume('jaarg. 24 (Jan.-June 1967)')).to.deep.equal([[24, 24]])
   })
 })
