@@ -151,6 +151,8 @@ describe('Holding Marc Mapping', () => {
             .to.deep.equal([21, 26])
           expect(statementsBySubjectId['i-h1089484-1'].filter((s) => s.predicate === 'nypl:volumeRange')[0].object_literal)
             .to.deep.equal([21, 21])
+          expect(statementsBySubjectId['i-h1089484-1'].filter((s) => s.predicate === 'nypl:holdingLocation')[0].object_id)
+            .to.deep.equal('loc:slrb1')
         })
     })
     it('should create item statements with parsed date ranges for each checkin card box', () => {
@@ -177,6 +179,8 @@ describe('Holding Marc Mapping', () => {
             .to.deep.equal(['2012-05-01', '2012-05-01'])
           expect(statementsBySubjectId['i-h1032862-2'].filter((s) => s.predicate === 'bf:enumerationAndChronology')[0].object_literal)
             .to.equal('May. 2012')
+          expect(statementsBySubjectId['i-h1032862-2'].filter((s) => s.predicate === 'nypl:holdingLocation')[0].object_id)
+            .to.equal('loc:scf')
         })
     })
   })
