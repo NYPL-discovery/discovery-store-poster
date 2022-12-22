@@ -34,4 +34,19 @@ describe('volume parsing', () => {
   it('jaarg. 24 (Jan.-June 1967)', () => {
     expect(parseVolume('jaarg. 24 (Jan.-June 1967)')).to.deep.equal([[24, 24]])
   })
+  it('rejects volumes beyond the range of ints', () => {
+    // This is a volume value just within the accepted int range:
+    const maxInt = Math.pow(2, 31) - 1
+
+    expect(parseVolume(`volume ${maxInt}`)).to.deep.equal([[maxInt, maxInt]])
+
+    // This is a volume value just outside accepted int range:
+    expect(parseVolume(`volume ${maxInt + 1}`)).to.deep.equal([])
+
+    // This is a volume value outside accepted int range:
+    expect(parseVolume('volume 7600010780000')).to.deep.equal([])
+
+    // Should reject only the invalid int:
+    expect(parseVolume('volume 1 - 7600010780000')).to.deep.equal([[1, 1]])
+  })
 })
