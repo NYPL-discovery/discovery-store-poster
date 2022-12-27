@@ -24,6 +24,11 @@ describe('dateParser Lambda', () => {
   })
 
   describe('correcly parses a variety of fieldtagvs', () => {
+    it('August 2008 (second copy)', async () => {
+      const fieldtagv = 'August 2008 (second copy)'
+      const [parsed] = await _parseDates(fieldtagv)
+      expect(parsed).to.deep.equal([['2008-08', '2008-08']])
+    })
     it('v. 36-37 (Nov. 1965-Oct. 1967) @local-only', async () => {
       const fieldtagv = 'v. 36-37 (Nov. 1965-Oct. 1967)'
       const [parsed] = await _parseDates(fieldtagv)
