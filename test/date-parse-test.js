@@ -11,6 +11,7 @@ describe('dateParser Lambda', () => {
       expect(checkCache('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([['1965-11', '1967-10']])
       expect(checkCache('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([['1961-10', '1962-10'], ['1963-05', '1963-07']])
       expect(checkCache('1992:Feb.-Mar.')).to.deep.equal([['1992-02', '1992-03']])
+      expect(checkCache('Apr. -June 1954 (second copy)')).to.deep.equal([['1954-04', '1954-06']])
     })
     it('can handle bibs with and without fieldtagvs @local-only', async () => {
       await parseDatesAndCache(mixedBibs)
