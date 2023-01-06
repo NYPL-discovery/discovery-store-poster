@@ -211,7 +211,7 @@ describe('dateParser Lambda', () => {
     it('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963) ', async () => {
       const fieldtagv = 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)'
       const [parsed] = await _parseOnlyYear(fieldtagv)
-      expect(parsed).to.deep.equal([['1961', '1962'], ['1963', '1963']])
+      expect(parsed).to.deep.equal([['1961', '1963']])
     })
     it('Aug. 1976 ', async () => {
       const fieldtagv = 'Aug. 1976'
