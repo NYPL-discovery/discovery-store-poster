@@ -132,7 +132,7 @@ describe('dateParser Lambda', () => {
     })
   })
 
-  describe.only('_parseOnlyYear', () => {
+  describe('_parseOnlyYear', () => {
     it('Apr. -June 1954 (second copy) ', async () => {
       const fieldtagv = 'Apr. -June 1954 (second copy)'
       const [parsed] = await _parseOnlyYear(fieldtagv)
