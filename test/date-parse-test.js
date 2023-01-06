@@ -7,14 +7,14 @@ const mixedBibs = require('./data/date-parse-bibs/mixed-bibs.json')
 describe('dateParser Lambda', () => {
   describe('caching entire date', () => {
     it('caches parsed dates for bibs with fieldtagvs @local-only', async () => {
-      await parseDatesAndCache(serialBibs)
+      await parseDatesAndCache(serialBibs, false)
       expect(checkCache('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([['1965-11', '1967-10']])
       expect(checkCache('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([['1961-10', '1962-10'], ['1963-05', '1963-07']])
       expect(checkCache('1992:Feb.-Mar.')).to.deep.equal([['1992-02', '1992-03']])
       expect(checkCache('Apr. -June 1954 (second copy)')).to.deep.equal([['1954-04', '1954-06']])
     })
     it('can handle bibs with and without fieldtagvs @local-only', async () => {
-      await parseDatesAndCache(mixedBibs)
+      await parseDatesAndCache(mixedBibs, false)
       const fieldtagvs = ['v. 36-37 (Nov. 1965-Oct. 1967)', '1992:Feb.-Mar.', 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)']
       const cachedParsedValues = fieldtagvs.map((tag) => {
         return checkCache(tag)
@@ -25,7 +25,7 @@ describe('dateParser Lambda', () => {
 
   describe('caching years', () => {
     it('parses years only - mixed bibs', async () => {
-      await parseDatesAndCache(mixedBibs, false)
+      await parseDatesAndCache(mixedBibs)
       const fieldtagvs = ['v. 36-37 (Nov. 1965-Oct. 1967)', '1992:Feb.-Mar.', 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)']
       const cachedParsedValues = fieldtagvs.map((tag) => {
         return checkCache(tag)
@@ -33,7 +33,7 @@ describe('dateParser Lambda', () => {
       expect(cachedParsedValues).to.deep.equal([[['1965', '1967']], [['1992', '1992']], [['1961', '1963']]])
     })
     it('caches parsed dates for bibs with fieldtagvs', async () => {
-      await parseDatesAndCache(serialBibs, false)
+      await parseDatesAndCache(serialBibs)
       expect(checkCache('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([['1965', '1967']])
       expect(checkCache('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([['1961', '1963']])
       expect(checkCache('1992:Feb.-Mar.')).to.deep.equal([['1992', '1992']])
