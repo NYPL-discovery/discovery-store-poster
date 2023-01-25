@@ -162,9 +162,16 @@ function buildRecordsByIds (ids, nyplType) {
   // NYPL_OAUTH_URL
   const dataApi = new NYPLDataApiClient()
 
+  let nyplSource = argv.nyplSource || 'sierra-nypl'
+
   return Promise.all(
     ids.map((id) => {
-      return dataApi.get(`${nyplType}s/sierra-nypl/${id}`)
+      // If ids given like 'recap-hl/990147064120203941, sierra-nypl/10370882, ...',
+      // split them properly:
+      if (id.split('/').length === 2) {
+        ; [nyplSource, id] = id.split('/')
+      }
+      return dataApi.get(`${nyplType}s/${nyplSource}/${id}`)
         .then((rec) => {
           if (!rec || rec.statusCode === 404) {
             // Fatal error if it's the only failure
