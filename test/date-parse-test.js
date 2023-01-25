@@ -1,26 +1,43 @@
 /* global describe it */
 const expect = require('chai').expect
-const { parseDatesAndCache, checkCache, private: { _parseDates, _has4DigitYear } } = require('../lib/date-parse')
+const { parseDatesAndCache, checkCache, private: { _parseDates, _has4DigitYear, _parseOnlyYear } } = require('../lib/date-parse')
 const serialBibs = require('./data/date-parse-bibs/v-bibs.json')
 const mixedBibs = require('./data/date-parse-bibs/mixed-bibs.json')
 
 describe('dateParser Lambda', () => {
-  describe('caching', () => {
+  describe('caching entire date', () => {
     it('caches parsed dates for bibs with fieldtagvs @local-only', async () => {
-      await parseDatesAndCache(serialBibs)
+      await parseDatesAndCache(serialBibs, false)
       expect(checkCache('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([['1965-11', '1967-10']])
       expect(checkCache('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([['1961-10', '1962-10'], ['1963-05', '1963-07']])
       expect(checkCache('1992:Feb.-Mar.')).to.deep.equal([['1992-02', '1992-03']])
       expect(checkCache('Apr. -June 1954 (second copy)')).to.deep.equal([['1954-04', '1954-06']])
     })
     it('can handle bibs with and without fieldtagvs @local-only', async () => {
+      await parseDatesAndCache(mixedBibs, false)
+      const fieldtagvs = ['v. 36-37 (Nov. 1965-Oct. 1967)', '1992:Feb.-Mar.', 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)']
+      const cachedParsedValues = fieldtagvs.map((tag) => {
+        return checkCache(tag)
+      })
+      expect(cachedParsedValues).to.deep.equal([[['1965-11', '1967-10']], [['1992-02', '1992-03']], [['1961-10', '1962-10'], ['1963-05', '1963-07']]])
+    })
+  })
+
+  describe('caching years', () => {
+    it('parses years only - mixed bibs', async () => {
       await parseDatesAndCache(mixedBibs)
       const fieldtagvs = ['v. 36-37 (Nov. 1965-Oct. 1967)', '1992:Feb.-Mar.', 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)']
       const cachedParsedValues = fieldtagvs.map((tag) => {
         return checkCache(tag)
       })
-
-      expect(cachedParsedValues).to.deep.equal([[['1965-11', '1967-10']], [['1992-02', '1992-03']], [['1961-10', '1962-10'], ['1963-05', '1963-07']]])
+      expect(cachedParsedValues).to.deep.equal([[['1965', '1967']], [['1992', '1992']], [['1961', '1963']]])
+    })
+    it('caches parsed dates for bibs with fieldtagvs', async () => {
+      await parseDatesAndCache(serialBibs)
+      expect(checkCache('v. 36-37 (Nov. 1965-Oct. 1967)')).to.deep.equal([['1965', '1967']])
+      expect(checkCache('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)')).to.deep.equal([['1961', '1963']])
+      expect(checkCache('1992:Feb.-Mar.')).to.deep.equal([['1992', '1992']])
+      expect(checkCache('Apr. -June 1954 (second copy)')).to.deep.equal([['1954', '1954']])
     })
   })
 
@@ -129,6 +146,114 @@ describe('dateParser Lambda', () => {
       const fieldtagv = 'Mar. 1969-Winter 1970'
       const [parsed] = await _parseDates(fieldtagv)
       expect(parsed).to.deep.equal([['1969-03-01', '1970-03-20']])
+    })
+  })
+
+  describe('_parseOnlyYear', () => {
+    it('Apr. -June 1954 (second copy) ', async () => {
+      const fieldtagv = 'Apr. -June 1954 (second copy)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1954', '1954']])
+    })
+    it('v. 36-37 (Nov. 1965-Oct. 1967) ', async () => {
+      const fieldtagv = 'v. 36-37 (Nov. 1965-Oct. 1967)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1965', '1967']])
+    })
+    it('1992:Feb.-Mar. ', async () => {
+      const fieldtagv = '1992:Feb.-Mar.'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1992', '1992']])
+    })
+    it('May 1, 1888 - Aug 31, 1888 ', async () => {
+      const fieldtagv = 'May 1, 1888 - Aug 31, 1888'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1888', '1888']])
+    })
+    it('1969-76 ', async () => {
+      const fieldtagv = '1969-76'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1969', '1976']])
+    })
+    it('Jan.-Dec. 1967 ', async () => {
+      const fieldtagv = 'Jan.-Dec. 1967'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1967', '1967']])
+    })
+    it('1964-65 ', async () => {
+      const fieldtagv = '1964-65'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1964', '1965']])
+    })
+    it('1906-09 ', async () => {
+      const fieldtagv = '1906-09'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1906', '1909']])
+    })
+    it('2006-09 ', async () => {
+      const fieldtagv = '2006-09'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['2006', '2009']])
+    })
+    it('Jan. 2, 1964-July 29, 1965 ', async () => {
+      const fieldtagv = 'Jan. 2, 1964-July 29, 1965'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1964', '1965']])
+    })
+    it('Nov. 1965-Oct. 1967 ', async () => {
+      const fieldtagv = 'Nov. 1965-Oct. 1967'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1965', '1967']])
+    })
+    it('1992:Feb.-Mar ', async () => {
+      const fieldtagv = '1992:Feb.-Mar'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1992', '1992']])
+    })
+    it('1904/1905 ', async () => {
+      const fieldtagv = '1904/1905'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1904', '1905']])
+    })
+    it('1951/52-1959/60 ', async () => {
+      const fieldtagv = '1951/52-1959/60'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1951', '1960']])
+    })
+    it('1934/1935-1935/1936 ', async () => {
+      const fieldtagv = '1934/1935-1935/1936'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1934', '1936']])
+    })
+    it('v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963) ', async () => {
+      const fieldtagv = 'v. 6-7 no. 2, 5-v. 8 no. 1 (Oct. 1961-Sept./Oct. 1962, May-June/July 1963)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1961', '1963']])
+    })
+    it('Aug. 1976 ', async () => {
+      const fieldtagv = 'Aug. 1976'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1976', '1976']])
+    })
+    it('1992:spring ', async () => {
+      const fieldtagv = '1992:spring'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1992', '1992']])
+    })
+    it('v. 93, no. 3 (autumn 2013) ', async () => {
+      const fieldtagv = 'v. 93, no. 3 (autumn 2013)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['2013', '2013']])
+    })
+    it('v. 10, no. 1 - 4 (win. - aut. 1976) inde ', async () => {
+      const fieldtagv = 'v. 10, no. 1 - 4 (win. - aut. 1976) inde.'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1976', '1976']])
+    })
+    it('Mar. 1969-Winter 1970 ', async () => {
+      const fieldtagv = 'Mar. 1969-Winter 1970'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1969', '1970']])
     })
   })
 
