@@ -255,6 +255,21 @@ describe('dateParser Lambda', () => {
       const [parsed] = await _parseOnlyYear(fieldtagv)
       expect(parsed).to.deep.equal([['1969', '1970']])
     })
+    it('v. 372, no. 9652 (Nov 22/28, 2008)', async () => {
+      const fieldtagv = 'v. 372, no. 9652 (Nov 22/28, 2008)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['2008', '2008']])
+    })
+    it('v. 372, no. 1990 (Nov 22/28, 2008)', async () => {
+      const fieldtagv = 'v. 372, no. 9652 (Nov 22/28, 2008)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['2008', '2008']])
+    })
+    it('Apr. -June 1954 (second copy)', async () => {
+      const fieldtagv = 'Apr. -June 1954 (second copy)'
+      const [parsed] = await _parseOnlyYear(fieldtagv)
+      expect(parsed).to.deep.equal([['1954', '1954']])
+    })
   })
 
   describe('_has4DigitYear', () => {
