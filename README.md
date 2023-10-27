@@ -1,3 +1,7 @@
+# Archived 10/27/2023
+
+This app's role has been made redundant with the retirement of the Discovery Hybrid Indexer. The new indexer can be found [here](https://github.com/NYPL/research-catalog-indexer).
+
 # NYPL Discovery Store Poster
 
 *Note*: This app is now used solely inside the [DiscoveryHybridIndexer](https://github.com/NYPL/discovery-hybrid-indexer) where it's included as amodule. This app should not be run on its own; Its deployments have been deprecated.
